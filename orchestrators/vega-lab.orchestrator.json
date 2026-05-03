@@ -26,6 +26,13 @@
     "local_first": true,
     "local_bus": "/bus",
     "local_bus_target": "http://127.0.0.1:8090",
+    "local_responses": "/bus/v1/responses",
+    "local_models": "/bus/v1/models",
+    "local_health": "/bus/health",
+    "local_ocr": "/bus/v1/ocr/extract",
+    "local_ocr_health": "/bus/v1/ocr/health",
+    "ocr_target": "http://127.0.0.1:8097",
+    "model_profile": "balanced-32gb",
     "web_mode": "deployment-testing-only"
   },
   "shared_resources": {
@@ -37,7 +44,7 @@
     "knowledge": {
       "collections": ["house:vega-lab:docs"],
       "legacy_collections": ["house:git-stars:docs"],
-      "embeddings_model": "/Users/davidcaballero/core-x-kbllr_0/model-zoo/models/embeddings/all-minilm-l6-v2-4bit",
+      "embeddings_model": "embeddings/all-minilm-l6-v2-4bit",
       "rag_endpoint": "http://localhost:8090/v1/search",
       "vector_db": "lancedb"
     },
@@ -78,7 +85,13 @@
       "generate_ops_digest",
       "generate_weekly_research_review",
       "draft_action_item",
-      "get_runtime_health"
+      "get_runtime_health",
+      "inspect_model_zoo",
+      "ocr_health",
+      "inspect_image_with_ocr",
+      "inspect_pdf_with_ocr",
+      "extract_repo_visual_evidence",
+      "extract_skill_evidence_from_pdf"
     ],
     "mcp_servers": [
       "house-functions",
@@ -153,7 +166,7 @@
         "agent_id": "vega-lab:repo-ops"
       },
       {
-        "pattern": ".*runtime.*|.*mlx.*|.*openresponses.*|.*bus.*|.*health.*",
+        "pattern": ".*runtime.*|.*mlx.*|.*openresponses.*|.*bus.*|.*health.*|.*model zoo.*|.*ocr.*",
         "capability": "runtime-health",
         "agent_id": "vega-lab:orchestrator"
       }
@@ -161,7 +174,7 @@
   },
   "capabilities": {
     "domains": ["code", "research", "analysis", "adoption", "repo-ops", "template-kits", "local-runtime"],
-    "input_types": ["text", "url"],
+    "input_types": ["text", "url", "image", "pdf"],
     "output_types": ["text", "structured"],
     "streaming": true,
     "tool_calling": true,
@@ -299,7 +312,10 @@
     "base_url": "http://localhost:5173",
     "responses": "/bus/v1/responses",
     "capabilities": "/bus/capabilities",
-    "runtime_health": "/bus/settings"
+    "runtime_health": "/bus/health",
+    "ocr": "http://127.0.0.1:8097",
+    "ocr_extract": "/bus/v1/ocr/extract",
+    "ocr_health": "/bus/v1/ocr/health"
   },
   "_envelope": {
     "created_at": "2026-02-03T13:50:29.829340Z",

@@ -1,13 +1,13 @@
 {
   "house_id": "vega-lab",
   "legacy_house_ids": ["git-stars"],
-  "name": "Vega Lab",
+  "name": "Vega Labs",
   "version": "3.0.0",
   "status": "active",
   "tier": "lab",
   "purpose": {
     "domain": "dev-tools",
-    "mission": "Operate the core-x Git universe intelligence lab: discover bright-star repositories, extract reusable skills, rules, and flows, and maintain owned repositories through draft-only action items.",
+    "mission": "Operate the core-x repository intelligence observatory: discover bright-star repositories, extract reusable skills, rules, and flows, generate technology alerts, and maintain owned repositories through draft-only action items.",
     "target_users": [
       "developers",
       "researchers",
@@ -18,7 +18,8 @@
       "Canonical skills, rules, and flows",
       "Adoption-ready repo classifications",
       "Owned-repo maintenance action items",
-      "Local-first OpenResponses runtime confidence"
+      "Local-first OpenResponses runtime confidence",
+      "OCR-backed visual and PDF evidence extraction"
     ]
   },
   "runtime": {
@@ -26,6 +27,13 @@
     "local_first": true,
     "local_bus": "/bus",
     "local_bus_target": "http://127.0.0.1:8090",
+    "local_responses": "/bus/v1/responses",
+    "local_models": "/bus/v1/models",
+    "local_health": "/bus/health",
+    "local_ocr": "/bus/v1/ocr/extract",
+    "local_ocr_health": "/bus/v1/ocr/health",
+    "ocr_target": "http://127.0.0.1:8097",
+    "model_profile": "balanced-32gb",
     "default_model": "text/Meta-Llama-3.1-8B-Instruct-4bit",
     "web_mode": "deployment-testing-only"
   },
@@ -115,20 +123,36 @@
       "template-kits",
       "local-runtime"
     ],
-    "input_types": ["text", "url"],
+    "input_types": ["text", "url", "image", "pdf"],
     "output_types": ["stream", "structured", "text"],
     "streaming": true,
     "tool_calling": true,
+    "capability_lanes": [
+      "text_reasoning",
+      "code_reasoning",
+      "repo_ops",
+      "rag_search",
+      "tool_execution",
+      "image_ocr",
+      "pdf_inspection",
+      "table_extraction",
+      "model_zoo_inspection"
+    ],
     "authority": "draft-only"
   },
   "dependencies": {
     "services": [
       "event-bus",
-      "mlx-openresponses",
-      "mlx-rag"
+      "ocr",
+      "mlx-llm",
+      "mlx-rag",
+      "mlx-vision",
+      "mlx-embed"
     ],
     "models": [
-      "text/Meta-Llama-3.1-8B-Instruct-4bit"
+      "text/Meta-Llama-3.1-8B-Instruct-4bit",
+      "text/qwen2.5-14b-4bit",
+      "text/qwen2.5-coder-14b-instruct-4bit"
     ],
     "houses": [],
     "mcp_servers": [
@@ -177,7 +201,7 @@
     "voting_weight": 0.7
   },
   "health": {
-    "endpoint": "/health",
+    "endpoint": "/v1/ocr/health",
     "port": 8090
   }
 }

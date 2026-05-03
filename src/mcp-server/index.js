@@ -26,6 +26,7 @@ import {
   updateActionItem,
   updateResearchQueue,
 } from "../server/house-model.js";
+import { executeVegaOcrTool, OCR_TOOL_DEFINITIONS } from "../server/ocr-tools.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -526,6 +527,7 @@ class VegaLabServer {
           description: "Return local OpenResponses, dataset, and tool availability expectations for Vega Lab",
           inputSchema: { type: "object", properties: {} },
         },
+        ...OCR_TOOL_DEFINITIONS,
       ],
     }));
 
@@ -588,6 +590,13 @@ class VegaLabServer {
             return await this.handleDraftActionItem(args);
           case "get_runtime_health":
             return this.handleGetRuntimeHealth();
+          case "inspect_model_zoo":
+          case "ocr_health":
+          case "inspect_image_with_ocr":
+          case "inspect_pdf_with_ocr":
+          case "extract_repo_visual_evidence":
+          case "extract_skill_evidence_from_pdf":
+            return this.response(await executeVegaOcrTool(HOUSE_ROOT, name, args));
           default:
             throw new Error(`Unknown tool: ${name}`);
         }
@@ -940,11 +949,25 @@ class VegaLabServer {
         responsesEndpoint: "/bus/v1/responses",
         modelsEndpoint: "/bus/v1/models",
         healthEndpoint: "/bus/health",
+        ocrEndpoint: "/bus/v1/ocr/extract",
+        ocrHealthEndpoint: "/bus/v1/ocr/health",
       },
       localBus: {
         url: "/bus",
         target: "http://127.0.0.1:8090",
         status: "expected",
+        responsesEndpoint: "/bus/v1/responses",
+        modelsEndpoint: "/bus/v1/models",
+        healthEndpoint: "/bus/health",
+        ocrEndpoint: "/bus/v1/ocr/extract",
+        ocrHealthEndpoint: "/bus/v1/ocr/health",
+      },
+      ocr: {
+        status: "expected",
+        directUrl: "http://127.0.0.1:8097",
+        gatewayExtractEndpoint: "/bus/v1/ocr/extract",
+        gatewayModelsEndpoint: "/bus/v1/ocr/models",
+        capabilityLanes: ["image_ocr", "pdf_inspection", "table_extraction", "layout_extraction", "skill_evidence"],
       },
       datasets: {
         starredRepos: this.starredRepos.length,
@@ -973,7 +996,7 @@ class VegaLabServer {
         REPO_OPS_KITS_FILE,
       ],
       tools: {
-        total: 27,
+        total: 33,
         draftOnly: true,
       },
     });

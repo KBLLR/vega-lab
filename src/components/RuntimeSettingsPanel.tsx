@@ -57,7 +57,6 @@ export function RuntimeSettingsPanel() {
   const activeRuntimeLabel = draft.mode === 'local' ? 'Local MLX' : 'Inference';
   const servedModelOptions = localModelOptions.filter((model) => model.served);
   const localZooModelOptions = localModelOptions.filter((model) => !model.served && model.source === 'model-zoo-local');
-  const candidateModelOptions = localModelOptions.filter((model) => !model.served && model.source === 'model-zoo-candidate');
   const selectedModelOption = localModelOptions.find((option) => modelMatches(option, draft.localModel));
 
   useEffect(() => {
@@ -225,7 +224,7 @@ export function RuntimeSettingsPanel() {
             >
               <Cpu size={18} />
               <span>Local MLX</span>
-              <small>/bus to 127.0.0.1:8090</small>
+              <small>/bus to MLX Gateway; OCR at /bus/v1/ocr</small>
             </button>
             <button
               type="button"
@@ -255,7 +254,6 @@ export function RuntimeSettingsPanel() {
                   ) : null}
                   {renderModelGroup('Served by MLX gateway', servedModelOptions)}
                   {renderModelGroup('Model-zoo local', localZooModelOptions)}
-                  {renderModelGroup('Model-zoo registry', candidateModelOptions)}
                 </select>
               ) : null}
             </label>
@@ -274,7 +272,7 @@ export function RuntimeSettingsPanel() {
                 </strong>
                 <span>
                   {selectedModelOption.loadable
-                    ? `${selectedModelOption.id} exists in model-zoo but is not currently reported by /v1/models. Start or reload mlx-llm with this model before chat.`
+                    ? `${selectedModelOption.id} exists in model-zoo but is not currently reported by gateway /v1/models. Start or reload mlx-llm with this model before chat.`
                     : `${selectedModelOption.id} is known by the model-zoo registry, but Vega Lab did not find complete local weights/config for it.`}
                 </span>
               </div>
@@ -284,14 +282,14 @@ export function RuntimeSettingsPanel() {
                 {localModelsStatus === 'loading'
                   ? 'Discovering served MLX models and model-zoo inventory...'
                   : localModelsStatus === 'ready'
-                    ? `${localModelCounts.served} served text LLM${localModelCounts.served === 1 ? '' : 's'}; ${localModelCounts.zooLocal} model-zoo text entr${localModelCounts.zooLocal === 1 ? 'y' : 'ies'}; ${localModelCounts.zooCandidates} registry candidate${localModelCounts.zooCandidates === 1 ? '' : 's'}; ${localModelCounts.hidden} non-text gateway model${localModelCounts.hidden === 1 ? '' : 's'} hidden`
+                    ? `${localModelCounts.served} served text LLM${localModelCounts.served === 1 ? '' : 's'}; ${localModelCounts.zooLocal} loadable model-zoo entr${localModelCounts.zooLocal === 1 ? 'y' : 'ies'}; ${localModelCounts.zooCandidates} download candidate${localModelCounts.zooCandidates === 1 ? '' : 's'} tracked outside normal selection; ${localModelCounts.incomplete} incomplete and ${localModelCounts.hidden} policy-hidden model${localModelCounts.incomplete + localModelCounts.hidden === 1 ? '' : 's'} hidden`
                     : localModelsStatus === 'empty'
                       ? localModelCounts.total > 0
                         ? `${localModelCounts.total} local model${localModelCounts.total === 1 ? '' : 's'} found, but none are text LLMs.`
                         : 'No served LLMs or model-zoo snapshot options were found.'
                       : localModelsStatus === 'error'
                         ? 'Could not read local model sources. Manual entry is still available.'
-                        : 'Model discovery merges /bus/v1/models with public/model-zoo-text-models.json.'}
+                        : 'Model discovery prefers /bus/v1/models and merges public/model-zoo-text-models.json.'}
               </span>
               <button type="button" onClick={refreshLocalModels}>
                 <RefreshCw size={13} />

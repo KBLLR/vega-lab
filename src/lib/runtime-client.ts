@@ -22,6 +22,9 @@ export interface RuntimeModelOption {
   capabilities?: string[];
   aliases?: string[];
   evidence?: string[];
+  visibilityClass?: string;
+  normalSelectable?: boolean;
+  reason?: string | null;
 }
 
 export interface RuntimeModelCatalog {
@@ -48,6 +51,7 @@ type GatewayModelCatalog = {
   llmModels: string[];
   totalModels: number;
   hiddenModels: number;
+  options?: RuntimeModelOption[];
 };
 
 type ModelZooSnapshot = {
@@ -55,12 +59,22 @@ type ModelZooSnapshot = {
     id?: string;
     runtimeId?: string;
     status?: RuntimeModelStatus;
+    type?: string;
+    task?: string;
   }>;
 };
 
+const HIDDEN_MODEL_TERMS = ['llasa', 'nsfw', 'abliterated', 'utena'];
+
+function isProductionEligibleModelId(id: string): boolean {
+  const lowered = id.toLowerCase();
+  return !HIDDEN_MODEL_TERMS.some((term) => lowered.includes(term));
+}
+
 function isLlmModel(item: ModelDescriptor): boolean {
-  if (typeof item === 'string') return true;
+  if (typeof item === 'string') return isProductionEligibleModelId(item);
   const id = item.id || item.model || item.name || '';
+  if (!isProductionEligibleModelId(id)) return false;
   if (item._audio_lane || item.owned_by === 'mlx-audio') return false;
   return item._service === 'mlx-llm' || id.startsWith('text/') || (!item._service && Boolean(id));
 }
@@ -78,6 +92,59 @@ function getModelList(data: unknown): ModelDescriptor[] {
 }
 
 function normalizeModelList(data: unknown): GatewayModelCatalog {
+  if (data && typeof data === 'object' && Array.isArray((data as { data?: unknown[] }).data)) {
+    const candidate = data as { data: unknown[]; hidden_models?: number; model_profile?: string };
+    const isPolicyCatalog = Boolean(candidate.model_profile || candidate.hidden_models)
+      || candidate.data.some((model) => (
+        model !== null
+        && typeof model === 'object'
+        && ('served' in model || 'status' in model || 'loadable' in model)
+      ));
+    if (!isPolicyCatalog) return normalizePlainModelList(data);
+
+    const payload = data as { data: Array<Partial<RuntimeModelOption> & { object?: string; owned_by?: string; status?: RuntimeModelStatus }>; hidden_models?: number };
+    const options = payload.data
+      .map((model): RuntimeModelOption | null => {
+        const id = model.id || '';
+        if (!id || !isProductionEligibleModelId(id)) return null;
+        const capabilities = (model.capabilities || []).map(String).join(',').toLowerCase();
+        if (capabilities.includes('embedding')) return null;
+        const status: RuntimeModelStatus = model.status || (model.served ? 'served' : model.loadable ? 'local-loadable' : 'registry-candidate');
+        if (status === 'local-incomplete') return null;
+        const source: RuntimeModelSource = model.served ? 'served' : statusToSource(status);
+        return {
+          id,
+          label: model.label || id.replace(/^text\//, ''),
+          source,
+          status,
+          served: Boolean(model.served),
+          downloaded: Boolean(model.downloaded || model.served),
+          loadable: Boolean(model.loadable || model.served),
+          localPath: model.localPath || (model as { local_path?: string }).local_path,
+          sourceId: model.sourceId || (model as { source_id?: string }).source_id,
+          sourceUrl: model.sourceUrl || (model as { source_url?: string }).source_url,
+          capabilities: model.capabilities || [],
+          aliases: model.aliases || [id, id.replace(/^text\//, '')],
+          evidence: model.evidence || [`Reported by gateway /v1/models as ${status}`],
+          visibilityClass: (model as { visibility_class?: string }).visibility_class,
+          normalSelectable: (model as { normal_selectable?: boolean }).normal_selectable,
+          reason: (model as { reason?: string | null }).reason,
+        } satisfies RuntimeModelOption;
+      })
+      .filter((model): model is RuntimeModelOption => Boolean(model));
+
+    return {
+      llmModels: options.map((model) => model.id),
+      totalModels: payload.data.length,
+      hiddenModels: Math.max(Number(payload.hidden_models || 0), payload.data.length - options.length),
+      options,
+    };
+  }
+
+  return normalizePlainModelList(data);
+}
+
+function normalizePlainModelList(data: unknown): GatewayModelCatalog {
   const list = getModelList(data);
   const llmModels = list
     .filter(isLlmModel)
@@ -140,6 +207,7 @@ function mergeModelOptions(
   const options: RuntimeModelOption[] = [];
 
   for (const servedModel of servedModels) {
+    if (!isProductionEligibleModelId(servedModel)) continue;
     options.push({
       id: servedModel,
       label: servedModel.replace(/^text\//, ''),
@@ -149,7 +217,10 @@ function mergeModelOptions(
       downloaded: true,
       loadable: true,
       aliases: [servedModel, servedModel.replace(/^text\//, '')],
-      evidence: ['Reported by OpenResponses /v1/models'],
+      evidence: ['Reported by OpenResponses model discovery'],
+      visibilityClass: 'served',
+      normalSelectable: true,
+      reason: null,
     });
   }
 
@@ -157,6 +228,13 @@ function mergeModelOptions(
   for (const zooModel of zooModels) {
     const id = zooModel.runtimeId || zooModel.id;
     if (!id) continue;
+    const loweredType = String(zooModel.type || '').toLowerCase();
+    const loweredTask = String(zooModel.task || '').toLowerCase();
+    const capabilities = (zooModel.capabilities || []).map(String).join(',').toLowerCase();
+    if (!isProductionEligibleModelId(id)) continue;
+    if (loweredType === 'embedding' || loweredTask.includes('embedding') || capabilities.includes('embedding')) continue;
+    const status = zooModel.status || (zooModel.loadable ? 'local-loadable' : 'registry-candidate');
+    if (status === 'local-incomplete') continue;
     const existing = options.find((option) => modelMatches(option, id));
     const aliases = Array.from(new Set([
       ...(existing?.aliases || []),
@@ -164,7 +242,6 @@ function mergeModelOptions(
       id,
       id.replace(/^text\//, ''),
     ]));
-    const status = zooModel.status || (zooModel.loadable ? 'local-loadable' : 'registry-candidate');
     const source = statusToSource(status);
 
     if (existing) {
@@ -196,6 +273,9 @@ function mergeModelOptions(
       capabilities: zooModel.capabilities || [],
       aliases,
       evidence: zooModel.evidence || ['Known by Vega Lab model-zoo snapshot'],
+      visibilityClass: (zooModel as { visibilityClass?: string }).visibilityClass,
+      normalSelectable: (zooModel as { normalSelectable?: boolean }).normalSelectable,
+      reason: (zooModel as { reason?: string | null }).reason,
     });
   }
 
@@ -207,6 +287,19 @@ function mergeModelOptions(
   };
 
   return options.sort((a, b) => rank[a.status] - rank[b.status] || a.id.localeCompare(b.id));
+}
+
+function countIncompleteSnapshotModels(snapshot: ModelZooSnapshot | null): number {
+  const zooModels = Array.isArray(snapshot?.models) ? snapshot.models : [];
+  return zooModels.filter((model) => {
+    const id = model.runtimeId || model.id || '';
+    const capabilities = (model.capabilities || []).map(String).join(',').toLowerCase();
+    return model.status === 'local-incomplete'
+      && isProductionEligibleModelId(id)
+      && String(model.type || '').toLowerCase() !== 'embedding'
+      && !String(model.task || '').toLowerCase().includes('embedding')
+      && !capabilities.includes('embedding');
+  }).length;
 }
 
 async function fetchModelZooSnapshot(): Promise<ModelZooSnapshot | null> {
@@ -233,7 +326,10 @@ export async function fetchRuntimeModelCatalog(busUrl: string): Promise<RuntimeM
   }
 
   const snapshot = await fetchModelZooSnapshot();
-  const options = mergeModelOptions(gatewayCatalog.llmModels, snapshot);
+  const options = gatewayCatalog.options?.length
+    ? gatewayCatalog.options
+    : mergeModelOptions(gatewayCatalog.llmModels, snapshot);
+  const incompleteModels = countIncompleteSnapshotModels(snapshot);
   if (options.length === 0) return createEmptyRuntimeModelCatalog();
 
   return {
@@ -242,9 +338,9 @@ export async function fetchRuntimeModelCatalog(busUrl: string): Promise<RuntimeM
     options,
     totalModels: gatewayCatalog.totalModels,
     hiddenModels: gatewayCatalog.hiddenModels,
-    zooLocalModels: options.filter((option) => option.downloaded || option.status === 'local-incomplete').length,
+    zooLocalModels: options.filter((option) => option.status === 'local-loadable').length,
     zooCandidateModels: options.filter((option) => option.source === 'model-zoo-candidate').length,
-    incompleteModels: options.filter((option) => option.status === 'local-incomplete').length,
+    incompleteModels,
   };
 }
 
@@ -254,15 +350,17 @@ export async function fetchRuntimeHealth(busUrl: string): Promise<RuntimeHealthS
     const payload = health as {
       status?: string;
       service?: string;
+      current_model?: string;
       services?: Record<string, { status?: string; current_model?: string }>;
+      dependencies?: Record<string, { status?: string; current_model?: string }>;
     };
-    const llm = payload.services?.['mlx-llm'];
+    const llm = payload.services?.['mlx-llm'] || payload.dependencies?.['mlx-llm'];
     const model = llm?.current_model;
     const llmStatus = llm?.status ? `; mlx-llm ${llm.status}` : '';
     return {
       status: payload.status === 'healthy' ? 'live' : 'offline',
       detail: `${payload.service || 'MLX OpenResponses gateway'} ${payload.status || 'reachable'}${llmStatus}`,
-      model,
+      model: payload.current_model || model,
     };
   }
 

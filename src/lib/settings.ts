@@ -192,5 +192,9 @@ export function resolveRuntimeTarget(settings: RuntimeSettings) {
     model: isInference ? settings.inferenceModel : settings.localModel,
     mode: settings.mode,
     provider: isInference ? settings.inferenceProvider : 'local',
+    responsesPath: '/v1/responses',
+    modelsPath: '/v1/models',
+    healthPath: '/health',
+    modelProfile: isInference ? 'inference' : 'balanced-32gb',
   };
 }

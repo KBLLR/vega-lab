@@ -1,10 +1,10 @@
-# Vega Lab Agents
+# Vega Labs Agents
 
 ## Paradigm
 
 - House ID: `vega-lab`
 - Legacy alias: `git-stars`
-- Role: Local-first Git universe intelligence and repo ops center
+- Role: Local-first repository intelligence, skill mining, technology alerting, and repo ops center
 - Status/Type: active · ui · lab
 - Runtime contract: OpenResponses only
 - Authority: draft-only for automations and cross-repo maintenance
@@ -22,7 +22,8 @@
 
 - Local mode defaults to `/bus`
 - Vite proxies `/bus` to `http://127.0.0.1:8090`
-- The Event Bus must expose OpenResponses-compatible settings, response streaming, and tool-call events
+- The gateway must expose OpenResponses chat at `/v1/responses`
+- The gateway must expose OCR at `/v1/ocr/*` for screenshots, PDFs, diagrams, tables, and visual skill evidence
 - Web mode is for deployed testing only
 
 ## Data
@@ -54,6 +55,8 @@
 
 - Preserve the visual design direction unless the user explicitly asks for design changes.
 - Prefer typed tools and durable JSON artifacts over prompt-only behavior.
+- Use OCR only for visual/document evidence extraction; do not treat OCR as a general chat or orchestration runtime.
 - Keep old `git-stars:*` local storage and agent aliases readable for one migration cycle, but write new state under `vega-lab:*`.
 - Active mission targets are Codex, Claude, and local MLX. Jules is historical template vocabulary, not a Vega Lab target.
 - Automations may draft action items, Ops kits, and mission briefs only. Do not open PRs, merge, deploy, or mutate other repositories without explicit human approval.
+- Public-facing summaries, SKILL candidates, technology alerts, and house ideas must pass human review before publication or adoption.

@@ -110,6 +110,8 @@ export function buildSystemPrompt(repo?: Repo | null, route?: VegaLabRoute): str
 
   return `You are Vega Lab, the core-x Git universe intelligence lab. Work from canonical tools and derived house data, not generic guessing.
 Always prefer typed tools over freeform inference when repo facts, queue state, adoption fit, skills, missions, or mine health are requested.
+Local chat and reasoning use OpenResponses through the MLX gateway. Use get_runtime_health for live runtime status and inspect_model_zoo for model availability, not guesses.
+For PDFs, screenshots, graphics, tables, diagrams, or image evidence, use inspect_pdf_with_ocr, inspect_image_with_ocr, extract_repo_visual_evidence, or extract_skill_evidence_from_pdf so evidence stays traceable.
 When an Ops kit, README draft, AGENTS draft, deployment plan, or test plan is requested, call generate_repo_ops_kit and return the relevant artifacts.
 When a mission brief is requested, call generate_repo_mission. Supported mission targets are codex, claude, and mlx; default to mlx for local runtime work.
 When research state changes, call update_research_queue.
@@ -527,6 +529,94 @@ export function buildVegaLabTools() {
         name: "get_runtime_health",
         description: "Return OpenResponses local runtime and dataset health expectations.",
         parameters: { type: "object", properties: {} },
+      },
+    },
+    {
+      type: "function",
+      function: {
+        name: "inspect_model_zoo",
+        description: "Inspect model-zoo eligibility, production policy, and balanced local MLX recommendations.",
+        parameters: {
+          type: "object",
+          properties: {
+            profile: { type: "string", description: "Model profile, default balanced-32gb" },
+          },
+        },
+      },
+    },
+    {
+      type: "function",
+      function: {
+        name: "ocr_health",
+        description: "Return OCR service health and mlx-vision worker state.",
+        parameters: { type: "object", properties: {} },
+      },
+    },
+    {
+      type: "function",
+      function: {
+        name: "inspect_pdf_with_ocr",
+        description: "Extract OCR/text evidence from a PDF path or supplied PDF page images.",
+        parameters: {
+          type: "object",
+          properties: {
+            path: { type: "string", description: "Local PDF path" },
+            file_path: { type: "string", description: "Local PDF file path" },
+            file: { type: "string", description: "File reference" },
+            max_pages: { type: "number", description: "Max pages to inspect" },
+            prompt: { type: "string", description: "OCR prompt" },
+          },
+        },
+      },
+    },
+    {
+      type: "function",
+      function: {
+        name: "inspect_image_with_ocr",
+        description: "Extract OCR/visual evidence from an image, screenshot, diagram, or graph.",
+        parameters: {
+          type: "object",
+          properties: {
+            image: { type: "string", description: "Image path, URL, or encoded target" },
+            path: { type: "string", description: "Local image path" },
+            prompt: { type: "string", description: "OCR prompt" },
+            allow_url: { type: "boolean", description: "Allow URL input when explicitly true" },
+          },
+        },
+      },
+    },
+    {
+      type: "function",
+      function: {
+        name: "extract_repo_visual_evidence",
+        description: "Use OCR to extract repository-relevant evidence from screenshots, diagrams, charts, or UI images.",
+        parameters: {
+          type: "object",
+          properties: {
+            name: { type: "string", description: "Repository name" },
+            author: { type: "string", description: "Repository owner (optional)" },
+            image: { type: "string", description: "Image path or encoded target" },
+            path: { type: "string", description: "Local image path" },
+            prompt: { type: "string", description: "OCR prompt" },
+          },
+        },
+      },
+    },
+    {
+      type: "function",
+      function: {
+        name: "extract_skill_evidence_from_pdf",
+        description: "Use OCR/PDF inspection to extract SKILL/RULE/WORKFLOW evidence from a PDF.",
+        parameters: {
+          type: "object",
+          properties: {
+            path: { type: "string", description: "Local PDF path" },
+            file_path: { type: "string", description: "Local PDF file path" },
+            file: { type: "string", description: "File reference" },
+            max_pages: { type: "number", description: "Max pages to inspect" },
+            prompt: { type: "string", description: "OCR prompt" },
+          },
+        },
       },
     },
   ];

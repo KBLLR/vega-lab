@@ -111,6 +111,12 @@ async function main() {
       "generate_weekly_research_review",
       "draft_action_item",
       "get_runtime_health",
+      "inspect_model_zoo",
+      "ocr_health",
+      "inspect_image_with_ocr",
+      "inspect_pdf_with_ocr",
+      "extract_repo_visual_evidence",
+      "extract_skill_evidence_from_pdf",
     ].forEach((toolName) => {
       assert.ok(toolNames.has(toolName), `Expected MCP tool to exist: ${toolName}`);
     });
@@ -122,6 +128,9 @@ async function main() {
     assert.equal(runtimeHealth.houseId, "vega-lab", "Runtime health should expose the Vega Lab house id");
     assert.equal(runtimeHealth.runtimeContract, "openresponses", "Runtime health should expose OpenResponses as the contract");
     assert.equal(runtimeHealth.localBus.target, "http://127.0.0.1:8090", "Runtime health should expose the local MLX gateway target");
+    assert.equal(runtimeHealth.localBus.responsesEndpoint, "/bus/v1/responses", "Runtime health should expose the local OpenResponses route");
+    assert.equal(runtimeHealth.localBus.ocrEndpoint, "/bus/v1/ocr/extract", "Runtime health should expose OCR extraction route");
+    assert.ok(Array.isArray(runtimeHealth.ocr.capabilityLanes), "Runtime health should expose OCR capability lanes");
     assert.equal(typeof runtimeHealth.datasets.actionItems, "number", "Runtime health should include action item count");
     assert.equal(typeof runtimeHealth.datasets.templateKits, "number", "Runtime health should include template kit count");
     assert.equal(typeof runtimeHealth.datasets.repoOpsKits, "number", "Runtime health should include repo ops kit count");
@@ -131,6 +140,18 @@ async function main() {
       arguments: {},
     }));
     assert.ok(typeof statsResult === "object" && statsResult !== null, "Statistics payload should be an object");
+
+    const modelZooResult = parseTextPayload(await client.callTool({
+      name: "inspect_model_zoo",
+      arguments: { profile: "balanced-32gb" },
+    }));
+    assert.equal(modelZooResult.profile, "balanced-32gb", "Model-zoo inspection should report the requested local profile");
+    assert.ok(Array.isArray(modelZooResult.recommendedText), "Model-zoo inspection should return recommended text models");
+    assert.ok(Array.isArray(modelZooResult.recommendedOcr), "Model-zoo inspection should return OCR/VLM models");
+    assert.ok(
+      !modelZooResult.recommendedText.some((model) => /llasa|nsfw|abliterated|utena/i.test(model.id)),
+      "Model-zoo inspection should not recommend hidden model classes",
+    );
 
     const newsResult = parseTextPayload(await client.callTool({
       name: "list_news_signals",
@@ -205,6 +226,18 @@ async function main() {
     assert.ok(Array.isArray(extractionResult.houseSkills), "Skill extraction should expose house skills");
     assert.ok(Array.isArray(extractionResult.rules), "Skill extraction should expose rules");
     assert.ok(Array.isArray(extractionResult.flows), "Skill extraction should expose flows");
+
+    const ocrHealth = parseTextPayload(await client.callTool({
+      name: "ocr_health",
+      arguments: {},
+    }));
+    assert.equal(ocrHealth.title, "OCR service health", "OCR health tool should return OCR status");
+
+    const imageEvidence = parseTextPayload(await client.callTool({
+      name: "inspect_image_with_ocr",
+      arguments: {},
+    }));
+    assert.equal(imageEvidence.title, "Image OCR", "Image OCR tool should return a typed missing-input draft when no image is supplied");
 
     const templateKits = parseTextPayload(await client.callTool({
       name: "list_template_kits",
