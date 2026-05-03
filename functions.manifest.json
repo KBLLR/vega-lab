@@ -168,7 +168,8 @@
         "inspect_image_with_ocr",
         "inspect_pdf_with_ocr",
         "extract_repo_visual_evidence",
-        "extract_skill_evidence_from_pdf"
+        "extract_skill_evidence_from_pdf",
+        "generate_skill_candidate_from_ocr_evidence"
       ],
       "capabilities": ["query", "analytics", "research", "skills", "template-kits", "repo-ops", "runtime-health", "tool-execution", "model-zoo-inspection", "ocr-evidence"],
       "house_binding": "shared",
@@ -262,7 +263,7 @@
   "mcp_server": {
     "name": "vega-lab-mcp",
     "legacy_names": ["git-stars-mcp"],
-    "tools_count": 33,
+    "tools_count": 34,
     "protocol": "Model Context Protocol",
     "entry_point": "./src/mcp-server/index.js"
   },

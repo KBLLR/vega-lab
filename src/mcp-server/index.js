@@ -596,6 +596,7 @@ class VegaLabServer {
           case "inspect_pdf_with_ocr":
           case "extract_repo_visual_evidence":
           case "extract_skill_evidence_from_pdf":
+          case "generate_skill_candidate_from_ocr_evidence":
             return this.response(await executeVegaOcrTool(HOUSE_ROOT, name, args));
           default:
             throw new Error(`Unknown tool: ${name}`);
@@ -996,7 +997,7 @@ class VegaLabServer {
         REPO_OPS_KITS_FILE,
       ],
       tools: {
-        total: 33,
+        total: 34,
         draftOnly: true,
       },
     });

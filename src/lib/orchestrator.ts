@@ -111,7 +111,7 @@ export function buildSystemPrompt(repo?: Repo | null, route?: VegaLabRoute): str
   return `You are Vega Lab, the core-x Git universe intelligence lab. Work from canonical tools and derived house data, not generic guessing.
 Always prefer typed tools over freeform inference when repo facts, queue state, adoption fit, skills, missions, or mine health are requested.
 Local chat and reasoning use OpenResponses through the MLX gateway. Use get_runtime_health for live runtime status and inspect_model_zoo for model availability, not guesses.
-For PDFs, screenshots, graphics, tables, diagrams, or image evidence, use inspect_pdf_with_ocr, inspect_image_with_ocr, extract_repo_visual_evidence, or extract_skill_evidence_from_pdf so evidence stays traceable.
+For PDFs, screenshots, graphics, tables, diagrams, or image evidence, use inspect_pdf_with_ocr, inspect_image_with_ocr, extract_repo_visual_evidence, extract_skill_evidence_from_pdf, or generate_skill_candidate_from_ocr_evidence so evidence stays traceable and review-gated.
 When an Ops kit, README draft, AGENTS draft, deployment plan, or test plan is requested, call generate_repo_ops_kit and return the relevant artifacts.
 When a mission brief is requested, call generate_repo_mission. Supported mission targets are codex, claude, and mlx; default to mlx for local runtime work.
 When research state changes, call update_research_queue.
@@ -619,6 +619,26 @@ export function buildVegaLabTools() {
         },
       },
     },
+    {
+      type: "function",
+      function: {
+        name: "generate_skill_candidate_from_ocr_evidence",
+        description: "Generate an internal pending SKILL candidate from repo metadata plus optional OCR image/PDF evidence.",
+        parameters: {
+          type: "object",
+          properties: {
+            repo_url: { type: "string", description: "GitHub repo URL" },
+            local_repo_path: { type: "string", description: "Optional local repo path" },
+            name: { type: "string", description: "Repository name" },
+            author: { type: "string", description: "Repository owner" },
+            pdf_path: { type: "string", description: "Optional PDF evidence path" },
+            image_path: { type: "string", description: "Optional image or screenshot evidence path" },
+            target_topic: { type: "string", description: "Topic to orient the SKILL candidate" },
+            writeArtifact: { type: "boolean", description: "Write an internal data/review artifact when true" },
+          },
+        },
+      },
+    },
   ];
 }
 
@@ -650,6 +670,11 @@ const GENERAL_ACTIONS: ActionPreset[] = [
     label: "Test plan",
     title: "Test plan",
     prompt: "Call generate_repo_ops_kit with target mlx and return the testing artifact with verification commands or gaps.",
+  },
+  {
+    label: "SKILL candidate",
+    title: "SKILL candidate",
+    prompt: "Call generate_skill_candidate_from_ocr_evidence with writeArtifact true and return the internal pending SKILL candidate, evidence refs, and limitations. Do not publish it.",
   },
   {
     label: "MLX mission",
@@ -694,6 +719,11 @@ const MINE_ACTIONS: ActionPreset[] = [
     label: "Test plan",
     title: "Test plan",
     prompt: "Call generate_repo_ops_kit with target mlx and return the testing artifact with verification commands or gaps.",
+  },
+  {
+    label: "SKILL candidate",
+    title: "SKILL candidate",
+    prompt: "Call generate_skill_candidate_from_ocr_evidence with writeArtifact true and return the internal pending SKILL candidate, evidence refs, and limitations. Do not publish it.",
   },
   {
     label: "MLX mission",

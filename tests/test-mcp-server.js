@@ -117,6 +117,7 @@ async function main() {
       "inspect_pdf_with_ocr",
       "extract_repo_visual_evidence",
       "extract_skill_evidence_from_pdf",
+      "generate_skill_candidate_from_ocr_evidence",
     ].forEach((toolName) => {
       assert.ok(toolNames.has(toolName), `Expected MCP tool to exist: ${toolName}`);
     });
@@ -238,6 +239,23 @@ async function main() {
       arguments: {},
     }));
     assert.equal(imageEvidence.title, "Image OCR", "Image OCR tool should return a typed missing-input draft when no image is supplied");
+
+    const ocrSkillCandidate = parseTextPayload(await client.callTool({
+      name: "generate_skill_candidate_from_ocr_evidence",
+      arguments: {
+        author,
+        name,
+        target_topic: "repo intelligence",
+        skip_synthesis: true,
+        writeArtifact: false,
+      },
+    }));
+    assert.equal(ocrSkillCandidate.review_state, "pending", "OCR skill candidate workflow should stay pending");
+    assert.equal(ocrSkillCandidate.visibility, "internal", "OCR skill candidate workflow should stay internal");
+    assert.equal(ocrSkillCandidate.skillCandidate.review_state, "pending", "Generated SKILL candidate should be review-gated");
+    assert.equal(ocrSkillCandidate.skillCandidate.visibility, "internal", "Generated SKILL candidate should not be public");
+    assert.ok(ocrSkillCandidate.skillCandidate.draft_skill_md.includes("#"), "Generated SKILL candidate should include draft Markdown");
+    assert.ok(!ocrSkillCandidate.artifacts, "Test path should avoid writing generated review artifacts");
 
     const templateKits = parseTextPayload(await client.callTool({
       name: "list_template_kits",

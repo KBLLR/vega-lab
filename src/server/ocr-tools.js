@@ -1,8 +1,14 @@
 import fs from "fs/promises";
 import path from "path";
+import {
+  findSkillExtraction,
+  loadHouseDatasets,
+  resolveRepoRecord,
+} from "./house-model.js";
 
 const MODEL_ZOO_ROOT = path.resolve(process.env.MODEL_ZOO_ROOT || path.join(process.cwd(), "..", "..", "model-zoo"));
 const OCR_BASE_URL = process.env.OCR_BASE_URL || "http://127.0.0.1:8090";
+const RESPONSES_BASE_URL = process.env.VEGA_RESPONSES_BASE_URL || "http://127.0.0.1:8090";
 const GENERATED_BY = "vega-lab:ocr-tools";
 const HIDDEN_MODEL_TERMS = ["llasa", "nsfw", "abliterated", "utena"];
 const OCR_TERMS = ["ocr", "vision", "vlm", "image-text-to-text", "image-to-text", "document", "layout", "table", "formula"];
@@ -17,6 +23,10 @@ async function readJson(filePath, fallback) {
 
 function toArray(value) {
   return Array.isArray(value) ? value : [];
+}
+
+function unique(values) {
+  return [...new Set(values.filter(Boolean))];
 }
 
 function slug(value) {
@@ -75,13 +85,170 @@ function isOcrModel(model) {
 
 async function callOcr(pathname, payload = {}, method = "POST") {
   const url = `${OCR_BASE_URL}${pathname}`;
-  const response = await fetch(url, {
-    method,
-    headers: method === "GET" ? undefined : { "content-type": "application/json" },
-    body: method === "GET" ? undefined : JSON.stringify(payload),
-  });
-  const data = await response.json().catch(() => ({}));
-  return { ok: response.ok, status: response.status, data, url };
+  try {
+    const response = await fetch(url, {
+      method,
+      headers: method === "GET" ? undefined : { "content-type": "application/json" },
+      body: method === "GET" ? undefined : JSON.stringify(payload),
+    });
+    const data = await response.json().catch(() => ({}));
+    return { ok: response.ok, status: response.status, data, url };
+  } catch (error) {
+    return {
+      ok: false,
+      status: 0,
+      data: {
+        status: "degraded",
+        error: {
+          code: "ocr_unreachable",
+          message: error instanceof Error ? error.message : String(error),
+          service: "ocr",
+          retryable: true,
+        },
+      },
+      url,
+    };
+  }
+}
+
+async function callResponsesForSynthesis(prompt, args = {}) {
+  if (args.skip_synthesis) return null;
+  try {
+    const response = await fetch(`${RESPONSES_BASE_URL}/v1/responses`, {
+      method: "POST",
+      headers: { "content-type": "application/json" },
+      body: JSON.stringify({
+        model: args.model || "text/Meta-Llama-3.1-8B-Instruct-4bit",
+        stream: false,
+        house_id: "vega-lab",
+        agent_id: "vega-lab:tool-architect",
+        task_kind: "ocr_evidence_to_skill_candidate",
+        evidence_policy: "required",
+        messages: [
+          {
+            role: "system",
+            content: "You draft internal Vega Labs SKILL candidates from evidence. Return concise Markdown only. Do not publish, create repos, or mutate external systems.",
+          },
+          { role: "user", content: prompt },
+        ],
+      }),
+    });
+    if (!response.ok) return null;
+    const data = await response.json().catch(() => ({}));
+    return data.output_text
+      || data.text
+      || data.content
+      || data.choices?.[0]?.message?.content
+      || data.output?.map((item) => item.content?.map((entry) => entry.text).join("\n")).filter(Boolean).join("\n")
+      || null;
+  } catch {
+    return null;
+  }
+}
+
+function parseGithubRepoUrl(value) {
+  const match = String(value || "").match(/github\.com[:/]([^/\s]+)\/([^/\s#?]+)(?:[/?#].*)?$/i);
+  if (!match) return null;
+  return { author: match[1], name: match[2].replace(/\.git$/i, "") };
+}
+
+function repoNwo(repo) {
+  return repo?.author && repo?.name ? `${repo.author}/${repo.name}` : null;
+}
+
+function repoSourceUrl(repo, args = {}) {
+  if (args.repo_url) return args.repo_url;
+  const nwo = repoNwo(repo);
+  return nwo ? `https://github.com/${nwo}` : null;
+}
+
+function localPathRef(value, rootDir) {
+  if (!value) return null;
+  const resolved = path.resolve(String(value));
+  const root = path.resolve(rootDir);
+  return resolved.startsWith(root) ? path.relative(root, resolved) : path.basename(resolved);
+}
+
+async function resolveRepoContext(rootDir, args = {}) {
+  const datasets = await loadHouseDatasets(rootDir);
+  const skillExtractions = await readJson(path.join(rootDir, "data", "skill-extractions.json"), []);
+  const parsed = parseGithubRepoUrl(args.repo_url || args.url);
+  const nwoParts = String(args.nwo || "").split("/");
+  const name = args.name || parsed?.name || nwoParts[1];
+  const author = args.author || parsed?.author || nwoParts[0];
+  let repo = name ? resolveRepoRecord({ name, author }, datasets) : null;
+  if (!repo && (name || author || args.local_repo_path)) {
+    repo = {
+      name: name || path.basename(String(args.local_repo_path || "local-repo")),
+      author: author || "local",
+      description: args.description || "Local or external repository supplied for OCR evidence review.",
+      topics: [],
+      primary_language: args.language || null,
+      language: args.language || null,
+      stars: 0,
+      forks: 0,
+    };
+  }
+  const nwo = repoNwo(repo) || args.nwo || null;
+  const extraction = nwo ? findSkillExtraction(skillExtractions, nwo) : null;
+  return { datasets, repo, extraction, nwo };
+}
+
+function evidenceRefsFrom(items) {
+  return items
+    .flatMap((item) => toArray(item.evidenceRefs || item.evidence_refs || item.evidence))
+    .map((ref) => {
+      if (typeof ref === "string") return ref;
+      if (ref?.id) return String(ref.id);
+      if (ref?.summary) return String(ref.summary);
+      return JSON.stringify(ref).slice(0, 180);
+    });
+}
+
+function deriveCandidateCapabilities(repo, extraction, evidencePack, targetTopic) {
+  const repoTopics = toArray(repo?.topics).slice(0, 8);
+  const language = repo?.primary_language || repo?.language;
+  return unique([
+    targetTopic ? slug(targetTopic) : null,
+    language ? slug(language) : null,
+    ...repoTopics.map(slug),
+    ...toArray(extraction?.capabilities),
+    ...toArray(evidencePack.tags),
+  ]).slice(0, 12);
+}
+
+function buildDraftSkillMd(candidate, synthesisText) {
+  if (synthesisText && String(synthesisText).trim()) {
+    return String(synthesisText).trim();
+  }
+  return [
+    `# ${candidate.title}`,
+    "",
+    "## Purpose",
+    candidate.summary,
+    "",
+    "## Source",
+    `- Repo: ${candidate.source_repo || "unresolved"}`,
+    ...candidate.source_refs.map((ref) => `- Evidence: ${ref}`),
+    "",
+    "## Capabilities",
+    ...candidate.capabilities.map((capability) => `- ${capability}`),
+    "",
+    "## Suggested Tools",
+    ...candidate.suggested_tools.map((tool) => `- ${tool}`),
+    "",
+    "## Review Notes",
+    "- This is an internal pending draft generated from OCR evidence.",
+    "- Validate source evidence before promoting to SKILL.md, RULES.md, or WORKFLOWS.md.",
+  ].join("\n");
+}
+
+async function writeReviewArtifact(rootDir, folder, id, artifact) {
+  const dir = path.join(rootDir, "data", "review", folder);
+  await fs.mkdir(dir, { recursive: true });
+  const filePath = path.join(dir, `${slug(id)}.json`);
+  await fs.writeFile(filePath, `${JSON.stringify(artifact, null, 2)}\n`, "utf8");
+  return path.relative(rootDir, filePath);
 }
 
 export async function inspectModelZoo(rootDir, args = {}) {
@@ -181,6 +348,9 @@ export async function inspectImageWithOcr(args = {}) {
     prompt: args.prompt,
     model: args.model,
     allow_url: Boolean(args.allow_url),
+    allow_remote: Boolean(args.allow_remote),
+    allow_file_uri: Boolean(args.allow_file_uri),
+    privacy_mode: args.privacy_mode || "local",
   });
   return withReviewEnvelope("image-ocr", {
     title: "Image OCR evidence",
@@ -214,7 +384,10 @@ export async function inspectPdfWithOcr(args = {}) {
     mode: args.mode || "markdown",
     prompt: args.prompt,
     model: args.model,
-    privacy_mode: args.privacy_mode || "internal",
+    allow_file_uri: Boolean(args.allow_file_uri),
+    allow_url: Boolean(args.allow_url),
+    allow_remote: Boolean(args.allow_remote),
+    privacy_mode: args.privacy_mode || "local",
   });
   return withReviewEnvelope("pdf-ocr", {
     title: "PDF OCR evidence",
@@ -263,6 +436,151 @@ export async function extractSkillEvidenceFromPdf(args = {}) {
   });
 }
 
+export async function generateSkillCandidateFromOcrEvidence(rootDir, args = {}) {
+  const { repo, extraction, nwo } = await resolveRepoContext(rootDir, args);
+  if (!repo) {
+    return withReviewEnvelope("ocr-skill-candidate", {
+      title: "OCR evidence to SKILL candidate",
+      summary: "No repository URL, local repo path, name, or author resolved to a repo context.",
+      evidence: ["Missing repo_url, local_repo_path, nwo, or name/author input."],
+      nextActions: ["Provide a GitHub repo URL, local repo path, or known Vega Labs repository name."],
+    }, { tags: ["ocr", "skill-candidate"], confidence: 0.25 });
+  }
+
+  const evidenceResults = [];
+  const imageTarget = args.image || args.image_path || args.screenshot_path;
+  if (imageTarget) {
+    evidenceResults.push(await extractRepoVisualEvidence({
+      ...args,
+      image: args.image,
+      path: args.image_path || args.screenshot_path,
+      nwo,
+      mode: args.image_mode || "skill_evidence",
+      prompt: args.image_prompt || "Extract technical evidence that could support a reusable Core-X skill candidate.",
+    }));
+  }
+  if (args.pdf_path || args.pdf || args.file_path) {
+    evidenceResults.push(await extractSkillEvidenceFromPdf({
+      ...args,
+      path: args.pdf_path,
+      file: args.pdf,
+      file_path: args.file_path,
+      mode: "skill_evidence",
+    }));
+  }
+
+  const createdAt = new Date().toISOString();
+  const sourceRefs = unique([
+    repoSourceUrl(repo, args),
+    args.local_repo_path ? `local:${localPathRef(args.local_repo_path, rootDir)}` : null,
+    args.pdf_path ? `pdf:${localPathRef(args.pdf_path, rootDir)}` : null,
+    args.image_path ? `image:${localPathRef(args.image_path, rootDir)}` : null,
+    args.screenshot_path ? `image:${localPathRef(args.screenshot_path, rootDir)}` : null,
+    args.image && String(args.image).startsWith("data:image/") ? "image:base64-input" : null,
+  ]);
+
+  const evidencePack = {
+    id: `vega-evidence-pack-${slug(nwo || repo.name)}-${slug(args.target_topic || "general")}`,
+    title: `OCR evidence pack for ${nwo || repo.name}`,
+    summary: evidenceResults.length > 0
+      ? `Collected ${evidenceResults.length} OCR evidence result(s) for SKILL candidate review.`
+      : "No OCR file/image inputs were supplied; evidence pack uses repository metadata only.",
+    source_repo: nwo,
+    source_refs: sourceRefs,
+    evidence_refs: evidenceRefsFrom(evidenceResults),
+    repo_metadata: {
+      name: repo.name,
+      author: repo.author,
+      description: repo.description || "",
+      language: repo.primary_language || repo.language || null,
+      topics: toArray(repo.topics).slice(0, 12),
+      stars: repo.stars || 0,
+      forks: repo.forks || 0,
+    },
+    ocr_results: evidenceResults,
+    review_state: "pending",
+    visibility: "internal",
+    generated_by: GENERATED_BY,
+    created_at: createdAt,
+  };
+
+  const capabilities = deriveCandidateCapabilities(repo, extraction, evidencePack, args.target_topic);
+  const synthesisPrompt = [
+    `Repository: ${nwo || repo.name}`,
+    `Description: ${repo.description || "No description"}`,
+    `Target topic: ${args.target_topic || "general"}`,
+    `Capabilities: ${capabilities.join(", ") || "unknown"}`,
+    `Evidence refs: ${evidencePack.evidence_refs.join(", ") || "metadata only"}`,
+    "Draft an internal pending SKILL.md candidate. Keep it evidence-grounded and include limitations.",
+  ].join("\n");
+  const synthesisText = await callResponsesForSynthesis(synthesisPrompt, args);
+
+  const candidateBase = {
+    id: `vega-skill-candidate-${slug(nwo || repo.name)}-${slug(args.target_topic || "ocr-evidence")}`,
+    title: `${repo.name} OCR evidence SKILL candidate`,
+    summary: `Internal pending SKILL candidate derived from ${nwo || repo.name} metadata and OCR evidence.`,
+    source_repo: nwo,
+    source_refs: sourceRefs,
+    evidence_refs: evidencePack.evidence_refs,
+    capabilities,
+    suggested_house_connections: unique([
+      "vega-lab",
+      capabilities.includes("ml-ai") ? "project-anja" : null,
+      capabilities.includes("frontend-ui") ? "le-belle-epoch" : null,
+      capabilities.includes("repo-ops") ? "core-x" : null,
+    ]),
+    suggested_tools: [
+      "inspect_image_with_ocr",
+      "inspect_pdf_with_ocr",
+      "extract_repo_skills",
+      "generate_repo_ops_kit",
+    ],
+    confidence: evidenceResults.length > 0 ? 0.78 : 0.58,
+    limitations: unique([
+      evidenceResults.length === 0 ? "No OCR image or PDF evidence was supplied." : null,
+      synthesisText ? null : "Local /v1/responses synthesis was unavailable; deterministic fallback draft was used.",
+      "Human review is required before creating or publishing any SKILL.md artifact.",
+    ]),
+    review_state: "pending",
+    visibility: "internal",
+    generated_by: GENERATED_BY,
+    created_at: createdAt,
+  };
+  const skillCandidate = {
+    ...candidateBase,
+    draft_skill_md: buildDraftSkillMd(candidateBase, synthesisText),
+  };
+
+  const result = withReviewEnvelope("ocr-skill-candidate", {
+    title: skillCandidate.title,
+    summary: skillCandidate.summary,
+    sourceRepo: nwo,
+    sourceUrl: repoSourceUrl(repo, args),
+    evidence: skillCandidate.evidence_refs,
+    evidencePack,
+    skillCandidate,
+    candidate: skillCandidate,
+    nextActions: [
+      "Review evidence refs and limitations.",
+      "Promote to SKILL.md only after human approval.",
+      "Attach accepted candidate to the relevant house workflow or action item.",
+    ],
+  }, {
+    sourceRepo: nwo,
+    sourceUrl: repoSourceUrl(repo, args),
+    tags: ["ocr", "skill-candidate", "review-gated"],
+    confidence: skillCandidate.confidence,
+  });
+
+  if (args.writeArtifact !== false) {
+    result.artifacts = {
+      evidencePack: await writeReviewArtifact(rootDir, "evidence-packs", evidencePack.id, evidencePack),
+      skillCandidate: await writeReviewArtifact(rootDir, "skill-candidates", skillCandidate.id, skillCandidate),
+    };
+  }
+  return result;
+}
+
 export async function executeVegaOcrTool(rootDir, name, args = {}) {
   switch (name) {
     case "inspect_model_zoo":
@@ -277,6 +595,8 @@ export async function executeVegaOcrTool(rootDir, name, args = {}) {
       return await extractRepoVisualEvidence(args);
     case "extract_skill_evidence_from_pdf":
       return await extractSkillEvidenceFromPdf(args);
+    case "generate_skill_candidate_from_ocr_evidence":
+      return await generateSkillCandidateFromOcrEvidence(rootDir, args);
     default:
       throw new Error(`Unknown Vega OCR tool: ${name}`);
   }
@@ -352,6 +672,31 @@ export const OCR_TOOL_DEFINITIONS = [
         file: { type: "string" },
         max_pages: { type: "number" },
         prompt: { type: "string" },
+      },
+    },
+  },
+  {
+    name: "generate_skill_candidate_from_ocr_evidence",
+    description: "Generate an internal pending SKILL candidate from repo metadata plus optional OCR image/PDF evidence.",
+    inputSchema: {
+      type: "object",
+      properties: {
+        repo_url: { type: "string" },
+        local_repo_path: { type: "string" },
+        name: { type: "string" },
+        author: { type: "string" },
+        nwo: { type: "string" },
+        pdf_path: { type: "string" },
+        image_path: { type: "string" },
+        screenshot_path: { type: "string" },
+        image: { type: "string" },
+        target_topic: { type: "string" },
+        model: { type: "string" },
+        skip_synthesis: { type: "boolean" },
+        writeArtifact: { type: "boolean" },
+        allow_file_uri: { type: "boolean" },
+        allow_url: { type: "boolean" },
+        allow_remote: { type: "boolean" },
       },
     },
   },

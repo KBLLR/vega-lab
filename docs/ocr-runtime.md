@@ -22,12 +22,14 @@ OCR means Optical Character Recognition and visual document understanding. It is
 - `inspect_pdf_with_ocr`
 - `extract_repo_visual_evidence`
 - `extract_skill_evidence_from_pdf`
+- `generate_skill_candidate_from_ocr_evidence`
 - `inspect_model_zoo`
 
 ## Rules
 
 - Use OCR for screenshots, PDFs, diagrams, graphs, tables, and visual SKILL evidence.
 - Keep OCR outputs internal/pending until reviewed.
+- `generate_skill_candidate_from_ocr_evidence` may write internal review artifacts only under `data/review/evidence-packs/` and `data/review/skill-candidates/`.
 - Do not auto-publish, create houses, open PRs, merge, deploy, or mutate other repositories from OCR output.
 - Keep model-zoo as the source of truth for OCR/VLM model metadata.
 - If OCR or `mlx-vision` is offline, report the failed dependency instead of pretending extraction happened.
