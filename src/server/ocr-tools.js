@@ -572,7 +572,7 @@ export async function generateSkillCandidateFromOcrEvidence(rootDir, args = {}) 
     confidence: skillCandidate.confidence,
   });
 
-  if (args.writeArtifact !== false) {
+  if (args.writeArtifact === true) {
     result.artifacts = {
       evidencePack: await writeReviewArtifact(rootDir, "evidence-packs", evidencePack.id, evidencePack),
       skillCandidate: await writeReviewArtifact(rootDir, "skill-candidates", skillCandidate.id, skillCandidate),

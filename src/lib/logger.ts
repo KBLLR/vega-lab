@@ -15,6 +15,17 @@ interface RepoViewDetails {
   source: 'card' | 'table';
 }
 
+function toEventBusMessage(event: AgentEvent) {
+  return {
+    message_id: `vega-lab-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`,
+    type: 'context.share',
+    source_house: HOUSE_ID,
+    target: { broadcast: true },
+    payload: { event },
+    timestamp: event.timestamp || new Date().toISOString(),
+  };
+}
+
 /**
  * Logger service that emits to the central Event Bus
  * and optionally caches locally for offline support.
@@ -24,17 +35,16 @@ export const logger = {
    * Log an event to the Event Bus (Authoritative Source)
    */
   async logEvent(event: AgentEvent) {
+    this.saveToLocalCache(event);
+
     try {
-      // 1. Emit to Event Bus
-      await fetch(`${EVENT_BUS_URL}/emit`, {
+      await fetch(`${EVENT_BUS_URL}/events`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(event),
+        body: JSON.stringify(toEventBusMessage(event)),
       });
-    } catch (error) {
-      console.warn('Failed to emit event to Event Bus:', error);
-      // Fallback: Store locally (offline mode)
-      this.saveToLocalCache(event);
+    } catch {
+      // Offline mode is expected during local UI work. The local cache above is authoritative until SSE reconnects.
     }
   },
 

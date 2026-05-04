@@ -4,7 +4,7 @@ import { logger } from "../lib/logger";
 import { Download, Activity, Server, Database } from "lucide-react";
 
 const EVENT_BUS_URL = import.meta.env.VITE_EVENT_BUS_URL || "/bus";
-const EVENT_BUS_SSE_URL = `${EVENT_BUS_URL}/events?agency=vega-lab`;
+const EVENT_BUS_SSE_URL = `${EVENT_BUS_URL}/events?house=vega-lab`;
 
 type AgentEventWithDetails = AgentEvent & {
   data?: unknown;
@@ -27,6 +27,32 @@ function renderEventDetails(event: AgentEvent) {
   return JSON.stringify(event);
 }
 
+function normalizeSseEvent(payload: unknown): AgentEvent | null {
+  if (!payload || typeof payload !== "object") return null;
+
+  const eventEnvelope = payload as {
+    type?: string;
+    source_house?: string;
+    timestamp?: string;
+    payload?: { event?: AgentEvent; [key: string]: unknown };
+  };
+
+  if (eventEnvelope.payload?.event?.type) {
+    return eventEnvelope.payload.event;
+  }
+
+  if (typeof eventEnvelope.type === "string") {
+    return {
+      type: eventEnvelope.type,
+      house_id: eventEnvelope.source_house || getEventHouseId(eventEnvelope as AgentEvent),
+      timestamp: eventEnvelope.timestamp || new Date().toISOString(),
+      data: eventEnvelope.payload,
+    };
+  }
+
+  return null;
+}
+
 export const ActivityLog: React.FC = () => {
   const [events, setEvents] = useState<AgentEvent[]>([]);
   const [filterType, setFilterType] = useState<string>("all");
@@ -42,9 +68,10 @@ export const ActivityLog: React.FC = () => {
       console.log("Connected to Event Bus SSE");
     };
 
-    eventSource.onmessage = (message) => {
+    const handleMessage = (message: MessageEvent<string>) => {
       try {
-        const event: AgentEvent = JSON.parse(message.data);
+        const event = normalizeSseEvent(JSON.parse(message.data));
+        if (!event) return;
         setEvents((previous) => [event, ...previous.slice(0, 199)]);
         logger.saveToLocalCache(event);
       } catch (error) {
@@ -52,8 +79,13 @@ export const ActivityLog: React.FC = () => {
       }
     };
 
-    eventSource.onerror = (error) => {
-      console.warn("Event Bus SSE Error (likely offline or reconnecting)", error);
+    eventSource.onmessage = handleMessage;
+    eventSource.addEventListener("context.share", handleMessage as EventListener);
+    eventSource.addEventListener("ping", () => {
+      setIsConnected(true);
+    });
+
+    eventSource.onerror = () => {
       setIsConnected(false);
     };
 

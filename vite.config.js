@@ -11,6 +11,9 @@ const rootDir = resolve(__dirname, 'src');
 const openResponsesTarget = process.env.VITE_EVENT_BUS_PROXY_TARGET
   || process.env.VITE_LOCAL_OPENRESPONSES_URL
   || 'http://127.0.0.1:8090';
+const eventBusTarget = process.env.VITE_EVENT_BUS_SSE_PROXY_TARGET
+  || process.env.VITE_LOCAL_EVENT_BUS_URL
+  || 'http://127.0.0.1:8085';
 
 export default defineConfig({
   root: rootDir,
@@ -33,6 +36,11 @@ export default defineConfig({
     hmr: { overlay: true },
     open: true,
     proxy: {
+      '/bus/events': {
+        target: eventBusTarget,
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/bus/, ''),
+      },
       '/bus': {
         target: openResponsesTarget,
         changeOrigin: true,
