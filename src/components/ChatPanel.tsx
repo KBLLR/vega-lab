@@ -203,12 +203,17 @@ export function ChatPanel({
 
     streamRef.current?.abort();
     streamRef.current = streamOpenResponses({
-      endpoint: `${runtimeTarget.busUrl}/v1/responses`,
+      endpoint: `${runtimeTarget.busUrl}${runtimeTarget.responsesPath}`,
       body: {
         model: runtimeTarget.model || defaultModel || "local-model",
         messages: conversation,
         agent_id: route.agentId || agentId,
         house_id: HOUSE_ID,
+        task_kind: route.capability,
+        target_repo: { author: repo.author, name: repo.name },
+        required_capabilities: [route.capability, "tool_execution"],
+        evidence_policy: "required",
+        model_profile: runtimeTarget.modelProfile,
         tools,
         tool_choice: "auto",
       },

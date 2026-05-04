@@ -11,6 +11,28 @@ const modelZooRoot = path.resolve(process.env.MODEL_ZOO_ROOT || path.join(projec
 const snapshotName = "model-zoo-text-models.json";
 
 const WEIGHT_FILE_PATTERN = /\.(safetensors|gguf|bin|npz)$/i;
+const HIDDEN_MODEL_TERMS = ["llasa", "nsfw", "abliterated", "utena"];
+
+function visibilityForStatus(status) {
+  if (status === "local-loadable") return { visibilityClass: "loadable_local", normalSelectable: true, reason: null };
+  if (status === "local-incomplete") {
+    return {
+      visibilityClass: "incomplete_local",
+      normalSelectable: false,
+      reason: "Local directory exists but required model files are incomplete.",
+    };
+  }
+  return {
+    visibilityClass: "candidate_download",
+    normalSelectable: false,
+    reason: "Known by model-zoo but not downloaded locally.",
+  };
+}
+
+function isHiddenModelId(id) {
+  const lowered = String(id || "").toLowerCase();
+  return HIDDEN_MODEL_TERMS.some((term) => lowered.includes(term));
+}
 
 async function exists(targetPath) {
   try {
@@ -56,6 +78,7 @@ async function inspectLocalTextModel(directoryName) {
     downloaded: hasWeights,
     loadable: hasWeights && hasConfig,
     status: hasWeights && hasConfig ? "local-loadable" : "local-incomplete",
+    ...visibilityForStatus(hasWeights && hasConfig ? "local-loadable" : "local-incomplete"),
     capabilities: [],
     aliases: [directoryName],
     evidence: [
@@ -68,6 +91,7 @@ async function inspectLocalTextModel(directoryName) {
 }
 
 function isTextGenerationModel(model) {
+  const id = String(model?.id || "").toLowerCase();
   const category = String(model?.category || "").toLowerCase();
   const type = String(model?.type || "").toLowerCase();
   const task = String(model?.task || "").toLowerCase();
@@ -75,6 +99,8 @@ function isTextGenerationModel(model) {
   const localPath = String(model?.local?.path || "").toLowerCase();
   const modality = Array.isArray(model?.modality) ? model.modality.map(String).join(",").toLowerCase() : "";
 
+  if (isHiddenModelId(id)) return false;
+  if (type === "embedding" || task.includes("embedding")) return false;
   if (backend === "mlx-audio" || task.includes("speech") || task.includes("audio")) return false;
   if (category === "text" && (task.includes("generation") || type === "llm" || type === "text-generation")) return true;
   if (backend === "mlx-llm") return true;
@@ -104,6 +130,7 @@ function mergeModelRecord(recordsById, model) {
     downloaded: false,
     loadable: false,
     status: "registry-candidate",
+    ...visibilityForStatus("registry-candidate"),
     capabilities: [],
     aliases: [],
     evidence: [],
@@ -142,6 +169,7 @@ async function buildSnapshot() {
   const textModelsRoot = path.join(modelZooRoot, "models", "text");
 
   for (const directoryName of await listDirectories(textModelsRoot)) {
+    if (isHiddenModelId(directoryName)) continue;
     const record = await inspectLocalTextModel(directoryName);
     localRecords.set(record.id, record);
   }
@@ -164,13 +192,16 @@ async function buildSnapshot() {
       record.source = "model-zoo-candidate";
       record.downloaded = false;
       record.loadable = false;
+      Object.assign(record, visibilityForStatus("registry-candidate"));
     }
     if (record.status === "local-loadable" || record.status === "local-incomplete") {
       record.source = "model-zoo-local";
+      Object.assign(record, visibilityForStatus(record.status));
     }
   }
 
   const models = [...localRecords.values()]
+    .filter((record) => !isHiddenModelId(record.id) && !isHiddenModelId(record.runtimeId))
     .map((record) => ({
       ...record,
       evidence: [...new Set(record.evidence || [])],

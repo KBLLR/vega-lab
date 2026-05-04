@@ -102,7 +102,7 @@ export function ReadmePanel({
 
     streamRef.current?.abort();
     streamRef.current = streamOpenResponses({
-      endpoint: `${runtimeTarget.busUrl}/v1/responses`,
+      endpoint: `${runtimeTarget.busUrl}${runtimeTarget.responsesPath}`,
       body: {
         model: selectedModel || runtimeTarget.model || "local-model",
         messages: conversation,
@@ -110,6 +110,11 @@ export function ReadmePanel({
         tool_choice: "auto",
         agent_id: route.agentId,
         house_id: HOUSE_ID,
+        task_kind: route.capability,
+        target_repo: { author: repo.author, name: repo.name },
+        required_capabilities: [route.capability, "tool_execution"],
+        evidence_policy: "required",
+        model_profile: runtimeTarget.modelProfile,
       },
       onEvent: (event) => {
         if (event.type === "response.output_text.delta" && event.delta) {
