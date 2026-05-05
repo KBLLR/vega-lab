@@ -7443,92 +7443,94 @@
         "kind": "readme",
         "title": "mindmesh README Draft",
         "suggestedPath": "README.md",
-        "body": "# mindmesh\n\nmindmesh needs a concise purpose statement before broader core-x adoption.\n\n## Vega Lab Fit\n- Classification: tool\n- Capabilities: ml-ai\n- House skills: repo-adoption, mine-execution\n\n## Local Setup\n- Package managers: npm, npm-lock\n- Document install, dev, build, and verification commands before broad reuse.\n- Keep runtime assumptions explicit; prefer local MLX/OpenResponses for model-assisted work.\n\n## Verification\n- Define a lint/test/build command before code edits.\n\n## Evidence\n- Repository: KBLLR/mindmesh\n- Adoption kind: tool\n- Capabilities: ml-ai\n- House skills: repo-adoption, mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Risk: Maintenance work has no obvious verification command.",
+        "body": "# mindmesh\n\nmindmesh needs a concise purpose statement before broader core-x adoption.\n\n## Vega Lab Fit\n- Classification: tool\n- Capabilities: ml-ai\n- House skills: repo-adoption, mine-execution\n\n## Local Setup\n- Package managers: npm, npm-lock\n- Document install, dev, build, and verification commands before broad reuse.\n- Keep runtime assumptions explicit; prefer local MLX/OpenResponses for model-assisted work.\n\n## Verification\n- Define a lint/test/build command before code edits.\n\n## Evidence\n- Repository: KBLLR/mindmesh\n- Adoption kind: tool\n- Capabilities: ml-ai\n- House skills: repo-adoption, mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: Repository appears stale based on last activity.",
         "evidence": [
           "Repository: KBLLR/mindmesh",
           "Adoption kind: tool",
           "Capabilities: ml-ai",
           "House skills: repo-adoption, mine-execution",
           "Finding: No test/check/lint script detected from package metadata.",
-          "Risk: Maintenance work has no obvious verification command."
+          "Finding: Repository appears stale based on last activity."
         ]
       },
       {
         "kind": "agents",
         "title": "mindmesh AGENTS Draft",
         "suggestedPath": "AGENTS.md",
-        "body": "# mindmesh Agents\n\n## Product Truth\n- Repository: KBLLR/mindmesh\n- Vega Lab classification: tool\n- Active mission target: Local MLX\n\n## Operating Rules\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\n\n## Commands\n- Add the smallest reliable verification command.\n\n## Agent Boundaries\n- Do not mutate deployment, secrets, or release configuration without explicit approval.\n- Prefer draft plans and reviewable diffs over broad automation.\n- Preserve existing product direction; use Vega Lab evidence before adding new abstractions.",
+        "body": "# mindmesh Agents\n\n## Product Truth\n- Repository: KBLLR/mindmesh\n- Vega Lab classification: tool\n- Active mission target: Local MLX\n\n## Operating Rules\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\n\n## Commands\n- Add the smallest reliable verification command.\n\n## Agent Boundaries\n- Do not mutate deployment, secrets, or release configuration without explicit approval.\n- Prefer draft plans and reviewable diffs over broad automation.\n- Preserve existing product direction; use Vega Lab evidence before adding new abstractions.",
         "evidence": [
           "Repository: KBLLR/mindmesh",
           "Adoption kind: tool",
           "Capabilities: ml-ai",
           "House skills: repo-adoption, mine-execution",
           "Finding: No test/check/lint script detected from package metadata.",
-          "Risk: Maintenance work has no obvious verification command."
+          "Finding: Repository appears stale based on last activity."
         ]
       },
       {
         "kind": "maintenance",
         "title": "mindmesh Maintenance Plan",
         "suggestedPath": "docs/maintenance-plan.md",
-        "body": "# Maintenance Plan: KBLLR/mindmesh\n\n## Current Signals\n- Health flag: private\n- No test/check/lint script detected from package metadata.\n\n## Recommended Pass\n- Confirm install path and package manager.\n- Run available verification commands before editing.\n- Patch stale docs, commands, and workflow assumptions first.\n- Open the smallest useful PR only after human approval.\n- Vega Lab action: mlx-mission\n- Vega Lab action: ops-kit\n- Vega Lab action: codex-mission\n- Vega Lab action: claude-mission\n- Vega Lab action: house-integration\n\n## Evidence\n- Repository: KBLLR/mindmesh\n- Adoption kind: tool\n- Capabilities: ml-ai\n- House skills: repo-adoption, mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Risk: Maintenance work has no obvious verification command.\n- Health flag: private\n- Action item: Define verification for mindmesh",
+        "body": "# Maintenance Plan: KBLLR/mindmesh\n\n## Current Signals\n- Health flag: stale\n- Health flag: private\n- No test/check/lint script detected from package metadata.\n- Repository appears stale based on last activity.\n\n## Recommended Pass\n- Confirm install path and package manager.\n- Run available verification commands before editing.\n- Patch stale docs, commands, and workflow assumptions first.\n- Open the smallest useful PR only after human approval.\n- Vega Lab action: mlx-mission\n- Vega Lab action: ops-kit\n- Vega Lab action: codex-mission\n- Vega Lab action: claude-mission\n- Vega Lab action: maintenance-plan\n- Vega Lab action: house-integration\n\n## Evidence\n- Repository: KBLLR/mindmesh\n- Adoption kind: tool\n- Capabilities: ml-ai\n- House skills: repo-adoption, mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: Repository appears stale based on last activity.\n- Risk: Maintenance work has no obvious verification command.\n- Risk: Dependencies, build targets, or deployment assumptions may be outdated.",
         "evidence": [
           "Repository: KBLLR/mindmesh",
           "Adoption kind: tool",
           "Capabilities: ml-ai",
           "House skills: repo-adoption, mine-execution",
           "Finding: No test/check/lint script detected from package metadata.",
+          "Finding: Repository appears stale based on last activity.",
           "Risk: Maintenance work has no obvious verification command.",
-          "Health flag: private",
-          "Action item: Define verification for mindmesh"
+          "Risk: Dependencies, build targets, or deployment assumptions may be outdated."
         ]
       },
       {
         "kind": "deployment",
         "title": "mindmesh Deployment Plan",
         "suggestedPath": "docs/deployment-plan.md",
-        "body": "# Deployment Plan: KBLLR/mindmesh\n\n## Known Deployment Evidence\n- Workflow: ci.yml\n\n## Draft Checks\n- Identify expected host and runtime.\n- Document build command, output directory, and required environment variables.\n- Verify preview URL and production URL checks.\n- Keep deploy authority manual; Vega Lab drafts plans and inbox items only.\n\n## Evidence\n- Repository: KBLLR/mindmesh\n- Adoption kind: tool\n- Capabilities: ml-ai\n- House skills: repo-adoption, mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Risk: Maintenance work has no obvious verification command.\n- Health flag: private\n- Action item: Define verification for mindmesh",
+        "body": "# Deployment Plan: KBLLR/mindmesh\n\n## Known Deployment Evidence\n- Workflow: ci.yml\n\n## Draft Checks\n- Identify expected host and runtime.\n- Document build command, output directory, and required environment variables.\n- Verify preview URL and production URL checks.\n- Keep deploy authority manual; Vega Lab drafts plans and inbox items only.\n\n## Evidence\n- Repository: KBLLR/mindmesh\n- Adoption kind: tool\n- Capabilities: ml-ai\n- House skills: repo-adoption, mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: Repository appears stale based on last activity.\n- Risk: Maintenance work has no obvious verification command.\n- Risk: Dependencies, build targets, or deployment assumptions may be outdated.",
         "evidence": [
           "Repository: KBLLR/mindmesh",
           "Adoption kind: tool",
           "Capabilities: ml-ai",
           "House skills: repo-adoption, mine-execution",
           "Finding: No test/check/lint script detected from package metadata.",
+          "Finding: Repository appears stale based on last activity.",
           "Risk: Maintenance work has no obvious verification command.",
-          "Health flag: private",
-          "Action item: Define verification for mindmesh"
+          "Risk: Dependencies, build targets, or deployment assumptions may be outdated."
         ]
       },
       {
         "kind": "testing",
         "title": "mindmesh Test Plan",
         "suggestedPath": "docs/test-plan.md",
-        "body": "# Test Plan: KBLLR/mindmesh\n\n## Available Commands\n- No test/check/build script detected from synced package metadata.\n\n## Minimum Verification Contract\n- Document one install command.\n- Document one fast smoke command.\n- Document one release/build command when deployable.\n- If no commands exist, create a tracked issue or action item before implementation work.\n\n## Evidence\n- Repository: KBLLR/mindmesh\n- Adoption kind: tool\n- Capabilities: ml-ai\n- House skills: repo-adoption, mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Risk: Maintenance work has no obvious verification command.\n- Health flag: private\n- Action item: Define verification for mindmesh",
+        "body": "# Test Plan: KBLLR/mindmesh\n\n## Available Commands\n- No test/check/build script detected from synced package metadata.\n\n## Minimum Verification Contract\n- Document one install command.\n- Document one fast smoke command.\n- Document one release/build command when deployable.\n- If no commands exist, create a tracked issue or action item before implementation work.\n\n## Evidence\n- Repository: KBLLR/mindmesh\n- Adoption kind: tool\n- Capabilities: ml-ai\n- House skills: repo-adoption, mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: Repository appears stale based on last activity.\n- Risk: Maintenance work has no obvious verification command.\n- Risk: Dependencies, build targets, or deployment assumptions may be outdated.",
         "evidence": [
           "Repository: KBLLR/mindmesh",
           "Adoption kind: tool",
           "Capabilities: ml-ai",
           "House skills: repo-adoption, mine-execution",
           "Finding: No test/check/lint script detected from package metadata.",
+          "Finding: Repository appears stale based on last activity.",
           "Risk: Maintenance work has no obvious verification command.",
-          "Health flag: private",
-          "Action item: Define verification for mindmesh"
+          "Risk: Dependencies, build targets, or deployment assumptions may be outdated."
         ]
       },
       {
         "kind": "action-item",
         "title": "mindmesh Action Item Draft",
         "suggestedPath": "ops/action-item.md",
-        "body": "# Action Item Draft: KBLLR/mindmesh\n\n## Recommended Actions\n- testing: Define verification for mindmesh\n\n## Mission Target\n- Local MLX\n\n## Evidence\n- Repository: KBLLR/mindmesh\n- Adoption kind: tool\n- Capabilities: ml-ai\n- House skills: repo-adoption, mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Risk: Maintenance work has no obvious verification command.\n- Health flag: private\n- Action item: Define verification for mindmesh",
+        "body": "# Action Item Draft: KBLLR/mindmesh\n\n## Recommended Actions\n- maintenance: Run a maintenance pass on mindmesh\n- testing: Define verification for mindmesh\n\n## Mission Target\n- Local MLX\n\n## Evidence\n- Repository: KBLLR/mindmesh\n- Adoption kind: tool\n- Capabilities: ml-ai\n- House skills: repo-adoption, mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: Repository appears stale based on last activity.\n- Risk: Maintenance work has no obvious verification command.\n- Risk: Dependencies, build targets, or deployment assumptions may be outdated.\n- Health flag: stale\n- Health flag: private",
         "evidence": [
           "Repository: KBLLR/mindmesh",
           "Adoption kind: tool",
           "Capabilities: ml-ai",
           "House skills: repo-adoption, mine-execution",
           "Finding: No test/check/lint script detected from package metadata.",
+          "Finding: Repository appears stale based on last activity.",
           "Risk: Maintenance work has no obvious verification command.",
-          "Health flag: private",
-          "Action item: Define verification for mindmesh"
+          "Risk: Dependencies, build targets, or deployment assumptions may be outdated.",
+          "Health flag: stale",
+          "Health flag: private"
         ]
       }
     ],
@@ -7538,8 +7540,12 @@
       "Capabilities: ml-ai",
       "House skills: repo-adoption, mine-execution",
       "Finding: No test/check/lint script detected from package metadata.",
+      "Finding: Repository appears stale based on last activity.",
       "Risk: Maintenance work has no obvious verification command.",
+      "Risk: Dependencies, build targets, or deployment assumptions may be outdated.",
+      "Health flag: stale",
       "Health flag: private",
+      "Action item: Run a maintenance pass on mindmesh",
       "Action item: Define verification for mindmesh"
     ],
     "recommendedActions": [
@@ -7547,7 +7553,9 @@
       "ops-kit",
       "codex-mission",
       "claude-mission",
+      "maintenance-plan",
       "house-integration",
+      "maintenance:vega-lab:maintenance:kbllr-mindmesh",
       "testing:vega-lab:testing:kbllr-mindmesh",
       "review-draft-only"
     ]
@@ -11594,7 +11602,7 @@
   },
   {
     "nwo": "KBLLR/vega-lab",
-    "generatedAt": "2026-05-03T00:59:51.000Z",
+    "generatedAt": "2026-05-04T00:58:55.000Z",
     "target": "mlx",
     "artifacts": [
       {
