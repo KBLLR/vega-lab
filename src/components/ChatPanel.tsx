@@ -61,9 +61,23 @@ export function ChatPanel({
   const scrollRef = useRef<HTMLDivElement>(null);
   const streamRef = useRef<AbortController | null>(null);
   const lastPrefillRef = useRef<string | null>(null);
+  const messagesRef = useRef<Message[]>([]);
+  const repoSessionRef = useRef<string | null>(null);
 
   const tools = useMemo(() => buildVegaLabTools(), []);
   const activeMissionTarget = runtimeTarget.mode === "local" ? "mlx" : "codex";
+  const repoSessionKey = repo ? `${repo.author}/${repo.name}` : null;
+
+  function getWelcomeMessages(currentRepo: Repo): Message[] {
+    return [
+      {
+        id: `welcome-${currentRepo.author}-${currentRepo.name}`,
+        role: "assistant",
+        content: `Vega Lab repo chat ready for ${currentRepo.author}/${currentRepo.name}. I can route to specialists, call typed house tools, and keep this session scoped to this repo.`,
+        timestamp: Date.now(),
+      },
+    ];
+  }
 
   useEffect(() => {
     fetchRuntimeModels(runtimeTarget.busUrl)
@@ -84,19 +98,23 @@ export function ChatPanel({
   }, []);
 
   useEffect(() => {
-    if (isOpen && repo) {
-      setMessages([
-        {
-          id: "welcome",
-          role: "assistant",
-          content: `Vega Lab Orchestrator online. I can analyze ${repo.author}/${repo.name}, route to a specialist, and call the OpenResponses house tools directly.`,
-          timestamp: Date.now(),
-        },
-      ]);
-      setToolCalls({});
-      setActiveRoute(null);
-    }
-  }, [isOpen, repo]);
+    if (!isOpen || !repo || !repoSessionKey) return;
+    streamRef.current?.abort();
+    streamRef.current = null;
+    const welcomeMessages = getWelcomeMessages(repo);
+    repoSessionRef.current = repoSessionKey;
+    messagesRef.current = welcomeMessages;
+    lastPrefillRef.current = null;
+    setInput("");
+    setMessages(welcomeMessages);
+    setToolCalls({});
+    setActiveRoute(null);
+    setIsLoading(false);
+  }, [isOpen, repo, repoSessionKey]);
+
+  useEffect(() => {
+    messagesRef.current = messages;
+  }, [messages]);
 
   useEffect(() => {
     if (scrollRef.current) {
@@ -112,13 +130,15 @@ export function ChatPanel({
 
   function handleStreamEvent(event: OpenResponsesEvent, assistantId: string) {
     if (event.type === "response.output_text.delta" && event.delta) {
-      setMessages((previous) =>
-        previous.map((message) =>
+      setMessages((previous) => {
+        const nextMessages = previous.map((message) =>
           message.id === assistantId
             ? { ...message, content: `${message.content}${event.delta}` }
             : message,
-        ),
-      );
+        );
+        messagesRef.current = nextMessages;
+        return nextMessages;
+      });
       return;
     }
 
@@ -187,19 +207,27 @@ export function ChatPanel({
 
     const assistantId = `assistant-${Date.now()}`;
 
-    setMessages((previous) => [
-      ...previous,
-      userMessage,
-      { id: assistantId, role: "assistant", content: "", timestamp: Date.now() },
-    ]);
     setInput("");
     setIsLoading(true);
 
+    const repoKeyAtSend = `${repo.author}/${repo.name}`;
+    const scopedMessages = repoSessionRef.current === repoKeyAtSend
+      ? messagesRef.current
+      : getWelcomeMessages(repo);
+
     const conversation = [
       { role: "system", content: buildSystemPrompt(repo, route) },
-      ...messages.map((message) => ({ role: message.role, content: message.content })),
+      ...scopedMessages.map((message) => ({ role: message.role, content: message.content })),
       { role: "user", content },
     ];
+
+    const nextMessages = [
+      ...scopedMessages,
+      userMessage,
+      { id: assistantId, role: "assistant" as const, content: "", timestamp: Date.now() },
+    ];
+    messagesRef.current = nextMessages;
+    setMessages(nextMessages);
 
     streamRef.current?.abort();
     streamRef.current = streamOpenResponses({
@@ -237,19 +265,20 @@ export function ChatPanel({
         ]);
       },
     });
-  }, [agentId, defaultModel, input, messages, onRunComplete, repo, runtimeTarget, tools]);
+  }, [agentId, defaultModel, input, onRunComplete, repo, runtimeTarget, tools]);
 
   useEffect(() => {
     if (!isOpen || !prefill) return;
-    if (lastPrefillRef.current === prefill) return;
+    const scopedPrefillKey = `${repoSessionKey || "none"}:${prefill}`;
+    if (lastPrefillRef.current === scopedPrefillKey) return;
 
-    lastPrefillRef.current = prefill;
+    lastPrefillRef.current = scopedPrefillKey;
     setInput(prefill);
     if (autoSend) {
       handleSend(prefill);
       onPrefillConsumed?.();
     }
-  }, [autoSend, handleSend, isOpen, onPrefillConsumed, prefill]);
+  }, [autoSend, handleSend, isOpen, onPrefillConsumed, prefill, repoSessionKey]);
 
   if (!isOpen) return null;
 
@@ -261,7 +290,7 @@ export function ChatPanel({
             <Bot size={18} />
           </div>
           <div>
-            <div className="orchestrator-name">Orchestrator</div>
+            <div className="orchestrator-name">Repo Chat</div>
             <div className="orchestrator-sub">{repo ? `${repo.author}/${repo.name}` : "No repo selected"}</div>
             {activeRoute ? (
               <div className="orchestrator-sub">{activeRoute.label} · {activeRoute.capability}</div>

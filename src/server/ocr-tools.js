@@ -118,7 +118,7 @@ async function callResponsesForSynthesis(prompt, args = {}) {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify({
-        model: args.model || "text/Meta-Llama-3.1-8B-Instruct-4bit",
+        model: args.model || "text/gemma-4-31b-it-4bit",
         stream: false,
         house_id: "vega-lab",
         agent_id: "vega-lab:tool-architect",

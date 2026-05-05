@@ -35,6 +35,11 @@ export const SETTINGS_STORAGE_KEY = 'vega-lab:runtime-settings';
 export const LEGACY_SETTINGS_STORAGE_KEY = 'git-stars:runtime-settings';
 export const SETTINGS_EVENT = 'vega-lab:settings-changed';
 export const LEGACY_SETTINGS_EVENT = 'git-stars:settings-changed';
+export const PREFERRED_LOCAL_MODEL = 'text/gemma-4-31b-it-4bit';
+export const LEGACY_LOCAL_MODEL_DEFAULTS = new Set([
+  'text/Meta-Llama-3.1-8B-Instruct-4bit',
+  'Meta-Llama-3.1-8B-Instruct-4bit',
+]);
 
 export const INFERENCE_PROVIDER_PRESETS: InferenceProviderPreset[] = [
   {
@@ -95,7 +100,7 @@ export const INFERENCE_PROVIDER_PRESETS: InferenceProviderPreset[] = [
 
 export const DEFAULT_RUNTIME_SETTINGS: RuntimeSettings = {
   mode: 'local',
-  localModel: 'text/Meta-Llama-3.1-8B-Instruct-4bit',
+  localModel: PREFERRED_LOCAL_MODEL,
   localBusUrl: EVENT_BUS_URL,
   inferenceProvider: 'gemini',
   inferenceModel: 'gemini-2.5-flash',
@@ -133,10 +138,14 @@ function normalizeProvider(provider?: string): InferenceProviderId {
 function normalizeRuntimeSettings(settings: StoredRuntimeSettings): RuntimeSettings {
   const inferenceProvider = normalizeProvider(settings.inferenceProvider);
   const providerPreset = getInferenceProviderPreset(inferenceProvider);
+  const rawLocalModel = settings.localModel?.trim();
+  const localModel = !rawLocalModel || LEGACY_LOCAL_MODEL_DEFAULTS.has(rawLocalModel)
+    ? PREFERRED_LOCAL_MODEL
+    : rawLocalModel;
 
   return {
     mode: normalizeMode(settings.mode),
-    localModel: settings.localModel?.trim() || DEFAULT_RUNTIME_SETTINGS.localModel,
+    localModel,
     localBusUrl: normalizeBusUrl(settings.localBusUrl || DEFAULT_RUNTIME_SETTINGS.localBusUrl),
     inferenceProvider,
     inferenceModel:

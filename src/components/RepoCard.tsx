@@ -14,12 +14,91 @@ interface RepoCardProps {
   isBookmarked?: boolean;
 }
 
+const TITLE_ACRONYMS = new Set([
+  'ai',
+  'api',
+  'ar',
+  'cli',
+  'css',
+  'glsl',
+  'gpu',
+  'html',
+  'http',
+  'ik',
+  'ios',
+  'json',
+  'llm',
+  'mlx',
+  'mcp',
+  'ocr',
+  'pdf',
+  'rag',
+  'sdk',
+  'ui',
+  'ux',
+  'vlm',
+  'vr',
+  'webgl',
+  'webgpu',
+]);
+
+function formatTitleWord(word: string) {
+  const trimmed = word.trim();
+  if (!trimmed) return '';
+  const lowered = trimmed.toLowerCase();
+  if (/^\d+d$/.test(lowered)) return lowered.toUpperCase();
+  if (TITLE_ACRONYMS.has(lowered)) return lowered.toUpperCase();
+  if (!/[a-zA-Z]/.test(trimmed)) return trimmed;
+  const firstLetterIndex = trimmed.search(/[a-zA-Z]/);
+  const prefix = trimmed.slice(0, firstLetterIndex);
+  const first = trimmed[firstLetterIndex].toUpperCase();
+  const rest = trimmed.slice(firstLetterIndex + 1).toLowerCase();
+  return `${prefix}${first}${rest}`;
+}
+
+function formatRepoDisplayTitle(name: string) {
+  const formatted = name
+    .split(/[-_]+/)
+    .filter(Boolean)
+    .map(formatTitleWord)
+    .join(' ');
+  return formatted || name;
+}
+
+function getTitleLengthClass(title: string) {
+  if (title.length > 42) return 'repo-title--compact';
+  if (title.length > 30) return 'repo-title--long';
+  if (title.length > 18) return 'repo-title--medium';
+  return 'repo-title--short';
+}
+
+function getRepoProjectKind(repo: Repo) {
+  const language = (repo.language || repo.primary_language || repo.languages?.[0]?.language || '').toLowerCase();
+  const text = [
+    repo.name,
+    repo.description,
+    language,
+    ...(repo.topics || []),
+  ].join(' ').toLowerCase();
+
+  if (/\b(three|threejs|webgl|webgpu|shader|glsl|3d|2d|graphics|render|avatar|mesh|gltf|blender)\b/.test(text)) return 'graphics';
+  if (/\b(agent|agents|codex|claude|mcp|cli|developer-tool|devtool|template|boilerplate|workflow)\b/.test(text)) return 'devtool';
+  if (/\b(ai|llm|mlx|machine-learning|ml|diffusion|neural|vision|ocr|rag|inference|model)\b/.test(text)) return 'ai';
+  if (/\b(react|vue|svelte|frontend|web|css|html|javascript|typescript|vite|nextjs|ui)\b/.test(text)) return 'web';
+  if (/\b(api|server|backend|gateway|runtime|service|database|postgres|infra|deploy|docker)\b/.test(text)) return 'infra';
+  if (/\b(data|dataset|docs|documentation|paper|research|knowledge|benchmark)\b/.test(text)) return 'data';
+  return 'generic';
+}
+
 export function RepoCard({ repo, onClick, onChat, onResearch, onSimilar, onContextMenu, onBookmark, isBookmarked }: RepoCardProps) {
   const aboutUrl = getRepoAboutUrl(repo);
+  const displayTitle = formatRepoDisplayTitle(repo.name);
+  const projectKind = getRepoProjectKind(repo);
+  const titleLengthClass = getTitleLengthClass(displayTitle);
 
   return (
     <div
-      className="repo-card"
+      className={`repo-card repo-card--${projectKind}`}
       onClick={() => onClick(repo)}
       onContextMenu={(event) => onContextMenu?.(event, repo)}
     >
@@ -33,14 +112,14 @@ export function RepoCard({ repo, onClick, onChat, onResearch, onSimilar, onConte
       >
         <Bookmark size={16} fill={isBookmarked ? 'currentColor' : 'none'} />
       </button>
-      <h3 className="repo-title">
+      <h3 className={`repo-title repo-title--${projectKind} ${titleLengthClass}`} title={repo.name}>
         <a href={aboutUrl} target="_blank" rel="noopener noreferrer" onClick={(e) => e.stopPropagation()}>
           {repo.private ? (
             <span className="repo-title__lock" title="Private repository">
               <Lock size={14} />
             </span>
           ) : null}
-          {repo.name}
+          {displayTitle}
         </a>
       </h3>
       
@@ -82,23 +161,29 @@ export function RepoCard({ repo, onClick, onChat, onResearch, onSimilar, onConte
          <button 
            className="action-btn primary"
            onClick={(e) => { e.stopPropagation(); onChat?.(repo); }}
-           title="Open orchestrator"
+           title="Open tool-aware repo chat"
+           aria-label={`Open tool-aware repo chat for ${repo.author}/${repo.name}`}
+           data-tooltip="Open tool-aware repo chat."
          >
-           <MessageSquare size={14} /> Orchestrate
+           <MessageSquare size={14} /> <span className="action-btn__label">Orchestrate</span>
          </button>
          <button 
             className="action-btn"
             onClick={(e) => { e.stopPropagation(); onResearch?.(repo); }}
-            title="Mark for Research"
+            title="Queue and assess adoption fit"
+            aria-label={`Queue ${repo.author}/${repo.name} for research`}
+            data-tooltip="Queue and assess adoption fit."
          >
-           <Microscope size={14} /> Research
+           <Microscope size={14} /> <span className="action-btn__label">Research</span>
          </button>
          <button 
             className="action-btn"
             onClick={(e) => { e.stopPropagation(); onSimilar?.(repo); }}
-            title="Find Similar"
+            title="Find related repos and compare"
+            aria-label={`Find repos similar to ${repo.author}/${repo.name}`}
+            data-tooltip="Find related repos and compare."
          >
-           <Copy size={14} /> Similar
+           <Copy size={14} /> <span className="action-btn__label">Similar</span>
          </button>
       </div>
     </div>
