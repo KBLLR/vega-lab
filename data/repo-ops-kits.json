@@ -1838,7 +1838,7 @@
   },
   {
     "nwo": "KBLLR/core-x",
-    "generatedAt": "2026-04-28T10:26:05.000Z",
+    "generatedAt": "2026-05-05T01:54:50.000Z",
     "target": "mlx",
     "artifacts": [
       {
@@ -11602,101 +11602,100 @@
   },
   {
     "nwo": "KBLLR/vega-lab",
-    "generatedAt": "2026-05-04T00:58:55.000Z",
+    "generatedAt": "2026-05-05T01:54:36.000Z",
     "target": "mlx",
     "artifacts": [
       {
         "kind": "readme",
         "title": "vega-lab README Draft",
         "suggestedPath": "README.md",
-        "body": "# vega-lab\n\nThe Brightest Stars\n\n## Vega Lab Fit\n- Classification: house\n- Capabilities: frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n\n## Local Setup\n- Package managers: npm, pnpm\n- Document install, dev, build, and verification commands before broad reuse.\n- Keep runtime assumptions explicit; prefer local MLX/OpenResponses for model-assisted work.\n\n## Verification\n- npm run lint\n- npm run test:data\n- npm run test:mcp\n- npm run test\n- npm run build\n- npm run build:data\n\n## Evidence\n- Repository: KBLLR/vega-lab\n- Description: The Brightest Stars\n- Adoption kind: house\n- Capabilities: frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution",
+        "body": "# vega-lab\n\nThe Brightest Stars\n\n## Vega Lab Fit\n- Classification: ignore\n- Capabilities: none\n- House skills: mine-execution\n\n## Local Setup\n- Package managers: npm, pnpm\n- Document install, dev, build, and verification commands before broad reuse.\n- Keep runtime assumptions explicit; prefer local MLX/OpenResponses for model-assisted work.\n\n## Verification\n- npm run lint\n- npm run test:data\n- npm run test:mcp\n- npm run test\n- npm run build\n- npm run build:data\n\n## Evidence\n- Repository: KBLLR/vega-lab\n- Description: The Brightest Stars\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution",
         "evidence": [
           "Repository: KBLLR/vega-lab",
           "Description: The Brightest Stars",
-          "Adoption kind: house",
-          "Capabilities: frontend-ui",
-          "House skills: repo-discovery, repo-adoption, mine-execution"
+          "Adoption kind: ignore",
+          "Capabilities: none",
+          "House skills: mine-execution"
         ]
       },
       {
         "kind": "agents",
         "title": "vega-lab AGENTS Draft",
         "suggestedPath": "AGENTS.md",
-        "body": "# vega-lab Agents\n\n## Product Truth\n- Repository: KBLLR/vega-lab\n- Vega Lab classification: house\n- Active mission target: Local MLX\n\n## Operating Rules\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\n\n## Commands\n- npm run lint\n- npm run test:data\n- npm run test:mcp\n- npm run test\n- npm run build\n- npm run build:data\n\n## Agent Boundaries\n- Do not mutate deployment, secrets, or release configuration without explicit approval.\n- Prefer draft plans and reviewable diffs over broad automation.\n- Preserve existing product direction; use Vega Lab evidence before adding new abstractions.",
+        "body": "# vega-lab Agents\n\n## Product Truth\n- Repository: KBLLR/vega-lab\n- Vega Lab classification: ignore\n- Active mission target: Local MLX\n\n## Operating Rules\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\n\n## Commands\n- npm run lint\n- npm run test:data\n- npm run test:mcp\n- npm run test\n- npm run build\n- npm run build:data\n\n## Agent Boundaries\n- Do not mutate deployment, secrets, or release configuration without explicit approval.\n- Prefer draft plans and reviewable diffs over broad automation.\n- Preserve existing product direction; use Vega Lab evidence before adding new abstractions.",
         "evidence": [
           "Repository: KBLLR/vega-lab",
           "Description: The Brightest Stars",
-          "Adoption kind: house",
-          "Capabilities: frontend-ui",
-          "House skills: repo-discovery, repo-adoption, mine-execution"
+          "Adoption kind: ignore",
+          "Capabilities: none",
+          "House skills: mine-execution"
         ]
       },
       {
         "kind": "maintenance",
         "title": "vega-lab Maintenance Plan",
         "suggestedPath": "docs/maintenance-plan.md",
-        "body": "# Maintenance Plan: KBLLR/vega-lab\n\n## Current Signals\n- No maintenance flags detected.\n\n## Recommended Pass\n- Confirm install path and package manager.\n- Run available verification commands before editing.\n- Patch stale docs, commands, and workflow assumptions first.\n- Open the smallest useful PR only after human approval.\n- Vega Lab action: mlx-mission\n- Vega Lab action: ops-kit\n- Vega Lab action: codex-mission\n- Vega Lab action: claude-mission\n- Vega Lab action: house-integration\n\n## Evidence\n- Repository: KBLLR/vega-lab\n- Description: The Brightest Stars\n- Adoption kind: house\n- Capabilities: frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution",
+        "body": "# Maintenance Plan: KBLLR/vega-lab\n\n## Current Signals\n- No maintenance flags detected.\n\n## Recommended Pass\n- Confirm install path and package manager.\n- Run available verification commands before editing.\n- Patch stale docs, commands, and workflow assumptions first.\n- Open the smallest useful PR only after human approval.\n- Vega Lab action: mlx-mission\n- Vega Lab action: ops-kit\n- Vega Lab action: codex-mission\n- Vega Lab action: claude-mission\n\n## Evidence\n- Repository: KBLLR/vega-lab\n- Description: The Brightest Stars\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution",
         "evidence": [
           "Repository: KBLLR/vega-lab",
           "Description: The Brightest Stars",
-          "Adoption kind: house",
-          "Capabilities: frontend-ui",
-          "House skills: repo-discovery, repo-adoption, mine-execution"
+          "Adoption kind: ignore",
+          "Capabilities: none",
+          "House skills: mine-execution"
         ]
       },
       {
         "kind": "deployment",
         "title": "vega-lab Deployment Plan",
         "suggestedPath": "docs/deployment-plan.md",
-        "body": "# Deployment Plan: KBLLR/vega-lab\n\n## Known Deployment Evidence\n- Workflow: ci.yml\n- Workflow: nightly-data-fetch.yml\n- Workflow: vercel-deploy.yml\n- Deployment config: vercel.json\n\n## Draft Checks\n- Identify expected host and runtime.\n- Document build command, output directory, and required environment variables.\n- Verify preview URL and production URL checks.\n- Keep deploy authority manual; Vega Lab drafts plans and inbox items only.\n\n## Evidence\n- Repository: KBLLR/vega-lab\n- Description: The Brightest Stars\n- Adoption kind: house\n- Capabilities: frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution",
+        "body": "# Deployment Plan: KBLLR/vega-lab\n\n## Known Deployment Evidence\n- Workflow: ci.yml\n- Workflow: nightly-data-fetch.yml\n- Workflow: vercel-deploy.yml\n- Deployment config: vercel.json\n\n## Draft Checks\n- Identify expected host and runtime.\n- Document build command, output directory, and required environment variables.\n- Verify preview URL and production URL checks.\n- Keep deploy authority manual; Vega Lab drafts plans and inbox items only.\n\n## Evidence\n- Repository: KBLLR/vega-lab\n- Description: The Brightest Stars\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution",
         "evidence": [
           "Repository: KBLLR/vega-lab",
           "Description: The Brightest Stars",
-          "Adoption kind: house",
-          "Capabilities: frontend-ui",
-          "House skills: repo-discovery, repo-adoption, mine-execution"
+          "Adoption kind: ignore",
+          "Capabilities: none",
+          "House skills: mine-execution"
         ]
       },
       {
         "kind": "testing",
         "title": "vega-lab Test Plan",
         "suggestedPath": "docs/test-plan.md",
-        "body": "# Test Plan: KBLLR/vega-lab\n\n## Available Commands\n- npm run lint\n- npm run test:data\n- npm run test:mcp\n- npm run test\n- npm run build\n- npm run build:data\n\n## Minimum Verification Contract\n- Document one install command.\n- Document one fast smoke command.\n- Document one release/build command when deployable.\n- If no commands exist, create a tracked issue or action item before implementation work.\n\n## Evidence\n- Repository: KBLLR/vega-lab\n- Description: The Brightest Stars\n- Adoption kind: house\n- Capabilities: frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution",
+        "body": "# Test Plan: KBLLR/vega-lab\n\n## Available Commands\n- npm run lint\n- npm run test:data\n- npm run test:mcp\n- npm run test\n- npm run build\n- npm run build:data\n\n## Minimum Verification Contract\n- Document one install command.\n- Document one fast smoke command.\n- Document one release/build command when deployable.\n- If no commands exist, create a tracked issue or action item before implementation work.\n\n## Evidence\n- Repository: KBLLR/vega-lab\n- Description: The Brightest Stars\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution",
         "evidence": [
           "Repository: KBLLR/vega-lab",
           "Description: The Brightest Stars",
-          "Adoption kind: house",
-          "Capabilities: frontend-ui",
-          "House skills: repo-discovery, repo-adoption, mine-execution"
+          "Adoption kind: ignore",
+          "Capabilities: none",
+          "House skills: mine-execution"
         ]
       },
       {
         "kind": "action-item",
         "title": "vega-lab Action Item Draft",
         "suggestedPath": "ops/action-item.md",
-        "body": "# Action Item Draft: KBLLR/vega-lab\n\n## Recommended Actions\n- mlx-mission\n- ops-kit\n- codex-mission\n- claude-mission\n- house-integration\n\n## Mission Target\n- Local MLX\n\n## Evidence\n- Repository: KBLLR/vega-lab\n- Description: The Brightest Stars\n- Adoption kind: house\n- Capabilities: frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution",
+        "body": "# Action Item Draft: KBLLR/vega-lab\n\n## Recommended Actions\n- mlx-mission\n- ops-kit\n- codex-mission\n- claude-mission\n\n## Mission Target\n- Local MLX\n\n## Evidence\n- Repository: KBLLR/vega-lab\n- Description: The Brightest Stars\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution",
         "evidence": [
           "Repository: KBLLR/vega-lab",
           "Description: The Brightest Stars",
-          "Adoption kind: house",
-          "Capabilities: frontend-ui",
-          "House skills: repo-discovery, repo-adoption, mine-execution"
+          "Adoption kind: ignore",
+          "Capabilities: none",
+          "House skills: mine-execution"
         ]
       }
     ],
     "evidence": [
       "Repository: KBLLR/vega-lab",
       "Description: The Brightest Stars",
-      "Adoption kind: house",
-      "Capabilities: frontend-ui",
-      "House skills: repo-discovery, repo-adoption, mine-execution"
+      "Adoption kind: ignore",
+      "Capabilities: none",
+      "House skills: mine-execution"
     ],
     "recommendedActions": [
       "mlx-mission",
       "ops-kit",
       "codex-mission",
       "claude-mission",
-      "house-integration",
       "review-draft-only"
     ]
   },

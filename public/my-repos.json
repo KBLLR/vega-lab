@@ -8,7 +8,7 @@
     "date": "12/23/2023",
     "languages": [
       {
-        "language": "TypeScript",
+        "language": "JavaScript",
         "percentage": "100%"
       }
     ],
@@ -17,12 +17,12 @@
       "programming",
       "system-design"
     ],
-    "primary_language": "TypeScript",
+    "primary_language": "JavaScript",
     "license": "None",
     "forks": 0,
     "open_issues": 0,
-    "last_updated": "5/4/2026",
-    "last_updated_at": "2026-05-04T00:58:55Z",
+    "last_updated": "5/5/2026",
+    "last_updated_at": "2026-05-05T01:54:36Z",
     "created_at": "2023-12-23T23:09:43Z",
     "private": false,
     "has_readme": true,
@@ -41,7 +41,7 @@
           "generate:stats": "node src/analytics/statistics.js",
           "mcp": "node src/mcp-server/index.js",
           "test:data": "node tests/run-tests.js",
-          "test:mcp": "node tests/test-mcp-server.js",
+          "test:mcp": "node tests/test-mcp-server.js && node tests/test-ocr-skill-candidate.js",
           "test": "npm run lint && npm run test:data && npm run test:mcp"
         },
         "dependencies": {
@@ -227,8 +227,8 @@
     "license": "None",
     "forks": 0,
     "open_issues": 1,
-    "last_updated": "4/28/2026",
-    "last_updated_at": "2026-04-28T10:26:05Z",
+    "last_updated": "5/5/2026",
+    "last_updated_at": "2026-05-05T01:54:50Z",
     "created_at": "2026-02-09T19:25:05Z",
     "private": true,
     "has_readme": false,
