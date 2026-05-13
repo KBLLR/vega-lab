@@ -40353,6 +40353,24 @@
     "claudeBrief": "# Claude Mission: quantum-visualizations/qmsolve\nGoal: ⚛️ A module for solving and visualizing the Schrödinger equation. Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
+    "nwo": "quickemu-project/quickemu",
+    "name": "quickemu",
+    "author": "quickemu-project",
+    "summary": "Quickly create and run optimised Windows, macOS and Linux virtual machines Primary Vega Lab fit: repo-adoption via general engineering.",
+    "capabilities": [],
+    "houseSkills": [
+      "repo-adoption"
+    ],
+    "rules": [],
+    "flows": [
+      "research-queue-flow",
+      "adoption-decision-flow"
+    ],
+    "adoptionKind": "house",
+    "codexBrief": "# Codex Mission: quickemu-project/quickemu\nGoal: Quickly create and run optimised Windows, macOS and Linux virtual machines Primary Vega Lab fit: repo-adoption via general engineering.\nClassification: house\nCapabilities: none\nHouse skills: repo-adoption\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: quickemu-project/quickemu\nGoal: Quickly create and run optimised Windows, macOS and Linux virtual machines Primary Vega Lab fit: repo-adoption via general engineering.\nClassification: house\nCapabilities: none\nHouse skills: repo-adoption\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+  },
+  {
     "nwo": "r9y9/tacotron_pytorch",
     "name": "tacotron_pytorch",
     "author": "r9y9",
@@ -49483,17 +49501,15 @@
       "repo-discovery",
       "repo-adoption"
     ],
-    "rules": [
-      "Validate maintenance risk and current ecosystem fit before committing to adoption."
-    ],
+    "rules": [],
     "flows": [
       "research-queue-flow",
       "adoption-decision-flow",
       "news-digest-refresh"
     ],
     "adoptionKind": "house",
-    "codexBrief": "# Codex Mission: unpkg/unpkg\nGoal: The CDN for everything on npm Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui\nHouse skills: repo-discovery, repo-adoption\nRules:\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: unpkg/unpkg\nGoal: The CDN for everything on npm Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui\nHouse skills: repo-discovery, repo-adoption\nRules:\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: unpkg/unpkg\nGoal: The CDN for everything on npm Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui\nHouse skills: repo-discovery, repo-adoption\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: unpkg/unpkg\nGoal: The CDN for everything on npm Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui\nHouse skills: repo-discovery, repo-adoption\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "unslothai/unsloth",
