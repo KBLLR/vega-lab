@@ -11,6 +11,7 @@ import {
   Star,
   Table as TableIcon,
   User,
+  Check
 } from "lucide-react";
 import { RepoCard } from "./components/RepoCard";
 import { RepoTable } from "./components/RepoTable";
@@ -22,6 +23,8 @@ import { HighlightsPanel } from "./components/HighlightsPanel";
 import { MyReposPanel } from "./components/MyReposPanel";
 import { RuntimeSettingsPanel } from "./components/RuntimeSettingsPanel";
 import { OpsInboxPanel } from "./components/OpsInboxPanel";
+import { ReviewPanel } from "./components/ReviewPanel";
+import { useReview } from "./components/ReviewContext";
 import { logger } from "./lib/logger";
 import { getReadmeActionPresets } from "./lib/orchestrator";
 import type {
@@ -65,7 +68,7 @@ function App() {
   const [allRepos, setAllRepos] = useState<Repo[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
-  const [view, setView] = useState<"cards" | "table" | "statistics" | "activity" | "news" | "mine" | "ops">("cards");
+  const [view, setView] = useState<"cards" | "table" | "statistics" | "activity" | "news" | "mine" | "ops" | "review">("cards");
 
   const [selectedRepo, setSelectedRepo] = useState<Repo | null>(null);
   const [isReadmeOpen, setIsReadmeOpen] = useState(false);
@@ -85,6 +88,8 @@ function App() {
   const [opsDigest, setOpsDigest] = useState<OpsDigest | null>(null);
   const [weeklyResearchReview, setWeeklyResearchReview] = useState<WeeklyResearchReview | null>(null);
   const [contextMenu, setContextMenu] = useState<{ x: number; y: number; repo: Repo } | null>(null);
+  
+  const { state: reviewState, dispatch: reviewDispatch } = useReview();
 
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedLanguage, setSelectedLanguage] = useState("all");
@@ -115,6 +120,49 @@ function App() {
       setWeeklyResearchReview(weekly && !Array.isArray(weekly) ? weekly : null);
     });
   };
+
+  const refreshReviewArtifacts = async () => {
+    try {
+      // Use Vite's glob import to dynamically load JSON files from data/review subfolders
+      const starSyncModules = import.meta.glob<{ default: ReviewArtifact }>('../data/review/star-sync/*.json');
+      const repoSignalsModules = import.meta.glob<{ default: ReviewArtifact }>('../data/review/repo-signals/*.json');
+      const skillCandidatesModules = import.meta.glob<{ default: ReviewArtifact }>('../data/review/skill-candidates/*.json');
+      const techAlertsModules = import.meta.glob<{ default: ReviewArtifact }>('../data/review/tech-alerts/*.json');
+      const houseIdeasModules = import.meta.glob<{ default: ReviewArtifact }>('../data/review/house-ideas/*.json');
+
+      const loadModules = async (modules: Record<string, () => Promise<{ default: ReviewArtifact }>>) => {
+        const values = await Promise.all(Object.values(modules).map(fn => fn().then(m => m.default).catch(() => null)));
+        return values.filter(Boolean) as any[];
+      };
+
+      const [starSync, repoSignals, skillCandidates, techAlerts, houseIdeas] = await Promise.all([
+        loadModules(starSyncModules),
+        loadModules(repoSignalsModules),
+        loadModules(skillCandidatesModules),
+        loadModules(techAlertsModules),
+        loadModules(houseIdeasModules),
+      ]);
+
+      startTransition(() => {
+        reviewDispatch({
+          type: "SET_ARTIFACTS",
+          payload: {
+            starSync,
+            repoSignals,
+            skillCandidates,
+            techAlerts,
+            houseIdeas
+          }
+        });
+      });
+    } catch (e) {
+      console.error("Failed to load review artifacts", e);
+    }
+  };
+
+  useEffect(() => {
+    void refreshReviewArtifacts();
+  }, []);
 
   const recordHistory = (repo: Repo) => {
     setHistory((previous) => {
@@ -425,6 +473,9 @@ function App() {
           <button onClick={() => setView("ops")} className={`nav-item ${view === "ops" ? "active" : ""}`}>
             <Inbox size={16} /> Ops
           </button>
+          <button onClick={() => setView("review")} className={`nav-item ${view === "review" ? "active" : ""}`}>
+            <Check size={16} /> Review
+          </button>
           <button onClick={() => setView("mine")} className={`nav-item ${view === "mine" ? "active" : ""}`}>
             <User size={16} /> Mine
           </button>
@@ -439,7 +490,7 @@ function App() {
         </div>
       </header>
 
-      {view !== "statistics" && view !== "activity" && view !== "news" && view !== "ops" && (
+      {view !== "statistics" && view !== "activity" && view !== "news" && view !== "ops" && view !== "review" && (
         <div className="filters-container">
           {view === "mine" ? (
             <>
@@ -581,6 +632,15 @@ function App() {
             ) : (
               <RepoTable repos={processedRepos} onRowClick={handleRepoClick} />
             )}
+          </div>
+        )}
+        {view === "review" && (
+          <div className="review-dashboard" style={{ display: "flex", flexDirection: "column", gap: "20px", padding: "20px" }}>
+            <ReviewPanel title="Star Sync Artifacts" artifacts={reviewState.artifacts.starSync} />
+            <ReviewPanel title="Repo Signals" artifacts={reviewState.artifacts.repoSignals} />
+            <ReviewPanel title="Skill Candidates" artifacts={reviewState.artifacts.skillCandidates} />
+            <ReviewPanel title="Technology Alerts" artifacts={reviewState.artifacts.techAlerts} />
+            <ReviewPanel title="House Ideas" artifacts={reviewState.artifacts.houseIdeas} />
           </div>
         )}
       </div>

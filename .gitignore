@@ -52,7 +52,11 @@ data/*
 !data/model-zoo-text-models.json
 !data/template-kits.json
 !data/repo-ops-kits.json
-
+!data/review/
+data/review/*
+!data/review/tests/
+data/review/tests/*
+!data/review/tests/fixtures/
 # npm lock file that will be generated in yarn projects
 
 HOUSE_PROFILE.md

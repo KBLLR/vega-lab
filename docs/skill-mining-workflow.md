@@ -31,3 +31,17 @@ Generated OCR review artifacts may be written only when explicitly requested and
 - `data/review/skill-candidates/`
 
 No OCR-derived artifact is public by default. Vega Labs must not publish, open PRs, create houses, or mutate registries from OCR output without a separate reviewed execution step.
+
+## Scaffolding Bridge
+
+Once a `vega.skill-candidate` artifact is reviewed and marked as `accepted`, the Scaffolding Bridge can process it into an execution manifest for the `app-scaffolding` skill.
+
+The bridge maps the candidate data as follows:
+- **target_house**: Defaults to `houses/tier2-orchestrator` (can be configured or derived).
+- **template_id**: Selected base template (e.g., `default-skill-template`).
+- **app_id**: Kebab-cased string derived from the candidate's name.
+- **display_name**: The original candidate name.
+- **description**: The candidate's summary or description.
+- **variables**: Includes `capabilities` array and `source` information from the original artifact.
+
+The resulting manifest (`manifest-*.json`) is written to `data/scaffold-manifests/` and is picked up by HTDI agentic flows (such as Spacebot) for actual scaffold generation.

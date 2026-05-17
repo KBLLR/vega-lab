@@ -20,7 +20,8 @@
     "mcp": "node src/mcp-server/index.js",
     "test:data": "node tests/run-tests.js",
     "test:mcp": "node tests/test-mcp-server.js && node tests/test-ocr-skill-candidate.js",
-    "test": "npm run lint && npm run test:data && npm run test:mcp"
+    "test:pipelines": "node tests/test-vega-pipelines.js",
+    "test": "npm run lint && npm run test:data && npm run test:mcp && npm run test:pipelines"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.25.3",
@@ -42,6 +43,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^8.57.1",
+    "@types/node": "^22.0.0",
     "@types/react": "^18.2.64",
     "@types/react-dom": "^18.2.21",
     "@typescript-eslint/eslint-plugin": "^8.0.0",
