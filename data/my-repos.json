@@ -1,5 +1,78 @@
 [
   {
+    "name": "isoboth",
+    "description": "You can imagine, then you can generate it",
+    "author": "KBLLR",
+    "stars": 0,
+    "url": "https://github.com/KBLLR/isoboth",
+    "date": "5/19/2026",
+    "languages": [
+      {
+        "language": "JavaScript",
+        "percentage": "100%"
+      }
+    ],
+    "topics": [],
+    "primary_language": "JavaScript",
+    "license": "None",
+    "forks": 0,
+    "open_issues": 0,
+    "last_updated": "5/19/2026",
+    "last_updated_at": "2026-05-19T23:30:45Z",
+    "created_at": "2026-05-19T17:43:28Z",
+    "private": true,
+    "has_readme": true,
+    "is_owner": true,
+    "is_fork": false,
+    "key_files": {
+      "packageJson": {
+        "scripts": {
+          "dev": "vite",
+          "dev:host": "vite --host 127.0.0.1 --port 5173",
+          "build": "vite build",
+          "preview": "vite preview",
+          "lint": "eslint src",
+          "warehouse:refresh": "node ./scripts/refresh-warehouse-source.mjs",
+          "warehouse:refresh:dry": "node ./scripts/refresh-warehouse-source.mjs --dry-run --limit 20"
+        },
+        "dependencies": {
+          "@google/genai": "latest",
+          "auto-zustand-selectors-hook": "latest",
+          "clsx": "latest",
+          "firebase": "^12.13.0",
+          "gifenc": "latest",
+          "immer": "latest",
+          "jszip": "^3.10.1",
+          "lodash.shuffle": "latest",
+          "matter-js": "^0.20.0",
+          "motion": "^12.38.0",
+          "p-limit": "latest",
+          "react": "latest",
+          "react-dom": "latest",
+          "zustand": "latest"
+        },
+        "devDependencies": {
+          "@eslint/js": "^9.39.4",
+          "@firebase/eslint-plugin-security-rules": "^0.0.2",
+          "@types/node": "^22.14.0",
+          "@vitejs/plugin-react": "^5.0.0",
+          "eslint": "^9.39.4",
+          "eslint-plugin-react-hooks": "^7.0.1",
+          "eslint-plugin-react-refresh": "^0.5.2",
+          "globals": "^17.4.0",
+          "typescript": "~5.8.2",
+          "vite": "^6.2.0"
+        }
+      },
+      "packageManagers": [
+        "npm",
+        "npm-lock"
+      ],
+      "workflows": [],
+      "deploymentConfigs": []
+    }
+  },
+  {
     "name": "vega-lab",
     "description": "The Brightest Stars",
     "author": "KBLLR",
@@ -21,8 +94,8 @@
     "license": "None",
     "forks": 0,
     "open_issues": 0,
-    "last_updated": "5/18/2026",
-    "last_updated_at": "2026-05-18T01:04:06Z",
+    "last_updated": "5/19/2026",
+    "last_updated_at": "2026-05-19T01:05:21Z",
     "created_at": "2023-12-23T23:09:43Z",
     "private": false,
     "has_readme": true,
@@ -227,8 +300,8 @@
     "license": "None",
     "forks": 0,
     "open_issues": 1,
-    "last_updated": "5/5/2026",
-    "last_updated_at": "2026-05-05T01:54:50Z",
+    "last_updated": "5/19/2026",
+    "last_updated_at": "2026-05-19T23:37:12Z",
     "created_at": "2026-02-09T19:25:05Z",
     "private": true,
     "has_readme": false,

@@ -1838,7 +1838,7 @@
   },
   {
     "nwo": "KBLLR/core-x",
-    "generatedAt": "2026-05-05T01:54:50.000Z",
+    "generatedAt": "2026-05-19T23:37:12.000Z",
     "target": "mlx",
     "artifacts": [
       {
@@ -5624,6 +5624,112 @@
       "maintenance:vega-lab:maintenance:kbllr-infoq-mini-book",
       "testing:vega-lab:testing:kbllr-infoq-mini-book",
       "template:vega-lab:template:kbllr-infoq-mini-book",
+      "review-draft-only"
+    ]
+  },
+  {
+    "nwo": "KBLLR/isoboth",
+    "generatedAt": "2026-05-19T23:30:45.000Z",
+    "target": "mlx",
+    "artifacts": [
+      {
+        "kind": "readme",
+        "title": "isoboth README Draft",
+        "suggestedPath": "README.md",
+        "body": "# isoboth\n\nYou can imagine, then you can generate it\n\n## Vega Lab Fit\n- Classification: ignore\n- Capabilities: none\n- House skills: mine-execution\n\n## Local Setup\n- Package managers: npm, npm-lock\n- Document install, dev, build, and verification commands before broad reuse.\n- Keep runtime assumptions explicit; prefer local MLX/OpenResponses for model-assisted work.\n\n## Verification\n- npm run lint\n- npm run build\n\n## Evidence\n- Repository: KBLLR/isoboth\n- Description: You can imagine, then you can generate it\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Health flag: private",
+        "evidence": [
+          "Repository: KBLLR/isoboth",
+          "Description: You can imagine, then you can generate it",
+          "Adoption kind: ignore",
+          "Capabilities: none",
+          "House skills: mine-execution",
+          "Health flag: private"
+        ]
+      },
+      {
+        "kind": "agents",
+        "title": "isoboth AGENTS Draft",
+        "suggestedPath": "AGENTS.md",
+        "body": "# isoboth Agents\n\n## Product Truth\n- Repository: KBLLR/isoboth\n- Vega Lab classification: ignore\n- Active mission target: Local MLX\n\n## Operating Rules\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\n\n## Commands\n- npm run lint\n- npm run build\n\n## Agent Boundaries\n- Do not mutate deployment, secrets, or release configuration without explicit approval.\n- Prefer draft plans and reviewable diffs over broad automation.\n- Preserve existing product direction; use Vega Lab evidence before adding new abstractions.",
+        "evidence": [
+          "Repository: KBLLR/isoboth",
+          "Description: You can imagine, then you can generate it",
+          "Adoption kind: ignore",
+          "Capabilities: none",
+          "House skills: mine-execution",
+          "Health flag: private"
+        ]
+      },
+      {
+        "kind": "maintenance",
+        "title": "isoboth Maintenance Plan",
+        "suggestedPath": "docs/maintenance-plan.md",
+        "body": "# Maintenance Plan: KBLLR/isoboth\n\n## Current Signals\n- Health flag: private\n\n## Recommended Pass\n- Confirm install path and package manager.\n- Run available verification commands before editing.\n- Patch stale docs, commands, and workflow assumptions first.\n- Open the smallest useful PR only after human approval.\n- Vega Lab action: mlx-mission\n- Vega Lab action: ops-kit\n- Vega Lab action: codex-mission\n- Vega Lab action: claude-mission\n\n## Evidence\n- Repository: KBLLR/isoboth\n- Description: You can imagine, then you can generate it\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Health flag: private",
+        "evidence": [
+          "Repository: KBLLR/isoboth",
+          "Description: You can imagine, then you can generate it",
+          "Adoption kind: ignore",
+          "Capabilities: none",
+          "House skills: mine-execution",
+          "Health flag: private"
+        ]
+      },
+      {
+        "kind": "deployment",
+        "title": "isoboth Deployment Plan",
+        "suggestedPath": "docs/deployment-plan.md",
+        "body": "# Deployment Plan: KBLLR/isoboth\n\n## Known Deployment Evidence\n- No workflow or deployment config detected in synced key files.\n\n## Draft Checks\n- Identify expected host and runtime.\n- Document build command, output directory, and required environment variables.\n- Verify preview URL and production URL checks.\n- Keep deploy authority manual; Vega Lab drafts plans and inbox items only.\n\n## Evidence\n- Repository: KBLLR/isoboth\n- Description: You can imagine, then you can generate it\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Health flag: private",
+        "evidence": [
+          "Repository: KBLLR/isoboth",
+          "Description: You can imagine, then you can generate it",
+          "Adoption kind: ignore",
+          "Capabilities: none",
+          "House skills: mine-execution",
+          "Health flag: private"
+        ]
+      },
+      {
+        "kind": "testing",
+        "title": "isoboth Test Plan",
+        "suggestedPath": "docs/test-plan.md",
+        "body": "# Test Plan: KBLLR/isoboth\n\n## Available Commands\n- npm run lint\n- npm run build\n\n## Minimum Verification Contract\n- Document one install command.\n- Document one fast smoke command.\n- Document one release/build command when deployable.\n- If no commands exist, create a tracked issue or action item before implementation work.\n\n## Evidence\n- Repository: KBLLR/isoboth\n- Description: You can imagine, then you can generate it\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Health flag: private",
+        "evidence": [
+          "Repository: KBLLR/isoboth",
+          "Description: You can imagine, then you can generate it",
+          "Adoption kind: ignore",
+          "Capabilities: none",
+          "House skills: mine-execution",
+          "Health flag: private"
+        ]
+      },
+      {
+        "kind": "action-item",
+        "title": "isoboth Action Item Draft",
+        "suggestedPath": "ops/action-item.md",
+        "body": "# Action Item Draft: KBLLR/isoboth\n\n## Recommended Actions\n- mlx-mission\n- ops-kit\n- codex-mission\n- claude-mission\n\n## Mission Target\n- Local MLX\n\n## Evidence\n- Repository: KBLLR/isoboth\n- Description: You can imagine, then you can generate it\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Health flag: private",
+        "evidence": [
+          "Repository: KBLLR/isoboth",
+          "Description: You can imagine, then you can generate it",
+          "Adoption kind: ignore",
+          "Capabilities: none",
+          "House skills: mine-execution",
+          "Health flag: private"
+        ]
+      }
+    ],
+    "evidence": [
+      "Repository: KBLLR/isoboth",
+      "Description: You can imagine, then you can generate it",
+      "Adoption kind: ignore",
+      "Capabilities: none",
+      "House skills: mine-execution",
+      "Health flag: private"
+    ],
+    "recommendedActions": [
+      "mlx-mission",
+      "ops-kit",
+      "codex-mission",
+      "claude-mission",
       "review-draft-only"
     ]
   },
@@ -11602,7 +11708,7 @@
   },
   {
     "nwo": "KBLLR/vega-lab",
-    "generatedAt": "2026-05-18T01:04:06.000Z",
+    "generatedAt": "2026-05-19T01:05:21.000Z",
     "target": "mlx",
     "artifacts": [
       {
