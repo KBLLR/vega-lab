@@ -1,5 +1,54 @@
 [
   {
+    "name": "prompt-dj-mlx",
+    "description": "generate music locally with mlx models using midi controls to mix genres",
+    "author": "KBLLR",
+    "stars": 0,
+    "url": "https://github.com/KBLLR/prompt-dj-mlx",
+    "date": "5/22/2026",
+    "languages": [
+      {
+        "language": "TypeScript",
+        "percentage": "100%"
+      }
+    ],
+    "topics": [],
+    "primary_language": "TypeScript",
+    "license": "None",
+    "forks": 0,
+    "open_issues": 0,
+    "last_updated": "5/22/2026",
+    "last_updated_at": "2026-05-22T19:42:20Z",
+    "created_at": "2026-05-22T19:32:05Z",
+    "private": true,
+    "has_readme": true,
+    "is_owner": true,
+    "is_fork": false,
+    "key_files": {
+      "packageJson": {
+        "scripts": {
+          "dev": "vite",
+          "build": "vite build",
+          "preview": "vite preview"
+        },
+        "dependencies": {
+          "@google/genai": "^1.0.0",
+          "lit": "^3.3.0"
+        },
+        "devDependencies": {
+          "@types/node": "^22.14.0",
+          "typescript": "~5.8.2",
+          "vite": "^6.2.0"
+        }
+      },
+      "packageManagers": [
+        "npm"
+      ],
+      "workflows": [],
+      "deploymentConfigs": []
+    }
+  },
+  {
     "name": "vega-lab",
     "description": "The Brightest Stars",
     "author": "KBLLR",
@@ -21,8 +70,8 @@
     "license": "None",
     "forks": 0,
     "open_issues": 0,
-    "last_updated": "5/21/2026",
-    "last_updated_at": "2026-05-21T01:06:49Z",
+    "last_updated": "5/22/2026",
+    "last_updated_at": "2026-05-22T01:04:59Z",
     "created_at": "2023-12-23T23:09:43Z",
     "private": false,
     "has_readme": true,

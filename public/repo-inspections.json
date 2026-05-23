@@ -1759,6 +1759,30 @@
     "risks": []
   },
   {
+    "nwo": "KBLLR/prompt-dj-mlx",
+    "inspectedAt": "2026-05-22T19:42:20.000Z",
+    "files": {
+      "hasReadme": true,
+      "packageManagers": [
+        "npm"
+      ],
+      "workflows": [],
+      "deploymentConfigs": [],
+      "testScripts": [],
+      "buildScripts": [
+        "build"
+      ]
+    },
+    "findings": [
+      "No test/check/lint script detected from package metadata.",
+      "No workflow or deployment config detected in synced key files."
+    ],
+    "risks": [
+      "Maintenance work has no obvious verification command.",
+      "Deployment readiness is unclear."
+    ]
+  },
+  {
     "nwo": "KBLLR/Resizable.js",
     "inspectedAt": "2021-05-08T17:59:39.000Z",
     "files": {
@@ -2334,7 +2358,7 @@
   },
   {
     "nwo": "KBLLR/vega-lab",
-    "inspectedAt": "2026-05-21T01:06:49.000Z",
+    "inspectedAt": "2026-05-22T01:04:59.000Z",
     "files": {
       "hasReadme": true,
       "packageManagers": [
