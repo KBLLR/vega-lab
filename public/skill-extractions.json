@@ -26167,6 +26167,38 @@
     "claudeBrief": "# Claude Mission: KBLLR/validator\nGoal: validator is a candidate for tool adoption. Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption, mine-execution\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
+    "nwo": "KBLLR/Vectra",
+    "name": "Vectra",
+    "author": "KBLLR",
+    "summary": "A centralized design workspace and prompt matrix engine that transforms CSV catalogs, templates, and text prompts into production-ready scalable vector graphics (SVGs), physical label layouts, cohesive icon packs, and batch-exported visual assets. Primary Vega Lab fit: repo-discovery via template-scaffolding.",
+    "capabilities": [
+      "template-scaffolding",
+      "ml-ai",
+      "frontend-ui"
+    ],
+    "houseSkills": [
+      "repo-discovery",
+      "skill-extraction",
+      "repo-adoption",
+      "mine-execution"
+    ],
+    "rules": [
+      "Adopt this as a scaffold or reference, not as a long-lived runtime dependency.",
+      "Review license status before adoption or redistribution work.",
+      "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
+    ],
+    "flows": [
+      "research-queue-flow",
+      "skill-extraction-flow",
+      "adoption-decision-flow",
+      "news-digest-refresh",
+      "mine-execution-flow"
+    ],
+    "adoptionKind": "template",
+    "codexBrief": "# Codex Mission: KBLLR/Vectra\nGoal: A centralized design workspace and prompt matrix engine that transforms CSV catalogs, templates, and text prompts into production-ready scalable vector graphics (SVGs), physical label layouts, cohesive icon packs, and batch-exported visual assets. Primary Vega Lab fit: repo-discovery via template-scaffolding.\nClassification: template\nCapabilities: template-scaffolding, ml-ai, frontend-ui\nHouse skills: repo-discovery, skill-extraction, repo-adoption, mine-execution\nRules:\n- Adopt this as a scaffold or reference, not as a long-lived runtime dependency.\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\n5. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: KBLLR/Vectra\nGoal: A centralized design workspace and prompt matrix engine that transforms CSV catalogs, templates, and text prompts into production-ready scalable vector graphics (SVGs), physical label layouts, cohesive icon packs, and batch-exported visual assets. Primary Vega Lab fit: repo-discovery via template-scaffolding.\nClassification: template\nCapabilities: template-scaffolding, ml-ai, frontend-ui\nHouse skills: repo-discovery, skill-extraction, repo-adoption, mine-execution\nRules:\n- Adopt this as a scaffold or reference, not as a long-lived runtime dependency.\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\n5. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+  },
+  {
     "nwo": "KBLLR/vega-lab",
     "name": "vega-lab",
     "author": "KBLLR",

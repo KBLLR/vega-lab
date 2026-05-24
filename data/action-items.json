@@ -222,6 +222,114 @@
     "updatedAt": "2023-07-07T07:02:56.000Z"
   },
   {
+    "id": "vega-lab:deployment:kbllr-vectra",
+    "kind": "deployment",
+    "status": "open",
+    "priority": "normal",
+    "nwo": "KBLLR/Vectra",
+    "title": "Clarify deployment readiness for Vectra",
+    "summary": "Vega Lab could not detect workflow or deployment configuration from synced key files.",
+    "evidence": [
+      "No workflow or deployment config detected in synced key files.",
+      "Repository has template/scaffold signals.",
+      "Deployment readiness is unclear."
+    ],
+    "linkedSkills": [
+      "repo-discovery",
+      "skill-extraction",
+      "repo-adoption",
+      "mine-execution"
+    ],
+    "linkedRules": [
+      "Adopt this as a scaffold or reference, not as a long-lived runtime dependency.",
+      "Review license status before adoption or redistribution work.",
+      "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
+    ],
+    "linkedFlows": [
+      "research-queue-flow",
+      "skill-extraction-flow",
+      "adoption-decision-flow",
+      "news-digest-refresh",
+      "mine-execution-flow"
+    ],
+    "draft": "Draft a deployment readiness brief for KBLLR/Vectra: identify expected host, build command, env vars, workflow status, and verification URL checks. Evidence: No workflow or deployment config detected in synced key files. Repository has template/scaffold signals.",
+    "source": "daily-ops",
+    "createdAt": "2026-05-24T00:38:20.000Z",
+    "updatedAt": "2026-05-24T00:38:20.000Z"
+  },
+  {
+    "id": "vega-lab:template:kbllr-vectra",
+    "kind": "template",
+    "status": "open",
+    "priority": "normal",
+    "nwo": "KBLLR/Vectra",
+    "title": "Evaluate Vectra as a reusable template",
+    "summary": "The repo has scaffold signals that may become a reusable core-x pattern.",
+    "evidence": [
+      "No workflow or deployment config detected in synced key files.",
+      "Repository has template/scaffold signals.",
+      "Deployment readiness is unclear."
+    ],
+    "linkedSkills": [
+      "repo-discovery",
+      "skill-extraction",
+      "repo-adoption",
+      "mine-execution"
+    ],
+    "linkedRules": [
+      "Adopt this as a scaffold or reference, not as a long-lived runtime dependency.",
+      "Review license status before adoption or redistribution work.",
+      "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
+    ],
+    "linkedFlows": [
+      "research-queue-flow",
+      "skill-extraction-flow",
+      "adoption-decision-flow",
+      "news-digest-refresh",
+      "mine-execution-flow"
+    ],
+    "draft": "Draft a template extraction plan for KBLLR/Vectra: isolate reusable scaffold decisions, required configuration, and what must be removed before reuse.",
+    "source": "weekly-research",
+    "createdAt": "2026-05-24T00:38:20.000Z",
+    "updatedAt": "2026-05-24T00:38:20.000Z"
+  },
+  {
+    "id": "vega-lab:skill:kbllr-vectra",
+    "kind": "skill",
+    "status": "open",
+    "priority": "normal",
+    "nwo": "KBLLR/Vectra",
+    "title": "Extract reusable skill signals from Vectra",
+    "summary": "The repo maps to tooling, agents, templates, or workflows that can teach core-x.",
+    "evidence": [
+      "No workflow or deployment config detected in synced key files.",
+      "Repository has template/scaffold signals.",
+      "Deployment readiness is unclear."
+    ],
+    "linkedSkills": [
+      "repo-discovery",
+      "skill-extraction",
+      "repo-adoption",
+      "mine-execution"
+    ],
+    "linkedRules": [
+      "Adopt this as a scaffold or reference, not as a long-lived runtime dependency.",
+      "Review license status before adoption or redistribution work.",
+      "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
+    ],
+    "linkedFlows": [
+      "research-queue-flow",
+      "skill-extraction-flow",
+      "adoption-decision-flow",
+      "news-digest-refresh",
+      "mine-execution-flow"
+    ],
+    "draft": "Extract a reusable Vega Lab skill/rule/flow package from KBLLR/Vectra, grounded in capabilities: template-scaffolding, ml-ai, frontend-ui.",
+    "source": "weekly-research",
+    "createdAt": "2026-05-24T00:38:20.000Z",
+    "updatedAt": "2026-05-24T00:38:20.000Z"
+  },
+  {
     "id": "vega-lab:testing:kbllr-prompt-dj-mlx",
     "kind": "testing",
     "status": "open",

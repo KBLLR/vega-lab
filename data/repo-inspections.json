@@ -2357,8 +2357,34 @@
     ]
   },
   {
+    "nwo": "KBLLR/Vectra",
+    "inspectedAt": "2026-05-24T00:38:20.000Z",
+    "files": {
+      "hasReadme": true,
+      "packageManagers": [
+        "npm",
+        "npm-lock"
+      ],
+      "workflows": [],
+      "deploymentConfigs": [],
+      "testScripts": [
+        "lint"
+      ],
+      "buildScripts": [
+        "build"
+      ]
+    },
+    "findings": [
+      "No workflow or deployment config detected in synced key files.",
+      "Repository has template/scaffold signals."
+    ],
+    "risks": [
+      "Deployment readiness is unclear."
+    ]
+  },
+  {
     "nwo": "KBLLR/vega-lab",
-    "inspectedAt": "2026-05-22T01:04:59.000Z",
+    "inspectedAt": "2026-05-23T01:03:39.000Z",
     "files": {
       "hasReadme": true,
       "packageManagers": [
