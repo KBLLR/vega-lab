@@ -1,63 +1,5 @@
 [
   {
-    "name": "Vectra",
-    "description": "A centralized design workspace and prompt matrix engine that transforms CSV catalogs, templates, and text prompts into production-ready scalable vector graphics (SVGs), physical label layouts, cohesive icon packs, and batch-exported visual assets.",
-    "author": "KBLLR",
-    "stars": 0,
-    "url": "https://github.com/KBLLR/Vectra",
-    "date": "5/24/2026",
-    "languages": [
-      {
-        "language": "TypeScript",
-        "percentage": "100%"
-      }
-    ],
-    "topics": [],
-    "primary_language": "TypeScript",
-    "license": "None",
-    "forks": 0,
-    "open_issues": 0,
-    "last_updated": "5/24/2026",
-    "last_updated_at": "2026-05-24T00:38:20Z",
-    "created_at": "2026-05-24T00:38:04Z",
-    "private": true,
-    "has_readme": true,
-    "is_owner": true,
-    "is_fork": false,
-    "key_files": {
-      "packageJson": {
-        "scripts": {
-          "dev": "vite",
-          "build": "vite build",
-          "preview": "vite preview",
-          "lint": "tsc --noEmit"
-        },
-        "dependencies": {
-          "@google/genai": "^1.29.1",
-          "@tailwindcss/vite": "^4.2.1",
-          "framer-motion": "^12.34.3",
-          "jszip": "^3.10.1",
-          "lucide-react": "^0.553.0",
-          "react": "^19.2.0",
-          "react-dom": "^19.2.0",
-          "tailwindcss": "^4.2.1"
-        },
-        "devDependencies": {
-          "@types/node": "^22.14.0",
-          "@vitejs/plugin-react": "^5.0.0",
-          "typescript": "~5.8.2",
-          "vite": "^6.2.0"
-        }
-      },
-      "packageManagers": [
-        "npm",
-        "npm-lock"
-      ],
-      "workflows": [],
-      "deploymentConfigs": []
-    }
-  },
-  {
     "name": "vega-lab",
     "description": "The Brightest Stars",
     "author": "KBLLR",
@@ -79,8 +21,8 @@
     "license": "None",
     "forks": 0,
     "open_issues": 0,
-    "last_updated": "5/23/2026",
-    "last_updated_at": "2026-05-23T01:03:39Z",
+    "last_updated": "5/24/2026",
+    "last_updated_at": "2026-05-24T01:05:03Z",
     "created_at": "2023-12-23T23:09:43Z",
     "private": false,
     "has_readme": true,
@@ -147,6 +89,64 @@
       "deploymentConfigs": [
         "vercel.json"
       ]
+    }
+  },
+  {
+    "name": "Vectra",
+    "description": "A centralized design workspace and prompt matrix engine that transforms CSV catalogs, templates, and text prompts into production-ready scalable vector graphics (SVGs), physical label layouts, cohesive icon packs, and batch-exported visual assets.",
+    "author": "KBLLR",
+    "stars": 0,
+    "url": "https://github.com/KBLLR/Vectra",
+    "date": "5/24/2026",
+    "languages": [
+      {
+        "language": "TypeScript",
+        "percentage": "100%"
+      }
+    ],
+    "topics": [],
+    "primary_language": "TypeScript",
+    "license": "None",
+    "forks": 0,
+    "open_issues": 0,
+    "last_updated": "5/24/2026",
+    "last_updated_at": "2026-05-24T00:38:20Z",
+    "created_at": "2026-05-24T00:38:04Z",
+    "private": true,
+    "has_readme": true,
+    "is_owner": true,
+    "is_fork": false,
+    "key_files": {
+      "packageJson": {
+        "scripts": {
+          "dev": "vite",
+          "build": "vite build",
+          "preview": "vite preview",
+          "lint": "tsc --noEmit"
+        },
+        "dependencies": {
+          "@google/genai": "^1.29.1",
+          "@tailwindcss/vite": "^4.2.1",
+          "framer-motion": "^12.34.3",
+          "jszip": "^3.10.1",
+          "lucide-react": "^0.553.0",
+          "react": "^19.2.0",
+          "react-dom": "^19.2.0",
+          "tailwindcss": "^4.2.1"
+        },
+        "devDependencies": {
+          "@types/node": "^22.14.0",
+          "@vitejs/plugin-react": "^5.0.0",
+          "typescript": "~5.8.2",
+          "vite": "^6.2.0"
+        }
+      },
+      "packageManagers": [
+        "npm",
+        "npm-lock"
+      ],
+      "workflows": [],
+      "deploymentConfigs": []
     }
   },
   {
