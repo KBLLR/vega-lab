@@ -15334,9 +15334,10 @@
     "nwo": "firecrawl/firecrawl",
     "name": "firecrawl",
     "author": "firecrawl",
-    "summary": "🔥 Search, scrape, and clean the web for AI agents. Primary Vega Lab fit: repo-discovery via agent-workflows.",
+    "summary": "The API to search, scrape, and interact with the web at scale. 🔥 Primary Vega Lab fit: repo-discovery via agent-workflows.",
     "capabilities": [
       "agent-workflows",
+      "backend-service",
       "ml-ai",
       "data-pipeline",
       "frontend-ui"
@@ -15356,8 +15357,8 @@
       "news-digest-refresh"
     ],
     "adoptionKind": "service",
-    "codexBrief": "# Codex Mission: firecrawl/firecrawl\nGoal: 🔥 Search, scrape, and clean the web for AI agents. Primary Vega Lab fit: repo-discovery via agent-workflows.\nClassification: service\nCapabilities: agent-workflows, ml-ai, data-pipeline, frontend-ui\nHouse skills: repo-discovery, skill-extraction, repo-adoption\nRules:\n- Treat external runtimes and APIs as configurable integrations with explicit environment requirements.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: firecrawl/firecrawl\nGoal: 🔥 Search, scrape, and clean the web for AI agents. Primary Vega Lab fit: repo-discovery via agent-workflows.\nClassification: service\nCapabilities: agent-workflows, ml-ai, data-pipeline, frontend-ui\nHouse skills: repo-discovery, skill-extraction, repo-adoption\nRules:\n- Treat external runtimes and APIs as configurable integrations with explicit environment requirements.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: firecrawl/firecrawl\nGoal: The API to search, scrape, and interact with the web at scale. 🔥 Primary Vega Lab fit: repo-discovery via agent-workflows.\nClassification: service\nCapabilities: agent-workflows, backend-service, ml-ai, data-pipeline, frontend-ui\nHouse skills: repo-discovery, skill-extraction, repo-adoption\nRules:\n- Treat external runtimes and APIs as configurable integrations with explicit environment requirements.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: firecrawl/firecrawl\nGoal: The API to search, scrape, and interact with the web at scale. 🔥 Primary Vega Lab fit: repo-discovery via agent-workflows.\nClassification: service\nCapabilities: agent-workflows, backend-service, ml-ai, data-pipeline, frontend-ui\nHouse skills: repo-discovery, skill-extraction, repo-adoption\nRules:\n- Treat external runtimes and APIs as configurable integrations with explicit environment requirements.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "FireRedTeam/PhotoPoster",
@@ -35801,9 +35802,9 @@
     "claudeBrief": "# Claude Mission: oculus-samples/Unity-Movement\nGoal: Body, Eye and Face Tracking code sample. Primary Vega Lab fit: repo-discovery via general engineering.\nClassification: ignore\nCapabilities: none\nHouse skills: none\nRules:\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
-    "nwo": "Ocupe/Projectors",
+    "nwo": "ocupe/Projectors",
     "name": "Projectors",
-    "author": "Ocupe",
+    "author": "ocupe",
     "summary": "A Blender add-on for simple projector creation and modification. Primary Vega Lab fit: repo-discovery via developer-tooling.",
     "capabilities": [
       "developer-tooling",
@@ -35824,8 +35825,8 @@
       "news-digest-refresh"
     ],
     "adoptionKind": "tool",
-    "codexBrief": "# Codex Mission: Ocupe/Projectors\nGoal: A Blender add-on for simple projector creation and modification. Primary Vega Lab fit: repo-discovery via developer-tooling.\nClassification: tool\nCapabilities: developer-tooling, ml-ai\nHouse skills: repo-discovery, skill-extraction, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: Ocupe/Projectors\nGoal: A Blender add-on for simple projector creation and modification. Primary Vega Lab fit: repo-discovery via developer-tooling.\nClassification: tool\nCapabilities: developer-tooling, ml-ai\nHouse skills: repo-discovery, skill-extraction, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: ocupe/Projectors\nGoal: A Blender add-on for simple projector creation and modification. Primary Vega Lab fit: repo-discovery via developer-tooling.\nClassification: tool\nCapabilities: developer-tooling, ml-ai\nHouse skills: repo-discovery, skill-extraction, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: ocupe/Projectors\nGoal: A Blender add-on for simple projector creation and modification. Primary Vega Lab fit: repo-discovery via developer-tooling.\nClassification: tool\nCapabilities: developer-tooling, ml-ai\nHouse skills: repo-discovery, skill-extraction, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "oframe/ibl-converter",
@@ -37588,7 +37589,7 @@
     "nwo": "OthersideAI/self-operating-computer",
     "name": "self-operating-computer",
     "author": "OthersideAI",
-    "summary": "A framework to enable multimodal models to operate a computer. Primary Vega Lab fit: repo-adoption via ml-ai.",
+    "summary": "A framework to enable a multimodal model to operate a computer. Primary Vega Lab fit: repo-adoption via ml-ai.",
     "capabilities": [
       "ml-ai",
       "repo-ops"
@@ -37604,8 +37605,8 @@
       "mine-execution-flow"
     ],
     "adoptionKind": "house",
-    "codexBrief": "# Codex Mission: OthersideAI/self-operating-computer\nGoal: A framework to enable multimodal models to operate a computer. Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: house\nCapabilities: ml-ai, repo-ops\nHouse skills: repo-adoption, mine-execution\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: OthersideAI/self-operating-computer\nGoal: A framework to enable multimodal models to operate a computer. Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: house\nCapabilities: ml-ai, repo-ops\nHouse skills: repo-adoption, mine-execution\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: OthersideAI/self-operating-computer\nGoal: A framework to enable a multimodal model to operate a computer. Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: house\nCapabilities: ml-ai, repo-ops\nHouse skills: repo-adoption, mine-execution\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: OthersideAI/self-operating-computer\nGoal: A framework to enable a multimodal model to operate a computer. Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: house\nCapabilities: ml-ai, repo-ops\nHouse skills: repo-adoption, mine-execution\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "PABannier/bark.cpp",
