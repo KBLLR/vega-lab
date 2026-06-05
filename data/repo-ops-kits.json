@@ -1838,7 +1838,7 @@
   },
   {
     "nwo": "KBLLR/core-x",
-    "generatedAt": "2026-05-20T14:48:23.000Z",
+    "generatedAt": "2026-06-04T13:16:48.000Z",
     "target": "mlx",
     "artifacts": [
       {
@@ -9000,7 +9000,7 @@
   },
   {
     "nwo": "KBLLR/rigging-palace",
-    "generatedAt": "2026-05-02T22:45:50.000Z",
+    "generatedAt": "2026-06-04T13:02:00.000Z",
     "target": "mlx",
     "artifacts": [
       {
@@ -9101,6 +9101,130 @@
       "ops-kit",
       "codex-mission",
       "claude-mission",
+      "review-draft-only"
+    ]
+  },
+  {
+    "nwo": "KBLLR/rightorchestrator",
+    "generatedAt": "2026-06-04T17:43:03.000Z",
+    "target": "mlx",
+    "artifacts": [
+      {
+        "kind": "readme",
+        "title": "rightorchestrator README Draft",
+        "suggestedPath": "README.md",
+        "body": "# rightorchestrator\n\nAn unintrusive, private, and context-aware floating HUD and client console for agentic web applications, featuring Shadow DOM target tracking, speech visualizers, and client-side tool loops.\n\n## Vega Lab Fit\n- Classification: house\n- Capabilities: agent-workflows, frontend-ui\n- House skills: repo-discovery, skill-extraction, repo-adoption, mine-execution\n\n## Local Setup\n- Package managers: npm, npm-lock\n- Document install, dev, build, and verification commands before broad reuse.\n- Keep runtime assumptions explicit; prefer local MLX/OpenResponses for model-assisted work.\n\n## Verification\n- npm run build\n\n## Evidence\n- Repository: KBLLR/rightorchestrator\n- Description: An unintrusive, private, and context-aware floating HUD and client console for agentic web applications, featuring Shadow DOM target tracking, speech visualizers, and client-side tool loops.\n- Adoption kind: house\n- Capabilities: agent-workflows, frontend-ui\n- House skills: repo-discovery, skill-extraction, repo-adoption, mine-execution\n- Finding: No test/check/lint script detected from package metadata.",
+        "evidence": [
+          "Repository: KBLLR/rightorchestrator",
+          "Description: An unintrusive, private, and context-aware floating HUD and client console for agentic web applications, featuring Shadow DOM target tracking, speech visualizers, and client-side tool loops.",
+          "Adoption kind: house",
+          "Capabilities: agent-workflows, frontend-ui",
+          "House skills: repo-discovery, skill-extraction, repo-adoption, mine-execution",
+          "Finding: No test/check/lint script detected from package metadata."
+        ]
+      },
+      {
+        "kind": "agents",
+        "title": "rightorchestrator AGENTS Draft",
+        "suggestedPath": "AGENTS.md",
+        "body": "# rightorchestrator Agents\n\n## Product Truth\n- Repository: KBLLR/rightorchestrator\n- Vega Lab classification: house\n- Active mission target: Local MLX\n\n## Operating Rules\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\n\n## Commands\n- npm run build\n\n## Agent Boundaries\n- Do not mutate deployment, secrets, or release configuration without explicit approval.\n- Prefer draft plans and reviewable diffs over broad automation.\n- Preserve existing product direction; use Vega Lab evidence before adding new abstractions.",
+        "evidence": [
+          "Repository: KBLLR/rightorchestrator",
+          "Description: An unintrusive, private, and context-aware floating HUD and client console for agentic web applications, featuring Shadow DOM target tracking, speech visualizers, and client-side tool loops.",
+          "Adoption kind: house",
+          "Capabilities: agent-workflows, frontend-ui",
+          "House skills: repo-discovery, skill-extraction, repo-adoption, mine-execution",
+          "Finding: No test/check/lint script detected from package metadata."
+        ]
+      },
+      {
+        "kind": "maintenance",
+        "title": "rightorchestrator Maintenance Plan",
+        "suggestedPath": "docs/maintenance-plan.md",
+        "body": "# Maintenance Plan: KBLLR/rightorchestrator\n\n## Current Signals\n- No test/check/lint script detected from package metadata.\n- No workflow or deployment config detected in synced key files.\n\n## Recommended Pass\n- Confirm install path and package manager.\n- Run available verification commands before editing.\n- Patch stale docs, commands, and workflow assumptions first.\n- Open the smallest useful PR only after human approval.\n- Vega Lab action: mlx-mission\n- Vega Lab action: ops-kit\n- Vega Lab action: codex-mission\n- Vega Lab action: claude-mission\n- Vega Lab action: house-integration\n\n## Evidence\n- Repository: KBLLR/rightorchestrator\n- Description: An unintrusive, private, and context-aware floating HUD and client console for agentic web applications, featuring Shadow DOM target tracking, speech visualizers, and client-side tool loops.\n- Adoption kind: house\n- Capabilities: agent-workflows, frontend-ui\n- House skills: repo-discovery, skill-extraction, repo-adoption, mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: No workflow or deployment config detected in synced key files.\n- Risk: Maintenance work has no obvious verification command.",
+        "evidence": [
+          "Repository: KBLLR/rightorchestrator",
+          "Description: An unintrusive, private, and context-aware floating HUD and client console for agentic web applications, featuring Shadow DOM target tracking, speech visualizers, and client-side tool loops.",
+          "Adoption kind: house",
+          "Capabilities: agent-workflows, frontend-ui",
+          "House skills: repo-discovery, skill-extraction, repo-adoption, mine-execution",
+          "Finding: No test/check/lint script detected from package metadata.",
+          "Finding: No workflow or deployment config detected in synced key files.",
+          "Risk: Maintenance work has no obvious verification command."
+        ]
+      },
+      {
+        "kind": "deployment",
+        "title": "rightorchestrator Deployment Plan",
+        "suggestedPath": "docs/deployment-plan.md",
+        "body": "# Deployment Plan: KBLLR/rightorchestrator\n\n## Known Deployment Evidence\n- No workflow or deployment config detected in synced key files.\n\n## Draft Checks\n- Identify expected host and runtime.\n- Document build command, output directory, and required environment variables.\n- Verify preview URL and production URL checks.\n- Keep deploy authority manual; Vega Lab drafts plans and inbox items only.\n\n## Evidence\n- Repository: KBLLR/rightorchestrator\n- Description: An unintrusive, private, and context-aware floating HUD and client console for agentic web applications, featuring Shadow DOM target tracking, speech visualizers, and client-side tool loops.\n- Adoption kind: house\n- Capabilities: agent-workflows, frontend-ui\n- House skills: repo-discovery, skill-extraction, repo-adoption, mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: No workflow or deployment config detected in synced key files.\n- Risk: Maintenance work has no obvious verification command.",
+        "evidence": [
+          "Repository: KBLLR/rightorchestrator",
+          "Description: An unintrusive, private, and context-aware floating HUD and client console for agentic web applications, featuring Shadow DOM target tracking, speech visualizers, and client-side tool loops.",
+          "Adoption kind: house",
+          "Capabilities: agent-workflows, frontend-ui",
+          "House skills: repo-discovery, skill-extraction, repo-adoption, mine-execution",
+          "Finding: No test/check/lint script detected from package metadata.",
+          "Finding: No workflow or deployment config detected in synced key files.",
+          "Risk: Maintenance work has no obvious verification command."
+        ]
+      },
+      {
+        "kind": "testing",
+        "title": "rightorchestrator Test Plan",
+        "suggestedPath": "docs/test-plan.md",
+        "body": "# Test Plan: KBLLR/rightorchestrator\n\n## Available Commands\n- npm run build\n\n## Minimum Verification Contract\n- Document one install command.\n- Document one fast smoke command.\n- Document one release/build command when deployable.\n- If no commands exist, create a tracked issue or action item before implementation work.\n\n## Evidence\n- Repository: KBLLR/rightorchestrator\n- Description: An unintrusive, private, and context-aware floating HUD and client console for agentic web applications, featuring Shadow DOM target tracking, speech visualizers, and client-side tool loops.\n- Adoption kind: house\n- Capabilities: agent-workflows, frontend-ui\n- House skills: repo-discovery, skill-extraction, repo-adoption, mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: No workflow or deployment config detected in synced key files.\n- Risk: Maintenance work has no obvious verification command.",
+        "evidence": [
+          "Repository: KBLLR/rightorchestrator",
+          "Description: An unintrusive, private, and context-aware floating HUD and client console for agentic web applications, featuring Shadow DOM target tracking, speech visualizers, and client-side tool loops.",
+          "Adoption kind: house",
+          "Capabilities: agent-workflows, frontend-ui",
+          "House skills: repo-discovery, skill-extraction, repo-adoption, mine-execution",
+          "Finding: No test/check/lint script detected from package metadata.",
+          "Finding: No workflow or deployment config detected in synced key files.",
+          "Risk: Maintenance work has no obvious verification command."
+        ]
+      },
+      {
+        "kind": "action-item",
+        "title": "rightorchestrator Action Item Draft",
+        "suggestedPath": "ops/action-item.md",
+        "body": "# Action Item Draft: KBLLR/rightorchestrator\n\n## Recommended Actions\n- testing: Define verification for rightorchestrator\n- deployment: Clarify deployment readiness for rightorchestrator\n\n## Mission Target\n- Local MLX\n\n## Evidence\n- Repository: KBLLR/rightorchestrator\n- Description: An unintrusive, private, and context-aware floating HUD and client console for agentic web applications, featuring Shadow DOM target tracking, speech visualizers, and client-side tool loops.\n- Adoption kind: house\n- Capabilities: agent-workflows, frontend-ui\n- House skills: repo-discovery, skill-extraction, repo-adoption, mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: No workflow or deployment config detected in synced key files.\n- Risk: Maintenance work has no obvious verification command.\n- Risk: Deployment readiness is unclear.\n- Action item: Define verification for rightorchestrator",
+        "evidence": [
+          "Repository: KBLLR/rightorchestrator",
+          "Description: An unintrusive, private, and context-aware floating HUD and client console for agentic web applications, featuring Shadow DOM target tracking, speech visualizers, and client-side tool loops.",
+          "Adoption kind: house",
+          "Capabilities: agent-workflows, frontend-ui",
+          "House skills: repo-discovery, skill-extraction, repo-adoption, mine-execution",
+          "Finding: No test/check/lint script detected from package metadata.",
+          "Finding: No workflow or deployment config detected in synced key files.",
+          "Risk: Maintenance work has no obvious verification command.",
+          "Risk: Deployment readiness is unclear.",
+          "Action item: Define verification for rightorchestrator"
+        ]
+      }
+    ],
+    "evidence": [
+      "Repository: KBLLR/rightorchestrator",
+      "Description: An unintrusive, private, and context-aware floating HUD and client console for agentic web applications, featuring Shadow DOM target tracking, speech visualizers, and client-side tool loops.",
+      "Adoption kind: house",
+      "Capabilities: agent-workflows, frontend-ui",
+      "House skills: repo-discovery, skill-extraction, repo-adoption, mine-execution",
+      "Finding: No test/check/lint script detected from package metadata.",
+      "Finding: No workflow or deployment config detected in synced key files.",
+      "Risk: Maintenance work has no obvious verification command.",
+      "Risk: Deployment readiness is unclear.",
+      "Action item: Define verification for rightorchestrator",
+      "Action item: Clarify deployment readiness for rightorchestrator"
+    ],
+    "recommendedActions": [
+      "mlx-mission",
+      "ops-kit",
+      "codex-mission",
+      "claude-mission",
+      "house-integration",
+      "testing:vega-lab:testing:kbllr-rightorchestrator",
+      "deployment:vega-lab:deployment:kbllr-rightorchestrator",
       "review-draft-only"
     ]
   },
@@ -11960,7 +12084,7 @@
   },
   {
     "nwo": "KBLLR/vega-lab",
-    "generatedAt": "2026-06-03T01:16:48.000Z",
+    "generatedAt": "2026-06-04T01:16:49.000Z",
     "target": "mlx",
     "artifacts": [
       {
