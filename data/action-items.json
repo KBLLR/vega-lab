@@ -222,6 +222,70 @@
     "updatedAt": "2023-07-07T07:02:56.000Z"
   },
   {
+    "id": "vega-lab:testing:kbllr-cine-mlx",
+    "kind": "testing",
+    "status": "open",
+    "priority": "normal",
+    "nwo": "KBLLR/cine-mlx",
+    "title": "Define verification for cine-mlx",
+    "summary": "Package metadata does not expose an obvious test, check, or lint command.",
+    "evidence": [
+      "No test/check/lint script detected from package metadata.",
+      "No workflow or deployment config detected in synced key files.",
+      "Maintenance work has no obvious verification command.",
+      "Deployment readiness is unclear."
+    ],
+    "linkedSkills": [
+      "repo-adoption",
+      "mine-execution"
+    ],
+    "linkedRules": [
+      "Review license status before adoption or redistribution work.",
+      "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
+    ],
+    "linkedFlows": [
+      "research-queue-flow",
+      "adoption-decision-flow",
+      "mine-execution-flow"
+    ],
+    "draft": "Draft a verification plan for KBLLR/cine-mlx: add or document lint/test/build commands and define the smallest smoke test agents should run before edits.",
+    "source": "daily-ops",
+    "createdAt": "2026-06-07T15:14:26.000Z",
+    "updatedAt": "2026-06-07T15:14:26.000Z"
+  },
+  {
+    "id": "vega-lab:deployment:kbllr-cine-mlx",
+    "kind": "deployment",
+    "status": "open",
+    "priority": "normal",
+    "nwo": "KBLLR/cine-mlx",
+    "title": "Clarify deployment readiness for cine-mlx",
+    "summary": "Vega Lab could not detect workflow or deployment configuration from synced key files.",
+    "evidence": [
+      "No test/check/lint script detected from package metadata.",
+      "No workflow or deployment config detected in synced key files.",
+      "Maintenance work has no obvious verification command.",
+      "Deployment readiness is unclear."
+    ],
+    "linkedSkills": [
+      "repo-adoption",
+      "mine-execution"
+    ],
+    "linkedRules": [
+      "Review license status before adoption or redistribution work.",
+      "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
+    ],
+    "linkedFlows": [
+      "research-queue-flow",
+      "adoption-decision-flow",
+      "mine-execution-flow"
+    ],
+    "draft": "Draft a deployment readiness brief for KBLLR/cine-mlx: identify expected host, build command, env vars, workflow status, and verification URL checks. Evidence: No test/check/lint script detected from package metadata. No workflow or deployment config detected in synced key files.",
+    "source": "daily-ops",
+    "createdAt": "2026-06-07T15:14:26.000Z",
+    "updatedAt": "2026-06-07T15:14:26.000Z"
+  },
+  {
     "id": "vega-lab:testing:kbllr-rightorchestrator",
     "kind": "testing",
     "status": "open",

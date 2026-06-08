@@ -292,6 +292,31 @@
     ]
   },
   {
+    "nwo": "KBLLR/cine-mlx",
+    "inspectedAt": "2026-06-07T15:14:26.000Z",
+    "files": {
+      "hasReadme": true,
+      "packageManagers": [
+        "npm",
+        "pnpm"
+      ],
+      "workflows": [],
+      "deploymentConfigs": [],
+      "testScripts": [],
+      "buildScripts": [
+        "build"
+      ]
+    },
+    "findings": [
+      "No test/check/lint script detected from package metadata.",
+      "No workflow or deployment config detected in synced key files."
+    ],
+    "risks": [
+      "Maintenance work has no obvious verification command.",
+      "Deployment readiness is unclear."
+    ]
+  },
+  {
     "nwo": "KBLLR/city-blocks",
     "inspectedAt": "2025-11-10T04:51:23.000Z",
     "files": {
@@ -391,7 +416,7 @@
   },
   {
     "nwo": "KBLLR/core-x",
-    "inspectedAt": "2026-06-07T00:32:39.000Z",
+    "inspectedAt": "2026-06-07T15:15:12.000Z",
     "files": {
       "hasReadme": false,
       "packageManagers": [
@@ -2409,7 +2434,7 @@
   },
   {
     "nwo": "KBLLR/vega-lab",
-    "inspectedAt": "2026-06-06T01:06:10.000Z",
+    "inspectedAt": "2026-06-07T01:10:03.000Z",
     "files": {
       "hasReadme": true,
       "packageManagers": [

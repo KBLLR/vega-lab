@@ -24009,6 +24009,29 @@
     "claudeBrief": "# Claude Mission: KBLLR/ChatDev\nGoal: Create Customized Software using Natural Language Idea (through LLM-powered Multi-Agent Collaboration) Primary Vega Lab fit: skill-extraction via agent-workflows.\nClassification: tool\nCapabilities: agent-workflows, ml-ai\nHouse skills: skill-extraction, repo-adoption, mine-execution\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
+    "nwo": "KBLLR/cine-mlx",
+    "name": "cine-mlx",
+    "author": "KBLLR",
+    "summary": "Local-first MLX film and video production studio for Core-X. Primary Vega Lab fit: repo-adoption via general engineering.",
+    "capabilities": [],
+    "houseSkills": [
+      "repo-adoption",
+      "mine-execution"
+    ],
+    "rules": [
+      "Review license status before adoption or redistribution work.",
+      "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
+    ],
+    "flows": [
+      "research-queue-flow",
+      "adoption-decision-flow",
+      "mine-execution-flow"
+    ],
+    "adoptionKind": "house",
+    "codexBrief": "# Codex Mission: KBLLR/cine-mlx\nGoal: Local-first MLX film and video production studio for Core-X. Primary Vega Lab fit: repo-adoption via general engineering.\nClassification: house\nCapabilities: none\nHouse skills: repo-adoption, mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: KBLLR/cine-mlx\nGoal: Local-first MLX film and video production studio for Core-X. Primary Vega Lab fit: repo-adoption via general engineering.\nClassification: house\nCapabilities: none\nHouse skills: repo-adoption, mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+  },
+  {
     "nwo": "KBLLR/city-blocks",
     "name": "city-blocks",
     "author": "KBLLR",
@@ -44120,15 +44143,16 @@
     ],
     "rules": [
       "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.",
-      "Review license status before adoption or redistribution work."
+      "Review license status before adoption or redistribution work.",
+      "Validate maintenance risk and current ecosystem fit before committing to adoption."
     ],
     "flows": [
       "research-queue-flow",
       "adoption-decision-flow"
     ],
     "adoptionKind": "tool",
-    "codexBrief": "# Codex Mission: Sirosky/Upscale-Hub\nGoal: A repository collecting image and video upscaling resources as well as my own super resolution models. Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: Sirosky/Upscale-Hub\nGoal: A repository collecting image and video upscaling resources as well as my own super resolution models. Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: Sirosky/Upscale-Hub\nGoal: A repository collecting image and video upscaling resources as well as my own super resolution models. Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: Sirosky/Upscale-Hub\nGoal: A repository collecting image and video upscaling resources as well as my own super resolution models. Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "sketchfab/blender-plugin",
@@ -45716,8 +45740,7 @@
       "repo-adoption"
     ],
     "rules": [
-      "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.",
-      "Validate maintenance risk and current ecosystem fit before committing to adoption."
+      "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house."
     ],
     "flows": [
       "research-queue-flow",
@@ -45725,8 +45748,8 @@
       "news-digest-refresh"
     ],
     "adoptionKind": "tool",
-    "codexBrief": "# Codex Mission: stillyslalom/RefractiveIndex.jl\nGoal: Interface to https://refractiveindex.info/ Primary Vega Lab fit: repo-discovery via data-pipeline.\nClassification: tool\nCapabilities: data-pipeline\nHouse skills: repo-discovery, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: stillyslalom/RefractiveIndex.jl\nGoal: Interface to https://refractiveindex.info/ Primary Vega Lab fit: repo-discovery via data-pipeline.\nClassification: tool\nCapabilities: data-pipeline\nHouse skills: repo-discovery, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: stillyslalom/RefractiveIndex.jl\nGoal: Interface to https://refractiveindex.info/ Primary Vega Lab fit: repo-discovery via data-pipeline.\nClassification: tool\nCapabilities: data-pipeline\nHouse skills: repo-discovery, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: stillyslalom/RefractiveIndex.jl\nGoal: Interface to https://refractiveindex.info/ Primary Vega Lab fit: repo-discovery via data-pipeline.\nClassification: tool\nCapabilities: data-pipeline\nHouse skills: repo-discovery, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "stitchEm/stitchEm",
