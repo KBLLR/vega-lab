@@ -1,64 +1,5 @@
 [
   {
-    "name": "cine-mlx",
-    "description": "Local-first MLX film and video production studio for Core-X.",
-    "author": "KBLLR",
-    "stars": 0,
-    "url": "https://github.com/KBLLR/cine-mlx",
-    "date": "6/7/2026",
-    "languages": [
-      {
-        "language": "HTML",
-        "percentage": "100%"
-      }
-    ],
-    "topics": [],
-    "primary_language": "HTML",
-    "license": "None",
-    "forks": 0,
-    "open_issues": 0,
-    "last_updated": "6/7/2026",
-    "last_updated_at": "2026-06-07T15:14:26Z",
-    "created_at": "2026-06-07T15:14:17Z",
-    "private": true,
-    "has_readme": true,
-    "is_owner": true,
-    "is_fork": false,
-    "key_files": {
-      "packageJson": {
-        "scripts": {
-          "dev": "vite",
-          "build": "tsc && vite build",
-          "preview": "vite preview",
-          "publish:warehouse": "node ../../scripts/publish-house-assets.mjs --house gen-filmaker",
-          "publish:warehouse:dry": "node ../../scripts/publish-house-assets.mjs --house gen-filmaker --dry-run"
-        },
-        "dependencies": {
-          "@tailwindcss/postcss": "^4.1.15",
-          "react": "^19.2.0",
-          "react-dom": "^19.2.0"
-        },
-        "devDependencies": {
-          "@types/react": "^19.2.2",
-          "@types/react-dom": "^19.2.2",
-          "@vitejs/plugin-react": "^5.0.4",
-          "autoprefixer": "^10.4.21",
-          "postcss": "^8.5.6",
-          "tailwindcss": "^4.1.15",
-          "typescript": "^5.9.3",
-          "vite": "^7.1.11",
-          "vite-tsconfig-paths": "^5.1.4"
-        }
-      },
-      "packageManagers": [
-        "npm",
-        "pnpm"
-      ],
-      "workflows": [],
-      "deploymentConfigs": []
-    }
-  },
-  {
     "name": "vega-lab",
     "description": "The Brightest Stars",
     "author": "KBLLR",
@@ -80,8 +21,8 @@
     "license": "None",
     "forks": 0,
     "open_issues": 0,
-    "last_updated": "6/7/2026",
-    "last_updated_at": "2026-06-07T01:10:03Z",
+    "last_updated": "6/8/2026",
+    "last_updated_at": "2026-06-08T01:10:56Z",
     "created_at": "2023-12-23T23:09:43Z",
     "private": false,
     "has_readme": true,
@@ -148,6 +89,65 @@
       "deploymentConfigs": [
         "vercel.json"
       ]
+    }
+  },
+  {
+    "name": "cine-mlx",
+    "description": "Local-first MLX film and video production studio for Core-X.",
+    "author": "KBLLR",
+    "stars": 0,
+    "url": "https://github.com/KBLLR/cine-mlx",
+    "date": "6/7/2026",
+    "languages": [
+      {
+        "language": "HTML",
+        "percentage": "100%"
+      }
+    ],
+    "topics": [],
+    "primary_language": "HTML",
+    "license": "None",
+    "forks": 0,
+    "open_issues": 0,
+    "last_updated": "6/7/2026",
+    "last_updated_at": "2026-06-07T15:14:26Z",
+    "created_at": "2026-06-07T15:14:17Z",
+    "private": true,
+    "has_readme": true,
+    "is_owner": true,
+    "is_fork": false,
+    "key_files": {
+      "packageJson": {
+        "scripts": {
+          "dev": "vite",
+          "build": "tsc && vite build",
+          "preview": "vite preview",
+          "publish:warehouse": "node ../../scripts/publish-house-assets.mjs --house gen-filmaker",
+          "publish:warehouse:dry": "node ../../scripts/publish-house-assets.mjs --house gen-filmaker --dry-run"
+        },
+        "dependencies": {
+          "@tailwindcss/postcss": "^4.1.15",
+          "react": "^19.2.0",
+          "react-dom": "^19.2.0"
+        },
+        "devDependencies": {
+          "@types/react": "^19.2.2",
+          "@types/react-dom": "^19.2.2",
+          "@vitejs/plugin-react": "^5.0.4",
+          "autoprefixer": "^10.4.21",
+          "postcss": "^8.5.6",
+          "tailwindcss": "^4.1.15",
+          "typescript": "^5.9.3",
+          "vite": "^7.1.11",
+          "vite-tsconfig-paths": "^5.1.4"
+        }
+      },
+      "packageManagers": [
+        "npm",
+        "pnpm"
+      ],
+      "workflows": [],
+      "deploymentConfigs": []
     }
   },
   {
