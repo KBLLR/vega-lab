@@ -13693,13 +13693,15 @@
     "summary": "Free and open-source monospaced font from Evil Martians Primary Vega Lab fit: repo-discovery via general engineering.",
     "capabilities": [],
     "houseSkills": [],
-    "rules": [],
+    "rules": [
+      "Validate maintenance risk and current ecosystem fit before committing to adoption."
+    ],
     "flows": [
       "research-queue-flow"
     ],
     "adoptionKind": "ignore",
-    "codexBrief": "# Codex Mission: evilmartians/mono\nGoal: Free and open-source monospaced font from Evil Martians Primary Vega Lab fit: repo-discovery via general engineering.\nClassification: ignore\nCapabilities: none\nHouse skills: none\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: evilmartians/mono\nGoal: Free and open-source monospaced font from Evil Martians Primary Vega Lab fit: repo-discovery via general engineering.\nClassification: ignore\nCapabilities: none\nHouse skills: none\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: evilmartians/mono\nGoal: Free and open-source monospaced font from Evil Martians Primary Vega Lab fit: repo-discovery via general engineering.\nClassification: ignore\nCapabilities: none\nHouse skills: none\nRules:\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: evilmartians/mono\nGoal: Free and open-source monospaced font from Evil Martians Primary Vega Lab fit: repo-discovery via general engineering.\nClassification: ignore\nCapabilities: none\nHouse skills: none\nRules:\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "evilmartians/oklch-picker",
@@ -21261,6 +21263,33 @@
     "adoptionKind": "service",
     "codexBrief": "# Codex Mission: Integuru-AI/Integuru\nGoal: The first AI agent that builds permissionless integrations through reverse engineering platforms' internal APIs. Primary Vega Lab fit: skill-extraction via agent-workflows.\nClassification: service\nCapabilities: agent-workflows, backend-service, ml-ai, repo-ops\nHouse skills: skill-extraction, repo-adoption, mine-execution\nRules:\n- Treat external runtimes and APIs as configurable integrations with explicit environment requirements.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
     "claudeBrief": "# Claude Mission: Integuru-AI/Integuru\nGoal: The first AI agent that builds permissionless integrations through reverse engineering platforms' internal APIs. Primary Vega Lab fit: skill-extraction via agent-workflows.\nClassification: service\nCapabilities: agent-workflows, backend-service, ml-ai, repo-ops\nHouse skills: skill-extraction, repo-adoption, mine-execution\nRules:\n- Treat external runtimes and APIs as configurable integrations with explicit environment requirements.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+  },
+  {
+    "nwo": "intellectronica/skillz",
+    "name": "skillz",
+    "author": "intellectronica",
+    "summary": "An MCP server for loading skills (shim for non-claude clients). Primary Vega Lab fit: skill-extraction via mcp-tooling.",
+    "capabilities": [
+      "mcp-tooling",
+      "agent-workflows",
+      "backend-service",
+      "ml-ai"
+    ],
+    "houseSkills": [
+      "skill-extraction",
+      "repo-adoption"
+    ],
+    "rules": [
+      "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house."
+    ],
+    "flows": [
+      "research-queue-flow",
+      "skill-extraction-flow",
+      "adoption-decision-flow"
+    ],
+    "adoptionKind": "tool",
+    "codexBrief": "# Codex Mission: intellectronica/skillz\nGoal: An MCP server for loading skills (shim for non-claude clients). Primary Vega Lab fit: skill-extraction via mcp-tooling.\nClassification: tool\nCapabilities: mcp-tooling, agent-workflows, backend-service, ml-ai\nHouse skills: skill-extraction, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: intellectronica/skillz\nGoal: An MCP server for loading skills (shim for non-claude clients). Primary Vega Lab fit: skill-extraction via mcp-tooling.\nClassification: tool\nCapabilities: mcp-tooling, agent-workflows, backend-service, ml-ai\nHouse skills: skill-extraction, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "InteractiveComputerGraphics/blender-sequence-loader",
@@ -31178,6 +31207,7 @@
     "capabilities": [
       "mcp-tooling",
       "research-intelligence",
+      "template-scaffolding",
       "ml-ai"
     ],
     "houseSkills": [
@@ -31186,16 +31216,16 @@
       "repo-adoption"
     ],
     "rules": [
-      "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house."
+      "Adopt this as a scaffold or reference, not as a long-lived runtime dependency."
     ],
     "flows": [
       "research-queue-flow",
       "skill-extraction-flow",
       "adoption-decision-flow"
     ],
-    "adoptionKind": "tool",
-    "codexBrief": "# Codex Mission: MemPalace/mempalace\nGoal: The best-benchmarked open-source AI memory system. And it's free. Primary Vega Lab fit: repo-research via mcp-tooling.\nClassification: tool\nCapabilities: mcp-tooling, research-intelligence, ml-ai\nHouse skills: repo-research, skill-extraction, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: MemPalace/mempalace\nGoal: The best-benchmarked open-source AI memory system. And it's free. Primary Vega Lab fit: repo-research via mcp-tooling.\nClassification: tool\nCapabilities: mcp-tooling, research-intelligence, ml-ai\nHouse skills: repo-research, skill-extraction, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "adoptionKind": "template",
+    "codexBrief": "# Codex Mission: MemPalace/mempalace\nGoal: The best-benchmarked open-source AI memory system. And it's free. Primary Vega Lab fit: repo-research via mcp-tooling.\nClassification: template\nCapabilities: mcp-tooling, research-intelligence, template-scaffolding, ml-ai\nHouse skills: repo-research, skill-extraction, repo-adoption\nRules:\n- Adopt this as a scaffold or reference, not as a long-lived runtime dependency.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: MemPalace/mempalace\nGoal: The best-benchmarked open-source AI memory system. And it's free. Primary Vega Lab fit: repo-research via mcp-tooling.\nClassification: template\nCapabilities: mcp-tooling, research-intelligence, template-scaffolding, ml-ai\nHouse skills: repo-research, skill-extraction, repo-adoption\nRules:\n- Adopt this as a scaffold or reference, not as a long-lived runtime dependency.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "mermaid-js/mermaid",
@@ -37124,23 +37154,24 @@
     "nwo": "openinterpreter/openinterpreter",
     "name": "openinterpreter",
     "author": "openinterpreter",
-    "summary": "A natural language interface for computers Primary Vega Lab fit: repo-adoption via ml-ai.",
+    "summary": "A lightweight coding agent for open models like Deepseek, Kimi, and Qwen Primary Vega Lab fit: skill-extraction via agent-workflows.",
     "capabilities": [
+      "agent-workflows",
       "ml-ai"
     ],
     "houseSkills": [
+      "skill-extraction",
       "repo-adoption"
     ],
-    "rules": [
-      "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house."
-    ],
+    "rules": [],
     "flows": [
       "research-queue-flow",
+      "skill-extraction-flow",
       "adoption-decision-flow"
     ],
-    "adoptionKind": "tool",
-    "codexBrief": "# Codex Mission: openinterpreter/openinterpreter\nGoal: A natural language interface for computers Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: openinterpreter/openinterpreter\nGoal: A natural language interface for computers Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "adoptionKind": "house",
+    "codexBrief": "# Codex Mission: openinterpreter/openinterpreter\nGoal: A lightweight coding agent for open models like Deepseek, Kimi, and Qwen Primary Vega Lab fit: skill-extraction via agent-workflows.\nClassification: house\nCapabilities: agent-workflows, ml-ai\nHouse skills: skill-extraction, repo-adoption\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: openinterpreter/openinterpreter\nGoal: A lightweight coding agent for open models like Deepseek, Kimi, and Qwen Primary Vega Lab fit: skill-extraction via agent-workflows.\nClassification: house\nCapabilities: agent-workflows, ml-ai\nHouse skills: skill-extraction, repo-adoption\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "openMVG/awesome_3DReconstruction_list",
@@ -53354,6 +53385,39 @@
     "adoptionKind": "tool",
     "codexBrief": "# Codex Mission: yunlong10/Awesome-LLMs-for-Video-Understanding\nGoal: 🔥🔥🔥 [IEEE TCSVT] Latest Papers, Codes and Datasets on Vid-LLMs. Primary Vega Lab fit: repo-discovery via research-intelligence.\nClassification: tool\nCapabilities: research-intelligence, data-pipeline\nHouse skills: repo-discovery, repo-research, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
     "claudeBrief": "# Claude Mission: yunlong10/Awesome-LLMs-for-Video-Understanding\nGoal: 🔥🔥🔥 [IEEE TCSVT] Latest Papers, Codes and Datasets on Vid-LLMs. Primary Vega Lab fit: repo-discovery via research-intelligence.\nClassification: tool\nCapabilities: research-intelligence, data-pipeline\nHouse skills: repo-discovery, repo-research, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+  },
+  {
+    "nwo": "yusufkaraaslan/Skill_Seekers",
+    "name": "Skill_Seekers",
+    "author": "yusufkaraaslan",
+    "summary": "Convert documentation websites, GitHub repositories, and PDFs into Claude AI skills with automatic conflict detection Primary Vega Lab fit: repo-discovery via mcp-tooling.",
+    "capabilities": [
+      "mcp-tooling",
+      "template-scaffolding",
+      "backend-service",
+      "ml-ai",
+      "data-pipeline",
+      "repo-ops"
+    ],
+    "houseSkills": [
+      "repo-discovery",
+      "skill-extraction",
+      "repo-adoption",
+      "mine-execution"
+    ],
+    "rules": [
+      "Adopt this as a scaffold or reference, not as a long-lived runtime dependency."
+    ],
+    "flows": [
+      "research-queue-flow",
+      "skill-extraction-flow",
+      "adoption-decision-flow",
+      "news-digest-refresh",
+      "mine-execution-flow"
+    ],
+    "adoptionKind": "template",
+    "codexBrief": "# Codex Mission: yusufkaraaslan/Skill_Seekers\nGoal: Convert documentation websites, GitHub repositories, and PDFs into Claude AI skills with automatic conflict detection Primary Vega Lab fit: repo-discovery via mcp-tooling.\nClassification: template\nCapabilities: mcp-tooling, template-scaffolding, backend-service, ml-ai, data-pipeline, repo-ops\nHouse skills: repo-discovery, skill-extraction, repo-adoption, mine-execution\nRules:\n- Adopt this as a scaffold or reference, not as a long-lived runtime dependency.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\n5. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: yusufkaraaslan/Skill_Seekers\nGoal: Convert documentation websites, GitHub repositories, and PDFs into Claude AI skills with automatic conflict detection Primary Vega Lab fit: repo-discovery via mcp-tooling.\nClassification: template\nCapabilities: mcp-tooling, template-scaffolding, backend-service, ml-ai, data-pipeline, repo-ops\nHouse skills: repo-discovery, skill-extraction, repo-adoption, mine-execution\nRules:\n- Adopt this as a scaffold or reference, not as a long-lived runtime dependency.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\n5. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "yzhou359/MakeItTalk",
