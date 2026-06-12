@@ -60,3 +60,11 @@
 - Active mission targets are Codex, Claude, and local MLX. Jules is historical template vocabulary, not a Vega Lab target.
 - Automations may draft action items, Ops kits, and mission briefs only. Do not open PRs, merge, deploy, or mutate other repositories without explicit human approval.
 - Public-facing summaries, SKILL candidates, technology alerts, and house ideas must pass human review before publication or adoption.
+
+## Current Operating Plan (2026-06-12)
+
+- **Observatory Restored:** Re-emphasize star/repo tracking alongside the skills-orchestrator pattern. Vega-Lab tracks personal owned, starred, and external watched repos to feed capability refinery flows.
+- **Review Gates Enforced:** Raw repo signals, source snapshots, and knowledge refinery artifacts must be generated as internal/draft files under `data/review/` or `data/` and mirrored to `public/`. Auto-promotion of capabilities is prohibited; promotion requires a distinct reviewed execution step.
+- **Parked Work Boundary:** Codex release hygiene and external repo mutations are parked. Do not modify or push changes to other houses or the main repository root.
+- **Evidence Curation:** Utilize OCR at `/v1/ocr/*` solely for visual evidence extraction from screenshots and diagrams. Do not use OCR as a general dialogue runtime.
+- **Reference Docs:** Refer to [agent-briefing-current-plan.md](docs/agent-briefing-current-plan.md) and [repo-star-observatory-audit-2026-06-12.md](docs/repo-star-observatory-audit-2026-06-12.md) for identity, contracts, and architecture definitions.
