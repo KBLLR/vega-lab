@@ -17,11 +17,13 @@
     "sync:mine": "node scripts/my-repos.js",
     "sync:model-zoo": "node scripts/model-zoo-snapshot.js",
     "export:corex-contracts": "node scripts/export-corex-contracts.js",
+    "build:skill-candidates": "node scripts/build-skill-candidates.js",
     "generate:stats": "node src/analytics/statistics.js",
     "mcp": "node src/mcp-server/index.js",
     "test:data": "node tests/run-tests.js",
     "test:mcp": "node tests/test-mcp-server.js && node tests/test-ocr-skill-candidate.js",
     "test:corex-contract-export": "node tests/test-corex-contract-export.js",
+    "test:skill-candidate-ingestion": "node tests/test-skill-candidate-ingestion.js",
     "test": "npm run lint && npm run test:data && npm run test:mcp"
   },
   "dependencies": {
