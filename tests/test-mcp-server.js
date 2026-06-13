@@ -126,6 +126,30 @@ async function main() {
       assert.ok(toolNames.has(toolName), `Expected MCP tool to exist: ${toolName}`);
     });
 
+    const skillCandidatesResult = parseTextPayload(await client.callTool({
+      name: "list_skill_candidates",
+      arguments: { limit: 1, scope: "all" },
+    }));
+    assert.ok(skillCandidatesResult.count >= 1, "Skill candidate listing should return at least one candidate");
+    const skillCandidate = skillCandidatesResult.candidates[0];
+    assert.equal(skillCandidate.schema_version, "corex.vega-skill-candidate.v1", "MCP candidate should use canonical v1 schema");
+    assert.ok(skillCandidate.content_checksum.startsWith("sha256:"), "MCP candidate should expose a content checksum");
+
+    const skillValidationResult = parseTextPayload(await client.callTool({
+      name: "validate_skill_candidate",
+      arguments: { candidate_id: skillCandidate.candidate_id, limit: 1 },
+    }));
+    assert.equal(skillValidationResult.validation.valid, true, "MCP candidate validation should pass");
+    assert.equal(skillValidationResult.validation.checksum_ok, true, "MCP candidate checksum should match canonical content");
+
+    const skillProposalResult = parseTextPayload(await client.callTool({
+      name: "propose_skill_promotion",
+      arguments: { candidate_id: skillCandidate.candidate_id, limit: 1 },
+    }));
+    assert.equal(skillProposalResult.proposal.metadata.candidate_id, skillCandidate.candidate_id);
+    assert.equal(skillProposalResult.proposal.metadata.candidate_checksum, skillCandidate.content_checksum);
+    assert.equal(skillProposalResult.wrote, false, "MCP proposal should not write unless explicitly requested");
+
     const runtimeHealth = parseTextPayload(await client.callTool({
       name: "get_runtime_health",
       arguments: {},
