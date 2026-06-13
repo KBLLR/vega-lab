@@ -6,11 +6,15 @@ import os from "node:os";
 import path from "node:path";
 
 import {
+  applyReviewEnvelope,
+  buildReviewEnvelope,
   buildSkillCandidateIngestion,
+  candidateContentChecksum,
   getSkillCandidate,
   listSkillCandidates,
   proposeSkillPromotion,
   runBuildSkillCandidates,
+  validateSkillReview,
   validateSkillCandidate,
 } from "../scripts/build-skill-candidates.js";
 
@@ -90,18 +94,22 @@ async function main() {
     assert.equal(result.checks.corex_skill_index_available, true);
 
     const candidate = result.candidates[0];
+    assert.equal(candidate.schema_version, "corex.vega-skill-candidate.v1");
     assert.equal(candidate.candidate_id, "vega.skill-candidate:example-agent-toolkit");
     assert.equal(candidate.review_status, "pending");
     assert.equal(candidate.source_repository.nwo, "example/agent-toolkit");
     assert.equal(candidate.suggested_corex_lane, "agent-workflows");
     assert.equal(candidate.license_status.status, "compatible");
+    assert.deepEqual(Object.keys(candidate.required_tools_services).sort(), ["services", "tools"]);
     assert.ok(candidate.duplicate_matches.some((match) => match.kind === "duplicate_id"));
     assert.ok(candidate.content_checksum.startsWith("sha256:"));
+    assert.equal(candidate.content_checksum, candidateContentChecksum(candidate));
     assert.ok(!JSON.stringify(candidate).includes("README body"));
     assert.ok(!JSON.stringify(candidate).includes("/Users/"));
 
     const validation = validateSkillCandidate(candidate);
     assert.equal(validation.valid, true);
+    assert.equal(validation.checksum_ok, true);
 
     const invalid = validateSkillCandidate({
       ...candidate,
@@ -137,7 +145,32 @@ async function main() {
     });
     assert.equal(promotion.proposal.target_kind, "skill");
     assert.equal(promotion.proposal.promotion_status, "pending_review");
+    assert.equal(promotion.proposal.metadata.candidate_id, candidate.candidate_id);
+    assert.equal(promotion.proposal.metadata.candidate_checksum, candidate.content_checksum);
     assert.equal(promotion.wrote, false);
+
+    const review = buildReviewEnvelope(candidate, {
+      reviewId: "review-vega-example-agent-toolkit",
+      reviewerId: "compat-test@local",
+      reviewedAt: "2026-06-13T00:10:00.000Z",
+      notes: ["Test approval."],
+    });
+    assert.equal(validateSkillReview(review).valid, true);
+    assert.equal(review.candidate_id, candidate.candidate_id);
+    assert.equal(review.candidate_checksum, candidate.content_checksum);
+    const approvedCandidate = applyReviewEnvelope(candidate, review);
+    assert.equal(approvedCandidate.review_status, "approved");
+    assert.equal(approvedCandidate.content_checksum, candidate.content_checksum);
+
+    const approvedProposal = await proposeSkillPromotion(candidate.candidate_id, {
+      projectRoot,
+      corexRoot,
+      outDir,
+      limit: 1,
+      createdAt: "2026-06-13T00:00:00.000Z",
+      review,
+    });
+    assert.equal(approvedProposal.proposal.metadata.review_id, review.review_id);
 
     await runBuildSkillCandidates([
       "--limit=1",

@@ -6,6 +6,7 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
+import Ajv2020 from "ajv/dist/2020.js";
 import { buildCorexContractArtifacts } from "./export-corex-contracts.js";
 
 const __filename = fileURLToPath(import.meta.url);
@@ -13,11 +14,33 @@ const __dirname = path.dirname(__filename);
 const projectRoot = path.resolve(__dirname, "..");
 
 const GENERATED_BY = "vega-lab:build-skill-candidates";
+const CANDIDATE_SCHEMA_VERSION = "corex.vega-skill-candidate.v1";
+const REVIEW_SCHEMA_VERSION = "corex.vega-skill-review.v1";
+const CONTRACTS_ROOT = path.join(projectRoot, "contracts", "corex");
 const TOOL = {
   tool_id: "vega.build_skill_candidates",
   name: "Vega Skill Candidate Ingestion",
   version: "0.1.0",
 };
+const CANDIDATE_CHECKSUM_FIELDS = [
+  "schema_version",
+  "candidate_id",
+  "suggested_skill_id",
+  "name",
+  "description",
+  "source_repository",
+  "source_snapshot_identity",
+  "provenance_references",
+  "suggested_corex_lane",
+  "suggested_scope",
+  "required_tools_services",
+  "license_status",
+  "compatibility_assumptions",
+  "evidence_summary",
+  "duplicate_matches",
+  "conflict_findings",
+  "risk_findings",
+];
 
 const SECRET_PATTERNS = [
   new RegExp(["BEGIN", "[A-Z ]*", "PRIVATE", "KEY"].join(" "), "i"),
@@ -96,6 +119,44 @@ function stableStringify(value) {
     return `{${Object.keys(value).sort().map((key) => `${JSON.stringify(key)}:${stableStringify(value[key])}`).join(",")}}`;
   }
   return JSON.stringify(value);
+}
+
+function readContractSchema(name) {
+  return JSON.parse(fsSync.readFileSync(path.join(CONTRACTS_ROOT, name), "utf8"));
+}
+
+const ajv = new Ajv2020({
+  allErrors: true,
+  coerceTypes: false,
+  strict: true,
+  useDefaults: false,
+});
+const candidateSchema = readContractSchema("corex.vega-skill-candidate.v1.schema.json");
+const reviewSchema = readContractSchema("corex.vega-skill-review.v1.schema.json");
+const validateCandidateSchema = ajv.compile(candidateSchema);
+const validateReviewSchema = ajv.compile(reviewSchema);
+
+function schemaErrors(validator) {
+  return (validator.errors || []).map((error) => {
+    const pathText = error.instancePath ? `${error.instancePath} ` : "";
+    return `${pathText}${error.message}`;
+  });
+}
+
+export function candidateContentChecksum(candidate) {
+  const payload = {};
+  for (const field of CANDIDATE_CHECKSUM_FIELDS) {
+    payload[field] = Object.hasOwn(candidate, field) ? candidate[field] : null;
+  }
+  return `sha256:${sha256(stableStringify(payload))}`;
+}
+
+export function validateSkillReview(review) {
+  const valid = validateReviewSchema(review);
+  return {
+    valid: valid === true,
+    schema_errors: valid ? [] : schemaErrors(validateReviewSchema),
+  };
 }
 
 function repoNwoFromArtifact(pair) {
@@ -297,18 +358,43 @@ function inferRequiredToolsAndServices(lane, knowledgeArtifact) {
 function licenseStatus(license) {
   const value = String(license || "").trim();
   if (!value || /^none$/i.test(value)) {
-    return { status: "unknown", review_required: true, notes: "Missing or unspecified license; requires manual review before adoption." };
+    return {
+      status: "unknown",
+      identifier: null,
+      source: "repository-metadata",
+      notes: ["Missing or unspecified license; requires manual review before adoption."],
+    };
   }
   if (/agpl/i.test(value)) {
-    return { status: "incompatible", review_required: true, notes: "AGPL-style license detected; promotion may conflict with distribution goals." };
+    return {
+      status: "incompatible",
+      identifier: value,
+      source: "repository-metadata",
+      notes: ["AGPL-style license detected; promotion may conflict with distribution goals."],
+    };
   }
   if (/(gpl|lgpl)/i.test(value)) {
-    return { status: "restricted", review_required: true, notes: "GPL-family license detected; adoption scope must be reviewed." };
+    return {
+      status: "restricted",
+      identifier: value,
+      source: "repository-metadata",
+      notes: ["GPL-family license detected; adoption scope must be reviewed."],
+    };
   }
   if (/(mit|apache|bsd|isc|mpl|unlicense|cc0)/i.test(value)) {
-    return { status: "compatible", review_required: false, notes: `License appears adoption-friendly: ${value}.` };
+    return {
+      status: "compatible",
+      identifier: value,
+      source: "repository-metadata",
+      notes: [`License appears adoption-friendly: ${value}.`],
+    };
   }
-  return { status: "review", review_required: true, notes: `License requires manual compatibility review: ${value}.` };
+  return {
+    status: "review-required",
+    identifier: value,
+    source: "repository-metadata",
+    notes: [`License requires manual compatibility review: ${value}.`],
+  };
 }
 
 function textForScanning(candidateInput) {
@@ -403,11 +489,11 @@ function conflictFindings(candidate, knowledgeArtifact, existingSkillIndex) {
     });
   }
 
-  if (candidate.license_status.status === "unknown" || candidate.license_status.status === "incompatible") {
+  if (["unknown", "incompatible", "restricted", "review-required"].includes(candidate.license_status.status)) {
     findings.push({
       kind: "license",
-      severity: candidate.license_status.status === "incompatible" ? "blocking" : "warning",
-      summary: candidate.license_status.notes,
+      severity: ["incompatible", "restricted"].includes(candidate.license_status.status) ? "blocking" : "warning",
+      summary: toArray(candidate.license_status.notes).join(" ") || "License requires review.",
       source_refs: candidate.provenance_references,
     });
   }
@@ -505,6 +591,7 @@ function buildCandidate({ pair, existingSkillIndex, existingCandidates, createdA
   ]);
 
   const base = {
+    schema_version: CANDIDATE_SCHEMA_VERSION,
     candidate_id: `vega.skill-candidate:${safeRepo}`,
     suggested_skill_id: suggestedSkillId,
     name: `${snapshot?.metadata?.name || nwo} Core-X Skill Candidate`,
@@ -543,56 +630,23 @@ function buildCandidate({ pair, existingSkillIndex, existingCandidates, createdA
   base.duplicate_matches = duplicateMatches(base, existingSkillIndex, existingCandidates);
   base.conflict_findings = conflictFindings(base, knowledgeArtifact, existingSkillIndex);
   base.risk_findings = riskFindings(base, knowledgeArtifact);
-
-  const checksumPayload = {
-    candidate_id: base.candidate_id,
-    suggested_skill_id: base.suggested_skill_id,
-    description: base.description,
-    source_repository: base.source_repository,
-    source_snapshot_identity: base.source_snapshot_identity,
-    provenance_references: base.provenance_references,
-    suggested_corex_lane: base.suggested_corex_lane,
-    suggested_scope: base.suggested_scope,
-    required_tools_services: base.required_tools_services,
-    license_status: base.license_status,
-    evidence_summary: base.evidence_summary,
-    duplicate_matches: base.duplicate_matches,
-    conflict_findings: base.conflict_findings,
-    risk_findings: base.risk_findings,
-  };
-  base.content_checksum = `sha256:${sha256(stableStringify(checksumPayload))}`;
+  base.content_checksum = candidateContentChecksum(base);
   base.draft_skill_md = draftSkillMarkdown(base);
   return base;
 }
 
 export function validateSkillCandidate(candidate) {
-  const missing = [];
-  for (const field of [
-    "candidate_id",
-    "name",
-    "description",
-    "source_repository",
-    "source_snapshot_identity",
-    "provenance_references",
-    "suggested_corex_lane",
-    "suggested_scope",
-    "required_tools_services",
-    "license_status",
-    "evidence_summary",
-    "duplicate_matches",
-    "conflict_findings",
-    "risk_findings",
-    "review_status",
-    "content_checksum",
-  ]) {
-    if (candidate?.[field] === undefined || candidate?.[field] === null) missing.push(field);
-  }
-
+  const schemaValid = validateCandidateSchema(candidate);
   const scanText = textForScanning(candidate || {});
   const blockers = [
     ...patternFindings(LOCAL_PATH_PATTERNS, scanText, "absolute_local_path"),
     ...patternFindings(SECRET_PATTERNS, scanText, "secret_or_credential"),
   ];
+  const computedChecksum = candidate ? candidateContentChecksum(candidate) : "";
+  const checksumOk = candidate?.content_checksum === computedChecksum;
+  if (!checksumOk) {
+    blockers.push({ kind: "checksum", severity: "blocking", summary: "Candidate checksum does not match canonical content." });
+  }
   if (candidate?.review_status !== "pending") {
     blockers.push({ kind: "review_gate", severity: "blocking", summary: "Skill candidates must start as pending." });
   }
@@ -601,15 +655,51 @@ export function validateSkillCandidate(candidate) {
   }
 
   return {
-    valid: missing.length === 0 && blockers.length === 0,
-    missing,
+    valid: schemaValid === true && blockers.length === 0,
+    schema_errors: schemaValid ? [] : schemaErrors(validateCandidateSchema),
+    missing: schemaErrors(validateCandidateSchema).filter((error) => /required property/.test(error)),
     blockers,
+    checksum_ok: checksumOk,
+    computed_checksum: computedChecksum,
     warnings: toArray(candidate?.conflict_findings).filter((finding) => finding.severity !== "blocking"),
+  };
+}
+
+export function buildReviewEnvelope(candidate, options = {}) {
+  const reviewer = options.reviewer || {};
+  return {
+    schema_version: REVIEW_SCHEMA_VERSION,
+    review_id: options.reviewId || `review-${slug(candidate?.candidate_id || candidate?.suggested_skill_id || "unknown")}`,
+    candidate_id: candidate.candidate_id,
+    candidate_checksum: candidate.content_checksum,
+    status: options.status || "approved",
+    reviewer: {
+      id: reviewer.id || options.reviewerId || "compat-test@local",
+      ...(reviewer.display_name || options.reviewerDisplayName
+        ? { display_name: reviewer.display_name || options.reviewerDisplayName }
+        : {}),
+    },
+    reviewed_at: options.reviewedAt || new Date().toISOString(),
+    notes: toArray(options.notes),
+    resolved_findings: toArray(options.resolvedFindings),
+  };
+}
+
+export function applyReviewEnvelope(candidate, review) {
+  const status = review?.status === "approved"
+    ? "approved"
+    : review?.status === "rejected"
+      ? "rejected"
+      : "pending";
+  return {
+    ...candidate,
+    review_status: status,
   };
 }
 
 export function buildPromotionProposal(candidate, options = {}) {
   const safeId = slug(candidate?.candidate_id || candidate?.suggested_skill_id || "unknown");
+  const review = options.review || null;
   return {
     id: `vega.capability-promotion:${safeId}`,
     artifact_id: candidate.candidate_id,
@@ -619,18 +709,21 @@ export function buildPromotionProposal(candidate, options = {}) {
     expected_value: candidate.evidence_summary,
     risk_level: candidate.conflict_findings.some((finding) => finding.severity === "blocking") ? "high" : "medium",
     required_reviewers: ["core-x-maintainer", "skill-owner"],
-    promotion_status: "pending_review",
+    promotion_status: options.promotionStatus || "pending_review",
     rollback_notes: "No registry mutation is performed by Vega. If promoted later, revert the separate Core-X registry/docs commit.",
     provenance: {
       source_refs: candidate.provenance_references,
       evidence_refs: [candidate.source_snapshot_identity.artifact_ref].filter(Boolean),
       derived_from: [candidate.candidate_id, candidate.source_snapshot_identity.snapshot_id].filter(Boolean),
-      review_artifact_ref: options.reviewArtifactRef || `data/review/skill-candidates/${slug(candidate.candidate_id)}.json`,
+      review_artifact_ref: options.reviewArtifactRef || review?.review_id || `data/review/skill-candidates/${slug(candidate.candidate_id)}.json`,
     },
     metadata: {
       generated_by: GENERATED_BY,
       created_at: options.createdAt || candidate.created_at || new Date().toISOString(),
-      review_status: "pending",
+      candidate_id: candidate.candidate_id,
+      candidate_checksum: candidate.content_checksum,
+      ...(review?.review_id ? { review_id: review.review_id } : {}),
+      review_status: review?.status || "pending",
       visibility: "internal",
     },
   };
@@ -741,7 +834,11 @@ export async function proposeSkillPromotion(candidateId, options = {}) {
   const candidate = await getSkillCandidate(candidateId, options);
   if (!candidate) return null;
   const validation = validateSkillCandidate(candidate);
-  const proposal = buildPromotionProposal(candidate, { createdAt: options.createdAt });
+  const proposal = buildPromotionProposal(candidate, {
+    createdAt: options.createdAt,
+    review: options.review,
+    promotionStatus: options.promotionStatus,
+  });
 
   if (options.write === true) {
     const root = options.projectRoot || projectRoot;
