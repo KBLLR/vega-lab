@@ -27,6 +27,12 @@ import {
   updateResearchQueue,
 } from "../server/house-model.js";
 import { executeVegaOcrTool, OCR_TOOL_DEFINITIONS } from "../server/ocr-tools.js";
+import {
+  getSkillCandidate,
+  listSkillCandidates,
+  proposeSkillPromotion,
+  validateSkillCandidate,
+} from "../../scripts/build-skill-candidates.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -527,6 +533,54 @@ class VegaLabServer {
           description: "Return local OpenResponses, dataset, and tool availability expectations for Vega Lab",
           inputSchema: { type: "object", properties: {} },
         },
+        {
+          name: "list_skill_candidates",
+          description: "Build and list deterministic review-gated skill candidates from Vega repo caches and review artifacts",
+          inputSchema: {
+            type: "object",
+            properties: {
+              limit: { type: "number", default: 10 },
+              scope: { type: "string", enum: ["mine", "starred", "all"], default: "all" },
+            },
+          },
+        },
+        {
+          name: "get_skill_candidate",
+          description: "Return one deterministic skill candidate by candidate_id or suggested_skill_id",
+          inputSchema: {
+            type: "object",
+            properties: {
+              candidate_id: { type: "string" },
+              limit: { type: "number", default: 250 },
+            },
+            required: ["candidate_id"],
+          },
+        },
+        {
+          name: "validate_skill_candidate",
+          description: "Validate one deterministic skill candidate for review-gate blockers",
+          inputSchema: {
+            type: "object",
+            properties: {
+              candidate_id: { type: "string" },
+              limit: { type: "number", default: 250 },
+            },
+            required: ["candidate_id"],
+          },
+        },
+        {
+          name: "propose_skill_promotion",
+          description: "Draft a pending Core-X capability-promotion proposal from a skill candidate without mutating registries",
+          inputSchema: {
+            type: "object",
+            properties: {
+              candidate_id: { type: "string" },
+              write: { type: "boolean", default: false },
+              limit: { type: "number", default: 250 },
+            },
+            required: ["candidate_id"],
+          },
+        },
         ...OCR_TOOL_DEFINITIONS,
       ],
     }));
@@ -590,6 +644,14 @@ class VegaLabServer {
             return await this.handleDraftActionItem(args);
           case "get_runtime_health":
             return this.handleGetRuntimeHealth();
+          case "list_skill_candidates":
+            return await this.handleListSkillCandidates(args);
+          case "get_skill_candidate":
+            return await this.handleGetSkillCandidate(args);
+          case "validate_skill_candidate":
+            return await this.handleValidateSkillCandidate(args);
+          case "propose_skill_promotion":
+            return await this.handleProposeSkillPromotion(args);
           case "inspect_model_zoo":
           case "ocr_health":
           case "inspect_image_with_ocr":
@@ -997,10 +1059,57 @@ class VegaLabServer {
         REPO_OPS_KITS_FILE,
       ],
       tools: {
-        total: 34,
+        total: 38,
         draftOnly: true,
       },
     });
+  }
+
+  async handleListSkillCandidates(args) {
+    const result = await listSkillCandidates({
+      projectRoot: HOUSE_ROOT,
+      limit: args.limit ?? 10,
+      scope: args.scope ?? "all",
+      dryRun: true,
+    });
+    return this.response(result);
+  }
+
+  async handleGetSkillCandidate(args) {
+    const candidate = await getSkillCandidate(args.candidate_id, {
+      projectRoot: HOUSE_ROOT,
+      limit: args.limit ?? 250,
+    });
+    if (!candidate) {
+      throw new Error("Skill candidate not found");
+    }
+    return this.response(candidate);
+  }
+
+  async handleValidateSkillCandidate(args) {
+    const candidate = await getSkillCandidate(args.candidate_id, {
+      projectRoot: HOUSE_ROOT,
+      limit: args.limit ?? 250,
+    });
+    if (!candidate) {
+      throw new Error("Skill candidate not found");
+    }
+    return this.response({
+      candidate_id: candidate.candidate_id,
+      validation: validateSkillCandidate(candidate),
+    });
+  }
+
+  async handleProposeSkillPromotion(args) {
+    const result = await proposeSkillPromotion(args.candidate_id, {
+      projectRoot: HOUSE_ROOT,
+      limit: args.limit ?? 250,
+      write: args.write === true,
+    });
+    if (!result) {
+      throw new Error("Skill candidate not found");
+    }
+    return this.response(result);
   }
 
   async run() {

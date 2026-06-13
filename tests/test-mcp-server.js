@@ -118,6 +118,10 @@ async function main() {
       "extract_repo_visual_evidence",
       "extract_skill_evidence_from_pdf",
       "generate_skill_candidate_from_ocr_evidence",
+      "list_skill_candidates",
+      "get_skill_candidate",
+      "validate_skill_candidate",
+      "propose_skill_promotion",
     ].forEach((toolName) => {
       assert.ok(toolNames.has(toolName), `Expected MCP tool to exist: ${toolName}`);
     });
