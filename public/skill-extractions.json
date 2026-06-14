@@ -2868,6 +2868,32 @@
     "claudeBrief": "# Claude Mission: antgroup/echomimic_v2\nGoal: [CVPR 2025] EchoMimicV2: Towards Striking, Simplified, and Semi-Body Human Animation Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
+    "nwo": "anthropics/claude-code",
+    "name": "claude-code",
+    "author": "anthropics",
+    "summary": "Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands. Primary Vega Lab fit: skill-extraction via agent-workflows.",
+    "capabilities": [
+      "agent-workflows",
+      "ml-ai"
+    ],
+    "houseSkills": [
+      "skill-extraction",
+      "repo-adoption"
+    ],
+    "rules": [
+      "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.",
+      "Review license status before adoption or redistribution work."
+    ],
+    "flows": [
+      "research-queue-flow",
+      "skill-extraction-flow",
+      "adoption-decision-flow"
+    ],
+    "adoptionKind": "tool",
+    "codexBrief": "# Codex Mission: anthropics/claude-code\nGoal: Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands. Primary Vega Lab fit: skill-extraction via agent-workflows.\nClassification: tool\nCapabilities: agent-workflows, ml-ai\nHouse skills: skill-extraction, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: anthropics/claude-code\nGoal: Claude Code is an agentic coding tool that lives in your terminal, understands your codebase, and helps you code faster by executing routine tasks, explaining complex code, and handling git workflows - all through natural language commands. Primary Vega Lab fit: skill-extraction via agent-workflows.\nClassification: tool\nCapabilities: agent-workflows, ml-ai\nHouse skills: skill-extraction, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+  },
+  {
     "nwo": "anthropics/claude-cookbooks",
     "name": "claude-cookbooks",
     "author": "anthropics",
@@ -2881,6 +2907,49 @@
     "adoptionKind": "ignore",
     "codexBrief": "# Codex Mission: anthropics/claude-cookbooks\nGoal: A collection of notebooks/recipes showcasing some fun and effective ways of using Claude. Primary Vega Lab fit: repo-discovery via general engineering.\nClassification: ignore\nCapabilities: none\nHouse skills: none\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
     "claudeBrief": "# Claude Mission: anthropics/claude-cookbooks\nGoal: A collection of notebooks/recipes showcasing some fun and effective ways of using Claude. Primary Vega Lab fit: repo-discovery via general engineering.\nClassification: ignore\nCapabilities: none\nHouse skills: none\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+  },
+  {
+    "nwo": "anthropics/claude-desktop-buddy",
+    "name": "claude-desktop-buddy",
+    "author": "anthropics",
+    "summary": "Reference and an example for the Bluetooth API for makers in Claude Cowork & Claude Code Desktop Primary Vega Lab fit: repo-adoption via backend-service.",
+    "capabilities": [
+      "backend-service"
+    ],
+    "houseSkills": [
+      "repo-adoption"
+    ],
+    "rules": [
+      "Treat external runtimes and APIs as configurable integrations with explicit environment requirements.",
+      "Review license status before adoption or redistribution work."
+    ],
+    "flows": [
+      "research-queue-flow",
+      "adoption-decision-flow"
+    ],
+    "adoptionKind": "service",
+    "codexBrief": "# Codex Mission: anthropics/claude-desktop-buddy\nGoal: Reference and an example for the Bluetooth API for makers in Claude Cowork & Claude Code Desktop Primary Vega Lab fit: repo-adoption via backend-service.\nClassification: service\nCapabilities: backend-service\nHouse skills: repo-adoption\nRules:\n- Treat external runtimes and APIs as configurable integrations with explicit environment requirements.\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: anthropics/claude-desktop-buddy\nGoal: Reference and an example for the Bluetooth API for makers in Claude Cowork & Claude Code Desktop Primary Vega Lab fit: repo-adoption via backend-service.\nClassification: service\nCapabilities: backend-service\nHouse skills: repo-adoption\nRules:\n- Treat external runtimes and APIs as configurable integrations with explicit environment requirements.\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+  },
+  {
+    "nwo": "anthropics/ClaudeForFoundationModels",
+    "name": "ClaudeForFoundationModels",
+    "author": "anthropics",
+    "summary": "Claude support for Apple Foundation Models Primary Vega Lab fit: repo-adoption via ml-ai.",
+    "capabilities": [
+      "ml-ai"
+    ],
+    "houseSkills": [
+      "repo-adoption"
+    ],
+    "rules": [],
+    "flows": [
+      "research-queue-flow",
+      "adoption-decision-flow"
+    ],
+    "adoptionKind": "house",
+    "codexBrief": "# Codex Mission: anthropics/ClaudeForFoundationModels\nGoal: Claude support for Apple Foundation Models Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: house\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: anthropics/ClaudeForFoundationModels\nGoal: Claude support for Apple Foundation Models Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: house\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "anthropics/courses",
@@ -2898,6 +2967,68 @@
     "adoptionKind": "ignore",
     "codexBrief": "# Codex Mission: anthropics/courses\nGoal: Anthropic's educational courses Primary Vega Lab fit: repo-discovery via general engineering.\nClassification: ignore\nCapabilities: none\nHouse skills: none\nRules:\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
     "claudeBrief": "# Claude Mission: anthropics/courses\nGoal: Anthropic's educational courses Primary Vega Lab fit: repo-discovery via general engineering.\nClassification: ignore\nCapabilities: none\nHouse skills: none\nRules:\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+  },
+  {
+    "nwo": "anthropics/cwc-long-running-agents",
+    "name": "cwc-long-running-agents",
+    "author": "anthropics",
+    "summary": "cwc-long-running-agents is a candidate for tool adoption. Primary Vega Lab fit: skill-extraction via agent-workflows.",
+    "capabilities": [
+      "agent-workflows"
+    ],
+    "houseSkills": [
+      "skill-extraction",
+      "repo-adoption"
+    ],
+    "rules": [
+      "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house."
+    ],
+    "flows": [
+      "research-queue-flow",
+      "skill-extraction-flow",
+      "adoption-decision-flow"
+    ],
+    "adoptionKind": "tool",
+    "codexBrief": "# Codex Mission: anthropics/cwc-long-running-agents\nGoal: cwc-long-running-agents is a candidate for tool adoption. Primary Vega Lab fit: skill-extraction via agent-workflows.\nClassification: tool\nCapabilities: agent-workflows\nHouse skills: skill-extraction, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: anthropics/cwc-long-running-agents\nGoal: cwc-long-running-agents is a candidate for tool adoption. Primary Vega Lab fit: skill-extraction via agent-workflows.\nClassification: tool\nCapabilities: agent-workflows\nHouse skills: skill-extraction, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+  },
+  {
+    "nwo": "anthropics/html-effectiveness",
+    "name": "html-effectiveness",
+    "author": "anthropics",
+    "summary": "HTML effectiveness examples Primary Vega Lab fit: repo-discovery via general engineering.",
+    "capabilities": [],
+    "houseSkills": [],
+    "rules": [],
+    "flows": [
+      "research-queue-flow"
+    ],
+    "adoptionKind": "ignore",
+    "codexBrief": "# Codex Mission: anthropics/html-effectiveness\nGoal: HTML effectiveness examples Primary Vega Lab fit: repo-discovery via general engineering.\nClassification: ignore\nCapabilities: none\nHouse skills: none\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: anthropics/html-effectiveness\nGoal: HTML effectiveness examples Primary Vega Lab fit: repo-discovery via general engineering.\nClassification: ignore\nCapabilities: none\nHouse skills: none\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+  },
+  {
+    "nwo": "anthropics/prompt-eng-interactive-tutorial",
+    "name": "prompt-eng-interactive-tutorial",
+    "author": "anthropics",
+    "summary": "Anthropic's Interactive Prompt Engineering Tutorial Primary Vega Lab fit: repo-adoption via ml-ai.",
+    "capabilities": [
+      "ml-ai"
+    ],
+    "houseSkills": [
+      "repo-adoption"
+    ],
+    "rules": [
+      "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.",
+      "Review license status before adoption or redistribution work."
+    ],
+    "flows": [
+      "research-queue-flow",
+      "adoption-decision-flow"
+    ],
+    "adoptionKind": "tool",
+    "codexBrief": "# Codex Mission: anthropics/prompt-eng-interactive-tutorial\nGoal: Anthropic's Interactive Prompt Engineering Tutorial Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: anthropics/prompt-eng-interactive-tutorial\nGoal: Anthropic's Interactive Prompt Engineering Tutorial Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "anthropics/skills",
@@ -5202,6 +5333,30 @@
     "adoptionKind": "house",
     "codexBrief": "# Codex Mission: Baiyuetribe/paper2gui\nGoal: Convert AI papers to GUI，Make it easy and convenient for everyone to use artificial intelligence technology。让每个人都简单方便的使用前沿人工智能技术 Primary Vega Lab fit: repo-research via research-intelligence.\nClassification: house\nCapabilities: research-intelligence, ml-ai\nHouse skills: repo-research, repo-adoption\nRules:\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
     "claudeBrief": "# Claude Mission: Baiyuetribe/paper2gui\nGoal: Convert AI papers to GUI，Make it easy and convenient for everyone to use artificial intelligence technology。让每个人都简单方便的使用前沿人工智能技术 Primary Vega Lab fit: repo-research via research-intelligence.\nClassification: house\nCapabilities: research-intelligence, ml-ai\nHouse skills: repo-research, repo-adoption\nRules:\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+  },
+  {
+    "nwo": "bala1144/Imitator",
+    "name": "Imitator",
+    "author": "bala1144",
+    "summary": "Imitator is a candidate for tool adoption. Primary Vega Lab fit: repo-adoption via ml-ai.",
+    "capabilities": [
+      "ml-ai"
+    ],
+    "houseSkills": [
+      "repo-adoption"
+    ],
+    "rules": [
+      "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.",
+      "Review license status before adoption or redistribution work.",
+      "Validate maintenance risk and current ecosystem fit before committing to adoption."
+    ],
+    "flows": [
+      "research-queue-flow",
+      "adoption-decision-flow"
+    ],
+    "adoptionKind": "tool",
+    "codexBrief": "# Codex Mission: bala1144/Imitator\nGoal: Imitator is a candidate for tool adoption. Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: bala1144/Imitator\nGoal: Imitator is a candidate for tool adoption. Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "balazik/ComfyUI-PuLID-Flux",
@@ -14903,15 +15058,16 @@
     ],
     "rules": [
       "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.",
-      "Review license status before adoption or redistribution work."
+      "Review license status before adoption or redistribution work.",
+      "Validate maintenance risk and current ecosystem fit before committing to adoption."
     ],
     "flows": [
       "research-queue-flow",
       "adoption-decision-flow"
     ],
     "adoptionKind": "tool",
-    "codexBrief": "# Codex Mission: fdjingliu/DMAD\nGoal: The collection of diffusion models for anomaly detection, a survey paper submitted to IJCAI 2025. Primary Vega Lab fit: repo-research via research-intelligence.\nClassification: tool\nCapabilities: research-intelligence, ml-ai\nHouse skills: repo-research, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: fdjingliu/DMAD\nGoal: The collection of diffusion models for anomaly detection, a survey paper submitted to IJCAI 2025. Primary Vega Lab fit: repo-research via research-intelligence.\nClassification: tool\nCapabilities: research-intelligence, ml-ai\nHouse skills: repo-research, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: fdjingliu/DMAD\nGoal: The collection of diffusion models for anomaly detection, a survey paper submitted to IJCAI 2025. Primary Vega Lab fit: repo-research via research-intelligence.\nClassification: tool\nCapabilities: research-intelligence, ml-ai\nHouse skills: repo-research, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: fdjingliu/DMAD\nGoal: The collection of diffusion models for anomaly detection, a survey paper submitted to IJCAI 2025. Primary Vega Lab fit: repo-research via research-intelligence.\nClassification: tool\nCapabilities: research-intelligence, ml-ai\nHouse skills: repo-research, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "felix-bohlin/ui",
@@ -15666,6 +15822,37 @@
     "adoptionKind": "house",
     "codexBrief": "# Codex Mission: florestefano1975/comfyui-portrait-master\nGoal: This node was designed to help AI image creators to generate prompts for human portraits. Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: house\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
     "claudeBrief": "# Claude Mission: florestefano1975/comfyui-portrait-master\nGoal: This node was designed to help AI image creators to generate prompts for human portraits. Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: house\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+  },
+  {
+    "nwo": "FlorianBruniaux/claude-code-ultimate-guide",
+    "name": "claude-code-ultimate-guide",
+    "author": "FlorianBruniaux",
+    "summary": "A tremendous feat of documentation, this guide covers Claude Code from beginner to power user, with production-ready templates for Claude Code features, guides on agentic workflows, and a lot of great learning materials, including quizzes and a handy \"cheatsheet\". Whether it's the \"ultimate\" guide to Claude Code will be up to the reader :) Primary Vega Lab fit: repo-discovery via mcp-tooling.",
+    "capabilities": [
+      "mcp-tooling",
+      "agent-workflows",
+      "template-scaffolding",
+      "backend-service",
+      "developer-tooling",
+      "ml-ai"
+    ],
+    "houseSkills": [
+      "repo-discovery",
+      "skill-extraction",
+      "repo-adoption"
+    ],
+    "rules": [
+      "Adopt this as a scaffold or reference, not as a long-lived runtime dependency."
+    ],
+    "flows": [
+      "research-queue-flow",
+      "skill-extraction-flow",
+      "adoption-decision-flow",
+      "news-digest-refresh"
+    ],
+    "adoptionKind": "template",
+    "codexBrief": "# Codex Mission: FlorianBruniaux/claude-code-ultimate-guide\nGoal: A tremendous feat of documentation, this guide covers Claude Code from beginner to power user, with production-ready templates for Claude Code features, guides on agentic workflows, and a lot of great learning materials, including quizzes and a handy \"cheatsheet\". Whether it's the \"ultimate\" guide to Claude Code will be up to the reader :) Primary Vega Lab fit: repo-discovery via mcp-tooling.\nClassification: template\nCapabilities: mcp-tooling, agent-workflows, template-scaffolding, backend-service, developer-tooling, ml-ai\nHouse skills: repo-discovery, skill-extraction, repo-adoption\nRules:\n- Adopt this as a scaffold or reference, not as a long-lived runtime dependency.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: FlorianBruniaux/claude-code-ultimate-guide\nGoal: A tremendous feat of documentation, this guide covers Claude Code from beginner to power user, with production-ready templates for Claude Code features, guides on agentic workflows, and a lot of great learning materials, including quizzes and a handy \"cheatsheet\". Whether it's the \"ultimate\" guide to Claude Code will be up to the reader :) Primary Vega Lab fit: repo-discovery via mcp-tooling.\nClassification: template\nCapabilities: mcp-tooling, agent-workflows, template-scaffolding, backend-service, developer-tooling, ml-ai\nHouse skills: repo-discovery, skill-extraction, repo-adoption\nRules:\n- Adopt this as a scaffold or reference, not as a long-lived runtime dependency.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "FlowiseAI/Flowise",

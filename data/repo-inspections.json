@@ -416,7 +416,7 @@
   },
   {
     "nwo": "KBLLR/core-x",
-    "inspectedAt": "2026-06-13T00:25:23.000Z",
+    "inspectedAt": "2026-06-13T21:12:36.000Z",
     "files": {
       "hasReadme": false,
       "packageManagers": [
@@ -1827,7 +1827,7 @@
   },
   {
     "nwo": "KBLLR/rigging-palace",
-    "inspectedAt": "2026-06-04T13:02:00.000Z",
+    "inspectedAt": "2026-06-14T01:03:56.000Z",
     "files": {
       "hasReadme": true,
       "packageManagers": [
@@ -1840,7 +1840,8 @@
         "lint",
         "test",
         "test:batch",
-        "rig:check"
+        "rig:check",
+        "test:library-retrieval"
       ],
       "buildScripts": [
         "build",
@@ -2434,7 +2435,7 @@
   },
   {
     "nwo": "KBLLR/vega-lab",
-    "inspectedAt": "2026-06-12T21:01:14.000Z",
+    "inspectedAt": "2026-06-13T20:30:42.000Z",
     "files": {
       "hasReadme": true,
       "packageManagers": [
@@ -2454,11 +2455,14 @@
         "test:data",
         "test:mcp",
         "test:corex-contract-export",
+        "test:corex-contract-snapshots",
+        "test:skill-candidate-ingestion",
         "test"
       ],
       "buildScripts": [
         "build",
-        "build:data"
+        "build:data",
+        "build:skill-candidates"
       ]
     },
     "findings": [],
