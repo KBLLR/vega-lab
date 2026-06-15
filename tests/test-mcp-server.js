@@ -139,8 +139,12 @@ async function main() {
       name: "validate_skill_candidate",
       arguments: { candidate_id: skillCandidate.candidate_id, limit: 1 },
     }));
-    assert.equal(skillValidationResult.validation.valid, true, "MCP candidate validation should pass");
+    assert.equal(skillValidationResult.validation.valid, false, "Metadata-only MCP candidate validation should be blocked before promotion");
     assert.equal(skillValidationResult.validation.checksum_ok, true, "MCP candidate checksum should match canonical content");
+    assert.ok(
+      skillValidationResult.validation.blockers.some((blocker) => blocker.kind === "missing_immutable_source_snapshot"),
+      "MCP validation should expose the immutable source snapshot precondition",
+    );
 
     const skillProposalResult = parseTextPayload(await client.callTool({
       name: "propose_skill_promotion",

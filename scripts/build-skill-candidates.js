@@ -397,6 +397,29 @@ function licenseStatus(license) {
   };
 }
 
+function licenseStatusFromSnapshot(snapshot) {
+  const license = snapshot?.metadata?.immutable?.license_status;
+  if (!license?.status) return null;
+  return {
+    status: license.status,
+    identifier: license.identifier || null,
+    source: license.source || null,
+    notes: toArray(license.notes),
+  };
+}
+
+function isImmutableSourceSnapshot(snapshot) {
+  const immutable = snapshot?.metadata?.immutable || {};
+  return snapshot?.source_type === "repository"
+    && immutable.provider === "github"
+    && /^[a-f0-9]{40}$/i.test(String(immutable.resolved_commit_sha || ""))
+    && /^[a-f0-9]{40}$/i.test(String(immutable.resolved_tree_sha || ""))
+    && /^sha256:[a-f0-9]{64}$/i.test(String(immutable.evidence_digest || ""))
+    && String(snapshot?.source_ref || "").endsWith(`@${immutable.resolved_commit_sha}`)
+    && toArray(immutable.evidence_manifest?.evidence).some((item) => item.kind === "readme")
+    && toArray(immutable.evidence_manifest?.evidence).some((item) => item.kind === "license");
+}
+
 function textForScanning(candidateInput) {
   return stableStringify(candidateInput);
 }
@@ -507,6 +530,15 @@ function conflictFindings(candidate, knowledgeArtifact, existingSkillIndex) {
     });
   }
 
+  if (!isImmutableSourceSnapshot(knowledgeArtifact?.sourceSnapshot || candidate.__sourceSnapshot)) {
+    findings.push({
+      kind: "missing_immutable_source_snapshot",
+      severity: "blocking",
+      summary: "Candidate was generated from metadata-only cache; resolve a pinned commit/tree/evidence source snapshot before promotion.",
+      source_refs: [candidate.source_snapshot_identity?.artifact_ref, candidate.source_snapshot_identity?.source_ref].filter(Boolean),
+    });
+  }
+
   const scanText = textForScanning(candidate);
   findings.push(...patternFindings(LOCAL_PATH_PATTERNS, scanText, "absolute_local_path"));
   findings.push(...patternFindings(SECRET_PATTERNS, scanText, "secret_or_credential"));
@@ -579,13 +611,17 @@ function buildCandidate({ pair, existingSkillIndex, existingCandidates, createdA
   const safeRepo = slug(nwo);
   const lane = inferLane(knowledgeArtifact, snapshot);
   const scope = inferScope(snapshot, knowledgeArtifact);
-  const license = licenseStatus(snapshot?.provenance?.license || snapshot?.metadata?.license || null);
+  const immutableSnapshot = isImmutableSourceSnapshot(snapshot);
+  const license = licenseStatusFromSnapshot(snapshot) || licenseStatus(snapshot?.provenance?.license || snapshot?.metadata?.license || null);
   const required = inferRequiredToolsAndServices(lane, knowledgeArtifact);
   const suggestedSkillId = `vega-${safeRepo}`;
   const provenanceReferences = unique([
     snapshot?.artifact_ref,
     `vega:data/repo-signals.json#${nwo}`,
     `vega:data/skill-extractions.json#${nwo}`,
+    ...toArray(snapshot?.provenance?.source_refs),
+    ...toArray(snapshot?.provenance?.derived_from),
+    snapshot?.provenance?.evidence_digest ? `vega:evidence:${snapshot.provenance.evidence_digest}` : null,
     ...toArray(knowledgeArtifact?.provenance?.source_refs),
     ...toArray(knowledgeArtifact?.provenance?.evidence_refs),
   ]);
@@ -612,11 +648,18 @@ function buildCandidate({ pair, existingSkillIndex, existingCandidates, createdA
     suggested_scope: scope,
     required_tools_services: required,
     license_status: license,
-    compatibility_assumptions: [
-      "Generated from Vega metadata, repo signals, and skill extraction cache only.",
-      "No third-party source code or long README bodies are copied into this candidate.",
-      "Promotion requires human review and a separate Core-X registry/docs change.",
-    ],
+    compatibility_assumptions: immutableSnapshot
+      ? [
+        "Generated from Vega metadata plus a pinned immutable GitHub source snapshot.",
+        "Candidate identity binds resolved commit, tree, README digest, license digest, consumed manifest digests, and aggregate evidence digest.",
+        "No third-party source code or long README bodies are copied into this candidate.",
+        "Promotion requires human review and a separate Core-X registry/docs change.",
+      ]
+      : [
+        "Generated from Vega metadata, repo signals, and skill extraction cache only.",
+        "No third-party source code or long README bodies are copied into this candidate.",
+        "Promotion is blocked until a pinned immutable source snapshot is resolved.",
+      ],
     evidence_summary: buildEvidenceSummary(knowledgeArtifact, snapshot),
     duplicate_matches: [],
     conflict_findings: [],
@@ -628,7 +671,9 @@ function buildCandidate({ pair, existingSkillIndex, existingCandidates, createdA
   };
 
   base.duplicate_matches = duplicateMatches(base, existingSkillIndex, existingCandidates);
+  base.__sourceSnapshot = snapshot;
   base.conflict_findings = conflictFindings(base, knowledgeArtifact, existingSkillIndex);
+  delete base.__sourceSnapshot;
   base.risk_findings = riskFindings(base, knowledgeArtifact);
   base.content_checksum = candidateContentChecksum(base);
   base.draft_skill_md = draftSkillMarkdown(base);
@@ -641,6 +686,12 @@ export function validateSkillCandidate(candidate) {
   const blockers = [
     ...patternFindings(LOCAL_PATH_PATTERNS, scanText, "absolute_local_path"),
     ...patternFindings(SECRET_PATTERNS, scanText, "secret_or_credential"),
+    ...toArray(candidate?.conflict_findings)
+      .filter((finding) => finding.severity === "blocking")
+      .map((finding) => ({ ...finding })),
+    ...toArray(candidate?.risk_findings)
+      .filter((finding) => finding.severity === "blocking")
+      .map((finding) => ({ ...finding })),
   ];
   const computedChecksum = candidate ? candidateContentChecksum(candidate) : "";
   const checksumOk = candidate?.content_checksum === computedChecksum;
