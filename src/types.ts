@@ -202,3 +202,66 @@ export interface WeeklyResearchReview {
   researchCandidates: string[];
   actionItemIds: string[];
 }
+
+export type VegaActionKind =
+  | 'repo.inspect'
+  | 'snapshot.resolve'
+  | 'candidate.build'
+  | 'candidate.validate'
+  | 'dossier.generate'
+  | 'review.queue'
+  | 'ops-kit.generate'
+  | 'mission.generate';
+
+export type VegaActionStatus = 'queued' | 'running' | 'succeeded' | 'failed';
+
+export interface VegaActionRequest {
+  action_kind: VegaActionKind;
+  repo?: {
+    name: string;
+    author?: string;
+    nwo?: string;
+  };
+  candidate_id?: string;
+  parameters?: Record<string, unknown>;
+  write?: boolean;
+}
+
+export interface VegaActionStep {
+  id: string;
+  label: string;
+  status: VegaActionStatus;
+  detail?: string;
+  started_at?: string;
+  completed_at?: string;
+}
+
+export interface VegaActionResult {
+  schema_version: 'vega.action-result.v1';
+  action_id: string;
+  action_kind: VegaActionKind;
+  status: VegaActionStatus;
+  review_state: 'pending';
+  visibility: 'internal';
+  repo?: {
+    nwo: string;
+    name?: string;
+    author?: string;
+  };
+  candidate_id?: string;
+  started_at: string;
+  completed_at: string;
+  steps: VegaActionStep[];
+  artifacts: Array<{
+    kind: string;
+    path?: string;
+    title?: string;
+    checksum?: string;
+  }>;
+  result?: unknown;
+  error?: {
+    code: string;
+    message: string;
+    retryable: boolean;
+  };
+}

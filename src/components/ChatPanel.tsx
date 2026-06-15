@@ -9,6 +9,7 @@ import {
   HOUSE_ID,
   routeVegaLabIntent,
 } from "../lib/orchestrator";
+import { formatVegaActionResult, inferActionFromPrompt, runVegaAction } from "../lib/action-bridge";
 import type { OpenResponsesEvent } from "../lib/openresponses-client";
 import { streamOpenResponses } from "../lib/openresponses-client";
 import { fetchRuntimeModels } from "../lib/runtime-client";
@@ -197,6 +198,7 @@ export function ChatPanel({
 
     const route = routeVegaLabIntent(content);
     setActiveRoute(route);
+    const bridgeAction = inferActionFromPrompt(content, activeMissionTarget);
 
     const userMessage: Message = {
       id: Date.now().toString(),
@@ -230,6 +232,67 @@ export function ChatPanel({
     setMessages(nextMessages);
 
     streamRef.current?.abort();
+
+    if (bridgeAction) {
+      const callId = `vega-action-${Date.now()}`;
+      setToolCalls((previous) => ({
+        ...previous,
+        [callId]: {
+          id: callId,
+          name: bridgeAction.actionKind,
+          arguments: JSON.stringify({
+            repo: `${repo.author}/${repo.name}`,
+            parameters: bridgeAction.parameters || {},
+            write: bridgeAction.write === true,
+          }, null, 2),
+          status: "in_progress",
+        },
+      }));
+
+      runVegaAction({
+        repo,
+        actionKind: bridgeAction.actionKind,
+        parameters: bridgeAction.parameters,
+        write: bridgeAction.write,
+      })
+        .then((result) => {
+          const formatted = formatVegaActionResult(result);
+          setMessages((previous) => {
+            const updated = previous.map((message) =>
+              message.id === assistantId ? { ...message, content: formatted } : message,
+            );
+            messagesRef.current = updated;
+            return updated;
+          });
+          setToolCalls((previous) => ({
+            ...previous,
+            [callId]: {
+              ...previous[callId],
+              status: "done",
+            },
+          }));
+          onRunComplete?.();
+        })
+        .catch((error: Error) => {
+          setMessages((previous) => [
+            ...previous.map((message) =>
+              message.id === assistantId
+                ? { ...message, content: `Tooling error: ${error.message}` }
+                : message,
+            ),
+          ]);
+          setToolCalls((previous) => ({
+            ...previous,
+            [callId]: {
+              ...previous[callId],
+              status: "done",
+            },
+          }));
+        })
+        .finally(() => setIsLoading(false));
+      return;
+    }
+
     streamRef.current = streamOpenResponses({
       endpoint: `${runtimeTarget.busUrl}${runtimeTarget.responsesPath}`,
       body: {
@@ -265,7 +328,7 @@ export function ChatPanel({
         ]);
       },
     });
-  }, [agentId, defaultModel, input, onRunComplete, repo, runtimeTarget, tools]);
+  }, [activeMissionTarget, agentId, defaultModel, input, onRunComplete, repo, runtimeTarget, tools]);
 
   useEffect(() => {
     if (!isOpen || !prefill) return;
