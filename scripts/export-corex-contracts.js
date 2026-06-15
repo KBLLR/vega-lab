@@ -4,6 +4,8 @@ import fs from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
+import { findCachedSourceSnapshot } from "./source-snapshot-resolver.js";
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const projectRoot = path.resolve(__dirname, "..");
@@ -210,6 +212,15 @@ function buildSourceSnapshot({ repo, signal, extraction, scope, createdAt }) {
   };
 }
 
+async function loadImmutableSourceSnapshot(root, repo) {
+  const nwo = repoNwo(repo);
+  try {
+    return await findCachedSourceSnapshot(root, nwo);
+  } catch {
+    return null;
+  }
+}
+
 function riskRecords(repo, signal, extraction) {
   const risks = [];
   const nwo = repoNwo(repo);
@@ -305,7 +316,8 @@ async function writeArtifacts(outDir, pairs) {
 
   for (const pair of pairs) {
     const safeName = slug(pair.nwo);
-    await fs.writeFile(path.join(snapshotDir, `${safeName}.json`), `${JSON.stringify(pair.sourceSnapshot, null, 2)}\n`, "utf8");
+    const snapshotName = path.basename(pair.sourceSnapshot?.artifact_ref || `${safeName}.json`);
+    await fs.writeFile(path.join(snapshotDir, snapshotName), `${JSON.stringify(pair.sourceSnapshot, null, 2)}\n`, "utf8");
     await fs.writeFile(path.join(refineryDir, `${safeName}.json`), `${JSON.stringify(pair.knowledgeArtifact, null, 2)}\n`, "utf8");
   }
 }
@@ -329,12 +341,13 @@ export async function buildCorexContractArtifacts(options = {}) {
   }
 
   const selected = selectRepos([...allReposByNwo.values()], signalsByNwo, mineSet, options);
-  const artifacts = selected.map(({ repo, signal, scope }) => {
+  const artifacts = await Promise.all(selected.map(async ({ repo, signal, scope }) => {
     const extraction = extractionsByNwo.get(repoKey(repoNwo(repo))) || null;
-    const sourceSnapshot = buildSourceSnapshot({ repo, signal, extraction, scope, createdAt });
+    const sourceSnapshot = await loadImmutableSourceSnapshot(root, repo)
+      || buildSourceSnapshot({ repo, signal, extraction, scope, createdAt });
     const knowledgeArtifact = buildKnowledgeArtifact({ repo, signal, extraction, snapshot: sourceSnapshot, scope, createdAt });
-    return { nwo: repoNwo(repo), sourceSnapshot, knowledgeArtifact };
-  });
+    return { nwo: repoNwo(repo), sourceSnapshot, knowledgeArtifact, scope };
+  }));
 
   return {
     generated_by: GENERATED_BY,
