@@ -8,6 +8,88 @@ export interface RepoActionOptions {
   write?: boolean;
 }
 
+export interface VegaWorkflowStage {
+  id: string;
+  label: string;
+  description: string;
+  actionKind?: VegaActionKind;
+  locked?: boolean;
+}
+
+export interface VegaWorkflowStageState extends VegaWorkflowStage {
+  state: "pending" | "queued" | "running" | "succeeded" | "failed" | "blocked" | "cancelled" | "locked";
+  run?: VegaActionResult;
+}
+
+export const VEGA_WORKFLOW_STAGES: VegaWorkflowStage[] = [
+  {
+    id: "repo.inspect",
+    actionKind: "repo.inspect",
+    label: "Repo inspected",
+    description: "Metadata, signals, extraction, and adoption fit loaded.",
+  },
+  {
+    id: "snapshot.resolve",
+    actionKind: "snapshot.resolve",
+    label: "Source snapshot",
+    description: "Immutable source evidence checked or resolved.",
+  },
+  {
+    id: "candidate.build",
+    actionKind: "candidate.build",
+    label: "Candidate built",
+    description: "Pending skill candidate created from pinned evidence.",
+  },
+  {
+    id: "candidate.validate",
+    actionKind: "candidate.validate",
+    label: "Candidate valid",
+    description: "Candidate schema, checksum, provenance, and safety verified.",
+  },
+  {
+    id: "dossier.generate",
+    actionKind: "dossier.generate",
+    label: "Dossier ready",
+    description: "Internal human approval packet generated.",
+  },
+  {
+    id: "review.queue",
+    actionKind: "review.queue",
+    label: "Research queued",
+    description: "Repository is durable in the review/research queue.",
+  },
+  {
+    id: "review.approve",
+    label: "Human decision",
+    description: "Requires explicit human approval outside this UI flow.",
+    locked: true,
+  },
+  {
+    id: "promotion.propose",
+    label: "Promotion proposal",
+    description: "Core-X capability promotion proposal remains locked.",
+    locked: true,
+  },
+  {
+    id: "corex.dry-run",
+    label: "Core-X dry-run",
+    description: "Registry dry-run must be initiated separately.",
+    locked: true,
+  },
+  {
+    id: "bundle.review",
+    label: "Bundle review",
+    description: "Promotion bundle review remains operator-gated.",
+    locked: true,
+  },
+  {
+    id: "corex.apply",
+    label: "Apply",
+    description: "No apply path is exposed from Vega.",
+    locked: true,
+  },
+];
+
 export async function runVegaAction(options: RepoActionOptions): Promise<VegaActionResult> {
   const body: VegaActionRequest = {
     action_kind: options.actionKind,
@@ -27,6 +109,7 @@ export async function runVegaAction(options: RepoActionOptions): Promise<VegaAct
     method: "POST",
     headers: {
       "Content-Type": "application/json",
+      "X-Vega-Action-Origin": "vega-lab-ui",
     },
     body: JSON.stringify(body),
   });
@@ -37,6 +120,51 @@ export async function runVegaAction(options: RepoActionOptions): Promise<VegaAct
     throw new Error(message);
   }
   return payload as VegaActionResult;
+}
+
+export async function fetchVegaActionRuns(): Promise<VegaActionResult[]> {
+  const response = await fetch("/api/vega/actions/runs", {
+    method: "GET",
+    headers: {
+      "Accept": "application/json",
+    },
+  });
+
+  const payload = await response.json().catch(() => null);
+  if (!response.ok) {
+    const message = payload?.error?.message || payload?.message || `HTTP ${response.status}`;
+    throw new Error(message);
+  }
+  return (payload?.runs || []) as VegaActionResult[];
+}
+
+function repoNwo(repo?: Repo | null): string {
+  return repo ? `${repo.author}/${repo.name}`.toLowerCase() : "";
+}
+
+function runMatchesRepo(run: VegaActionResult, repo?: Repo | null): boolean {
+  const target = repoNwo(repo);
+  if (!target) return false;
+  return String(run.repo?.nwo || "").toLowerCase() === target;
+}
+
+export function workflowStagesForRepo(runs: VegaActionResult[], repo?: Repo | null): VegaWorkflowStageState[] {
+  return VEGA_WORKFLOW_STAGES.map((stage) => {
+    if (stage.locked || !stage.actionKind) {
+      return {
+        ...stage,
+        state: "locked" as const,
+      };
+    }
+    const run = runs.find((candidateRun) =>
+      candidateRun.action_kind === stage.actionKind && runMatchesRepo(candidateRun, repo),
+    );
+    return {
+      ...stage,
+      state: run?.status || "pending",
+      run,
+    };
+  });
 }
 
 function summarizeValue(value: unknown): string {
@@ -84,12 +212,29 @@ export function formatVegaActionResult(result: VegaActionResult): string {
   const lines = [
     "**Direct Answer**",
     result.status === "succeeded"
-      ? `Vega action \`${result.action_kind}\` completed and remains \`${result.review_state}\` / \`${result.visibility}\`.`
-      : `Vega action \`${result.action_kind}\` failed: ${result.error?.message || "unknown error"}.`,
+      ? `Vega action \`${result.action_kind}\` completed as run \`${result.run_id}\` and remains \`${result.review_state}\` / \`${result.visibility}\`.`
+      : `Vega action \`${result.action_kind}\` is \`${result.status}\`: ${result.error?.message || "unknown error"}.`,
+    "",
+    "**Receipt**",
+    `- Run: \`${result.run_id}\``,
+    `- Action: \`${result.action_id}\``,
+    `- Requested: ${result.requested_at}`,
+    `- Input digest: \`${result.input_digest}\``,
     "",
     "**Progress**",
     ...result.steps.map((step) => `- ${step.status}: ${step.label}${step.detail ? ` — ${step.detail}` : ""}`),
   ];
+
+  if (result.warnings.length > 0) {
+    lines.push("", "**Warnings**");
+    lines.push(...result.warnings.map((warning) => `- ${warning}`));
+  }
+
+  if (result.error) {
+    lines.push("", "**Error**");
+    lines.push(`- Code: \`${result.error.code}\``);
+    lines.push(`- Retryable: ${result.error.retryable ? "yes" : "no"}`);
+  }
 
   if (result.artifacts.length > 0) {
     lines.push("", "**Artifacts**");
@@ -101,8 +246,12 @@ export function formatVegaActionResult(result: VegaActionResult): string {
   }
 
   lines.push("", "**Next Actions**");
-  lines.push("- Review the internal artifact before promotion or publication.");
-  lines.push("- If this is a skill candidate, validate it and generate a dossier before requesting approval.");
+  if (result.status === "blocked") {
+    lines.push("- Resolve the blocker before retrying this action.");
+  } else {
+    lines.push("- Review the internal artifact before promotion or publication.");
+    lines.push("- If this is a skill candidate, validate it and generate a dossier before requesting approval.");
+  }
 
   return lines.join("\n");
 }

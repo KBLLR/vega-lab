@@ -1998,6 +1998,95 @@ table.repo-table {
   gap: 8px;
 }
 
+.orchestrator-workflow {
+  padding: 8px 18px 10px;
+  border-bottom: 1px solid var(--card-border);
+}
+
+.orchestrator-runtime {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  margin-bottom: 8px;
+  padding: 4px 8px;
+  border: 1px solid var(--card-border);
+  border-radius: 999px;
+  color: var(--card-muted);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.orchestrator-runtime.connected {
+  border-color: rgba(52, 168, 83, 0.4);
+  color: #1f7a39;
+}
+
+.orchestrator-runtime.disconnected {
+  border-color: rgba(217, 74, 43, 0.45);
+  color: var(--card-accent);
+}
+
+.workflow-stage-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 6px;
+}
+
+.workflow-stage {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+  padding: 6px 8px;
+  border: 1px solid var(--card-border);
+  border-radius: 10px;
+  background: var(--color-surface);
+  color: var(--card-muted);
+  font-size: 0.68rem;
+  font-weight: 800;
+}
+
+.workflow-stage__dot {
+  width: 7px;
+  height: 7px;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  flex: 0 0 auto;
+}
+
+.workflow-stage__label {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.workflow-stage.succeeded {
+  color: #1f7a39;
+  border-color: rgba(52, 168, 83, 0.36);
+}
+
+.workflow-stage.succeeded .workflow-stage__dot,
+.workflow-stage.running .workflow-stage__dot {
+  background: currentColor;
+}
+
+.workflow-stage.running {
+  color: var(--card-ink);
+}
+
+.workflow-stage.failed,
+.workflow-stage.blocked {
+  color: var(--card-accent);
+  border-color: rgba(217, 74, 43, 0.36);
+}
+
+.workflow-stage.locked {
+  opacity: 0.62;
+  background: transparent;
+}
+
 .orchestrator-messages {
   flex: 1;
   overflow-y: auto;

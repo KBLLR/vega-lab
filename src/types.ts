@@ -213,7 +213,7 @@ export type VegaActionKind =
   | 'ops-kit.generate'
   | 'mission.generate';
 
-export type VegaActionStatus = 'queued' | 'running' | 'succeeded' | 'failed';
+export type VegaActionStatus = 'queued' | 'running' | 'succeeded' | 'failed' | 'blocked' | 'cancelled';
 
 export interface VegaActionRequest {
   action_kind: VegaActionKind;
@@ -238,7 +238,8 @@ export interface VegaActionStep {
 
 export interface VegaActionResult {
   schema_version: 'vega.action-result.v1';
-  action_id: string;
+  run_id: string;
+  action_id: VegaActionKind;
   action_kind: VegaActionKind;
   status: VegaActionStatus;
   review_state: 'pending';
@@ -249,8 +250,12 @@ export interface VegaActionResult {
     author?: string;
   };
   candidate_id?: string;
+  requested_at: string;
   started_at: string;
   completed_at: string;
+  confirmation_ref?: string | null;
+  input_digest: string;
+  warnings: string[];
   steps: VegaActionStep[];
   artifacts: Array<{
     kind: string;
@@ -264,4 +269,5 @@ export interface VegaActionResult {
     message: string;
     retryable: boolean;
   };
+  error_code?: string;
 }

@@ -13,7 +13,6 @@ import {
   updateResearchQueue,
 } from "./house-model.js";
 import {
-  buildPromotionProposal,
   buildSkillCandidateIngestion,
   getSkillCandidate,
   validateSkillCandidate,
@@ -28,12 +27,37 @@ import {
 const ACTION_SCHEMA_VERSION = "vega.action-result.v1";
 const REVIEW_STATE = "pending";
 const VISIBILITY = "internal";
+const MUTATING_ACTIONS = new Set(["snapshot.resolve", "candidate.build", "dossier.generate", "review.queue"]);
+const ACTION_ALLOWED_KEYS = new Set(["action_kind", "repo", "candidate_id", "parameters", "write", "confirmation_ref"]);
+const REPO_ALLOWED_KEYS = new Set(["name", "author", "nwo"]);
+const PARAM_ALLOWED_KEYS = new Set([
+  "artifactKind",
+  "artifact_kind",
+  "candidate_id",
+  "confirmationRef",
+  "confirmation_ref",
+  "limit",
+  "notes",
+  "priority",
+  "ref",
+  "status",
+  "target",
+]);
+const activeMutationByRepo = new Map();
+const activeDuplicateRuns = new Map();
 const ACTION_KINDS = new Set([
   "repo.inspect",
   "snapshot.resolve",
   "candidate.build",
   "candidate.validate",
   "dossier.generate",
+  "review.queue",
+  "ops-kit.generate",
+  "mission.generate",
+]);
+const REPO_REQUIRED_ACTIONS = new Set([
+  "repo.inspect",
+  "snapshot.resolve",
   "review.queue",
   "ops-kit.generate",
   "mission.generate",
@@ -47,6 +71,66 @@ function sha256(value) {
   return crypto.createHash("sha256").update(value).digest("hex");
 }
 
+function stableStringify(value) {
+  if (Array.isArray(value)) return `[${value.map(stableStringify).join(",")}]`;
+  if (value && typeof value === "object") {
+    return `{${Object.keys(value).sort().map((key) => `${JSON.stringify(key)}:${stableStringify(value[key])}`).join(",")}}`;
+  }
+  return JSON.stringify(value);
+}
+
+function inputDigest(value) {
+  return `sha256:${sha256(stableStringify(value))}`;
+}
+
+function publicError(error) {
+  return {
+    code: error.code || "action_failed",
+    message: error.message || "Vega action failed.",
+    retryable: error.retryable !== false,
+  };
+}
+
+function actionError(message, code = "invalid_request", retryable = false) {
+  return Object.assign(new Error(message), { code, retryable });
+}
+
+function hasControlCharacters(value) {
+  return /[\u0000-\u001F\u007F]/.test(String(value || ""));
+}
+
+function validateIdentifier(value, label) {
+  const next = String(value || "").trim();
+  if (!next || hasControlCharacters(next) || next.includes("..") || next.includes("\\") || next.startsWith("/") || next.startsWith("~")) {
+    throw actionError(`Invalid ${label}.`, `invalid_${label}`, false);
+  }
+  if (!/^[A-Za-z0-9_.-]+$/.test(next)) {
+    throw actionError(`Invalid ${label}.`, `invalid_${label}`, false);
+  }
+  return next;
+}
+
+function validateNwo(value) {
+  const next = String(value || "").trim();
+  if (!next) return "";
+  if (hasControlCharacters(next) || next.includes("..") || next.includes("\\") || next.startsWith("/") || next.startsWith("~")) {
+    throw actionError("Invalid repository identity.", "invalid_repository_identity", false);
+  }
+  const parts = next.split("/");
+  if (parts.length !== 2) {
+    throw actionError("Repository identity must be owner/name.", "invalid_repository_identity", false);
+  }
+  return `${validateIdentifier(parts[0], "repository_owner")}/${validateIdentifier(parts[1], "repository_name")}`;
+}
+
+function rejectUnknownKeys(value, allowed, label) {
+  if (!value || typeof value !== "object" || Array.isArray(value)) return;
+  const unknown = Object.keys(value).filter((key) => !allowed.has(key));
+  if (unknown.length > 0) {
+    throw actionError(`Unknown ${label} field(s): ${unknown.join(", ")}`, "unknown_request_field", false);
+  }
+}
+
 function nwoFromRepo(repo) {
   if (!repo) return "";
   if (repo.nwo) return String(repo.nwo);
@@ -54,16 +138,24 @@ function nwoFromRepo(repo) {
 }
 
 function normalizeRepoInput(repo = {}) {
-  const nwo = nwoFromRepo(repo);
+  rejectUnknownKeys(repo, REPO_ALLOWED_KEYS, "repo");
+  const nwo = validateNwo(nwoFromRepo(repo));
   const [authorFromNwo, nameFromNwo] = nwo.split("/");
+  const author = repo.author ? validateIdentifier(repo.author, "repository_owner") : authorFromNwo;
+  const name = repo.name ? validateIdentifier(repo.name, "repository_name") : nameFromNwo;
+  const normalizedNwo = validateNwo([author, name].filter(Boolean).join("/"));
+  if (!normalizedNwo) {
+    throw actionError("Repository identity is required.", "missing_repository", false);
+  }
   return {
-    name: repo.name || nameFromNwo,
-    author: repo.author || authorFromNwo,
-    nwo,
+    name,
+    author,
+    nwo: normalizedNwo,
   };
 }
 
 function normalizeRequest(request = {}) {
+  rejectUnknownKeys(request, ACTION_ALLOWED_KEYS, "request");
   const actionKind = String(request.action_kind || "");
   if (!ACTION_KINDS.has(actionKind)) {
     throw Object.assign(new Error(`Unsupported Vega action kind: ${actionKind || "missing"}`), {
@@ -71,18 +163,58 @@ function normalizeRequest(request = {}) {
       retryable: false,
     });
   }
+  const parameters = request.parameters && typeof request.parameters === "object" && !Array.isArray(request.parameters)
+    ? request.parameters
+    : {};
+  rejectUnknownKeys(parameters, PARAM_ALLOWED_KEYS, "parameters");
+  const candidateId = request.candidate_id || parameters.candidate_id || null;
+  if (
+    candidateId
+    && (
+      hasControlCharacters(candidateId)
+      || String(candidateId).includes("..")
+      || String(candidateId).includes("\\")
+      || String(candidateId).startsWith("/")
+      || String(candidateId).startsWith("~")
+      || !/^[A-Za-z0-9_.:-]+$/.test(String(candidateId))
+    )
+  ) {
+    throw actionError("Invalid candidate id.", "invalid_candidate_id", false);
+  }
+  const repo = request.repo ? normalizeRepoInput(request.repo) : null;
+  if (REPO_REQUIRED_ACTIONS.has(actionKind) && !repo) {
+    throw actionError("Repository identity is required.", "missing_repository", false);
+  }
+  if (!repo && !candidateId && ["candidate.build", "candidate.validate", "dossier.generate"].includes(actionKind)) {
+    throw actionError("Repository identity or candidate id is required.", "missing_action_target", false);
+  }
   return {
     action_kind: actionKind,
-    repo: normalizeRepoInput(request.repo || {}),
-    candidate_id: request.candidate_id || request.parameters?.candidate_id || null,
-    parameters: request.parameters && typeof request.parameters === "object" ? request.parameters : {},
+    repo,
+    candidate_id: candidateId ? String(candidateId) : null,
+    parameters,
     write: request.write === true,
+    confirmation_ref: request.confirmation_ref || parameters.confirmation_ref || parameters.confirmationRef || null,
   };
 }
 
-function actionId(request) {
+function runId(request) {
   const target = request.candidate_id || request.repo?.nwo || `${request.repo?.author || ""}/${request.repo?.name || ""}`;
   return `vega-action-${slug(`${request.action_kind}-${target || "unknown"}`)}-${Date.now()}`;
+}
+
+function duplicateKey(request) {
+  return inputDigest({
+    action_kind: request.action_kind,
+    repo: request.repo,
+    candidate_id: request.candidate_id,
+    parameters: request.parameters,
+    write: request.write,
+  });
+}
+
+function repoLockKey(request) {
+  return request.repo?.nwo || request.candidate_id || "unknown";
 }
 
 function relativeToRoot(root, filePath) {
@@ -105,9 +237,15 @@ function safeReviewPath(root, ...segments) {
   return target;
 }
 
-async function writeJson(filePath, value) {
+async function atomicWrite(filePath, content) {
   await fs.mkdir(path.dirname(filePath), { recursive: true });
-  await fs.writeFile(filePath, `${JSON.stringify(value, null, 2)}\n`, "utf8");
+  const tmpPath = `${filePath}.${process.pid}.${Date.now()}.tmp`;
+  await fs.writeFile(tmpPath, content, "utf8");
+  await fs.rename(tmpPath, filePath);
+}
+
+async function writeJson(filePath, value) {
+  await atomicWrite(filePath, `${JSON.stringify(value, null, 2)}\n`);
 }
 
 async function readJson(filePath, fallback = null) {
@@ -120,8 +258,7 @@ async function readJson(filePath, fallback = null) {
 }
 
 async function writeText(filePath, value) {
-  await fs.mkdir(path.dirname(filePath), { recursive: true });
-  await fs.writeFile(filePath, value, "utf8");
+  await atomicWrite(filePath, value);
 }
 
 function createStep(id, label) {
@@ -181,13 +318,19 @@ function actionRepo(repo) {
 }
 
 async function persistRun(root, run) {
-  const filePath = safeReviewPath(root, "action-runs", `${slug(run.action_id)}.json`);
-  await writeJson(filePath, run);
-  run.artifacts.push({
+  const repoScope = run.repo?.nwo ? slug(run.repo.nwo) : "unknown-repo";
+  const filePath = safeReviewPath(root, "action-runs", repoScope, `${slug(run.run_id)}.json`);
+  const actionRunArtifact = {
     kind: "action-run",
     path: relativeToRoot(root, filePath),
-    checksum: `sha256:${sha256(JSON.stringify(run))}`,
-  });
+    checksum: `sha256:${sha256(JSON.stringify({ ...run, artifacts: [...run.artifacts] }))}`,
+  };
+  const runForDisk = {
+    ...run,
+    artifacts: [...run.artifacts, actionRunArtifact],
+  };
+  await writeJson(filePath, runForDisk);
+  run.artifacts = runForDisk.artifacts;
 }
 
 async function runRepoInspect(root, request, run) {
@@ -294,6 +437,9 @@ async function runSnapshot(root, request, run) {
   const step = createStep("snapshot.resolve", request.write ? "Resolve and cache immutable source snapshot" : "Check cached immutable source snapshot");
   run.steps.push(step);
   run.repo = actionRepo(repo);
+  if (request.write && !request.confirmation_ref) {
+    throw actionError("snapshot.resolve with network/cache writes requires confirmation_ref.", "confirmation_required", false);
+  }
   const result = request.write
     ? await resolveSourceSnapshot(repo, { projectRoot: root, ref: request.parameters.ref || null, write: true })
     : await checkSourceSnapshot(repo, { projectRoot: root });
@@ -335,7 +481,7 @@ async function findCandidateForRequest(root, request) {
   return result.candidates.find((candidate) => candidate.source_repository?.nwo?.toLowerCase() === nwo.toLowerCase()) || null;
 }
 
-async function writeCandidateAndProposal(root, candidate, run) {
+async function writeCandidateArtifact(root, candidate, run) {
   const safeId = slug(candidate.candidate_id);
   const candidatePath = safeReviewPath(root, "skill-candidates", `${safeId}.json`);
   await writeJson(candidatePath, candidate);
@@ -344,18 +490,6 @@ async function writeCandidateAndProposal(root, candidate, run) {
     path: relativeToRoot(root, candidatePath),
     checksum: candidate.content_checksum,
   });
-
-  const proposal = buildPromotionProposal(candidate, {
-    reviewArtifactRef: relativeToRoot(root, candidatePath),
-  });
-  const proposalPath = safeReviewPath(root, "capability-promotions", `${safeId}.json`);
-  await writeJson(proposalPath, proposal);
-  run.artifacts.push({
-    kind: "capability-promotion-proposal",
-    path: relativeToRoot(root, proposalPath),
-    checksum: `sha256:${sha256(JSON.stringify(proposal))}`,
-  });
-  return proposal;
 }
 
 async function runCandidateBuild(root, request, run) {
@@ -373,14 +507,15 @@ async function runCandidateBuild(root, request, run) {
   };
   run.candidate_id = candidate.candidate_id;
   const validation = validateSkillCandidate(candidate);
-  let proposal = buildPromotionProposal(candidate);
+  if (!validation.valid) {
+    throw actionError("Candidate build is blocked until an immutable source snapshot and safety validation pass.", "candidate_validation_blocked", false);
+  }
   if (request.write !== false) {
-    proposal = await writeCandidateAndProposal(root, candidate, run);
+    await writeCandidateArtifact(root, candidate, run);
   }
   run.result = {
     candidate,
     validation,
-    proposal,
     wrote: request.write !== false,
   };
   finishStep(step, `${candidate.candidate_id} (${validation.valid ? "valid" : "blocked"})`);
@@ -427,7 +562,9 @@ async function runDossier(root, request, run) {
   }
 
   const validation = validateSkillCandidate(candidate);
-  const proposal = buildPromotionProposal(candidate);
+  if (!validation.valid) {
+    throw actionError("Dossier generation is blocked until candidate validation passes.", "candidate_validation_blocked", false);
+  }
   const safeId = slug(candidate.candidate_id);
   const packetDir = safeReviewPath(root, "approval-packets", safeId);
   const snapshot = candidate.source_snapshot_identity?.artifact_ref
@@ -449,7 +586,13 @@ async function runDossier(root, request, run) {
     ].join("\n")],
     ["01-candidate.json", stablePrettyStringify(candidate)],
     ["02-validation.json", stablePrettyStringify(validation)],
-    ["03-promotion-proposal.json", stablePrettyStringify(proposal)],
+    ["03-promotion-boundary.md", [
+      `# Promotion Boundary: ${candidate.name}`,
+      "",
+      "Promotion proposals, Core-X dry-runs, bundle review, and apply are locked in this Vega UI flow.",
+      "This dossier does not approve, promote, install, or mutate Core-X registries.",
+      "",
+    ].join("\n")],
     ["04-source-snapshot.json", stablePrettyStringify(snapshot || { missing: candidate.source_snapshot_identity?.artifact_ref || null })],
     ["05-evidence.md", [
       `# Evidence: ${candidate.name}`,
@@ -541,21 +684,47 @@ async function runDossier(root, request, run) {
 export async function executeVegaAction(rootDir, rawRequest = {}) {
   const root = path.resolve(rootDir);
   const request = normalizeRequest(rawRequest);
+  const key = duplicateKey(request);
+  if (activeDuplicateRuns.has(key)) {
+    return activeDuplicateRuns.get(key);
+  }
+  const execution = executeVegaActionInternal(root, request, rawRequest)
+    .finally(() => {
+      activeDuplicateRuns.delete(key);
+    });
+  activeDuplicateRuns.set(key, execution);
+  return execution;
+}
+
+async function executeVegaActionInternal(root, request, rawRequest) {
   const started = now();
   const run = {
     schema_version: ACTION_SCHEMA_VERSION,
-    action_id: actionId(request),
+    run_id: runId(request),
+    action_id: request.action_kind,
     action_kind: request.action_kind,
     status: "running",
     review_state: REVIEW_STATE,
     visibility: VISIBILITY,
+    requested_at: started,
     started_at: started,
     completed_at: started,
+    confirmation_ref: request.confirmation_ref,
+    input_digest: inputDigest(rawRequest),
+    warnings: [],
     steps: [],
     artifacts: [],
   };
 
   try {
+    const lockKey = repoLockKey(request);
+    const mutating = MUTATING_ACTIONS.has(request.action_kind) && request.write !== false;
+    if (mutating && activeMutationByRepo.has(lockKey)) {
+      throw actionError(`Another mutating Vega action is already running for ${lockKey}.`, "repository_action_locked", true);
+    }
+    if (mutating) {
+      activeMutationByRepo.set(lockKey, run.run_id);
+    }
     switch (request.action_kind) {
       case "repo.inspect":
         await runRepoInspect(root, request, run);
@@ -588,13 +757,14 @@ export async function executeVegaAction(rootDir, rawRequest = {}) {
   } catch (error) {
     const activeStep = run.steps.find((step) => step.status === "running");
     if (activeStep) failStep(activeStep, error.message);
-    run.status = "failed";
-    run.error = {
-      code: error.code || "action_failed",
-      message: error.message,
-      retryable: error.retryable !== false,
-    };
+    run.status = error.retryable === false ? "blocked" : "failed";
+    run.error = publicError(error);
+    run.error_code = run.error.code;
   } finally {
+    const lockKey = repoLockKey(request);
+    if (activeMutationByRepo.get(lockKey) === run.run_id) {
+      activeMutationByRepo.delete(lockKey);
+    }
     run.completed_at = now();
     await persistRun(root, run);
   }
@@ -605,15 +775,30 @@ export async function executeVegaAction(rootDir, rawRequest = {}) {
 export async function listVegaActionRuns(rootDir, { limit = 25 } = {}) {
   const dir = safeReviewPath(path.resolve(rootDir), "action-runs");
   let entries = [];
+  async function collect(currentDir) {
+    let nested = [];
+    try {
+      nested = await fs.readdir(currentDir, { withFileTypes: true });
+    } catch (error) {
+      if (error?.code !== "ENOENT") throw error;
+    }
+    for (const entry of nested) {
+      const entryPath = path.join(currentDir, entry.name);
+      if (entry.isDirectory()) {
+        await collect(entryPath);
+      } else if (entry.isFile() && entry.name.endsWith(".json")) {
+        entries.push(entryPath);
+      }
+    }
+  }
   try {
-    entries = await fs.readdir(dir, { withFileTypes: true });
+    await collect(dir);
   } catch (error) {
     if (error?.code !== "ENOENT") throw error;
   }
   const runs = [];
-  for (const entry of entries) {
-    if (!entry.isFile() || !entry.name.endsWith(".json")) continue;
-    const value = await readJson(path.join(dir, entry.name), null);
+  for (const entryPath of entries) {
+    const value = await readJson(entryPath, null);
     if (value) runs.push(value);
   }
   return runs
