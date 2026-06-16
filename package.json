@@ -27,7 +27,8 @@
     "test:corex-contract-snapshots": "node tests/test-corex-contract-snapshots.js",
     "test:source-snapshots": "node tests/test-source-snapshot-resolver.js",
     "test:skill-candidate-ingestion": "node tests/test-skill-candidate-ingestion.js",
-    "test": "npm run lint && npm run test:data && npm run test:mcp"
+    "test:action-bridge": "node tests/test-action-bridge.js",
+    "test": "npm run lint && npm run test:data && npm run test:mcp && npm run test:action-bridge"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.25.3",

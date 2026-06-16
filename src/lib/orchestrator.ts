@@ -1,4 +1,4 @@
-import type { Repo } from "../types";
+import type { Repo, VegaActionKind } from "../types";
 
 export const VEGA_LAB_HOUSE_ID = "vega-lab";
 export const LEGACY_HOUSE_ID = "git-stars";
@@ -25,6 +25,9 @@ export interface ActionPreset {
   prompt: string;
   title: string;
   variant?: "primary" | "default";
+  actionKind?: VegaActionKind;
+  actionParameters?: Record<string, unknown>;
+  write?: boolean;
 }
 
 const ROUTES: Array<{ pattern: RegExp; route: VegaLabRoute }> = [
@@ -650,46 +653,64 @@ const GENERAL_ACTIONS: ActionPreset[] = [
     title: "Ops kit",
     prompt: "Call generate_repo_ops_kit with target mlx and summarize the README, AGENTS, maintenance, deployment, testing, and action-item artifacts.",
     variant: "primary",
+    actionKind: "ops-kit.generate",
+    actionParameters: { target: "mlx" },
   },
   {
     label: "README draft",
     title: "README draft",
     prompt: "Call generate_repo_ops_kit with target mlx and return only the README artifact with its evidence.",
+    actionKind: "ops-kit.generate",
+    actionParameters: { target: "mlx", artifactKind: "readme" },
   },
   {
     label: "AGENTS draft",
     title: "AGENTS draft",
     prompt: "Call generate_repo_ops_kit with target mlx and return only the AGENTS artifact with operating rules and commands.",
+    actionKind: "ops-kit.generate",
+    actionParameters: { target: "mlx", artifactKind: "agents" },
   },
   {
     label: "Deployment plan",
     title: "Deployment plan",
     prompt: "Call generate_repo_ops_kit with target mlx and return the deployment artifact with known evidence and missing checks.",
+    actionKind: "ops-kit.generate",
+    actionParameters: { target: "mlx", artifactKind: "deployment" },
   },
   {
     label: "Test plan",
     title: "Test plan",
     prompt: "Call generate_repo_ops_kit with target mlx and return the testing artifact with verification commands or gaps.",
+    actionKind: "ops-kit.generate",
+    actionParameters: { target: "mlx", artifactKind: "testing" },
   },
   {
     label: "SKILL candidate",
     title: "SKILL candidate",
     prompt: "Call generate_skill_candidate_from_ocr_evidence with writeArtifact true and return the internal pending SKILL candidate, evidence refs, and limitations. Do not publish it.",
+    actionKind: "candidate.build",
+    write: true,
   },
   {
     label: "MLX mission",
     title: "MLX mission",
     prompt: "Call generate_repo_mission with target mlx and return the resulting local MLX mission brief.",
+    actionKind: "mission.generate",
+    actionParameters: { target: "mlx" },
   },
   {
     label: "Codex mission",
     title: "Codex mission",
     prompt: "Call generate_repo_mission with target codex and return the resulting mission brief.",
+    actionKind: "mission.generate",
+    actionParameters: { target: "codex" },
   },
   {
     label: "Claude mission",
     title: "Claude mission",
     prompt: "Call generate_repo_mission with target claude and return the resulting mission brief.",
+    actionKind: "mission.generate",
+    actionParameters: { target: "claude" },
   },
 ];
 
@@ -699,46 +720,64 @@ const MINE_ACTIONS: ActionPreset[] = [
     title: "Ops kit",
     prompt: "Call generate_repo_ops_kit with target mlx and summarize the README, AGENTS, maintenance, deployment, testing, and action-item artifacts for this owned repo.",
     variant: "primary",
+    actionKind: "ops-kit.generate",
+    actionParameters: { target: "mlx" },
   },
   {
     label: "README draft",
     title: "README draft",
     prompt: "Call generate_repo_ops_kit with target mlx and return only the README artifact with its evidence.",
+    actionKind: "ops-kit.generate",
+    actionParameters: { target: "mlx", artifactKind: "readme" },
   },
   {
     label: "AGENTS draft",
     title: "AGENTS draft",
     prompt: "Call generate_repo_ops_kit with target mlx and return only the AGENTS artifact with operating rules and commands.",
+    actionKind: "ops-kit.generate",
+    actionParameters: { target: "mlx", artifactKind: "agents" },
   },
   {
     label: "Deployment plan",
     title: "Deployment plan",
     prompt: "Call generate_repo_ops_kit with target mlx and return the deployment artifact with known evidence and missing checks.",
+    actionKind: "ops-kit.generate",
+    actionParameters: { target: "mlx", artifactKind: "deployment" },
   },
   {
     label: "Test plan",
     title: "Test plan",
     prompt: "Call generate_repo_ops_kit with target mlx and return the testing artifact with verification commands or gaps.",
+    actionKind: "ops-kit.generate",
+    actionParameters: { target: "mlx", artifactKind: "testing" },
   },
   {
     label: "SKILL candidate",
     title: "SKILL candidate",
     prompt: "Call generate_skill_candidate_from_ocr_evidence with writeArtifact true and return the internal pending SKILL candidate, evidence refs, and limitations. Do not publish it.",
+    actionKind: "candidate.build",
+    write: true,
   },
   {
     label: "MLX mission",
     title: "MLX mission",
     prompt: "Call generate_repo_mission with target mlx and return the resulting local MLX mission brief.",
+    actionKind: "mission.generate",
+    actionParameters: { target: "mlx" },
   },
   {
     label: "Codex mission",
     title: "Codex mission",
     prompt: "Call generate_repo_mission with target codex and return the resulting mission brief.",
+    actionKind: "mission.generate",
+    actionParameters: { target: "codex" },
   },
   {
     label: "Claude mission",
     title: "Claude mission",
     prompt: "Call generate_repo_mission with target claude and return the resulting mission brief.",
+    actionKind: "mission.generate",
+    actionParameters: { target: "claude" },
   },
 ];
 

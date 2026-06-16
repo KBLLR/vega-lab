@@ -3,6 +3,8 @@ import { marked } from "marked";
 import DOMPurify from "dompurify";
 import { ExternalLink, Sparkles, Wand2, X } from "lucide-react";
 import type { Repo } from "../types";
+import type { VegaActionKind } from "../types";
+import { formatVegaActionResult, inferActionFromPrompt, runVegaAction } from "../lib/action-bridge";
 import { streamOpenResponses } from "../lib/openresponses-client";
 import { fetchRuntimeModels } from "../lib/runtime-client";
 import type { ActionPreset, VegaLabRoute } from "../lib/orchestrator";
@@ -75,10 +77,61 @@ export function ReadmePanel({
     }
   }, []);
 
-  const runAction = useCallback((prompt: string, title: string) => {
+  const runAction = useCallback((
+    prompt: string,
+    title: string,
+    actionKind?: VegaActionKind,
+    actionParameters?: Record<string, unknown>,
+    write?: boolean,
+  ) => {
     if (!repo) return;
     const actionId = `action-${Date.now()}`;
     const route = routeVegaLabIntent(prompt);
+    const activeMissionTarget = runtimeTarget.mode === "local" ? "mlx" : "codex";
+    const inferredAction = actionKind
+      ? { actionKind, parameters: actionParameters, write }
+      : inferActionFromPrompt(prompt, activeMissionTarget);
+
+    if (inferredAction) {
+      setActiveRoute(route);
+      setOverlayTitle(title);
+      setOverlayContent("Starting typed Vega action...");
+      setOverlayVisible(true);
+      setIsRunning(true);
+
+      const userMessage: ChatMessage = { id: `${actionId}-user`, role: "user", content: prompt };
+      const assistantMessage: ChatMessage = { id: `${actionId}-assistant`, role: "assistant", content: "" };
+      setMessages((previous) => [...previous, userMessage, assistantMessage]);
+
+      runVegaAction({
+        repo,
+        actionKind: inferredAction.actionKind,
+        parameters: inferredAction.parameters,
+        write: inferredAction.write,
+      })
+        .then((result) => {
+          const formatted = formatVegaActionResult(result);
+          setMessages((previous) =>
+            previous.map((message) =>
+              message.id === assistantMessage.id ? { ...message, content: formatted } : message,
+            ),
+          );
+          setOverlayContent(formatted);
+          onHouseDataChanged?.();
+        })
+        .catch((nextError: Error) => {
+          const errorText = `Tooling error: ${nextError.message}`;
+          setMessages((previous) =>
+            previous.map((message) =>
+              message.id === assistantMessage.id ? { ...message, content: errorText } : message,
+            ),
+          );
+          setOverlayContent(errorText);
+        })
+        .finally(() => setIsRunning(false));
+      return;
+    }
+
     const excerpt = rawMarkdown.slice(0, 4000);
     const conversation = [
       {
@@ -252,7 +305,7 @@ export function ReadmePanel({
           <button
             key={action.label}
             className={`action-btn ${action.variant === "primary" ? "primary" : ""}`}
-            onClick={() => runAction(action.prompt, action.title)}
+            onClick={() => runAction(action.prompt, action.title, action.actionKind, action.actionParameters, action.write)}
           >
             {action.variant === "primary" ? <Wand2 size={14} /> : <Sparkles size={14} />} {action.label}
           </button>

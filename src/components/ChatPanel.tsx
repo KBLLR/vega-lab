@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Bot, Loader, Send, User as UserIcon, Wrench, X } from "lucide-react";
-import type { Repo } from "../types";
+import type { Repo, VegaActionResult } from "../types";
 import type { VegaLabRoute } from "../lib/orchestrator";
 import {
   buildVegaLabTools,
@@ -9,6 +9,13 @@ import {
   HOUSE_ID,
   routeVegaLabIntent,
 } from "../lib/orchestrator";
+import {
+  fetchVegaActionRuns,
+  formatVegaActionResult,
+  inferActionFromPrompt,
+  runVegaAction,
+  workflowStagesForRepo,
+} from "../lib/action-bridge";
 import type { OpenResponsesEvent } from "../lib/openresponses-client";
 import { streamOpenResponses } from "../lib/openresponses-client";
 import { fetchRuntimeModels } from "../lib/runtime-client";
@@ -55,6 +62,8 @@ export function ChatPanel({
   const [toolCalls, setToolCalls] = useState<Record<string, ToolCall>>({});
   const [defaultModel, setDefaultModel] = useState<string | null>(null);
   const [activeRoute, setActiveRoute] = useState<VegaLabRoute | null>(null);
+  const [workflowRuns, setWorkflowRuns] = useState<VegaActionResult[]>([]);
+  const [actionRuntimeState, setActionRuntimeState] = useState<"unknown" | "connected" | "disconnected">("unknown");
   const [runtimeTarget, setRuntimeTarget] = useState(() =>
     resolveRuntimeTarget(loadRuntimeSettings()),
   );
@@ -67,6 +76,24 @@ export function ChatPanel({
   const tools = useMemo(() => buildVegaLabTools(), []);
   const activeMissionTarget = runtimeTarget.mode === "local" ? "mlx" : "codex";
   const repoSessionKey = repo ? `${repo.author}/${repo.name}` : null;
+  const workflowStages = useMemo(() => workflowStagesForRepo(workflowRuns, repo), [repo, workflowRuns]);
+
+  const refreshWorkflowRuns = useCallback(() => {
+    if (!repoSessionKey) {
+      setWorkflowRuns([]);
+      setActionRuntimeState("unknown");
+      return Promise.resolve();
+    }
+    return fetchVegaActionRuns()
+      .then((runs) => {
+        setWorkflowRuns(runs);
+        setActionRuntimeState("connected");
+      })
+      .catch(() => {
+        setWorkflowRuns([]);
+        setActionRuntimeState("disconnected");
+      });
+  }, [repoSessionKey]);
 
   function getWelcomeMessages(currentRepo: Repo): Message[] {
     return [
@@ -110,7 +137,8 @@ export function ChatPanel({
     setToolCalls({});
     setActiveRoute(null);
     setIsLoading(false);
-  }, [isOpen, repo, repoSessionKey]);
+    void refreshWorkflowRuns();
+  }, [isOpen, refreshWorkflowRuns, repo, repoSessionKey]);
 
   useEffect(() => {
     messagesRef.current = messages;
@@ -197,6 +225,7 @@ export function ChatPanel({
 
     const route = routeVegaLabIntent(content);
     setActiveRoute(route);
+    const bridgeAction = inferActionFromPrompt(content, activeMissionTarget);
 
     const userMessage: Message = {
       id: Date.now().toString(),
@@ -230,6 +259,70 @@ export function ChatPanel({
     setMessages(nextMessages);
 
     streamRef.current?.abort();
+
+    if (bridgeAction) {
+      const callId = `vega-action-${Date.now()}`;
+      setToolCalls((previous) => ({
+        ...previous,
+        [callId]: {
+          id: callId,
+          name: bridgeAction.actionKind,
+          arguments: JSON.stringify({
+            repo: `${repo.author}/${repo.name}`,
+            parameters: bridgeAction.parameters || {},
+            write: bridgeAction.write === true,
+          }, null, 2),
+          status: "in_progress",
+        },
+      }));
+
+      runVegaAction({
+        repo,
+        actionKind: bridgeAction.actionKind,
+        parameters: bridgeAction.parameters,
+        write: bridgeAction.write,
+      })
+        .then((result) => {
+          const formatted = formatVegaActionResult(result);
+          setActionRuntimeState("connected");
+          setMessages((previous) => {
+            const updated = previous.map((message) =>
+              message.id === assistantId ? { ...message, content: formatted } : message,
+            );
+            messagesRef.current = updated;
+            return updated;
+          });
+          setToolCalls((previous) => ({
+            ...previous,
+            [callId]: {
+              ...previous[callId],
+              status: "done",
+            },
+          }));
+          void refreshWorkflowRuns();
+          onRunComplete?.();
+        })
+        .catch((error: Error) => {
+          setActionRuntimeState("disconnected");
+          setMessages((previous) => [
+            ...previous.map((message) =>
+              message.id === assistantId
+                ? { ...message, content: `Tooling error: ${error.message}` }
+                : message,
+            ),
+          ]);
+          setToolCalls((previous) => ({
+            ...previous,
+            [callId]: {
+              ...previous[callId],
+              status: "done",
+            },
+          }));
+        })
+        .finally(() => setIsLoading(false));
+      return;
+    }
+
     streamRef.current = streamOpenResponses({
       endpoint: `${runtimeTarget.busUrl}${runtimeTarget.responsesPath}`,
       body: {
@@ -265,7 +358,7 @@ export function ChatPanel({
         ]);
       },
     });
-  }, [agentId, defaultModel, input, onRunComplete, repo, runtimeTarget, tools]);
+  }, [activeMissionTarget, agentId, defaultModel, input, onRunComplete, refreshWorkflowRuns, repo, runtimeTarget, tools]);
 
   useEffect(() => {
     if (!isOpen || !prefill) return;
@@ -307,6 +400,24 @@ export function ChatPanel({
         <button className="chip chip-tag" onClick={() => handleSend(`Call generate_repo_ops_kit with target ${activeMissionTarget} and summarize the generated draft artifacts.`)}>Ops Kit</button>
         <button className="chip chip-tag" onClick={() => handleSend("Call update_research_queue with status queued and explain why this repo belongs in the research queue.")}>Queue</button>
         <button className="chip chip-tag" onClick={() => handleSend(`Call generate_repo_mission with target ${activeMissionTarget} and return the mission brief.`)}>Mission</button>
+      </div>
+
+      <div className="orchestrator-workflow">
+        <div className={`orchestrator-runtime ${actionRuntimeState}`}>
+          Action bridge: {actionRuntimeState === "connected" ? "connected" : actionRuntimeState === "disconnected" ? "disconnected" : "checking"}
+        </div>
+        <div className="workflow-stage-grid" aria-label="Vega durable action workflow">
+          {workflowStages.map((stage) => (
+            <div
+              key={stage.id}
+              className={`workflow-stage ${stage.state}`}
+              title={stage.description}
+            >
+              <span className="workflow-stage__dot" />
+              <span className="workflow-stage__label">{stage.label}</span>
+            </div>
+          ))}
+        </div>
       </div>
 
       <div ref={scrollRef} className="orchestrator-messages">
