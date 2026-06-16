@@ -1963,7 +1963,7 @@
   },
   {
     "nwo": "KBLLR/core-x",
-    "generatedAt": "2026-06-14T20:27:03.000Z",
+    "generatedAt": "2026-06-15T03:39:45.000Z",
     "target": "mlx",
     "artifacts": [
       {
@@ -9125,14 +9125,14 @@
   },
   {
     "nwo": "KBLLR/rigging-palace",
-    "generatedAt": "2026-06-14T13:49:33.000Z",
+    "generatedAt": "2026-06-15T17:08:21.000Z",
     "target": "mlx",
     "artifacts": [
       {
         "kind": "readme",
         "title": "rigging-palace README Draft",
         "suggestedPath": "README.md",
-        "body": "# rigging-palace\n\nRigging Palace\n\n## Vega Lab Fit\n- Classification: ignore\n- Capabilities: none\n- House skills: mine-execution\n\n## Local Setup\n- Package managers: npm, npm-lock\n- Document install, dev, build, and verification commands before broad reuse.\n- Keep runtime assumptions explicit; prefer local MLX/OpenResponses for model-assisted work.\n\n## Verification\n- npm run lint\n- npm run test\n- npm run test:batch\n- npm run rig:check\n- npm run test:library-retrieval\n- npm run build\n- npm run stage:build\n- npm run showcase:build\n\n## Evidence\n- Repository: KBLLR/rigging-palace\n- Description: Rigging Palace\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Health flag: private",
+        "body": "# rigging-palace\n\nRigging Palace\n\n## Vega Lab Fit\n- Classification: ignore\n- Capabilities: none\n- House skills: mine-execution\n\n## Local Setup\n- Package managers: npm, npm-lock\n- Document install, dev, build, and verification commands before broad reuse.\n- Keep runtime assumptions explicit; prefer local MLX/OpenResponses for model-assisted work.\n\n## Verification\n- npm run lint\n- npm run test\n- npm run test:batch\n- npm run rig:check\n- npm run test:library-retrieval\n- npm run test:rigging\n- npm run build\n- npm run stage:build\n- npm run showcase:build\n\n## Evidence\n- Repository: KBLLR/rigging-palace\n- Description: Rigging Palace\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Health flag: private",
         "evidence": [
           "Repository: KBLLR/rigging-palace",
           "Description: Rigging Palace",
@@ -9146,7 +9146,7 @@
         "kind": "agents",
         "title": "rigging-palace AGENTS Draft",
         "suggestedPath": "AGENTS.md",
-        "body": "# rigging-palace Agents\n\n## Product Truth\n- Repository: KBLLR/rigging-palace\n- Vega Lab classification: ignore\n- Active mission target: Local MLX\n\n## Operating Rules\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\n\n## Commands\n- npm run lint\n- npm run test\n- npm run test:batch\n- npm run rig:check\n- npm run test:library-retrieval\n- npm run build\n- npm run stage:build\n- npm run showcase:build\n\n## Agent Boundaries\n- Do not mutate deployment, secrets, or release configuration without explicit approval.\n- Prefer draft plans and reviewable diffs over broad automation.\n- Preserve existing product direction; use Vega Lab evidence before adding new abstractions.",
+        "body": "# rigging-palace Agents\n\n## Product Truth\n- Repository: KBLLR/rigging-palace\n- Vega Lab classification: ignore\n- Active mission target: Local MLX\n\n## Operating Rules\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\n\n## Commands\n- npm run lint\n- npm run test\n- npm run test:batch\n- npm run rig:check\n- npm run test:library-retrieval\n- npm run test:rigging\n- npm run build\n- npm run stage:build\n- npm run showcase:build\n\n## Agent Boundaries\n- Do not mutate deployment, secrets, or release configuration without explicit approval.\n- Prefer draft plans and reviewable diffs over broad automation.\n- Preserve existing product direction; use Vega Lab evidence before adding new abstractions.",
         "evidence": [
           "Repository: KBLLR/rigging-palace",
           "Description: Rigging Palace",
@@ -9188,7 +9188,7 @@
         "kind": "testing",
         "title": "rigging-palace Test Plan",
         "suggestedPath": "docs/test-plan.md",
-        "body": "# Test Plan: KBLLR/rigging-palace\n\n## Available Commands\n- npm run lint\n- npm run test\n- npm run test:batch\n- npm run rig:check\n- npm run test:library-retrieval\n- npm run build\n- npm run stage:build\n- npm run showcase:build\n\n## Minimum Verification Contract\n- Document one install command.\n- Document one fast smoke command.\n- Document one release/build command when deployable.\n- If no commands exist, create a tracked issue or action item before implementation work.\n\n## Evidence\n- Repository: KBLLR/rigging-palace\n- Description: Rigging Palace\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Health flag: private",
+        "body": "# Test Plan: KBLLR/rigging-palace\n\n## Available Commands\n- npm run lint\n- npm run test\n- npm run test:batch\n- npm run rig:check\n- npm run test:library-retrieval\n- npm run test:rigging\n- npm run build\n- npm run stage:build\n- npm run showcase:build\n\n## Minimum Verification Contract\n- Document one install command.\n- Document one fast smoke command.\n- Document one release/build command when deployable.\n- If no commands exist, create a tracked issue or action item before implementation work.\n\n## Evidence\n- Repository: KBLLR/rigging-palace\n- Description: Rigging Palace\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Health flag: private",
         "evidence": [
           "Repository: KBLLR/rigging-palace",
           "Description: Rigging Palace",
@@ -12209,7 +12209,7 @@
   },
   {
     "nwo": "KBLLR/vega-lab",
-    "generatedAt": "2026-06-15T01:03:17.000Z",
+    "generatedAt": "2026-06-15T15:44:00.000Z",
     "target": "mlx",
     "artifacts": [
       {
