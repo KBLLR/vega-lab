@@ -26,7 +26,7 @@
     "test:corex-contract-export": "node tests/test-corex-contract-export.js",
     "test:corex-contract-snapshots": "node tests/test-corex-contract-snapshots.js",
     "test:source-snapshots": "node tests/test-source-snapshot-resolver.js",
-    "test:skill-candidate-ingestion": "node tests/test-skill-candidate-ingestion.js",
+    "test:skill-candidate-ingestion": "node tests/test-skill-candidate-ingestion.js && node tests/test-skill-candidate-profiles.js",
     "test:action-bridge": "node tests/test-action-bridge.js",
     "test": "npm run lint && npm run test:data && npm run test:mcp && npm run test:action-bridge"
   },

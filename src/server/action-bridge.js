@@ -570,6 +570,15 @@ async function runDossier(root, request, run) {
   const snapshot = candidate.source_snapshot_identity?.artifact_ref
     ? await readJson(path.join(root, candidate.source_snapshot_identity.artifact_ref), null)
     : null;
+  const profile = candidate.candidate_profile || null;
+  const profileSummaryLines = profile
+    ? [
+      `- Candidate kind: curated profile`,
+      `- Profile id: ${profile.profile_id}`,
+      `- Profile digest: ${profile.profile_digest}`,
+      `- Profile source: ${profile.source.repository}@${profile.source.commit}`,
+    ]
+    : ["- Candidate kind: generic"];
 
   const files = [
     ["00-DECISION-SUMMARY.md", [
@@ -577,6 +586,7 @@ async function runDossier(root, request, run) {
       "",
       `- Candidate: ${candidate.candidate_id}`,
       `- Suggested skill: ${candidate.suggested_skill_id}`,
+      ...profileSummaryLines,
       `- Review state: pending`,
       `- Visibility: internal`,
       `- Validation: ${validation.valid ? "valid" : "blocked"}`,
@@ -598,6 +608,9 @@ async function runDossier(root, request, run) {
       `# Evidence: ${candidate.name}`,
       "",
       candidate.evidence_summary,
+      "",
+      "## Candidate Profile",
+      ...profileSummaryLines,
       "",
       "## Provenance",
       ...candidate.provenance_references.map((ref) => `- ${ref}`),

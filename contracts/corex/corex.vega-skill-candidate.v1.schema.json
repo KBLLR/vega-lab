@@ -183,6 +183,58 @@
         "$ref": "#/$defs/finding"
       }
     },
+    "candidate_profile": {
+      "type": "object",
+      "required": [
+        "schema_version",
+        "profile_id",
+        "profile_ref",
+        "profile_digest",
+        "source",
+        "runtime"
+      ],
+      "properties": {
+        "schema_version": {
+          "type": "string",
+          "const": "vega.skill-candidate-profile.v1"
+        },
+        "profile_id": {
+          "type": "string",
+          "pattern": "^[a-z0-9][a-z0-9-]*[a-z0-9]$"
+        },
+        "profile_ref": {
+          "type": "string",
+          "minLength": 1
+        },
+        "profile_digest": {
+          "type": "string",
+          "pattern": "^sha256:[a-f0-9]{64}$"
+        },
+        "source": {
+          "type": "object",
+          "required": ["repository", "commit"],
+          "properties": {
+            "repository": {
+              "type": "string",
+              "pattern": "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$"
+            },
+            "commit": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{40}$"
+            }
+          },
+          "additionalProperties": false
+        },
+        "runtime": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "policy": {
+      "$ref": "#/$defs/policy"
+    },
     "review_status": {
       "type": "string",
       "enum": ["pending", "approved", "rejected"]
@@ -217,6 +269,85 @@
     }
   },
   "$defs": {
+    "string_list": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 1
+    },
+    "policy": {
+      "type": "object",
+      "required": [
+        "purpose",
+        "when_to_use",
+        "when_not_to_use",
+        "relationship_to_vega",
+        "safe_evaluation_workflow",
+        "immutable_provenance_requirements",
+        "license_requirements",
+        "local_first_policy",
+        "network_restrictions",
+        "credential_restrictions",
+        "human_approval_gates",
+        "allowed_outputs",
+        "failure_conditions",
+        "prohibited_actions",
+        "source_attribution"
+      ],
+      "properties": {
+        "purpose": {
+          "type": "string",
+          "minLength": 1
+        },
+        "when_to_use": {
+          "$ref": "#/$defs/string_list"
+        },
+        "when_not_to_use": {
+          "$ref": "#/$defs/string_list"
+        },
+        "relationship_to_vega": {
+          "type": "string",
+          "minLength": 1
+        },
+        "safe_evaluation_workflow": {
+          "$ref": "#/$defs/string_list"
+        },
+        "immutable_provenance_requirements": {
+          "$ref": "#/$defs/string_list"
+        },
+        "license_requirements": {
+          "$ref": "#/$defs/string_list"
+        },
+        "local_first_policy": {
+          "type": "string",
+          "minLength": 1
+        },
+        "network_restrictions": {
+          "$ref": "#/$defs/string_list"
+        },
+        "credential_restrictions": {
+          "$ref": "#/$defs/string_list"
+        },
+        "human_approval_gates": {
+          "$ref": "#/$defs/string_list"
+        },
+        "allowed_outputs": {
+          "$ref": "#/$defs/string_list"
+        },
+        "failure_conditions": {
+          "$ref": "#/$defs/string_list"
+        },
+        "prohibited_actions": {
+          "$ref": "#/$defs/string_list"
+        },
+        "source_attribution": {
+          "$ref": "#/$defs/string_list"
+        }
+      },
+      "additionalProperties": false
+    },
     "duplicate_match": {
       "type": "object",
       "required": ["kind", "target", "confidence", "source"],
