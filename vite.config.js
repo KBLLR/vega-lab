@@ -23,6 +23,18 @@ const allowedActionOrigins = new Set(
     .map((origin) => origin.trim())
     .filter(Boolean),
 );
+const clientBridgeErrorCodes = new Set([
+  'unsupported_action_kind',
+  'unknown_request_field',
+  'invalid_request',
+  'invalid_json',
+  'invalid_repository_identity',
+  'invalid_repository_owner',
+  'invalid_repository_name',
+  'invalid_candidate_id',
+  'missing_repository',
+  'missing_action_target',
+]);
 
 function bridgeError(code, message, statusCode = 400) {
   return Object.assign(new Error(message), {
@@ -102,7 +114,7 @@ function sendJson(res, statusCode, payload) {
 function vegaActionBridgePlugin() {
   // This bridge is Vite dev/preview middleware only. Static deployments have no local action executor.
   function sendBridgeError(res, error, fallbackCode) {
-    const statusCode = error?.statusCode || fallbackCode;
+    const statusCode = error?.statusCode || (clientBridgeErrorCodes.has(error?.code) ? 400 : fallbackCode);
     sendJson(res, statusCode, {
       error: {
         code: error?.code || 'vega_action_bridge_failed',
@@ -177,6 +189,7 @@ export default defineConfig({
   },
   server: {
     host: actionBridgeHost,
+    cors: false,
     hmr: { overlay: true },
     open: true,
     proxy: {
@@ -194,6 +207,7 @@ export default defineConfig({
   },
   preview: {
     host: actionBridgeHost,
+    cors: false,
   },
   resolve: {
     alias: {
