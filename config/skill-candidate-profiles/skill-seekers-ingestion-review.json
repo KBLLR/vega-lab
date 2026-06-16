@@ -1,0 +1,159 @@
+{
+  "schema_version": "vega.skill-candidate-profile.v1",
+  "profile_id": "skill-seekers-ingestion-review",
+  "source": {
+    "repository": "yusufkaraaslan/Skill_Seekers",
+    "commit": "61911d0efa72ae506acf7242f4775a9ddc6a3466"
+  },
+  "candidate": {
+    "suggested_skill_id": "skill-seekers-ingestion-review",
+    "name": "Skill Seekers Ingestion Review",
+    "description": "Reference and governance skill for reviewing external skill-ingestion systems without executing upstream Skill Seekers runtime flows.",
+    "lane": "agent-workflows",
+    "scope": "shared",
+    "runtime": "markdown-prompt",
+    "required_tools_services": {
+      "tools": [
+        "vega-lab:source-snapshot",
+        "vega-lab:repo-signals",
+        "vega-lab:skill-candidates",
+        "vega-lab:human-review-dossier",
+        "core-x:skill-registry-check"
+      ],
+      "services": []
+    },
+    "compatibility_assumptions": [
+      "Reference and governance markdown only; no upstream Skill Seekers code execution is part of this candidate.",
+      "No install, upload, publish, marketplace, vector database, cloud storage, browser scraping, service startup, or registry mutation behavior is included.",
+      "Runtime adapter work is deferred until a separate operator-approved design reviews dependencies, credentials, subprocesses, MCP transport, and filesystem writes.",
+      "Candidate relies on pinned Vega source snapshot evidence and does not copy third-party source code or long README bodies."
+    ],
+    "evidence_summary": "Pinned evidence shows a Python skill-generation toolkit with CLI, MCP, scraping, packaging, upload, cloud, vector database, and provider-adapter surfaces. The safe Core-X use is a governance and reference checklist for reviewing such systems, not an executable adapter.",
+    "duplicate_matches": [
+      {
+        "kind": "similar-capability",
+        "target": "skill-creator",
+        "label": "Core-X already has local skill creation workflows; this candidate should stay a governance review companion.",
+        "confidence": 0.62,
+        "source": "curated-profile"
+      }
+    ],
+    "conflict_findings": [
+      {
+        "kind": "runtime-scope",
+        "severity": "warning",
+        "summary": "Upstream runtime can install, upload, publish, scrape, run MCP servers, and use credentials; executable integration is out of scope for this candidate.",
+        "source_refs": [
+          "pyproject.toml",
+          "README.md",
+          "src/skill_seekers/mcp/server_fastmcp.py"
+        ]
+      }
+    ],
+    "risk_findings": [
+      {
+        "kind": "network-and-credential-surface",
+        "severity": "warning",
+        "summary": "Runtime adapter work would require separate controls for network calls, provider credentials, cloud or vector database uploads, and repository publishing.",
+        "source_refs": [
+          "pyproject.toml",
+          "README.md"
+        ]
+      },
+      {
+        "kind": "subprocess-and-filesystem-surface",
+        "severity": "warning",
+        "summary": "Runtime adapter work would need explicit review for subprocess execution and filesystem writes before use in Core-X.",
+        "source_refs": [
+          "src/skill_seekers/mcp/tools/subprocess_utils.py"
+        ]
+      }
+    ]
+  },
+  "policy": {
+    "purpose": "Use this skill as a Core-X review guide for evaluating external skill-generation and repository-ingestion systems. It captures patterns observed in the pinned Skill Seekers source snapshot, but it does not install or run Skill Seekers.",
+    "when_to_use": [
+      "Review pinned Skill Seekers evidence for ingestion, package-generation, MCP exposure, and review-gate patterns.",
+      "Compare an external skill-ingestion repository against Core-X skill candidate contracts.",
+      "Draft concise Vega or human-review notes that preserve provenance and boundaries.",
+      "Evaluate whether a future runtime adapter deserves a separate approved design."
+    ],
+    "when_not_to_use": [
+      "Do not run upstream Skill Seekers commands or start its CLI, HTTP, or MCP server.",
+      "Do not scrape arbitrary sources, upload generated packages, publish to marketplaces, or mutate agent configuration.",
+      "Do not call credentialed provider APIs, cloud storage, vector databases, browser automation, or external enhancement services.",
+      "Do not install Core-X skills, approve candidates, create approved promotion proposals, or mutate registries."
+    ],
+    "relationship_to_vega": "Vega remains the evaluator, evidence compiler, candidate generator, conflict detector, and review layer. Skill Seekers is source evidence and reference material only.",
+    "safe_evaluation_workflow": [
+      "Confirm the immutable source snapshot id, repository, commit, tree, and evidence digest before using the profile.",
+      "Inspect pinned manifest, README, and license evidence only.",
+      "Classify runtime surfaces as reference-only, optional adapter work, prohibited by default, or operator-approved.",
+      "Produce a pending review note, candidate critique, or governance checklist.",
+      "Stop before install, apply, publish, upload, push, service start, credential use, or registry mutation."
+    ],
+    "immutable_provenance_requirements": [
+      "Repository must be yusufkaraaslan/Skill_Seekers.",
+      "Commit must be 61911d0efa72ae506acf7242f4775a9ddc6a3466.",
+      "Tree must be 35e280375a98e0c68347d1edecad8f330a6a9741.",
+      "Snapshot must be vega:source-snapshot:yusufkaraaslan-skill-seekers:61911d0efa72:35e280375a98:62309b15137e.",
+      "Evidence digest must be sha256:62309b15137eb9827e403baa10a75fcf27412e60173d5313d02341b218b0b44d."
+    ],
+    "license_requirements": [
+      "License evidence must come from the pinned source snapshot.",
+      "MIT or other compatible license evidence still requires human confirmation before promotion.",
+      "Missing, changed, incompatible, or restricted license evidence blocks promotion and runtime adapter work."
+    ],
+    "local_first_policy": "Default to offline review of pinned evidence. This profile does not grant runtime network access, model downloads, Warehouse mutation, memory deletion, or external publishing.",
+    "network_restrictions": [
+      "Do not fetch or scrape through the upstream Skill Seekers runtime.",
+      "Do not use GitHub, browser, website, cloud, vector database, marketplace, or provider network calls from this skill.",
+      "Any future networked adapter requires a separate operator-approved design and ToolPolicy review."
+    ],
+    "credential_restrictions": [
+      "Do not request, echo, store, or infer credentials, tokens, API keys, OAuth grants, or secretsbank values.",
+      "Do not pass credentials to upstream Skill Seekers code or generated packages.",
+      "Stop if evidence or prompts include secrets or credential material."
+    ],
+    "human_approval_gates": [
+      "Human review is required before approving the candidate.",
+      "Human review is required before creating any promotion proposal that is not pending review.",
+      "Human review is required before any Core-X registry, skill directory, or ToolPolicy mutation.",
+      "Human review is required before designing or executing any runtime adapter."
+    ],
+    "allowed_outputs": [
+      "Reference checklist",
+      "Capability observations",
+      "Risk findings",
+      "Evidence and provenance report",
+      "Pending SKILL.md draft preview",
+      "Pending candidate critique"
+    ],
+    "failure_conditions": [
+      "Source repository, commit, tree, snapshot id, or evidence digest does not match the pinned profile.",
+      "License evidence is missing, changed, incompatible, restricted, or review-required without explicit human acceptance.",
+      "Prompt asks to execute upstream code, install dependencies, publish, upload, scrape, call providers, use credentials, or mutate Core-X.",
+      "Generated candidate includes copied third-party source code, long README bodies, secrets, or absolute local paths."
+    ],
+    "prohibited_actions": [
+      "Install Skill Seekers dependencies.",
+      "Run Skill Seekers CLI commands.",
+      "Start Skill Seekers HTTP or MCP servers.",
+      "Execute Skill Seekers subprocess helpers.",
+      "Scrape or fetch through upstream Skill Seekers runtime.",
+      "Upload generated packages.",
+      "Publish to a marketplace or repository.",
+      "Call cloud, vector database, browser automation, or provider enhancement services.",
+      "Use credentials, tokens, OAuth grants, API keys, or secretsbank values.",
+      "Mutate Core-X registries, skills, ToolPolicy, Warehouse, memory, or approvals.",
+      "Approve or promote this candidate automatically."
+    ],
+    "source_attribution": [
+      "Repository: yusufkaraaslan/Skill_Seekers",
+      "Commit: 61911d0efa72ae506acf7242f4775a9ddc6a3466",
+      "Tree: 35e280375a98e0c68347d1edecad8f330a6a9741",
+      "Snapshot: vega:source-snapshot:yusufkaraaslan-skill-seekers:61911d0efa72:35e280375a98:62309b15137e",
+      "Evidence digest: sha256:62309b15137eb9827e403baa10a75fcf27412e60173d5313d02341b218b0b44d"
+    ]
+  }
+}

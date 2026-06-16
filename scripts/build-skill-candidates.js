@@ -15,8 +15,10 @@ const projectRoot = path.resolve(__dirname, "..");
 
 const GENERATED_BY = "vega-lab:build-skill-candidates";
 const CANDIDATE_SCHEMA_VERSION = "corex.vega-skill-candidate.v1";
+const PROFILE_SCHEMA_VERSION = "vega.skill-candidate-profile.v1";
 const REVIEW_SCHEMA_VERSION = "corex.vega-skill-review.v1";
 const CONTRACTS_ROOT = path.join(projectRoot, "contracts", "corex");
+const PROFILE_CONFIG_DIRNAME = path.join("config", "skill-candidate-profiles");
 const TOOL = {
   tool_id: "vega.build_skill_candidates",
   name: "Vega Skill Candidate Ingestion",
@@ -40,6 +42,8 @@ const CANDIDATE_CHECKSUM_FIELDS = [
   "duplicate_matches",
   "conflict_findings",
   "risk_findings",
+  "candidate_profile",
+  "policy",
 ];
 
 const SECRET_PATTERNS = [
@@ -264,6 +268,120 @@ async function readJsonFiles(dirPath) {
     if (error?.code !== "ENOENT") throw error;
   }
   return results;
+}
+
+function relativePath(root, filePath) {
+  return path.relative(root, filePath).replaceAll(path.sep, "/");
+}
+
+function profileConfigDir(root) {
+  return path.join(root, PROFILE_CONFIG_DIRNAME);
+}
+
+function profileSchemaPath(root) {
+  return path.join(profileConfigDir(root), "schema.json");
+}
+
+function sourceSnapshotCommit(snapshot) {
+  const immutableCommit = snapshot?.metadata?.immutable?.resolved_commit_sha;
+  if (/^[a-f0-9]{40}$/i.test(String(immutableCommit || ""))) return String(immutableCommit).toLowerCase();
+  const sourceRef = String(snapshot?.source_ref || "");
+  const match = /@([a-f0-9]{40})$/i.exec(sourceRef);
+  return match ? match[1].toLowerCase() : "";
+}
+
+function profileSourceKey(repository, commit) {
+  return `${String(repository || "").toLowerCase()}@${String(commit || "").toLowerCase()}`;
+}
+
+function profileError(message, code = "invalid_skill_candidate_profile") {
+  return Object.assign(new Error(message), { code });
+}
+
+async function loadSkillCandidateProfiles(root) {
+  const dir = profileConfigDir(root);
+  if (!await pathExists(dir)) {
+    return { entries: [], bySource: new Map(), count: 0 };
+  }
+
+  const schemaPath = profileSchemaPath(root);
+  const schema = await readJson(schemaPath, null);
+  if (!schema) {
+    throw profileError(`Skill candidate profile schema is missing: ${relativePath(root, schemaPath)}`, "missing_skill_candidate_profile_schema");
+  }
+
+  const profileAjv = new Ajv2020({
+    allErrors: true,
+    coerceTypes: false,
+    strict: true,
+    useDefaults: false,
+  });
+  const validateProfile = profileAjv.compile(schema);
+  const profileIdToRef = new Map();
+  const targetSkillIdToRef = new Map();
+  const sourceToRef = new Map();
+  const entries = [];
+
+  for (const record of await readJsonFiles(dir)) {
+    if (path.resolve(record.filePath) === path.resolve(schemaPath)) continue;
+    const profile = record.value;
+    const valid = validateProfile(profile);
+    const ref = relativePath(root, record.filePath);
+    if (!valid) {
+      const errors = schemaErrors(validateProfile).join("; ");
+      throw profileError(`Invalid skill candidate profile ${ref}: ${errors}`);
+    }
+
+    const scanText = textForScanning(profile);
+    const blockers = [
+      ...patternFindings(LOCAL_PATH_PATTERNS, scanText, "absolute_local_path"),
+      ...patternFindings(SECRET_PATTERNS, scanText, "secret_or_credential"),
+    ];
+    if (blockers.length > 0) {
+      throw profileError(`Unsafe skill candidate profile ${ref}: ${blockers.map((blocker) => blocker.kind).join(", ")}`);
+    }
+
+    if (profileIdToRef.has(profile.profile_id)) {
+      throw profileError(`Duplicate skill candidate profile id ${profile.profile_id}: ${profileIdToRef.get(profile.profile_id)} and ${ref}`);
+    }
+    profileIdToRef.set(profile.profile_id, ref);
+
+    const targetSkillId = profile.candidate.suggested_skill_id;
+    if (targetSkillIdToRef.has(targetSkillId)) {
+      throw profileError(`Duplicate skill candidate target ${targetSkillId}: ${targetSkillIdToRef.get(targetSkillId)} and ${ref}`);
+    }
+    targetSkillIdToRef.set(targetSkillId, ref);
+
+    const sourceKey = profileSourceKey(profile.source.repository, profile.source.commit);
+    if (sourceToRef.has(sourceKey)) {
+      throw profileError(`Duplicate skill candidate source binding ${sourceKey}: ${sourceToRef.get(sourceKey)} and ${ref}`);
+    }
+    sourceToRef.set(sourceKey, ref);
+
+    const entry = {
+      profile,
+      profile_ref: ref,
+      profile_digest: `sha256:${sha256(stableStringify(profile))}`,
+    };
+    entries.push(entry);
+  }
+
+  return {
+    entries,
+    bySource: new Map(entries.map((entry) => [
+      profileSourceKey(entry.profile.source.repository, entry.profile.source.commit),
+      entry,
+    ])),
+    count: entries.length,
+  };
+}
+
+function profileForPair(profileIndex, pair) {
+  const snapshot = pair.sourceSnapshot;
+  const nwo = repoNwoFromArtifact(pair);
+  const commit = sourceSnapshotCommit(snapshot);
+  if (!nwo || !commit) return null;
+  return profileIndex.bySource.get(profileSourceKey(nwo, commit)) || null;
 }
 
 async function loadExistingSkillIndex(corexRoot) {
@@ -579,7 +697,86 @@ function buildEvidenceSummary(knowledgeArtifact, snapshot) {
   ].join(" ");
 }
 
+function markdownList(values) {
+  return toArray(values).map((value) => `- ${value}`);
+}
+
+function markdownNumberedList(values) {
+  return toArray(values).map((value, index) => `${index + 1}. ${value}`);
+}
+
+function firstRefMatching(candidate, pattern) {
+  return toArray(candidate?.provenance_references).find((ref) => pattern.test(String(ref || ""))) || null;
+}
+
 function draftSkillMarkdown(candidate) {
+  if (candidate.policy) {
+    const policy = candidate.policy;
+    const treeRef = firstRefMatching(candidate, /^github:[^:]+\/[^:]+:tree:/);
+    const evidenceRef = firstRefMatching(candidate, /^vega:evidence:/);
+    return [
+      `# ${candidate.name}`,
+      "",
+      "## Purpose",
+      policy.purpose,
+      "",
+      "## When to Use",
+      ...markdownList(policy.when_to_use),
+      "",
+      "## When Not to Use",
+      ...markdownList(policy.when_not_to_use),
+      "",
+      "## Relationship to Vega",
+      policy.relationship_to_vega,
+      "",
+      "## Safe Evaluation Workflow",
+      ...markdownNumberedList(policy.safe_evaluation_workflow),
+      "",
+      "## Immutable Provenance Requirements",
+      ...markdownList(policy.immutable_provenance_requirements),
+      "",
+      "## License Requirements",
+      ...markdownList(policy.license_requirements),
+      "",
+      "## Local-First Policy",
+      policy.local_first_policy,
+      "",
+      "## Network Restrictions",
+      ...markdownList(policy.network_restrictions),
+      "",
+      "## Credential Restrictions",
+      ...markdownList(policy.credential_restrictions),
+      "",
+      "## Human Approval Gates",
+      ...markdownList(policy.human_approval_gates),
+      "",
+      "## Allowed Outputs",
+      ...markdownList(policy.allowed_outputs),
+      "",
+      "## Failure and Refusal Conditions",
+      ...markdownList(policy.failure_conditions),
+      "",
+      "## Explicit Prohibitions",
+      ...markdownList(policy.prohibited_actions),
+      "",
+      "## Source Attribution",
+      ...markdownList(policy.source_attribution),
+      `- Candidate profile: ${candidate.candidate_profile?.profile_id || "unknown"}`,
+      `- Profile digest: ${candidate.candidate_profile?.profile_digest || "unknown"}`,
+      `- Repository: ${candidate.source_repository.nwo}`,
+      `- Source ref: ${candidate.source_snapshot_identity.source_ref}`,
+      `- Snapshot: ${candidate.source_snapshot_identity.snapshot_id}`,
+      treeRef ? `- Tree reference: ${treeRef}` : null,
+      evidenceRef ? `- Evidence reference: ${evidenceRef}` : null,
+      "",
+      "## Review Gate",
+      "- Status: pending",
+      "- This is a draft candidate only. Do not promote without human approval.",
+      "- This profile does not approve, install, execute, publish, or mutate Core-X state.",
+      "",
+    ].filter((line) => line !== null).join("\n");
+  }
+
   return [
     `# ${candidate.name}`,
     "",
@@ -604,21 +801,24 @@ function draftSkillMarkdown(candidate) {
   ].join("\n");
 }
 
-function buildCandidate({ pair, existingSkillIndex, existingCandidates, createdAt }) {
+function buildCandidate({ pair, existingSkillIndex, existingCandidates, profileEntry = null, createdAt }) {
   const snapshot = pair.sourceSnapshot;
   const knowledgeArtifact = pair.knowledgeArtifact;
   const nwo = repoNwoFromArtifact(pair);
   const safeRepo = slug(nwo);
-  const lane = inferLane(knowledgeArtifact, snapshot);
-  const scope = inferScope(snapshot, knowledgeArtifact);
+  const profile = profileEntry?.profile || null;
+  const lane = profile?.candidate?.lane || inferLane(knowledgeArtifact, snapshot);
+  const scope = profile?.candidate?.scope || inferScope(snapshot, knowledgeArtifact);
   const immutableSnapshot = isImmutableSourceSnapshot(snapshot);
   const license = licenseStatusFromSnapshot(snapshot) || licenseStatus(snapshot?.provenance?.license || snapshot?.metadata?.license || null);
-  const required = inferRequiredToolsAndServices(lane, knowledgeArtifact);
-  const suggestedSkillId = `vega-${safeRepo}`;
+  const required = profile?.candidate?.required_tools_services || inferRequiredToolsAndServices(lane, knowledgeArtifact);
+  const suggestedSkillId = profile?.candidate?.suggested_skill_id || `vega-${safeRepo}`;
   const provenanceReferences = unique([
     snapshot?.artifact_ref,
     `vega:data/repo-signals.json#${nwo}`,
     `vega:data/skill-extractions.json#${nwo}`,
+    profileEntry ? `vega:skill-candidate-profile:${profile.profile_id}:${profileEntry.profile_digest}` : null,
+    profileEntry ? profileEntry.profile_ref : null,
     ...toArray(snapshot?.provenance?.source_refs),
     ...toArray(snapshot?.provenance?.derived_from),
     snapshot?.provenance?.evidence_digest ? `vega:evidence:${snapshot.provenance.evidence_digest}` : null,
@@ -630,8 +830,8 @@ function buildCandidate({ pair, existingSkillIndex, existingCandidates, createdA
     schema_version: CANDIDATE_SCHEMA_VERSION,
     candidate_id: `vega.skill-candidate:${safeRepo}`,
     suggested_skill_id: suggestedSkillId,
-    name: `${snapshot?.metadata?.name || nwo} Core-X Skill Candidate`,
-    description: knowledgeArtifact?.summary || snapshot?.metadata?.description || `Review-gated skill candidate for ${nwo}.`,
+    name: profile?.candidate?.name || `${snapshot?.metadata?.name || nwo} Core-X Skill Candidate`,
+    description: profile?.candidate?.description || knowledgeArtifact?.summary || snapshot?.metadata?.description || `Review-gated skill candidate for ${nwo}.`,
     source_repository: {
       nwo,
       uri: snapshot?.source_uri || `https://github.com/${nwo}`,
@@ -648,7 +848,7 @@ function buildCandidate({ pair, existingSkillIndex, existingCandidates, createdA
     suggested_scope: scope,
     required_tools_services: required,
     license_status: license,
-    compatibility_assumptions: immutableSnapshot
+    compatibility_assumptions: profile?.candidate?.compatibility_assumptions || (immutableSnapshot
       ? [
         "Generated from Vega metadata plus a pinned immutable GitHub source snapshot.",
         "Candidate identity binds resolved commit, tree, README digest, license digest, consumed manifest digests, and aggregate evidence digest.",
@@ -659,8 +859,8 @@ function buildCandidate({ pair, existingSkillIndex, existingCandidates, createdA
         "Generated from Vega metadata, repo signals, and skill extraction cache only.",
         "No third-party source code or long README bodies are copied into this candidate.",
         "Promotion is blocked until a pinned immutable source snapshot is resolved.",
-      ],
-    evidence_summary: buildEvidenceSummary(knowledgeArtifact, snapshot),
+      ]),
+    evidence_summary: profile?.candidate?.evidence_summary || buildEvidenceSummary(knowledgeArtifact, snapshot),
     duplicate_matches: [],
     conflict_findings: [],
     risk_findings: [],
@@ -670,11 +870,38 @@ function buildCandidate({ pair, existingSkillIndex, existingCandidates, createdA
     tool: TOOL,
   };
 
+  if (profileEntry) {
+    base.candidate_profile = {
+      schema_version: PROFILE_SCHEMA_VERSION,
+      profile_id: profile.profile_id,
+      profile_ref: profileEntry.profile_ref,
+      profile_digest: profileEntry.profile_digest,
+      source: {
+        repository: profile.source.repository,
+        commit: profile.source.commit,
+      },
+      runtime: profile.candidate.runtime,
+    };
+    base.policy = profile.policy;
+  }
+
   base.duplicate_matches = duplicateMatches(base, existingSkillIndex, existingCandidates);
+  base.duplicate_matches = unique([
+    ...base.duplicate_matches.map((match) => stableStringify(match)),
+    ...toArray(profile?.candidate?.duplicate_matches).map((match) => stableStringify(match)),
+  ]).map((match) => JSON.parse(match));
   base.__sourceSnapshot = snapshot;
   base.conflict_findings = conflictFindings(base, knowledgeArtifact, existingSkillIndex);
+  base.conflict_findings = [
+    ...base.conflict_findings,
+    ...toArray(profile?.candidate?.conflict_findings),
+  ];
   delete base.__sourceSnapshot;
   base.risk_findings = riskFindings(base, knowledgeArtifact);
+  base.risk_findings = [
+    ...base.risk_findings,
+    ...toArray(profile?.candidate?.risk_findings),
+  ];
   base.content_checksum = candidateContentChecksum(base);
   base.draft_skill_md = draftSkillMarkdown(base);
   return base;
@@ -703,6 +930,19 @@ export function validateSkillCandidate(candidate) {
   }
   if (candidate?.source_repository?.private === true && candidate?.visibility === "public") {
     blockers.push({ kind: "privacy", severity: "blocking", summary: "Private repository candidates cannot be public." });
+  }
+  if (candidate?.candidate_profile) {
+    const profileRepo = String(candidate.candidate_profile.source?.repository || "").toLowerCase();
+    const candidateRepo = String(candidate.source_repository?.nwo || "").toLowerCase();
+    const profileCommit = String(candidate.candidate_profile.source?.commit || "").toLowerCase();
+    const sourceRef = String(candidate.source_snapshot_identity?.source_ref || "").toLowerCase();
+    if (profileRepo !== candidateRepo || !sourceRef.endsWith(`@${profileCommit}`)) {
+      blockers.push({
+        kind: "profile_source_binding",
+        severity: "blocking",
+        summary: "Candidate profile source binding does not match candidate repository and immutable source snapshot.",
+      });
+    }
   }
 
   return {
@@ -837,10 +1077,12 @@ export async function buildSkillCandidateIngestion(options = {}) {
   });
   const existingSkillIndex = await loadExistingSkillIndex(corexRoot);
   const existingCandidates = await loadExistingCandidates(root, outDir);
+  const profileIndex = await loadSkillCandidateProfiles(root);
   const candidates = contractResult.artifacts.map((pair) => buildCandidate({
     pair,
     existingSkillIndex,
     existingCandidates,
+    profileEntry: profileForPair(profileIndex, pair),
     createdAt,
   }));
   const proposals = candidates.map((candidate) => buildPromotionProposal(candidate, { createdAt }));
@@ -863,6 +1105,7 @@ export async function buildSkillCandidateIngestion(options = {}) {
       corex_skill_index_available: existingSkillIndex.available,
       existing_skill_count: existingSkillIndex.skillRecords.length,
       existing_candidate_count: existingCandidates.length,
+      skill_candidate_profile_count: profileIndex.count,
     },
   };
 }
@@ -932,6 +1175,8 @@ export async function runBuildSkillCandidates(argv = process.argv.slice(2)) {
       duplicate_matches: candidate.duplicate_matches.length,
       conflict_findings: candidate.conflict_findings.length,
       risk_findings: candidate.risk_findings.length,
+      profile_id: candidate.candidate_profile?.profile_id || null,
+      profile_digest: candidate.candidate_profile?.profile_digest || null,
       review_status: candidate.review_status,
       content_checksum: candidate.content_checksum,
     })),

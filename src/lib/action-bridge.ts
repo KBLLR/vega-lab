@@ -195,14 +195,30 @@ function summarizeValue(value: unknown): string {
       suggested_skill_id?: string;
       evidence_summary?: string;
       review_status?: string;
+      candidate_profile?: {
+        profile_id?: string;
+        profile_digest?: string;
+        source?: {
+          repository?: string;
+          commit?: string;
+        };
+      };
     };
+    const profile = candidate.candidate_profile;
     return [
       `Candidate: ${candidate.candidate_id}`,
       `Suggested skill: ${candidate.suggested_skill_id}`,
+      profile?.profile_id
+        ? `Curated candidate profile: ${profile.profile_id}`
+        : "Candidate kind: Generic candidate",
+      profile?.profile_digest ? `Profile digest: ${profile.profile_digest}` : null,
+      profile?.source?.repository && profile?.source?.commit
+        ? `Profile source: ${profile.source.repository}@${profile.source.commit}`
+        : null,
       `Review: ${candidate.review_status || "pending"}`,
       "",
       candidate.evidence_summary || "",
-    ].join("\n");
+    ].filter(Boolean).join("\n");
   }
 
   return `\`\`\`json\n${JSON.stringify(value, null, 2)}\n\`\`\``;
