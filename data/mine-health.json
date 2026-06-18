@@ -1,11 +1,28 @@
 [
   {
+    "nwo": "KBLLR/rigging-palace",
+    "name": "rigging-palace",
+    "author": "KBLLR",
+    "visibility": "private",
+    "hasReadme": true,
+    "updatedAt": "2026-06-17T22:56:38.000Z",
+    "healthFlags": [
+      "private"
+    ],
+    "recommendedActions": [
+      "mlx-mission",
+      "ops-kit",
+      "codex-mission",
+      "claude-mission"
+    ]
+  },
+  {
     "nwo": "KBLLR/vega-lab",
     "name": "vega-lab",
     "author": "KBLLR",
     "visibility": "public",
     "hasReadme": true,
-    "updatedAt": "2026-06-16T23:38:05.000Z",
+    "updatedAt": "2026-06-17T01:13:50.000Z",
     "healthFlags": [],
     "recommendedActions": [
       "mlx-mission",
@@ -32,23 +49,6 @@
       "claude-mission",
       "write-readme",
       "house-integration"
-    ]
-  },
-  {
-    "nwo": "KBLLR/rigging-palace",
-    "name": "rigging-palace",
-    "author": "KBLLR",
-    "visibility": "private",
-    "hasReadme": true,
-    "updatedAt": "2026-06-15T17:08:21.000Z",
-    "healthFlags": [
-      "private"
-    ],
-    "recommendedActions": [
-      "mlx-mission",
-      "ops-kit",
-      "codex-mission",
-      "claude-mission"
     ]
   },
   {
@@ -903,14 +903,16 @@
     "hasReadme": false,
     "updatedAt": "2025-06-17T21:10:26.000Z",
     "healthFlags": [
-      "missing-readme"
+      "missing-readme",
+      "stale"
     ],
     "recommendedActions": [
       "mlx-mission",
       "ops-kit",
       "codex-mission",
       "claude-mission",
-      "write-readme"
+      "write-readme",
+      "maintenance-plan"
     ]
   },
   {

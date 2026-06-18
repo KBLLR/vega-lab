@@ -195,10 +195,12 @@
       "buildScripts": []
     },
     "findings": [
-      "README missing from the synced repository snapshot."
+      "README missing from the synced repository snapshot.",
+      "Repository appears stale based on last activity."
     ],
     "risks": [
-      "New contributors and agents lack a clear entrypoint."
+      "New contributors and agents lack a clear entrypoint.",
+      "Dependencies, build targets, or deployment assumptions may be outdated."
     ]
   },
   {
@@ -1827,7 +1829,7 @@
   },
   {
     "nwo": "KBLLR/rigging-palace",
-    "inspectedAt": "2026-06-15T17:08:21.000Z",
+    "inspectedAt": "2026-06-17T22:56:38.000Z",
     "files": {
       "hasReadme": true,
       "packageManagers": [
@@ -2436,7 +2438,7 @@
   },
   {
     "nwo": "KBLLR/vega-lab",
-    "inspectedAt": "2026-06-16T23:38:05.000Z",
+    "inspectedAt": "2026-06-17T01:13:50.000Z",
     "files": {
       "hasReadme": true,
       "packageManagers": [

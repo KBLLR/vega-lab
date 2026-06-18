@@ -138,13 +138,16 @@
     "summary": "The repo needs a clear human and agent entrypoint before broader ecosystem use.",
     "evidence": [
       "README missing from the synced repository snapshot.",
-      "New contributors and agents lack a clear entrypoint."
+      "Repository appears stale based on last activity.",
+      "New contributors and agents lack a clear entrypoint.",
+      "Dependencies, build targets, or deployment assumptions may be outdated."
     ],
     "linkedSkills": [
       "mine-execution"
     ],
     "linkedRules": [
       "Review license status before adoption or redistribution work.",
+      "Validate maintenance risk and current ecosystem fit before committing to adoption.",
       "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
     ],
     "linkedFlows": [
@@ -2637,6 +2640,37 @@
     "source": "daily-ops",
     "createdAt": "2025-06-18T03:37:27.000Z",
     "updatedAt": "2025-06-18T03:37:27.000Z"
+  },
+  {
+    "id": "vega-lab:maintenance:kbllr-avatar-os",
+    "kind": "maintenance",
+    "status": "open",
+    "priority": "normal",
+    "nwo": "KBLLR/avatar-os",
+    "title": "Run a maintenance pass on avatar-os",
+    "summary": "Stale activity increases dependency, workflow, and deployment risk.",
+    "evidence": [
+      "README missing from the synced repository snapshot.",
+      "Repository appears stale based on last activity.",
+      "New contributors and agents lack a clear entrypoint.",
+      "Dependencies, build targets, or deployment assumptions may be outdated."
+    ],
+    "linkedSkills": [
+      "mine-execution"
+    ],
+    "linkedRules": [
+      "Review license status before adoption or redistribution work.",
+      "Validate maintenance risk and current ecosystem fit before committing to adoption.",
+      "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
+    ],
+    "linkedFlows": [
+      "research-queue-flow",
+      "mine-execution-flow"
+    ],
+    "draft": "Draft a maintenance plan for KBLLR/avatar-os: verify dependencies, run available checks, update stale assumptions, and identify a smallest useful PR. Rules: Review license status before adoption or redistribution work. Validate maintenance risk and current ecosystem fit before committing to adoption. Prioritize README, maintenance, and execution readiness before broader ecosystem integration.",
+    "source": "daily-ops",
+    "createdAt": "2025-06-17T21:10:26.000Z",
+    "updatedAt": "2025-06-17T21:10:26.000Z"
   },
   {
     "id": "vega-lab:maintenance:kbllr-mindmesh",

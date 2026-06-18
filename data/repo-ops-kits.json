@@ -801,92 +801,94 @@
         "kind": "readme",
         "title": "avatar-os README Draft",
         "suggestedPath": "README.md",
-        "body": "# avatar-os\n\navatar-os needs a concise purpose statement before broader core-x adoption.\n\n## Vega Lab Fit\n- Classification: ignore\n- Capabilities: none\n- House skills: mine-execution\n\n## Local Setup\n- Package managers: none\n- Document install, dev, build, and verification commands before broad reuse.\n- Keep runtime assumptions explicit; prefer local MLX/OpenResponses for model-assisted work.\n\n## Verification\n- Define a lint/test/build command before code edits.\n\n## Evidence\n- Repository: KBLLR/avatar-os\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Finding: README missing from the synced repository snapshot.\n- Risk: New contributors and agents lack a clear entrypoint.",
+        "body": "# avatar-os\n\navatar-os needs a concise purpose statement before broader core-x adoption.\n\n## Vega Lab Fit\n- Classification: ignore\n- Capabilities: none\n- House skills: mine-execution\n\n## Local Setup\n- Package managers: none\n- Document install, dev, build, and verification commands before broad reuse.\n- Keep runtime assumptions explicit; prefer local MLX/OpenResponses for model-assisted work.\n\n## Verification\n- Define a lint/test/build command before code edits.\n\n## Evidence\n- Repository: KBLLR/avatar-os\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Finding: README missing from the synced repository snapshot.\n- Finding: Repository appears stale based on last activity.",
         "evidence": [
           "Repository: KBLLR/avatar-os",
           "Adoption kind: ignore",
           "Capabilities: none",
           "House skills: mine-execution",
           "Finding: README missing from the synced repository snapshot.",
-          "Risk: New contributors and agents lack a clear entrypoint."
+          "Finding: Repository appears stale based on last activity."
         ]
       },
       {
         "kind": "agents",
         "title": "avatar-os AGENTS Draft",
         "suggestedPath": "AGENTS.md",
-        "body": "# avatar-os Agents\n\n## Product Truth\n- Repository: KBLLR/avatar-os\n- Vega Lab classification: ignore\n- Active mission target: Local MLX\n\n## Operating Rules\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\n\n## Commands\n- Add the smallest reliable verification command.\n\n## Agent Boundaries\n- Do not mutate deployment, secrets, or release configuration without explicit approval.\n- Prefer draft plans and reviewable diffs over broad automation.\n- Preserve existing product direction; use Vega Lab evidence before adding new abstractions.",
+        "body": "# avatar-os Agents\n\n## Product Truth\n- Repository: KBLLR/avatar-os\n- Vega Lab classification: ignore\n- Active mission target: Local MLX\n\n## Operating Rules\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\n\n## Commands\n- Add the smallest reliable verification command.\n\n## Agent Boundaries\n- Do not mutate deployment, secrets, or release configuration without explicit approval.\n- Prefer draft plans and reviewable diffs over broad automation.\n- Preserve existing product direction; use Vega Lab evidence before adding new abstractions.",
         "evidence": [
           "Repository: KBLLR/avatar-os",
           "Adoption kind: ignore",
           "Capabilities: none",
           "House skills: mine-execution",
           "Finding: README missing from the synced repository snapshot.",
-          "Risk: New contributors and agents lack a clear entrypoint."
+          "Finding: Repository appears stale based on last activity."
         ]
       },
       {
         "kind": "maintenance",
         "title": "avatar-os Maintenance Plan",
         "suggestedPath": "docs/maintenance-plan.md",
-        "body": "# Maintenance Plan: KBLLR/avatar-os\n\n## Current Signals\n- Health flag: missing-readme\n- README missing from the synced repository snapshot.\n\n## Recommended Pass\n- Confirm install path and package manager.\n- Run available verification commands before editing.\n- Patch stale docs, commands, and workflow assumptions first.\n- Open the smallest useful PR only after human approval.\n- Vega Lab action: mlx-mission\n- Vega Lab action: ops-kit\n- Vega Lab action: codex-mission\n- Vega Lab action: claude-mission\n- Vega Lab action: write-readme\n\n## Evidence\n- Repository: KBLLR/avatar-os\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Finding: README missing from the synced repository snapshot.\n- Risk: New contributors and agents lack a clear entrypoint.\n- Health flag: missing-readme\n- Action item: Make avatar-os README-ready",
+        "body": "# Maintenance Plan: KBLLR/avatar-os\n\n## Current Signals\n- Health flag: missing-readme\n- Health flag: stale\n- README missing from the synced repository snapshot.\n- Repository appears stale based on last activity.\n\n## Recommended Pass\n- Confirm install path and package manager.\n- Run available verification commands before editing.\n- Patch stale docs, commands, and workflow assumptions first.\n- Open the smallest useful PR only after human approval.\n- Vega Lab action: mlx-mission\n- Vega Lab action: ops-kit\n- Vega Lab action: codex-mission\n- Vega Lab action: claude-mission\n- Vega Lab action: write-readme\n- Vega Lab action: maintenance-plan\n\n## Evidence\n- Repository: KBLLR/avatar-os\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Finding: README missing from the synced repository snapshot.\n- Finding: Repository appears stale based on last activity.\n- Risk: New contributors and agents lack a clear entrypoint.\n- Risk: Dependencies, build targets, or deployment assumptions may be outdated.",
         "evidence": [
           "Repository: KBLLR/avatar-os",
           "Adoption kind: ignore",
           "Capabilities: none",
           "House skills: mine-execution",
           "Finding: README missing from the synced repository snapshot.",
+          "Finding: Repository appears stale based on last activity.",
           "Risk: New contributors and agents lack a clear entrypoint.",
-          "Health flag: missing-readme",
-          "Action item: Make avatar-os README-ready"
+          "Risk: Dependencies, build targets, or deployment assumptions may be outdated."
         ]
       },
       {
         "kind": "deployment",
         "title": "avatar-os Deployment Plan",
         "suggestedPath": "docs/deployment-plan.md",
-        "body": "# Deployment Plan: KBLLR/avatar-os\n\n## Known Deployment Evidence\n- No workflow or deployment config detected in synced key files.\n\n## Draft Checks\n- Identify expected host and runtime.\n- Document build command, output directory, and required environment variables.\n- Verify preview URL and production URL checks.\n- Keep deploy authority manual; Vega Lab drafts plans and inbox items only.\n\n## Evidence\n- Repository: KBLLR/avatar-os\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Finding: README missing from the synced repository snapshot.\n- Risk: New contributors and agents lack a clear entrypoint.\n- Health flag: missing-readme\n- Action item: Make avatar-os README-ready",
+        "body": "# Deployment Plan: KBLLR/avatar-os\n\n## Known Deployment Evidence\n- No workflow or deployment config detected in synced key files.\n\n## Draft Checks\n- Identify expected host and runtime.\n- Document build command, output directory, and required environment variables.\n- Verify preview URL and production URL checks.\n- Keep deploy authority manual; Vega Lab drafts plans and inbox items only.\n\n## Evidence\n- Repository: KBLLR/avatar-os\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Finding: README missing from the synced repository snapshot.\n- Finding: Repository appears stale based on last activity.\n- Risk: New contributors and agents lack a clear entrypoint.\n- Risk: Dependencies, build targets, or deployment assumptions may be outdated.",
         "evidence": [
           "Repository: KBLLR/avatar-os",
           "Adoption kind: ignore",
           "Capabilities: none",
           "House skills: mine-execution",
           "Finding: README missing from the synced repository snapshot.",
+          "Finding: Repository appears stale based on last activity.",
           "Risk: New contributors and agents lack a clear entrypoint.",
-          "Health flag: missing-readme",
-          "Action item: Make avatar-os README-ready"
+          "Risk: Dependencies, build targets, or deployment assumptions may be outdated."
         ]
       },
       {
         "kind": "testing",
         "title": "avatar-os Test Plan",
         "suggestedPath": "docs/test-plan.md",
-        "body": "# Test Plan: KBLLR/avatar-os\n\n## Available Commands\n- No test/check/build script detected from synced package metadata.\n\n## Minimum Verification Contract\n- Document one install command.\n- Document one fast smoke command.\n- Document one release/build command when deployable.\n- If no commands exist, create a tracked issue or action item before implementation work.\n\n## Evidence\n- Repository: KBLLR/avatar-os\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Finding: README missing from the synced repository snapshot.\n- Risk: New contributors and agents lack a clear entrypoint.\n- Health flag: missing-readme\n- Action item: Make avatar-os README-ready",
+        "body": "# Test Plan: KBLLR/avatar-os\n\n## Available Commands\n- No test/check/build script detected from synced package metadata.\n\n## Minimum Verification Contract\n- Document one install command.\n- Document one fast smoke command.\n- Document one release/build command when deployable.\n- If no commands exist, create a tracked issue or action item before implementation work.\n\n## Evidence\n- Repository: KBLLR/avatar-os\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Finding: README missing from the synced repository snapshot.\n- Finding: Repository appears stale based on last activity.\n- Risk: New contributors and agents lack a clear entrypoint.\n- Risk: Dependencies, build targets, or deployment assumptions may be outdated.",
         "evidence": [
           "Repository: KBLLR/avatar-os",
           "Adoption kind: ignore",
           "Capabilities: none",
           "House skills: mine-execution",
           "Finding: README missing from the synced repository snapshot.",
+          "Finding: Repository appears stale based on last activity.",
           "Risk: New contributors and agents lack a clear entrypoint.",
-          "Health flag: missing-readme",
-          "Action item: Make avatar-os README-ready"
+          "Risk: Dependencies, build targets, or deployment assumptions may be outdated."
         ]
       },
       {
         "kind": "action-item",
         "title": "avatar-os Action Item Draft",
         "suggestedPath": "ops/action-item.md",
-        "body": "# Action Item Draft: KBLLR/avatar-os\n\n## Recommended Actions\n- readme: Make avatar-os README-ready\n\n## Mission Target\n- Local MLX\n\n## Evidence\n- Repository: KBLLR/avatar-os\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Finding: README missing from the synced repository snapshot.\n- Risk: New contributors and agents lack a clear entrypoint.\n- Health flag: missing-readme\n- Action item: Make avatar-os README-ready",
+        "body": "# Action Item Draft: KBLLR/avatar-os\n\n## Recommended Actions\n- readme: Make avatar-os README-ready\n- maintenance: Run a maintenance pass on avatar-os\n\n## Mission Target\n- Local MLX\n\n## Evidence\n- Repository: KBLLR/avatar-os\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Finding: README missing from the synced repository snapshot.\n- Finding: Repository appears stale based on last activity.\n- Risk: New contributors and agents lack a clear entrypoint.\n- Risk: Dependencies, build targets, or deployment assumptions may be outdated.\n- Health flag: missing-readme\n- Health flag: stale",
         "evidence": [
           "Repository: KBLLR/avatar-os",
           "Adoption kind: ignore",
           "Capabilities: none",
           "House skills: mine-execution",
           "Finding: README missing from the synced repository snapshot.",
+          "Finding: Repository appears stale based on last activity.",
           "Risk: New contributors and agents lack a clear entrypoint.",
+          "Risk: Dependencies, build targets, or deployment assumptions may be outdated.",
           "Health flag: missing-readme",
-          "Action item: Make avatar-os README-ready"
+          "Health flag: stale"
         ]
       }
     ],
@@ -896,9 +898,13 @@
       "Capabilities: none",
       "House skills: mine-execution",
       "Finding: README missing from the synced repository snapshot.",
+      "Finding: Repository appears stale based on last activity.",
       "Risk: New contributors and agents lack a clear entrypoint.",
+      "Risk: Dependencies, build targets, or deployment assumptions may be outdated.",
       "Health flag: missing-readme",
-      "Action item: Make avatar-os README-ready"
+      "Health flag: stale",
+      "Action item: Make avatar-os README-ready",
+      "Action item: Run a maintenance pass on avatar-os"
     ],
     "recommendedActions": [
       "mlx-mission",
@@ -906,7 +912,9 @@
       "codex-mission",
       "claude-mission",
       "write-readme",
+      "maintenance-plan",
       "readme:vega-lab:readme:kbllr-avatar-os",
+      "maintenance:vega-lab:maintenance:kbllr-avatar-os",
       "review-draft-only"
     ]
   },
@@ -9125,7 +9133,7 @@
   },
   {
     "nwo": "KBLLR/rigging-palace",
-    "generatedAt": "2026-06-15T17:08:21.000Z",
+    "generatedAt": "2026-06-17T22:56:38.000Z",
     "target": "mlx",
     "artifacts": [
       {
@@ -12209,7 +12217,7 @@
   },
   {
     "nwo": "KBLLR/vega-lab",
-    "generatedAt": "2026-06-16T23:38:05.000Z",
+    "generatedAt": "2026-06-17T01:13:50.000Z",
     "target": "mlx",
     "artifacts": [
       {
