@@ -19,8 +19,12 @@
         "build"
       ]
     },
-    "findings": [],
-    "risks": []
+    "findings": [
+      "Repository appears stale based on last activity."
+    ],
+    "risks": [
+      "Dependencies, build targets, or deployment assumptions may be outdated."
+    ]
   },
   {
     "nwo": "KBLLR/3DKNIGHT",
@@ -1829,7 +1833,7 @@
   },
   {
     "nwo": "KBLLR/rigging-palace",
-    "inspectedAt": "2026-06-17T22:56:38.000Z",
+    "inspectedAt": "2026-06-18T15:42:05.000Z",
     "files": {
       "hasReadme": true,
       "packageManagers": [
@@ -2438,7 +2442,7 @@
   },
   {
     "nwo": "KBLLR/vega-lab",
-    "inspectedAt": "2026-06-17T01:13:50.000Z",
+    "inspectedAt": "2026-06-18T01:13:53.000Z",
     "files": {
       "hasReadme": true,
       "packageManagers": [

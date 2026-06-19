@@ -2611,6 +2611,38 @@
     "updatedAt": "2025-07-03T11:49:38.000Z"
   },
   {
+    "id": "vega-lab:maintenance:kbllr-3d-model-viewer-configurator",
+    "kind": "maintenance",
+    "status": "open",
+    "priority": "normal",
+    "nwo": "KBLLR/3D-model-viewer-configurator",
+    "title": "Run a maintenance pass on 3D-model-viewer-configurator",
+    "summary": "Stale activity increases dependency, workflow, and deployment risk.",
+    "evidence": [
+      "Repository appears stale based on last activity.",
+      "Dependencies, build targets, or deployment assumptions may be outdated."
+    ],
+    "linkedSkills": [
+      "repo-adoption",
+      "mine-execution"
+    ],
+    "linkedRules": [
+      "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.",
+      "Review license status before adoption or redistribution work.",
+      "Validate maintenance risk and current ecosystem fit before committing to adoption.",
+      "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
+    ],
+    "linkedFlows": [
+      "research-queue-flow",
+      "adoption-decision-flow",
+      "mine-execution-flow"
+    ],
+    "draft": "Draft a maintenance plan for KBLLR/3D-model-viewer-configurator: verify dependencies, run available checks, update stale assumptions, and identify a smallest useful PR. Rules: Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house. Review license status before adoption or redistribution work. Validate maintenance risk and current ecosystem fit before committing to adoption. Prioritize README, maintenance, and execution readiness before broader ecosystem integration.",
+    "source": "daily-ops",
+    "createdAt": "2025-06-18T03:37:27.000Z",
+    "updatedAt": "2025-06-18T03:37:27.000Z"
+  },
+  {
     "id": "vega-lab:testing:kbllr-3d-model-viewer-configurator",
     "kind": "testing",
     "status": "open",
