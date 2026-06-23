@@ -689,6 +689,132 @@
     ]
   },
   {
+    "nwo": "KBLLR/audio-lab",
+    "generatedAt": "2026-06-22T23:35:46.000Z",
+    "target": "mlx",
+    "artifacts": [
+      {
+        "kind": "readme",
+        "title": "audio-lab README Draft",
+        "suggestedPath": "README.md",
+        "body": "# audio-lab\n\nCore-X Audio Lab house: transcription, diarisation, dubbing, and local audio workflows\n\n## Vega Lab Fit\n- Classification: tool\n- Capabilities: agent-workflows\n- House skills: skill-extraction, repo-adoption, mine-execution\n\n## Local Setup\n- Package managers: npm, npm-lock\n- Document install, dev, build, and verification commands before broad reuse.\n- Keep runtime assumptions explicit; prefer local MLX/OpenResponses for model-assisted work.\n\n## Verification\n- npm run build\n\n## Evidence\n- Repository: KBLLR/audio-lab\n- Description: Core-X Audio Lab house: transcription, diarisation, dubbing, and local audio workflows\n- Adoption kind: tool\n- Capabilities: agent-workflows\n- House skills: skill-extraction, repo-adoption, mine-execution\n- Finding: README missing from the synced repository snapshot.",
+        "evidence": [
+          "Repository: KBLLR/audio-lab",
+          "Description: Core-X Audio Lab house: transcription, diarisation, dubbing, and local audio workflows",
+          "Adoption kind: tool",
+          "Capabilities: agent-workflows",
+          "House skills: skill-extraction, repo-adoption, mine-execution",
+          "Finding: README missing from the synced repository snapshot."
+        ]
+      },
+      {
+        "kind": "agents",
+        "title": "audio-lab AGENTS Draft",
+        "suggestedPath": "AGENTS.md",
+        "body": "# audio-lab Agents\n\n## Product Truth\n- Repository: KBLLR/audio-lab\n- Vega Lab classification: tool\n- Active mission target: Local MLX\n\n## Operating Rules\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\n\n## Commands\n- npm run build\n\n## Agent Boundaries\n- Do not mutate deployment, secrets, or release configuration without explicit approval.\n- Prefer draft plans and reviewable diffs over broad automation.\n- Preserve existing product direction; use Vega Lab evidence before adding new abstractions.",
+        "evidence": [
+          "Repository: KBLLR/audio-lab",
+          "Description: Core-X Audio Lab house: transcription, diarisation, dubbing, and local audio workflows",
+          "Adoption kind: tool",
+          "Capabilities: agent-workflows",
+          "House skills: skill-extraction, repo-adoption, mine-execution",
+          "Finding: README missing from the synced repository snapshot."
+        ]
+      },
+      {
+        "kind": "maintenance",
+        "title": "audio-lab Maintenance Plan",
+        "suggestedPath": "docs/maintenance-plan.md",
+        "body": "# Maintenance Plan: KBLLR/audio-lab\n\n## Current Signals\n- Health flag: missing-readme\n- Health flag: private\n- README missing from the synced repository snapshot.\n- No test/check/lint script detected from package metadata.\n\n## Recommended Pass\n- Confirm install path and package manager.\n- Run available verification commands before editing.\n- Patch stale docs, commands, and workflow assumptions first.\n- Open the smallest useful PR only after human approval.\n- Vega Lab action: mlx-mission\n- Vega Lab action: ops-kit\n- Vega Lab action: codex-mission\n- Vega Lab action: claude-mission\n- Vega Lab action: write-readme\n- Vega Lab action: house-integration\n\n## Evidence\n- Repository: KBLLR/audio-lab\n- Description: Core-X Audio Lab house: transcription, diarisation, dubbing, and local audio workflows\n- Adoption kind: tool\n- Capabilities: agent-workflows\n- House skills: skill-extraction, repo-adoption, mine-execution\n- Finding: README missing from the synced repository snapshot.\n- Finding: No test/check/lint script detected from package metadata.\n- Risk: New contributors and agents lack a clear entrypoint.",
+        "evidence": [
+          "Repository: KBLLR/audio-lab",
+          "Description: Core-X Audio Lab house: transcription, diarisation, dubbing, and local audio workflows",
+          "Adoption kind: tool",
+          "Capabilities: agent-workflows",
+          "House skills: skill-extraction, repo-adoption, mine-execution",
+          "Finding: README missing from the synced repository snapshot.",
+          "Finding: No test/check/lint script detected from package metadata.",
+          "Risk: New contributors and agents lack a clear entrypoint."
+        ]
+      },
+      {
+        "kind": "deployment",
+        "title": "audio-lab Deployment Plan",
+        "suggestedPath": "docs/deployment-plan.md",
+        "body": "# Deployment Plan: KBLLR/audio-lab\n\n## Known Deployment Evidence\n- No workflow or deployment config detected in synced key files.\n\n## Draft Checks\n- Identify expected host and runtime.\n- Document build command, output directory, and required environment variables.\n- Verify preview URL and production URL checks.\n- Keep deploy authority manual; Vega Lab drafts plans and inbox items only.\n\n## Evidence\n- Repository: KBLLR/audio-lab\n- Description: Core-X Audio Lab house: transcription, diarisation, dubbing, and local audio workflows\n- Adoption kind: tool\n- Capabilities: agent-workflows\n- House skills: skill-extraction, repo-adoption, mine-execution\n- Finding: README missing from the synced repository snapshot.\n- Finding: No test/check/lint script detected from package metadata.\n- Risk: New contributors and agents lack a clear entrypoint.",
+        "evidence": [
+          "Repository: KBLLR/audio-lab",
+          "Description: Core-X Audio Lab house: transcription, diarisation, dubbing, and local audio workflows",
+          "Adoption kind: tool",
+          "Capabilities: agent-workflows",
+          "House skills: skill-extraction, repo-adoption, mine-execution",
+          "Finding: README missing from the synced repository snapshot.",
+          "Finding: No test/check/lint script detected from package metadata.",
+          "Risk: New contributors and agents lack a clear entrypoint."
+        ]
+      },
+      {
+        "kind": "testing",
+        "title": "audio-lab Test Plan",
+        "suggestedPath": "docs/test-plan.md",
+        "body": "# Test Plan: KBLLR/audio-lab\n\n## Available Commands\n- npm run build\n\n## Minimum Verification Contract\n- Document one install command.\n- Document one fast smoke command.\n- Document one release/build command when deployable.\n- If no commands exist, create a tracked issue or action item before implementation work.\n\n## Evidence\n- Repository: KBLLR/audio-lab\n- Description: Core-X Audio Lab house: transcription, diarisation, dubbing, and local audio workflows\n- Adoption kind: tool\n- Capabilities: agent-workflows\n- House skills: skill-extraction, repo-adoption, mine-execution\n- Finding: README missing from the synced repository snapshot.\n- Finding: No test/check/lint script detected from package metadata.\n- Risk: New contributors and agents lack a clear entrypoint.",
+        "evidence": [
+          "Repository: KBLLR/audio-lab",
+          "Description: Core-X Audio Lab house: transcription, diarisation, dubbing, and local audio workflows",
+          "Adoption kind: tool",
+          "Capabilities: agent-workflows",
+          "House skills: skill-extraction, repo-adoption, mine-execution",
+          "Finding: README missing from the synced repository snapshot.",
+          "Finding: No test/check/lint script detected from package metadata.",
+          "Risk: New contributors and agents lack a clear entrypoint."
+        ]
+      },
+      {
+        "kind": "action-item",
+        "title": "audio-lab Action Item Draft",
+        "suggestedPath": "ops/action-item.md",
+        "body": "# Action Item Draft: KBLLR/audio-lab\n\n## Recommended Actions\n- readme: Make audio-lab README-ready\n- testing: Define verification for audio-lab\n\n## Mission Target\n- Local MLX\n\n## Evidence\n- Repository: KBLLR/audio-lab\n- Description: Core-X Audio Lab house: transcription, diarisation, dubbing, and local audio workflows\n- Adoption kind: tool\n- Capabilities: agent-workflows\n- House skills: skill-extraction, repo-adoption, mine-execution\n- Finding: README missing from the synced repository snapshot.\n- Finding: No test/check/lint script detected from package metadata.\n- Risk: New contributors and agents lack a clear entrypoint.\n- Risk: Maintenance work has no obvious verification command.\n- Health flag: missing-readme",
+        "evidence": [
+          "Repository: KBLLR/audio-lab",
+          "Description: Core-X Audio Lab house: transcription, diarisation, dubbing, and local audio workflows",
+          "Adoption kind: tool",
+          "Capabilities: agent-workflows",
+          "House skills: skill-extraction, repo-adoption, mine-execution",
+          "Finding: README missing from the synced repository snapshot.",
+          "Finding: No test/check/lint script detected from package metadata.",
+          "Risk: New contributors and agents lack a clear entrypoint.",
+          "Risk: Maintenance work has no obvious verification command.",
+          "Health flag: missing-readme"
+        ]
+      }
+    ],
+    "evidence": [
+      "Repository: KBLLR/audio-lab",
+      "Description: Core-X Audio Lab house: transcription, diarisation, dubbing, and local audio workflows",
+      "Adoption kind: tool",
+      "Capabilities: agent-workflows",
+      "House skills: skill-extraction, repo-adoption, mine-execution",
+      "Finding: README missing from the synced repository snapshot.",
+      "Finding: No test/check/lint script detected from package metadata.",
+      "Risk: New contributors and agents lack a clear entrypoint.",
+      "Risk: Maintenance work has no obvious verification command.",
+      "Health flag: missing-readme",
+      "Health flag: private",
+      "Action item: Make audio-lab README-ready"
+    ],
+    "recommendedActions": [
+      "mlx-mission",
+      "ops-kit",
+      "codex-mission",
+      "claude-mission",
+      "write-readme",
+      "house-integration",
+      "readme:vega-lab:readme:kbllr-audio-lab",
+      "testing:vega-lab:testing:kbllr-audio-lab",
+      "review-draft-only"
+    ]
+  },
+  {
     "nwo": "KBLLR/Auto-GPT",
     "generatedAt": "2025-07-16T20:29:43.000Z",
     "target": "mlx",
@@ -1649,7 +1775,7 @@
   },
   {
     "nwo": "KBLLR/code-platformer-ai",
-    "generatedAt": "2026-04-13T09:49:25.000Z",
+    "generatedAt": "2026-06-22T23:41:16.000Z",
     "target": "mlx",
     "artifacts": [
       {
@@ -1987,7 +2113,7 @@
   },
   {
     "nwo": "KBLLR/core-x",
-    "generatedAt": "2026-06-22T00:22:33.000Z",
+    "generatedAt": "2026-06-22T23:48:19.000Z",
     "target": "mlx",
     "artifacts": [
       {
@@ -5300,7 +5426,7 @@
   },
   {
     "nwo": "KBLLR/htdi-project",
-    "generatedAt": "2026-04-23T18:49:36.000Z",
+    "generatedAt": "2026-06-22T18:44:42.000Z",
     "target": "mlx",
     "artifacts": [
       {
@@ -6958,20 +7084,20 @@
   },
   {
     "nwo": "KBLLR/Leagentdiary",
-    "generatedAt": "2026-04-12T05:23:57.000Z",
+    "generatedAt": "2026-06-22T14:03:18.000Z",
     "target": "mlx",
     "artifacts": [
       {
         "kind": "readme",
         "title": "Leagentdiary README Draft",
         "suggestedPath": "README.md",
-        "body": "# Leagentdiary\n\nLeAgentDiary is a version-control system for AI agents. It connects handoffs, memory, and self-reflection into one timeline—track contributions, re-summon past agents, and evolve their personas. Built with the HTDI Agentic Framework for human-AI co-development.\n\n## Vega Lab Fit\n- Classification: house\n- Capabilities: agent-workflows, ml-ai, frontend-ui\n- House skills: repo-discovery, skill-extraction, repo-adoption, mine-execution\n\n## Local Setup\n- Package managers: npm, npm-lock\n- Document install, dev, build, and verification commands before broad reuse.\n- Keep runtime assumptions explicit; prefer local MLX/OpenResponses for model-assisted work.\n\n## Verification\n- npm run lint\n- npm run build\n\n## Evidence\n- Repository: KBLLR/Leagentdiary\n- Description: LeAgentDiary is a version-control system for AI agents. It connects handoffs, memory, and self-reflection into one timeline—track contributions, re-summon past agents, and evolve their personas. Built with the HTDI Agentic Framework for human-AI co-development.\n- Adoption kind: house\n- Capabilities: agent-workflows, ml-ai, frontend-ui\n- House skills: repo-discovery, skill-extraction, repo-adoption, mine-execution\n- Finding: No workflow or deployment config detected in synced key files.",
+        "body": "# Leagentdiary\n\nLeAgentDiary is a version-control system for AI agents. It connects handoffs, memory, and self-reflection into one timeline—track contributions, re-summon past agents, and evolve their personas. Built with the HTDI Agentic Framework for human-AI co-development.\n\n## Vega Lab Fit\n- Classification: house\n- Capabilities: agent-workflows, ml-ai\n- House skills: skill-extraction, repo-adoption, mine-execution\n\n## Local Setup\n- Package managers: npm, npm-lock\n- Document install, dev, build, and verification commands before broad reuse.\n- Keep runtime assumptions explicit; prefer local MLX/OpenResponses for model-assisted work.\n\n## Verification\n- npm run lint\n- npm run build\n\n## Evidence\n- Repository: KBLLR/Leagentdiary\n- Description: LeAgentDiary is a version-control system for AI agents. It connects handoffs, memory, and self-reflection into one timeline—track contributions, re-summon past agents, and evolve their personas. Built with the HTDI Agentic Framework for human-AI co-development.\n- Adoption kind: house\n- Capabilities: agent-workflows, ml-ai\n- House skills: skill-extraction, repo-adoption, mine-execution\n- Finding: No workflow or deployment config detected in synced key files.",
         "evidence": [
           "Repository: KBLLR/Leagentdiary",
           "Description: LeAgentDiary is a version-control system for AI agents. It connects handoffs, memory, and self-reflection into one timeline—track contributions, re-summon past agents, and evolve their personas. Built with the HTDI Agentic Framework for human-AI co-development.",
           "Adoption kind: house",
-          "Capabilities: agent-workflows, ml-ai, frontend-ui",
-          "House skills: repo-discovery, skill-extraction, repo-adoption, mine-execution",
+          "Capabilities: agent-workflows, ml-ai",
+          "House skills: skill-extraction, repo-adoption, mine-execution",
           "Finding: No workflow or deployment config detected in synced key files."
         ]
       },
@@ -6984,8 +7110,8 @@
           "Repository: KBLLR/Leagentdiary",
           "Description: LeAgentDiary is a version-control system for AI agents. It connects handoffs, memory, and self-reflection into one timeline—track contributions, re-summon past agents, and evolve their personas. Built with the HTDI Agentic Framework for human-AI co-development.",
           "Adoption kind: house",
-          "Capabilities: agent-workflows, ml-ai, frontend-ui",
-          "House skills: repo-discovery, skill-extraction, repo-adoption, mine-execution",
+          "Capabilities: agent-workflows, ml-ai",
+          "House skills: skill-extraction, repo-adoption, mine-execution",
           "Finding: No workflow or deployment config detected in synced key files."
         ]
       },
@@ -6993,13 +7119,13 @@
         "kind": "maintenance",
         "title": "Leagentdiary Maintenance Plan",
         "suggestedPath": "docs/maintenance-plan.md",
-        "body": "# Maintenance Plan: KBLLR/Leagentdiary\n\n## Current Signals\n- No workflow or deployment config detected in synced key files.\n\n## Recommended Pass\n- Confirm install path and package manager.\n- Run available verification commands before editing.\n- Patch stale docs, commands, and workflow assumptions first.\n- Open the smallest useful PR only after human approval.\n- Vega Lab action: mlx-mission\n- Vega Lab action: ops-kit\n- Vega Lab action: codex-mission\n- Vega Lab action: claude-mission\n- Vega Lab action: house-integration\n\n## Evidence\n- Repository: KBLLR/Leagentdiary\n- Description: LeAgentDiary is a version-control system for AI agents. It connects handoffs, memory, and self-reflection into one timeline—track contributions, re-summon past agents, and evolve their personas. Built with the HTDI Agentic Framework for human-AI co-development.\n- Adoption kind: house\n- Capabilities: agent-workflows, ml-ai, frontend-ui\n- House skills: repo-discovery, skill-extraction, repo-adoption, mine-execution\n- Finding: No workflow or deployment config detected in synced key files.\n- Risk: Deployment readiness is unclear.\n- Action item: Extract reusable skill signals from Leagentdiary",
+        "body": "# Maintenance Plan: KBLLR/Leagentdiary\n\n## Current Signals\n- No workflow or deployment config detected in synced key files.\n\n## Recommended Pass\n- Confirm install path and package manager.\n- Run available verification commands before editing.\n- Patch stale docs, commands, and workflow assumptions first.\n- Open the smallest useful PR only after human approval.\n- Vega Lab action: mlx-mission\n- Vega Lab action: ops-kit\n- Vega Lab action: codex-mission\n- Vega Lab action: claude-mission\n- Vega Lab action: house-integration\n\n## Evidence\n- Repository: KBLLR/Leagentdiary\n- Description: LeAgentDiary is a version-control system for AI agents. It connects handoffs, memory, and self-reflection into one timeline—track contributions, re-summon past agents, and evolve their personas. Built with the HTDI Agentic Framework for human-AI co-development.\n- Adoption kind: house\n- Capabilities: agent-workflows, ml-ai\n- House skills: skill-extraction, repo-adoption, mine-execution\n- Finding: No workflow or deployment config detected in synced key files.\n- Risk: Deployment readiness is unclear.\n- Action item: Extract reusable skill signals from Leagentdiary",
         "evidence": [
           "Repository: KBLLR/Leagentdiary",
           "Description: LeAgentDiary is a version-control system for AI agents. It connects handoffs, memory, and self-reflection into one timeline—track contributions, re-summon past agents, and evolve their personas. Built with the HTDI Agentic Framework for human-AI co-development.",
           "Adoption kind: house",
-          "Capabilities: agent-workflows, ml-ai, frontend-ui",
-          "House skills: repo-discovery, skill-extraction, repo-adoption, mine-execution",
+          "Capabilities: agent-workflows, ml-ai",
+          "House skills: skill-extraction, repo-adoption, mine-execution",
           "Finding: No workflow or deployment config detected in synced key files.",
           "Risk: Deployment readiness is unclear.",
           "Action item: Extract reusable skill signals from Leagentdiary"
@@ -7009,13 +7135,13 @@
         "kind": "deployment",
         "title": "Leagentdiary Deployment Plan",
         "suggestedPath": "docs/deployment-plan.md",
-        "body": "# Deployment Plan: KBLLR/Leagentdiary\n\n## Known Deployment Evidence\n- No workflow or deployment config detected in synced key files.\n\n## Draft Checks\n- Identify expected host and runtime.\n- Document build command, output directory, and required environment variables.\n- Verify preview URL and production URL checks.\n- Keep deploy authority manual; Vega Lab drafts plans and inbox items only.\n\n## Evidence\n- Repository: KBLLR/Leagentdiary\n- Description: LeAgentDiary is a version-control system for AI agents. It connects handoffs, memory, and self-reflection into one timeline—track contributions, re-summon past agents, and evolve their personas. Built with the HTDI Agentic Framework for human-AI co-development.\n- Adoption kind: house\n- Capabilities: agent-workflows, ml-ai, frontend-ui\n- House skills: repo-discovery, skill-extraction, repo-adoption, mine-execution\n- Finding: No workflow or deployment config detected in synced key files.\n- Risk: Deployment readiness is unclear.\n- Action item: Extract reusable skill signals from Leagentdiary",
+        "body": "# Deployment Plan: KBLLR/Leagentdiary\n\n## Known Deployment Evidence\n- No workflow or deployment config detected in synced key files.\n\n## Draft Checks\n- Identify expected host and runtime.\n- Document build command, output directory, and required environment variables.\n- Verify preview URL and production URL checks.\n- Keep deploy authority manual; Vega Lab drafts plans and inbox items only.\n\n## Evidence\n- Repository: KBLLR/Leagentdiary\n- Description: LeAgentDiary is a version-control system for AI agents. It connects handoffs, memory, and self-reflection into one timeline—track contributions, re-summon past agents, and evolve their personas. Built with the HTDI Agentic Framework for human-AI co-development.\n- Adoption kind: house\n- Capabilities: agent-workflows, ml-ai\n- House skills: skill-extraction, repo-adoption, mine-execution\n- Finding: No workflow or deployment config detected in synced key files.\n- Risk: Deployment readiness is unclear.\n- Action item: Extract reusable skill signals from Leagentdiary",
         "evidence": [
           "Repository: KBLLR/Leagentdiary",
           "Description: LeAgentDiary is a version-control system for AI agents. It connects handoffs, memory, and self-reflection into one timeline—track contributions, re-summon past agents, and evolve their personas. Built with the HTDI Agentic Framework for human-AI co-development.",
           "Adoption kind: house",
-          "Capabilities: agent-workflows, ml-ai, frontend-ui",
-          "House skills: repo-discovery, skill-extraction, repo-adoption, mine-execution",
+          "Capabilities: agent-workflows, ml-ai",
+          "House skills: skill-extraction, repo-adoption, mine-execution",
           "Finding: No workflow or deployment config detected in synced key files.",
           "Risk: Deployment readiness is unclear.",
           "Action item: Extract reusable skill signals from Leagentdiary"
@@ -7025,13 +7151,13 @@
         "kind": "testing",
         "title": "Leagentdiary Test Plan",
         "suggestedPath": "docs/test-plan.md",
-        "body": "# Test Plan: KBLLR/Leagentdiary\n\n## Available Commands\n- npm run lint\n- npm run build\n\n## Minimum Verification Contract\n- Document one install command.\n- Document one fast smoke command.\n- Document one release/build command when deployable.\n- If no commands exist, create a tracked issue or action item before implementation work.\n\n## Evidence\n- Repository: KBLLR/Leagentdiary\n- Description: LeAgentDiary is a version-control system for AI agents. It connects handoffs, memory, and self-reflection into one timeline—track contributions, re-summon past agents, and evolve their personas. Built with the HTDI Agentic Framework for human-AI co-development.\n- Adoption kind: house\n- Capabilities: agent-workflows, ml-ai, frontend-ui\n- House skills: repo-discovery, skill-extraction, repo-adoption, mine-execution\n- Finding: No workflow or deployment config detected in synced key files.\n- Risk: Deployment readiness is unclear.\n- Action item: Extract reusable skill signals from Leagentdiary",
+        "body": "# Test Plan: KBLLR/Leagentdiary\n\n## Available Commands\n- npm run lint\n- npm run build\n\n## Minimum Verification Contract\n- Document one install command.\n- Document one fast smoke command.\n- Document one release/build command when deployable.\n- If no commands exist, create a tracked issue or action item before implementation work.\n\n## Evidence\n- Repository: KBLLR/Leagentdiary\n- Description: LeAgentDiary is a version-control system for AI agents. It connects handoffs, memory, and self-reflection into one timeline—track contributions, re-summon past agents, and evolve their personas. Built with the HTDI Agentic Framework for human-AI co-development.\n- Adoption kind: house\n- Capabilities: agent-workflows, ml-ai\n- House skills: skill-extraction, repo-adoption, mine-execution\n- Finding: No workflow or deployment config detected in synced key files.\n- Risk: Deployment readiness is unclear.\n- Action item: Extract reusable skill signals from Leagentdiary",
         "evidence": [
           "Repository: KBLLR/Leagentdiary",
           "Description: LeAgentDiary is a version-control system for AI agents. It connects handoffs, memory, and self-reflection into one timeline—track contributions, re-summon past agents, and evolve their personas. Built with the HTDI Agentic Framework for human-AI co-development.",
           "Adoption kind: house",
-          "Capabilities: agent-workflows, ml-ai, frontend-ui",
-          "House skills: repo-discovery, skill-extraction, repo-adoption, mine-execution",
+          "Capabilities: agent-workflows, ml-ai",
+          "House skills: skill-extraction, repo-adoption, mine-execution",
           "Finding: No workflow or deployment config detected in synced key files.",
           "Risk: Deployment readiness is unclear.",
           "Action item: Extract reusable skill signals from Leagentdiary"
@@ -7041,13 +7167,13 @@
         "kind": "action-item",
         "title": "Leagentdiary Action Item Draft",
         "suggestedPath": "ops/action-item.md",
-        "body": "# Action Item Draft: KBLLR/Leagentdiary\n\n## Recommended Actions\n- skill: Extract reusable skill signals from Leagentdiary\n- deployment: Clarify deployment readiness for Leagentdiary\n- testing: Define verification for Leagentdiary\n\n## Mission Target\n- Local MLX\n\n## Evidence\n- Repository: KBLLR/Leagentdiary\n- Description: LeAgentDiary is a version-control system for AI agents. It connects handoffs, memory, and self-reflection into one timeline—track contributions, re-summon past agents, and evolve their personas. Built with the HTDI Agentic Framework for human-AI co-development.\n- Adoption kind: house\n- Capabilities: agent-workflows, ml-ai, frontend-ui\n- House skills: repo-discovery, skill-extraction, repo-adoption, mine-execution\n- Finding: No workflow or deployment config detected in synced key files.\n- Risk: Deployment readiness is unclear.\n- Action item: Extract reusable skill signals from Leagentdiary\n- Action item: Clarify deployment readiness for Leagentdiary\n- Action item: Define verification for Leagentdiary",
+        "body": "# Action Item Draft: KBLLR/Leagentdiary\n\n## Recommended Actions\n- skill: Extract reusable skill signals from Leagentdiary\n- deployment: Clarify deployment readiness for Leagentdiary\n- testing: Define verification for Leagentdiary\n\n## Mission Target\n- Local MLX\n\n## Evidence\n- Repository: KBLLR/Leagentdiary\n- Description: LeAgentDiary is a version-control system for AI agents. It connects handoffs, memory, and self-reflection into one timeline—track contributions, re-summon past agents, and evolve their personas. Built with the HTDI Agentic Framework for human-AI co-development.\n- Adoption kind: house\n- Capabilities: agent-workflows, ml-ai\n- House skills: skill-extraction, repo-adoption, mine-execution\n- Finding: No workflow or deployment config detected in synced key files.\n- Risk: Deployment readiness is unclear.\n- Action item: Extract reusable skill signals from Leagentdiary\n- Action item: Clarify deployment readiness for Leagentdiary\n- Action item: Define verification for Leagentdiary",
         "evidence": [
           "Repository: KBLLR/Leagentdiary",
           "Description: LeAgentDiary is a version-control system for AI agents. It connects handoffs, memory, and self-reflection into one timeline—track contributions, re-summon past agents, and evolve their personas. Built with the HTDI Agentic Framework for human-AI co-development.",
           "Adoption kind: house",
-          "Capabilities: agent-workflows, ml-ai, frontend-ui",
-          "House skills: repo-discovery, skill-extraction, repo-adoption, mine-execution",
+          "Capabilities: agent-workflows, ml-ai",
+          "House skills: skill-extraction, repo-adoption, mine-execution",
           "Finding: No workflow or deployment config detected in synced key files.",
           "Risk: Deployment readiness is unclear.",
           "Action item: Extract reusable skill signals from Leagentdiary",
@@ -7060,8 +7186,8 @@
       "Repository: KBLLR/Leagentdiary",
       "Description: LeAgentDiary is a version-control system for AI agents. It connects handoffs, memory, and self-reflection into one timeline—track contributions, re-summon past agents, and evolve their personas. Built with the HTDI Agentic Framework for human-AI co-development.",
       "Adoption kind: house",
-      "Capabilities: agent-workflows, ml-ai, frontend-ui",
-      "House skills: repo-discovery, skill-extraction, repo-adoption, mine-execution",
+      "Capabilities: agent-workflows, ml-ai",
+      "House skills: skill-extraction, repo-adoption, mine-execution",
       "Finding: No workflow or deployment config detected in synced key files.",
       "Risk: Deployment readiness is unclear.",
       "Action item: Extract reusable skill signals from Leagentdiary",
@@ -12233,7 +12359,7 @@
   },
   {
     "nwo": "KBLLR/vega-lab",
-    "generatedAt": "2026-06-21T01:14:00.000Z",
+    "generatedAt": "2026-06-22T01:13:34.000Z",
     "target": "mlx",
     "artifacts": [
       {

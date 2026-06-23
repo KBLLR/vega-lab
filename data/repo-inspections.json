@@ -145,6 +145,31 @@
     "risks": []
   },
   {
+    "nwo": "KBLLR/audio-lab",
+    "inspectedAt": "2026-06-22T23:35:46.000Z",
+    "files": {
+      "hasReadme": false,
+      "packageManagers": [
+        "npm",
+        "npm-lock"
+      ],
+      "workflows": [],
+      "deploymentConfigs": [],
+      "testScripts": [],
+      "buildScripts": [
+        "build"
+      ]
+    },
+    "findings": [
+      "README missing from the synced repository snapshot.",
+      "No test/check/lint script detected from package metadata."
+    ],
+    "risks": [
+      "New contributors and agents lack a clear entrypoint.",
+      "Maintenance work has no obvious verification command."
+    ]
+  },
+  {
     "nwo": "KBLLR/Auto-GPT",
     "inspectedAt": "2025-07-16T20:29:43.000Z",
     "files": {
@@ -350,7 +375,7 @@
   },
   {
     "nwo": "KBLLR/code-platformer-ai",
-    "inspectedAt": "2026-04-13T09:49:25.000Z",
+    "inspectedAt": "2026-06-22T23:41:16.000Z",
     "files": {
       "hasReadme": true,
       "packageManagers": [
@@ -422,7 +447,7 @@
   },
   {
     "nwo": "KBLLR/core-x",
-    "inspectedAt": "2026-06-22T00:22:33.000Z",
+    "inspectedAt": "2026-06-22T23:48:19.000Z",
     "files": {
       "hasReadme": false,
       "packageManagers": [
@@ -1069,7 +1094,7 @@
   },
   {
     "nwo": "KBLLR/htdi-project",
-    "inspectedAt": "2026-04-23T18:49:36.000Z",
+    "inspectedAt": "2026-06-22T18:44:42.000Z",
     "files": {
       "hasReadme": true,
       "packageManagers": [
@@ -1416,7 +1441,7 @@
   },
   {
     "nwo": "KBLLR/Leagentdiary",
-    "inspectedAt": "2026-04-12T05:23:57.000Z",
+    "inspectedAt": "2026-06-22T14:03:18.000Z",
     "files": {
       "hasReadme": true,
       "packageManagers": [
@@ -2442,7 +2467,7 @@
   },
   {
     "nwo": "KBLLR/vega-lab",
-    "inspectedAt": "2026-06-21T01:14:00.000Z",
+    "inspectedAt": "2026-06-22T01:13:34.000Z",
     "files": {
       "hasReadme": true,
       "packageManagers": [

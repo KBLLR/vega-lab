@@ -1,5 +1,40 @@
 [
   {
+    "id": "vega-lab:readme:kbllr-audio-lab",
+    "kind": "readme",
+    "status": "open",
+    "priority": "high",
+    "nwo": "KBLLR/audio-lab",
+    "title": "Make audio-lab README-ready",
+    "summary": "The repo needs a clear human and agent entrypoint before broader ecosystem use.",
+    "evidence": [
+      "README missing from the synced repository snapshot.",
+      "No test/check/lint script detected from package metadata.",
+      "New contributors and agents lack a clear entrypoint.",
+      "Maintenance work has no obvious verification command."
+    ],
+    "linkedSkills": [
+      "skill-extraction",
+      "repo-adoption",
+      "mine-execution"
+    ],
+    "linkedRules": [
+      "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.",
+      "Review license status before adoption or redistribution work.",
+      "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
+    ],
+    "linkedFlows": [
+      "research-queue-flow",
+      "skill-extraction-flow",
+      "adoption-decision-flow",
+      "mine-execution-flow"
+    ],
+    "draft": "Draft a README readiness pass for KBLLR/audio-lab: document purpose, local setup, primary commands, data/runtime assumptions, and a short maintenance section. Evidence: README missing from the synced repository snapshot. No test/check/lint script detected from package metadata.",
+    "source": "daily-ops",
+    "createdAt": "2026-06-22T23:35:46.000Z",
+    "updatedAt": "2026-06-22T23:35:46.000Z"
+  },
+  {
     "id": "vega-lab:readme:kbllr-core-x",
     "kind": "readme",
     "status": "open",
@@ -223,6 +258,41 @@
     "source": "daily-ops",
     "createdAt": "2023-07-07T07:02:56.000Z",
     "updatedAt": "2023-07-07T07:02:56.000Z"
+  },
+  {
+    "id": "vega-lab:testing:kbllr-audio-lab",
+    "kind": "testing",
+    "status": "open",
+    "priority": "normal",
+    "nwo": "KBLLR/audio-lab",
+    "title": "Define verification for audio-lab",
+    "summary": "Package metadata does not expose an obvious test, check, or lint command.",
+    "evidence": [
+      "README missing from the synced repository snapshot.",
+      "No test/check/lint script detected from package metadata.",
+      "New contributors and agents lack a clear entrypoint.",
+      "Maintenance work has no obvious verification command."
+    ],
+    "linkedSkills": [
+      "skill-extraction",
+      "repo-adoption",
+      "mine-execution"
+    ],
+    "linkedRules": [
+      "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.",
+      "Review license status before adoption or redistribution work.",
+      "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
+    ],
+    "linkedFlows": [
+      "research-queue-flow",
+      "skill-extraction-flow",
+      "adoption-decision-flow",
+      "mine-execution-flow"
+    ],
+    "draft": "Draft a verification plan for KBLLR/audio-lab: add or document lint/test/build commands and define the smallest smoke test agents should run before edits.",
+    "source": "daily-ops",
+    "createdAt": "2026-06-22T23:35:46.000Z",
+    "updatedAt": "2026-06-22T23:35:46.000Z"
   },
   {
     "id": "vega-lab:testing:kbllr-cine-mlx",
@@ -1277,7 +1347,6 @@
       "Deployment readiness is unclear."
     ],
     "linkedSkills": [
-      "repo-discovery",
       "skill-extraction",
       "repo-adoption",
       "mine-execution"
@@ -1289,7 +1358,6 @@
       "research-queue-flow",
       "skill-extraction-flow",
       "adoption-decision-flow",
-      "news-digest-refresh",
       "mine-execution-flow"
     ],
     "draft": "Draft a deployment readiness brief for KBLLR/Leagentdiary: identify expected host, build command, env vars, workflow status, and verification URL checks. Evidence: No test/check/lint script detected from package metadata. No build script detected from package metadata. No workflow or deployment config detected in synced key files.",

@@ -1,5 +1,218 @@
 [
   {
+    "name": "audio-lab",
+    "description": "Core-X Audio Lab house: transcription, diarisation, dubbing, and local audio workflows",
+    "author": "KBLLR",
+    "stars": 0,
+    "url": "https://github.com/KBLLR/audio-lab",
+    "date": "6/22/2026",
+    "languages": [
+      {
+        "language": "JavaScript",
+        "percentage": "100%"
+      }
+    ],
+    "topics": [],
+    "primary_language": "JavaScript",
+    "license": "None",
+    "forks": 0,
+    "open_issues": 1,
+    "last_updated": "6/22/2026",
+    "last_updated_at": "2026-06-22T23:35:46Z",
+    "created_at": "2026-06-22T14:51:52Z",
+    "private": true,
+    "has_readme": false,
+    "is_owner": true,
+    "is_fork": false,
+    "key_files": {
+      "packageJson": {
+        "scripts": {
+          "dev": "vite",
+          "build": "vite build",
+          "preview": "vite preview",
+          "publish:warehouse": "node ../../scripts/publish-house-assets.mjs --house audio-lab",
+          "publish:warehouse:dry": "node ../../scripts/publish-house-assets.mjs --house audio-lab --dry-run"
+        },
+        "dependencies": {
+          "jszip": "^3.10.1",
+          "lit": "^3.3.0",
+          "rightorchestrator": "^1.0.2"
+        },
+        "devDependencies": {
+          "vite": "^7.0.0"
+        }
+      },
+      "packageManagers": [
+        "npm",
+        "npm-lock"
+      ],
+      "workflows": [],
+      "deploymentConfigs": []
+    }
+  },
+  {
+    "name": "Leagentdiary",
+    "description": "LeAgentDiary is a version-control system for AI agents. It connects handoffs, memory, and self-reflection into one timeline—track contributions, re-summon past agents, and evolve their personas. Built with the HTDI Agentic Framework for human-AI co-development.",
+    "author": "KBLLR",
+    "stars": 0,
+    "url": "https://github.com/KBLLR/Leagentdiary",
+    "date": "11/11/2025",
+    "languages": [
+      {
+        "language": "JavaScript",
+        "percentage": "100%"
+      }
+    ],
+    "topics": [],
+    "primary_language": "JavaScript",
+    "license": "MIT",
+    "forks": 0,
+    "open_issues": 0,
+    "last_updated": "6/22/2026",
+    "last_updated_at": "2026-06-22T14:03:18Z",
+    "created_at": "2025-11-11T17:31:52Z",
+    "private": false,
+    "has_readme": true,
+    "is_owner": true,
+    "is_fork": false,
+    "key_files": {
+      "packageJson": {
+        "scripts": {
+          "dev": "node ./node_modules/vite/bin/vite.js",
+          "build": "node ./node_modules/typescript/bin/tsc && node ./node_modules/vite/bin/vite.js build",
+          "preview": "node ./node_modules/vite/bin/vite.js preview",
+          "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+          "export:traces": "node scripts/export-traces.mjs",
+          "verify:active": "node scripts/verify-active.mjs"
+        },
+        "dependencies": {
+          "react": "^18.3.1",
+          "react-dom": "^18.3.1"
+        },
+        "devDependencies": {
+          "@types/react": "^18.3.5",
+          "@types/react-dom": "^18.3.0",
+          "@typescript-eslint/eslint-plugin": "^7.18.0",
+          "@typescript-eslint/parser": "^7.18.0",
+          "@vitejs/plugin-react": "^4.3.1",
+          "eslint": "^8.57.0",
+          "eslint-plugin-react-hooks": "^4.6.2",
+          "eslint-plugin-react-refresh": "^0.4.9",
+          "typescript": "^5.5.3",
+          "vite": "^5.4.2"
+        }
+      },
+      "packageManagers": [
+        "npm",
+        "npm-lock"
+      ],
+      "workflows": [],
+      "deploymentConfigs": []
+    }
+  },
+  {
+    "name": "vega-lab",
+    "description": "The Brightest Stars",
+    "author": "KBLLR",
+    "stars": 0,
+    "url": "https://github.com/KBLLR/vega-lab",
+    "date": "12/23/2023",
+    "languages": [
+      {
+        "language": "JavaScript",
+        "percentage": "100%"
+      }
+    ],
+    "topics": [
+      "github-stars",
+      "programming",
+      "skills-assessment",
+      "system-design"
+    ],
+    "primary_language": "JavaScript",
+    "license": "None",
+    "forks": 0,
+    "open_issues": 0,
+    "last_updated": "6/22/2026",
+    "last_updated_at": "2026-06-22T01:13:34Z",
+    "created_at": "2023-12-23T23:09:43Z",
+    "private": false,
+    "has_readme": true,
+    "is_owner": true,
+    "is_fork": false,
+    "key_files": {
+      "packageJson": {
+        "scripts": {
+          "dev": "vite",
+          "build": "tsc && vite build",
+          "lint": "eslint . --report-unused-disable-directives --max-warnings 0",
+          "preview": "vite preview",
+          "build:data": "node scripts/generator.js",
+          "sync:mine": "node scripts/my-repos.js",
+          "sync:model-zoo": "node scripts/model-zoo-snapshot.js",
+          "resolve:source-snapshots": "node scripts/source-snapshot-resolver.js",
+          "export:corex-contracts": "node scripts/export-corex-contracts.js",
+          "build:skill-candidates": "node scripts/build-skill-candidates.js",
+          "generate:stats": "node src/analytics/statistics.js",
+          "mcp": "node src/mcp-server/index.js",
+          "test:data": "node tests/run-tests.js",
+          "test:mcp": "node tests/test-mcp-server.js && node tests/test-ocr-skill-candidate.js",
+          "test:corex-contract-export": "node tests/test-corex-contract-export.js",
+          "test:corex-contract-snapshots": "node tests/test-corex-contract-snapshots.js",
+          "test:source-snapshots": "node tests/test-source-snapshot-resolver.js",
+          "test:skill-candidate-ingestion": "node tests/test-skill-candidate-ingestion.js && node tests/test-skill-candidate-profiles.js",
+          "test:action-bridge": "node tests/test-action-bridge.js",
+          "test": "npm run lint && npm run test:data && npm run test:mcp && npm run test:action-bridge"
+        },
+        "dependencies": {
+          "@modelcontextprotocol/sdk": "^1.25.3",
+          "@octokit/rest": "^20.1.2",
+          "@types/dompurify": "^3.2.0",
+          "@types/marked": "^6.0.0",
+          "axios": "^1.13.4",
+          "commander": "^12.1.0",
+          "dompurify": "^3.3.1",
+          "dotenv": "^16.6.1",
+          "lodash": "^4.17.23",
+          "lucide-react": "^0.344.0",
+          "marked": "^12.0.2",
+          "node-fetch": "^3.3.2",
+          "p-queue": "^8.1.1",
+          "react": "^18.2.0",
+          "react-dom": "^18.2.0",
+          "recharts": "^2.12.2"
+        },
+        "devDependencies": {
+          "@eslint/js": "^8.57.1",
+          "@types/react": "^18.2.64",
+          "@types/react-dom": "^18.2.21",
+          "@typescript-eslint/eslint-plugin": "^8.0.0",
+          "@typescript-eslint/parser": "^8.0.0",
+          "@vitejs/plugin-react": "^4.2.1",
+          "ajv": "^8.20.0",
+          "eslint": "^8.57.0",
+          "eslint-plugin-react-hooks": "^4.6.0",
+          "eslint-plugin-react-refresh": "^0.4.5",
+          "typescript": "^5.2.2",
+          "typescript-eslint": "^8.56.1",
+          "vite": "^7.3.1"
+        }
+      },
+      "packageManagers": [
+        "npm",
+        "pnpm"
+      ],
+      "workflows": [
+        "ci.yml",
+        "nightly-data-fetch.yml",
+        "vercel-deploy.yml"
+      ],
+      "deploymentConfigs": [
+        "vercel.json"
+      ]
+    }
+  },
+  {
     "name": "rigging-palace",
     "description": "Rigging Palace",
     "author": "KBLLR",
@@ -147,108 +360,6 @@
       ],
       "workflows": [],
       "deploymentConfigs": []
-    }
-  },
-  {
-    "name": "vega-lab",
-    "description": "The Brightest Stars",
-    "author": "KBLLR",
-    "stars": 0,
-    "url": "https://github.com/KBLLR/vega-lab",
-    "date": "12/23/2023",
-    "languages": [
-      {
-        "language": "JavaScript",
-        "percentage": "100%"
-      }
-    ],
-    "topics": [
-      "github-stars",
-      "programming",
-      "skills-assessment",
-      "system-design"
-    ],
-    "primary_language": "JavaScript",
-    "license": "None",
-    "forks": 0,
-    "open_issues": 0,
-    "last_updated": "6/21/2026",
-    "last_updated_at": "2026-06-21T01:14:00Z",
-    "created_at": "2023-12-23T23:09:43Z",
-    "private": false,
-    "has_readme": true,
-    "is_owner": true,
-    "is_fork": false,
-    "key_files": {
-      "packageJson": {
-        "scripts": {
-          "dev": "vite",
-          "build": "tsc && vite build",
-          "lint": "eslint . --report-unused-disable-directives --max-warnings 0",
-          "preview": "vite preview",
-          "build:data": "node scripts/generator.js",
-          "sync:mine": "node scripts/my-repos.js",
-          "sync:model-zoo": "node scripts/model-zoo-snapshot.js",
-          "resolve:source-snapshots": "node scripts/source-snapshot-resolver.js",
-          "export:corex-contracts": "node scripts/export-corex-contracts.js",
-          "build:skill-candidates": "node scripts/build-skill-candidates.js",
-          "generate:stats": "node src/analytics/statistics.js",
-          "mcp": "node src/mcp-server/index.js",
-          "test:data": "node tests/run-tests.js",
-          "test:mcp": "node tests/test-mcp-server.js && node tests/test-ocr-skill-candidate.js",
-          "test:corex-contract-export": "node tests/test-corex-contract-export.js",
-          "test:corex-contract-snapshots": "node tests/test-corex-contract-snapshots.js",
-          "test:source-snapshots": "node tests/test-source-snapshot-resolver.js",
-          "test:skill-candidate-ingestion": "node tests/test-skill-candidate-ingestion.js && node tests/test-skill-candidate-profiles.js",
-          "test:action-bridge": "node tests/test-action-bridge.js",
-          "test": "npm run lint && npm run test:data && npm run test:mcp && npm run test:action-bridge"
-        },
-        "dependencies": {
-          "@modelcontextprotocol/sdk": "^1.25.3",
-          "@octokit/rest": "^20.1.2",
-          "@types/dompurify": "^3.2.0",
-          "@types/marked": "^6.0.0",
-          "axios": "^1.13.4",
-          "commander": "^12.1.0",
-          "dompurify": "^3.3.1",
-          "dotenv": "^16.6.1",
-          "lodash": "^4.17.23",
-          "lucide-react": "^0.344.0",
-          "marked": "^12.0.2",
-          "node-fetch": "^3.3.2",
-          "p-queue": "^8.1.1",
-          "react": "^18.2.0",
-          "react-dom": "^18.2.0",
-          "recharts": "^2.12.2"
-        },
-        "devDependencies": {
-          "@eslint/js": "^8.57.1",
-          "@types/react": "^18.2.64",
-          "@types/react-dom": "^18.2.21",
-          "@typescript-eslint/eslint-plugin": "^8.0.0",
-          "@typescript-eslint/parser": "^8.0.0",
-          "@vitejs/plugin-react": "^4.2.1",
-          "ajv": "^8.20.0",
-          "eslint": "^8.57.0",
-          "eslint-plugin-react-hooks": "^4.6.0",
-          "eslint-plugin-react-refresh": "^0.4.5",
-          "typescript": "^5.2.2",
-          "typescript-eslint": "^8.56.1",
-          "vite": "^7.3.1"
-        }
-      },
-      "packageManagers": [
-        "npm",
-        "pnpm"
-      ],
-      "workflows": [
-        "ci.yml",
-        "nightly-data-fetch.yml",
-        "vercel-deploy.yml"
-      ],
-      "deploymentConfigs": [
-        "vercel.json"
-      ]
     }
   },
   {
@@ -551,9 +662,9 @@
     "primary_language": "Python",
     "license": "None",
     "forks": 0,
-    "open_issues": 1,
+    "open_issues": 2,
     "last_updated": "6/22/2026",
-    "last_updated_at": "2026-06-22T00:22:33Z",
+    "last_updated_at": "2026-06-22T23:48:19Z",
     "created_at": "2026-02-09T19:25:05Z",
     "private": true,
     "has_readme": false,
@@ -787,9 +898,9 @@
     "primary_language": "JavaScript",
     "license": "None",
     "forks": 0,
-    "open_issues": 0,
-    "last_updated": "4/13/2026",
-    "last_updated_at": "2026-04-13T09:49:25Z",
+    "open_issues": 1,
+    "last_updated": "6/22/2026",
+    "last_updated_at": "2026-06-22T23:41:16Z",
     "created_at": "2025-10-11T21:30:56Z",
     "private": false,
     "has_readme": true,
@@ -832,66 +943,6 @@
     }
   },
   {
-    "name": "Leagentdiary",
-    "description": "LeAgentDiary is a version-control system for AI agents. It connects handoffs, memory, and self-reflection into one timeline—track contributions, re-summon past agents, and evolve their personas. Built with the HTDI Agentic Framework for human-AI co-development.",
-    "author": "KBLLR",
-    "stars": 0,
-    "url": "https://github.com/KBLLR/Leagentdiary",
-    "date": "11/11/2025",
-    "languages": [
-      {
-        "language": "TypeScript",
-        "percentage": "100%"
-      }
-    ],
-    "topics": [],
-    "primary_language": "TypeScript",
-    "license": "MIT",
-    "forks": 0,
-    "open_issues": 0,
-    "last_updated": "4/12/2026",
-    "last_updated_at": "2026-04-12T05:23:57Z",
-    "created_at": "2025-11-11T17:31:52Z",
-    "private": false,
-    "has_readme": true,
-    "is_owner": true,
-    "is_fork": false,
-    "key_files": {
-      "packageJson": {
-        "scripts": {
-          "dev": "node ./node_modules/vite/bin/vite.js",
-          "build": "node ./node_modules/typescript/bin/tsc && node ./node_modules/vite/bin/vite.js build",
-          "preview": "node ./node_modules/vite/bin/vite.js preview",
-          "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-          "export:traces": "node scripts/export-traces.mjs",
-          "verify:active": "node scripts/verify-active.mjs"
-        },
-        "dependencies": {
-          "react": "^18.3.1",
-          "react-dom": "^18.3.1"
-        },
-        "devDependencies": {
-          "@types/react": "^18.3.5",
-          "@types/react-dom": "^18.3.0",
-          "@typescript-eslint/eslint-plugin": "^7.18.0",
-          "@typescript-eslint/parser": "^7.18.0",
-          "@vitejs/plugin-react": "^4.3.1",
-          "eslint": "^8.57.0",
-          "eslint-plugin-react-hooks": "^4.6.2",
-          "eslint-plugin-react-refresh": "^0.4.9",
-          "typescript": "^5.5.3",
-          "vite": "^5.4.2"
-        }
-      },
-      "packageManagers": [
-        "npm",
-        "npm-lock"
-      ],
-      "workflows": [],
-      "deploymentConfigs": []
-    }
-  },
-  {
     "name": "htdi-project",
     "description": "Hard To Debug Issues",
     "author": "KBLLR",
@@ -908,9 +959,9 @@
     "primary_language": "JavaScript",
     "license": "None",
     "forks": 0,
-    "open_issues": 0,
-    "last_updated": "4/23/2026",
-    "last_updated_at": "2026-04-23T18:49:36Z",
+    "open_issues": 1,
+    "last_updated": "6/22/2026",
+    "last_updated_at": "2026-06-22T18:44:42Z",
     "created_at": "2022-01-16T13:46:41Z",
     "private": false,
     "has_readme": true,
