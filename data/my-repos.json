@@ -1,56 +1,5 @@
 [
   {
-    "name": "audio-lab",
-    "description": "Core-X Audio Lab house: transcription, diarisation, dubbing, and local audio workflows",
-    "author": "KBLLR",
-    "stars": 0,
-    "url": "https://github.com/KBLLR/audio-lab",
-    "date": "6/22/2026",
-    "languages": [
-      {
-        "language": "JavaScript",
-        "percentage": "100%"
-      }
-    ],
-    "topics": [],
-    "primary_language": "JavaScript",
-    "license": "None",
-    "forks": 0,
-    "open_issues": 0,
-    "last_updated": "6/24/2026",
-    "last_updated_at": "2026-06-24T07:42:24Z",
-    "created_at": "2026-06-22T14:51:52Z",
-    "private": true,
-    "has_readme": false,
-    "is_owner": true,
-    "is_fork": false,
-    "key_files": {
-      "packageJson": {
-        "scripts": {
-          "dev": "vite",
-          "build": "vite build",
-          "preview": "vite preview",
-          "publish:warehouse": "node ../../scripts/publish-house-assets.mjs --house audio-lab",
-          "publish:warehouse:dry": "node ../../scripts/publish-house-assets.mjs --house audio-lab --dry-run"
-        },
-        "dependencies": {
-          "jszip": "^3.10.1",
-          "lit": "^3.3.0",
-          "rightorchestrator": "^1.0.2"
-        },
-        "devDependencies": {
-          "vite": "^7.0.0"
-        }
-      },
-      "packageManagers": [
-        "npm",
-        "npm-lock"
-      ],
-      "workflows": [],
-      "deploymentConfigs": []
-    }
-  },
-  {
     "name": "vega-lab",
     "description": "The Brightest Stars",
     "author": "KBLLR",
@@ -73,8 +22,8 @@
     "license": "None",
     "forks": 0,
     "open_issues": 0,
-    "last_updated": "6/24/2026",
-    "last_updated_at": "2026-06-24T01:03:00Z",
+    "last_updated": "6/25/2026",
+    "last_updated_at": "2026-06-25T01:08:05Z",
     "created_at": "2023-12-23T23:09:43Z",
     "private": false,
     "has_readme": true,
@@ -150,6 +99,57 @@
       "deploymentConfigs": [
         "vercel.json"
       ]
+    }
+  },
+  {
+    "name": "audio-lab",
+    "description": "Core-X Audio Lab house: transcription, diarisation, dubbing, and local audio workflows",
+    "author": "KBLLR",
+    "stars": 0,
+    "url": "https://github.com/KBLLR/audio-lab",
+    "date": "6/22/2026",
+    "languages": [
+      {
+        "language": "JavaScript",
+        "percentage": "100%"
+      }
+    ],
+    "topics": [],
+    "primary_language": "JavaScript",
+    "license": "None",
+    "forks": 0,
+    "open_issues": 0,
+    "last_updated": "6/24/2026",
+    "last_updated_at": "2026-06-24T07:42:24Z",
+    "created_at": "2026-06-22T14:51:52Z",
+    "private": true,
+    "has_readme": false,
+    "is_owner": true,
+    "is_fork": false,
+    "key_files": {
+      "packageJson": {
+        "scripts": {
+          "dev": "vite",
+          "build": "vite build",
+          "preview": "vite preview",
+          "publish:warehouse": "node ../../scripts/publish-house-assets.mjs --house audio-lab",
+          "publish:warehouse:dry": "node ../../scripts/publish-house-assets.mjs --house audio-lab --dry-run"
+        },
+        "dependencies": {
+          "jszip": "^3.10.1",
+          "lit": "^3.3.0",
+          "rightorchestrator": "^1.0.2"
+        },
+        "devDependencies": {
+          "vite": "^7.0.0"
+        }
+      },
+      "packageManagers": [
+        "npm",
+        "npm-lock"
+      ],
+      "workflows": [],
+      "deploymentConfigs": []
     }
   },
   {
@@ -809,8 +809,8 @@
     "license": "None",
     "forks": 0,
     "open_issues": 1,
-    "last_updated": "6/24/2026",
-    "last_updated_at": "2026-06-24T19:15:39Z",
+    "last_updated": "6/25/2026",
+    "last_updated_at": "2026-06-25T15:22:58Z",
     "created_at": "2026-02-09T19:25:05Z",
     "private": true,
     "has_readme": false,
