@@ -4479,15 +4479,13 @@
     "summary": "GPU accelerated waveform view Primary Vega Lab fit: repo-discovery via general engineering.",
     "capabilities": [],
     "houseSkills": [],
-    "rules": [
-      "Validate maintenance risk and current ecosystem fit before committing to adoption."
-    ],
+    "rules": [],
     "flows": [
       "research-queue-flow"
     ],
     "adoptionKind": "ignore",
-    "codexBrief": "# Codex Mission: AudioKit/Waveform\nGoal: GPU accelerated waveform view Primary Vega Lab fit: repo-discovery via general engineering.\nClassification: ignore\nCapabilities: none\nHouse skills: none\nRules:\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: AudioKit/Waveform\nGoal: GPU accelerated waveform view Primary Vega Lab fit: repo-discovery via general engineering.\nClassification: ignore\nCapabilities: none\nHouse skills: none\nRules:\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: AudioKit/Waveform\nGoal: GPU accelerated waveform view Primary Vega Lab fit: repo-discovery via general engineering.\nClassification: ignore\nCapabilities: none\nHouse skills: none\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: AudioKit/Waveform\nGoal: GPU accelerated waveform view Primary Vega Lab fit: repo-discovery via general engineering.\nClassification: ignore\nCapabilities: none\nHouse skills: none\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "auduno/clmtrackr",
@@ -33314,6 +33312,24 @@
     "claudeBrief": "# Claude Mission: mmp/pbrt-v3\nGoal: Source code for pbrt, the renderer described in the third edition of \"Physically Based Rendering: From Theory To Implementation\", by Matt Pharr, Wenzel Jakob, and Greg Humphreys. Primary Vega Lab fit: repo-discovery via general engineering.\nClassification: ignore\nCapabilities: none\nHouse skills: none\nRules:\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
+    "nwo": "mmp/pbrt-v4-scenes",
+    "name": "pbrt-v4-scenes",
+    "author": "mmp",
+    "summary": "Example scenes for pbrt-v4 Primary Vega Lab fit: repo-discovery via general engineering.",
+    "capabilities": [],
+    "houseSkills": [],
+    "rules": [
+      "Review license status before adoption or redistribution work.",
+      "Validate maintenance risk and current ecosystem fit before committing to adoption."
+    ],
+    "flows": [
+      "research-queue-flow"
+    ],
+    "adoptionKind": "ignore",
+    "codexBrief": "# Codex Mission: mmp/pbrt-v4-scenes\nGoal: Example scenes for pbrt-v4 Primary Vega Lab fit: repo-discovery via general engineering.\nClassification: ignore\nCapabilities: none\nHouse skills: none\nRules:\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: mmp/pbrt-v4-scenes\nGoal: Example scenes for pbrt-v4 Primary Vega Lab fit: repo-discovery via general engineering.\nClassification: ignore\nCapabilities: none\nHouse skills: none\nRules:\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+  },
+  {
     "nwo": "MochiDiffusion/MochiDiffusion",
     "name": "MochiDiffusion",
     "author": "MochiDiffusion",
@@ -35731,14 +35747,16 @@
     "houseSkills": [
       "repo-adoption"
     ],
-    "rules": [],
+    "rules": [
+      "Validate maintenance risk and current ecosystem fit before committing to adoption."
+    ],
     "flows": [
       "research-queue-flow",
       "adoption-decision-flow"
     ],
     "adoptionKind": "house",
-    "codexBrief": "# Codex Mission: nosiu/comfyui-instantId-faceswap\nGoal: Implementation of faceswap based on InstantID for ComfyUI. Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: house\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: nosiu/comfyui-instantId-faceswap\nGoal: Implementation of faceswap based on InstantID for ComfyUI. Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: house\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: nosiu/comfyui-instantId-faceswap\nGoal: Implementation of faceswap based on InstantID for ComfyUI. Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: house\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: nosiu/comfyui-instantId-faceswap\nGoal: Implementation of faceswap based on InstantID for ComfyUI. Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: house\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "notAI-tech/NudeNet",
@@ -38271,6 +38289,29 @@
     "adoptionKind": "tool",
     "codexBrief": "# Codex Mission: pabloppp/Machine-Learning-Lab\nGoal: Simple experiments and explorations related with machine learning and deep learning Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
     "claudeBrief": "# Claude Mission: pabloppp/Machine-Learning-Lab\nGoal: Simple experiments and explorations related with machine learning and deep learning Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+  },
+  {
+    "nwo": "PacktPublishing/30-Agents-Every-AI-Engineer-Must-Build",
+    "name": "30-Agents-Every-AI-Engineer-Must-Build",
+    "author": "PacktPublishing",
+    "summary": "30 Agents Every AI Engineer Must Build, published by Packt Primary Vega Lab fit: skill-extraction via agent-workflows.",
+    "capabilities": [
+      "agent-workflows",
+      "ml-ai"
+    ],
+    "houseSkills": [
+      "skill-extraction",
+      "repo-adoption"
+    ],
+    "rules": [],
+    "flows": [
+      "research-queue-flow",
+      "skill-extraction-flow",
+      "adoption-decision-flow"
+    ],
+    "adoptionKind": "house",
+    "codexBrief": "# Codex Mission: PacktPublishing/30-Agents-Every-AI-Engineer-Must-Build\nGoal: 30 Agents Every AI Engineer Must Build, published by Packt Primary Vega Lab fit: skill-extraction via agent-workflows.\nClassification: house\nCapabilities: agent-workflows, ml-ai\nHouse skills: skill-extraction, repo-adoption\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: PacktPublishing/30-Agents-Every-AI-Engineer-Must-Build\nGoal: 30 Agents Every AI Engineer Must Build, published by Packt Primary Vega Lab fit: skill-extraction via agent-workflows.\nClassification: house\nCapabilities: agent-workflows, ml-ai\nHouse skills: skill-extraction, repo-adoption\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "PacktPublishing/Learn-Three.js-Fourth-edition",
