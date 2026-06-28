@@ -1112,7 +1112,7 @@
     "author": "KBLLR",
     "description": "Core-X: Clean architecture backbone for the KBLLR AI ecosystem",
     "scope": "mine",
-    "lastActivityAt": "2026-06-26T20:07:42.000Z",
+    "lastActivityAt": "2026-06-27T02:47:25.000Z",
     "staleness": "active",
     "researchStatus": "untracked",
     "adoptionScore": 43,
@@ -1784,7 +1784,7 @@
     "author": "KBLLR",
     "description": "The Brightest Stars",
     "scope": "mine",
-    "lastActivityAt": "2026-06-26T01:09:28.000Z",
+    "lastActivityAt": "2026-06-27T01:06:37.000Z",
     "staleness": "active",
     "researchStatus": "untracked",
     "adoptionScore": 30,
@@ -2602,12 +2602,12 @@
     "capabilities": []
   },
   {
-    "nwo": "vercel/workflow",
-    "name": "workflow",
-    "author": "vercel",
-    "description": "Workflow SDK: Build durable, reliable, and observable apps and AI Agents in TypeScript",
+    "nwo": "ChromeDevTools/chrome-devtools-mcp",
+    "name": "chrome-devtools-mcp",
+    "author": "ChromeDevTools",
+    "description": "Chrome DevTools for coding agents",
     "scope": "starred",
-    "lastActivityAt": "2026-06-27T00:00:00.000Z",
+    "lastActivityAt": "2026-06-28T00:00:00.000Z",
     "staleness": "active",
     "researchStatus": "untracked",
     "adoptionScore": 100,
@@ -2623,9 +2623,9 @@
       "repo-adoption"
     ],
     "capabilities": [
+      "mcp-tooling",
       "agent-workflows",
-      "developer-tooling",
-      "ml-ai",
+      "backend-service",
       "frontend-ui"
     ]
   },
@@ -2635,7 +2635,7 @@
     "author": "n8n-io",
     "description": "Fair-code workflow automation platform with native AI capabilities. Combine visual building with custom code, self-host or cloud, 400+ integrations.",
     "scope": "starred",
-    "lastActivityAt": "2026-06-27T00:00:00.000Z",
+    "lastActivityAt": "2026-06-28T00:00:00.000Z",
     "staleness": "active",
     "researchStatus": "untracked",
     "adoptionScore": 100,
@@ -2663,12 +2663,42 @@
     ]
   },
   {
+    "nwo": "langgenius/dify",
+    "name": "dify",
+    "author": "langgenius",
+    "description": "Production-ready platform for agentic workflow development.",
+    "scope": "starred",
+    "lastActivityAt": "2026-06-28T00:00:00.000Z",
+    "staleness": "active",
+    "researchStatus": "untracked",
+    "adoptionScore": 100,
+    "adoptionKind": "tool",
+    "reasons": [
+      "Adoption kind: tool",
+      "Primary skills: repo-discovery, skill-extraction, repo-adoption, mine-execution",
+      "Recent activity suggests the repo is still moving."
+    ],
+    "houseSkills": [
+      "repo-discovery",
+      "skill-extraction",
+      "repo-adoption",
+      "mine-execution"
+    ],
+    "capabilities": [
+      "mcp-tooling",
+      "agent-workflows",
+      "frontend-ui",
+      "ml-ai",
+      "repo-ops"
+    ]
+  },
+  {
     "nwo": "headroomlabs-ai/headroom",
     "name": "headroom",
     "author": "headroomlabs-ai",
     "description": "Compress tool outputs, logs, files, and RAG chunks before they reach the LLM. 60-95% fewer tokens, same answers. Library, proxy, MCP server.",
     "scope": "starred",
-    "lastActivityAt": "2026-06-27T00:00:00.000Z",
+    "lastActivityAt": "2026-06-28T00:00:00.000Z",
     "staleness": "active",
     "researchStatus": "untracked",
     "adoptionScore": 100,
@@ -2697,7 +2727,7 @@
     "author": "apache",
     "description": "Apache Airflow - A platform to programmatically author, schedule, and monitor workflows",
     "scope": "starred",
-    "lastActivityAt": "2026-06-27T00:00:00.000Z",
+    "lastActivityAt": "2026-06-28T00:00:00.000Z",
     "staleness": "active",
     "researchStatus": "untracked",
     "adoptionScore": 100,
@@ -2718,6 +2748,373 @@
       "ml-ai",
       "data-pipeline",
       "repo-ops"
+    ]
+  },
+  {
+    "nwo": "BerriAI/litellm",
+    "name": "litellm",
+    "author": "BerriAI",
+    "description": "Python SDK, Proxy Server (AI Gateway) to call 100+ LLM APIs in OpenAI (or native) format, with cost tracking, guardrails, loadbalancing and logging. [Bedrock, Azure, OpenAI, VertexAI, Cohere, Anthropic, Sagemaker, HuggingFace, VLLM, NVIDIA NIM]",
+    "scope": "starred",
+    "lastActivityAt": "2026-06-28T00:00:00.000Z",
+    "staleness": "active",
+    "researchStatus": "untracked",
+    "adoptionScore": 100,
+    "adoptionKind": "template",
+    "reasons": [
+      "Adoption kind: template",
+      "Primary skills: repo-discovery, skill-extraction, repo-adoption",
+      "Recent activity suggests the repo is still moving."
+    ],
+    "houseSkills": [
+      "repo-discovery",
+      "skill-extraction",
+      "repo-adoption"
+    ],
+    "capabilities": [
+      "mcp-tooling",
+      "template-scaffolding",
+      "backend-service",
+      "developer-tooling",
+      "ml-ai"
+    ]
+  },
+  {
+    "nwo": "aaif-goose/goose",
+    "name": "goose",
+    "author": "aaif-goose",
+    "description": "an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM",
+    "scope": "starred",
+    "lastActivityAt": "2026-06-28T00:00:00.000Z",
+    "staleness": "active",
+    "researchStatus": "untracked",
+    "adoptionScore": 100,
+    "adoptionKind": "tool",
+    "reasons": [
+      "Adoption kind: tool",
+      "Primary skills: skill-extraction, repo-adoption",
+      "Recent activity suggests the repo is still moving."
+    ],
+    "houseSkills": [
+      "skill-extraction",
+      "repo-adoption"
+    ],
+    "capabilities": [
+      "mcp-tooling",
+      "agent-workflows",
+      "ml-ai"
+    ]
+  },
+  {
+    "nwo": "BasedHardware/omi",
+    "name": "omi",
+    "author": "BasedHardware",
+    "description": "AI that sees your screen, listens to your conversations and tells you what to do",
+    "scope": "starred",
+    "lastActivityAt": "2026-06-28T00:00:00.000Z",
+    "staleness": "active",
+    "researchStatus": "untracked",
+    "adoptionScore": 100,
+    "adoptionKind": "template",
+    "reasons": [
+      "Adoption kind: template",
+      "Primary skills: repo-discovery, skill-extraction, repo-adoption",
+      "Recent activity suggests the repo is still moving."
+    ],
+    "houseSkills": [
+      "repo-discovery",
+      "skill-extraction",
+      "repo-adoption"
+    ],
+    "capabilities": [
+      "template-scaffolding",
+      "frontend-ui",
+      "ml-ai"
+    ]
+  },
+  {
+    "nwo": "tambo-ai/tambo",
+    "name": "tambo",
+    "author": "tambo-ai",
+    "description": "Generative UI SDK for React",
+    "scope": "starred",
+    "lastActivityAt": "2026-06-27T00:00:00.000Z",
+    "staleness": "active",
+    "researchStatus": "untracked",
+    "adoptionScore": 100,
+    "adoptionKind": "tool",
+    "reasons": [
+      "Adoption kind: tool",
+      "Primary skills: repo-discovery, skill-extraction, repo-adoption",
+      "Recent activity suggests the repo is still moving."
+    ],
+    "houseSkills": [
+      "repo-discovery",
+      "skill-extraction",
+      "repo-adoption"
+    ],
+    "capabilities": [
+      "agent-workflows",
+      "frontend-ui",
+      "developer-tooling",
+      "ml-ai"
+    ]
+  },
+  {
+    "nwo": "fastapi/full-stack-fastapi-template",
+    "name": "full-stack-fastapi-template",
+    "author": "fastapi",
+    "description": "Full stack, modern web application template. Using FastAPI, React, SQLModel, PostgreSQL, Docker, GitHub Actions, automatic HTTPS and more.",
+    "scope": "starred",
+    "lastActivityAt": "2026-06-27T00:00:00.000Z",
+    "staleness": "active",
+    "researchStatus": "untracked",
+    "adoptionScore": 100,
+    "adoptionKind": "template",
+    "reasons": [
+      "Adoption kind: template",
+      "Primary skills: repo-discovery, skill-extraction, repo-adoption",
+      "Recent activity suggests the repo is still moving."
+    ],
+    "houseSkills": [
+      "repo-discovery",
+      "skill-extraction",
+      "repo-adoption"
+    ],
+    "capabilities": [
+      "template-scaffolding",
+      "frontend-ui",
+      "backend-service",
+      "ml-ai"
+    ]
+  },
+  {
+    "nwo": "vercel/workflow",
+    "name": "workflow",
+    "author": "vercel",
+    "description": "Workflow SDK: Build durable, reliable, and observable apps and AI Agents in TypeScript",
+    "scope": "starred",
+    "lastActivityAt": "2026-06-27T00:00:00.000Z",
+    "staleness": "active",
+    "researchStatus": "untracked",
+    "adoptionScore": 100,
+    "adoptionKind": "tool",
+    "reasons": [
+      "Adoption kind: tool",
+      "Primary skills: repo-discovery, skill-extraction, repo-adoption",
+      "Recent activity suggests the repo is still moving."
+    ],
+    "houseSkills": [
+      "repo-discovery",
+      "skill-extraction",
+      "repo-adoption"
+    ],
+    "capabilities": [
+      "agent-workflows",
+      "developer-tooling",
+      "ml-ai",
+      "frontend-ui"
+    ]
+  },
+  {
+    "nwo": "recharts/recharts",
+    "name": "recharts",
+    "author": "recharts",
+    "description": "Redefined chart library built with React and D3",
+    "scope": "starred",
+    "lastActivityAt": "2026-06-27T00:00:00.000Z",
+    "staleness": "active",
+    "researchStatus": "untracked",
+    "adoptionScore": 100,
+    "adoptionKind": "tool",
+    "reasons": [
+      "Adoption kind: tool",
+      "Primary skills: repo-discovery, skill-extraction, repo-adoption",
+      "Recent activity suggests the repo is still moving."
+    ],
+    "houseSkills": [
+      "repo-discovery",
+      "skill-extraction",
+      "repo-adoption"
+    ],
+    "capabilities": [
+      "frontend-ui",
+      "developer-tooling",
+      "data-pipeline"
+    ]
+  },
+  {
+    "nwo": "danny-avila/LibreChat",
+    "name": "LibreChat",
+    "author": "danny-avila",
+    "description": "Enhanced ChatGPT Clone: Features Agents, MCP, Skills, DeepSeek, Anthropic, AWS, OpenAI, Responses API, Azure, Groq, o1, GPT-5, Mistral, OpenRouter, Vertex AI, Gemini, Artifacts, AI model switching, message search, Code Interpreter, langchain, DALL-E-3, OpenAPI Actions, Functions, Secure Multi-User Auth, Presets, open-source for self-hosting. Active",
+    "scope": "starred",
+    "lastActivityAt": "2026-06-27T00:00:00.000Z",
+    "staleness": "active",
+    "researchStatus": "untracked",
+    "adoptionScore": 100,
+    "adoptionKind": "template",
+    "reasons": [
+      "Adoption kind: template",
+      "Primary skills: repo-discovery, skill-extraction, repo-adoption",
+      "Recent activity suggests the repo is still moving."
+    ],
+    "houseSkills": [
+      "repo-discovery",
+      "skill-extraction",
+      "repo-adoption"
+    ],
+    "capabilities": [
+      "mcp-tooling",
+      "agent-workflows",
+      "template-scaffolding",
+      "backend-service",
+      "ml-ai",
+      "frontend-ui"
+    ]
+  },
+  {
+    "nwo": "apify/crawlee",
+    "name": "crawlee",
+    "author": "apify",
+    "description": "Crawlee—A web scraping and browser automation library for Node.js to build reliable crawlers. In JavaScript and TypeScript. Extract data for AI, LLMs, RAG, or GPTs. Download HTML, PDF, JPG, PNG, and other files from websites. Works with Puppeteer, Playwright, Cheerio, JSDOM, and raw HTTP. Both headful and headless mode. With proxy rotation.",
+    "scope": "starred",
+    "lastActivityAt": "2026-06-27T00:00:00.000Z",
+    "staleness": "active",
+    "researchStatus": "untracked",
+    "adoptionScore": 100,
+    "adoptionKind": "tool",
+    "reasons": [
+      "Adoption kind: tool",
+      "Primary skills: repo-discovery, skill-extraction, repo-adoption, mine-execution",
+      "Recent activity suggests the repo is still moving."
+    ],
+    "houseSkills": [
+      "repo-discovery",
+      "skill-extraction",
+      "repo-adoption",
+      "mine-execution"
+    ],
+    "capabilities": [
+      "developer-tooling",
+      "ml-ai",
+      "data-pipeline",
+      "repo-ops",
+      "frontend-ui"
+    ]
+  },
+  {
+    "nwo": "firecrawl/firecrawl",
+    "name": "firecrawl",
+    "author": "firecrawl",
+    "description": "The API to search, scrape, and interact with the web at scale. 🔥",
+    "scope": "starred",
+    "lastActivityAt": "2026-06-27T00:00:00.000Z",
+    "staleness": "active",
+    "researchStatus": "untracked",
+    "adoptionScore": 100,
+    "adoptionKind": "service",
+    "reasons": [
+      "Adoption kind: service",
+      "Primary skills: repo-discovery, skill-extraction, repo-adoption",
+      "Recent activity suggests the repo is still moving."
+    ],
+    "houseSkills": [
+      "repo-discovery",
+      "skill-extraction",
+      "repo-adoption"
+    ],
+    "capabilities": [
+      "agent-workflows",
+      "backend-service",
+      "ml-ai",
+      "data-pipeline",
+      "frontend-ui"
+    ]
+  },
+  {
+    "nwo": "watson-developer-cloud/node-sdk",
+    "name": "node-sdk",
+    "author": "watson-developer-cloud",
+    "description": ":comet: Node.js library to access IBM Watson services.",
+    "scope": "starred",
+    "lastActivityAt": "2026-06-27T00:00:00.000Z",
+    "staleness": "active",
+    "researchStatus": "untracked",
+    "adoptionScore": 100,
+    "adoptionKind": "template",
+    "reasons": [
+      "Adoption kind: template",
+      "Primary skills: repo-discovery, skill-extraction, repo-adoption",
+      "Recent activity suggests the repo is still moving."
+    ],
+    "houseSkills": [
+      "repo-discovery",
+      "skill-extraction",
+      "repo-adoption"
+    ],
+    "capabilities": [
+      "template-scaffolding",
+      "backend-service",
+      "developer-tooling",
+      "frontend-ui"
+    ]
+  },
+  {
+    "nwo": "mvanhorn/last30days-skill",
+    "name": "last30days-skill",
+    "author": "mvanhorn",
+    "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
+    "scope": "starred",
+    "lastActivityAt": "2026-06-27T00:00:00.000Z",
+    "staleness": "active",
+    "researchStatus": "untracked",
+    "adoptionScore": 100,
+    "adoptionKind": "tool",
+    "reasons": [
+      "Adoption kind: tool",
+      "Primary skills: repo-research, skill-extraction, repo-adoption",
+      "Recent activity suggests the repo is still moving."
+    ],
+    "houseSkills": [
+      "repo-research",
+      "skill-extraction",
+      "repo-adoption"
+    ],
+    "capabilities": [
+      "agent-workflows",
+      "research-intelligence",
+      "ml-ai"
+    ]
+  },
+  {
+    "nwo": "FlorianBruniaux/claude-code-ultimate-guide",
+    "name": "claude-code-ultimate-guide",
+    "author": "FlorianBruniaux",
+    "description": "The most comprehensive Claude Code guide: agentic workflows, hooks, skills, MCP servers, quizzes, and production-ready templates. 430K+ lines.",
+    "scope": "starred",
+    "lastActivityAt": "2026-06-27T00:00:00.000Z",
+    "staleness": "active",
+    "researchStatus": "untracked",
+    "adoptionScore": 100,
+    "adoptionKind": "template",
+    "reasons": [
+      "Adoption kind: template",
+      "Primary skills: repo-discovery, skill-extraction, repo-adoption",
+      "Recent activity suggests the repo is still moving."
+    ],
+    "houseSkills": [
+      "repo-discovery",
+      "skill-extraction",
+      "repo-adoption"
+    ],
+    "capabilities": [
+      "mcp-tooling",
+      "agent-workflows",
+      "template-scaffolding",
+      "backend-service",
+      "developer-tooling",
+      "ml-ai"
     ]
   },
   {
@@ -2748,18 +3145,44 @@
     ]
   },
   {
-    "nwo": "BerriAI/litellm",
-    "name": "litellm",
-    "author": "BerriAI",
-    "description": "Python SDK, Proxy Server (AI Gateway) to call 100+ LLM APIs in OpenAI (or native) format, with cost tracking, guardrails, loadbalancing and logging. [Bedrock, Azure, OpenAI, VertexAI, Cohere, Anthropic, Sagemaker, HuggingFace, VLLM, NVIDIA NIM]",
+    "nwo": "ag2ai/ag2",
+    "name": "ag2",
+    "author": "ag2ai",
+    "description": "AG2 (formerly AutoGen): The Open-Source AgentOS.Join us at: https://discord.gg/sNGSwQME3x",
     "scope": "starred",
     "lastActivityAt": "2026-06-27T00:00:00.000Z",
     "staleness": "active",
     "researchStatus": "untracked",
     "adoptionScore": 100,
-    "adoptionKind": "template",
+    "adoptionKind": "tool",
     "reasons": [
-      "Adoption kind: template",
+      "Adoption kind: tool",
+      "Primary skills: skill-extraction, repo-adoption",
+      "Recent activity suggests the repo is still moving."
+    ],
+    "houseSkills": [
+      "skill-extraction",
+      "repo-adoption"
+    ],
+    "capabilities": [
+      "mcp-tooling",
+      "agent-workflows",
+      "ml-ai"
+    ]
+  },
+  {
+    "nwo": "Zipstack/unstract",
+    "name": "unstract",
+    "author": "Zipstack",
+    "description": "LLM-Driven Extraction of Unstructured Data — Built for API Deployments & ETL Pipeline Workflows",
+    "scope": "starred",
+    "lastActivityAt": "2026-06-27T00:00:00.000Z",
+    "staleness": "active",
+    "researchStatus": "untracked",
+    "adoptionScore": 100,
+    "adoptionKind": "tool",
+    "reasons": [
+      "Adoption kind: tool",
       "Primary skills: repo-discovery, skill-extraction, repo-adoption",
       "Recent activity suggests the repo is still moving."
     ],
@@ -2770,37 +3193,64 @@
     ],
     "capabilities": [
       "mcp-tooling",
-      "template-scaffolding",
+      "agent-workflows",
       "backend-service",
-      "developer-tooling",
-      "ml-ai"
+      "ml-ai",
+      "data-pipeline"
     ]
   },
   {
-    "nwo": "BasedHardware/omi",
-    "name": "omi",
-    "author": "BasedHardware",
-    "description": "AI that sees your screen, listens to your conversations and tells you what to do",
+    "nwo": "public-apis/public-apis",
+    "name": "public-apis",
+    "author": "public-apis",
+    "description": "A collective list of free APIs",
     "scope": "starred",
     "lastActivityAt": "2026-06-27T00:00:00.000Z",
     "staleness": "active",
     "researchStatus": "untracked",
     "adoptionScore": 100,
-    "adoptionKind": "template",
+    "adoptionKind": "service",
     "reasons": [
-      "Adoption kind: template",
-      "Primary skills: repo-discovery, skill-extraction, repo-adoption",
+      "Adoption kind: service",
+      "Primary skills: repo-discovery, repo-adoption",
+      "Recent activity suggests the repo is still moving."
+    ],
+    "houseSkills": [
+      "repo-discovery",
+      "repo-adoption"
+    ],
+    "capabilities": [
+      "backend-service",
+      "data-pipeline",
+      "ml-ai"
+    ]
+  },
+  {
+    "nwo": "huginn/huginn",
+    "name": "huginn",
+    "author": "huginn",
+    "description": "Create agents that monitor and act on your behalf.  Your agents are standing by!",
+    "scope": "starred",
+    "lastActivityAt": "2026-06-27T00:00:00.000Z",
+    "staleness": "active",
+    "researchStatus": "untracked",
+    "adoptionScore": 100,
+    "adoptionKind": "service",
+    "reasons": [
+      "Adoption kind: service",
+      "Primary skills: repo-discovery, skill-extraction, repo-adoption, mine-execution",
       "Recent activity suggests the repo is still moving."
     ],
     "houseSkills": [
       "repo-discovery",
       "skill-extraction",
-      "repo-adoption"
+      "repo-adoption",
+      "mine-execution"
     ],
     "capabilities": [
-      "template-scaffolding",
-      "frontend-ui",
-      "ml-ai"
+      "agent-workflows",
+      "data-pipeline",
+      "repo-ops"
     ]
   },
   {
@@ -2827,62 +3277,6 @@
       "agent-workflows",
       "backend-service",
       "ml-ai"
-    ]
-  },
-  {
-    "nwo": "fastapi/full-stack-fastapi-template",
-    "name": "full-stack-fastapi-template",
-    "author": "fastapi",
-    "description": "Full stack, modern web application template. Using FastAPI, React, SQLModel, PostgreSQL, Docker, GitHub Actions, automatic HTTPS and more.",
-    "scope": "starred",
-    "lastActivityAt": "2026-06-26T00:00:00.000Z",
-    "staleness": "active",
-    "researchStatus": "untracked",
-    "adoptionScore": 100,
-    "adoptionKind": "template",
-    "reasons": [
-      "Adoption kind: template",
-      "Primary skills: repo-discovery, skill-extraction, repo-adoption",
-      "Recent activity suggests the repo is still moving."
-    ],
-    "houseSkills": [
-      "repo-discovery",
-      "skill-extraction",
-      "repo-adoption"
-    ],
-    "capabilities": [
-      "template-scaffolding",
-      "frontend-ui",
-      "backend-service",
-      "ml-ai"
-    ]
-  },
-  {
-    "nwo": "ChromeDevTools/chrome-devtools-mcp",
-    "name": "chrome-devtools-mcp",
-    "author": "ChromeDevTools",
-    "description": "Chrome DevTools for coding agents",
-    "scope": "starred",
-    "lastActivityAt": "2026-06-26T00:00:00.000Z",
-    "staleness": "active",
-    "researchStatus": "untracked",
-    "adoptionScore": 100,
-    "adoptionKind": "tool",
-    "reasons": [
-      "Adoption kind: tool",
-      "Primary skills: repo-discovery, skill-extraction, repo-adoption",
-      "Recent activity suggests the repo is still moving."
-    ],
-    "houseSkills": [
-      "repo-discovery",
-      "skill-extraction",
-      "repo-adoption"
-    ],
-    "capabilities": [
-      "mcp-tooling",
-      "agent-workflows",
-      "backend-service",
-      "frontend-ui"
     ]
   },
   {
@@ -2966,125 +3360,6 @@
     "capabilities": [
       "mcp-tooling",
       "backend-service",
-      "data-pipeline",
-      "frontend-ui"
-    ]
-  },
-  {
-    "nwo": "danny-avila/LibreChat",
-    "name": "LibreChat",
-    "author": "danny-avila",
-    "description": "Enhanced ChatGPT Clone: Features Agents, MCP, Skills, DeepSeek, Anthropic, AWS, OpenAI, Responses API, Azure, Groq, o1, GPT-5, Mistral, OpenRouter, Vertex AI, Gemini, Artifacts, AI model switching, message search, Code Interpreter, langchain, DALL-E-3, OpenAPI Actions, Functions, Secure Multi-User Auth, Presets, open-source for self-hosting. Active",
-    "scope": "starred",
-    "lastActivityAt": "2026-06-26T00:00:00.000Z",
-    "staleness": "active",
-    "researchStatus": "untracked",
-    "adoptionScore": 100,
-    "adoptionKind": "template",
-    "reasons": [
-      "Adoption kind: template",
-      "Primary skills: repo-discovery, skill-extraction, repo-adoption",
-      "Recent activity suggests the repo is still moving."
-    ],
-    "houseSkills": [
-      "repo-discovery",
-      "skill-extraction",
-      "repo-adoption"
-    ],
-    "capabilities": [
-      "mcp-tooling",
-      "agent-workflows",
-      "template-scaffolding",
-      "backend-service",
-      "ml-ai",
-      "frontend-ui"
-    ]
-  },
-  {
-    "nwo": "langgenius/dify",
-    "name": "dify",
-    "author": "langgenius",
-    "description": "Production-ready platform for agentic workflow development.",
-    "scope": "starred",
-    "lastActivityAt": "2026-06-26T00:00:00.000Z",
-    "staleness": "active",
-    "researchStatus": "untracked",
-    "adoptionScore": 100,
-    "adoptionKind": "tool",
-    "reasons": [
-      "Adoption kind: tool",
-      "Primary skills: repo-discovery, skill-extraction, repo-adoption, mine-execution",
-      "Recent activity suggests the repo is still moving."
-    ],
-    "houseSkills": [
-      "repo-discovery",
-      "skill-extraction",
-      "repo-adoption",
-      "mine-execution"
-    ],
-    "capabilities": [
-      "mcp-tooling",
-      "agent-workflows",
-      "frontend-ui",
-      "ml-ai",
-      "repo-ops"
-    ]
-  },
-  {
-    "nwo": "apify/crawlee",
-    "name": "crawlee",
-    "author": "apify",
-    "description": "Crawlee—A web scraping and browser automation library for Node.js to build reliable crawlers. In JavaScript and TypeScript. Extract data for AI, LLMs, RAG, or GPTs. Download HTML, PDF, JPG, PNG, and other files from websites. Works with Puppeteer, Playwright, Cheerio, JSDOM, and raw HTTP. Both headful and headless mode. With proxy rotation.",
-    "scope": "starred",
-    "lastActivityAt": "2026-06-26T00:00:00.000Z",
-    "staleness": "active",
-    "researchStatus": "untracked",
-    "adoptionScore": 100,
-    "adoptionKind": "tool",
-    "reasons": [
-      "Adoption kind: tool",
-      "Primary skills: repo-discovery, skill-extraction, repo-adoption, mine-execution",
-      "Recent activity suggests the repo is still moving."
-    ],
-    "houseSkills": [
-      "repo-discovery",
-      "skill-extraction",
-      "repo-adoption",
-      "mine-execution"
-    ],
-    "capabilities": [
-      "developer-tooling",
-      "ml-ai",
-      "data-pipeline",
-      "repo-ops",
-      "frontend-ui"
-    ]
-  },
-  {
-    "nwo": "firecrawl/firecrawl",
-    "name": "firecrawl",
-    "author": "firecrawl",
-    "description": "The API to search, scrape, and interact with the web at scale. 🔥",
-    "scope": "starred",
-    "lastActivityAt": "2026-06-26T00:00:00.000Z",
-    "staleness": "active",
-    "researchStatus": "untracked",
-    "adoptionScore": 100,
-    "adoptionKind": "service",
-    "reasons": [
-      "Adoption kind: service",
-      "Primary skills: repo-discovery, skill-extraction, repo-adoption",
-      "Recent activity suggests the repo is still moving."
-    ],
-    "houseSkills": [
-      "repo-discovery",
-      "skill-extraction",
-      "repo-adoption"
-    ],
-    "capabilities": [
-      "agent-workflows",
-      "backend-service",
-      "ml-ai",
       "data-pipeline",
       "frontend-ui"
     ]
@@ -3174,63 +3449,6 @@
     ]
   },
   {
-    "nwo": "mvanhorn/last30days-skill",
-    "name": "last30days-skill",
-    "author": "mvanhorn",
-    "description": "AI agent skill that researches any topic across Reddit, X, YouTube, HN, Polymarket, and the web - then synthesizes a grounded summary",
-    "scope": "starred",
-    "lastActivityAt": "2026-06-26T00:00:00.000Z",
-    "staleness": "active",
-    "researchStatus": "untracked",
-    "adoptionScore": 100,
-    "adoptionKind": "tool",
-    "reasons": [
-      "Adoption kind: tool",
-      "Primary skills: repo-research, skill-extraction, repo-adoption",
-      "Recent activity suggests the repo is still moving."
-    ],
-    "houseSkills": [
-      "repo-research",
-      "skill-extraction",
-      "repo-adoption"
-    ],
-    "capabilities": [
-      "agent-workflows",
-      "research-intelligence",
-      "ml-ai"
-    ]
-  },
-  {
-    "nwo": "FlorianBruniaux/claude-code-ultimate-guide",
-    "name": "claude-code-ultimate-guide",
-    "author": "FlorianBruniaux",
-    "description": "The most comprehensive Claude Code guide: agentic workflows, hooks, skills, MCP servers, quizzes, and production-ready templates. 430K+ lines.",
-    "scope": "starred",
-    "lastActivityAt": "2026-06-26T00:00:00.000Z",
-    "staleness": "active",
-    "researchStatus": "untracked",
-    "adoptionScore": 100,
-    "adoptionKind": "template",
-    "reasons": [
-      "Adoption kind: template",
-      "Primary skills: repo-discovery, skill-extraction, repo-adoption",
-      "Recent activity suggests the repo is still moving."
-    ],
-    "houseSkills": [
-      "repo-discovery",
-      "skill-extraction",
-      "repo-adoption"
-    ],
-    "capabilities": [
-      "mcp-tooling",
-      "agent-workflows",
-      "template-scaffolding",
-      "backend-service",
-      "developer-tooling",
-      "ml-ai"
-    ]
-  },
-  {
     "nwo": "MemPalace/mempalace",
     "name": "mempalace",
     "author": "MemPalace",
@@ -3285,61 +3503,6 @@
       "research-intelligence",
       "template-scaffolding",
       "frontend-ui",
-      "ml-ai",
-      "data-pipeline"
-    ]
-  },
-  {
-    "nwo": "ag2ai/ag2",
-    "name": "ag2",
-    "author": "ag2ai",
-    "description": "AG2 (formerly AutoGen): The Open-Source AgentOS.Join us at: https://discord.gg/sNGSwQME3x",
-    "scope": "starred",
-    "lastActivityAt": "2026-06-26T00:00:00.000Z",
-    "staleness": "active",
-    "researchStatus": "untracked",
-    "adoptionScore": 100,
-    "adoptionKind": "tool",
-    "reasons": [
-      "Adoption kind: tool",
-      "Primary skills: skill-extraction, repo-adoption",
-      "Recent activity suggests the repo is still moving."
-    ],
-    "houseSkills": [
-      "skill-extraction",
-      "repo-adoption"
-    ],
-    "capabilities": [
-      "mcp-tooling",
-      "agent-workflows",
-      "ml-ai"
-    ]
-  },
-  {
-    "nwo": "Zipstack/unstract",
-    "name": "unstract",
-    "author": "Zipstack",
-    "description": "LLM-Driven Extraction of Unstructured Data — Built for API Deployments & ETL Pipeline Workflows",
-    "scope": "starred",
-    "lastActivityAt": "2026-06-26T00:00:00.000Z",
-    "staleness": "active",
-    "researchStatus": "untracked",
-    "adoptionScore": 100,
-    "adoptionKind": "tool",
-    "reasons": [
-      "Adoption kind: tool",
-      "Primary skills: repo-discovery, skill-extraction, repo-adoption",
-      "Recent activity suggests the repo is still moving."
-    ],
-    "houseSkills": [
-      "repo-discovery",
-      "skill-extraction",
-      "repo-adoption"
-    ],
-    "capabilities": [
-      "mcp-tooling",
-      "agent-workflows",
-      "backend-service",
       "ml-ai",
       "data-pipeline"
     ]
@@ -3432,32 +3595,6 @@
     ]
   },
   {
-    "nwo": "aaif-goose/goose",
-    "name": "goose",
-    "author": "aaif-goose",
-    "description": "an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM",
-    "scope": "starred",
-    "lastActivityAt": "2026-06-26T00:00:00.000Z",
-    "staleness": "active",
-    "researchStatus": "untracked",
-    "adoptionScore": 100,
-    "adoptionKind": "tool",
-    "reasons": [
-      "Adoption kind: tool",
-      "Primary skills: skill-extraction, repo-adoption",
-      "Recent activity suggests the repo is still moving."
-    ],
-    "houseSkills": [
-      "skill-extraction",
-      "repo-adoption"
-    ],
-    "capabilities": [
-      "mcp-tooling",
-      "agent-workflows",
-      "ml-ai"
-    ]
-  },
-  {
     "nwo": "punkpeye/awesome-mcp-servers",
     "name": "awesome-mcp-servers",
     "author": "punkpeye",
@@ -3480,62 +3617,6 @@
     "capabilities": [
       "mcp-tooling",
       "backend-service",
-      "ml-ai"
-    ]
-  },
-  {
-    "nwo": "huginn/huginn",
-    "name": "huginn",
-    "author": "huginn",
-    "description": "Create agents that monitor and act on your behalf.  Your agents are standing by!",
-    "scope": "starred",
-    "lastActivityAt": "2026-06-26T00:00:00.000Z",
-    "staleness": "active",
-    "researchStatus": "untracked",
-    "adoptionScore": 100,
-    "adoptionKind": "service",
-    "reasons": [
-      "Adoption kind: service",
-      "Primary skills: repo-discovery, skill-extraction, repo-adoption, mine-execution",
-      "Recent activity suggests the repo is still moving."
-    ],
-    "houseSkills": [
-      "repo-discovery",
-      "skill-extraction",
-      "repo-adoption",
-      "mine-execution"
-    ],
-    "capabilities": [
-      "agent-workflows",
-      "data-pipeline",
-      "repo-ops"
-    ]
-  },
-  {
-    "nwo": "tambo-ai/tambo",
-    "name": "tambo",
-    "author": "tambo-ai",
-    "description": "Generative UI SDK for React",
-    "scope": "starred",
-    "lastActivityAt": "2026-06-25T00:00:00.000Z",
-    "staleness": "active",
-    "researchStatus": "untracked",
-    "adoptionScore": 100,
-    "adoptionKind": "tool",
-    "reasons": [
-      "Adoption kind: tool",
-      "Primary skills: repo-discovery, skill-extraction, repo-adoption",
-      "Recent activity suggests the repo is still moving."
-    ],
-    "houseSkills": [
-      "repo-discovery",
-      "skill-extraction",
-      "repo-adoption"
-    ],
-    "capabilities": [
-      "agent-workflows",
-      "frontend-ui",
-      "developer-tooling",
       "ml-ai"
     ]
   },
@@ -3564,33 +3645,6 @@
       "agent-workflows",
       "backend-service",
       "frontend-ui"
-    ]
-  },
-  {
-    "nwo": "recharts/recharts",
-    "name": "recharts",
-    "author": "recharts",
-    "description": "Redefined chart library built with React and D3",
-    "scope": "starred",
-    "lastActivityAt": "2026-06-25T00:00:00.000Z",
-    "staleness": "active",
-    "researchStatus": "untracked",
-    "adoptionScore": 100,
-    "adoptionKind": "tool",
-    "reasons": [
-      "Adoption kind: tool",
-      "Primary skills: repo-discovery, skill-extraction, repo-adoption",
-      "Recent activity suggests the repo is still moving."
-    ],
-    "houseSkills": [
-      "repo-discovery",
-      "skill-extraction",
-      "repo-adoption"
-    ],
-    "capabilities": [
-      "frontend-ui",
-      "developer-tooling",
-      "data-pipeline"
     ]
   },
   {
@@ -3703,34 +3757,6 @@
     ]
   },
   {
-    "nwo": "watson-developer-cloud/node-sdk",
-    "name": "node-sdk",
-    "author": "watson-developer-cloud",
-    "description": ":comet: Node.js library to access IBM Watson services.",
-    "scope": "starred",
-    "lastActivityAt": "2026-06-24T00:00:00.000Z",
-    "staleness": "active",
-    "researchStatus": "untracked",
-    "adoptionScore": 100,
-    "adoptionKind": "template",
-    "reasons": [
-      "Adoption kind: template",
-      "Primary skills: repo-discovery, skill-extraction, repo-adoption",
-      "Recent activity suggests the repo is still moving."
-    ],
-    "houseSkills": [
-      "repo-discovery",
-      "skill-extraction",
-      "repo-adoption"
-    ],
-    "capabilities": [
-      "template-scaffolding",
-      "backend-service",
-      "developer-tooling",
-      "frontend-ui"
-    ]
-  },
-  {
     "nwo": "mikedh/trimesh",
     "name": "trimesh",
     "author": "mikedh",
@@ -3783,32 +3809,6 @@
       "backend-service",
       "ml-ai",
       "repo-ops"
-    ]
-  },
-  {
-    "nwo": "public-apis/public-apis",
-    "name": "public-apis",
-    "author": "public-apis",
-    "description": "A collective list of free APIs",
-    "scope": "starred",
-    "lastActivityAt": "2026-06-24T00:00:00.000Z",
-    "staleness": "active",
-    "researchStatus": "untracked",
-    "adoptionScore": 100,
-    "adoptionKind": "service",
-    "reasons": [
-      "Adoption kind: service",
-      "Primary skills: repo-discovery, repo-adoption",
-      "Recent activity suggests the repo is still moving."
-    ],
-    "houseSkills": [
-      "repo-discovery",
-      "repo-adoption"
-    ],
-    "capabilities": [
-      "backend-service",
-      "data-pipeline",
-      "ml-ai"
     ]
   },
   {
@@ -4614,33 +4614,6 @@
     ]
   },
   {
-    "nwo": "openai/openai-cua-sample-app",
-    "name": "openai-cua-sample-app",
-    "author": "openai",
-    "description": "Learn how to use CUA (our Computer Using Agent) via the API on multiple computer environments.",
-    "scope": "starred",
-    "lastActivityAt": "2026-03-30T00:00:00.000Z",
-    "staleness": "active",
-    "researchStatus": "untracked",
-    "adoptionScore": 100,
-    "adoptionKind": "service",
-    "reasons": [
-      "Adoption kind: service",
-      "Primary skills: repo-discovery, skill-extraction, repo-adoption",
-      "Recent activity suggests the repo is still moving."
-    ],
-    "houseSkills": [
-      "repo-discovery",
-      "skill-extraction",
-      "repo-adoption"
-    ],
-    "capabilities": [
-      "agent-workflows",
-      "backend-service",
-      "frontend-ui"
-    ]
-  },
-  {
     "nwo": "plandex-ai/plandex",
     "name": "plandex",
     "author": "plandex-ai",
@@ -4726,6 +4699,31 @@
     ]
   },
   {
+    "nwo": "ollama/ollama",
+    "name": "ollama",
+    "author": "ollama",
+    "description": "Get up and running with Kimi-K2.6, GLM-5.1, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
+    "scope": "starred",
+    "lastActivityAt": "2026-06-28T00:00:00.000Z",
+    "staleness": "active",
+    "researchStatus": "untracked",
+    "adoptionScore": 99,
+    "adoptionKind": "template",
+    "reasons": [
+      "Adoption kind: template",
+      "Primary skills: skill-extraction, repo-adoption",
+      "Recent activity suggests the repo is still moving."
+    ],
+    "houseSkills": [
+      "skill-extraction",
+      "repo-adoption"
+    ],
+    "capabilities": [
+      "template-scaffolding",
+      "ml-ai"
+    ]
+  },
+  {
     "nwo": "genkit-ai/genkit",
     "name": "genkit",
     "author": "genkit-ai",
@@ -4754,37 +4752,12 @@
     ]
   },
   {
-    "nwo": "ollama/ollama",
-    "name": "ollama",
-    "author": "ollama",
-    "description": "Get up and running with Kimi-K2.6, GLM-5.1, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models.",
-    "scope": "starred",
-    "lastActivityAt": "2026-06-27T00:00:00.000Z",
-    "staleness": "active",
-    "researchStatus": "untracked",
-    "adoptionScore": 99,
-    "adoptionKind": "template",
-    "reasons": [
-      "Adoption kind: template",
-      "Primary skills: skill-extraction, repo-adoption",
-      "Recent activity suggests the repo is still moving."
-    ],
-    "houseSkills": [
-      "skill-extraction",
-      "repo-adoption"
-    ],
-    "capabilities": [
-      "template-scaffolding",
-      "ml-ai"
-    ]
-  },
-  {
     "nwo": "immich-app/immich",
     "name": "immich",
     "author": "immich-app",
     "description": "High performance self-hosted photo and video management solution.",
     "scope": "starred",
-    "lastActivityAt": "2026-06-26T00:00:00.000Z",
+    "lastActivityAt": "2026-06-27T00:00:00.000Z",
     "staleness": "active",
     "researchStatus": "untracked",
     "adoptionScore": 99,
@@ -4810,7 +4783,7 @@
     "author": "ggml-org",
     "description": "LLM inference in C/C++",
     "scope": "starred",
-    "lastActivityAt": "2026-06-26T00:00:00.000Z",
+    "lastActivityAt": "2026-06-27T00:00:00.000Z",
     "staleness": "active",
     "researchStatus": "untracked",
     "adoptionScore": 99,
@@ -5105,6 +5078,135 @@
     ]
   },
   {
+    "nwo": "ultralytics/ultralytics",
+    "name": "ultralytics",
+    "author": "ultralytics",
+    "description": "Ultralytics YOLO 🚀",
+    "scope": "starred",
+    "lastActivityAt": "2026-06-28T00:00:00.000Z",
+    "staleness": "active",
+    "researchStatus": "untracked",
+    "adoptionScore": 97,
+    "adoptionKind": "tool",
+    "reasons": [
+      "Adoption kind: tool",
+      "Primary skills: repo-discovery, skill-extraction, repo-adoption",
+      "Recent activity suggests the repo is still moving."
+    ],
+    "houseSkills": [
+      "repo-discovery",
+      "skill-extraction",
+      "repo-adoption"
+    ],
+    "capabilities": [
+      "developer-tooling",
+      "ml-ai"
+    ]
+  },
+  {
+    "nwo": "keras-team/keras",
+    "name": "keras",
+    "author": "keras-team",
+    "description": "Deep Learning for humans",
+    "scope": "starred",
+    "lastActivityAt": "2026-06-28T00:00:00.000Z",
+    "staleness": "active",
+    "researchStatus": "untracked",
+    "adoptionScore": 97,
+    "adoptionKind": "tool",
+    "reasons": [
+      "Adoption kind: tool",
+      "Primary skills: repo-discovery, repo-adoption",
+      "Recent activity suggests the repo is still moving."
+    ],
+    "houseSkills": [
+      "repo-discovery",
+      "repo-adoption"
+    ],
+    "capabilities": [
+      "ml-ai",
+      "data-pipeline"
+    ]
+  },
+  {
+    "nwo": "chakra-ui/chakra-ui",
+    "name": "chakra-ui",
+    "author": "chakra-ui",
+    "description": "Chakra UI is a component system for building SaaS products with speed ⚡️",
+    "scope": "starred",
+    "lastActivityAt": "2026-06-27T00:00:00.000Z",
+    "staleness": "active",
+    "researchStatus": "untracked",
+    "adoptionScore": 97,
+    "adoptionKind": "tool",
+    "reasons": [
+      "Adoption kind: tool",
+      "Primary skills: repo-discovery, skill-extraction, repo-adoption",
+      "Recent activity suggests the repo is still moving."
+    ],
+    "houseSkills": [
+      "repo-discovery",
+      "skill-extraction",
+      "repo-adoption"
+    ],
+    "capabilities": [
+      "frontend-ui",
+      "developer-tooling"
+    ]
+  },
+  {
+    "nwo": "postcss/postcss",
+    "name": "postcss",
+    "author": "postcss",
+    "description": "Transforming styles with JS plugins",
+    "scope": "starred",
+    "lastActivityAt": "2026-06-27T00:00:00.000Z",
+    "staleness": "active",
+    "researchStatus": "untracked",
+    "adoptionScore": 97,
+    "adoptionKind": "tool",
+    "reasons": [
+      "Adoption kind: tool",
+      "Primary skills: repo-discovery, skill-extraction, repo-adoption",
+      "Recent activity suggests the repo is still moving."
+    ],
+    "houseSkills": [
+      "repo-discovery",
+      "skill-extraction",
+      "repo-adoption"
+    ],
+    "capabilities": [
+      "developer-tooling",
+      "frontend-ui"
+    ]
+  },
+  {
+    "nwo": "Blaizzy/mlx-audio",
+    "name": "mlx-audio",
+    "author": "Blaizzy",
+    "description": "A text-to-speech (TTS), speech-to-text (STT) and speech-to-speech (STS) library built on Apple's MLX framework, providing efficient speech analysis on Apple Silicon.",
+    "scope": "starred",
+    "lastActivityAt": "2026-06-27T00:00:00.000Z",
+    "staleness": "active",
+    "researchStatus": "untracked",
+    "adoptionScore": 97,
+    "adoptionKind": "tool",
+    "reasons": [
+      "Adoption kind: tool",
+      "Primary skills: repo-discovery, skill-extraction, repo-adoption",
+      "Recent activity suggests the repo is still moving."
+    ],
+    "houseSkills": [
+      "repo-discovery",
+      "skill-extraction",
+      "repo-adoption"
+    ],
+    "capabilities": [
+      "developer-tooling",
+      "ml-ai"
+    ]
+  },
+  {
     "nwo": "OpenHands/OpenHands",
     "name": "OpenHands",
     "author": "OpenHands",
@@ -5133,10 +5235,60 @@
     ]
   },
   {
-    "nwo": "ultralytics/ultralytics",
-    "name": "ultralytics",
-    "author": "ultralytics",
-    "description": "Ultralytics YOLO 🚀",
+    "nwo": "pytorch/audio",
+    "name": "audio",
+    "author": "pytorch",
+    "description": "Data manipulation and transformation for audio signal processing, powered by PyTorch",
+    "scope": "starred",
+    "lastActivityAt": "2026-06-27T00:00:00.000Z",
+    "staleness": "active",
+    "researchStatus": "untracked",
+    "adoptionScore": 97,
+    "adoptionKind": "tool",
+    "reasons": [
+      "Adoption kind: tool",
+      "Primary skills: repo-discovery, repo-adoption",
+      "Recent activity suggests the repo is still moving."
+    ],
+    "houseSkills": [
+      "repo-discovery",
+      "repo-adoption"
+    ],
+    "capabilities": [
+      "ml-ai",
+      "data-pipeline"
+    ]
+  },
+  {
+    "nwo": "tdrussell/diffusion-pipe",
+    "name": "diffusion-pipe",
+    "author": "tdrussell",
+    "description": "A pipeline parallel training script for diffusion models.",
+    "scope": "starred",
+    "lastActivityAt": "2026-06-27T00:00:00.000Z",
+    "staleness": "active",
+    "researchStatus": "untracked",
+    "adoptionScore": 97,
+    "adoptionKind": "tool",
+    "reasons": [
+      "Adoption kind: tool",
+      "Primary skills: repo-discovery, repo-adoption",
+      "Recent activity suggests the repo is still moving."
+    ],
+    "houseSkills": [
+      "repo-discovery",
+      "repo-adoption"
+    ],
+    "capabilities": [
+      "ml-ai",
+      "data-pipeline"
+    ]
+  },
+  {
+    "nwo": "Comfy-Org/ComfyUI-Manager",
+    "name": "ComfyUI-Manager",
+    "author": "Comfy-Org",
+    "description": "ComfyUI-Manager is an extension designed to enhance the usability of ComfyUI. It offers management functions to install, remove, disable, and enable various custom nodes of ComfyUI. Furthermore, this extension provides a hub feature and convenience functions to access a wide range of information within ComfyUI.",
     "scope": "starred",
     "lastActivityAt": "2026-06-27T00:00:00.000Z",
     "staleness": "active",
@@ -5156,6 +5308,31 @@
     "capabilities": [
       "developer-tooling",
       "ml-ai"
+    ]
+  },
+  {
+    "nwo": "harry0703/MoneyPrinterTurbo",
+    "name": "MoneyPrinterTurbo",
+    "author": "harry0703",
+    "description": "利用AI大模型，一键生成高清短视频 Generate short videos with one click using AI LLM.",
+    "scope": "starred",
+    "lastActivityAt": "2026-06-27T00:00:00.000Z",
+    "staleness": "active",
+    "researchStatus": "untracked",
+    "adoptionScore": 97,
+    "adoptionKind": "tool",
+    "reasons": [
+      "Adoption kind: tool",
+      "Primary skills: repo-adoption, mine-execution",
+      "Recent activity suggests the repo is still moving."
+    ],
+    "houseSkills": [
+      "repo-adoption",
+      "mine-execution"
+    ],
+    "capabilities": [
+      "ml-ai",
+      "repo-ops"
     ]
   },
   {
@@ -5184,12 +5361,12 @@
     ]
   },
   {
-    "nwo": "chakra-ui/chakra-ui",
-    "name": "chakra-ui",
-    "author": "chakra-ui",
-    "description": "Chakra UI is a component system for building SaaS products with speed ⚡️",
+    "nwo": "mui/material-ui",
+    "name": "material-ui",
+    "author": "mui",
+    "description": "Material UI: Comprehensive React component library that implements Google's Material Design. Free forever.",
     "scope": "starred",
-    "lastActivityAt": "2026-06-26T00:00:00.000Z",
+    "lastActivityAt": "2026-06-27T00:00:00.000Z",
     "staleness": "active",
     "researchStatus": "untracked",
     "adoptionScore": 97,
@@ -5207,6 +5384,57 @@
     "capabilities": [
       "frontend-ui",
       "developer-tooling"
+    ]
+  },
+  {
+    "nwo": "zloirock/core-js",
+    "name": "core-js",
+    "author": "zloirock",
+    "description": "Standard Library",
+    "scope": "starred",
+    "lastActivityAt": "2026-06-27T00:00:00.000Z",
+    "staleness": "active",
+    "researchStatus": "untracked",
+    "adoptionScore": 97,
+    "adoptionKind": "tool",
+    "reasons": [
+      "Adoption kind: tool",
+      "Primary skills: repo-discovery, skill-extraction, repo-adoption",
+      "Recent activity suggests the repo is still moving."
+    ],
+    "houseSkills": [
+      "repo-discovery",
+      "skill-extraction",
+      "repo-adoption"
+    ],
+    "capabilities": [
+      "frontend-ui",
+      "developer-tooling"
+    ]
+  },
+  {
+    "nwo": "github/github-mcp-server",
+    "name": "github-mcp-server",
+    "author": "github",
+    "description": "GitHub's official MCP Server",
+    "scope": "starred",
+    "lastActivityAt": "2026-06-27T00:00:00.000Z",
+    "staleness": "active",
+    "researchStatus": "untracked",
+    "adoptionScore": 97,
+    "adoptionKind": "tool",
+    "reasons": [
+      "Adoption kind: tool",
+      "Primary skills: skill-extraction, repo-adoption",
+      "Recent activity suggests the repo is still moving."
+    ],
+    "houseSkills": [
+      "skill-extraction",
+      "repo-adoption"
+    ],
+    "capabilities": [
+      "mcp-tooling",
+      "backend-service"
     ]
   },
   {
@@ -5260,31 +5488,6 @@
     ]
   },
   {
-    "nwo": "pytorch/audio",
-    "name": "audio",
-    "author": "pytorch",
-    "description": "Data manipulation and transformation for audio signal processing, powered by PyTorch",
-    "scope": "starred",
-    "lastActivityAt": "2026-06-26T00:00:00.000Z",
-    "staleness": "active",
-    "researchStatus": "untracked",
-    "adoptionScore": 97,
-    "adoptionKind": "tool",
-    "reasons": [
-      "Adoption kind: tool",
-      "Primary skills: repo-discovery, repo-adoption",
-      "Recent activity suggests the repo is still moving."
-    ],
-    "houseSkills": [
-      "repo-discovery",
-      "repo-adoption"
-    ],
-    "capabilities": [
-      "ml-ai",
-      "data-pipeline"
-    ]
-  },
-  {
     "nwo": "microsoft/TRELLIS",
     "name": "TRELLIS",
     "author": "microsoft",
@@ -5307,57 +5510,6 @@
     "capabilities": [
       "research-intelligence",
       "ml-ai"
-    ]
-  },
-  {
-    "nwo": "Comfy-Org/ComfyUI-Manager",
-    "name": "ComfyUI-Manager",
-    "author": "Comfy-Org",
-    "description": "ComfyUI-Manager is an extension designed to enhance the usability of ComfyUI. It offers management functions to install, remove, disable, and enable various custom nodes of ComfyUI. Furthermore, this extension provides a hub feature and convenience functions to access a wide range of information within ComfyUI.",
-    "scope": "starred",
-    "lastActivityAt": "2026-06-26T00:00:00.000Z",
-    "staleness": "active",
-    "researchStatus": "untracked",
-    "adoptionScore": 97,
-    "adoptionKind": "tool",
-    "reasons": [
-      "Adoption kind: tool",
-      "Primary skills: repo-discovery, skill-extraction, repo-adoption",
-      "Recent activity suggests the repo is still moving."
-    ],
-    "houseSkills": [
-      "repo-discovery",
-      "skill-extraction",
-      "repo-adoption"
-    ],
-    "capabilities": [
-      "developer-tooling",
-      "ml-ai"
-    ]
-  },
-  {
-    "nwo": "harry0703/MoneyPrinterTurbo",
-    "name": "MoneyPrinterTurbo",
-    "author": "harry0703",
-    "description": "利用AI大模型，一键生成高清短视频 Generate short videos with one click using AI LLM.",
-    "scope": "starred",
-    "lastActivityAt": "2026-06-26T00:00:00.000Z",
-    "staleness": "active",
-    "researchStatus": "untracked",
-    "adoptionScore": 97,
-    "adoptionKind": "tool",
-    "reasons": [
-      "Adoption kind: tool",
-      "Primary skills: repo-adoption, mine-execution",
-      "Recent activity suggests the repo is still moving."
-    ],
-    "houseSkills": [
-      "repo-adoption",
-      "mine-execution"
-    ],
-    "capabilities": [
-      "ml-ai",
-      "repo-ops"
     ]
   },
   {
@@ -5411,31 +5563,6 @@
     ]
   },
   {
-    "nwo": "keras-team/keras",
-    "name": "keras",
-    "author": "keras-team",
-    "description": "Deep Learning for humans",
-    "scope": "starred",
-    "lastActivityAt": "2026-06-26T00:00:00.000Z",
-    "staleness": "active",
-    "researchStatus": "untracked",
-    "adoptionScore": 97,
-    "adoptionKind": "tool",
-    "reasons": [
-      "Adoption kind: tool",
-      "Primary skills: repo-discovery, repo-adoption",
-      "Recent activity suggests the repo is still moving."
-    ],
-    "houseSkills": [
-      "repo-discovery",
-      "repo-adoption"
-    ],
-    "capabilities": [
-      "ml-ai",
-      "data-pipeline"
-    ]
-  },
-  {
     "nwo": "camel-ai/camel",
     "name": "camel",
     "author": "camel-ai",
@@ -5458,83 +5585,6 @@
     "capabilities": [
       "agent-workflows",
       "ml-ai"
-    ]
-  },
-  {
-    "nwo": "mui/material-ui",
-    "name": "material-ui",
-    "author": "mui",
-    "description": "Material UI: Comprehensive React component library that implements Google's Material Design. Free forever.",
-    "scope": "starred",
-    "lastActivityAt": "2026-06-26T00:00:00.000Z",
-    "staleness": "active",
-    "researchStatus": "untracked",
-    "adoptionScore": 97,
-    "adoptionKind": "tool",
-    "reasons": [
-      "Adoption kind: tool",
-      "Primary skills: repo-discovery, skill-extraction, repo-adoption",
-      "Recent activity suggests the repo is still moving."
-    ],
-    "houseSkills": [
-      "repo-discovery",
-      "skill-extraction",
-      "repo-adoption"
-    ],
-    "capabilities": [
-      "frontend-ui",
-      "developer-tooling"
-    ]
-  },
-  {
-    "nwo": "zloirock/core-js",
-    "name": "core-js",
-    "author": "zloirock",
-    "description": "Standard Library",
-    "scope": "starred",
-    "lastActivityAt": "2026-06-26T00:00:00.000Z",
-    "staleness": "active",
-    "researchStatus": "untracked",
-    "adoptionScore": 97,
-    "adoptionKind": "tool",
-    "reasons": [
-      "Adoption kind: tool",
-      "Primary skills: repo-discovery, skill-extraction, repo-adoption",
-      "Recent activity suggests the repo is still moving."
-    ],
-    "houseSkills": [
-      "repo-discovery",
-      "skill-extraction",
-      "repo-adoption"
-    ],
-    "capabilities": [
-      "frontend-ui",
-      "developer-tooling"
-    ]
-  },
-  {
-    "nwo": "github/github-mcp-server",
-    "name": "github-mcp-server",
-    "author": "github",
-    "description": "GitHub's official MCP Server",
-    "scope": "starred",
-    "lastActivityAt": "2026-06-26T00:00:00.000Z",
-    "staleness": "active",
-    "researchStatus": "untracked",
-    "adoptionScore": 97,
-    "adoptionKind": "tool",
-    "reasons": [
-      "Adoption kind: tool",
-      "Primary skills: skill-extraction, repo-adoption",
-      "Recent activity suggests the repo is still moving."
-    ],
-    "houseSkills": [
-      "skill-extraction",
-      "repo-adoption"
-    ],
-    "capabilities": [
-      "mcp-tooling",
-      "backend-service"
     ]
   },
   {
@@ -5590,32 +5640,6 @@
     ]
   },
   {
-    "nwo": "postcss/postcss",
-    "name": "postcss",
-    "author": "postcss",
-    "description": "Transforming styles with JS plugins",
-    "scope": "starred",
-    "lastActivityAt": "2026-06-25T00:00:00.000Z",
-    "staleness": "active",
-    "researchStatus": "untracked",
-    "adoptionScore": 97,
-    "adoptionKind": "tool",
-    "reasons": [
-      "Adoption kind: tool",
-      "Primary skills: repo-discovery, skill-extraction, repo-adoption",
-      "Recent activity suggests the repo is still moving."
-    ],
-    "houseSkills": [
-      "repo-discovery",
-      "skill-extraction",
-      "repo-adoption"
-    ],
-    "capabilities": [
-      "developer-tooling",
-      "frontend-ui"
-    ]
-  },
-  {
     "nwo": "vercel/satori",
     "name": "satori",
     "author": "vercel",
@@ -5639,32 +5663,6 @@
     "capabilities": [
       "developer-tooling",
       "frontend-ui"
-    ]
-  },
-  {
-    "nwo": "Blaizzy/mlx-audio",
-    "name": "mlx-audio",
-    "author": "Blaizzy",
-    "description": "A text-to-speech (TTS), speech-to-text (STT) and speech-to-speech (STS) library built on Apple's MLX framework, providing efficient speech analysis on Apple Silicon.",
-    "scope": "starred",
-    "lastActivityAt": "2026-06-25T00:00:00.000Z",
-    "staleness": "active",
-    "researchStatus": "untracked",
-    "adoptionScore": 97,
-    "adoptionKind": "tool",
-    "reasons": [
-      "Adoption kind: tool",
-      "Primary skills: repo-discovery, skill-extraction, repo-adoption",
-      "Recent activity suggests the repo is still moving."
-    ],
-    "houseSkills": [
-      "repo-discovery",
-      "skill-extraction",
-      "repo-adoption"
-    ],
-    "capabilities": [
-      "developer-tooling",
-      "ml-ai"
     ]
   },
   {
@@ -5767,31 +5765,6 @@
     "capabilities": [
       "research-intelligence",
       "ml-ai"
-    ]
-  },
-  {
-    "nwo": "tdrussell/diffusion-pipe",
-    "name": "diffusion-pipe",
-    "author": "tdrussell",
-    "description": "A pipeline parallel training script for diffusion models.",
-    "scope": "starred",
-    "lastActivityAt": "2026-06-24T00:00:00.000Z",
-    "staleness": "active",
-    "researchStatus": "untracked",
-    "adoptionScore": 97,
-    "adoptionKind": "tool",
-    "reasons": [
-      "Adoption kind: tool",
-      "Primary skills: repo-discovery, repo-adoption",
-      "Recent activity suggests the repo is still moving."
-    ],
-    "houseSkills": [
-      "repo-discovery",
-      "repo-adoption"
-    ],
-    "capabilities": [
-      "ml-ai",
-      "data-pipeline"
     ]
   },
   {
@@ -6699,6 +6672,31 @@
     ]
   },
   {
+    "nwo": "google-ai-edge/mediapipe",
+    "name": "mediapipe",
+    "author": "google-ai-edge",
+    "description": "Cross-platform, customizable ML solutions for live and streaming media.",
+    "scope": "starred",
+    "lastActivityAt": "2026-06-27T00:00:00.000Z",
+    "staleness": "active",
+    "researchStatus": "untracked",
+    "adoptionScore": 95,
+    "adoptionKind": "service",
+    "reasons": [
+      "Adoption kind: service",
+      "Primary skills: repo-discovery, repo-adoption",
+      "Recent activity suggests the repo is still moving."
+    ],
+    "houseSkills": [
+      "repo-discovery",
+      "repo-adoption"
+    ],
+    "capabilities": [
+      "ml-ai",
+      "data-pipeline"
+    ]
+  },
+  {
     "nwo": "Comfy-Org/ComfyUI",
     "name": "ComfyUI",
     "author": "Comfy-Org",
@@ -6723,28 +6721,27 @@
     ]
   },
   {
-    "nwo": "google-ai-edge/mediapipe",
-    "name": "mediapipe",
-    "author": "google-ai-edge",
-    "description": "Cross-platform, customizable ML solutions for live and streaming media.",
+    "nwo": "livekit/livekit",
+    "name": "livekit",
+    "author": "livekit",
+    "description": "End-to-end realtime stack for connecting humans and AI",
     "scope": "starred",
-    "lastActivityAt": "2026-06-26T00:00:00.000Z",
+    "lastActivityAt": "2026-06-27T00:00:00.000Z",
     "staleness": "active",
     "researchStatus": "untracked",
     "adoptionScore": 95,
     "adoptionKind": "service",
     "reasons": [
       "Adoption kind: service",
-      "Primary skills: repo-discovery, repo-adoption",
+      "Primary skills: repo-adoption",
       "Recent activity suggests the repo is still moving."
     ],
     "houseSkills": [
-      "repo-discovery",
       "repo-adoption"
     ],
     "capabilities": [
-      "ml-ai",
-      "data-pipeline"
+      "backend-service",
+      "ml-ai"
     ]
   },
   {
@@ -6776,30 +6773,6 @@
     "name": "modal-examples",
     "author": "modal-labs",
     "description": "Examples of programs built using Modal",
-    "scope": "starred",
-    "lastActivityAt": "2026-06-26T00:00:00.000Z",
-    "staleness": "active",
-    "researchStatus": "untracked",
-    "adoptionScore": 95,
-    "adoptionKind": "service",
-    "reasons": [
-      "Adoption kind: service",
-      "Primary skills: repo-adoption",
-      "Recent activity suggests the repo is still moving."
-    ],
-    "houseSkills": [
-      "repo-adoption"
-    ],
-    "capabilities": [
-      "backend-service",
-      "ml-ai"
-    ]
-  },
-  {
-    "nwo": "livekit/livekit",
-    "name": "livekit",
-    "author": "livekit",
-    "description": "End-to-end realtime stack for connecting humans and AI",
     "scope": "starred",
     "lastActivityAt": "2026-06-26T00:00:00.000Z",
     "staleness": "active",
@@ -7288,6 +7261,87 @@
     ]
   },
   {
+    "nwo": "unslothai/unsloth",
+    "name": "unsloth",
+    "author": "unslothai",
+    "description": "Unsloth Studio is a web UI for training and running open models like Gemma 4, Qwen3.6, DeepSeek, gpt-oss locally.",
+    "scope": "starred",
+    "lastActivityAt": "2026-06-28T00:00:00.000Z",
+    "staleness": "active",
+    "researchStatus": "untracked",
+    "adoptionScore": 94,
+    "adoptionKind": "house",
+    "reasons": [
+      "Adoption kind: house",
+      "Primary skills: repo-discovery, skill-extraction, repo-adoption",
+      "Recent activity suggests the repo is still moving."
+    ],
+    "houseSkills": [
+      "repo-discovery",
+      "skill-extraction",
+      "repo-adoption"
+    ],
+    "capabilities": [
+      "agent-workflows",
+      "frontend-ui",
+      "ml-ai"
+    ]
+  },
+  {
+    "nwo": "e2b-dev/E2B",
+    "name": "E2B",
+    "author": "e2b-dev",
+    "description": "Open-source, secure environment with real-world tools for enterprise-grade agents.",
+    "scope": "starred",
+    "lastActivityAt": "2026-06-27T00:00:00.000Z",
+    "staleness": "active",
+    "researchStatus": "untracked",
+    "adoptionScore": 94,
+    "adoptionKind": "house",
+    "reasons": [
+      "Adoption kind: house",
+      "Primary skills: repo-discovery, skill-extraction, repo-adoption",
+      "Recent activity suggests the repo is still moving."
+    ],
+    "houseSkills": [
+      "repo-discovery",
+      "skill-extraction",
+      "repo-adoption"
+    ],
+    "capabilities": [
+      "agent-workflows",
+      "frontend-ui",
+      "ml-ai"
+    ]
+  },
+  {
+    "nwo": "InternLM/xtuner",
+    "name": "xtuner",
+    "author": "InternLM",
+    "description": "A Next-Generation Training Engine Built for Ultra-Large MoE Models",
+    "scope": "starred",
+    "lastActivityAt": "2026-06-27T00:00:00.000Z",
+    "staleness": "active",
+    "researchStatus": "untracked",
+    "adoptionScore": 94,
+    "adoptionKind": "house",
+    "reasons": [
+      "Adoption kind: house",
+      "Primary skills: repo-discovery, skill-extraction, repo-adoption",
+      "Recent activity suggests the repo is still moving."
+    ],
+    "houseSkills": [
+      "repo-discovery",
+      "skill-extraction",
+      "repo-adoption"
+    ],
+    "capabilities": [
+      "agent-workflows",
+      "frontend-ui",
+      "ml-ai"
+    ]
+  },
+  {
     "nwo": "reflex-dev/reflex",
     "name": "reflex",
     "author": "reflex-dev",
@@ -7367,57 +7421,30 @@
     ]
   },
   {
-    "nwo": "e2b-dev/E2B",
-    "name": "E2B",
-    "author": "e2b-dev",
-    "description": "Open-source, secure environment with real-world tools for enterprise-grade agents.",
+    "nwo": "0xPlaygrounds/rig",
+    "name": "rig",
+    "author": "0xPlaygrounds",
+    "description": "⚙️🦀 Build modular and scalable LLM Applications in Rust",
     "scope": "starred",
-    "lastActivityAt": "2026-06-26T00:00:00.000Z",
+    "lastActivityAt": "2026-06-27T00:00:00.000Z",
     "staleness": "active",
     "researchStatus": "untracked",
     "adoptionScore": 94,
     "adoptionKind": "house",
     "reasons": [
       "Adoption kind: house",
-      "Primary skills: repo-discovery, skill-extraction, repo-adoption",
+      "Primary skills: skill-extraction, repo-adoption, mine-execution",
       "Recent activity suggests the repo is still moving."
     ],
     "houseSkills": [
-      "repo-discovery",
       "skill-extraction",
-      "repo-adoption"
+      "repo-adoption",
+      "mine-execution"
     ],
     "capabilities": [
       "agent-workflows",
-      "frontend-ui",
-      "ml-ai"
-    ]
-  },
-  {
-    "nwo": "InternLM/xtuner",
-    "name": "xtuner",
-    "author": "InternLM",
-    "description": "A Next-Generation Training Engine Built for Ultra-Large MoE Models",
-    "scope": "starred",
-    "lastActivityAt": "2026-06-26T00:00:00.000Z",
-    "staleness": "active",
-    "researchStatus": "untracked",
-    "adoptionScore": 94,
-    "adoptionKind": "house",
-    "reasons": [
-      "Adoption kind: house",
-      "Primary skills: repo-discovery, skill-extraction, repo-adoption",
-      "Recent activity suggests the repo is still moving."
-    ],
-    "houseSkills": [
-      "repo-discovery",
-      "skill-extraction",
-      "repo-adoption"
-    ],
-    "capabilities": [
-      "agent-workflows",
-      "frontend-ui",
-      "ml-ai"
+      "ml-ai",
+      "repo-ops"
     ]
   },
   {
@@ -7445,60 +7472,6 @@
       "agent-workflows",
       "ml-ai",
       "data-pipeline"
-    ]
-  },
-  {
-    "nwo": "unslothai/unsloth",
-    "name": "unsloth",
-    "author": "unslothai",
-    "description": "Unsloth Studio is a web UI for training and running open models like Gemma 4, Qwen3.6, DeepSeek, gpt-oss locally.",
-    "scope": "starred",
-    "lastActivityAt": "2026-06-26T00:00:00.000Z",
-    "staleness": "active",
-    "researchStatus": "untracked",
-    "adoptionScore": 94,
-    "adoptionKind": "house",
-    "reasons": [
-      "Adoption kind: house",
-      "Primary skills: repo-discovery, skill-extraction, repo-adoption",
-      "Recent activity suggests the repo is still moving."
-    ],
-    "houseSkills": [
-      "repo-discovery",
-      "skill-extraction",
-      "repo-adoption"
-    ],
-    "capabilities": [
-      "agent-workflows",
-      "frontend-ui",
-      "ml-ai"
-    ]
-  },
-  {
-    "nwo": "0xPlaygrounds/rig",
-    "name": "rig",
-    "author": "0xPlaygrounds",
-    "description": "⚙️🦀 Build modular and scalable LLM Applications in Rust",
-    "scope": "starred",
-    "lastActivityAt": "2026-06-26T00:00:00.000Z",
-    "staleness": "active",
-    "researchStatus": "untracked",
-    "adoptionScore": 94,
-    "adoptionKind": "house",
-    "reasons": [
-      "Adoption kind: house",
-      "Primary skills: skill-extraction, repo-adoption, mine-execution",
-      "Recent activity suggests the repo is still moving."
-    ],
-    "houseSkills": [
-      "skill-extraction",
-      "repo-adoption",
-      "mine-execution"
-    ],
-    "capabilities": [
-      "agent-workflows",
-      "ml-ai",
-      "repo-ops"
     ]
   },
   {
@@ -7742,7 +7715,7 @@
     "author": "SeldonIO",
     "description": "An inference server for your machine learning models, including support for multiple frameworks, multi-model serving and more",
     "scope": "starred",
-    "lastActivityAt": "2026-06-26T00:00:00.000Z",
+    "lastActivityAt": "2026-06-27T00:00:00.000Z",
     "staleness": "active",
     "researchStatus": "untracked",
     "adoptionScore": 93,
@@ -7939,6 +7912,33 @@
     ]
   },
   {
+    "nwo": "openai/openai-cua-sample-app",
+    "name": "openai-cua-sample-app",
+    "author": "openai",
+    "description": "Learn how to use CUA (our Computer Using Agent) via the API on multiple computer environments.",
+    "scope": "starred",
+    "lastActivityAt": "2026-03-30T00:00:00.000Z",
+    "staleness": "watch",
+    "researchStatus": "untracked",
+    "adoptionScore": 93,
+    "adoptionKind": "service",
+    "reasons": [
+      "Adoption kind: service",
+      "Primary skills: repo-discovery, skill-extraction, repo-adoption",
+      "Medium-term activity suggests this repo should stay on the watchlist."
+    ],
+    "houseSkills": [
+      "repo-discovery",
+      "skill-extraction",
+      "repo-adoption"
+    ],
+    "capabilities": [
+      "agent-workflows",
+      "backend-service",
+      "frontend-ui"
+    ]
+  },
+  {
     "nwo": "nilsherzig/LLocalSearch",
     "name": "LLocalSearch",
     "author": "nilsherzig",
@@ -8044,10 +8044,152 @@
     ]
   },
   {
+    "nwo": "huggingface/transformers",
+    "name": "transformers",
+    "author": "huggingface",
+    "description": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
+    "scope": "starred",
+    "lastActivityAt": "2026-06-28T00:00:00.000Z",
+    "staleness": "active",
+    "researchStatus": "untracked",
+    "adoptionScore": 92,
+    "adoptionKind": "tool",
+    "reasons": [
+      "Adoption kind: tool",
+      "Primary skills: repo-adoption",
+      "Recent activity suggests the repo is still moving."
+    ],
+    "houseSkills": [
+      "repo-adoption"
+    ],
+    "capabilities": [
+      "ml-ai"
+    ]
+  },
+  {
+    "nwo": "jax-ml/jax",
+    "name": "jax",
+    "author": "jax-ml",
+    "description": "Composable transformations of Python+NumPy programs: differentiate, vectorize, JIT to GPU/TPU, and more",
+    "scope": "starred",
+    "lastActivityAt": "2026-06-28T00:00:00.000Z",
+    "staleness": "active",
+    "researchStatus": "untracked",
+    "adoptionScore": 92,
+    "adoptionKind": "tool",
+    "reasons": [
+      "Adoption kind: tool",
+      "Primary skills: repo-adoption",
+      "Recent activity suggests the repo is still moving."
+    ],
+    "houseSkills": [
+      "repo-adoption"
+    ],
+    "capabilities": [
+      "ml-ai"
+    ]
+  },
+  {
+    "nwo": "warpdotdev/warp",
+    "name": "warp",
+    "author": "warpdotdev",
+    "description": "Warp is an agentic development environment, born out of the terminal.",
+    "scope": "starred",
+    "lastActivityAt": "2026-06-28T00:00:00.000Z",
+    "staleness": "active",
+    "researchStatus": "untracked",
+    "adoptionScore": 92,
+    "adoptionKind": "tool",
+    "reasons": [
+      "Adoption kind: tool",
+      "Primary skills: skill-extraction, repo-adoption",
+      "Recent activity suggests the repo is still moving."
+    ],
+    "houseSkills": [
+      "skill-extraction",
+      "repo-adoption"
+    ],
+    "capabilities": [
+      "agent-workflows"
+    ]
+  },
+  {
+    "nwo": "openai/codex",
+    "name": "codex",
+    "author": "openai",
+    "description": "Lightweight coding agent that runs in your terminal",
+    "scope": "starred",
+    "lastActivityAt": "2026-06-28T00:00:00.000Z",
+    "staleness": "active",
+    "researchStatus": "untracked",
+    "adoptionScore": 92,
+    "adoptionKind": "tool",
+    "reasons": [
+      "Adoption kind: tool",
+      "Primary skills: skill-extraction, repo-adoption",
+      "Recent activity suggests the repo is still moving."
+    ],
+    "houseSkills": [
+      "skill-extraction",
+      "repo-adoption"
+    ],
+    "capabilities": [
+      "agent-workflows"
+    ]
+  },
+  {
+    "nwo": "zeux/meshoptimizer",
+    "name": "meshoptimizer",
+    "author": "zeux",
+    "description": "Mesh optimization library that makes meshes smaller and faster to render",
+    "scope": "starred",
+    "lastActivityAt": "2026-06-27T00:00:00.000Z",
+    "staleness": "active",
+    "researchStatus": "untracked",
+    "adoptionScore": 92,
+    "adoptionKind": "tool",
+    "reasons": [
+      "Adoption kind: tool",
+      "Primary skills: repo-discovery, skill-extraction, repo-adoption",
+      "Recent activity suggests the repo is still moving."
+    ],
+    "houseSkills": [
+      "repo-discovery",
+      "skill-extraction",
+      "repo-adoption"
+    ],
+    "capabilities": [
+      "developer-tooling"
+    ]
+  },
+  {
     "nwo": "vllm-project/vllm",
     "name": "vllm",
     "author": "vllm-project",
     "description": "A high-throughput and memory-efficient inference and serving engine for LLMs",
+    "scope": "starred",
+    "lastActivityAt": "2026-06-27T00:00:00.000Z",
+    "staleness": "active",
+    "researchStatus": "untracked",
+    "adoptionScore": 92,
+    "adoptionKind": "tool",
+    "reasons": [
+      "Adoption kind: tool",
+      "Primary skills: repo-adoption",
+      "Recent activity suggests the repo is still moving."
+    ],
+    "houseSkills": [
+      "repo-adoption"
+    ],
+    "capabilities": [
+      "ml-ai"
+    ]
+  },
+  {
+    "nwo": "huggingface/huggingface_hub",
+    "name": "huggingface_hub",
+    "author": "huggingface",
+    "description": "The official Python client for the Hugging Face Hub.",
     "scope": "starred",
     "lastActivityAt": "2026-06-27T00:00:00.000Z",
     "staleness": "active",
@@ -8090,29 +8232,6 @@
     ]
   },
   {
-    "nwo": "huggingface/transformers",
-    "name": "transformers",
-    "author": "huggingface",
-    "description": "🤗 Transformers: the model-definition framework for state-of-the-art machine learning models in text, vision, audio, and multimodal models, for both inference and training. ",
-    "scope": "starred",
-    "lastActivityAt": "2026-06-27T00:00:00.000Z",
-    "staleness": "active",
-    "researchStatus": "untracked",
-    "adoptionScore": 92,
-    "adoptionKind": "tool",
-    "reasons": [
-      "Adoption kind: tool",
-      "Primary skills: repo-adoption",
-      "Recent activity suggests the repo is still moving."
-    ],
-    "houseSkills": [
-      "repo-adoption"
-    ],
-    "capabilities": [
-      "ml-ai"
-    ]
-  },
-  {
     "nwo": "huggingface/diffusers",
     "name": "diffusers",
     "author": "huggingface",
@@ -8136,10 +8255,10 @@
     ]
   },
   {
-    "nwo": "warpdotdev/warp",
-    "name": "warp",
-    "author": "warpdotdev",
-    "description": "Warp is an agentic development environment, born out of the terminal.",
+    "nwo": "nortikin/sverchok",
+    "name": "sverchok",
+    "author": "nortikin",
+    "description": "Sverchok",
     "scope": "starred",
     "lastActivityAt": "2026-06-27T00:00:00.000Z",
     "staleness": "active",
@@ -8148,22 +8267,21 @@
     "adoptionKind": "tool",
     "reasons": [
       "Adoption kind: tool",
-      "Primary skills: skill-extraction, repo-adoption",
+      "Primary skills: repo-adoption",
       "Recent activity suggests the repo is still moving."
     ],
     "houseSkills": [
-      "skill-extraction",
       "repo-adoption"
     ],
     "capabilities": [
-      "agent-workflows"
+      "ml-ai"
     ]
   },
   {
-    "nwo": "openai/codex",
-    "name": "codex",
-    "author": "openai",
-    "description": "Lightweight coding agent that runs in your terminal",
+    "nwo": "lutzroeder/netron",
+    "name": "netron",
+    "author": "lutzroeder",
+    "description": "Visualizer for neural network, deep learning and machine learning models",
     "scope": "starred",
     "lastActivityAt": "2026-06-27T00:00:00.000Z",
     "staleness": "active",
@@ -8172,15 +8290,62 @@
     "adoptionKind": "tool",
     "reasons": [
       "Adoption kind: tool",
-      "Primary skills: skill-extraction, repo-adoption",
+      "Primary skills: repo-adoption",
       "Recent activity suggests the repo is still moving."
     ],
     "houseSkills": [
+      "repo-adoption"
+    ],
+    "capabilities": [
+      "ml-ai"
+    ]
+  },
+  {
+    "nwo": "mrdoob/three.js",
+    "name": "three.js",
+    "author": "mrdoob",
+    "description": "JavaScript 3D Library.",
+    "scope": "starred",
+    "lastActivityAt": "2026-06-27T00:00:00.000Z",
+    "staleness": "active",
+    "researchStatus": "untracked",
+    "adoptionScore": 92,
+    "adoptionKind": "tool",
+    "reasons": [
+      "Adoption kind: tool",
+      "Primary skills: repo-discovery, skill-extraction, repo-adoption",
+      "Recent activity suggests the repo is still moving."
+    ],
+    "houseSkills": [
+      "repo-discovery",
       "skill-extraction",
       "repo-adoption"
     ],
     "capabilities": [
-      "agent-workflows"
+      "developer-tooling"
+    ]
+  },
+  {
+    "nwo": "replicate/cog",
+    "name": "cog",
+    "author": "replicate",
+    "description": "Containers for machine learning",
+    "scope": "starred",
+    "lastActivityAt": "2026-06-27T00:00:00.000Z",
+    "staleness": "active",
+    "researchStatus": "untracked",
+    "adoptionScore": 92,
+    "adoptionKind": "tool",
+    "reasons": [
+      "Adoption kind: tool",
+      "Primary skills: repo-adoption",
+      "Recent activity suggests the repo is still moving."
+    ],
+    "houseSkills": [
+      "repo-adoption"
+    ],
+    "capabilities": [
+      "ml-ai"
     ]
   },
   {
@@ -8232,58 +8397,10 @@
     ]
   },
   {
-    "nwo": "zeux/meshoptimizer",
-    "name": "meshoptimizer",
-    "author": "zeux",
-    "description": "Mesh optimization library that makes meshes smaller and faster to render",
-    "scope": "starred",
-    "lastActivityAt": "2026-06-26T00:00:00.000Z",
-    "staleness": "active",
-    "researchStatus": "untracked",
-    "adoptionScore": 92,
-    "adoptionKind": "tool",
-    "reasons": [
-      "Adoption kind: tool",
-      "Primary skills: repo-discovery, skill-extraction, repo-adoption",
-      "Recent activity suggests the repo is still moving."
-    ],
-    "houseSkills": [
-      "repo-discovery",
-      "skill-extraction",
-      "repo-adoption"
-    ],
-    "capabilities": [
-      "developer-tooling"
-    ]
-  },
-  {
     "nwo": "ace-step/ACE-Step-1.5",
     "name": "ACE-Step-1.5",
     "author": "ace-step",
     "description": "The most powerful local music generation model that outperforms almost all commercial alternatives, supporting Mac, AMD, Intel, and CUDA devices.",
-    "scope": "starred",
-    "lastActivityAt": "2026-06-26T00:00:00.000Z",
-    "staleness": "active",
-    "researchStatus": "untracked",
-    "adoptionScore": 92,
-    "adoptionKind": "tool",
-    "reasons": [
-      "Adoption kind: tool",
-      "Primary skills: repo-adoption",
-      "Recent activity suggests the repo is still moving."
-    ],
-    "houseSkills": [
-      "repo-adoption"
-    ],
-    "capabilities": [
-      "ml-ai"
-    ]
-  },
-  {
-    "nwo": "huggingface/huggingface_hub",
-    "name": "huggingface_hub",
-    "author": "huggingface",
-    "description": "The official Python client for the Hugging Face Hub.",
     "scope": "starred",
     "lastActivityAt": "2026-06-26T00:00:00.000Z",
     "staleness": "active",
@@ -8395,29 +8512,6 @@
     ]
   },
   {
-    "nwo": "jax-ml/jax",
-    "name": "jax",
-    "author": "jax-ml",
-    "description": "Composable transformations of Python+NumPy programs: differentiate, vectorize, JIT to GPU/TPU, and more",
-    "scope": "starred",
-    "lastActivityAt": "2026-06-26T00:00:00.000Z",
-    "staleness": "active",
-    "researchStatus": "untracked",
-    "adoptionScore": 92,
-    "adoptionKind": "tool",
-    "reasons": [
-      "Adoption kind: tool",
-      "Primary skills: repo-adoption",
-      "Recent activity suggests the repo is still moving."
-    ],
-    "houseSkills": [
-      "repo-adoption"
-    ],
-    "capabilities": [
-      "ml-ai"
-    ]
-  },
-  {
     "nwo": "rerun-io/rerun",
     "name": "rerun",
     "author": "rerun-io",
@@ -8467,31 +8561,6 @@
     ]
   },
   {
-    "nwo": "mrdoob/three.js",
-    "name": "three.js",
-    "author": "mrdoob",
-    "description": "JavaScript 3D Library.",
-    "scope": "starred",
-    "lastActivityAt": "2026-06-26T00:00:00.000Z",
-    "staleness": "active",
-    "researchStatus": "untracked",
-    "adoptionScore": 92,
-    "adoptionKind": "tool",
-    "reasons": [
-      "Adoption kind: tool",
-      "Primary skills: repo-discovery, skill-extraction, repo-adoption",
-      "Recent activity suggests the repo is still moving."
-    ],
-    "houseSkills": [
-      "repo-discovery",
-      "skill-extraction",
-      "repo-adoption"
-    ],
-    "capabilities": [
-      "developer-tooling"
-    ]
-  },
-  {
     "nwo": "junegunn/fzf",
     "name": "fzf",
     "author": "junegunn",
@@ -8514,29 +8583,6 @@
     ],
     "capabilities": [
       "developer-tooling"
-    ]
-  },
-  {
-    "nwo": "replicate/cog",
-    "name": "cog",
-    "author": "replicate",
-    "description": "Containers for machine learning",
-    "scope": "starred",
-    "lastActivityAt": "2026-06-26T00:00:00.000Z",
-    "staleness": "active",
-    "researchStatus": "untracked",
-    "adoptionScore": 92,
-    "adoptionKind": "tool",
-    "reasons": [
-      "Adoption kind: tool",
-      "Primary skills: repo-adoption",
-      "Recent activity suggests the repo is still moving."
-    ],
-    "houseSkills": [
-      "repo-adoption"
-    ],
-    "capabilities": [
-      "ml-ai"
     ]
   },
   {
@@ -8821,29 +8867,6 @@
     ]
   },
   {
-    "nwo": "nortikin/sverchok",
-    "name": "sverchok",
-    "author": "nortikin",
-    "description": "Sverchok",
-    "scope": "starred",
-    "lastActivityAt": "2026-06-24T00:00:00.000Z",
-    "staleness": "active",
-    "researchStatus": "untracked",
-    "adoptionScore": 92,
-    "adoptionKind": "tool",
-    "reasons": [
-      "Adoption kind: tool",
-      "Primary skills: repo-adoption",
-      "Recent activity suggests the repo is still moving."
-    ],
-    "houseSkills": [
-      "repo-adoption"
-    ],
-    "capabilities": [
-      "ml-ai"
-    ]
-  },
-  {
     "nwo": "AlexsJones/llmfit",
     "name": "llmfit",
     "author": "AlexsJones",
@@ -8959,29 +8982,6 @@
     ],
     "capabilities": [
       "data-pipeline"
-    ]
-  },
-  {
-    "nwo": "lutzroeder/netron",
-    "name": "netron",
-    "author": "lutzroeder",
-    "description": "Visualizer for neural network, deep learning and machine learning models",
-    "scope": "starred",
-    "lastActivityAt": "2026-06-23T00:00:00.000Z",
-    "staleness": "active",
-    "researchStatus": "untracked",
-    "adoptionScore": 92,
-    "adoptionKind": "tool",
-    "reasons": [
-      "Adoption kind: tool",
-      "Primary skills: repo-adoption",
-      "Recent activity suggests the repo is still moving."
-    ],
-    "houseSkills": [
-      "repo-adoption"
-    ],
-    "capabilities": [
-      "ml-ai"
     ]
   },
   {
@@ -9965,7 +9965,7 @@
     "author": "elalish",
     "description": "Geometry library for topological robustness",
     "scope": "starred",
-    "lastActivityAt": "2026-06-26T00:00:00.000Z",
+    "lastActivityAt": "2026-06-27T00:00:00.000Z",
     "staleness": "active",
     "researchStatus": "untracked",
     "adoptionScore": 91,
@@ -10055,12 +10055,12 @@
     ]
   },
   {
-    "nwo": "openai/openai-cookbook",
-    "name": "openai-cookbook",
-    "author": "openai",
-    "description": "Examples and guides for using the OpenAI API",
+    "nwo": "OGRECave/ogre",
+    "name": "ogre",
+    "author": "OGRECave",
+    "description": "high-performance rendering backend (C++, Python, C#, Java)",
     "scope": "starred",
-    "lastActivityAt": "2026-06-26T00:00:00.000Z",
+    "lastActivityAt": "2026-06-27T00:00:00.000Z",
     "staleness": "active",
     "researchStatus": "untracked",
     "adoptionScore": 90,
@@ -10078,10 +10078,79 @@
     ]
   },
   {
-    "nwo": "OGRECave/ogre",
-    "name": "ogre",
-    "author": "OGRECave",
-    "description": "high-performance rendering backend (C++, Python, C#, Java)",
+    "nwo": "bonfy/github-trending",
+    "name": "github-trending",
+    "author": "bonfy",
+    "description": "Tracking the most popular Github repos, update daily(Python version)",
+    "scope": "starred",
+    "lastActivityAt": "2026-06-27T00:00:00.000Z",
+    "staleness": "active",
+    "researchStatus": "untracked",
+    "adoptionScore": 90,
+    "adoptionKind": "tool",
+    "reasons": [
+      "Adoption kind: tool",
+      "Primary skills: repo-adoption",
+      "Recent activity suggests the repo is still moving."
+    ],
+    "houseSkills": [
+      "repo-adoption"
+    ],
+    "capabilities": [
+      "ml-ai"
+    ]
+  },
+  {
+    "nwo": "PINTO0309/PINTO_model_zoo",
+    "name": "PINTO_model_zoo",
+    "author": "PINTO0309",
+    "description": "A repository for storing models that have been inter-converted between various frameworks. Supported frameworks are TensorFlow, PyTorch, ONNX, OpenVINO, TFJS, TFTRT, TensorFlowLite (Float32/16/INT8), EdgeTPU, CoreML.",
+    "scope": "starred",
+    "lastActivityAt": "2026-06-27T00:00:00.000Z",
+    "staleness": "active",
+    "researchStatus": "untracked",
+    "adoptionScore": 90,
+    "adoptionKind": "service",
+    "reasons": [
+      "Adoption kind: service",
+      "Primary skills: repo-adoption",
+      "Recent activity suggests the repo is still moving."
+    ],
+    "houseSkills": [
+      "repo-adoption"
+    ],
+    "capabilities": [
+      "ml-ai"
+    ]
+  },
+  {
+    "nwo": "playcanvas/engine",
+    "name": "engine",
+    "author": "playcanvas",
+    "description": "Powerful web graphics runtime built on WebGL, WebGPU, WebXR and glTF",
+    "scope": "starred",
+    "lastActivityAt": "2026-06-27T00:00:00.000Z",
+    "staleness": "active",
+    "researchStatus": "untracked",
+    "adoptionScore": 90,
+    "adoptionKind": "service",
+    "reasons": [
+      "Adoption kind: service",
+      "Primary skills: repo-adoption",
+      "Recent activity suggests the repo is still moving."
+    ],
+    "houseSkills": [
+      "repo-adoption"
+    ],
+    "capabilities": [
+      "backend-service"
+    ]
+  },
+  {
+    "nwo": "openai/openai-cookbook",
+    "name": "openai-cookbook",
+    "author": "openai",
+    "description": "Examples and guides for using the OpenAI API",
     "scope": "starred",
     "lastActivityAt": "2026-06-26T00:00:00.000Z",
     "staleness": "active",
@@ -10174,29 +10243,6 @@
     ]
   },
   {
-    "nwo": "bonfy/github-trending",
-    "name": "github-trending",
-    "author": "bonfy",
-    "description": "Tracking the most popular Github repos, update daily(Python version)",
-    "scope": "starred",
-    "lastActivityAt": "2026-06-26T00:00:00.000Z",
-    "staleness": "active",
-    "researchStatus": "untracked",
-    "adoptionScore": 90,
-    "adoptionKind": "tool",
-    "reasons": [
-      "Adoption kind: tool",
-      "Primary skills: repo-adoption",
-      "Recent activity suggests the repo is still moving."
-    ],
-    "houseSkills": [
-      "repo-adoption"
-    ],
-    "capabilities": [
-      "ml-ai"
-    ]
-  },
-  {
     "nwo": "ml-explore/mlx-swift-lm",
     "name": "mlx-swift-lm",
     "author": "ml-explore",
@@ -10266,29 +10312,6 @@
     ]
   },
   {
-    "nwo": "playcanvas/engine",
-    "name": "engine",
-    "author": "playcanvas",
-    "description": "Powerful web graphics runtime built on WebGL, WebGPU, WebXR and glTF",
-    "scope": "starred",
-    "lastActivityAt": "2026-06-26T00:00:00.000Z",
-    "staleness": "active",
-    "researchStatus": "untracked",
-    "adoptionScore": 90,
-    "adoptionKind": "service",
-    "reasons": [
-      "Adoption kind: service",
-      "Primary skills: repo-adoption",
-      "Recent activity suggests the repo is still moving."
-    ],
-    "houseSkills": [
-      "repo-adoption"
-    ],
-    "capabilities": [
-      "backend-service"
-    ]
-  },
-  {
     "nwo": "google-gemini/cookbook",
     "name": "cookbook",
     "author": "google-gemini",
@@ -10309,29 +10332,6 @@
     ],
     "capabilities": [
       "backend-service"
-    ]
-  },
-  {
-    "nwo": "PINTO0309/PINTO_model_zoo",
-    "name": "PINTO_model_zoo",
-    "author": "PINTO0309",
-    "description": "A repository for storing models that have been inter-converted between various frameworks. Supported frameworks are TensorFlow, PyTorch, ONNX, OpenVINO, TFJS, TFTRT, TensorFlowLite (Float32/16/INT8), EdgeTPU, CoreML.",
-    "scope": "starred",
-    "lastActivityAt": "2026-06-25T00:00:00.000Z",
-    "staleness": "active",
-    "researchStatus": "untracked",
-    "adoptionScore": 90,
-    "adoptionKind": "service",
-    "reasons": [
-      "Adoption kind: service",
-      "Primary skills: repo-adoption",
-      "Recent activity suggests the repo is still moving."
-    ],
-    "houseSkills": [
-      "repo-adoption"
-    ],
-    "capabilities": [
-      "ml-ai"
     ]
   },
   {
@@ -10982,39 +10982,12 @@
     ]
   },
   {
-    "nwo": "dcrebbin/meta-glasses-api",
-    "name": "meta-glasses-api",
-    "author": "dcrebbin",
-    "description": " \"Hey Meta send a message to ChatGPT\" Mai: A Hacky Messenger browser extension & pseudo API for the Meta Glasses :eyeglasses:",
-    "scope": "starred",
-    "lastActivityAt": "2025-06-28T00:00:00.000Z",
-    "staleness": "watch",
-    "researchStatus": "untracked",
-    "adoptionScore": 90,
-    "adoptionKind": "tool",
-    "reasons": [
-      "Adoption kind: tool",
-      "Primary skills: repo-discovery, skill-extraction, repo-adoption",
-      "Medium-term activity suggests this repo should stay on the watchlist."
-    ],
-    "houseSkills": [
-      "repo-discovery",
-      "skill-extraction",
-      "repo-adoption"
-    ],
-    "capabilities": [
-      "backend-service",
-      "developer-tooling",
-      "frontend-ui"
-    ]
-  },
-  {
     "nwo": "anomalyco/opencode",
     "name": "opencode",
     "author": "anomalyco",
     "description": "The open source coding agent.",
     "scope": "starred",
-    "lastActivityAt": "2026-06-27T00:00:00.000Z",
+    "lastActivityAt": "2026-06-28T00:00:00.000Z",
     "staleness": "active",
     "researchStatus": "untracked",
     "adoptionScore": 89,
@@ -11031,6 +11004,56 @@
     ],
     "capabilities": [
       "agent-workflows",
+      "frontend-ui"
+    ]
+  },
+  {
+    "nwo": "jamiepine/voicebox",
+    "name": "voicebox",
+    "author": "jamiepine",
+    "description": "The open-source AI voice studio. Clone, dictate, create.",
+    "scope": "starred",
+    "lastActivityAt": "2026-06-28T00:00:00.000Z",
+    "staleness": "active",
+    "researchStatus": "untracked",
+    "adoptionScore": 89,
+    "adoptionKind": "house",
+    "reasons": [
+      "Adoption kind: house",
+      "Primary skills: repo-discovery, repo-adoption",
+      "Recent activity suggests the repo is still moving."
+    ],
+    "houseSkills": [
+      "repo-discovery",
+      "repo-adoption"
+    ],
+    "capabilities": [
+      "frontend-ui",
+      "ml-ai"
+    ]
+  },
+  {
+    "nwo": "invoke-ai/InvokeAI",
+    "name": "InvokeAI",
+    "author": "invoke-ai",
+    "description": "Invoke is a leading creative engine for Stable Diffusion models, empowering professionals, artists, and enthusiasts to generate and create visual media using the latest AI-driven technologies. The solution offers an industry leading WebUI, and serves as the foundation for multiple commercial products.",
+    "scope": "starred",
+    "lastActivityAt": "2026-06-28T00:00:00.000Z",
+    "staleness": "active",
+    "researchStatus": "untracked",
+    "adoptionScore": 89,
+    "adoptionKind": "house",
+    "reasons": [
+      "Adoption kind: house",
+      "Primary skills: repo-discovery, repo-adoption",
+      "Recent activity suggests the repo is still moving."
+    ],
+    "houseSkills": [
+      "repo-discovery",
+      "repo-adoption"
+    ],
+    "capabilities": [
+      "ml-ai",
       "frontend-ui"
     ]
   },
@@ -11060,12 +11083,12 @@
     ]
   },
   {
-    "nwo": "jamiepine/voicebox",
-    "name": "voicebox",
-    "author": "jamiepine",
-    "description": "The open-source AI voice studio. Clone, dictate, create.",
+    "nwo": "vladmandic/sdnext",
+    "name": "sdnext",
+    "author": "vladmandic",
+    "description": "SD.Next: All-in-one WebUI for AI generative image and video creation, captioning and processing",
     "scope": "starred",
-    "lastActivityAt": "2026-06-26T00:00:00.000Z",
+    "lastActivityAt": "2026-06-27T00:00:00.000Z",
     "staleness": "active",
     "researchStatus": "untracked",
     "adoptionScore": 89,
@@ -11081,6 +11104,59 @@
     ],
     "capabilities": [
       "frontend-ui",
+      "ml-ai"
+    ]
+  },
+  {
+    "nwo": "home-assistant/iOS",
+    "name": "iOS",
+    "author": "home-assistant",
+    "description": ":iphone: Home Assistant for Apple platforms",
+    "scope": "starred",
+    "lastActivityAt": "2026-06-27T00:00:00.000Z",
+    "staleness": "active",
+    "researchStatus": "untracked",
+    "adoptionScore": 89,
+    "adoptionKind": "house",
+    "reasons": [
+      "Adoption kind: house",
+      "Primary skills: skill-extraction, repo-adoption, mine-execution",
+      "Recent activity suggests the repo is still moving."
+    ],
+    "houseSkills": [
+      "skill-extraction",
+      "repo-adoption",
+      "mine-execution"
+    ],
+    "capabilities": [
+      "agent-workflows",
+      "repo-ops"
+    ]
+  },
+  {
+    "nwo": "KudoAI/chatgpt.js",
+    "name": "chatgpt.js",
+    "author": "KudoAI",
+    "description": "🤖 A powerful, lightweight JavaScript library + interactive CLI for ChatGPT",
+    "scope": "starred",
+    "lastActivityAt": "2026-06-27T00:00:00.000Z",
+    "staleness": "active",
+    "researchStatus": "untracked",
+    "adoptionScore": 89,
+    "adoptionKind": "tool",
+    "reasons": [
+      "Adoption kind: tool",
+      "Primary skills: repo-discovery, skill-extraction, repo-adoption",
+      "Recent activity suggests the repo is still moving."
+    ],
+    "houseSkills": [
+      "repo-discovery",
+      "skill-extraction",
+      "repo-adoption"
+    ],
+    "capabilities": [
+      "frontend-ui",
+      "developer-tooling",
       "ml-ai"
     ]
   },
@@ -11110,31 +11186,6 @@
     ]
   },
   {
-    "nwo": "invoke-ai/InvokeAI",
-    "name": "InvokeAI",
-    "author": "invoke-ai",
-    "description": "Invoke is a leading creative engine for Stable Diffusion models, empowering professionals, artists, and enthusiasts to generate and create visual media using the latest AI-driven technologies. The solution offers an industry leading WebUI, and serves as the foundation for multiple commercial products.",
-    "scope": "starred",
-    "lastActivityAt": "2026-06-26T00:00:00.000Z",
-    "staleness": "active",
-    "researchStatus": "untracked",
-    "adoptionScore": 89,
-    "adoptionKind": "house",
-    "reasons": [
-      "Adoption kind: house",
-      "Primary skills: repo-discovery, repo-adoption",
-      "Recent activity suggests the repo is still moving."
-    ],
-    "houseSkills": [
-      "repo-discovery",
-      "repo-adoption"
-    ],
-    "capabilities": [
-      "ml-ai",
-      "frontend-ui"
-    ]
-  },
-  {
     "nwo": "home-assistant/operating-system",
     "name": "operating-system",
     "author": "home-assistant",
@@ -11156,84 +11207,6 @@
     ],
     "capabilities": [
       "agent-workflows",
-      "ml-ai"
-    ]
-  },
-  {
-    "nwo": "vladmandic/sdnext",
-    "name": "sdnext",
-    "author": "vladmandic",
-    "description": "SD.Next: All-in-one WebUI for AI generative image and video creation, captioning and processing",
-    "scope": "starred",
-    "lastActivityAt": "2026-06-26T00:00:00.000Z",
-    "staleness": "active",
-    "researchStatus": "untracked",
-    "adoptionScore": 89,
-    "adoptionKind": "house",
-    "reasons": [
-      "Adoption kind: house",
-      "Primary skills: repo-discovery, repo-adoption",
-      "Recent activity suggests the repo is still moving."
-    ],
-    "houseSkills": [
-      "repo-discovery",
-      "repo-adoption"
-    ],
-    "capabilities": [
-      "frontend-ui",
-      "ml-ai"
-    ]
-  },
-  {
-    "nwo": "home-assistant/iOS",
-    "name": "iOS",
-    "author": "home-assistant",
-    "description": ":iphone: Home Assistant for Apple platforms",
-    "scope": "starred",
-    "lastActivityAt": "2026-06-26T00:00:00.000Z",
-    "staleness": "active",
-    "researchStatus": "untracked",
-    "adoptionScore": 89,
-    "adoptionKind": "house",
-    "reasons": [
-      "Adoption kind: house",
-      "Primary skills: skill-extraction, repo-adoption, mine-execution",
-      "Recent activity suggests the repo is still moving."
-    ],
-    "houseSkills": [
-      "skill-extraction",
-      "repo-adoption",
-      "mine-execution"
-    ],
-    "capabilities": [
-      "agent-workflows",
-      "repo-ops"
-    ]
-  },
-  {
-    "nwo": "KudoAI/chatgpt.js",
-    "name": "chatgpt.js",
-    "author": "KudoAI",
-    "description": "🤖 A powerful, lightweight JavaScript library + interactive CLI for ChatGPT",
-    "scope": "starred",
-    "lastActivityAt": "2026-06-26T00:00:00.000Z",
-    "staleness": "active",
-    "researchStatus": "untracked",
-    "adoptionScore": 89,
-    "adoptionKind": "tool",
-    "reasons": [
-      "Adoption kind: tool",
-      "Primary skills: repo-discovery, skill-extraction, repo-adoption",
-      "Recent activity suggests the repo is still moving."
-    ],
-    "houseSkills": [
-      "repo-discovery",
-      "skill-extraction",
-      "repo-adoption"
-    ],
-    "capabilities": [
-      "frontend-ui",
-      "developer-tooling",
       "ml-ai"
     ]
   },
@@ -11735,6 +11708,32 @@
     ]
   },
   {
+    "nwo": "Significant-Gravitas/AutoGPT",
+    "name": "AutoGPT",
+    "author": "Significant-Gravitas",
+    "description": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
+    "scope": "starred",
+    "lastActivityAt": "2026-06-27T00:00:00.000Z",
+    "staleness": "active",
+    "researchStatus": "untracked",
+    "adoptionScore": 88,
+    "adoptionKind": "service",
+    "reasons": [
+      "Adoption kind: service",
+      "Primary skills: skill-extraction, repo-adoption",
+      "Recent activity suggests the repo is still moving."
+    ],
+    "houseSkills": [
+      "skill-extraction",
+      "repo-adoption"
+    ],
+    "capabilities": [
+      "agent-workflows",
+      "backend-service",
+      "ml-ai"
+    ]
+  },
+  {
     "nwo": "artsy/metaphysics",
     "name": "metaphysics",
     "author": "artsy",
@@ -11757,32 +11756,6 @@
     "capabilities": [
       "backend-service",
       "frontend-ui"
-    ]
-  },
-  {
-    "nwo": "Significant-Gravitas/AutoGPT",
-    "name": "AutoGPT",
-    "author": "Significant-Gravitas",
-    "description": "AutoGPT is the vision of accessible AI for everyone, to use and to build on. Our mission is to provide the tools, so that you can focus on what matters.",
-    "scope": "starred",
-    "lastActivityAt": "2026-06-26T00:00:00.000Z",
-    "staleness": "active",
-    "researchStatus": "untracked",
-    "adoptionScore": 88,
-    "adoptionKind": "service",
-    "reasons": [
-      "Adoption kind: service",
-      "Primary skills: skill-extraction, repo-adoption",
-      "Recent activity suggests the repo is still moving."
-    ],
-    "houseSkills": [
-      "skill-extraction",
-      "repo-adoption"
-    ],
-    "capabilities": [
-      "agent-workflows",
-      "backend-service",
-      "ml-ai"
     ]
   },
   {
@@ -12172,7 +12145,7 @@
     "author": "openclaw",
     "description": "Your own personal AI assistant. Any OS. Any Platform. The lobster way. 🦞 ",
     "scope": "starred",
-    "lastActivityAt": "2026-06-27T00:00:00.000Z",
+    "lastActivityAt": "2026-06-28T00:00:00.000Z",
     "staleness": "active",
     "researchStatus": "untracked",
     "adoptionScore": 87,
@@ -12200,7 +12173,7 @@
     "author": "mongodb",
     "description": "The MongoDB Database",
     "scope": "starred",
-    "lastActivityAt": "2026-06-27T00:00:00.000Z",
+    "lastActivityAt": "2026-06-28T00:00:00.000Z",
     "staleness": "active",
     "researchStatus": "untracked",
     "adoptionScore": 87,
@@ -12218,6 +12191,29 @@
     "capabilities": [
       "template-scaffolding",
       "data-pipeline"
+    ]
+  },
+  {
+    "nwo": "Cay-Zhang/RSSBud",
+    "name": "RSSBud",
+    "author": "Cay-Zhang",
+    "description": "An RSS feed discovery app for iOS/macOS that works particularly well with RSSHub, a popular feed generation service. Available on the App Store.",
+    "scope": "starred",
+    "lastActivityAt": "2026-06-27T00:00:00.000Z",
+    "staleness": "active",
+    "researchStatus": "untracked",
+    "adoptionScore": 87,
+    "adoptionKind": "service",
+    "reasons": [
+      "Adoption kind: service",
+      "Primary skills: repo-adoption",
+      "Recent activity suggests the repo is still moving."
+    ],
+    "houseSkills": [
+      "repo-adoption"
+    ],
+    "capabilities": [
+      "backend-service"
     ]
   },
   {
@@ -12247,29 +12243,6 @@
       "frontend-ui",
       "ml-ai",
       "repo-ops"
-    ]
-  },
-  {
-    "nwo": "Cay-Zhang/RSSBud",
-    "name": "RSSBud",
-    "author": "Cay-Zhang",
-    "description": "An RSS feed discovery app for iOS/macOS that works particularly well with RSSHub, a popular feed generation service. Available on the App Store.",
-    "scope": "starred",
-    "lastActivityAt": "2026-06-26T00:00:00.000Z",
-    "staleness": "active",
-    "researchStatus": "untracked",
-    "adoptionScore": 87,
-    "adoptionKind": "service",
-    "reasons": [
-      "Adoption kind: service",
-      "Primary skills: repo-adoption",
-      "Recent activity suggests the repo is still moving."
-    ],
-    "houseSkills": [
-      "repo-adoption"
-    ],
-    "capabilities": [
-      "backend-service"
     ]
   },
   {
@@ -12382,7 +12355,7 @@
     "author": "mfranzke",
     "description": "Fast and lightweight dependency-free vanilla JavaScript polyfill for native lazy loading / the awesome loading='lazy'-attribute.",
     "scope": "starred",
-    "lastActivityAt": "2026-06-26T00:00:00.000Z",
+    "lastActivityAt": "2026-06-27T00:00:00.000Z",
     "staleness": "active",
     "researchStatus": "untracked",
     "adoptionScore": 86,
@@ -12578,6 +12551,57 @@
     ]
   },
   {
+    "nwo": "video-dev/hls.js",
+    "name": "hls.js",
+    "author": "video-dev",
+    "description": "HLS.js is a JavaScript library that plays HLS in browsers with support for MSE.",
+    "scope": "starred",
+    "lastActivityAt": "2026-06-27T00:00:00.000Z",
+    "staleness": "active",
+    "researchStatus": "untracked",
+    "adoptionScore": 85,
+    "adoptionKind": "tool",
+    "reasons": [
+      "Adoption kind: tool",
+      "Primary skills: repo-discovery, skill-extraction, repo-adoption",
+      "Recent activity suggests the repo is still moving."
+    ],
+    "houseSkills": [
+      "repo-discovery",
+      "skill-extraction",
+      "repo-adoption"
+    ],
+    "capabilities": [
+      "developer-tooling",
+      "frontend-ui"
+    ]
+  },
+  {
+    "nwo": "anthropics/skills",
+    "name": "skills",
+    "author": "anthropics",
+    "description": "Public repository for Agent Skills",
+    "scope": "starred",
+    "lastActivityAt": "2026-06-27T00:00:00.000Z",
+    "staleness": "active",
+    "researchStatus": "untracked",
+    "adoptionScore": 85,
+    "adoptionKind": "tool",
+    "reasons": [
+      "Adoption kind: tool",
+      "Primary skills: skill-extraction, repo-adoption",
+      "Recent activity suggests the repo is still moving."
+    ],
+    "houseSkills": [
+      "skill-extraction",
+      "repo-adoption"
+    ],
+    "capabilities": [
+      "agent-workflows",
+      "ml-ai"
+    ]
+  },
+  {
     "nwo": "anthropics/claude-code",
     "name": "claude-code",
     "author": "anthropics",
@@ -12625,32 +12649,6 @@
     "capabilities": [
       "research-intelligence",
       "ml-ai"
-    ]
-  },
-  {
-    "nwo": "video-dev/hls.js",
-    "name": "hls.js",
-    "author": "video-dev",
-    "description": "HLS.js is a JavaScript library that plays HLS in browsers with support for MSE.",
-    "scope": "starred",
-    "lastActivityAt": "2026-06-25T00:00:00.000Z",
-    "staleness": "active",
-    "researchStatus": "untracked",
-    "adoptionScore": 85,
-    "adoptionKind": "tool",
-    "reasons": [
-      "Adoption kind: tool",
-      "Primary skills: repo-discovery, skill-extraction, repo-adoption",
-      "Recent activity suggests the repo is still moving."
-    ],
-    "houseSkills": [
-      "repo-discovery",
-      "skill-extraction",
-      "repo-adoption"
-    ],
-    "capabilities": [
-      "developer-tooling",
-      "frontend-ui"
     ]
   },
   {
@@ -12829,31 +12827,6 @@
     "capabilities": [
       "developer-tooling",
       "data-pipeline"
-    ]
-  },
-  {
-    "nwo": "anthropics/skills",
-    "name": "skills",
-    "author": "anthropics",
-    "description": "Public repository for Agent Skills",
-    "scope": "starred",
-    "lastActivityAt": "2026-06-09T00:00:00.000Z",
-    "staleness": "active",
-    "researchStatus": "untracked",
-    "adoptionScore": 85,
-    "adoptionKind": "tool",
-    "reasons": [
-      "Adoption kind: tool",
-      "Primary skills: skill-extraction, repo-adoption",
-      "Recent activity suggests the repo is still moving."
-    ],
-    "houseSkills": [
-      "skill-extraction",
-      "repo-adoption"
-    ],
-    "capabilities": [
-      "agent-workflows",
-      "ml-ai"
     ]
   },
   {
@@ -13642,6 +13615,148 @@
     ]
   },
   {
+    "nwo": "ml-explore/mlx",
+    "name": "mlx",
+    "author": "ml-explore",
+    "description": "MLX: An array framework for Apple silicon",
+    "scope": "starred",
+    "lastActivityAt": "2026-06-28T00:00:00.000Z",
+    "staleness": "active",
+    "researchStatus": "untracked",
+    "adoptionScore": 84,
+    "adoptionKind": "house",
+    "reasons": [
+      "Adoption kind: house",
+      "Primary skills: repo-adoption",
+      "Recent activity suggests the repo is still moving."
+    ],
+    "houseSkills": [
+      "repo-adoption"
+    ],
+    "capabilities": [
+      "ml-ai"
+    ]
+  },
+  {
+    "nwo": "jscad/OpenJSCAD.org",
+    "name": "OpenJSCAD.org",
+    "author": "jscad",
+    "description": "JSCAD is an open source set of modular, browser and command line tools for creating parametric 2D and 3D designs with JavaScript code. It provides a quick, precise and reproducible method for generating 3D models, and is especially useful for creating ready-to-print 3D designs.",
+    "scope": "starred",
+    "lastActivityAt": "2026-06-28T00:00:00.000Z",
+    "staleness": "active",
+    "researchStatus": "untracked",
+    "adoptionScore": 84,
+    "adoptionKind": "house",
+    "reasons": [
+      "Adoption kind: house",
+      "Primary skills: repo-adoption",
+      "Recent activity suggests the repo is still moving."
+    ],
+    "houseSkills": [
+      "repo-adoption"
+    ],
+    "capabilities": [
+      "ml-ai"
+    ]
+  },
+  {
+    "nwo": "storybookjs/storybook",
+    "name": "storybook",
+    "author": "storybookjs",
+    "description": "Storybook is the industry standard workshop for building, documenting, and testing UI components in isolation",
+    "scope": "starred",
+    "lastActivityAt": "2026-06-27T00:00:00.000Z",
+    "staleness": "active",
+    "researchStatus": "untracked",
+    "adoptionScore": 84,
+    "adoptionKind": "house",
+    "reasons": [
+      "Adoption kind: house",
+      "Primary skills: repo-discovery, repo-adoption",
+      "Recent activity suggests the repo is still moving."
+    ],
+    "houseSkills": [
+      "repo-discovery",
+      "repo-adoption"
+    ],
+    "capabilities": [
+      "frontend-ui"
+    ]
+  },
+  {
+    "nwo": "vuejs/vitepress",
+    "name": "vitepress",
+    "author": "vuejs",
+    "description": "Vite & Vue powered static site generator.",
+    "scope": "starred",
+    "lastActivityAt": "2026-06-27T00:00:00.000Z",
+    "staleness": "active",
+    "researchStatus": "untracked",
+    "adoptionScore": 84,
+    "adoptionKind": "house",
+    "reasons": [
+      "Adoption kind: house",
+      "Primary skills: repo-discovery, repo-adoption",
+      "Recent activity suggests the repo is still moving."
+    ],
+    "houseSkills": [
+      "repo-discovery",
+      "repo-adoption"
+    ],
+    "capabilities": [
+      "frontend-ui"
+    ]
+  },
+  {
+    "nwo": "mermaid-js/mermaid",
+    "name": "mermaid",
+    "author": "mermaid-js",
+    "description": "Generation of diagrams like flowcharts or sequence diagrams from text in a similar manner as markdown",
+    "scope": "starred",
+    "lastActivityAt": "2026-06-27T00:00:00.000Z",
+    "staleness": "active",
+    "researchStatus": "untracked",
+    "adoptionScore": 84,
+    "adoptionKind": "house",
+    "reasons": [
+      "Adoption kind: house",
+      "Primary skills: repo-discovery, repo-adoption",
+      "Recent activity suggests the repo is still moving."
+    ],
+    "houseSkills": [
+      "repo-discovery",
+      "repo-adoption"
+    ],
+    "capabilities": [
+      "frontend-ui"
+    ]
+  },
+  {
+    "nwo": "BabylonJS/Babylon.js",
+    "name": "Babylon.js",
+    "author": "BabylonJS",
+    "description": "Babylon.js is a powerful, beautiful, simple, and open game and rendering engine packed into a friendly JavaScript framework.",
+    "scope": "starred",
+    "lastActivityAt": "2026-06-27T00:00:00.000Z",
+    "staleness": "active",
+    "researchStatus": "untracked",
+    "adoptionScore": 84,
+    "adoptionKind": "house",
+    "reasons": [
+      "Adoption kind: house",
+      "Primary skills: repo-discovery, repo-adoption",
+      "Recent activity suggests the repo is still moving."
+    ],
+    "houseSkills": [
+      "repo-discovery",
+      "repo-adoption"
+    ],
+    "capabilities": [
+      "frontend-ui"
+    ]
+  },
+  {
     "nwo": "adobe/react-spectrum",
     "name": "react-spectrum",
     "author": "adobe",
@@ -13666,10 +13781,10 @@
     ]
   },
   {
-    "nwo": "ml-explore/mlx",
-    "name": "mlx",
-    "author": "ml-explore",
-    "description": "MLX: An array framework for Apple silicon",
+    "nwo": "tsparticles/tsparticles",
+    "name": "tsparticles",
+    "author": "tsparticles",
+    "description": "tsParticles - Easily create highly customizable JavaScript particles effects, confetti explosions and fireworks animations and use them as animated backgrounds for your website. Ready to use components available for React.js, Vue.js (2.x and 3.x), Angular, Svelte, jQuery, Preact, Inferno, Solid, Riot and Web Components.",
     "scope": "starred",
     "lastActivityAt": "2026-06-27T00:00:00.000Z",
     "staleness": "active",
@@ -13678,14 +13793,15 @@
     "adoptionKind": "house",
     "reasons": [
       "Adoption kind: house",
-      "Primary skills: repo-adoption",
+      "Primary skills: repo-discovery, repo-adoption",
       "Recent activity suggests the repo is still moving."
     ],
     "houseSkills": [
+      "repo-discovery",
       "repo-adoption"
     ],
     "capabilities": [
-      "ml-ai"
+      "frontend-ui"
     ]
   },
   {
@@ -13712,75 +13828,26 @@
     ]
   },
   {
-    "nwo": "storybookjs/storybook",
-    "name": "storybook",
-    "author": "storybookjs",
-    "description": "Storybook is the industry standard workshop for building, documenting, and testing UI components in isolation",
+    "nwo": "kijai/ComfyUI-KJNodes",
+    "name": "ComfyUI-KJNodes",
+    "author": "kijai",
+    "description": "Various custom nodes for ComfyUI",
     "scope": "starred",
-    "lastActivityAt": "2026-06-26T00:00:00.000Z",
+    "lastActivityAt": "2026-06-27T00:00:00.000Z",
     "staleness": "active",
     "researchStatus": "untracked",
     "adoptionScore": 84,
     "adoptionKind": "house",
     "reasons": [
       "Adoption kind: house",
-      "Primary skills: repo-discovery, repo-adoption",
+      "Primary skills: repo-adoption",
       "Recent activity suggests the repo is still moving."
     ],
     "houseSkills": [
-      "repo-discovery",
       "repo-adoption"
     ],
     "capabilities": [
-      "frontend-ui"
-    ]
-  },
-  {
-    "nwo": "mermaid-js/mermaid",
-    "name": "mermaid",
-    "author": "mermaid-js",
-    "description": "Generation of diagrams like flowcharts or sequence diagrams from text in a similar manner as markdown",
-    "scope": "starred",
-    "lastActivityAt": "2026-06-26T00:00:00.000Z",
-    "staleness": "active",
-    "researchStatus": "untracked",
-    "adoptionScore": 84,
-    "adoptionKind": "house",
-    "reasons": [
-      "Adoption kind: house",
-      "Primary skills: repo-discovery, repo-adoption",
-      "Recent activity suggests the repo is still moving."
-    ],
-    "houseSkills": [
-      "repo-discovery",
-      "repo-adoption"
-    ],
-    "capabilities": [
-      "frontend-ui"
-    ]
-  },
-  {
-    "nwo": "BabylonJS/Babylon.js",
-    "name": "Babylon.js",
-    "author": "BabylonJS",
-    "description": "Babylon.js is a powerful, beautiful, simple, and open game and rendering engine packed into a friendly JavaScript framework.",
-    "scope": "starred",
-    "lastActivityAt": "2026-06-26T00:00:00.000Z",
-    "staleness": "active",
-    "researchStatus": "untracked",
-    "adoptionScore": 84,
-    "adoptionKind": "house",
-    "reasons": [
-      "Adoption kind: house",
-      "Primary skills: repo-discovery, repo-adoption",
-      "Recent activity suggests the repo is still moving."
-    ],
-    "houseSkills": [
-      "repo-discovery",
-      "repo-adoption"
-    ],
-    "capabilities": [
-      "frontend-ui"
+      "ml-ai"
     ]
   },
   {
@@ -13812,30 +13879,6 @@
     "name": "lenis",
     "author": "darkroomengineering",
     "description": "Smooth scroll as it should be",
-    "scope": "starred",
-    "lastActivityAt": "2026-06-26T00:00:00.000Z",
-    "staleness": "active",
-    "researchStatus": "untracked",
-    "adoptionScore": 84,
-    "adoptionKind": "house",
-    "reasons": [
-      "Adoption kind: house",
-      "Primary skills: repo-discovery, repo-adoption",
-      "Recent activity suggests the repo is still moving."
-    ],
-    "houseSkills": [
-      "repo-discovery",
-      "repo-adoption"
-    ],
-    "capabilities": [
-      "frontend-ui"
-    ]
-  },
-  {
-    "nwo": "tsparticles/tsparticles",
-    "name": "tsparticles",
-    "author": "tsparticles",
-    "description": "tsParticles - Easily create highly customizable JavaScript particles effects, confetti explosions and fireworks animations and use them as animated backgrounds for your website. Ready to use components available for React.js, Vue.js (2.x and 3.x), Angular, Svelte, jQuery, Preact, Inferno, Solid, Riot and Web Components.",
     "scope": "starred",
     "lastActivityAt": "2026-06-26T00:00:00.000Z",
     "staleness": "active",
@@ -13949,30 +13992,6 @@
     ]
   },
   {
-    "nwo": "vuejs/vitepress",
-    "name": "vitepress",
-    "author": "vuejs",
-    "description": "Vite & Vue powered static site generator.",
-    "scope": "starred",
-    "lastActivityAt": "2026-06-24T00:00:00.000Z",
-    "staleness": "active",
-    "researchStatus": "untracked",
-    "adoptionScore": 84,
-    "adoptionKind": "house",
-    "reasons": [
-      "Adoption kind: house",
-      "Primary skills: repo-discovery, repo-adoption",
-      "Recent activity suggests the repo is still moving."
-    ],
-    "houseSkills": [
-      "repo-discovery",
-      "repo-adoption"
-    ],
-    "capabilities": [
-      "frontend-ui"
-    ]
-  },
-  {
     "nwo": "homarr-labs/dashboard-icons",
     "name": "dashboard-icons",
     "author": "homarr-labs",
@@ -13994,29 +14013,6 @@
     ],
     "capabilities": [
       "frontend-ui"
-    ]
-  },
-  {
-    "nwo": "kijai/ComfyUI-KJNodes",
-    "name": "ComfyUI-KJNodes",
-    "author": "kijai",
-    "description": "Various custom nodes for ComfyUI",
-    "scope": "starred",
-    "lastActivityAt": "2026-06-24T00:00:00.000Z",
-    "staleness": "active",
-    "researchStatus": "untracked",
-    "adoptionScore": 84,
-    "adoptionKind": "house",
-    "reasons": [
-      "Adoption kind: house",
-      "Primary skills: repo-adoption",
-      "Recent activity suggests the repo is still moving."
-    ],
-    "houseSkills": [
-      "repo-adoption"
-    ],
-    "capabilities": [
-      "ml-ai"
     ]
   },
   {
@@ -14112,29 +14108,6 @@
     ],
     "capabilities": [
       "frontend-ui"
-    ]
-  },
-  {
-    "nwo": "jscad/OpenJSCAD.org",
-    "name": "OpenJSCAD.org",
-    "author": "jscad",
-    "description": "JSCAD is an open source set of modular, browser and command line tools for creating parametric 2D and 3D designs with JavaScript code. It provides a quick, precise and reproducible method for generating 3D models, and is especially useful for creating ready-to-print 3D designs.",
-    "scope": "starred",
-    "lastActivityAt": "2026-06-23T00:00:00.000Z",
-    "staleness": "active",
-    "researchStatus": "untracked",
-    "adoptionScore": 84,
-    "adoptionKind": "house",
-    "reasons": [
-      "Adoption kind: house",
-      "Primary skills: repo-adoption",
-      "Recent activity suggests the repo is still moving."
-    ],
-    "houseSkills": [
-      "repo-adoption"
-    ],
-    "capabilities": [
-      "ml-ai"
     ]
   },
   {
@@ -15323,7 +15296,7 @@
     "author": "home-assistant",
     "description": ":lollipop: Frontend for Home Assistant",
     "scope": "starred",
-    "lastActivityAt": "2026-06-26T00:00:00.000Z",
+    "lastActivityAt": "2026-06-27T00:00:00.000Z",
     "staleness": "active",
     "researchStatus": "untracked",
     "adoptionScore": 82,
@@ -15346,12 +15319,35 @@
     ]
   },
   {
-    "nwo": "ossia/libossia",
-    "name": "libossia",
-    "author": "ossia",
-    "description": "A modern C++, cross-environment distributed object model for creative coding and interaction scoring",
+    "nwo": "Woolverine94/biniou",
+    "name": "biniou",
+    "author": "Woolverine94",
+    "description": "a self-hosted webui for 30+ generative ai",
     "scope": "starred",
-    "lastActivityAt": "2026-06-26T00:00:00.000Z",
+    "lastActivityAt": "2026-06-27T00:00:00.000Z",
+    "staleness": "active",
+    "researchStatus": "untracked",
+    "adoptionScore": 82,
+    "adoptionKind": "house",
+    "reasons": [
+      "Adoption kind: house",
+      "Primary skills: repo-adoption",
+      "Recent activity suggests the repo is still moving."
+    ],
+    "houseSkills": [
+      "repo-adoption"
+    ],
+    "capabilities": [
+      "ml-ai"
+    ]
+  },
+  {
+    "nwo": "navis-org/skeletor",
+    "name": "skeletor",
+    "author": "navis-org",
+    "description": "Extraction of 3D skeletons from meshes.",
+    "scope": "starred",
+    "lastActivityAt": "2026-06-27T00:00:00.000Z",
     "staleness": "active",
     "researchStatus": "untracked",
     "adoptionScore": 82,
@@ -15369,18 +15365,18 @@
     ]
   },
   {
-    "nwo": "Woolverine94/biniou",
-    "name": "biniou",
-    "author": "Woolverine94",
-    "description": "a self-hosted webui for 30+ generative ai",
+    "nwo": "ossia/libossia",
+    "name": "libossia",
+    "author": "ossia",
+    "description": "A modern C++, cross-environment distributed object model for creative coding and interaction scoring",
     "scope": "starred",
     "lastActivityAt": "2026-06-26T00:00:00.000Z",
     "staleness": "active",
     "researchStatus": "untracked",
     "adoptionScore": 82,
-    "adoptionKind": "house",
+    "adoptionKind": "tool",
     "reasons": [
-      "Adoption kind: house",
+      "Adoption kind: tool",
       "Primary skills: repo-adoption",
       "Recent activity suggests the repo is still moving."
     ],
@@ -16159,7 +16155,7 @@
     "author": "Justdvp",
     "description": "🛠️ Simplify your coding with ready-to-use configurations for Anthropic's Claude Code, designed to enhance productivity and streamline your workflow.",
     "scope": "starred",
-    "lastActivityAt": "2026-06-26T00:00:00.000Z",
+    "lastActivityAt": "2026-06-27T00:00:00.000Z",
     "staleness": "active",
     "researchStatus": "untracked",
     "adoptionScore": 81,
@@ -16403,7 +16399,7 @@
     "author": "pytorch",
     "description": "On-device AI across mobile, embedded and edge for PyTorch",
     "scope": "starred",
-    "lastActivityAt": "2026-06-27T00:00:00.000Z",
+    "lastActivityAt": "2026-06-28T00:00:00.000Z",
     "staleness": "active",
     "researchStatus": "untracked",
     "adoptionScore": 80,
@@ -16425,6 +16421,29 @@
     "name": "pytorch",
     "author": "pytorch",
     "description": "Tensors and Dynamic neural networks in Python with strong GPU acceleration",
+    "scope": "starred",
+    "lastActivityAt": "2026-06-28T00:00:00.000Z",
+    "staleness": "active",
+    "researchStatus": "untracked",
+    "adoptionScore": 80,
+    "adoptionKind": "tool",
+    "reasons": [
+      "Adoption kind: tool",
+      "Primary skills: repo-adoption",
+      "Recent activity suggests the repo is still moving."
+    ],
+    "houseSkills": [
+      "repo-adoption"
+    ],
+    "capabilities": [
+      "ml-ai"
+    ]
+  },
+  {
+    "nwo": "mlfoundations/open_clip",
+    "name": "open_clip",
+    "author": "mlfoundations",
+    "description": "An open source implementation of CLIP.",
     "scope": "starred",
     "lastActivityAt": "2026-06-27T00:00:00.000Z",
     "staleness": "active",
@@ -16471,29 +16490,6 @@
     "name": "ncnn",
     "author": "Tencent",
     "description": "ncnn is a high-performance neural network inference framework optimized for the mobile platform",
-    "scope": "starred",
-    "lastActivityAt": "2026-06-25T00:00:00.000Z",
-    "staleness": "active",
-    "researchStatus": "untracked",
-    "adoptionScore": 80,
-    "adoptionKind": "tool",
-    "reasons": [
-      "Adoption kind: tool",
-      "Primary skills: repo-adoption",
-      "Recent activity suggests the repo is still moving."
-    ],
-    "houseSkills": [
-      "repo-adoption"
-    ],
-    "capabilities": [
-      "ml-ai"
-    ]
-  },
-  {
-    "nwo": "mlfoundations/open_clip",
-    "name": "open_clip",
-    "author": "mlfoundations",
-    "description": "An open source implementation of CLIP.",
     "scope": "starred",
     "lastActivityAt": "2026-06-25T00:00:00.000Z",
     "staleness": "active",
@@ -17222,7 +17218,7 @@
     "author": "livekit",
     "description": "Official open source React components and examples for building with LiveKit.",
     "scope": "starred",
-    "lastActivityAt": "2026-06-26T00:00:00.000Z",
+    "lastActivityAt": "2026-06-27T00:00:00.000Z",
     "staleness": "active",
     "researchStatus": "untracked",
     "adoptionScore": 79,
@@ -17246,7 +17242,7 @@
     "author": "f3d-app",
     "description": "Fast and minimalist 3D viewer.",
     "scope": "starred",
-    "lastActivityAt": "2026-06-26T00:00:00.000Z",
+    "lastActivityAt": "2026-06-27T00:00:00.000Z",
     "staleness": "active",
     "researchStatus": "untracked",
     "adoptionScore": 79,
@@ -17260,6 +17256,29 @@
       "repo-adoption"
     ],
     "capabilities": []
+  },
+  {
+    "nwo": "EnzymeAD/Enzyme",
+    "name": "Enzyme",
+    "author": "EnzymeAD",
+    "description": "High-performance automatic differentiation of LLVM and MLIR.",
+    "scope": "starred",
+    "lastActivityAt": "2026-06-27T00:00:00.000Z",
+    "staleness": "active",
+    "researchStatus": "untracked",
+    "adoptionScore": 79,
+    "adoptionKind": "tool",
+    "reasons": [
+      "Adoption kind: tool",
+      "Primary skills: repo-adoption",
+      "Recent activity suggests the repo is still moving."
+    ],
+    "houseSkills": [
+      "repo-adoption"
+    ],
+    "capabilities": [
+      "ml-ai"
+    ]
   },
   {
     "nwo": "n0-computer/iroh",
@@ -17323,29 +17342,6 @@
       "repo-adoption"
     ],
     "capabilities": []
-  },
-  {
-    "nwo": "EnzymeAD/Enzyme",
-    "name": "Enzyme",
-    "author": "EnzymeAD",
-    "description": "High-performance automatic differentiation of LLVM and MLIR.",
-    "scope": "starred",
-    "lastActivityAt": "2026-06-26T00:00:00.000Z",
-    "staleness": "active",
-    "researchStatus": "untracked",
-    "adoptionScore": 79,
-    "adoptionKind": "tool",
-    "reasons": [
-      "Adoption kind: tool",
-      "Primary skills: repo-adoption",
-      "Recent activity suggests the repo is still moving."
-    ],
-    "houseSkills": [
-      "repo-adoption"
-    ],
-    "capabilities": [
-      "ml-ai"
-    ]
   },
   {
     "nwo": "three-types/three-ts-types",
@@ -17673,6 +17669,29 @@
     "adoptionKind": "tool",
     "reasons": [
       "Adoption kind: tool",
+      "Primary skills: repo-adoption",
+      "Recent activity suggests the repo is still moving."
+    ],
+    "houseSkills": [
+      "repo-adoption"
+    ],
+    "capabilities": [
+      "ml-ai"
+    ]
+  },
+  {
+    "nwo": "uezo/aiavatarkit",
+    "name": "aiavatarkit",
+    "author": "uezo",
+    "description": "🥰 Building AI-based conversational avatars lightning fast ⚡️💬",
+    "scope": "starred",
+    "lastActivityAt": "2026-05-23T00:00:00.000Z",
+    "staleness": "active",
+    "researchStatus": "untracked",
+    "adoptionScore": 79,
+    "adoptionKind": "house",
+    "reasons": [
+      "Adoption kind: house",
       "Primary skills: repo-adoption",
       "Recent activity suggests the repo is still moving."
     ],
@@ -18149,6 +18168,30 @@
     ]
   },
   {
+    "nwo": "ImageMagick/ImageMagick",
+    "name": "ImageMagick",
+    "author": "ImageMagick",
+    "description": "ImageMagick is a free, open-source software suite for creating, editing, converting, and displaying images. It supports 200+ formats and offers powerful command-line tools and APIs for automation, scripting, and integration across platforms.",
+    "scope": "starred",
+    "lastActivityAt": "2026-06-27T00:00:00.000Z",
+    "staleness": "active",
+    "researchStatus": "untracked",
+    "adoptionScore": 78,
+    "adoptionKind": "service",
+    "reasons": [
+      "Adoption kind: service",
+      "Primary skills: repo-adoption, mine-execution",
+      "Recent activity suggests the repo is still moving."
+    ],
+    "houseSkills": [
+      "repo-adoption",
+      "mine-execution"
+    ],
+    "capabilities": [
+      "repo-ops"
+    ]
+  },
+  {
     "nwo": "EsotericSoftware/spine-runtimes",
     "name": "spine-runtimes",
     "author": "EsotericSoftware",
@@ -18169,30 +18212,6 @@
     ],
     "capabilities": [
       "backend-service"
-    ]
-  },
-  {
-    "nwo": "ImageMagick/ImageMagick",
-    "name": "ImageMagick",
-    "author": "ImageMagick",
-    "description": "ImageMagick is a free, open-source software suite for creating, editing, converting, and displaying images. It supports 200+ formats and offers powerful command-line tools and APIs for automation, scripting, and integration across platforms.",
-    "scope": "starred",
-    "lastActivityAt": "2026-06-26T00:00:00.000Z",
-    "staleness": "active",
-    "researchStatus": "untracked",
-    "adoptionScore": 78,
-    "adoptionKind": "service",
-    "reasons": [
-      "Adoption kind: service",
-      "Primary skills: repo-adoption, mine-execution",
-      "Recent activity suggests the repo is still moving."
-    ],
-    "houseSkills": [
-      "repo-adoption",
-      "mine-execution"
-    ],
-    "capabilities": [
-      "repo-ops"
     ]
   },
   {
@@ -18326,29 +18345,6 @@
       "repo-adoption"
     ],
     "capabilities": []
-  },
-  {
-    "nwo": "uezo/aiavatarkit",
-    "name": "aiavatarkit",
-    "author": "uezo",
-    "description": "🥰 Building AI-based conversational avatars lightning fast ⚡️💬",
-    "scope": "starred",
-    "lastActivityAt": "2026-05-23T00:00:00.000Z",
-    "staleness": "active",
-    "researchStatus": "untracked",
-    "adoptionScore": 78,
-    "adoptionKind": "house",
-    "reasons": [
-      "Adoption kind: house",
-      "Primary skills: repo-adoption",
-      "Recent activity suggests the repo is still moving."
-    ],
-    "houseSkills": [
-      "repo-adoption"
-    ],
-    "capabilities": [
-      "ml-ai"
-    ]
   },
   {
     "nwo": "sveinbjornt/Platypus",
@@ -18688,6 +18684,31 @@
     ]
   },
   {
+    "nwo": "f/prompts.chat",
+    "name": "prompts.chat",
+    "author": "f",
+    "description": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
+    "scope": "starred",
+    "lastActivityAt": "2026-06-27T00:00:00.000Z",
+    "staleness": "active",
+    "researchStatus": "untracked",
+    "adoptionScore": 77,
+    "adoptionKind": "house",
+    "reasons": [
+      "Adoption kind: house",
+      "Primary skills: repo-discovery, repo-adoption",
+      "Recent activity suggests the repo is still moving."
+    ],
+    "houseSkills": [
+      "repo-discovery",
+      "repo-adoption"
+    ],
+    "capabilities": [
+      "frontend-ui",
+      "ml-ai"
+    ]
+  },
+  {
     "nwo": "lightningpixel/modly",
     "name": "modly",
     "author": "lightningpixel",
@@ -18732,31 +18753,6 @@
       "repo-adoption"
     ],
     "capabilities": [
-      "ml-ai"
-    ]
-  },
-  {
-    "nwo": "f/prompts.chat",
-    "name": "prompts.chat",
-    "author": "f",
-    "description": "f.k.a. Awesome ChatGPT Prompts. Share, discover, and collect prompts from the community. Free and open source — self-host for your organization with complete privacy.",
-    "scope": "starred",
-    "lastActivityAt": "2026-06-26T00:00:00.000Z",
-    "staleness": "active",
-    "researchStatus": "untracked",
-    "adoptionScore": 77,
-    "adoptionKind": "house",
-    "reasons": [
-      "Adoption kind: house",
-      "Primary skills: repo-discovery, repo-adoption",
-      "Recent activity suggests the repo is still moving."
-    ],
-    "houseSkills": [
-      "repo-discovery",
-      "repo-adoption"
-    ],
-    "capabilities": [
-      "frontend-ui",
       "ml-ai"
     ]
   },
@@ -19477,6 +19473,33 @@
     ]
   },
   {
+    "nwo": "dcrebbin/meta-glasses-api",
+    "name": "meta-glasses-api",
+    "author": "dcrebbin",
+    "description": " \"Hey Meta send a message to ChatGPT\" Mai: A Hacky Messenger browser extension & pseudo API for the Meta Glasses :eyeglasses:",
+    "scope": "starred",
+    "lastActivityAt": "2025-06-28T00:00:00.000Z",
+    "staleness": "stale",
+    "researchStatus": "untracked",
+    "adoptionScore": 77,
+    "adoptionKind": "tool",
+    "reasons": [
+      "Adoption kind: tool",
+      "Primary skills: repo-discovery, skill-extraction, repo-adoption",
+      "Stale activity suggests higher maintenance risk."
+    ],
+    "houseSkills": [
+      "repo-discovery",
+      "skill-extraction",
+      "repo-adoption"
+    ],
+    "capabilities": [
+      "backend-service",
+      "developer-tooling",
+      "frontend-ui"
+    ]
+  },
+  {
     "nwo": "MadcowD/ell",
     "name": "ell",
     "author": "MadcowD",
@@ -20082,6 +20105,30 @@
     ],
     "capabilities": [
       "repo-ops"
+    ]
+  },
+  {
+    "nwo": "halfof8/patterngen-oss",
+    "name": "patterngen-oss",
+    "author": "halfof8",
+    "description": "No description",
+    "scope": "starred",
+    "lastActivityAt": "2026-06-22T00:00:00.000Z",
+    "staleness": "active",
+    "researchStatus": "untracked",
+    "adoptionScore": 76,
+    "adoptionKind": "house",
+    "reasons": [
+      "Adoption kind: house",
+      "Primary skills: repo-discovery, repo-adoption",
+      "Recent activity suggests the repo is still moving."
+    ],
+    "houseSkills": [
+      "repo-discovery",
+      "repo-adoption"
+    ],
+    "capabilities": [
+      "frontend-ui"
     ]
   },
   {
@@ -20823,30 +20870,6 @@
     ]
   },
   {
-    "nwo": "halfof8/patterngen-oss",
-    "name": "patterngen-oss",
-    "author": "halfof8",
-    "description": "No description",
-    "scope": "starred",
-    "lastActivityAt": "2026-06-22T00:00:00.000Z",
-    "staleness": "active",
-    "researchStatus": "untracked",
-    "adoptionScore": 75,
-    "adoptionKind": "house",
-    "reasons": [
-      "Adoption kind: house",
-      "Primary skills: repo-discovery, repo-adoption",
-      "Recent activity suggests the repo is still moving."
-    ],
-    "houseSkills": [
-      "repo-discovery",
-      "repo-adoption"
-    ],
-    "capabilities": [
-      "frontend-ui"
-    ]
-  },
-  {
     "nwo": "msitarzewski/duh",
     "name": "duh",
     "author": "msitarzewski",
@@ -20929,29 +20952,6 @@
       "Adoption kind: tool",
       "Primary skills: repo-adoption",
       "Recent activity suggests the repo is still moving."
-    ],
-    "houseSkills": [
-      "repo-adoption"
-    ],
-    "capabilities": [
-      "ml-ai"
-    ]
-  },
-  {
-    "nwo": "navis-org/skeletor",
-    "name": "skeletor",
-    "author": "navis-org",
-    "description": "Extraction of 3D skeletons from meshes.",
-    "scope": "starred",
-    "lastActivityAt": "2026-02-25T00:00:00.000Z",
-    "staleness": "watch",
-    "researchStatus": "untracked",
-    "adoptionScore": 75,
-    "adoptionKind": "tool",
-    "reasons": [
-      "Adoption kind: tool",
-      "Primary skills: repo-adoption",
-      "Medium-term activity suggests this repo should stay on the watchlist."
     ],
     "houseSkills": [
       "repo-adoption"
@@ -21848,6 +21848,31 @@
     ]
   },
   {
+    "nwo": "msitarzewski/AGENT-ZERO",
+    "name": "AGENT-ZERO",
+    "author": "msitarzewski",
+    "description": "Operational framework and patterns for high-quality, AI-assisted software development. This repository provides a single canonical guide for AGENTS.md and a lightweight workflow for repeatable, auditable, and architecture-first delivery.",
+    "scope": "starred",
+    "lastActivityAt": "2026-03-05T00:00:00.000Z",
+    "staleness": "watch",
+    "researchStatus": "untracked",
+    "adoptionScore": 73,
+    "adoptionKind": "house",
+    "reasons": [
+      "Adoption kind: house",
+      "Primary skills: skill-extraction, repo-adoption",
+      "Medium-term activity suggests this repo should stay on the watchlist."
+    ],
+    "houseSkills": [
+      "skill-extraction",
+      "repo-adoption"
+    ],
+    "capabilities": [
+      "agent-workflows",
+      "ml-ai"
+    ]
+  },
+  {
     "nwo": "anthropics/prompt-eng-interactive-tutorial",
     "name": "prompt-eng-interactive-tutorial",
     "author": "anthropics",
@@ -22457,7 +22482,7 @@
     "author": "elastic",
     "description": "Elastic UI Framework 🙌",
     "scope": "starred",
-    "lastActivityAt": "2026-06-26T00:00:00.000Z",
+    "lastActivityAt": "2026-06-27T00:00:00.000Z",
     "staleness": "active",
     "researchStatus": "untracked",
     "adoptionScore": 72,
@@ -22481,7 +22506,7 @@
     "author": "OGRECave",
     "description": "scene-oriented, flexible 3D C++ engine",
     "scope": "starred",
-    "lastActivityAt": "2026-06-25T00:00:00.000Z",
+    "lastActivityAt": "2026-06-27T00:00:00.000Z",
     "staleness": "active",
     "researchStatus": "untracked",
     "adoptionScore": 72,
@@ -22567,31 +22592,6 @@
       "repo-adoption"
     ],
     "capabilities": [
-      "ml-ai"
-    ]
-  },
-  {
-    "nwo": "msitarzewski/AGENT-ZERO",
-    "name": "AGENT-ZERO",
-    "author": "msitarzewski",
-    "description": "Operational framework and patterns for high-quality, AI-assisted software development. This repository provides a single canonical guide for AGENTS.md and a lightweight workflow for repeatable, auditable, and architecture-first delivery.",
-    "scope": "starred",
-    "lastActivityAt": "2026-03-05T00:00:00.000Z",
-    "staleness": "watch",
-    "researchStatus": "untracked",
-    "adoptionScore": 72,
-    "adoptionKind": "house",
-    "reasons": [
-      "Adoption kind: house",
-      "Primary skills: skill-extraction, repo-adoption",
-      "Medium-term activity suggests this repo should stay on the watchlist."
-    ],
-    "houseSkills": [
-      "skill-extraction",
-      "repo-adoption"
-    ],
-    "capabilities": [
-      "agent-workflows",
       "ml-ai"
     ]
   },
@@ -24686,6 +24686,31 @@
     ]
   },
   {
+    "nwo": "felixtaubner/cap4d",
+    "name": "cap4d",
+    "author": "felixtaubner",
+    "description": "Official repository for the paper \"CAP4D: Creating Animatable 4D Portrait Avatars with Morphable Multi-View Diffusion Models\"",
+    "scope": "starred",
+    "lastActivityAt": "2026-03-24T00:00:00.000Z",
+    "staleness": "watch",
+    "researchStatus": "untracked",
+    "adoptionScore": 71,
+    "adoptionKind": "tool",
+    "reasons": [
+      "Adoption kind: tool",
+      "Primary skills: repo-research, repo-adoption",
+      "Medium-term activity suggests this repo should stay on the watchlist."
+    ],
+    "houseSkills": [
+      "repo-research",
+      "repo-adoption"
+    ],
+    "capabilities": [
+      "research-intelligence",
+      "ml-ai"
+    ]
+  },
+  {
     "nwo": "Stability-AI/stable-virtual-camera",
     "name": "stable-virtual-camera",
     "author": "Stability-AI",
@@ -25261,31 +25286,6 @@
       "repo-adoption"
     ],
     "capabilities": [
-      "ml-ai"
-    ]
-  },
-  {
-    "nwo": "felixtaubner/cap4d",
-    "name": "cap4d",
-    "author": "felixtaubner",
-    "description": "Official repository for the paper \"CAP4D: Creating Animatable 4D Portrait Avatars with Morphable Multi-View Diffusion Models\"",
-    "scope": "starred",
-    "lastActivityAt": "2026-03-24T00:00:00.000Z",
-    "staleness": "watch",
-    "researchStatus": "untracked",
-    "adoptionScore": 70,
-    "adoptionKind": "tool",
-    "reasons": [
-      "Adoption kind: tool",
-      "Primary skills: repo-research, repo-adoption",
-      "Medium-term activity suggests this repo should stay on the watchlist."
-    ],
-    "houseSkills": [
-      "repo-research",
-      "repo-adoption"
-    ],
-    "capabilities": [
-      "research-intelligence",
       "ml-ai"
     ]
   },
@@ -26039,29 +26039,6 @@
     "adoptionKind": "house",
     "reasons": [
       "Adoption kind: house",
-      "Primary skills: repo-adoption",
-      "Recent activity suggests the repo is still moving."
-    ],
-    "houseSkills": [
-      "repo-adoption"
-    ],
-    "capabilities": [
-      "ml-ai"
-    ]
-  },
-  {
-    "nwo": "GAP-LAB-CUHK-SZ/HairStep",
-    "name": "HairStep",
-    "author": "GAP-LAB-CUHK-SZ",
-    "description": "Repository for \"HairStep: Transfer Synthetic to Real Using Strand and Depth Maps for Single-View 3D Hair Modeling\". [CVPR2023 Highlight]",
-    "scope": "starred",
-    "lastActivityAt": "2026-03-30T00:00:00.000Z",
-    "staleness": "active",
-    "researchStatus": "untracked",
-    "adoptionScore": 69,
-    "adoptionKind": "tool",
-    "reasons": [
-      "Adoption kind: tool",
       "Primary skills: repo-adoption",
       "Recent activity suggests the repo is still moving."
     ],
@@ -27381,6 +27358,49 @@
     ]
   },
   {
+    "nwo": "antiwork/gumroad",
+    "name": "gumroad",
+    "author": "antiwork",
+    "description": "See what sticks",
+    "scope": "starred",
+    "lastActivityAt": "2026-06-28T00:00:00.000Z",
+    "staleness": "active",
+    "researchStatus": "untracked",
+    "adoptionScore": 67,
+    "adoptionKind": "ignore",
+    "reasons": [
+      "Adoption kind: ignore",
+      "Primary skills: repo-discovery",
+      "Recent activity suggests the repo is still moving."
+    ],
+    "houseSkills": [],
+    "capabilities": []
+  },
+  {
+    "nwo": "njbrown/texturelab",
+    "name": "texturelab",
+    "author": "njbrown",
+    "description": "Free, Cross-Platform, GPU-Accelerated Procedural Texture Generator",
+    "scope": "starred",
+    "lastActivityAt": "2026-06-27T00:00:00.000Z",
+    "staleness": "active",
+    "researchStatus": "untracked",
+    "adoptionScore": 67,
+    "adoptionKind": "house",
+    "reasons": [
+      "Adoption kind: house",
+      "Primary skills: repo-discovery, repo-adoption",
+      "Recent activity suggests the repo is still moving."
+    ],
+    "houseSkills": [
+      "repo-discovery",
+      "repo-adoption"
+    ],
+    "capabilities": [
+      "frontend-ui"
+    ]
+  },
+  {
     "nwo": "zed-industries/zed",
     "name": "zed",
     "author": "zed-industries",
@@ -27402,36 +27422,12 @@
     "capabilities": []
   },
   {
-    "nwo": "njbrown/texturelab",
-    "name": "texturelab",
-    "author": "njbrown",
-    "description": "Free, Cross-Platform, GPU-Accelerated Procedural Texture Generator",
-    "scope": "starred",
-    "lastActivityAt": "2026-06-26T00:00:00.000Z",
-    "staleness": "active",
-    "researchStatus": "untracked",
-    "adoptionScore": 67,
-    "adoptionKind": "house",
-    "reasons": [
-      "Adoption kind: house",
-      "Primary skills: repo-discovery, repo-adoption",
-      "Recent activity suggests the repo is still moving."
-    ],
-    "houseSkills": [
-      "repo-discovery",
-      "repo-adoption"
-    ],
-    "capabilities": [
-      "frontend-ui"
-    ]
-  },
-  {
     "nwo": "exelban/stats",
     "name": "stats",
     "author": "exelban",
     "description": "macOS system monitor in your menu bar",
     "scope": "starred",
-    "lastActivityAt": "2026-06-26T00:00:00.000Z",
+    "lastActivityAt": "2026-06-27T00:00:00.000Z",
     "staleness": "active",
     "researchStatus": "untracked",
     "adoptionScore": 67,
@@ -27450,7 +27446,45 @@
     "author": "melonjs",
     "description": "a modern & lightweight HTML5 game engine",
     "scope": "starred",
-    "lastActivityAt": "2026-06-26T00:00:00.000Z",
+    "lastActivityAt": "2026-06-27T00:00:00.000Z",
+    "staleness": "active",
+    "researchStatus": "untracked",
+    "adoptionScore": 67,
+    "adoptionKind": "ignore",
+    "reasons": [
+      "Adoption kind: ignore",
+      "Primary skills: repo-discovery",
+      "Recent activity suggests the repo is still moving."
+    ],
+    "houseSkills": [],
+    "capabilities": []
+  },
+  {
+    "nwo": "z2586300277/three-cesium-examples",
+    "name": "three-cesium-examples",
+    "author": "z2586300277",
+    "description": "WebGL Three.js Cesium.js Examples And Demo - WebGL 的 Three.js 和 Cesium.js 案例 --- Star ---点星星",
+    "scope": "starred",
+    "lastActivityAt": "2026-06-27T00:00:00.000Z",
+    "staleness": "active",
+    "researchStatus": "untracked",
+    "adoptionScore": 67,
+    "adoptionKind": "ignore",
+    "reasons": [
+      "Adoption kind: ignore",
+      "Primary skills: repo-discovery",
+      "Recent activity suggests the repo is still moving."
+    ],
+    "houseSkills": [],
+    "capabilities": []
+  },
+  {
+    "nwo": "gkjohnson/three-mesh-bvh",
+    "name": "three-mesh-bvh",
+    "author": "gkjohnson",
+    "description": "A BVH implementation to speed up raycasting and enable spatial queries against three.js meshes.",
+    "scope": "starred",
+    "lastActivityAt": "2026-06-27T00:00:00.000Z",
     "staleness": "active",
     "researchStatus": "untracked",
     "adoptionScore": 67,
@@ -27469,26 +27503,7 @@
     "author": "PufferAI",
     "description": "Puffing up reinforcement learning",
     "scope": "starred",
-    "lastActivityAt": "2026-06-26T00:00:00.000Z",
-    "staleness": "active",
-    "researchStatus": "untracked",
-    "adoptionScore": 67,
-    "adoptionKind": "ignore",
-    "reasons": [
-      "Adoption kind: ignore",
-      "Primary skills: repo-discovery",
-      "Recent activity suggests the repo is still moving."
-    ],
-    "houseSkills": [],
-    "capabilities": []
-  },
-  {
-    "nwo": "antiwork/gumroad",
-    "name": "gumroad",
-    "author": "antiwork",
-    "description": "See what sticks",
-    "scope": "starred",
-    "lastActivityAt": "2026-06-26T00:00:00.000Z",
+    "lastActivityAt": "2026-06-27T00:00:00.000Z",
     "staleness": "active",
     "researchStatus": "untracked",
     "adoptionScore": 67,
@@ -27507,7 +27522,7 @@
     "author": "qarmin",
     "description": "Multi functional app to find duplicates, empty folders, similar images etc.",
     "scope": "starred",
-    "lastActivityAt": "2026-06-26T00:00:00.000Z",
+    "lastActivityAt": "2026-06-27T00:00:00.000Z",
     "staleness": "active",
     "researchStatus": "untracked",
     "adoptionScore": 67,
@@ -27617,25 +27632,6 @@
     "houseSkills": [
       "repo-adoption"
     ],
-    "capabilities": []
-  },
-  {
-    "nwo": "gkjohnson/three-mesh-bvh",
-    "name": "three-mesh-bvh",
-    "author": "gkjohnson",
-    "description": "A BVH implementation to speed up raycasting and enable spatial queries against three.js meshes.",
-    "scope": "starred",
-    "lastActivityAt": "2026-06-24T00:00:00.000Z",
-    "staleness": "active",
-    "researchStatus": "untracked",
-    "adoptionScore": 67,
-    "adoptionKind": "ignore",
-    "reasons": [
-      "Adoption kind: ignore",
-      "Primary skills: repo-discovery",
-      "Recent activity suggests the repo is still moving."
-    ],
-    "houseSkills": [],
     "capabilities": []
   },
   {
@@ -27868,25 +27864,6 @@
     "houseSkills": [
       "repo-adoption"
     ],
-    "capabilities": []
-  },
-  {
-    "nwo": "z2586300277/three-cesium-examples",
-    "name": "three-cesium-examples",
-    "author": "z2586300277",
-    "description": "WebGL Three.js Cesium.js Examples And Demo - WebGL 的 Three.js 和 Cesium.js 案例 --- Star ---点星星",
-    "scope": "starred",
-    "lastActivityAt": "2026-06-16T00:00:00.000Z",
-    "staleness": "active",
-    "researchStatus": "untracked",
-    "adoptionScore": 67,
-    "adoptionKind": "ignore",
-    "reasons": [
-      "Adoption kind: ignore",
-      "Primary skills: repo-discovery",
-      "Recent activity suggests the repo is still moving."
-    ],
-    "houseSkills": [],
     "capabilities": []
   },
   {
@@ -28410,7 +28387,7 @@
     "author": "open-telemetry",
     "description": "The OpenTelemetry website and documentation",
     "scope": "starred",
-    "lastActivityAt": "2026-06-26T00:00:00.000Z",
+    "lastActivityAt": "2026-06-28T00:00:00.000Z",
     "staleness": "active",
     "researchStatus": "untracked",
     "adoptionScore": 66,
@@ -28813,6 +28790,29 @@
     ]
   },
   {
+    "nwo": "colour-science/colour-visuals",
+    "name": "colour-visuals",
+    "author": "colour-science",
+    "description": "WebGPU-based visuals for colour science applications",
+    "scope": "starred",
+    "lastActivityAt": "2026-06-27T00:00:00.000Z",
+    "staleness": "active",
+    "researchStatus": "untracked",
+    "adoptionScore": 65,
+    "adoptionKind": "house",
+    "reasons": [
+      "Adoption kind: house",
+      "Primary skills: repo-adoption",
+      "Recent activity suggests the repo is still moving."
+    ],
+    "houseSkills": [
+      "repo-adoption"
+    ],
+    "capabilities": [
+      "ml-ai"
+    ]
+  },
+  {
     "nwo": "generative-design/Code-Package-p5.js",
     "name": "Code-Package-p5.js",
     "author": "generative-design",
@@ -28830,29 +28830,6 @@
     ],
     "houseSkills": [],
     "capabilities": []
-  },
-  {
-    "nwo": "colour-science/colour-visuals",
-    "name": "colour-visuals",
-    "author": "colour-science",
-    "description": "WebGPU-based visuals for colour science applications",
-    "scope": "starred",
-    "lastActivityAt": "2026-06-22T00:00:00.000Z",
-    "staleness": "active",
-    "researchStatus": "untracked",
-    "adoptionScore": 65,
-    "adoptionKind": "house",
-    "reasons": [
-      "Adoption kind: house",
-      "Primary skills: repo-adoption",
-      "Recent activity suggests the repo is still moving."
-    ],
-    "houseSkills": [
-      "repo-adoption"
-    ],
-    "capabilities": [
-      "ml-ai"
-    ]
   },
   {
     "nwo": "RohanAdwankar/oxdraw",
@@ -31708,6 +31685,29 @@
     "capabilities": [
       "backend-service",
       "frontend-ui"
+    ]
+  },
+  {
+    "nwo": "GAP-LAB-CUHK-SZ/HairStep",
+    "name": "HairStep",
+    "author": "GAP-LAB-CUHK-SZ",
+    "description": "Repository for \"HairStep: Transfer Synthetic to Real Using Strand and Depth Maps for Single-View 3D Hair Modeling\". [CVPR2023 Highlight]",
+    "scope": "starred",
+    "lastActivityAt": "2026-03-30T00:00:00.000Z",
+    "staleness": "watch",
+    "researchStatus": "untracked",
+    "adoptionScore": 62,
+    "adoptionKind": "tool",
+    "reasons": [
+      "Adoption kind: tool",
+      "Primary skills: repo-adoption",
+      "Medium-term activity suggests this repo should stay on the watchlist."
+    ],
+    "houseSkills": [
+      "repo-adoption"
+    ],
+    "capabilities": [
+      "ml-ai"
     ]
   },
   {
@@ -37995,7 +37995,7 @@
     "author": "colmap",
     "description": "COLMAP - Structure-from-Motion and Multi-View Stereo",
     "scope": "starred",
-    "lastActivityAt": "2026-06-26T00:00:00.000Z",
+    "lastActivityAt": "2026-06-27T00:00:00.000Z",
     "staleness": "active",
     "researchStatus": "untracked",
     "adoptionScore": 55,
@@ -38014,7 +38014,7 @@
     "author": "bigskysoftware",
     "description": "</> htmx - high power tools for HTML",
     "scope": "starred",
-    "lastActivityAt": "2026-06-26T00:00:00.000Z",
+    "lastActivityAt": "2026-06-27T00:00:00.000Z",
     "staleness": "active",
     "researchStatus": "untracked",
     "adoptionScore": 55,
@@ -38033,7 +38033,7 @@
     "author": "MonoGame",
     "description": "One framework for creating powerful cross-platform games.",
     "scope": "starred",
-    "lastActivityAt": "2026-06-26T00:00:00.000Z",
+    "lastActivityAt": "2026-06-27T00:00:00.000Z",
     "staleness": "active",
     "researchStatus": "untracked",
     "adoptionScore": 55,
@@ -38826,25 +38826,6 @@
     "description": "No description",
     "scope": "starred",
     "lastActivityAt": "2026-04-27T00:00:00.000Z",
-    "staleness": "active",
-    "researchStatus": "untracked",
-    "adoptionScore": 54,
-    "adoptionKind": "ignore",
-    "reasons": [
-      "Adoption kind: ignore",
-      "Primary skills: repo-discovery",
-      "Recent activity suggests the repo is still moving."
-    ],
-    "houseSkills": [],
-    "capabilities": []
-  },
-  {
-    "nwo": "numerical-mooc/numerical-mooc",
-    "name": "numerical-mooc",
-    "author": "numerical-mooc",
-    "description": "A course in numerical methods with Python for engineers and scientists: currently 5 learning modules, with student assignments.",
-    "scope": "starred",
-    "lastActivityAt": "2026-03-30T00:00:00.000Z",
     "staleness": "active",
     "researchStatus": "untracked",
     "adoptionScore": 54,
@@ -39707,7 +39688,7 @@
     "author": "ossia",
     "description": "ossia score, an interactive sequencer for the intermedia arts",
     "scope": "starred",
-    "lastActivityAt": "2026-06-26T00:00:00.000Z",
+    "lastActivityAt": "2026-06-27T00:00:00.000Z",
     "staleness": "active",
     "researchStatus": "untracked",
     "adoptionScore": 53,
@@ -43405,6 +43386,25 @@
     "capabilities": []
   },
   {
+    "nwo": "numerical-mooc/numerical-mooc",
+    "name": "numerical-mooc",
+    "author": "numerical-mooc",
+    "description": "A course in numerical methods with Python for engineers and scientists: currently 5 learning modules, with student assignments.",
+    "scope": "starred",
+    "lastActivityAt": "2026-03-30T00:00:00.000Z",
+    "staleness": "watch",
+    "researchStatus": "untracked",
+    "adoptionScore": 47,
+    "adoptionKind": "ignore",
+    "reasons": [
+      "Adoption kind: ignore",
+      "Primary skills: repo-discovery",
+      "Medium-term activity suggests this repo should stay on the watchlist."
+    ],
+    "houseSkills": [],
+    "capabilities": []
+  },
+  {
     "nwo": "sveinbjornt/ochre",
     "name": "ochre",
     "author": "sveinbjornt",
@@ -44504,25 +44504,6 @@
     "capabilities": [
       "ml-ai"
     ]
-  },
-  {
-    "nwo": "xem/W",
-    "name": "W",
-    "author": "xem",
-    "description": "A micro WebGL2 framework with a ton of features",
-    "scope": "starred",
-    "lastActivityAt": "2026-03-30T00:00:00.000Z",
-    "staleness": "active",
-    "researchStatus": "untracked",
-    "adoptionScore": 46,
-    "adoptionKind": "ignore",
-    "reasons": [
-      "Adoption kind: ignore",
-      "Primary skills: repo-discovery",
-      "Recent activity suggests the repo is still moving."
-    ],
-    "houseSkills": [],
-    "capabilities": []
   },
   {
     "nwo": "vitalets/github-trending-repos",
@@ -48237,6 +48218,29 @@
     ]
   },
   {
+    "nwo": "ParisNeo/lollms_nodes_suite",
+    "name": "lollms_nodes_suite",
+    "author": "ParisNeo",
+    "description": "A suite of lollms Comfyui nodes",
+    "scope": "starred",
+    "lastActivityAt": "2025-03-12T00:00:00.000Z",
+    "staleness": "stale",
+    "researchStatus": "untracked",
+    "adoptionScore": 40,
+    "adoptionKind": "house",
+    "reasons": [
+      "Adoption kind: house",
+      "Primary skills: repo-adoption",
+      "Stale activity suggests higher maintenance risk."
+    ],
+    "houseSkills": [
+      "repo-adoption"
+    ],
+    "capabilities": [
+      "ml-ai"
+    ]
+  },
+  {
     "nwo": "greggman/html5bytebeat",
     "name": "html5bytebeat",
     "author": "greggman",
@@ -48574,6 +48578,25 @@
     "capabilities": []
   },
   {
+    "nwo": "xem/W",
+    "name": "W",
+    "author": "xem",
+    "description": "A micro WebGL2 framework with a ton of features",
+    "scope": "starred",
+    "lastActivityAt": "2026-03-30T00:00:00.000Z",
+    "staleness": "watch",
+    "researchStatus": "untracked",
+    "adoptionScore": 39,
+    "adoptionKind": "ignore",
+    "reasons": [
+      "Adoption kind: ignore",
+      "Primary skills: repo-discovery",
+      "Medium-term activity suggests this repo should stay on the watchlist."
+    ],
+    "houseSkills": [],
+    "capabilities": []
+  },
+  {
     "nwo": "omigroup/omigroup",
     "name": "omigroup",
     "author": "omigroup",
@@ -48654,29 +48677,6 @@
     ],
     "capabilities": [
       "frontend-ui"
-    ]
-  },
-  {
-    "nwo": "ParisNeo/lollms_nodes_suite",
-    "name": "lollms_nodes_suite",
-    "author": "ParisNeo",
-    "description": "A suite of lollms Comfyui nodes",
-    "scope": "starred",
-    "lastActivityAt": "2025-03-12T00:00:00.000Z",
-    "staleness": "stale",
-    "researchStatus": "untracked",
-    "adoptionScore": 39,
-    "adoptionKind": "house",
-    "reasons": [
-      "Adoption kind: house",
-      "Primary skills: repo-adoption",
-      "Stale activity suggests higher maintenance risk."
-    ],
-    "houseSkills": [
-      "repo-adoption"
-    ],
-    "capabilities": [
-      "ml-ai"
     ]
   },
   {
@@ -52681,6 +52681,25 @@
     "capabilities": []
   },
   {
+    "nwo": "MisterPrada/vortex-glass-sphere",
+    "name": "vortex-glass-sphere",
+    "author": "MisterPrada",
+    "description": "\"Creating a Vortex in a Glass Sphere with Three.js and TSL\"  🚀✨",
+    "scope": "starred",
+    "lastActivityAt": "2025-03-10T00:00:00.000Z",
+    "staleness": "stale",
+    "researchStatus": "untracked",
+    "adoptionScore": 27,
+    "adoptionKind": "ignore",
+    "reasons": [
+      "Adoption kind: ignore",
+      "Primary skills: repo-discovery",
+      "Stale activity suggests higher maintenance risk."
+    ],
+    "houseSkills": [],
+    "capabilities": []
+  },
+  {
     "nwo": "RabbitHoleEscapeR1/r1_escape",
     "name": "r1_escape",
     "author": "RabbitHoleEscapeR1",
@@ -52982,25 +53001,6 @@
     "description": "GPGPU physics for Three.js",
     "scope": "starred",
     "lastActivityAt": "2025-05-31T00:00:00.000Z",
-    "staleness": "stale",
-    "researchStatus": "untracked",
-    "adoptionScore": 26,
-    "adoptionKind": "ignore",
-    "reasons": [
-      "Adoption kind: ignore",
-      "Primary skills: repo-discovery",
-      "Stale activity suggests higher maintenance risk."
-    ],
-    "houseSkills": [],
-    "capabilities": []
-  },
-  {
-    "nwo": "MisterPrada/vortex-glass-sphere",
-    "name": "vortex-glass-sphere",
-    "author": "MisterPrada",
-    "description": "\"Creating a Vortex in a Glass Sphere with Three.js and TSL\"  🚀✨",
-    "scope": "starred",
-    "lastActivityAt": "2025-03-10T00:00:00.000Z",
     "staleness": "stale",
     "researchStatus": "untracked",
     "adoptionScore": 26,

@@ -11015,7 +11015,8 @@
       "repo-adoption"
     ],
     "rules": [
-      "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house."
+      "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.",
+      "Validate maintenance risk and current ecosystem fit before committing to adoption."
     ],
     "flows": [
       "research-queue-flow",
@@ -11024,8 +11025,8 @@
       "news-digest-refresh"
     ],
     "adoptionKind": "tool",
-    "codexBrief": "# Codex Mission: dcrebbin/meta-glasses-api\nGoal:  \"Hey Meta send a message to ChatGPT\" Mai: A Hacky Messenger browser extension & pseudo API for the Meta Glasses :eyeglasses: Primary Vega Lab fit: repo-discovery via backend-service.\nClassification: tool\nCapabilities: backend-service, developer-tooling, frontend-ui\nHouse skills: repo-discovery, skill-extraction, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: dcrebbin/meta-glasses-api\nGoal:  \"Hey Meta send a message to ChatGPT\" Mai: A Hacky Messenger browser extension & pseudo API for the Meta Glasses :eyeglasses: Primary Vega Lab fit: repo-discovery via backend-service.\nClassification: tool\nCapabilities: backend-service, developer-tooling, frontend-ui\nHouse skills: repo-discovery, skill-extraction, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: dcrebbin/meta-glasses-api\nGoal:  \"Hey Meta send a message to ChatGPT\" Mai: A Hacky Messenger browser extension & pseudo API for the Meta Glasses :eyeglasses: Primary Vega Lab fit: repo-discovery via backend-service.\nClassification: tool\nCapabilities: backend-service, developer-tooling, frontend-ui\nHouse skills: repo-discovery, skill-extraction, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: dcrebbin/meta-glasses-api\nGoal:  \"Hey Meta send a message to ChatGPT\" Mai: A Hacky Messenger browser extension & pseudo API for the Meta Glasses :eyeglasses: Primary Vega Lab fit: repo-discovery via backend-service.\nClassification: tool\nCapabilities: backend-service, developer-tooling, frontend-ui\nHouse skills: repo-discovery, skill-extraction, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "de-id/live-streaming-demo",
