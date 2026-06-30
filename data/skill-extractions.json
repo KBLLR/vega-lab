@@ -34479,19 +34479,27 @@
     "nwo": "n0-computer/iroh",
     "name": "iroh",
     "author": "n0-computer",
-    "summary": "IP addresses break, dial keys instead. Modular networking stack in Rust. Primary Vega Lab fit: repo-adoption via general engineering.",
-    "capabilities": [],
+    "summary": "IP addresses break, dial keys instead. A library that adds QUIC + NAT Traversal to your apps. Primary Vega Lab fit: repo-discovery via developer-tooling.",
+    "capabilities": [
+      "developer-tooling"
+    ],
     "houseSkills": [
+      "repo-discovery",
+      "skill-extraction",
       "repo-adoption"
     ],
-    "rules": [],
+    "rules": [
+      "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house."
+    ],
     "flows": [
       "research-queue-flow",
-      "adoption-decision-flow"
+      "skill-extraction-flow",
+      "adoption-decision-flow",
+      "news-digest-refresh"
     ],
-    "adoptionKind": "house",
-    "codexBrief": "# Codex Mission: n0-computer/iroh\nGoal: IP addresses break, dial keys instead. Modular networking stack in Rust. Primary Vega Lab fit: repo-adoption via general engineering.\nClassification: house\nCapabilities: none\nHouse skills: repo-adoption\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: n0-computer/iroh\nGoal: IP addresses break, dial keys instead. Modular networking stack in Rust. Primary Vega Lab fit: repo-adoption via general engineering.\nClassification: house\nCapabilities: none\nHouse skills: repo-adoption\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "adoptionKind": "tool",
+    "codexBrief": "# Codex Mission: n0-computer/iroh\nGoal: IP addresses break, dial keys instead. A library that adds QUIC + NAT Traversal to your apps. Primary Vega Lab fit: repo-discovery via developer-tooling.\nClassification: tool\nCapabilities: developer-tooling\nHouse skills: repo-discovery, skill-extraction, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: n0-computer/iroh\nGoal: IP addresses break, dial keys instead. A library that adds QUIC + NAT Traversal to your apps. Primary Vega Lab fit: repo-discovery via developer-tooling.\nClassification: tool\nCapabilities: developer-tooling\nHouse skills: repo-discovery, skill-extraction, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "n1ckfg/AI-Render",
@@ -50132,14 +50140,11 @@
     "nwo": "ultralytics/ultralytics",
     "name": "ultralytics",
     "author": "ultralytics",
-    "summary": "Ultralytics YOLO 🚀 Primary Vega Lab fit: repo-discovery via developer-tooling.",
+    "summary": "Ultralytics YOLO26, YOLO11, YOLOv8 — object detection, instance segmentation, semantic segmentation, image classification, pose estimation, object tracking Primary Vega Lab fit: repo-adoption via ml-ai.",
     "capabilities": [
-      "developer-tooling",
       "ml-ai"
     ],
     "houseSkills": [
-      "repo-discovery",
-      "skill-extraction",
       "repo-adoption"
     ],
     "rules": [
@@ -50147,13 +50152,11 @@
     ],
     "flows": [
       "research-queue-flow",
-      "skill-extraction-flow",
-      "adoption-decision-flow",
-      "news-digest-refresh"
+      "adoption-decision-flow"
     ],
     "adoptionKind": "tool",
-    "codexBrief": "# Codex Mission: ultralytics/ultralytics\nGoal: Ultralytics YOLO 🚀 Primary Vega Lab fit: repo-discovery via developer-tooling.\nClassification: tool\nCapabilities: developer-tooling, ml-ai\nHouse skills: repo-discovery, skill-extraction, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: ultralytics/ultralytics\nGoal: Ultralytics YOLO 🚀 Primary Vega Lab fit: repo-discovery via developer-tooling.\nClassification: tool\nCapabilities: developer-tooling, ml-ai\nHouse skills: repo-discovery, skill-extraction, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: ultralytics/ultralytics\nGoal: Ultralytics YOLO26, YOLO11, YOLOv8 — object detection, instance segmentation, semantic segmentation, image classification, pose estimation, object tracking Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: ultralytics/ultralytics\nGoal: Ultralytics YOLO26, YOLO11, YOLOv8 — object detection, instance segmentation, semantic segmentation, image classification, pose estimation, object tracking Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "unibas-gravis/basel-face-model-viewer",
