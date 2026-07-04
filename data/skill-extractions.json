@@ -26597,6 +26597,7 @@
     ],
     "rules": [
       "Review license status before adoption or redistribution work.",
+      "Validate maintenance risk and current ecosystem fit before committing to adoption.",
       "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
     ],
     "flows": [
@@ -26606,8 +26607,8 @@
       "mine-execution-flow"
     ],
     "adoptionKind": "house",
-    "codexBrief": "# Codex Mission: KBLLR/v0-cyberpunk-dashboard-design\nGoal: v0-cyberpunk-dashboard-design is a candidate for house adoption. Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui\nHouse skills: repo-discovery, repo-adoption, mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\n4. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: KBLLR/v0-cyberpunk-dashboard-design\nGoal: v0-cyberpunk-dashboard-design is a candidate for house adoption. Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui\nHouse skills: repo-discovery, repo-adoption, mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\n4. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: KBLLR/v0-cyberpunk-dashboard-design\nGoal: v0-cyberpunk-dashboard-design is a candidate for house adoption. Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui\nHouse skills: repo-discovery, repo-adoption, mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\n4. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: KBLLR/v0-cyberpunk-dashboard-design\nGoal: v0-cyberpunk-dashboard-design is a candidate for house adoption. Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui\nHouse skills: repo-discovery, repo-adoption, mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\n4. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "KBLLR/validator",
@@ -34970,30 +34971,6 @@
     "claudeBrief": "# Claude Mission: nateshmbhat/pyttsx3\nGoal: Offline Text To Speech synthesis for python Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
-    "nwo": "nathan-barry/gpt2-webgl",
-    "name": "gpt2-webgl",
-    "author": "nathan-barry",
-    "summary": "A browser-based, WebGL2 implementation of GPT-2 with transform block and attention matrix visualization Primary Vega Lab fit: repo-discovery via frontend-ui.",
-    "capabilities": [
-      "frontend-ui"
-    ],
-    "houseSkills": [
-      "repo-discovery",
-      "repo-adoption"
-    ],
-    "rules": [
-      "Review license status before adoption or redistribution work."
-    ],
-    "flows": [
-      "research-queue-flow",
-      "adoption-decision-flow",
-      "news-digest-refresh"
-    ],
-    "adoptionKind": "house",
-    "codexBrief": "# Codex Mission: nathan-barry/gpt2-webgl\nGoal: A browser-based, WebGL2 implementation of GPT-2 with transform block and attention matrix visualization Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui\nHouse skills: repo-discovery, repo-adoption\nRules:\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: nathan-barry/gpt2-webgl\nGoal: A browser-based, WebGL2 implementation of GPT-2 with transform block and attention matrix visualization Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui\nHouse skills: repo-discovery, repo-adoption\nRules:\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
-  },
-  {
     "nwo": "nathannlu/ComfyUI-Pets",
     "name": "ComfyUI-Pets",
     "author": "nathannlu",
@@ -35013,6 +34990,30 @@
     "adoptionKind": "house",
     "codexBrief": "# Codex Mission: nathannlu/ComfyUI-Pets\nGoal: 🐶 Add a cute pet to your ComfyUI environment Primary Vega Lab fit: repo-adoption via general engineering.\nClassification: house\nCapabilities: none\nHouse skills: repo-adoption\nRules:\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
     "claudeBrief": "# Claude Mission: nathannlu/ComfyUI-Pets\nGoal: 🐶 Add a cute pet to your ComfyUI environment Primary Vega Lab fit: repo-adoption via general engineering.\nClassification: house\nCapabilities: none\nHouse skills: repo-adoption\nRules:\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+  },
+  {
+    "nwo": "nathanrs/gpt2-webgl",
+    "name": "gpt2-webgl",
+    "author": "nathanrs",
+    "summary": "A browser-based, WebGL2 implementation of GPT-2 with transform block and attention matrix visualization Primary Vega Lab fit: repo-discovery via frontend-ui.",
+    "capabilities": [
+      "frontend-ui"
+    ],
+    "houseSkills": [
+      "repo-discovery",
+      "repo-adoption"
+    ],
+    "rules": [
+      "Review license status before adoption or redistribution work."
+    ],
+    "flows": [
+      "research-queue-flow",
+      "adoption-decision-flow",
+      "news-digest-refresh"
+    ],
+    "adoptionKind": "house",
+    "codexBrief": "# Codex Mission: nathanrs/gpt2-webgl\nGoal: A browser-based, WebGL2 implementation of GPT-2 with transform block and attention matrix visualization Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui\nHouse skills: repo-discovery, repo-adoption\nRules:\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: nathanrs/gpt2-webgl\nGoal: A browser-based, WebGL2 implementation of GPT-2 with transform block and attention matrix visualization Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui\nHouse skills: repo-discovery, repo-adoption\nRules:\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "naver-ai/DenseDiffusion",
@@ -38086,15 +38087,16 @@
       "repo-adoption"
     ],
     "rules": [
-      "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house."
+      "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.",
+      "Validate maintenance risk and current ecosystem fit before committing to adoption."
     ],
     "flows": [
       "research-queue-flow",
       "adoption-decision-flow"
     ],
     "adoptionKind": "tool",
-    "codexBrief": "# Codex Mission: Oryx-mllm/Oryx\nGoal: [ICLR 2025] MLLM for On-Demand Spatial-Temporal Understanding at Arbitrary Resolution Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: Oryx-mllm/Oryx\nGoal: [ICLR 2025] MLLM for On-Demand Spatial-Temporal Understanding at Arbitrary Resolution Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: Oryx-mllm/Oryx\nGoal: [ICLR 2025] MLLM for On-Demand Spatial-Temporal Understanding at Arbitrary Resolution Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: Oryx-mllm/Oryx\nGoal: [ICLR 2025] MLLM for On-Demand Spatial-Temporal Understanding at Arbitrary Resolution Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "osanseviero/InstantCoder",

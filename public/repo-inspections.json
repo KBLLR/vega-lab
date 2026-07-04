@@ -447,7 +447,7 @@
   },
   {
     "nwo": "KBLLR/core-x",
-    "inspectedAt": "2026-07-02T20:55:04.000Z",
+    "inspectedAt": "2026-07-03T13:22:05.000Z",
     "files": {
       "hasReadme": false,
       "packageManagers": [
@@ -2409,10 +2409,12 @@
       ]
     },
     "findings": [
-      "No workflow or deployment config detected in synced key files."
+      "No workflow or deployment config detected in synced key files.",
+      "Repository appears stale based on last activity."
     ],
     "risks": [
-      "Deployment readiness is unclear."
+      "Deployment readiness is unclear.",
+      "Dependencies, build targets, or deployment assumptions may be outdated."
     ]
   },
   {
@@ -2467,7 +2469,7 @@
   },
   {
     "nwo": "KBLLR/vega-lab",
-    "inspectedAt": "2026-07-02T01:07:05.000Z",
+    "inspectedAt": "2026-07-03T03:03:22.000Z",
     "files": {
       "hasReadme": true,
       "packageManagers": [

@@ -2612,6 +2612,41 @@
     "updatedAt": "2025-07-13T18:31:50.000Z"
   },
   {
+    "id": "vega-lab:maintenance:kbllr-v0-cyberpunk-dashboard-design",
+    "kind": "maintenance",
+    "status": "open",
+    "priority": "normal",
+    "nwo": "KBLLR/v0-cyberpunk-dashboard-design",
+    "title": "Run a maintenance pass on v0-cyberpunk-dashboard-design",
+    "summary": "Stale activity increases dependency, workflow, and deployment risk.",
+    "evidence": [
+      "No workflow or deployment config detected in synced key files.",
+      "Repository appears stale based on last activity.",
+      "Deployment readiness is unclear.",
+      "Dependencies, build targets, or deployment assumptions may be outdated."
+    ],
+    "linkedSkills": [
+      "repo-discovery",
+      "repo-adoption",
+      "mine-execution"
+    ],
+    "linkedRules": [
+      "Review license status before adoption or redistribution work.",
+      "Validate maintenance risk and current ecosystem fit before committing to adoption.",
+      "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
+    ],
+    "linkedFlows": [
+      "research-queue-flow",
+      "adoption-decision-flow",
+      "news-digest-refresh",
+      "mine-execution-flow"
+    ],
+    "draft": "Draft a maintenance plan for KBLLR/v0-cyberpunk-dashboard-design: verify dependencies, run available checks, update stale assumptions, and identify a smallest useful PR. Rules: Review license status before adoption or redistribution work. Validate maintenance risk and current ecosystem fit before committing to adoption. Prioritize README, maintenance, and execution readiness before broader ecosystem integration.",
+    "source": "daily-ops",
+    "createdAt": "2025-07-03T11:49:38.000Z",
+    "updatedAt": "2025-07-03T11:49:38.000Z"
+  },
+  {
     "id": "vega-lab:deployment:kbllr-v0-cyberpunk-dashboard-design",
     "kind": "deployment",
     "status": "open",
@@ -2621,7 +2656,9 @@
     "summary": "Vega Lab could not detect workflow or deployment configuration from synced key files.",
     "evidence": [
       "No workflow or deployment config detected in synced key files.",
-      "Deployment readiness is unclear."
+      "Repository appears stale based on last activity.",
+      "Deployment readiness is unclear.",
+      "Dependencies, build targets, or deployment assumptions may be outdated."
     ],
     "linkedSkills": [
       "repo-discovery",
@@ -2630,6 +2667,7 @@
     ],
     "linkedRules": [
       "Review license status before adoption or redistribution work.",
+      "Validate maintenance risk and current ecosystem fit before committing to adoption.",
       "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
     ],
     "linkedFlows": [
