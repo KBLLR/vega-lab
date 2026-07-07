@@ -7213,15 +7213,17 @@
       "repo-research",
       "repo-adoption"
     ],
-    "rules": [],
+    "rules": [
+      "Validate maintenance risk and current ecosystem fit before committing to adoption."
+    ],
     "flows": [
       "research-queue-flow",
       "adoption-decision-flow",
       "news-digest-refresh"
     ],
     "adoptionKind": "house",
-    "codexBrief": "# Codex Mission: BuilderIO/gpt-crawler\nGoal: Crawl a site to generate knowledge files to create your own custom GPT from a URL Primary Vega Lab fit: repo-discovery via research-intelligence.\nClassification: house\nCapabilities: research-intelligence, ml-ai, data-pipeline, frontend-ui\nHouse skills: repo-discovery, repo-research, repo-adoption\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: BuilderIO/gpt-crawler\nGoal: Crawl a site to generate knowledge files to create your own custom GPT from a URL Primary Vega Lab fit: repo-discovery via research-intelligence.\nClassification: house\nCapabilities: research-intelligence, ml-ai, data-pipeline, frontend-ui\nHouse skills: repo-discovery, repo-research, repo-adoption\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: BuilderIO/gpt-crawler\nGoal: Crawl a site to generate knowledge files to create your own custom GPT from a URL Primary Vega Lab fit: repo-discovery via research-intelligence.\nClassification: house\nCapabilities: research-intelligence, ml-ai, data-pipeline, frontend-ui\nHouse skills: repo-discovery, repo-research, repo-adoption\nRules:\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: BuilderIO/gpt-crawler\nGoal: Crawl a site to generate knowledge files to create your own custom GPT from a URL Primary Vega Lab fit: repo-discovery via research-intelligence.\nClassification: house\nCapabilities: research-intelligence, ml-ai, data-pipeline, frontend-ui\nHouse skills: repo-discovery, repo-research, repo-adoption\nRules:\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "byliutao/1Prompt1Story",
@@ -7721,15 +7723,16 @@
       "repo-adoption"
     ],
     "rules": [
-      "Treat external runtimes and APIs as configurable integrations with explicit environment requirements."
+      "Treat external runtimes and APIs as configurable integrations with explicit environment requirements.",
+      "Validate maintenance risk and current ecosystem fit before committing to adoption."
     ],
     "flows": [
       "research-queue-flow",
       "adoption-decision-flow"
     ],
     "adoptionKind": "service",
-    "codexBrief": "# Codex Mission: carson-katri/geometry-script\nGoal: A scripting API for Blender's Geometry Nodes Primary Vega Lab fit: repo-adoption via backend-service.\nClassification: service\nCapabilities: backend-service, ml-ai\nHouse skills: repo-adoption\nRules:\n- Treat external runtimes and APIs as configurable integrations with explicit environment requirements.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: carson-katri/geometry-script\nGoal: A scripting API for Blender's Geometry Nodes Primary Vega Lab fit: repo-adoption via backend-service.\nClassification: service\nCapabilities: backend-service, ml-ai\nHouse skills: repo-adoption\nRules:\n- Treat external runtimes and APIs as configurable integrations with explicit environment requirements.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: carson-katri/geometry-script\nGoal: A scripting API for Blender's Geometry Nodes Primary Vega Lab fit: repo-adoption via backend-service.\nClassification: service\nCapabilities: backend-service, ml-ai\nHouse skills: repo-adoption\nRules:\n- Treat external runtimes and APIs as configurable integrations with explicit environment requirements.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: carson-katri/geometry-script\nGoal: A scripting API for Blender's Geometry Nodes Primary Vega Lab fit: repo-adoption via backend-service.\nClassification: service\nCapabilities: backend-service, ml-ai\nHouse skills: repo-adoption\nRules:\n- Treat external runtimes and APIs as configurable integrations with explicit environment requirements.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "cartesia-ai/cartesia-python",
