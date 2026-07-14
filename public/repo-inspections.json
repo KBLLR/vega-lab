@@ -447,7 +447,7 @@
   },
   {
     "nwo": "KBLLR/core-x",
-    "inspectedAt": "2026-07-10T17:12:25.000Z",
+    "inspectedAt": "2026-07-13T08:29:19.000Z",
     "files": {
       "hasReadme": false,
       "packageManagers": [
@@ -2093,10 +2093,12 @@
       "buildScripts": []
     },
     "findings": [
-      "No test/check/lint script detected from package metadata."
+      "No test/check/lint script detected from package metadata.",
+      "Repository appears stale based on last activity."
     ],
     "risks": [
-      "Maintenance work has no obvious verification command."
+      "Maintenance work has no obvious verification command.",
+      "Dependencies, build targets, or deployment assumptions may be outdated."
     ]
   },
   {
@@ -2469,7 +2471,7 @@
   },
   {
     "nwo": "KBLLR/vega-lab",
-    "inspectedAt": "2026-07-11T02:45:47.000Z",
+    "inspectedAt": "2026-07-12T02:50:46.000Z",
     "files": {
       "hasReadme": true,
       "packageManagers": [

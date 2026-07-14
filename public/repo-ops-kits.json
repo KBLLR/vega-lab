@@ -2113,7 +2113,7 @@
   },
   {
     "nwo": "KBLLR/core-x",
-    "generatedAt": "2026-07-10T17:12:25.000Z",
+    "generatedAt": "2026-07-13T08:29:19.000Z",
     "target": "mlx",
     "artifacts": [
       {
@@ -10504,7 +10504,7 @@
         "kind": "agents",
         "title": "talking-heads-papers AGENTS Draft",
         "suggestedPath": "AGENTS.md",
-        "body": "# talking-heads-papers Agents\n\n## Product Truth\n- Repository: KBLLR/talking-heads-papers\n- Vega Lab classification: tool\n- Active mission target: Local MLX\n\n## Operating Rules\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\n\n## Commands\n- Add the smallest reliable verification command.\n\n## Agent Boundaries\n- Do not mutate deployment, secrets, or release configuration without explicit approval.\n- Prefer draft plans and reviewable diffs over broad automation.\n- Preserve existing product direction; use Vega Lab evidence before adding new abstractions.",
+        "body": "# talking-heads-papers Agents\n\n## Product Truth\n- Repository: KBLLR/talking-heads-papers\n- Vega Lab classification: tool\n- Active mission target: Local MLX\n\n## Operating Rules\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\n\n## Commands\n- Add the smallest reliable verification command.\n\n## Agent Boundaries\n- Do not mutate deployment, secrets, or release configuration without explicit approval.\n- Prefer draft plans and reviewable diffs over broad automation.\n- Preserve existing product direction; use Vega Lab evidence before adding new abstractions.",
         "evidence": [
           "Repository: KBLLR/talking-heads-papers",
           "Description: 🎓Automatically Update TH Papers Bi Daily using Github Actions ",
@@ -10518,7 +10518,7 @@
         "kind": "maintenance",
         "title": "talking-heads-papers Maintenance Plan",
         "suggestedPath": "docs/maintenance-plan.md",
-        "body": "# Maintenance Plan: KBLLR/talking-heads-papers\n\n## Current Signals\n- Health flag: fork\n- No test/check/lint script detected from package metadata.\n\n## Recommended Pass\n- Confirm install path and package manager.\n- Run available verification commands before editing.\n- Patch stale docs, commands, and workflow assumptions first.\n- Open the smallest useful PR only after human approval.\n- Vega Lab action: mlx-mission\n- Vega Lab action: ops-kit\n- Vega Lab action: codex-mission\n- Vega Lab action: claude-mission\n- Vega Lab action: house-integration\n\n## Evidence\n- Repository: KBLLR/talking-heads-papers\n- Description: 🎓Automatically Update TH Papers Bi Daily using Github Actions \n- Adoption kind: tool\n- Capabilities: research-intelligence, ml-ai\n- House skills: repo-research, repo-adoption, mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Risk: Maintenance work has no obvious verification command.\n- Health flag: fork",
+        "body": "# Maintenance Plan: KBLLR/talking-heads-papers\n\n## Current Signals\n- Health flag: stale\n- Health flag: fork\n- No test/check/lint script detected from package metadata.\n- Repository appears stale based on last activity.\n\n## Recommended Pass\n- Confirm install path and package manager.\n- Run available verification commands before editing.\n- Patch stale docs, commands, and workflow assumptions first.\n- Open the smallest useful PR only after human approval.\n- Vega Lab action: mlx-mission\n- Vega Lab action: ops-kit\n- Vega Lab action: codex-mission\n- Vega Lab action: claude-mission\n- Vega Lab action: maintenance-plan\n- Vega Lab action: house-integration\n\n## Evidence\n- Repository: KBLLR/talking-heads-papers\n- Description: 🎓Automatically Update TH Papers Bi Daily using Github Actions \n- Adoption kind: tool\n- Capabilities: research-intelligence, ml-ai\n- House skills: repo-research, repo-adoption, mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: Repository appears stale based on last activity.\n- Risk: Maintenance work has no obvious verification command.",
         "evidence": [
           "Repository: KBLLR/talking-heads-papers",
           "Description: 🎓Automatically Update TH Papers Bi Daily using Github Actions ",
@@ -10526,15 +10526,15 @@
           "Capabilities: research-intelligence, ml-ai",
           "House skills: repo-research, repo-adoption, mine-execution",
           "Finding: No test/check/lint script detected from package metadata.",
-          "Risk: Maintenance work has no obvious verification command.",
-          "Health flag: fork"
+          "Finding: Repository appears stale based on last activity.",
+          "Risk: Maintenance work has no obvious verification command."
         ]
       },
       {
         "kind": "deployment",
         "title": "talking-heads-papers Deployment Plan",
         "suggestedPath": "docs/deployment-plan.md",
-        "body": "# Deployment Plan: KBLLR/talking-heads-papers\n\n## Known Deployment Evidence\n- Workflow: cv-arxiv-daily.yml\n- Workflow: update_paper_links.yml\n\n## Draft Checks\n- Identify expected host and runtime.\n- Document build command, output directory, and required environment variables.\n- Verify preview URL and production URL checks.\n- Keep deploy authority manual; Vega Lab drafts plans and inbox items only.\n\n## Evidence\n- Repository: KBLLR/talking-heads-papers\n- Description: 🎓Automatically Update TH Papers Bi Daily using Github Actions \n- Adoption kind: tool\n- Capabilities: research-intelligence, ml-ai\n- House skills: repo-research, repo-adoption, mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Risk: Maintenance work has no obvious verification command.\n- Health flag: fork",
+        "body": "# Deployment Plan: KBLLR/talking-heads-papers\n\n## Known Deployment Evidence\n- Workflow: cv-arxiv-daily.yml\n- Workflow: update_paper_links.yml\n\n## Draft Checks\n- Identify expected host and runtime.\n- Document build command, output directory, and required environment variables.\n- Verify preview URL and production URL checks.\n- Keep deploy authority manual; Vega Lab drafts plans and inbox items only.\n\n## Evidence\n- Repository: KBLLR/talking-heads-papers\n- Description: 🎓Automatically Update TH Papers Bi Daily using Github Actions \n- Adoption kind: tool\n- Capabilities: research-intelligence, ml-ai\n- House skills: repo-research, repo-adoption, mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: Repository appears stale based on last activity.\n- Risk: Maintenance work has no obvious verification command.",
         "evidence": [
           "Repository: KBLLR/talking-heads-papers",
           "Description: 🎓Automatically Update TH Papers Bi Daily using Github Actions ",
@@ -10542,15 +10542,15 @@
           "Capabilities: research-intelligence, ml-ai",
           "House skills: repo-research, repo-adoption, mine-execution",
           "Finding: No test/check/lint script detected from package metadata.",
-          "Risk: Maintenance work has no obvious verification command.",
-          "Health flag: fork"
+          "Finding: Repository appears stale based on last activity.",
+          "Risk: Maintenance work has no obvious verification command."
         ]
       },
       {
         "kind": "testing",
         "title": "talking-heads-papers Test Plan",
         "suggestedPath": "docs/test-plan.md",
-        "body": "# Test Plan: KBLLR/talking-heads-papers\n\n## Available Commands\n- No test/check/build script detected from synced package metadata.\n\n## Minimum Verification Contract\n- Document one install command.\n- Document one fast smoke command.\n- Document one release/build command when deployable.\n- If no commands exist, create a tracked issue or action item before implementation work.\n\n## Evidence\n- Repository: KBLLR/talking-heads-papers\n- Description: 🎓Automatically Update TH Papers Bi Daily using Github Actions \n- Adoption kind: tool\n- Capabilities: research-intelligence, ml-ai\n- House skills: repo-research, repo-adoption, mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Risk: Maintenance work has no obvious verification command.\n- Health flag: fork",
+        "body": "# Test Plan: KBLLR/talking-heads-papers\n\n## Available Commands\n- No test/check/build script detected from synced package metadata.\n\n## Minimum Verification Contract\n- Document one install command.\n- Document one fast smoke command.\n- Document one release/build command when deployable.\n- If no commands exist, create a tracked issue or action item before implementation work.\n\n## Evidence\n- Repository: KBLLR/talking-heads-papers\n- Description: 🎓Automatically Update TH Papers Bi Daily using Github Actions \n- Adoption kind: tool\n- Capabilities: research-intelligence, ml-ai\n- House skills: repo-research, repo-adoption, mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: Repository appears stale based on last activity.\n- Risk: Maintenance work has no obvious verification command.",
         "evidence": [
           "Repository: KBLLR/talking-heads-papers",
           "Description: 🎓Automatically Update TH Papers Bi Daily using Github Actions ",
@@ -10558,15 +10558,15 @@
           "Capabilities: research-intelligence, ml-ai",
           "House skills: repo-research, repo-adoption, mine-execution",
           "Finding: No test/check/lint script detected from package metadata.",
-          "Risk: Maintenance work has no obvious verification command.",
-          "Health flag: fork"
+          "Finding: Repository appears stale based on last activity.",
+          "Risk: Maintenance work has no obvious verification command."
         ]
       },
       {
         "kind": "action-item",
         "title": "talking-heads-papers Action Item Draft",
         "suggestedPath": "ops/action-item.md",
-        "body": "# Action Item Draft: KBLLR/talking-heads-papers\n\n## Recommended Actions\n- testing: Define verification for talking-heads-papers\n\n## Mission Target\n- Local MLX\n\n## Evidence\n- Repository: KBLLR/talking-heads-papers\n- Description: 🎓Automatically Update TH Papers Bi Daily using Github Actions \n- Adoption kind: tool\n- Capabilities: research-intelligence, ml-ai\n- House skills: repo-research, repo-adoption, mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Risk: Maintenance work has no obvious verification command.\n- Health flag: fork\n- Action item: Define verification for talking-heads-papers",
+        "body": "# Action Item Draft: KBLLR/talking-heads-papers\n\n## Recommended Actions\n- maintenance: Run a maintenance pass on talking-heads-papers\n- testing: Define verification for talking-heads-papers\n\n## Mission Target\n- Local MLX\n\n## Evidence\n- Repository: KBLLR/talking-heads-papers\n- Description: 🎓Automatically Update TH Papers Bi Daily using Github Actions \n- Adoption kind: tool\n- Capabilities: research-intelligence, ml-ai\n- House skills: repo-research, repo-adoption, mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: Repository appears stale based on last activity.\n- Risk: Maintenance work has no obvious verification command.\n- Risk: Dependencies, build targets, or deployment assumptions may be outdated.\n- Health flag: stale",
         "evidence": [
           "Repository: KBLLR/talking-heads-papers",
           "Description: 🎓Automatically Update TH Papers Bi Daily using Github Actions ",
@@ -10574,9 +10574,10 @@
           "Capabilities: research-intelligence, ml-ai",
           "House skills: repo-research, repo-adoption, mine-execution",
           "Finding: No test/check/lint script detected from package metadata.",
+          "Finding: Repository appears stale based on last activity.",
           "Risk: Maintenance work has no obvious verification command.",
-          "Health flag: fork",
-          "Action item: Define verification for talking-heads-papers"
+          "Risk: Dependencies, build targets, or deployment assumptions may be outdated.",
+          "Health flag: stale"
         ]
       }
     ],
@@ -10587,16 +10588,21 @@
       "Capabilities: research-intelligence, ml-ai",
       "House skills: repo-research, repo-adoption, mine-execution",
       "Finding: No test/check/lint script detected from package metadata.",
+      "Finding: Repository appears stale based on last activity.",
       "Risk: Maintenance work has no obvious verification command.",
+      "Risk: Dependencies, build targets, or deployment assumptions may be outdated.",
+      "Health flag: stale",
       "Health flag: fork",
-      "Action item: Define verification for talking-heads-papers"
+      "Action item: Run a maintenance pass on talking-heads-papers"
     ],
     "recommendedActions": [
       "mlx-mission",
       "ops-kit",
       "codex-mission",
       "claude-mission",
+      "maintenance-plan",
       "house-integration",
+      "maintenance:vega-lab:maintenance:kbllr-talking-heads-papers",
       "testing:vega-lab:testing:kbllr-talking-heads-papers",
       "review-draft-only"
     ]
@@ -12365,7 +12371,7 @@
   },
   {
     "nwo": "KBLLR/vega-lab",
-    "generatedAt": "2026-07-11T02:45:47.000Z",
+    "generatedAt": "2026-07-12T02:50:46.000Z",
     "target": "mlx",
     "artifacts": [
       {

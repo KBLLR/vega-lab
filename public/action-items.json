@@ -2581,6 +2581,40 @@
     "updatedAt": "2025-07-16T20:22:31.000Z"
   },
   {
+    "id": "vega-lab:maintenance:kbllr-talking-heads-papers",
+    "kind": "maintenance",
+    "status": "open",
+    "priority": "normal",
+    "nwo": "KBLLR/talking-heads-papers",
+    "title": "Run a maintenance pass on talking-heads-papers",
+    "summary": "Stale activity increases dependency, workflow, and deployment risk.",
+    "evidence": [
+      "No test/check/lint script detected from package metadata.",
+      "Repository appears stale based on last activity.",
+      "Maintenance work has no obvious verification command.",
+      "Dependencies, build targets, or deployment assumptions may be outdated."
+    ],
+    "linkedSkills": [
+      "repo-research",
+      "repo-adoption",
+      "mine-execution"
+    ],
+    "linkedRules": [
+      "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.",
+      "Validate maintenance risk and current ecosystem fit before committing to adoption.",
+      "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
+    ],
+    "linkedFlows": [
+      "research-queue-flow",
+      "adoption-decision-flow",
+      "mine-execution-flow"
+    ],
+    "draft": "Draft a maintenance plan for KBLLR/talking-heads-papers: verify dependencies, run available checks, update stale assumptions, and identify a smallest useful PR. Rules: Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house. Validate maintenance risk and current ecosystem fit before committing to adoption. Prioritize README, maintenance, and execution readiness before broader ecosystem integration.",
+    "source": "daily-ops",
+    "createdAt": "2025-07-13T18:31:50.000Z",
+    "updatedAt": "2025-07-13T18:31:50.000Z"
+  },
+  {
     "id": "vega-lab:testing:kbllr-talking-heads-papers",
     "kind": "testing",
     "status": "open",
@@ -2590,7 +2624,9 @@
     "summary": "Package metadata does not expose an obvious test, check, or lint command.",
     "evidence": [
       "No test/check/lint script detected from package metadata.",
-      "Maintenance work has no obvious verification command."
+      "Repository appears stale based on last activity.",
+      "Maintenance work has no obvious verification command.",
+      "Dependencies, build targets, or deployment assumptions may be outdated."
     ],
     "linkedSkills": [
       "repo-research",
@@ -2599,6 +2635,7 @@
     ],
     "linkedRules": [
       "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.",
+      "Validate maintenance risk and current ecosystem fit before committing to adoption.",
       "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
     ],
     "linkedFlows": [
