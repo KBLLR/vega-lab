@@ -578,92 +578,94 @@
         "kind": "readme",
         "title": "ai-comic-factory README Draft",
         "suggestedPath": "README.md",
-        "body": "# ai-comic-factory\n\nGenerate comic panels using a LLM + SDXL. Powered by Hugging Face 🤗\n\n## Vega Lab Fit\n- Classification: house\n- Capabilities: ml-ai, frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n\n## Local Setup\n- Package managers: npm, npm-lock\n- Document install, dev, build, and verification commands before broad reuse.\n- Keep runtime assumptions explicit; prefer local MLX/OpenResponses for model-assisted work.\n\n## Verification\n- npm run lint\n- npm run build\n\n## Evidence\n- Repository: KBLLR/ai-comic-factory\n- Description: Generate comic panels using a LLM + SDXL. Powered by Hugging Face 🤗\n- Adoption kind: house\n- Capabilities: ml-ai, frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Health flag: fork",
+        "body": "# ai-comic-factory\n\nGenerate comic panels using a LLM + SDXL. Powered by Hugging Face 🤗\n\n## Vega Lab Fit\n- Classification: house\n- Capabilities: ml-ai, frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n\n## Local Setup\n- Package managers: npm, npm-lock\n- Document install, dev, build, and verification commands before broad reuse.\n- Keep runtime assumptions explicit; prefer local MLX/OpenResponses for model-assisted work.\n\n## Verification\n- npm run lint\n- npm run build\n\n## Evidence\n- Repository: KBLLR/ai-comic-factory\n- Description: Generate comic panels using a LLM + SDXL. Powered by Hugging Face 🤗\n- Adoption kind: house\n- Capabilities: ml-ai, frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Finding: Repository appears stale based on last activity.",
         "evidence": [
           "Repository: KBLLR/ai-comic-factory",
           "Description: Generate comic panels using a LLM + SDXL. Powered by Hugging Face 🤗",
           "Adoption kind: house",
           "Capabilities: ml-ai, frontend-ui",
           "House skills: repo-discovery, repo-adoption, mine-execution",
-          "Health flag: fork"
+          "Finding: Repository appears stale based on last activity."
         ]
       },
       {
         "kind": "agents",
         "title": "ai-comic-factory AGENTS Draft",
         "suggestedPath": "AGENTS.md",
-        "body": "# ai-comic-factory Agents\n\n## Product Truth\n- Repository: KBLLR/ai-comic-factory\n- Vega Lab classification: house\n- Active mission target: Local MLX\n\n## Operating Rules\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\n\n## Commands\n- npm run lint\n- npm run build\n\n## Agent Boundaries\n- Do not mutate deployment, secrets, or release configuration without explicit approval.\n- Prefer draft plans and reviewable diffs over broad automation.\n- Preserve existing product direction; use Vega Lab evidence before adding new abstractions.",
+        "body": "# ai-comic-factory Agents\n\n## Product Truth\n- Repository: KBLLR/ai-comic-factory\n- Vega Lab classification: house\n- Active mission target: Local MLX\n\n## Operating Rules\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\n\n## Commands\n- npm run lint\n- npm run build\n\n## Agent Boundaries\n- Do not mutate deployment, secrets, or release configuration without explicit approval.\n- Prefer draft plans and reviewable diffs over broad automation.\n- Preserve existing product direction; use Vega Lab evidence before adding new abstractions.",
         "evidence": [
           "Repository: KBLLR/ai-comic-factory",
           "Description: Generate comic panels using a LLM + SDXL. Powered by Hugging Face 🤗",
           "Adoption kind: house",
           "Capabilities: ml-ai, frontend-ui",
           "House skills: repo-discovery, repo-adoption, mine-execution",
-          "Health flag: fork"
+          "Finding: Repository appears stale based on last activity."
         ]
       },
       {
         "kind": "maintenance",
         "title": "ai-comic-factory Maintenance Plan",
         "suggestedPath": "docs/maintenance-plan.md",
-        "body": "# Maintenance Plan: KBLLR/ai-comic-factory\n\n## Current Signals\n- Health flag: fork\n\n## Recommended Pass\n- Confirm install path and package manager.\n- Run available verification commands before editing.\n- Patch stale docs, commands, and workflow assumptions first.\n- Open the smallest useful PR only after human approval.\n- Vega Lab action: mlx-mission\n- Vega Lab action: ops-kit\n- Vega Lab action: codex-mission\n- Vega Lab action: claude-mission\n- Vega Lab action: house-integration\n\n## Evidence\n- Repository: KBLLR/ai-comic-factory\n- Description: Generate comic panels using a LLM + SDXL. Powered by Hugging Face 🤗\n- Adoption kind: house\n- Capabilities: ml-ai, frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Health flag: fork\n- Action item: Define verification for ai-comic-factory\n- Action item: Clarify deployment readiness for ai-comic-factory",
+        "body": "# Maintenance Plan: KBLLR/ai-comic-factory\n\n## Current Signals\n- Health flag: stale\n- Health flag: fork\n- Repository appears stale based on last activity.\n\n## Recommended Pass\n- Confirm install path and package manager.\n- Run available verification commands before editing.\n- Patch stale docs, commands, and workflow assumptions first.\n- Open the smallest useful PR only after human approval.\n- Vega Lab action: mlx-mission\n- Vega Lab action: ops-kit\n- Vega Lab action: codex-mission\n- Vega Lab action: claude-mission\n- Vega Lab action: maintenance-plan\n- Vega Lab action: house-integration\n\n## Evidence\n- Repository: KBLLR/ai-comic-factory\n- Description: Generate comic panels using a LLM + SDXL. Powered by Hugging Face 🤗\n- Adoption kind: house\n- Capabilities: ml-ai, frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Finding: Repository appears stale based on last activity.\n- Risk: Dependencies, build targets, or deployment assumptions may be outdated.\n- Health flag: stale",
         "evidence": [
           "Repository: KBLLR/ai-comic-factory",
           "Description: Generate comic panels using a LLM + SDXL. Powered by Hugging Face 🤗",
           "Adoption kind: house",
           "Capabilities: ml-ai, frontend-ui",
           "House skills: repo-discovery, repo-adoption, mine-execution",
-          "Health flag: fork",
-          "Action item: Define verification for ai-comic-factory",
-          "Action item: Clarify deployment readiness for ai-comic-factory"
+          "Finding: Repository appears stale based on last activity.",
+          "Risk: Dependencies, build targets, or deployment assumptions may be outdated.",
+          "Health flag: stale"
         ]
       },
       {
         "kind": "deployment",
         "title": "ai-comic-factory Deployment Plan",
         "suggestedPath": "docs/deployment-plan.md",
-        "body": "# Deployment Plan: KBLLR/ai-comic-factory\n\n## Known Deployment Evidence\n- Deployment config: Dockerfile\n\n## Draft Checks\n- Identify expected host and runtime.\n- Document build command, output directory, and required environment variables.\n- Verify preview URL and production URL checks.\n- Keep deploy authority manual; Vega Lab drafts plans and inbox items only.\n\n## Evidence\n- Repository: KBLLR/ai-comic-factory\n- Description: Generate comic panels using a LLM + SDXL. Powered by Hugging Face 🤗\n- Adoption kind: house\n- Capabilities: ml-ai, frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Health flag: fork\n- Action item: Define verification for ai-comic-factory\n- Action item: Clarify deployment readiness for ai-comic-factory",
+        "body": "# Deployment Plan: KBLLR/ai-comic-factory\n\n## Known Deployment Evidence\n- Deployment config: Dockerfile\n\n## Draft Checks\n- Identify expected host and runtime.\n- Document build command, output directory, and required environment variables.\n- Verify preview URL and production URL checks.\n- Keep deploy authority manual; Vega Lab drafts plans and inbox items only.\n\n## Evidence\n- Repository: KBLLR/ai-comic-factory\n- Description: Generate comic panels using a LLM + SDXL. Powered by Hugging Face 🤗\n- Adoption kind: house\n- Capabilities: ml-ai, frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Finding: Repository appears stale based on last activity.\n- Risk: Dependencies, build targets, or deployment assumptions may be outdated.\n- Health flag: stale",
         "evidence": [
           "Repository: KBLLR/ai-comic-factory",
           "Description: Generate comic panels using a LLM + SDXL. Powered by Hugging Face 🤗",
           "Adoption kind: house",
           "Capabilities: ml-ai, frontend-ui",
           "House skills: repo-discovery, repo-adoption, mine-execution",
-          "Health flag: fork",
-          "Action item: Define verification for ai-comic-factory",
-          "Action item: Clarify deployment readiness for ai-comic-factory"
+          "Finding: Repository appears stale based on last activity.",
+          "Risk: Dependencies, build targets, or deployment assumptions may be outdated.",
+          "Health flag: stale"
         ]
       },
       {
         "kind": "testing",
         "title": "ai-comic-factory Test Plan",
         "suggestedPath": "docs/test-plan.md",
-        "body": "# Test Plan: KBLLR/ai-comic-factory\n\n## Available Commands\n- npm run lint\n- npm run build\n\n## Minimum Verification Contract\n- Document one install command.\n- Document one fast smoke command.\n- Document one release/build command when deployable.\n- If no commands exist, create a tracked issue or action item before implementation work.\n\n## Evidence\n- Repository: KBLLR/ai-comic-factory\n- Description: Generate comic panels using a LLM + SDXL. Powered by Hugging Face 🤗\n- Adoption kind: house\n- Capabilities: ml-ai, frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Health flag: fork\n- Action item: Define verification for ai-comic-factory\n- Action item: Clarify deployment readiness for ai-comic-factory",
+        "body": "# Test Plan: KBLLR/ai-comic-factory\n\n## Available Commands\n- npm run lint\n- npm run build\n\n## Minimum Verification Contract\n- Document one install command.\n- Document one fast smoke command.\n- Document one release/build command when deployable.\n- If no commands exist, create a tracked issue or action item before implementation work.\n\n## Evidence\n- Repository: KBLLR/ai-comic-factory\n- Description: Generate comic panels using a LLM + SDXL. Powered by Hugging Face 🤗\n- Adoption kind: house\n- Capabilities: ml-ai, frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Finding: Repository appears stale based on last activity.\n- Risk: Dependencies, build targets, or deployment assumptions may be outdated.\n- Health flag: stale",
         "evidence": [
           "Repository: KBLLR/ai-comic-factory",
           "Description: Generate comic panels using a LLM + SDXL. Powered by Hugging Face 🤗",
           "Adoption kind: house",
           "Capabilities: ml-ai, frontend-ui",
           "House skills: repo-discovery, repo-adoption, mine-execution",
-          "Health flag: fork",
-          "Action item: Define verification for ai-comic-factory",
-          "Action item: Clarify deployment readiness for ai-comic-factory"
+          "Finding: Repository appears stale based on last activity.",
+          "Risk: Dependencies, build targets, or deployment assumptions may be outdated.",
+          "Health flag: stale"
         ]
       },
       {
         "kind": "action-item",
         "title": "ai-comic-factory Action Item Draft",
         "suggestedPath": "ops/action-item.md",
-        "body": "# Action Item Draft: KBLLR/ai-comic-factory\n\n## Recommended Actions\n- testing: Define verification for ai-comic-factory\n- deployment: Clarify deployment readiness for ai-comic-factory\n\n## Mission Target\n- Local MLX\n\n## Evidence\n- Repository: KBLLR/ai-comic-factory\n- Description: Generate comic panels using a LLM + SDXL. Powered by Hugging Face 🤗\n- Adoption kind: house\n- Capabilities: ml-ai, frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Health flag: fork\n- Action item: Define verification for ai-comic-factory\n- Action item: Clarify deployment readiness for ai-comic-factory",
+        "body": "# Action Item Draft: KBLLR/ai-comic-factory\n\n## Recommended Actions\n- maintenance: Run a maintenance pass on ai-comic-factory\n- testing: Define verification for ai-comic-factory\n- deployment: Clarify deployment readiness for ai-comic-factory\n\n## Mission Target\n- Local MLX\n\n## Evidence\n- Repository: KBLLR/ai-comic-factory\n- Description: Generate comic panels using a LLM + SDXL. Powered by Hugging Face 🤗\n- Adoption kind: house\n- Capabilities: ml-ai, frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Finding: Repository appears stale based on last activity.\n- Risk: Dependencies, build targets, or deployment assumptions may be outdated.\n- Health flag: stale\n- Health flag: fork\n- Action item: Run a maintenance pass on ai-comic-factory",
         "evidence": [
           "Repository: KBLLR/ai-comic-factory",
           "Description: Generate comic panels using a LLM + SDXL. Powered by Hugging Face 🤗",
           "Adoption kind: house",
           "Capabilities: ml-ai, frontend-ui",
           "House skills: repo-discovery, repo-adoption, mine-execution",
+          "Finding: Repository appears stale based on last activity.",
+          "Risk: Dependencies, build targets, or deployment assumptions may be outdated.",
+          "Health flag: stale",
           "Health flag: fork",
-          "Action item: Define verification for ai-comic-factory",
-          "Action item: Clarify deployment readiness for ai-comic-factory"
+          "Action item: Run a maintenance pass on ai-comic-factory"
         ]
       }
     ],
@@ -673,7 +675,11 @@
       "Adoption kind: house",
       "Capabilities: ml-ai, frontend-ui",
       "House skills: repo-discovery, repo-adoption, mine-execution",
+      "Finding: Repository appears stale based on last activity.",
+      "Risk: Dependencies, build targets, or deployment assumptions may be outdated.",
+      "Health flag: stale",
       "Health flag: fork",
+      "Action item: Run a maintenance pass on ai-comic-factory",
       "Action item: Define verification for ai-comic-factory",
       "Action item: Clarify deployment readiness for ai-comic-factory"
     ],
@@ -682,7 +688,9 @@
       "ops-kit",
       "codex-mission",
       "claude-mission",
+      "maintenance-plan",
       "house-integration",
+      "maintenance:vega-lab:maintenance:kbllr-ai-comic-factory",
       "testing:vega-lab:testing:kbllr-ai-comic-factory",
       "deployment:vega-lab:deployment:kbllr-ai-comic-factory",
       "review-draft-only"
@@ -690,7 +698,7 @@
   },
   {
     "nwo": "KBLLR/audio-lab",
-    "generatedAt": "2026-07-14T18:56:42.000Z",
+    "generatedAt": "2026-07-16T23:52:21.000Z",
     "target": "mlx",
     "artifacts": [
       {
@@ -837,7 +845,7 @@
         "kind": "agents",
         "title": "Auto-GPT AGENTS Draft",
         "suggestedPath": "AGENTS.md",
-        "body": "# Auto-GPT Agents\n\n## Product Truth\n- Repository: KBLLR/Auto-GPT\n- Vega Lab classification: tool\n- Active mission target: Local MLX\n\n## Operating Rules\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\n\n## Commands\n- Add the smallest reliable verification command.\n\n## Agent Boundaries\n- Do not mutate deployment, secrets, or release configuration without explicit approval.\n- Prefer draft plans and reviewable diffs over broad automation.\n- Preserve existing product direction; use Vega Lab evidence before adding new abstractions.",
+        "body": "# Auto-GPT Agents\n\n## Product Truth\n- Repository: KBLLR/Auto-GPT\n- Vega Lab classification: tool\n- Active mission target: Local MLX\n\n## Operating Rules\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\n\n## Commands\n- Add the smallest reliable verification command.\n\n## Agent Boundaries\n- Do not mutate deployment, secrets, or release configuration without explicit approval.\n- Prefer draft plans and reviewable diffs over broad automation.\n- Preserve existing product direction; use Vega Lab evidence before adding new abstractions.",
         "evidence": [
           "Repository: KBLLR/Auto-GPT",
           "Description: An experimental open-source attempt to make GPT-4 fully autonomous.",
@@ -851,7 +859,7 @@
         "kind": "maintenance",
         "title": "Auto-GPT Maintenance Plan",
         "suggestedPath": "docs/maintenance-plan.md",
-        "body": "# Maintenance Plan: KBLLR/Auto-GPT\n\n## Current Signals\n- Health flag: fork\n- No test/check/lint script detected from package metadata.\n\n## Recommended Pass\n- Confirm install path and package manager.\n- Run available verification commands before editing.\n- Patch stale docs, commands, and workflow assumptions first.\n- Open the smallest useful PR only after human approval.\n- Vega Lab action: mlx-mission\n- Vega Lab action: ops-kit\n- Vega Lab action: codex-mission\n- Vega Lab action: claude-mission\n- Vega Lab action: house-integration\n\n## Evidence\n- Repository: KBLLR/Auto-GPT\n- Description: An experimental open-source attempt to make GPT-4 fully autonomous.\n- Adoption kind: tool\n- Capabilities: ml-ai\n- House skills: repo-adoption, mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Risk: Maintenance work has no obvious verification command.\n- Health flag: fork",
+        "body": "# Maintenance Plan: KBLLR/Auto-GPT\n\n## Current Signals\n- Health flag: stale\n- Health flag: fork\n- No test/check/lint script detected from package metadata.\n- Repository appears stale based on last activity.\n\n## Recommended Pass\n- Confirm install path and package manager.\n- Run available verification commands before editing.\n- Patch stale docs, commands, and workflow assumptions first.\n- Open the smallest useful PR only after human approval.\n- Vega Lab action: mlx-mission\n- Vega Lab action: ops-kit\n- Vega Lab action: codex-mission\n- Vega Lab action: claude-mission\n- Vega Lab action: maintenance-plan\n- Vega Lab action: house-integration\n\n## Evidence\n- Repository: KBLLR/Auto-GPT\n- Description: An experimental open-source attempt to make GPT-4 fully autonomous.\n- Adoption kind: tool\n- Capabilities: ml-ai\n- House skills: repo-adoption, mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: Repository appears stale based on last activity.\n- Risk: Maintenance work has no obvious verification command.",
         "evidence": [
           "Repository: KBLLR/Auto-GPT",
           "Description: An experimental open-source attempt to make GPT-4 fully autonomous.",
@@ -859,15 +867,15 @@
           "Capabilities: ml-ai",
           "House skills: repo-adoption, mine-execution",
           "Finding: No test/check/lint script detected from package metadata.",
-          "Risk: Maintenance work has no obvious verification command.",
-          "Health flag: fork"
+          "Finding: Repository appears stale based on last activity.",
+          "Risk: Maintenance work has no obvious verification command."
         ]
       },
       {
         "kind": "deployment",
         "title": "Auto-GPT Deployment Plan",
         "suggestedPath": "docs/deployment-plan.md",
-        "body": "# Deployment Plan: KBLLR/Auto-GPT\n\n## Known Deployment Evidence\n- Workflow: classic-autogpt-ci.yml\n- Workflow: classic-autogpt-docker-cache-clean.yml\n- Workflow: classic-autogpt-docker-ci.yml\n- Workflow: classic-autogpt-docker-release.yml\n- Workflow: classic-autogpts-ci.yml\n- Workflow: classic-benchmark-ci.yml\n- Workflow: classic-benchmark_publish_package.yml\n- Workflow: classic-forge-ci.yml\n- Workflow: classic-frontend-ci.yml\n- Workflow: classic-python-checks.yml\n- Workflow: claude.yml\n- Workflow: codeql.yml\n- Workflow: platform-autgpt-deploy-prod.yml\n- Workflow: platform-autogpt-deploy-dev.yaml\n- Workflow: platform-backend-ci.yml\n- Workflow: platform-dev-deploy-event-dispatcher.yml\n- Workflow: platform-frontend-ci.yml\n- Workflow: repo-close-stale-issues.yml\n- Workflow: repo-pr-enforce-base-branch.yml\n- Workflow: repo-pr-label.yml\n- Workflow: repo-stats.yml\n- Workflow: repo-workflow-checker.yml\n\n## Draft Checks\n- Identify expected host and runtime.\n- Document build command, output directory, and required environment variables.\n- Verify preview URL and production URL checks.\n- Keep deploy authority manual; Vega Lab drafts plans and inbox items only.\n\n## Evidence\n- Repository: KBLLR/Auto-GPT\n- Description: An experimental open-source attempt to make GPT-4 fully autonomous.\n- Adoption kind: tool\n- Capabilities: ml-ai\n- House skills: repo-adoption, mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Risk: Maintenance work has no obvious verification command.\n- Health flag: fork",
+        "body": "# Deployment Plan: KBLLR/Auto-GPT\n\n## Known Deployment Evidence\n- Workflow: classic-autogpt-ci.yml\n- Workflow: classic-autogpt-docker-cache-clean.yml\n- Workflow: classic-autogpt-docker-ci.yml\n- Workflow: classic-autogpt-docker-release.yml\n- Workflow: classic-autogpts-ci.yml\n- Workflow: classic-benchmark-ci.yml\n- Workflow: classic-benchmark_publish_package.yml\n- Workflow: classic-forge-ci.yml\n- Workflow: classic-frontend-ci.yml\n- Workflow: classic-python-checks.yml\n- Workflow: claude.yml\n- Workflow: codeql.yml\n- Workflow: platform-autgpt-deploy-prod.yml\n- Workflow: platform-autogpt-deploy-dev.yaml\n- Workflow: platform-backend-ci.yml\n- Workflow: platform-dev-deploy-event-dispatcher.yml\n- Workflow: platform-frontend-ci.yml\n- Workflow: repo-close-stale-issues.yml\n- Workflow: repo-pr-enforce-base-branch.yml\n- Workflow: repo-pr-label.yml\n- Workflow: repo-stats.yml\n- Workflow: repo-workflow-checker.yml\n\n## Draft Checks\n- Identify expected host and runtime.\n- Document build command, output directory, and required environment variables.\n- Verify preview URL and production URL checks.\n- Keep deploy authority manual; Vega Lab drafts plans and inbox items only.\n\n## Evidence\n- Repository: KBLLR/Auto-GPT\n- Description: An experimental open-source attempt to make GPT-4 fully autonomous.\n- Adoption kind: tool\n- Capabilities: ml-ai\n- House skills: repo-adoption, mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: Repository appears stale based on last activity.\n- Risk: Maintenance work has no obvious verification command.",
         "evidence": [
           "Repository: KBLLR/Auto-GPT",
           "Description: An experimental open-source attempt to make GPT-4 fully autonomous.",
@@ -875,15 +883,15 @@
           "Capabilities: ml-ai",
           "House skills: repo-adoption, mine-execution",
           "Finding: No test/check/lint script detected from package metadata.",
-          "Risk: Maintenance work has no obvious verification command.",
-          "Health flag: fork"
+          "Finding: Repository appears stale based on last activity.",
+          "Risk: Maintenance work has no obvious verification command."
         ]
       },
       {
         "kind": "testing",
         "title": "Auto-GPT Test Plan",
         "suggestedPath": "docs/test-plan.md",
-        "body": "# Test Plan: KBLLR/Auto-GPT\n\n## Available Commands\n- No test/check/build script detected from synced package metadata.\n\n## Minimum Verification Contract\n- Document one install command.\n- Document one fast smoke command.\n- Document one release/build command when deployable.\n- If no commands exist, create a tracked issue or action item before implementation work.\n\n## Evidence\n- Repository: KBLLR/Auto-GPT\n- Description: An experimental open-source attempt to make GPT-4 fully autonomous.\n- Adoption kind: tool\n- Capabilities: ml-ai\n- House skills: repo-adoption, mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Risk: Maintenance work has no obvious verification command.\n- Health flag: fork",
+        "body": "# Test Plan: KBLLR/Auto-GPT\n\n## Available Commands\n- No test/check/build script detected from synced package metadata.\n\n## Minimum Verification Contract\n- Document one install command.\n- Document one fast smoke command.\n- Document one release/build command when deployable.\n- If no commands exist, create a tracked issue or action item before implementation work.\n\n## Evidence\n- Repository: KBLLR/Auto-GPT\n- Description: An experimental open-source attempt to make GPT-4 fully autonomous.\n- Adoption kind: tool\n- Capabilities: ml-ai\n- House skills: repo-adoption, mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: Repository appears stale based on last activity.\n- Risk: Maintenance work has no obvious verification command.",
         "evidence": [
           "Repository: KBLLR/Auto-GPT",
           "Description: An experimental open-source attempt to make GPT-4 fully autonomous.",
@@ -891,15 +899,15 @@
           "Capabilities: ml-ai",
           "House skills: repo-adoption, mine-execution",
           "Finding: No test/check/lint script detected from package metadata.",
-          "Risk: Maintenance work has no obvious verification command.",
-          "Health flag: fork"
+          "Finding: Repository appears stale based on last activity.",
+          "Risk: Maintenance work has no obvious verification command."
         ]
       },
       {
         "kind": "action-item",
         "title": "Auto-GPT Action Item Draft",
         "suggestedPath": "ops/action-item.md",
-        "body": "# Action Item Draft: KBLLR/Auto-GPT\n\n## Recommended Actions\n- testing: Define verification for Auto-GPT\n\n## Mission Target\n- Local MLX\n\n## Evidence\n- Repository: KBLLR/Auto-GPT\n- Description: An experimental open-source attempt to make GPT-4 fully autonomous.\n- Adoption kind: tool\n- Capabilities: ml-ai\n- House skills: repo-adoption, mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Risk: Maintenance work has no obvious verification command.\n- Health flag: fork\n- Action item: Define verification for Auto-GPT",
+        "body": "# Action Item Draft: KBLLR/Auto-GPT\n\n## Recommended Actions\n- maintenance: Run a maintenance pass on Auto-GPT\n- testing: Define verification for Auto-GPT\n\n## Mission Target\n- Local MLX\n\n## Evidence\n- Repository: KBLLR/Auto-GPT\n- Description: An experimental open-source attempt to make GPT-4 fully autonomous.\n- Adoption kind: tool\n- Capabilities: ml-ai\n- House skills: repo-adoption, mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: Repository appears stale based on last activity.\n- Risk: Maintenance work has no obvious verification command.\n- Risk: Dependencies, build targets, or deployment assumptions may be outdated.\n- Health flag: stale",
         "evidence": [
           "Repository: KBLLR/Auto-GPT",
           "Description: An experimental open-source attempt to make GPT-4 fully autonomous.",
@@ -907,9 +915,10 @@
           "Capabilities: ml-ai",
           "House skills: repo-adoption, mine-execution",
           "Finding: No test/check/lint script detected from package metadata.",
+          "Finding: Repository appears stale based on last activity.",
           "Risk: Maintenance work has no obvious verification command.",
-          "Health flag: fork",
-          "Action item: Define verification for Auto-GPT"
+          "Risk: Dependencies, build targets, or deployment assumptions may be outdated.",
+          "Health flag: stale"
         ]
       }
     ],
@@ -920,16 +929,21 @@
       "Capabilities: ml-ai",
       "House skills: repo-adoption, mine-execution",
       "Finding: No test/check/lint script detected from package metadata.",
+      "Finding: Repository appears stale based on last activity.",
       "Risk: Maintenance work has no obvious verification command.",
+      "Risk: Dependencies, build targets, or deployment assumptions may be outdated.",
+      "Health flag: stale",
       "Health flag: fork",
-      "Action item: Define verification for Auto-GPT"
+      "Action item: Run a maintenance pass on Auto-GPT"
     ],
     "recommendedActions": [
       "mlx-mission",
       "ops-kit",
       "codex-mission",
       "claude-mission",
+      "maintenance-plan",
       "house-integration",
+      "maintenance:vega-lab:maintenance:kbllr-auto-gpt",
       "testing:vega-lab:testing:kbllr-auto-gpt",
       "review-draft-only"
     ]
@@ -1062,7 +1076,7 @@
   },
   {
     "nwo": "KBLLR/Avatars-Lab",
-    "generatedAt": "2025-12-28T19:43:56.000Z",
+    "generatedAt": "2026-07-16T22:49:06.000Z",
     "target": "mlx",
     "artifacts": [
       {
@@ -2113,7 +2127,7 @@
   },
   {
     "nwo": "KBLLR/core-x",
-    "generatedAt": "2026-07-14T12:12:42.000Z",
+    "generatedAt": "2026-07-16T23:40:44.000Z",
     "target": "mlx",
     "artifacts": [
       {
@@ -4071,7 +4085,7 @@
   },
   {
     "nwo": "KBLLR/gen-idea-lab",
-    "generatedAt": "2026-04-26T19:40:13.000Z",
+    "generatedAt": "2026-07-16T22:59:47.000Z",
     "target": "mlx",
     "artifacts": [
       {
@@ -7084,7 +7098,7 @@
   },
   {
     "nwo": "KBLLR/Leagentdiary",
-    "generatedAt": "2026-06-22T14:03:18.000Z",
+    "generatedAt": "2026-07-16T22:56:16.000Z",
     "target": "mlx",
     "artifacts": [
       {
@@ -7693,7 +7707,7 @@
   },
   {
     "nwo": "KBLLR/memoryblocks",
-    "generatedAt": "2026-07-05T04:38:33.000Z",
+    "generatedAt": "2026-07-16T22:53:42.000Z",
     "target": "mlx",
     "artifacts": [
       {
@@ -9275,7 +9289,7 @@
   },
   {
     "nwo": "KBLLR/rigging-palace",
-    "generatedAt": "2026-07-09T08:42:46.000Z",
+    "generatedAt": "2026-07-16T23:11:31.000Z",
     "target": "mlx",
     "artifacts": [
       {
@@ -12371,7 +12385,7 @@
   },
   {
     "nwo": "KBLLR/vega-lab",
-    "generatedAt": "2026-07-15T02:29:42.000Z",
+    "generatedAt": "2026-07-16T02:42:53.000Z",
     "target": "mlx",
     "artifacts": [
       {

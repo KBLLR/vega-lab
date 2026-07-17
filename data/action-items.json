@@ -2482,6 +2482,40 @@
     "updatedAt": "2025-07-17T15:33:54.000Z"
   },
   {
+    "id": "vega-lab:maintenance:kbllr-auto-gpt",
+    "kind": "maintenance",
+    "status": "open",
+    "priority": "normal",
+    "nwo": "KBLLR/Auto-GPT",
+    "title": "Run a maintenance pass on Auto-GPT",
+    "summary": "Stale activity increases dependency, workflow, and deployment risk.",
+    "evidence": [
+      "No test/check/lint script detected from package metadata.",
+      "Repository appears stale based on last activity.",
+      "Maintenance work has no obvious verification command.",
+      "Dependencies, build targets, or deployment assumptions may be outdated."
+    ],
+    "linkedSkills": [
+      "repo-adoption",
+      "mine-execution"
+    ],
+    "linkedRules": [
+      "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.",
+      "Review license status before adoption or redistribution work.",
+      "Validate maintenance risk and current ecosystem fit before committing to adoption.",
+      "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
+    ],
+    "linkedFlows": [
+      "research-queue-flow",
+      "adoption-decision-flow",
+      "mine-execution-flow"
+    ],
+    "draft": "Draft a maintenance plan for KBLLR/Auto-GPT: verify dependencies, run available checks, update stale assumptions, and identify a smallest useful PR. Rules: Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house. Review license status before adoption or redistribution work. Validate maintenance risk and current ecosystem fit before committing to adoption. Prioritize README, maintenance, and execution readiness before broader ecosystem integration.",
+    "source": "daily-ops",
+    "createdAt": "2025-07-16T20:29:43.000Z",
+    "updatedAt": "2025-07-16T20:29:43.000Z"
+  },
+  {
     "id": "vega-lab:testing:kbllr-auto-gpt",
     "kind": "testing",
     "status": "open",
@@ -2491,7 +2525,9 @@
     "summary": "Package metadata does not expose an obvious test, check, or lint command.",
     "evidence": [
       "No test/check/lint script detected from package metadata.",
-      "Maintenance work has no obvious verification command."
+      "Repository appears stale based on last activity.",
+      "Maintenance work has no obvious verification command.",
+      "Dependencies, build targets, or deployment assumptions may be outdated."
     ],
     "linkedSkills": [
       "repo-adoption",
@@ -2500,6 +2536,7 @@
     "linkedRules": [
       "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.",
       "Review license status before adoption or redistribution work.",
+      "Validate maintenance risk and current ecosystem fit before committing to adoption.",
       "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
     ],
     "linkedFlows": [
@@ -2511,6 +2548,38 @@
     "source": "daily-ops",
     "createdAt": "2025-07-16T20:29:43.000Z",
     "updatedAt": "2025-07-16T20:29:43.000Z"
+  },
+  {
+    "id": "vega-lab:maintenance:kbllr-ai-comic-factory",
+    "kind": "maintenance",
+    "status": "open",
+    "priority": "normal",
+    "nwo": "KBLLR/ai-comic-factory",
+    "title": "Run a maintenance pass on ai-comic-factory",
+    "summary": "Stale activity increases dependency, workflow, and deployment risk.",
+    "evidence": [
+      "Repository appears stale based on last activity.",
+      "Dependencies, build targets, or deployment assumptions may be outdated."
+    ],
+    "linkedSkills": [
+      "repo-discovery",
+      "repo-adoption",
+      "mine-execution"
+    ],
+    "linkedRules": [
+      "Validate maintenance risk and current ecosystem fit before committing to adoption.",
+      "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
+    ],
+    "linkedFlows": [
+      "research-queue-flow",
+      "adoption-decision-flow",
+      "news-digest-refresh",
+      "mine-execution-flow"
+    ],
+    "draft": "Draft a maintenance plan for KBLLR/ai-comic-factory: verify dependencies, run available checks, update stale assumptions, and identify a smallest useful PR. Rules: Validate maintenance risk and current ecosystem fit before committing to adoption. Prioritize README, maintenance, and execution readiness before broader ecosystem integration.",
+    "source": "daily-ops",
+    "createdAt": "2025-07-16T20:22:31.000Z",
+    "updatedAt": "2025-07-16T20:22:31.000Z"
   },
   {
     "id": "vega-lab:testing:kbllr-ai-comic-factory",
