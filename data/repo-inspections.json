@@ -150,7 +150,7 @@
   },
   {
     "nwo": "KBLLR/audio-lab",
-    "inspectedAt": "2026-07-16T23:52:21.000Z",
+    "inspectedAt": "2026-07-17T15:10:43.000Z",
     "files": {
       "hasReadme": false,
       "packageManagers": [
@@ -322,10 +322,12 @@
       "buildScripts": []
     },
     "findings": [
-      "No test/check/lint script detected from package metadata."
+      "No test/check/lint script detected from package metadata.",
+      "Repository appears stale based on last activity."
     ],
     "risks": [
-      "Maintenance work has no obvious verification command."
+      "Maintenance work has no obvious verification command.",
+      "Dependencies, build targets, or deployment assumptions may be outdated."
     ]
   },
   {
@@ -2477,7 +2479,7 @@
   },
   {
     "nwo": "KBLLR/vega-lab",
-    "inspectedAt": "2026-07-16T02:42:53.000Z",
+    "inspectedAt": "2026-07-17T02:45:46.000Z",
     "files": {
       "hasReadme": true,
       "packageManagers": [

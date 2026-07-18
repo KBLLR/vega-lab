@@ -24495,6 +24495,7 @@
     ],
     "rules": [
       "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.",
+      "Validate maintenance risk and current ecosystem fit before committing to adoption.",
       "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
     ],
     "flows": [
@@ -24504,8 +24505,8 @@
       "mine-execution-flow"
     ],
     "adoptionKind": "tool",
-    "codexBrief": "# Codex Mission: KBLLR/ChatDev\nGoal: Create Customized Software using Natural Language Idea (through LLM-powered Multi-Agent Collaboration) Primary Vega Lab fit: skill-extraction via agent-workflows.\nClassification: tool\nCapabilities: agent-workflows, ml-ai\nHouse skills: skill-extraction, repo-adoption, mine-execution\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: KBLLR/ChatDev\nGoal: Create Customized Software using Natural Language Idea (through LLM-powered Multi-Agent Collaboration) Primary Vega Lab fit: skill-extraction via agent-workflows.\nClassification: tool\nCapabilities: agent-workflows, ml-ai\nHouse skills: skill-extraction, repo-adoption, mine-execution\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: KBLLR/ChatDev\nGoal: Create Customized Software using Natural Language Idea (through LLM-powered Multi-Agent Collaboration) Primary Vega Lab fit: skill-extraction via agent-workflows.\nClassification: tool\nCapabilities: agent-workflows, ml-ai\nHouse skills: skill-extraction, repo-adoption, mine-execution\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: KBLLR/ChatDev\nGoal: Create Customized Software using Natural Language Idea (through LLM-powered Multi-Agent Collaboration) Primary Vega Lab fit: skill-extraction via agent-workflows.\nClassification: tool\nCapabilities: agent-workflows, ml-ai\nHouse skills: skill-extraction, repo-adoption, mine-execution\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "KBLLR/cine-mlx",
@@ -28445,16 +28446,14 @@
     "houseSkills": [
       "repo-adoption"
     ],
-    "rules": [
-      "Review license status before adoption or redistribution work."
-    ],
+    "rules": [],
     "flows": [
       "research-queue-flow",
       "adoption-decision-flow"
     ],
     "adoptionKind": "house",
-    "codexBrief": "# Codex Mission: latent-spaces/brag\nGoal: You built it. Now brag. Turn the project you just created into a short, shareable launch video with one command. Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: house\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: latent-spaces/brag\nGoal: You built it. Now brag. Turn the project you just created into a short, shareable launch video with one command. Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: house\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: latent-spaces/brag\nGoal: You built it. Now brag. Turn the project you just created into a short, shareable launch video with one command. Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: house\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: latent-spaces/brag\nGoal: You built it. Now brag. Turn the project you just created into a short, shareable launch video with one command. Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: house\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "lattas/AvatarMe",
@@ -36775,7 +36774,7 @@
     "nwo": "ollama/ollama",
     "name": "ollama",
     "author": "ollama",
-    "summary": "Get up and running with Kimi-K2.6, GLM-5.1, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models. Primary Vega Lab fit: skill-extraction via template-scaffolding.",
+    "summary": "Get up and running with Kimi-K2.6, GLM-5.2, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models. Primary Vega Lab fit: skill-extraction via template-scaffolding.",
     "capabilities": [
       "template-scaffolding",
       "ml-ai"
@@ -36793,8 +36792,8 @@
       "adoption-decision-flow"
     ],
     "adoptionKind": "template",
-    "codexBrief": "# Codex Mission: ollama/ollama\nGoal: Get up and running with Kimi-K2.6, GLM-5.1, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models. Primary Vega Lab fit: skill-extraction via template-scaffolding.\nClassification: template\nCapabilities: template-scaffolding, ml-ai\nHouse skills: skill-extraction, repo-adoption\nRules:\n- Adopt this as a scaffold or reference, not as a long-lived runtime dependency.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: ollama/ollama\nGoal: Get up and running with Kimi-K2.6, GLM-5.1, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models. Primary Vega Lab fit: skill-extraction via template-scaffolding.\nClassification: template\nCapabilities: template-scaffolding, ml-ai\nHouse skills: skill-extraction, repo-adoption\nRules:\n- Adopt this as a scaffold or reference, not as a long-lived runtime dependency.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: ollama/ollama\nGoal: Get up and running with Kimi-K2.6, GLM-5.2, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models. Primary Vega Lab fit: skill-extraction via template-scaffolding.\nClassification: template\nCapabilities: template-scaffolding, ml-ai\nHouse skills: skill-extraction, repo-adoption\nRules:\n- Adopt this as a scaffold or reference, not as a long-lived runtime dependency.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: ollama/ollama\nGoal: Get up and running with Kimi-K2.6, GLM-5.2, MiniMax, DeepSeek, gpt-oss, Qwen, Gemma and other models. Primary Vega Lab fit: skill-extraction via template-scaffolding.\nClassification: template\nCapabilities: template-scaffolding, ml-ai\nHouse skills: skill-extraction, repo-adoption\nRules:\n- Adopt this as a scaffold or reference, not as a long-lived runtime dependency.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "ollama/ollama-js",
@@ -42843,17 +42842,15 @@
       "repo-discovery",
       "repo-adoption"
     ],
-    "rules": [
-      "Validate maintenance risk and current ecosystem fit before committing to adoption."
-    ],
+    "rules": [],
     "flows": [
       "research-queue-flow",
       "adoption-decision-flow",
       "news-digest-refresh"
     ],
     "adoptionKind": "house",
-    "codexBrief": "# Codex Mission: RVC-Project/Retrieval-based-Voice-Conversion-WebUI\nGoal: Easily train a good VC model with voice data <= 10 mins! Primary Vega Lab fit: repo-discovery via ml-ai.\nClassification: house\nCapabilities: ml-ai, data-pipeline\nHouse skills: repo-discovery, repo-adoption\nRules:\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: RVC-Project/Retrieval-based-Voice-Conversion-WebUI\nGoal: Easily train a good VC model with voice data <= 10 mins! Primary Vega Lab fit: repo-discovery via ml-ai.\nClassification: house\nCapabilities: ml-ai, data-pipeline\nHouse skills: repo-discovery, repo-adoption\nRules:\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: RVC-Project/Retrieval-based-Voice-Conversion-WebUI\nGoal: Easily train a good VC model with voice data <= 10 mins! Primary Vega Lab fit: repo-discovery via ml-ai.\nClassification: house\nCapabilities: ml-ai, data-pipeline\nHouse skills: repo-discovery, repo-adoption\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: RVC-Project/Retrieval-based-Voice-Conversion-WebUI\nGoal: Easily train a good VC model with voice data <= 10 mins! Primary Vega Lab fit: repo-discovery via ml-ai.\nClassification: house\nCapabilities: ml-ai, data-pipeline\nHouse skills: repo-discovery, repo-adoption\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "rvion/CushyStudio",

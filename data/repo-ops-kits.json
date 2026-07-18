@@ -698,7 +698,7 @@
   },
   {
     "nwo": "KBLLR/audio-lab",
-    "generatedAt": "2026-07-16T23:52:21.000Z",
+    "generatedAt": "2026-07-17T15:10:43.000Z",
     "target": "mlx",
     "artifacts": [
       {
@@ -1462,7 +1462,7 @@
         "kind": "agents",
         "title": "ChatDev AGENTS Draft",
         "suggestedPath": "AGENTS.md",
-        "body": "# ChatDev Agents\n\n## Product Truth\n- Repository: KBLLR/ChatDev\n- Vega Lab classification: tool\n- Active mission target: Local MLX\n\n## Operating Rules\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\n\n## Commands\n- Add the smallest reliable verification command.\n\n## Agent Boundaries\n- Do not mutate deployment, secrets, or release configuration without explicit approval.\n- Prefer draft plans and reviewable diffs over broad automation.\n- Preserve existing product direction; use Vega Lab evidence before adding new abstractions.",
+        "body": "# ChatDev Agents\n\n## Product Truth\n- Repository: KBLLR/ChatDev\n- Vega Lab classification: tool\n- Active mission target: Local MLX\n\n## Operating Rules\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\n\n## Commands\n- Add the smallest reliable verification command.\n\n## Agent Boundaries\n- Do not mutate deployment, secrets, or release configuration without explicit approval.\n- Prefer draft plans and reviewable diffs over broad automation.\n- Preserve existing product direction; use Vega Lab evidence before adding new abstractions.",
         "evidence": [
           "Repository: KBLLR/ChatDev",
           "Description: Create Customized Software using Natural Language Idea (through LLM-powered Multi-Agent Collaboration)",
@@ -1476,7 +1476,7 @@
         "kind": "maintenance",
         "title": "ChatDev Maintenance Plan",
         "suggestedPath": "docs/maintenance-plan.md",
-        "body": "# Maintenance Plan: KBLLR/ChatDev\n\n## Current Signals\n- Health flag: fork\n- No test/check/lint script detected from package metadata.\n\n## Recommended Pass\n- Confirm install path and package manager.\n- Run available verification commands before editing.\n- Patch stale docs, commands, and workflow assumptions first.\n- Open the smallest useful PR only after human approval.\n- Vega Lab action: mlx-mission\n- Vega Lab action: ops-kit\n- Vega Lab action: codex-mission\n- Vega Lab action: claude-mission\n- Vega Lab action: house-integration\n\n## Evidence\n- Repository: KBLLR/ChatDev\n- Description: Create Customized Software using Natural Language Idea (through LLM-powered Multi-Agent Collaboration)\n- Adoption kind: tool\n- Capabilities: agent-workflows, ml-ai\n- House skills: skill-extraction, repo-adoption, mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Risk: Maintenance work has no obvious verification command.\n- Health flag: fork",
+        "body": "# Maintenance Plan: KBLLR/ChatDev\n\n## Current Signals\n- Health flag: stale\n- Health flag: fork\n- No test/check/lint script detected from package metadata.\n- Repository appears stale based on last activity.\n\n## Recommended Pass\n- Confirm install path and package manager.\n- Run available verification commands before editing.\n- Patch stale docs, commands, and workflow assumptions first.\n- Open the smallest useful PR only after human approval.\n- Vega Lab action: mlx-mission\n- Vega Lab action: ops-kit\n- Vega Lab action: codex-mission\n- Vega Lab action: claude-mission\n- Vega Lab action: maintenance-plan\n- Vega Lab action: house-integration\n\n## Evidence\n- Repository: KBLLR/ChatDev\n- Description: Create Customized Software using Natural Language Idea (through LLM-powered Multi-Agent Collaboration)\n- Adoption kind: tool\n- Capabilities: agent-workflows, ml-ai\n- House skills: skill-extraction, repo-adoption, mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: Repository appears stale based on last activity.\n- Risk: Maintenance work has no obvious verification command.",
         "evidence": [
           "Repository: KBLLR/ChatDev",
           "Description: Create Customized Software using Natural Language Idea (through LLM-powered Multi-Agent Collaboration)",
@@ -1484,15 +1484,15 @@
           "Capabilities: agent-workflows, ml-ai",
           "House skills: skill-extraction, repo-adoption, mine-execution",
           "Finding: No test/check/lint script detected from package metadata.",
-          "Risk: Maintenance work has no obvious verification command.",
-          "Health flag: fork"
+          "Finding: Repository appears stale based on last activity.",
+          "Risk: Maintenance work has no obvious verification command."
         ]
       },
       {
         "kind": "deployment",
         "title": "ChatDev Deployment Plan",
         "suggestedPath": "docs/deployment-plan.md",
-        "body": "# Deployment Plan: KBLLR/ChatDev\n\n## Known Deployment Evidence\n- Deployment config: Dockerfile\n\n## Draft Checks\n- Identify expected host and runtime.\n- Document build command, output directory, and required environment variables.\n- Verify preview URL and production URL checks.\n- Keep deploy authority manual; Vega Lab drafts plans and inbox items only.\n\n## Evidence\n- Repository: KBLLR/ChatDev\n- Description: Create Customized Software using Natural Language Idea (through LLM-powered Multi-Agent Collaboration)\n- Adoption kind: tool\n- Capabilities: agent-workflows, ml-ai\n- House skills: skill-extraction, repo-adoption, mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Risk: Maintenance work has no obvious verification command.\n- Health flag: fork",
+        "body": "# Deployment Plan: KBLLR/ChatDev\n\n## Known Deployment Evidence\n- Deployment config: Dockerfile\n\n## Draft Checks\n- Identify expected host and runtime.\n- Document build command, output directory, and required environment variables.\n- Verify preview URL and production URL checks.\n- Keep deploy authority manual; Vega Lab drafts plans and inbox items only.\n\n## Evidence\n- Repository: KBLLR/ChatDev\n- Description: Create Customized Software using Natural Language Idea (through LLM-powered Multi-Agent Collaboration)\n- Adoption kind: tool\n- Capabilities: agent-workflows, ml-ai\n- House skills: skill-extraction, repo-adoption, mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: Repository appears stale based on last activity.\n- Risk: Maintenance work has no obvious verification command.",
         "evidence": [
           "Repository: KBLLR/ChatDev",
           "Description: Create Customized Software using Natural Language Idea (through LLM-powered Multi-Agent Collaboration)",
@@ -1500,15 +1500,15 @@
           "Capabilities: agent-workflows, ml-ai",
           "House skills: skill-extraction, repo-adoption, mine-execution",
           "Finding: No test/check/lint script detected from package metadata.",
-          "Risk: Maintenance work has no obvious verification command.",
-          "Health flag: fork"
+          "Finding: Repository appears stale based on last activity.",
+          "Risk: Maintenance work has no obvious verification command."
         ]
       },
       {
         "kind": "testing",
         "title": "ChatDev Test Plan",
         "suggestedPath": "docs/test-plan.md",
-        "body": "# Test Plan: KBLLR/ChatDev\n\n## Available Commands\n- No test/check/build script detected from synced package metadata.\n\n## Minimum Verification Contract\n- Document one install command.\n- Document one fast smoke command.\n- Document one release/build command when deployable.\n- If no commands exist, create a tracked issue or action item before implementation work.\n\n## Evidence\n- Repository: KBLLR/ChatDev\n- Description: Create Customized Software using Natural Language Idea (through LLM-powered Multi-Agent Collaboration)\n- Adoption kind: tool\n- Capabilities: agent-workflows, ml-ai\n- House skills: skill-extraction, repo-adoption, mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Risk: Maintenance work has no obvious verification command.\n- Health flag: fork",
+        "body": "# Test Plan: KBLLR/ChatDev\n\n## Available Commands\n- No test/check/build script detected from synced package metadata.\n\n## Minimum Verification Contract\n- Document one install command.\n- Document one fast smoke command.\n- Document one release/build command when deployable.\n- If no commands exist, create a tracked issue or action item before implementation work.\n\n## Evidence\n- Repository: KBLLR/ChatDev\n- Description: Create Customized Software using Natural Language Idea (through LLM-powered Multi-Agent Collaboration)\n- Adoption kind: tool\n- Capabilities: agent-workflows, ml-ai\n- House skills: skill-extraction, repo-adoption, mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: Repository appears stale based on last activity.\n- Risk: Maintenance work has no obvious verification command.",
         "evidence": [
           "Repository: KBLLR/ChatDev",
           "Description: Create Customized Software using Natural Language Idea (through LLM-powered Multi-Agent Collaboration)",
@@ -1516,15 +1516,15 @@
           "Capabilities: agent-workflows, ml-ai",
           "House skills: skill-extraction, repo-adoption, mine-execution",
           "Finding: No test/check/lint script detected from package metadata.",
-          "Risk: Maintenance work has no obvious verification command.",
-          "Health flag: fork"
+          "Finding: Repository appears stale based on last activity.",
+          "Risk: Maintenance work has no obvious verification command."
         ]
       },
       {
         "kind": "action-item",
         "title": "ChatDev Action Item Draft",
         "suggestedPath": "ops/action-item.md",
-        "body": "# Action Item Draft: KBLLR/ChatDev\n\n## Recommended Actions\n- testing: Define verification for ChatDev\n- skill: Extract reusable skill signals from ChatDev\n\n## Mission Target\n- Local MLX\n\n## Evidence\n- Repository: KBLLR/ChatDev\n- Description: Create Customized Software using Natural Language Idea (through LLM-powered Multi-Agent Collaboration)\n- Adoption kind: tool\n- Capabilities: agent-workflows, ml-ai\n- House skills: skill-extraction, repo-adoption, mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Risk: Maintenance work has no obvious verification command.\n- Health flag: fork\n- Action item: Define verification for ChatDev\n- Action item: Extract reusable skill signals from ChatDev",
+        "body": "# Action Item Draft: KBLLR/ChatDev\n\n## Recommended Actions\n- maintenance: Run a maintenance pass on ChatDev\n- testing: Define verification for ChatDev\n- skill: Extract reusable skill signals from ChatDev\n\n## Mission Target\n- Local MLX\n\n## Evidence\n- Repository: KBLLR/ChatDev\n- Description: Create Customized Software using Natural Language Idea (through LLM-powered Multi-Agent Collaboration)\n- Adoption kind: tool\n- Capabilities: agent-workflows, ml-ai\n- House skills: skill-extraction, repo-adoption, mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: Repository appears stale based on last activity.\n- Risk: Maintenance work has no obvious verification command.\n- Risk: Dependencies, build targets, or deployment assumptions may be outdated.\n- Health flag: stale",
         "evidence": [
           "Repository: KBLLR/ChatDev",
           "Description: Create Customized Software using Natural Language Idea (through LLM-powered Multi-Agent Collaboration)",
@@ -1532,10 +1532,10 @@
           "Capabilities: agent-workflows, ml-ai",
           "House skills: skill-extraction, repo-adoption, mine-execution",
           "Finding: No test/check/lint script detected from package metadata.",
+          "Finding: Repository appears stale based on last activity.",
           "Risk: Maintenance work has no obvious verification command.",
-          "Health flag: fork",
-          "Action item: Define verification for ChatDev",
-          "Action item: Extract reusable skill signals from ChatDev"
+          "Risk: Dependencies, build targets, or deployment assumptions may be outdated.",
+          "Health flag: stale"
         ]
       }
     ],
@@ -1546,17 +1546,21 @@
       "Capabilities: agent-workflows, ml-ai",
       "House skills: skill-extraction, repo-adoption, mine-execution",
       "Finding: No test/check/lint script detected from package metadata.",
+      "Finding: Repository appears stale based on last activity.",
       "Risk: Maintenance work has no obvious verification command.",
+      "Risk: Dependencies, build targets, or deployment assumptions may be outdated.",
+      "Health flag: stale",
       "Health flag: fork",
-      "Action item: Define verification for ChatDev",
-      "Action item: Extract reusable skill signals from ChatDev"
+      "Action item: Run a maintenance pass on ChatDev"
     ],
     "recommendedActions": [
       "mlx-mission",
       "ops-kit",
       "codex-mission",
       "claude-mission",
+      "maintenance-plan",
       "house-integration",
+      "maintenance:vega-lab:maintenance:kbllr-chatdev",
       "testing:vega-lab:testing:kbllr-chatdev",
       "skill:vega-lab:skill:kbllr-chatdev",
       "review-draft-only"
@@ -12385,7 +12389,7 @@
   },
   {
     "nwo": "KBLLR/vega-lab",
-    "generatedAt": "2026-07-16T02:42:53.000Z",
+    "generatedAt": "2026-07-17T02:45:46.000Z",
     "target": "mlx",
     "artifacts": [
       {
