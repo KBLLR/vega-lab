@@ -307,6 +307,31 @@
     ]
   },
   {
+    "nwo": "KBLLR/character-lab",
+    "inspectedAt": "2026-07-18T21:27:08.000Z",
+    "files": {
+      "hasReadme": true,
+      "packageManagers": [
+        "npm",
+        "npm-lock"
+      ],
+      "workflows": [],
+      "deploymentConfigs": [],
+      "testScripts": [
+        "lint"
+      ],
+      "buildScripts": [
+        "build"
+      ]
+    },
+    "findings": [
+      "No workflow or deployment config detected in synced key files."
+    ],
+    "risks": [
+      "Deployment readiness is unclear."
+    ]
+  },
+  {
     "nwo": "KBLLR/ChatDev",
     "inspectedAt": "2025-07-17T15:33:54.000Z",
     "files": {
@@ -455,7 +480,7 @@
   },
   {
     "nwo": "KBLLR/core-x",
-    "inspectedAt": "2026-07-16T23:40:44.000Z",
+    "inspectedAt": "2026-07-19T01:09:55.000Z",
     "files": {
       "hasReadme": false,
       "packageManagers": [
@@ -1586,6 +1611,29 @@
     ]
   },
   {
+    "nwo": "KBLLR/mflux-service",
+    "inspectedAt": "2026-07-18T21:38:17.000Z",
+    "files": {
+      "hasReadme": true,
+      "packageManagers": [
+        "pip"
+      ],
+      "workflows": [],
+      "deploymentConfigs": [],
+      "testScripts": [],
+      "buildScripts": []
+    },
+    "findings": [
+      "No test/check/lint script detected from package metadata.",
+      "No build script detected from package metadata.",
+      "No workflow or deployment config detected in synced key files."
+    ],
+    "risks": [
+      "Maintenance work has no obvious verification command.",
+      "Deployment readiness is unclear."
+    ]
+  },
+  {
     "nwo": "KBLLR/mindmesh",
     "inspectedAt": "2025-05-04T17:25:59.000Z",
     "files": {
@@ -2479,7 +2527,7 @@
   },
   {
     "nwo": "KBLLR/vega-lab",
-    "inspectedAt": "2026-07-17T02:45:46.000Z",
+    "inspectedAt": "2026-07-18T02:30:43.000Z",
     "files": {
       "hasReadme": true,
       "packageManagers": [

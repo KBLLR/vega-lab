@@ -1440,6 +1440,124 @@
     ]
   },
   {
+    "nwo": "KBLLR/character-lab",
+    "generatedAt": "2026-07-18T21:27:08.000Z",
+    "target": "mlx",
+    "artifacts": [
+      {
+        "kind": "readme",
+        "title": "character-lab README Draft",
+        "suggestedPath": "README.md",
+        "body": "# character-lab\n\ncharacter-lab needs a concise purpose statement before broader core-x adoption.\n\n## Vega Lab Fit\n- Classification: house\n- Capabilities: frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n\n## Local Setup\n- Package managers: npm, npm-lock\n- Document install, dev, build, and verification commands before broad reuse.\n- Keep runtime assumptions explicit; prefer local MLX/OpenResponses for model-assisted work.\n\n## Verification\n- npm run lint\n- npm run build\n\n## Evidence\n- Repository: KBLLR/character-lab\n- Adoption kind: house\n- Capabilities: frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Finding: No workflow or deployment config detected in synced key files.\n- Risk: Deployment readiness is unclear.",
+        "evidence": [
+          "Repository: KBLLR/character-lab",
+          "Adoption kind: house",
+          "Capabilities: frontend-ui",
+          "House skills: repo-discovery, repo-adoption, mine-execution",
+          "Finding: No workflow or deployment config detected in synced key files.",
+          "Risk: Deployment readiness is unclear."
+        ]
+      },
+      {
+        "kind": "agents",
+        "title": "character-lab AGENTS Draft",
+        "suggestedPath": "AGENTS.md",
+        "body": "# character-lab Agents\n\n## Product Truth\n- Repository: KBLLR/character-lab\n- Vega Lab classification: house\n- Active mission target: Local MLX\n\n## Operating Rules\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\n\n## Commands\n- npm run lint\n- npm run build\n\n## Agent Boundaries\n- Do not mutate deployment, secrets, or release configuration without explicit approval.\n- Prefer draft plans and reviewable diffs over broad automation.\n- Preserve existing product direction; use Vega Lab evidence before adding new abstractions.",
+        "evidence": [
+          "Repository: KBLLR/character-lab",
+          "Adoption kind: house",
+          "Capabilities: frontend-ui",
+          "House skills: repo-discovery, repo-adoption, mine-execution",
+          "Finding: No workflow or deployment config detected in synced key files.",
+          "Risk: Deployment readiness is unclear."
+        ]
+      },
+      {
+        "kind": "maintenance",
+        "title": "character-lab Maintenance Plan",
+        "suggestedPath": "docs/maintenance-plan.md",
+        "body": "# Maintenance Plan: KBLLR/character-lab\n\n## Current Signals\n- Health flag: private\n- No workflow or deployment config detected in synced key files.\n\n## Recommended Pass\n- Confirm install path and package manager.\n- Run available verification commands before editing.\n- Patch stale docs, commands, and workflow assumptions first.\n- Open the smallest useful PR only after human approval.\n- Vega Lab action: mlx-mission\n- Vega Lab action: ops-kit\n- Vega Lab action: codex-mission\n- Vega Lab action: claude-mission\n- Vega Lab action: house-integration\n\n## Evidence\n- Repository: KBLLR/character-lab\n- Adoption kind: house\n- Capabilities: frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Finding: No workflow or deployment config detected in synced key files.\n- Risk: Deployment readiness is unclear.\n- Health flag: private\n- Action item: Clarify deployment readiness for character-lab",
+        "evidence": [
+          "Repository: KBLLR/character-lab",
+          "Adoption kind: house",
+          "Capabilities: frontend-ui",
+          "House skills: repo-discovery, repo-adoption, mine-execution",
+          "Finding: No workflow or deployment config detected in synced key files.",
+          "Risk: Deployment readiness is unclear.",
+          "Health flag: private",
+          "Action item: Clarify deployment readiness for character-lab"
+        ]
+      },
+      {
+        "kind": "deployment",
+        "title": "character-lab Deployment Plan",
+        "suggestedPath": "docs/deployment-plan.md",
+        "body": "# Deployment Plan: KBLLR/character-lab\n\n## Known Deployment Evidence\n- No workflow or deployment config detected in synced key files.\n\n## Draft Checks\n- Identify expected host and runtime.\n- Document build command, output directory, and required environment variables.\n- Verify preview URL and production URL checks.\n- Keep deploy authority manual; Vega Lab drafts plans and inbox items only.\n\n## Evidence\n- Repository: KBLLR/character-lab\n- Adoption kind: house\n- Capabilities: frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Finding: No workflow or deployment config detected in synced key files.\n- Risk: Deployment readiness is unclear.\n- Health flag: private\n- Action item: Clarify deployment readiness for character-lab",
+        "evidence": [
+          "Repository: KBLLR/character-lab",
+          "Adoption kind: house",
+          "Capabilities: frontend-ui",
+          "House skills: repo-discovery, repo-adoption, mine-execution",
+          "Finding: No workflow or deployment config detected in synced key files.",
+          "Risk: Deployment readiness is unclear.",
+          "Health flag: private",
+          "Action item: Clarify deployment readiness for character-lab"
+        ]
+      },
+      {
+        "kind": "testing",
+        "title": "character-lab Test Plan",
+        "suggestedPath": "docs/test-plan.md",
+        "body": "# Test Plan: KBLLR/character-lab\n\n## Available Commands\n- npm run lint\n- npm run build\n\n## Minimum Verification Contract\n- Document one install command.\n- Document one fast smoke command.\n- Document one release/build command when deployable.\n- If no commands exist, create a tracked issue or action item before implementation work.\n\n## Evidence\n- Repository: KBLLR/character-lab\n- Adoption kind: house\n- Capabilities: frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Finding: No workflow or deployment config detected in synced key files.\n- Risk: Deployment readiness is unclear.\n- Health flag: private\n- Action item: Clarify deployment readiness for character-lab",
+        "evidence": [
+          "Repository: KBLLR/character-lab",
+          "Adoption kind: house",
+          "Capabilities: frontend-ui",
+          "House skills: repo-discovery, repo-adoption, mine-execution",
+          "Finding: No workflow or deployment config detected in synced key files.",
+          "Risk: Deployment readiness is unclear.",
+          "Health flag: private",
+          "Action item: Clarify deployment readiness for character-lab"
+        ]
+      },
+      {
+        "kind": "action-item",
+        "title": "character-lab Action Item Draft",
+        "suggestedPath": "ops/action-item.md",
+        "body": "# Action Item Draft: KBLLR/character-lab\n\n## Recommended Actions\n- deployment: Clarify deployment readiness for character-lab\n\n## Mission Target\n- Local MLX\n\n## Evidence\n- Repository: KBLLR/character-lab\n- Adoption kind: house\n- Capabilities: frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Finding: No workflow or deployment config detected in synced key files.\n- Risk: Deployment readiness is unclear.\n- Health flag: private\n- Action item: Clarify deployment readiness for character-lab",
+        "evidence": [
+          "Repository: KBLLR/character-lab",
+          "Adoption kind: house",
+          "Capabilities: frontend-ui",
+          "House skills: repo-discovery, repo-adoption, mine-execution",
+          "Finding: No workflow or deployment config detected in synced key files.",
+          "Risk: Deployment readiness is unclear.",
+          "Health flag: private",
+          "Action item: Clarify deployment readiness for character-lab"
+        ]
+      }
+    ],
+    "evidence": [
+      "Repository: KBLLR/character-lab",
+      "Adoption kind: house",
+      "Capabilities: frontend-ui",
+      "House skills: repo-discovery, repo-adoption, mine-execution",
+      "Finding: No workflow or deployment config detected in synced key files.",
+      "Risk: Deployment readiness is unclear.",
+      "Health flag: private",
+      "Action item: Clarify deployment readiness for character-lab"
+    ],
+    "recommendedActions": [
+      "mlx-mission",
+      "ops-kit",
+      "codex-mission",
+      "claude-mission",
+      "house-integration",
+      "deployment:vega-lab:deployment:kbllr-character-lab",
+      "review-draft-only"
+    ]
+  },
+  {
     "nwo": "KBLLR/ChatDev",
     "generatedAt": "2025-07-17T15:33:54.000Z",
     "target": "mlx",
@@ -2131,7 +2249,7 @@
   },
   {
     "nwo": "KBLLR/core-x",
-    "generatedAt": "2026-07-16T23:40:44.000Z",
+    "generatedAt": "2026-07-19T01:09:55.000Z",
     "target": "mlx",
     "artifacts": [
       {
@@ -7834,6 +7952,131 @@
     ]
   },
   {
+    "nwo": "KBLLR/mflux-service",
+    "generatedAt": "2026-07-18T21:38:17.000Z",
+    "target": "mlx",
+    "artifacts": [
+      {
+        "kind": "readme",
+        "title": "mflux-service README Draft",
+        "suggestedPath": "README.md",
+        "body": "# mflux-service\n\nmflux-service needs a concise purpose statement before broader core-x adoption.\n\n## Vega Lab Fit\n- Classification: service\n- Capabilities: backend-service, ml-ai\n- House skills: repo-adoption, mine-execution\n\n## Local Setup\n- Package managers: pip\n- Document install, dev, build, and verification commands before broad reuse.\n- Keep runtime assumptions explicit; prefer local MLX/OpenResponses for model-assisted work.\n\n## Verification\n- Define a lint/test/build command before code edits.\n\n## Evidence\n- Repository: KBLLR/mflux-service\n- Adoption kind: service\n- Capabilities: backend-service, ml-ai\n- House skills: repo-adoption, mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: No build script detected from package metadata.",
+        "evidence": [
+          "Repository: KBLLR/mflux-service",
+          "Adoption kind: service",
+          "Capabilities: backend-service, ml-ai",
+          "House skills: repo-adoption, mine-execution",
+          "Finding: No test/check/lint script detected from package metadata.",
+          "Finding: No build script detected from package metadata."
+        ]
+      },
+      {
+        "kind": "agents",
+        "title": "mflux-service AGENTS Draft",
+        "suggestedPath": "AGENTS.md",
+        "body": "# mflux-service Agents\n\n## Product Truth\n- Repository: KBLLR/mflux-service\n- Vega Lab classification: service\n- Active mission target: Local MLX\n\n## Operating Rules\n- Treat external runtimes and APIs as configurable integrations with explicit environment requirements.\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\n\n## Commands\n- Add the smallest reliable verification command.\n\n## Agent Boundaries\n- Do not mutate deployment, secrets, or release configuration without explicit approval.\n- Prefer draft plans and reviewable diffs over broad automation.\n- Preserve existing product direction; use Vega Lab evidence before adding new abstractions.",
+        "evidence": [
+          "Repository: KBLLR/mflux-service",
+          "Adoption kind: service",
+          "Capabilities: backend-service, ml-ai",
+          "House skills: repo-adoption, mine-execution",
+          "Finding: No test/check/lint script detected from package metadata.",
+          "Finding: No build script detected from package metadata."
+        ]
+      },
+      {
+        "kind": "maintenance",
+        "title": "mflux-service Maintenance Plan",
+        "suggestedPath": "docs/maintenance-plan.md",
+        "body": "# Maintenance Plan: KBLLR/mflux-service\n\n## Current Signals\n- Health flag: private\n- No test/check/lint script detected from package metadata.\n- No build script detected from package metadata.\n- No workflow or deployment config detected in synced key files.\n\n## Recommended Pass\n- Confirm install path and package manager.\n- Run available verification commands before editing.\n- Patch stale docs, commands, and workflow assumptions first.\n- Open the smallest useful PR only after human approval.\n- Vega Lab action: mlx-mission\n- Vega Lab action: ops-kit\n- Vega Lab action: codex-mission\n- Vega Lab action: claude-mission\n- Vega Lab action: house-integration\n\n## Evidence\n- Repository: KBLLR/mflux-service\n- Adoption kind: service\n- Capabilities: backend-service, ml-ai\n- House skills: repo-adoption, mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: No build script detected from package metadata.\n- Finding: No workflow or deployment config detected in synced key files.\n- Risk: Maintenance work has no obvious verification command.",
+        "evidence": [
+          "Repository: KBLLR/mflux-service",
+          "Adoption kind: service",
+          "Capabilities: backend-service, ml-ai",
+          "House skills: repo-adoption, mine-execution",
+          "Finding: No test/check/lint script detected from package metadata.",
+          "Finding: No build script detected from package metadata.",
+          "Finding: No workflow or deployment config detected in synced key files.",
+          "Risk: Maintenance work has no obvious verification command."
+        ]
+      },
+      {
+        "kind": "deployment",
+        "title": "mflux-service Deployment Plan",
+        "suggestedPath": "docs/deployment-plan.md",
+        "body": "# Deployment Plan: KBLLR/mflux-service\n\n## Known Deployment Evidence\n- No workflow or deployment config detected in synced key files.\n\n## Draft Checks\n- Identify expected host and runtime.\n- Document build command, output directory, and required environment variables.\n- Verify preview URL and production URL checks.\n- Keep deploy authority manual; Vega Lab drafts plans and inbox items only.\n\n## Evidence\n- Repository: KBLLR/mflux-service\n- Adoption kind: service\n- Capabilities: backend-service, ml-ai\n- House skills: repo-adoption, mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: No build script detected from package metadata.\n- Finding: No workflow or deployment config detected in synced key files.\n- Risk: Maintenance work has no obvious verification command.",
+        "evidence": [
+          "Repository: KBLLR/mflux-service",
+          "Adoption kind: service",
+          "Capabilities: backend-service, ml-ai",
+          "House skills: repo-adoption, mine-execution",
+          "Finding: No test/check/lint script detected from package metadata.",
+          "Finding: No build script detected from package metadata.",
+          "Finding: No workflow or deployment config detected in synced key files.",
+          "Risk: Maintenance work has no obvious verification command."
+        ]
+      },
+      {
+        "kind": "testing",
+        "title": "mflux-service Test Plan",
+        "suggestedPath": "docs/test-plan.md",
+        "body": "# Test Plan: KBLLR/mflux-service\n\n## Available Commands\n- No test/check/build script detected from synced package metadata.\n\n## Minimum Verification Contract\n- Document one install command.\n- Document one fast smoke command.\n- Document one release/build command when deployable.\n- If no commands exist, create a tracked issue or action item before implementation work.\n\n## Evidence\n- Repository: KBLLR/mflux-service\n- Adoption kind: service\n- Capabilities: backend-service, ml-ai\n- House skills: repo-adoption, mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: No build script detected from package metadata.\n- Finding: No workflow or deployment config detected in synced key files.\n- Risk: Maintenance work has no obvious verification command.",
+        "evidence": [
+          "Repository: KBLLR/mflux-service",
+          "Adoption kind: service",
+          "Capabilities: backend-service, ml-ai",
+          "House skills: repo-adoption, mine-execution",
+          "Finding: No test/check/lint script detected from package metadata.",
+          "Finding: No build script detected from package metadata.",
+          "Finding: No workflow or deployment config detected in synced key files.",
+          "Risk: Maintenance work has no obvious verification command."
+        ]
+      },
+      {
+        "kind": "action-item",
+        "title": "mflux-service Action Item Draft",
+        "suggestedPath": "ops/action-item.md",
+        "body": "# Action Item Draft: KBLLR/mflux-service\n\n## Recommended Actions\n- testing: Define verification for mflux-service\n- deployment: Clarify deployment readiness for mflux-service\n\n## Mission Target\n- Local MLX\n\n## Evidence\n- Repository: KBLLR/mflux-service\n- Adoption kind: service\n- Capabilities: backend-service, ml-ai\n- House skills: repo-adoption, mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: No build script detected from package metadata.\n- Finding: No workflow or deployment config detected in synced key files.\n- Risk: Maintenance work has no obvious verification command.\n- Risk: Deployment readiness is unclear.\n- Health flag: private",
+        "evidence": [
+          "Repository: KBLLR/mflux-service",
+          "Adoption kind: service",
+          "Capabilities: backend-service, ml-ai",
+          "House skills: repo-adoption, mine-execution",
+          "Finding: No test/check/lint script detected from package metadata.",
+          "Finding: No build script detected from package metadata.",
+          "Finding: No workflow or deployment config detected in synced key files.",
+          "Risk: Maintenance work has no obvious verification command.",
+          "Risk: Deployment readiness is unclear.",
+          "Health flag: private"
+        ]
+      }
+    ],
+    "evidence": [
+      "Repository: KBLLR/mflux-service",
+      "Adoption kind: service",
+      "Capabilities: backend-service, ml-ai",
+      "House skills: repo-adoption, mine-execution",
+      "Finding: No test/check/lint script detected from package metadata.",
+      "Finding: No build script detected from package metadata.",
+      "Finding: No workflow or deployment config detected in synced key files.",
+      "Risk: Maintenance work has no obvious verification command.",
+      "Risk: Deployment readiness is unclear.",
+      "Health flag: private",
+      "Action item: Define verification for mflux-service",
+      "Action item: Clarify deployment readiness for mflux-service"
+    ],
+    "recommendedActions": [
+      "mlx-mission",
+      "ops-kit",
+      "codex-mission",
+      "claude-mission",
+      "house-integration",
+      "testing:vega-lab:testing:kbllr-mflux-service",
+      "deployment:vega-lab:deployment:kbllr-mflux-service",
+      "review-draft-only"
+    ]
+  },
+  {
     "nwo": "KBLLR/mindmesh",
     "generatedAt": "2025-05-04T17:25:59.000Z",
     "target": "mlx",
@@ -12389,7 +12632,7 @@
   },
   {
     "nwo": "KBLLR/vega-lab",
-    "generatedAt": "2026-07-17T02:45:46.000Z",
+    "generatedAt": "2026-07-18T02:30:43.000Z",
     "target": "mlx",
     "artifacts": [
       {
