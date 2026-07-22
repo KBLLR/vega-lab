@@ -6980,15 +6980,13 @@
     "summary": "Retro-futuristic tank game. Pure JavaScript with ThreeJS.  Open Source Primary Vega Lab fit: repo-discovery via general engineering.",
     "capabilities": [],
     "houseSkills": [],
-    "rules": [
-      "Validate maintenance risk and current ecosystem fit before committing to adoption."
-    ],
+    "rules": [],
     "flows": [
       "research-queue-flow"
     ],
     "adoptionKind": "ignore",
-    "codexBrief": "# Codex Mission: brianrisk/SYNTHBLAST-threejs-game\nGoal: Retro-futuristic tank game. Pure JavaScript with ThreeJS.  Open Source Primary Vega Lab fit: repo-discovery via general engineering.\nClassification: ignore\nCapabilities: none\nHouse skills: none\nRules:\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: brianrisk/SYNTHBLAST-threejs-game\nGoal: Retro-futuristic tank game. Pure JavaScript with ThreeJS.  Open Source Primary Vega Lab fit: repo-discovery via general engineering.\nClassification: ignore\nCapabilities: none\nHouse skills: none\nRules:\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: brianrisk/SYNTHBLAST-threejs-game\nGoal: Retro-futuristic tank game. Pure JavaScript with ThreeJS.  Open Source Primary Vega Lab fit: repo-discovery via general engineering.\nClassification: ignore\nCapabilities: none\nHouse skills: none\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: brianrisk/SYNTHBLAST-threejs-game\nGoal: Retro-futuristic tank game. Pure JavaScript with ThreeJS.  Open Source Primary Vega Lab fit: repo-discovery via general engineering.\nClassification: ignore\nCapabilities: none\nHouse skills: none\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "BrianSharpe/Wombat",
@@ -16405,23 +16403,23 @@
     "nwo": "freemocap/freemocap",
     "name": "freemocap",
     "author": "freemocap",
-    "summary": "Free Motion Capture for Everyone 💀✨ Primary Vega Lab fit: repo-adoption via ml-ai.",
+    "summary": "Free Motion Capture for Everyone 💀✨ Primary Vega Lab fit: repo-discovery via frontend-ui.",
     "capabilities": [
-      "ml-ai"
+      "frontend-ui"
     ],
     "houseSkills": [
+      "repo-discovery",
       "repo-adoption"
     ],
-    "rules": [
-      "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house."
-    ],
+    "rules": [],
     "flows": [
       "research-queue-flow",
-      "adoption-decision-flow"
+      "adoption-decision-flow",
+      "news-digest-refresh"
     ],
-    "adoptionKind": "tool",
-    "codexBrief": "# Codex Mission: freemocap/freemocap\nGoal: Free Motion Capture for Everyone 💀✨ Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: freemocap/freemocap\nGoal: Free Motion Capture for Everyone 💀✨ Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "adoptionKind": "house",
+    "codexBrief": "# Codex Mission: freemocap/freemocap\nGoal: Free Motion Capture for Everyone 💀✨ Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui\nHouse skills: repo-discovery, repo-adoption\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: freemocap/freemocap\nGoal: Free Motion Capture for Everyone 💀✨ Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui\nHouse skills: repo-discovery, repo-adoption\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "FrozenBurning/SceneDreamer",
@@ -36181,6 +36179,28 @@
     "claudeBrief": "# Claude Mission: nutti/Magic-UV\nGoal: Blender Add-on: Magic UV Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
+    "nwo": "nv-tlabs/ardy",
+    "name": "ardy",
+    "author": "nv-tlabs",
+    "summary": "Official implementation of ARDY: Autoregressive Diffusion with Hybrid Representation for Interactive Human Motion Generation (SIGGRAPH 2026). Primary Vega Lab fit: repo-adoption via ml-ai.",
+    "capabilities": [
+      "ml-ai"
+    ],
+    "houseSkills": [
+      "repo-adoption"
+    ],
+    "rules": [
+      "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house."
+    ],
+    "flows": [
+      "research-queue-flow",
+      "adoption-decision-flow"
+    ],
+    "adoptionKind": "tool",
+    "codexBrief": "# Codex Mission: nv-tlabs/ardy\nGoal: Official implementation of ARDY: Autoregressive Diffusion with Hybrid Representation for Interactive Human Motion Generation (SIGGRAPH 2026). Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: nv-tlabs/ardy\nGoal: Official implementation of ARDY: Autoregressive Diffusion with Hybrid Representation for Interactive Human Motion Generation (SIGGRAPH 2026). Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+  },
+  {
     "nwo": "nv-tlabs/AUV-NET",
     "name": "AUV-NET",
     "author": "nv-tlabs",
@@ -38310,8 +38330,7 @@
       "repo-adoption"
     ],
     "rules": [
-      "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.",
-      "Validate maintenance risk and current ecosystem fit before committing to adoption."
+      "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house."
     ],
     "flows": [
       "research-queue-flow",
@@ -38320,8 +38339,8 @@
       "news-digest-refresh"
     ],
     "adoptionKind": "tool",
-    "codexBrief": "# Codex Mission: oslook/quick-websocket-client\nGoal: A powerful and user-friendly Chrome Extension with WebSocket testing client for developers. Primary Vega Lab fit: repo-discovery via developer-tooling.\nClassification: tool\nCapabilities: developer-tooling, frontend-ui\nHouse skills: repo-discovery, skill-extraction, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: oslook/quick-websocket-client\nGoal: A powerful and user-friendly Chrome Extension with WebSocket testing client for developers. Primary Vega Lab fit: repo-discovery via developer-tooling.\nClassification: tool\nCapabilities: developer-tooling, frontend-ui\nHouse skills: repo-discovery, skill-extraction, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: oslook/quick-websocket-client\nGoal: A powerful and user-friendly Chrome Extension with WebSocket testing client for developers. Primary Vega Lab fit: repo-discovery via developer-tooling.\nClassification: tool\nCapabilities: developer-tooling, frontend-ui\nHouse skills: repo-discovery, skill-extraction, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: oslook/quick-websocket-client\nGoal: A powerful and user-friendly Chrome Extension with WebSocket testing client for developers. Primary Vega Lab fit: repo-discovery via developer-tooling.\nClassification: tool\nCapabilities: developer-tooling, frontend-ui\nHouse skills: repo-discovery, skill-extraction, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "ossia/libossia",
