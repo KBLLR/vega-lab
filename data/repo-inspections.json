@@ -1557,10 +1557,12 @@
       ]
     },
     "findings": [
-      "No test/check/lint script detected from package metadata."
+      "No test/check/lint script detected from package metadata.",
+      "Repository appears stale based on last activity."
     ],
     "risks": [
-      "Maintenance work has no obvious verification command."
+      "Maintenance work has no obvious verification command.",
+      "Dependencies, build targets, or deployment assumptions may be outdated."
     ]
   },
   {
@@ -2527,7 +2529,7 @@
   },
   {
     "nwo": "KBLLR/vega-lab",
-    "inspectedAt": "2026-07-21T02:46:19.000Z",
+    "inspectedAt": "2026-07-22T02:45:09.000Z",
     "files": {
       "hasReadme": true,
       "packageManagers": [

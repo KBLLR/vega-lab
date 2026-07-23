@@ -2490,6 +2490,37 @@
     "updatedAt": "2025-09-23T22:21:30.000Z"
   },
   {
+    "id": "vega-lab:maintenance:kbllr-maricoin",
+    "kind": "maintenance",
+    "status": "open",
+    "priority": "normal",
+    "nwo": "KBLLR/MariCoin",
+    "title": "Run a maintenance pass on MariCoin",
+    "summary": "Stale activity increases dependency, workflow, and deployment risk.",
+    "evidence": [
+      "No test/check/lint script detected from package metadata.",
+      "Repository appears stale based on last activity.",
+      "Maintenance work has no obvious verification command.",
+      "Dependencies, build targets, or deployment assumptions may be outdated."
+    ],
+    "linkedSkills": [
+      "mine-execution"
+    ],
+    "linkedRules": [
+      "Review license status before adoption or redistribution work.",
+      "Validate maintenance risk and current ecosystem fit before committing to adoption.",
+      "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
+    ],
+    "linkedFlows": [
+      "research-queue-flow",
+      "mine-execution-flow"
+    ],
+    "draft": "Draft a maintenance plan for KBLLR/MariCoin: verify dependencies, run available checks, update stale assumptions, and identify a smallest useful PR. Rules: Review license status before adoption or redistribution work. Validate maintenance risk and current ecosystem fit before committing to adoption. Prioritize README, maintenance, and execution readiness before broader ecosystem integration.",
+    "source": "daily-ops",
+    "createdAt": "2025-07-22T19:38:16.000Z",
+    "updatedAt": "2025-07-22T19:38:16.000Z"
+  },
+  {
     "id": "vega-lab:testing:kbllr-maricoin",
     "kind": "testing",
     "status": "open",
@@ -2499,13 +2530,16 @@
     "summary": "Package metadata does not expose an obvious test, check, or lint command.",
     "evidence": [
       "No test/check/lint script detected from package metadata.",
-      "Maintenance work has no obvious verification command."
+      "Repository appears stale based on last activity.",
+      "Maintenance work has no obvious verification command.",
+      "Dependencies, build targets, or deployment assumptions may be outdated."
     ],
     "linkedSkills": [
       "mine-execution"
     ],
     "linkedRules": [
       "Review license status before adoption or redistribution work.",
+      "Validate maintenance risk and current ecosystem fit before committing to adoption.",
       "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
     ],
     "linkedFlows": [

@@ -7606,7 +7606,7 @@
         "kind": "agents",
         "title": "MariCoin AGENTS Draft",
         "suggestedPath": "AGENTS.md",
-        "body": "# MariCoin Agents\n\n## Product Truth\n- Repository: KBLLR/MariCoin\n- Vega Lab classification: ignore\n- Active mission target: Local MLX\n\n## Operating Rules\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\n\n## Commands\n- npm run build\n\n## Agent Boundaries\n- Do not mutate deployment, secrets, or release configuration without explicit approval.\n- Prefer draft plans and reviewable diffs over broad automation.\n- Preserve existing product direction; use Vega Lab evidence before adding new abstractions.",
+        "body": "# MariCoin Agents\n\n## Product Truth\n- Repository: KBLLR/MariCoin\n- Vega Lab classification: ignore\n- Active mission target: Local MLX\n\n## Operating Rules\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\n\n## Commands\n- npm run build\n\n## Agent Boundaries\n- Do not mutate deployment, secrets, or release configuration without explicit approval.\n- Prefer draft plans and reviewable diffs over broad automation.\n- Preserve existing product direction; use Vega Lab evidence before adding new abstractions.",
         "evidence": [
           "Repository: KBLLR/MariCoin",
           "Description: Informative website about a crypto asset for the LGTBQI+ community",
@@ -7620,7 +7620,7 @@
         "kind": "maintenance",
         "title": "MariCoin Maintenance Plan",
         "suggestedPath": "docs/maintenance-plan.md",
-        "body": "# Maintenance Plan: KBLLR/MariCoin\n\n## Current Signals\n- Health flag: private\n- No test/check/lint script detected from package metadata.\n\n## Recommended Pass\n- Confirm install path and package manager.\n- Run available verification commands before editing.\n- Patch stale docs, commands, and workflow assumptions first.\n- Open the smallest useful PR only after human approval.\n- Vega Lab action: mlx-mission\n- Vega Lab action: ops-kit\n- Vega Lab action: codex-mission\n- Vega Lab action: claude-mission\n\n## Evidence\n- Repository: KBLLR/MariCoin\n- Description: Informative website about a crypto asset for the LGTBQI+ community\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Risk: Maintenance work has no obvious verification command.\n- Health flag: private",
+        "body": "# Maintenance Plan: KBLLR/MariCoin\n\n## Current Signals\n- Health flag: stale\n- Health flag: private\n- No test/check/lint script detected from package metadata.\n- Repository appears stale based on last activity.\n\n## Recommended Pass\n- Confirm install path and package manager.\n- Run available verification commands before editing.\n- Patch stale docs, commands, and workflow assumptions first.\n- Open the smallest useful PR only after human approval.\n- Vega Lab action: mlx-mission\n- Vega Lab action: ops-kit\n- Vega Lab action: codex-mission\n- Vega Lab action: claude-mission\n- Vega Lab action: maintenance-plan\n\n## Evidence\n- Repository: KBLLR/MariCoin\n- Description: Informative website about a crypto asset for the LGTBQI+ community\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: Repository appears stale based on last activity.\n- Risk: Maintenance work has no obvious verification command.",
         "evidence": [
           "Repository: KBLLR/MariCoin",
           "Description: Informative website about a crypto asset for the LGTBQI+ community",
@@ -7628,15 +7628,15 @@
           "Capabilities: none",
           "House skills: mine-execution",
           "Finding: No test/check/lint script detected from package metadata.",
-          "Risk: Maintenance work has no obvious verification command.",
-          "Health flag: private"
+          "Finding: Repository appears stale based on last activity.",
+          "Risk: Maintenance work has no obvious verification command."
         ]
       },
       {
         "kind": "deployment",
         "title": "MariCoin Deployment Plan",
         "suggestedPath": "docs/deployment-plan.md",
-        "body": "# Deployment Plan: KBLLR/MariCoin\n\n## Known Deployment Evidence\n- No workflow or deployment config detected in synced key files.\n\n## Draft Checks\n- Identify expected host and runtime.\n- Document build command, output directory, and required environment variables.\n- Verify preview URL and production URL checks.\n- Keep deploy authority manual; Vega Lab drafts plans and inbox items only.\n\n## Evidence\n- Repository: KBLLR/MariCoin\n- Description: Informative website about a crypto asset for the LGTBQI+ community\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Risk: Maintenance work has no obvious verification command.\n- Health flag: private",
+        "body": "# Deployment Plan: KBLLR/MariCoin\n\n## Known Deployment Evidence\n- No workflow or deployment config detected in synced key files.\n\n## Draft Checks\n- Identify expected host and runtime.\n- Document build command, output directory, and required environment variables.\n- Verify preview URL and production URL checks.\n- Keep deploy authority manual; Vega Lab drafts plans and inbox items only.\n\n## Evidence\n- Repository: KBLLR/MariCoin\n- Description: Informative website about a crypto asset for the LGTBQI+ community\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: Repository appears stale based on last activity.\n- Risk: Maintenance work has no obvious verification command.",
         "evidence": [
           "Repository: KBLLR/MariCoin",
           "Description: Informative website about a crypto asset for the LGTBQI+ community",
@@ -7644,15 +7644,15 @@
           "Capabilities: none",
           "House skills: mine-execution",
           "Finding: No test/check/lint script detected from package metadata.",
-          "Risk: Maintenance work has no obvious verification command.",
-          "Health flag: private"
+          "Finding: Repository appears stale based on last activity.",
+          "Risk: Maintenance work has no obvious verification command."
         ]
       },
       {
         "kind": "testing",
         "title": "MariCoin Test Plan",
         "suggestedPath": "docs/test-plan.md",
-        "body": "# Test Plan: KBLLR/MariCoin\n\n## Available Commands\n- npm run build\n\n## Minimum Verification Contract\n- Document one install command.\n- Document one fast smoke command.\n- Document one release/build command when deployable.\n- If no commands exist, create a tracked issue or action item before implementation work.\n\n## Evidence\n- Repository: KBLLR/MariCoin\n- Description: Informative website about a crypto asset for the LGTBQI+ community\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Risk: Maintenance work has no obvious verification command.\n- Health flag: private",
+        "body": "# Test Plan: KBLLR/MariCoin\n\n## Available Commands\n- npm run build\n\n## Minimum Verification Contract\n- Document one install command.\n- Document one fast smoke command.\n- Document one release/build command when deployable.\n- If no commands exist, create a tracked issue or action item before implementation work.\n\n## Evidence\n- Repository: KBLLR/MariCoin\n- Description: Informative website about a crypto asset for the LGTBQI+ community\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: Repository appears stale based on last activity.\n- Risk: Maintenance work has no obvious verification command.",
         "evidence": [
           "Repository: KBLLR/MariCoin",
           "Description: Informative website about a crypto asset for the LGTBQI+ community",
@@ -7660,15 +7660,15 @@
           "Capabilities: none",
           "House skills: mine-execution",
           "Finding: No test/check/lint script detected from package metadata.",
-          "Risk: Maintenance work has no obvious verification command.",
-          "Health flag: private"
+          "Finding: Repository appears stale based on last activity.",
+          "Risk: Maintenance work has no obvious verification command."
         ]
       },
       {
         "kind": "action-item",
         "title": "MariCoin Action Item Draft",
         "suggestedPath": "ops/action-item.md",
-        "body": "# Action Item Draft: KBLLR/MariCoin\n\n## Recommended Actions\n- testing: Define verification for MariCoin\n\n## Mission Target\n- Local MLX\n\n## Evidence\n- Repository: KBLLR/MariCoin\n- Description: Informative website about a crypto asset for the LGTBQI+ community\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Risk: Maintenance work has no obvious verification command.\n- Health flag: private\n- Action item: Define verification for MariCoin",
+        "body": "# Action Item Draft: KBLLR/MariCoin\n\n## Recommended Actions\n- maintenance: Run a maintenance pass on MariCoin\n- testing: Define verification for MariCoin\n\n## Mission Target\n- Local MLX\n\n## Evidence\n- Repository: KBLLR/MariCoin\n- Description: Informative website about a crypto asset for the LGTBQI+ community\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: Repository appears stale based on last activity.\n- Risk: Maintenance work has no obvious verification command.\n- Risk: Dependencies, build targets, or deployment assumptions may be outdated.\n- Health flag: stale",
         "evidence": [
           "Repository: KBLLR/MariCoin",
           "Description: Informative website about a crypto asset for the LGTBQI+ community",
@@ -7676,9 +7676,10 @@
           "Capabilities: none",
           "House skills: mine-execution",
           "Finding: No test/check/lint script detected from package metadata.",
+          "Finding: Repository appears stale based on last activity.",
           "Risk: Maintenance work has no obvious verification command.",
-          "Health flag: private",
-          "Action item: Define verification for MariCoin"
+          "Risk: Dependencies, build targets, or deployment assumptions may be outdated.",
+          "Health flag: stale"
         ]
       }
     ],
@@ -7689,15 +7690,20 @@
       "Capabilities: none",
       "House skills: mine-execution",
       "Finding: No test/check/lint script detected from package metadata.",
+      "Finding: Repository appears stale based on last activity.",
       "Risk: Maintenance work has no obvious verification command.",
+      "Risk: Dependencies, build targets, or deployment assumptions may be outdated.",
+      "Health flag: stale",
       "Health flag: private",
-      "Action item: Define verification for MariCoin"
+      "Action item: Run a maintenance pass on MariCoin"
     ],
     "recommendedActions": [
       "mlx-mission",
       "ops-kit",
       "codex-mission",
       "claude-mission",
+      "maintenance-plan",
+      "maintenance:vega-lab:maintenance:kbllr-maricoin",
       "testing:vega-lab:testing:kbllr-maricoin",
       "review-draft-only"
     ]
@@ -12632,7 +12638,7 @@
   },
   {
     "nwo": "KBLLR/vega-lab",
-    "generatedAt": "2026-07-21T02:46:19.000Z",
+    "generatedAt": "2026-07-22T02:45:09.000Z",
     "target": "mlx",
     "artifacts": [
       {
