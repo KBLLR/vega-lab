@@ -23513,7 +23513,7 @@
     "nwo": "JosefAlbers/phi",
     "name": "phi",
     "author": "JosefAlbers",
-    "summary": "Phi-3.5 for Mac: Locally-run Vision and Language Models for Apple Silicon Primary Vega Lab fit: skill-extraction via agent-workflows.",
+    "summary": "Phi-4 for Mac: Locally-run Vision and Language Models for Apple Silicon Primary Vega Lab fit: skill-extraction via agent-workflows.",
     "capabilities": [
       "agent-workflows",
       "backend-service",
@@ -23532,8 +23532,8 @@
       "adoption-decision-flow"
     ],
     "adoptionKind": "service",
-    "codexBrief": "# Codex Mission: JosefAlbers/phi\nGoal: Phi-3.5 for Mac: Locally-run Vision and Language Models for Apple Silicon Primary Vega Lab fit: skill-extraction via agent-workflows.\nClassification: service\nCapabilities: agent-workflows, backend-service, ml-ai\nHouse skills: skill-extraction, repo-adoption\nRules:\n- Treat external runtimes and APIs as configurable integrations with explicit environment requirements.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: JosefAlbers/phi\nGoal: Phi-3.5 for Mac: Locally-run Vision and Language Models for Apple Silicon Primary Vega Lab fit: skill-extraction via agent-workflows.\nClassification: service\nCapabilities: agent-workflows, backend-service, ml-ai\nHouse skills: skill-extraction, repo-adoption\nRules:\n- Treat external runtimes and APIs as configurable integrations with explicit environment requirements.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: JosefAlbers/phi\nGoal: Phi-4 for Mac: Locally-run Vision and Language Models for Apple Silicon Primary Vega Lab fit: skill-extraction via agent-workflows.\nClassification: service\nCapabilities: agent-workflows, backend-service, ml-ai\nHouse skills: skill-extraction, repo-adoption\nRules:\n- Treat external runtimes and APIs as configurable integrations with explicit environment requirements.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: JosefAlbers/phi\nGoal: Phi-4 for Mac: Locally-run Vision and Language Models for Apple Silicon Primary Vega Lab fit: skill-extraction via agent-workflows.\nClassification: service\nCapabilities: agent-workflows, backend-service, ml-ai\nHouse skills: skill-extraction, repo-adoption\nRules:\n- Treat external runtimes and APIs as configurable integrations with explicit environment requirements.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "joshfarrant/shortcuts-js",
@@ -46827,6 +46827,34 @@
     "claudeBrief": "# Claude Mission: sudosilico/sample-diffusion\nGoal: A Python library and CLI for generating audio samples using Harmonai Dance Diffusion models. Primary Vega Lab fit: repo-discovery via developer-tooling.\nClassification: tool\nCapabilities: developer-tooling, ml-ai\nHouse skills: repo-discovery, skill-extraction, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
+    "nwo": "suitenumerique/meet",
+    "name": "meet",
+    "author": "suitenumerique",
+    "summary": "Open source video conferencing app powered by LiveKit. Built with Django and React. Primary Vega Lab fit: repo-discovery via template-scaffolding.",
+    "capabilities": [
+      "template-scaffolding",
+      "frontend-ui",
+      "ml-ai"
+    ],
+    "houseSkills": [
+      "repo-discovery",
+      "skill-extraction",
+      "repo-adoption"
+    ],
+    "rules": [
+      "Adopt this as a scaffold or reference, not as a long-lived runtime dependency."
+    ],
+    "flows": [
+      "research-queue-flow",
+      "skill-extraction-flow",
+      "adoption-decision-flow",
+      "news-digest-refresh"
+    ],
+    "adoptionKind": "template",
+    "codexBrief": "# Codex Mission: suitenumerique/meet\nGoal: Open source video conferencing app powered by LiveKit. Built with Django and React. Primary Vega Lab fit: repo-discovery via template-scaffolding.\nClassification: template\nCapabilities: template-scaffolding, frontend-ui, ml-ai\nHouse skills: repo-discovery, skill-extraction, repo-adoption\nRules:\n- Adopt this as a scaffold or reference, not as a long-lived runtime dependency.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: suitenumerique/meet\nGoal: Open source video conferencing app powered by LiveKit. Built with Django and React. Primary Vega Lab fit: repo-discovery via template-scaffolding.\nClassification: template\nCapabilities: template-scaffolding, frontend-ui, ml-ai\nHouse skills: repo-discovery, skill-extraction, repo-adoption\nRules:\n- Adopt this as a scaffold or reference, not as a long-lived runtime dependency.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+  },
+  {
     "nwo": "sunag/three.js-tba",
     "name": "three.js-tba",
     "author": "sunag",
@@ -52553,6 +52581,34 @@
     "adoptionKind": "house",
     "codexBrief": "# Codex Mission: Woolverine94/biniou\nGoal: a self-hosted webui for 30+ generative ai Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: house\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
     "claudeBrief": "# Claude Mission: Woolverine94/biniou\nGoal: a self-hosted webui for 30+ generative ai Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: house\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+  },
+  {
+    "nwo": "workadventure/workadventure",
+    "name": "workadventure",
+    "author": "workadventure",
+    "summary": "A collaborative web application (virtual office) presented as a 16-bit RPG video game Primary Vega Lab fit: repo-discovery via template-scaffolding.",
+    "capabilities": [
+      "template-scaffolding",
+      "frontend-ui"
+    ],
+    "houseSkills": [
+      "repo-discovery",
+      "skill-extraction",
+      "repo-adoption"
+    ],
+    "rules": [
+      "Adopt this as a scaffold or reference, not as a long-lived runtime dependency.",
+      "Review license status before adoption or redistribution work."
+    ],
+    "flows": [
+      "research-queue-flow",
+      "skill-extraction-flow",
+      "adoption-decision-flow",
+      "news-digest-refresh"
+    ],
+    "adoptionKind": "template",
+    "codexBrief": "# Codex Mission: workadventure/workadventure\nGoal: A collaborative web application (virtual office) presented as a 16-bit RPG video game Primary Vega Lab fit: repo-discovery via template-scaffolding.\nClassification: template\nCapabilities: template-scaffolding, frontend-ui\nHouse skills: repo-discovery, skill-extraction, repo-adoption\nRules:\n- Adopt this as a scaffold or reference, not as a long-lived runtime dependency.\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: workadventure/workadventure\nGoal: A collaborative web application (virtual office) presented as a 16-bit RPG video game Primary Vega Lab fit: repo-discovery via template-scaffolding.\nClassification: template\nCapabilities: template-scaffolding, frontend-ui\nHouse skills: repo-discovery, skill-extraction, repo-adoption\nRules:\n- Adopt this as a scaffold or reference, not as a long-lived runtime dependency.\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "workeffortwaste/gsap-video-export",
