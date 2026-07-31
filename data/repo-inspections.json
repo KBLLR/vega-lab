@@ -480,7 +480,7 @@
   },
   {
     "nwo": "KBLLR/core-x",
-    "inspectedAt": "2026-07-25T10:52:47.000Z",
+    "inspectedAt": "2026-07-30T12:44:58.000Z",
     "files": {
       "hasReadme": false,
       "packageManagers": [
@@ -1916,7 +1916,7 @@
   },
   {
     "nwo": "KBLLR/rigging-palace",
-    "inspectedAt": "2026-07-26T20:03:27.000Z",
+    "inspectedAt": "2026-07-30T17:24:04.000Z",
     "files": {
       "hasReadme": true,
       "packageManagers": [
@@ -1936,7 +1936,8 @@
       "buildScripts": [
         "build",
         "stage:build",
-        "showcase:build"
+        "showcase:build",
+        "prebuild"
       ]
     },
     "findings": [],
@@ -2529,7 +2530,7 @@
   },
   {
     "nwo": "KBLLR/vega-lab",
-    "inspectedAt": "2026-07-29T02:44:45.000Z",
+    "inspectedAt": "2026-07-30T02:26:26.000Z",
     "files": {
       "hasReadme": true,
       "packageManagers": [
