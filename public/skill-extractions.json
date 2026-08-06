@@ -20990,15 +20990,16 @@
       "repo-adoption"
     ],
     "rules": [
-      "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house."
+      "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.",
+      "Validate maintenance risk and current ecosystem fit before committing to adoption."
     ],
     "flows": [
       "research-queue-flow",
       "adoption-decision-flow"
     ],
     "adoptionKind": "tool",
-    "codexBrief": "# Codex Mission: hustvl/Dynamic-2DGS\nGoal: [ACM MM 2025] Dynamic 2D Gaussians: Geometrically Accurate Radiance Fields for Dynamic Objects Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: hustvl/Dynamic-2DGS\nGoal: [ACM MM 2025] Dynamic 2D Gaussians: Geometrically Accurate Radiance Fields for Dynamic Objects Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: hustvl/Dynamic-2DGS\nGoal: [ACM MM 2025] Dynamic 2D Gaussians: Geometrically Accurate Radiance Fields for Dynamic Objects Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: hustvl/Dynamic-2DGS\nGoal: [ACM MM 2025] Dynamic 2D Gaussians: Geometrically Accurate Radiance Fields for Dynamic Objects Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "hustvl/GaussianDreamer",
@@ -51161,6 +51162,7 @@
     "summary": "Workflow SDK: Build durable, reliable, and observable apps and AI Agents in TypeScript Primary Vega Lab fit: repo-discovery via agent-workflows.",
     "capabilities": [
       "agent-workflows",
+      "backend-service",
       "developer-tooling",
       "ml-ai",
       "frontend-ui"
@@ -51180,8 +51182,8 @@
       "news-digest-refresh"
     ],
     "adoptionKind": "tool",
-    "codexBrief": "# Codex Mission: vercel/workflow\nGoal: Workflow SDK: Build durable, reliable, and observable apps and AI Agents in TypeScript Primary Vega Lab fit: repo-discovery via agent-workflows.\nClassification: tool\nCapabilities: agent-workflows, developer-tooling, ml-ai, frontend-ui\nHouse skills: repo-discovery, skill-extraction, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: vercel/workflow\nGoal: Workflow SDK: Build durable, reliable, and observable apps and AI Agents in TypeScript Primary Vega Lab fit: repo-discovery via agent-workflows.\nClassification: tool\nCapabilities: agent-workflows, developer-tooling, ml-ai, frontend-ui\nHouse skills: repo-discovery, skill-extraction, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: vercel/workflow\nGoal: Workflow SDK: Build durable, reliable, and observable apps and AI Agents in TypeScript Primary Vega Lab fit: repo-discovery via agent-workflows.\nClassification: tool\nCapabilities: agent-workflows, backend-service, developer-tooling, ml-ai, frontend-ui\nHouse skills: repo-discovery, skill-extraction, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: vercel/workflow\nGoal: Workflow SDK: Build durable, reliable, and observable apps and AI Agents in TypeScript Primary Vega Lab fit: repo-discovery via agent-workflows.\nClassification: tool\nCapabilities: agent-workflows, backend-service, developer-tooling, ml-ai, frontend-ui\nHouse skills: repo-discovery, skill-extraction, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "vercel/workflow-examples",
