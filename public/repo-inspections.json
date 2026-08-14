@@ -746,6 +746,30 @@
     ]
   },
   {
+    "nwo": "KBLLR/esoteric-lab",
+    "inspectedAt": "2026-08-13T18:23:25.000Z",
+    "files": {
+      "hasReadme": true,
+      "packageManagers": [
+        "npm",
+        "pnpm"
+      ],
+      "workflows": [
+        "validate.yml"
+      ],
+      "deploymentConfigs": [],
+      "testScripts": [
+        "check"
+      ],
+      "buildScripts": [
+        "prebuild",
+        "build"
+      ]
+    },
+    "findings": [],
+    "risks": []
+  },
+  {
     "nwo": "KBLLR/Final-MariCoin",
     "inspectedAt": "2025-10-09T14:25:50.000Z",
     "files": {
@@ -2530,7 +2554,7 @@
   },
   {
     "nwo": "KBLLR/vega-lab",
-    "inspectedAt": "2026-08-12T02:02:46.000Z",
+    "inspectedAt": "2026-08-13T02:05:09.000Z",
     "files": {
       "hasReadme": true,
       "packageManagers": [

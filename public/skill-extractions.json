@@ -19772,29 +19772,26 @@
     "nwo": "HKUDS/DeepCode",
     "name": "DeepCode",
     "author": "HKUDS",
-    "summary": "\"DeepCode: Open Agentic Coding (Paper2Code & Text2Web & Text2Backend)\" Primary Vega Lab fit: repo-research via agent-workflows.",
+    "summary": "\"DeepCode: Open Agentic Coding ((Agent Harness & Loop Engineering & Multi-Agent Orchestration)\" Primary Vega Lab fit: skill-extraction via agent-workflows.",
     "capabilities": [
       "agent-workflows",
-      "research-intelligence",
-      "backend-service",
       "ml-ai"
     ],
     "houseSkills": [
-      "repo-research",
       "skill-extraction",
       "repo-adoption"
     ],
     "rules": [
-      "Treat external runtimes and APIs as configurable integrations with explicit environment requirements."
+      "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house."
     ],
     "flows": [
       "research-queue-flow",
       "skill-extraction-flow",
       "adoption-decision-flow"
     ],
-    "adoptionKind": "service",
-    "codexBrief": "# Codex Mission: HKUDS/DeepCode\nGoal: \"DeepCode: Open Agentic Coding (Paper2Code & Text2Web & Text2Backend)\" Primary Vega Lab fit: repo-research via agent-workflows.\nClassification: service\nCapabilities: agent-workflows, research-intelligence, backend-service, ml-ai\nHouse skills: repo-research, skill-extraction, repo-adoption\nRules:\n- Treat external runtimes and APIs as configurable integrations with explicit environment requirements.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: HKUDS/DeepCode\nGoal: \"DeepCode: Open Agentic Coding (Paper2Code & Text2Web & Text2Backend)\" Primary Vega Lab fit: repo-research via agent-workflows.\nClassification: service\nCapabilities: agent-workflows, research-intelligence, backend-service, ml-ai\nHouse skills: repo-research, skill-extraction, repo-adoption\nRules:\n- Treat external runtimes and APIs as configurable integrations with explicit environment requirements.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "adoptionKind": "tool",
+    "codexBrief": "# Codex Mission: HKUDS/DeepCode\nGoal: \"DeepCode: Open Agentic Coding ((Agent Harness & Loop Engineering & Multi-Agent Orchestration)\" Primary Vega Lab fit: skill-extraction via agent-workflows.\nClassification: tool\nCapabilities: agent-workflows, ml-ai\nHouse skills: skill-extraction, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: HKUDS/DeepCode\nGoal: \"DeepCode: Open Agentic Coding ((Agent Harness & Loop Engineering & Multi-Agent Orchestration)\" Primary Vega Lab fit: skill-extraction via agent-workflows.\nClassification: tool\nCapabilities: agent-workflows, ml-ai\nHouse skills: skill-extraction, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "hmans/composer-suite",
@@ -25002,6 +24999,27 @@
     "adoptionKind": "house",
     "codexBrief": "# Codex Mission: KBLLR/empathic-ai\nGoal: empathic-ai is a candidate for house adoption. Primary Vega Lab fit: repo-discovery via ml-ai.\nClassification: house\nCapabilities: ml-ai, frontend-ui\nHouse skills: repo-discovery, repo-adoption, mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\n4. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
     "claudeBrief": "# Claude Mission: KBLLR/empathic-ai\nGoal: empathic-ai is a candidate for house adoption. Primary Vega Lab fit: repo-discovery via ml-ai.\nClassification: house\nCapabilities: ml-ai, frontend-ui\nHouse skills: repo-discovery, repo-adoption, mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\n4. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+  },
+  {
+    "nwo": "KBLLR/esoteric-lab",
+    "name": "esoteric-lab",
+    "author": "KBLLR",
+    "summary": "Core-X Esoteric Lab — ARCANA Tarot, operator context, astrology, ritual voice and music Primary Vega Lab fit: mine-execution via general engineering.",
+    "capabilities": [],
+    "houseSkills": [
+      "mine-execution"
+    ],
+    "rules": [
+      "Review license status before adoption or redistribution work.",
+      "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
+    ],
+    "flows": [
+      "research-queue-flow",
+      "mine-execution-flow"
+    ],
+    "adoptionKind": "ignore",
+    "codexBrief": "# Codex Mission: KBLLR/esoteric-lab\nGoal: Core-X Esoteric Lab — ARCANA Tarot, operator context, astrology, ritual voice and music Primary Vega Lab fit: mine-execution via general engineering.\nClassification: ignore\nCapabilities: none\nHouse skills: mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: KBLLR/esoteric-lab\nGoal: Core-X Esoteric Lab — ARCANA Tarot, operator context, astrology, ritual voice and music Primary Vega Lab fit: mine-execution via general engineering.\nClassification: ignore\nCapabilities: none\nHouse skills: mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "KBLLR/Final-MariCoin",
