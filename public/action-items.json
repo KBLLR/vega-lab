@@ -260,6 +260,38 @@
     "updatedAt": "2023-07-07T07:02:56.000Z"
   },
   {
+    "id": "vega-lab:deployment:kbllr-characters-lab",
+    "kind": "deployment",
+    "status": "open",
+    "priority": "normal",
+    "nwo": "KBLLR/characters-lab",
+    "title": "Clarify deployment readiness for characters-lab",
+    "summary": "Vega Lab could not detect workflow or deployment configuration from synced key files.",
+    "evidence": [
+      "No workflow or deployment config detected in synced key files.",
+      "Deployment readiness is unclear."
+    ],
+    "linkedSkills": [
+      "repo-discovery",
+      "repo-adoption",
+      "mine-execution"
+    ],
+    "linkedRules": [
+      "Review license status before adoption or redistribution work.",
+      "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
+    ],
+    "linkedFlows": [
+      "research-queue-flow",
+      "adoption-decision-flow",
+      "news-digest-refresh",
+      "mine-execution-flow"
+    ],
+    "draft": "Draft a deployment readiness brief for KBLLR/characters-lab: identify expected host, build command, env vars, workflow status, and verification URL checks. Evidence: No workflow or deployment config detected in synced key files.",
+    "source": "daily-ops",
+    "createdAt": "2026-08-24T15:41:54.000Z",
+    "updatedAt": "2026-08-24T15:41:54.000Z"
+  },
+  {
     "id": "vega-lab:testing:kbllr-mflux-service",
     "kind": "testing",
     "status": "open",
