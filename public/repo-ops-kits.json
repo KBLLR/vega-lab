@@ -2369,7 +2369,7 @@
   },
   {
     "nwo": "KBLLR/core-x",
-    "generatedAt": "2026-08-26T20:36:42.000Z",
+    "generatedAt": "2026-08-28T09:30:56.000Z",
     "target": "mlx",
     "artifacts": [
       {
@@ -3955,6 +3955,132 @@
       "codex-mission",
       "claude-mission",
       "testing:vega-lab:testing:kbllr-final-maricoin",
+      "review-draft-only"
+    ]
+  },
+  {
+    "nwo": "KBLLR/Flash-UI-MLX-",
+    "generatedAt": "2026-08-27T16:55:23.000Z",
+    "target": "mlx",
+    "artifacts": [
+      {
+        "kind": "readme",
+        "title": "Flash-UI-MLX- README Draft",
+        "suggestedPath": "README.md",
+        "body": "# Flash-UI-MLX-\n\nA UI Generator made on Google Studio AI ported to Apple MLX\n\n## Vega Lab Fit\n- Classification: house\n- Capabilities: frontend-ui, ml-ai\n- House skills: repo-discovery, repo-adoption, mine-execution\n\n## Local Setup\n- Package managers: npm, npm-lock\n- Document install, dev, build, and verification commands before broad reuse.\n- Keep runtime assumptions explicit; prefer local MLX/OpenResponses for model-assisted work.\n\n## Verification\n- npm run lint\n- npm run build\n\n## Evidence\n- Repository: KBLLR/Flash-UI-MLX-\n- Description: A UI Generator made on Google Studio AI ported to Apple MLX\n- Adoption kind: house\n- Capabilities: frontend-ui, ml-ai\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Finding: README missing from the synced repository snapshot.",
+        "evidence": [
+          "Repository: KBLLR/Flash-UI-MLX-",
+          "Description: A UI Generator made on Google Studio AI ported to Apple MLX",
+          "Adoption kind: house",
+          "Capabilities: frontend-ui, ml-ai",
+          "House skills: repo-discovery, repo-adoption, mine-execution",
+          "Finding: README missing from the synced repository snapshot."
+        ]
+      },
+      {
+        "kind": "agents",
+        "title": "Flash-UI-MLX- AGENTS Draft",
+        "suggestedPath": "AGENTS.md",
+        "body": "# Flash-UI-MLX- Agents\n\n## Product Truth\n- Repository: KBLLR/Flash-UI-MLX-\n- Vega Lab classification: house\n- Active mission target: Local MLX\n\n## Operating Rules\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\n\n## Commands\n- npm run lint\n- npm run build\n\n## Agent Boundaries\n- Do not mutate deployment, secrets, or release configuration without explicit approval.\n- Prefer draft plans and reviewable diffs over broad automation.\n- Preserve existing product direction; use Vega Lab evidence before adding new abstractions.",
+        "evidence": [
+          "Repository: KBLLR/Flash-UI-MLX-",
+          "Description: A UI Generator made on Google Studio AI ported to Apple MLX",
+          "Adoption kind: house",
+          "Capabilities: frontend-ui, ml-ai",
+          "House skills: repo-discovery, repo-adoption, mine-execution",
+          "Finding: README missing from the synced repository snapshot."
+        ]
+      },
+      {
+        "kind": "maintenance",
+        "title": "Flash-UI-MLX- Maintenance Plan",
+        "suggestedPath": "docs/maintenance-plan.md",
+        "body": "# Maintenance Plan: KBLLR/Flash-UI-MLX-\n\n## Current Signals\n- Health flag: missing-readme\n- Health flag: private\n- README missing from the synced repository snapshot.\n- No workflow or deployment config detected in synced key files.\n\n## Recommended Pass\n- Confirm install path and package manager.\n- Run available verification commands before editing.\n- Patch stale docs, commands, and workflow assumptions first.\n- Open the smallest useful PR only after human approval.\n- Vega Lab action: mlx-mission\n- Vega Lab action: ops-kit\n- Vega Lab action: codex-mission\n- Vega Lab action: claude-mission\n- Vega Lab action: write-readme\n- Vega Lab action: house-integration\n\n## Evidence\n- Repository: KBLLR/Flash-UI-MLX-\n- Description: A UI Generator made on Google Studio AI ported to Apple MLX\n- Adoption kind: house\n- Capabilities: frontend-ui, ml-ai\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Finding: README missing from the synced repository snapshot.\n- Finding: No workflow or deployment config detected in synced key files.\n- Risk: New contributors and agents lack a clear entrypoint.",
+        "evidence": [
+          "Repository: KBLLR/Flash-UI-MLX-",
+          "Description: A UI Generator made on Google Studio AI ported to Apple MLX",
+          "Adoption kind: house",
+          "Capabilities: frontend-ui, ml-ai",
+          "House skills: repo-discovery, repo-adoption, mine-execution",
+          "Finding: README missing from the synced repository snapshot.",
+          "Finding: No workflow or deployment config detected in synced key files.",
+          "Risk: New contributors and agents lack a clear entrypoint."
+        ]
+      },
+      {
+        "kind": "deployment",
+        "title": "Flash-UI-MLX- Deployment Plan",
+        "suggestedPath": "docs/deployment-plan.md",
+        "body": "# Deployment Plan: KBLLR/Flash-UI-MLX-\n\n## Known Deployment Evidence\n- No workflow or deployment config detected in synced key files.\n\n## Draft Checks\n- Identify expected host and runtime.\n- Document build command, output directory, and required environment variables.\n- Verify preview URL and production URL checks.\n- Keep deploy authority manual; Vega Lab drafts plans and inbox items only.\n\n## Evidence\n- Repository: KBLLR/Flash-UI-MLX-\n- Description: A UI Generator made on Google Studio AI ported to Apple MLX\n- Adoption kind: house\n- Capabilities: frontend-ui, ml-ai\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Finding: README missing from the synced repository snapshot.\n- Finding: No workflow or deployment config detected in synced key files.\n- Risk: New contributors and agents lack a clear entrypoint.",
+        "evidence": [
+          "Repository: KBLLR/Flash-UI-MLX-",
+          "Description: A UI Generator made on Google Studio AI ported to Apple MLX",
+          "Adoption kind: house",
+          "Capabilities: frontend-ui, ml-ai",
+          "House skills: repo-discovery, repo-adoption, mine-execution",
+          "Finding: README missing from the synced repository snapshot.",
+          "Finding: No workflow or deployment config detected in synced key files.",
+          "Risk: New contributors and agents lack a clear entrypoint."
+        ]
+      },
+      {
+        "kind": "testing",
+        "title": "Flash-UI-MLX- Test Plan",
+        "suggestedPath": "docs/test-plan.md",
+        "body": "# Test Plan: KBLLR/Flash-UI-MLX-\n\n## Available Commands\n- npm run lint\n- npm run build\n\n## Minimum Verification Contract\n- Document one install command.\n- Document one fast smoke command.\n- Document one release/build command when deployable.\n- If no commands exist, create a tracked issue or action item before implementation work.\n\n## Evidence\n- Repository: KBLLR/Flash-UI-MLX-\n- Description: A UI Generator made on Google Studio AI ported to Apple MLX\n- Adoption kind: house\n- Capabilities: frontend-ui, ml-ai\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Finding: README missing from the synced repository snapshot.\n- Finding: No workflow or deployment config detected in synced key files.\n- Risk: New contributors and agents lack a clear entrypoint.",
+        "evidence": [
+          "Repository: KBLLR/Flash-UI-MLX-",
+          "Description: A UI Generator made on Google Studio AI ported to Apple MLX",
+          "Adoption kind: house",
+          "Capabilities: frontend-ui, ml-ai",
+          "House skills: repo-discovery, repo-adoption, mine-execution",
+          "Finding: README missing from the synced repository snapshot.",
+          "Finding: No workflow or deployment config detected in synced key files.",
+          "Risk: New contributors and agents lack a clear entrypoint."
+        ]
+      },
+      {
+        "kind": "action-item",
+        "title": "Flash-UI-MLX- Action Item Draft",
+        "suggestedPath": "ops/action-item.md",
+        "body": "# Action Item Draft: KBLLR/Flash-UI-MLX-\n\n## Recommended Actions\n- readme: Make Flash-UI-MLX- README-ready\n- deployment: Clarify deployment readiness for Flash-UI-MLX-\n\n## Mission Target\n- Local MLX\n\n## Evidence\n- Repository: KBLLR/Flash-UI-MLX-\n- Description: A UI Generator made on Google Studio AI ported to Apple MLX\n- Adoption kind: house\n- Capabilities: frontend-ui, ml-ai\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Finding: README missing from the synced repository snapshot.\n- Finding: No workflow or deployment config detected in synced key files.\n- Risk: New contributors and agents lack a clear entrypoint.\n- Risk: Deployment readiness is unclear.\n- Health flag: missing-readme",
+        "evidence": [
+          "Repository: KBLLR/Flash-UI-MLX-",
+          "Description: A UI Generator made on Google Studio AI ported to Apple MLX",
+          "Adoption kind: house",
+          "Capabilities: frontend-ui, ml-ai",
+          "House skills: repo-discovery, repo-adoption, mine-execution",
+          "Finding: README missing from the synced repository snapshot.",
+          "Finding: No workflow or deployment config detected in synced key files.",
+          "Risk: New contributors and agents lack a clear entrypoint.",
+          "Risk: Deployment readiness is unclear.",
+          "Health flag: missing-readme"
+        ]
+      }
+    ],
+    "evidence": [
+      "Repository: KBLLR/Flash-UI-MLX-",
+      "Description: A UI Generator made on Google Studio AI ported to Apple MLX",
+      "Adoption kind: house",
+      "Capabilities: frontend-ui, ml-ai",
+      "House skills: repo-discovery, repo-adoption, mine-execution",
+      "Finding: README missing from the synced repository snapshot.",
+      "Finding: No workflow or deployment config detected in synced key files.",
+      "Risk: New contributors and agents lack a clear entrypoint.",
+      "Risk: Deployment readiness is unclear.",
+      "Health flag: missing-readme",
+      "Health flag: private",
+      "Action item: Make Flash-UI-MLX- README-ready"
+    ],
+    "recommendedActions": [
+      "mlx-mission",
+      "ops-kit",
+      "codex-mission",
+      "claude-mission",
+      "write-readme",
+      "house-integration",
+      "readme:vega-lab:readme:kbllr-flash-ui-mlx-",
+      "deployment:vega-lab:deployment:kbllr-flash-ui-mlx-",
       "review-draft-only"
     ]
   },
@@ -12864,7 +12990,7 @@
   },
   {
     "nwo": "KBLLR/vega-lab",
-    "generatedAt": "2026-08-26T01:27:21.000Z",
+    "generatedAt": "2026-08-27T07:34:12.000Z",
     "target": "mlx",
     "artifacts": [
       {

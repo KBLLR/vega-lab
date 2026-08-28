@@ -1,5 +1,39 @@
 [
   {
+    "id": "vega-lab:readme:kbllr-flash-ui-mlx-",
+    "kind": "readme",
+    "status": "open",
+    "priority": "high",
+    "nwo": "KBLLR/Flash-UI-MLX-",
+    "title": "Make Flash-UI-MLX- README-ready",
+    "summary": "The repo needs a clear human and agent entrypoint before broader ecosystem use.",
+    "evidence": [
+      "README missing from the synced repository snapshot.",
+      "No workflow or deployment config detected in synced key files.",
+      "New contributors and agents lack a clear entrypoint.",
+      "Deployment readiness is unclear."
+    ],
+    "linkedSkills": [
+      "repo-discovery",
+      "repo-adoption",
+      "mine-execution"
+    ],
+    "linkedRules": [
+      "Review license status before adoption or redistribution work.",
+      "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
+    ],
+    "linkedFlows": [
+      "research-queue-flow",
+      "adoption-decision-flow",
+      "news-digest-refresh",
+      "mine-execution-flow"
+    ],
+    "draft": "Draft a README readiness pass for KBLLR/Flash-UI-MLX-: document purpose, local setup, primary commands, data/runtime assumptions, and a short maintenance section. Evidence: README missing from the synced repository snapshot. No workflow or deployment config detected in synced key files.",
+    "source": "daily-ops",
+    "createdAt": "2026-08-27T16:55:23.000Z",
+    "updatedAt": "2026-08-27T16:55:23.000Z"
+  },
+  {
     "id": "vega-lab:readme:kbllr-audio-lab",
     "kind": "readme",
     "status": "open",
@@ -258,6 +292,40 @@
     "source": "daily-ops",
     "createdAt": "2023-07-07T07:02:56.000Z",
     "updatedAt": "2023-07-07T07:02:56.000Z"
+  },
+  {
+    "id": "vega-lab:deployment:kbllr-flash-ui-mlx-",
+    "kind": "deployment",
+    "status": "open",
+    "priority": "normal",
+    "nwo": "KBLLR/Flash-UI-MLX-",
+    "title": "Clarify deployment readiness for Flash-UI-MLX-",
+    "summary": "Vega Lab could not detect workflow or deployment configuration from synced key files.",
+    "evidence": [
+      "README missing from the synced repository snapshot.",
+      "No workflow or deployment config detected in synced key files.",
+      "New contributors and agents lack a clear entrypoint.",
+      "Deployment readiness is unclear."
+    ],
+    "linkedSkills": [
+      "repo-discovery",
+      "repo-adoption",
+      "mine-execution"
+    ],
+    "linkedRules": [
+      "Review license status before adoption or redistribution work.",
+      "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
+    ],
+    "linkedFlows": [
+      "research-queue-flow",
+      "adoption-decision-flow",
+      "news-digest-refresh",
+      "mine-execution-flow"
+    ],
+    "draft": "Draft a deployment readiness brief for KBLLR/Flash-UI-MLX-: identify expected host, build command, env vars, workflow status, and verification URL checks. Evidence: README missing from the synced repository snapshot. No workflow or deployment config detected in synced key files.",
+    "source": "daily-ops",
+    "createdAt": "2026-08-27T16:55:23.000Z",
+    "updatedAt": "2026-08-27T16:55:23.000Z"
   },
   {
     "id": "vega-lab:deployment:kbllr-characters-lab",

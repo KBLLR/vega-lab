@@ -1,21 +1,28 @@
 {
-  "generatedAt": "2026-08-27T00:00:00.000Z",
-  "summary": "198 open Vega Lab actions across 110 owned repositories.",
+  "generatedAt": "2026-08-28T09:30:56.000Z",
+  "summary": "200 open Vega Lab actions across 111 owned repositories.",
   "counts": {
-    "openActions": 198,
-    "criticalActions": 8,
-    "ownedRepos": 110,
+    "openActions": 200,
+    "criticalActions": 9,
+    "ownedRepos": 111,
     "researchQueue": 0
   },
   "highlights": [
+    "Make Flash-UI-MLX- README-ready: The repo needs a clear human and agent entrypoint before broader ecosystem use.",
     "Make audio-lab README-ready: The repo needs a clear human and agent entrypoint before broader ecosystem use.",
     "Make core-x README-ready: The repo needs a clear human and agent entrypoint before broader ecosystem use.",
     "Make le-belle-epoch README-ready: The repo needs a clear human and agent entrypoint before broader ecosystem use.",
     "Make htdi-agentic-lab README-ready: The repo needs a clear human and agent entrypoint before broader ecosystem use.",
-    "Make htdi-agentic-framework README-ready: The repo needs a clear human and agent entrypoint before broader ecosystem use.",
-    "Make avatar-os README-ready: The repo needs a clear human and agent entrypoint before broader ecosystem use."
+    "Make htdi-agentic-framework README-ready: The repo needs a clear human and agent entrypoint before broader ecosystem use."
   ],
   "recommendedActions": [
+    {
+      "id": "vega-lab:readme:kbllr-flash-ui-mlx-",
+      "nwo": "KBLLR/Flash-UI-MLX-",
+      "title": "Make Flash-UI-MLX- README-ready",
+      "priority": "high",
+      "kind": "readme"
+    },
     {
       "id": "vega-lab:readme:kbllr-audio-lab",
       "nwo": "KBLLR/audio-lab",
@@ -64,16 +71,10 @@
       "title": "Make Do-Project README-ready",
       "priority": "high",
       "kind": "readme"
-    },
-    {
-      "id": "vega-lab:readme:kbllr-kbllr-graphics-",
-      "nwo": "KBLLR/kbllr_graphics_",
-      "title": "Make kbllr_graphics_ README-ready",
-      "priority": "high",
-      "kind": "readme"
     }
   ],
   "actionItemIds": [
+    "vega-lab:readme:kbllr-flash-ui-mlx-",
     "vega-lab:readme:kbllr-audio-lab",
     "vega-lab:readme:kbllr-core-x",
     "vega-lab:readme:kbllr-le-belle-epoch",
@@ -82,9 +83,8 @@
     "vega-lab:readme:kbllr-avatar-os",
     "vega-lab:readme:kbllr-do-project",
     "vega-lab:readme:kbllr-kbllr-graphics-",
+    "vega-lab:deployment:kbllr-flash-ui-mlx-",
     "vega-lab:deployment:kbllr-characters-lab",
-    "vega-lab:testing:kbllr-mflux-service",
-    "vega-lab:deployment:kbllr-mflux-service",
-    "vega-lab:deployment:kbllr-character-lab"
+    "vega-lab:testing:kbllr-mflux-service"
   ]
 }
