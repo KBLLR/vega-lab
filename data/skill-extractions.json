@@ -16540,16 +16540,15 @@
       "repo-adoption"
     ],
     "rules": [
-      "Review license status before adoption or redistribution work.",
-      "Validate maintenance risk and current ecosystem fit before committing to adoption."
+      "Review license status before adoption or redistribution work."
     ],
     "flows": [
       "research-queue-flow",
       "adoption-decision-flow"
     ],
     "adoptionKind": "house",
-    "codexBrief": "# Codex Mission: funwithtriangles/blender-to-threejs-export-guide\nGoal: How to export animated models from Blender into three.js Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: house\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: funwithtriangles/blender-to-threejs-export-guide\nGoal: How to export animated models from Blender into three.js Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: house\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: funwithtriangles/blender-to-threejs-export-guide\nGoal: How to export animated models from Blender into three.js Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: house\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: funwithtriangles/blender-to-threejs-export-guide\nGoal: How to export animated models from Blender into three.js Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: house\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "FurkanGozukara/Stable-Diffusion",
@@ -21505,6 +21504,30 @@
     "adoptionKind": "house",
     "codexBrief": "# Codex Mission: Imetomi/retro-futuristic-ui-design\nGoal: Creating web-based retro effects is quite hard, use this for inspiration Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui\nHouse skills: repo-discovery, repo-adoption\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
     "claudeBrief": "# Claude Mission: Imetomi/retro-futuristic-ui-design\nGoal: Creating web-based retro effects is quite hard, use this for inspiration Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui\nHouse skills: repo-discovery, repo-adoption\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+  },
+  {
+    "nwo": "Imetomi/Teaching-a-Robot-to-Walk-OpenAI-Gym",
+    "name": "Teaching-a-Robot-to-Walk-OpenAI-Gym",
+    "author": "Imetomi",
+    "summary": "Using the BipedalWalker-v2 Environment Primary Vega Lab fit: repo-adoption via ml-ai.",
+    "capabilities": [
+      "ml-ai"
+    ],
+    "houseSkills": [
+      "repo-adoption"
+    ],
+    "rules": [
+      "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.",
+      "Review license status before adoption or redistribution work.",
+      "Validate maintenance risk and current ecosystem fit before committing to adoption."
+    ],
+    "flows": [
+      "research-queue-flow",
+      "adoption-decision-flow"
+    ],
+    "adoptionKind": "tool",
+    "codexBrief": "# Codex Mission: Imetomi/Teaching-a-Robot-to-Walk-OpenAI-Gym\nGoal: Using the BipedalWalker-v2 Environment Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: Imetomi/Teaching-a-Robot-to-Walk-OpenAI-Gym\nGoal: Using the BipedalWalker-v2 Environment Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "imlixinyang/FlashWorld",
@@ -30788,15 +30811,16 @@
       "repo-adoption"
     ],
     "rules": [
-      "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house."
+      "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.",
+      "Validate maintenance risk and current ecosystem fit before committing to adoption."
     ],
     "flows": [
       "research-queue-flow",
       "adoption-decision-flow"
     ],
     "adoptionKind": "tool",
-    "codexBrief": "# Codex Mission: magic-research/magic-animate\nGoal: [CVPR 2024] Official repository for \"MagicAnimate: Temporally Consistent Human Image Animation using Diffusion Model\" Primary Vega Lab fit: repo-research via research-intelligence.\nClassification: tool\nCapabilities: research-intelligence, ml-ai\nHouse skills: repo-research, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: magic-research/magic-animate\nGoal: [CVPR 2024] Official repository for \"MagicAnimate: Temporally Consistent Human Image Animation using Diffusion Model\" Primary Vega Lab fit: repo-research via research-intelligence.\nClassification: tool\nCapabilities: research-intelligence, ml-ai\nHouse skills: repo-research, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: magic-research/magic-animate\nGoal: [CVPR 2024] Official repository for \"MagicAnimate: Temporally Consistent Human Image Animation using Diffusion Model\" Primary Vega Lab fit: repo-research via research-intelligence.\nClassification: tool\nCapabilities: research-intelligence, ml-ai\nHouse skills: repo-research, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: magic-research/magic-animate\nGoal: [CVPR 2024] Official repository for \"MagicAnimate: Temporally Consistent Human Image Animation using Diffusion Model\" Primary Vega Lab fit: repo-research via research-intelligence.\nClassification: tool\nCapabilities: research-intelligence, ml-ai\nHouse skills: repo-research, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "magic-research/magic-edit",
