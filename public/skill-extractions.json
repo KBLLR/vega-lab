@@ -51372,6 +51372,35 @@
     "claudeBrief": "# Claude Mission: vegaluisjose/mlx-rag\nGoal: Explore a simple example of utilizing MLX for RAG application running locally on your Apple Silicon device. Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: house\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
+    "nwo": "vellum-ai/vellum-assistant",
+    "name": "vellum-assistant",
+    "author": "vellum-ai",
+    "summary": "An AI Assistant that’s easy to setup, does your work 24/7, knows your preferences and gets better over time. Primary Vega Lab fit: repo-discovery via agent-workflows.",
+    "capabilities": [
+      "agent-workflows",
+      "template-scaffolding",
+      "ml-ai",
+      "frontend-ui"
+    ],
+    "houseSkills": [
+      "repo-discovery",
+      "skill-extraction",
+      "repo-adoption"
+    ],
+    "rules": [
+      "Adopt this as a scaffold or reference, not as a long-lived runtime dependency."
+    ],
+    "flows": [
+      "research-queue-flow",
+      "skill-extraction-flow",
+      "adoption-decision-flow",
+      "news-digest-refresh"
+    ],
+    "adoptionKind": "template",
+    "codexBrief": "# Codex Mission: vellum-ai/vellum-assistant\nGoal: An AI Assistant that’s easy to setup, does your work 24/7, knows your preferences and gets better over time. Primary Vega Lab fit: repo-discovery via agent-workflows.\nClassification: template\nCapabilities: agent-workflows, template-scaffolding, ml-ai, frontend-ui\nHouse skills: repo-discovery, skill-extraction, repo-adoption\nRules:\n- Adopt this as a scaffold or reference, not as a long-lived runtime dependency.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: vellum-ai/vellum-assistant\nGoal: An AI Assistant that’s easy to setup, does your work 24/7, knows your preferences and gets better over time. Primary Vega Lab fit: repo-discovery via agent-workflows.\nClassification: template\nCapabilities: agent-workflows, template-scaffolding, ml-ai, frontend-ui\nHouse skills: repo-discovery, skill-extraction, repo-adoption\nRules:\n- Adopt this as a scaffold or reference, not as a long-lived runtime dependency.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+  },
+  {
     "nwo": "vercel/examples",
     "name": "examples",
     "author": "vercel",
