@@ -31881,16 +31881,15 @@
       "repo-adoption"
     ],
     "rules": [
-      "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.",
-      "Validate maintenance risk and current ecosystem fit before committing to adoption."
+      "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house."
     ],
     "flows": [
       "research-queue-flow",
       "adoption-decision-flow"
     ],
     "adoptionKind": "tool",
-    "codexBrief": "# Codex Mission: mbzuai-oryx/VideoGPT-plus\nGoal: Official Repository of paper VideoGPT+: Integrating Image and Video Encoders for Enhanced Video Understanding Primary Vega Lab fit: repo-research via research-intelligence.\nClassification: tool\nCapabilities: research-intelligence, ml-ai\nHouse skills: repo-research, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: mbzuai-oryx/VideoGPT-plus\nGoal: Official Repository of paper VideoGPT+: Integrating Image and Video Encoders for Enhanced Video Understanding Primary Vega Lab fit: repo-research via research-intelligence.\nClassification: tool\nCapabilities: research-intelligence, ml-ai\nHouse skills: repo-research, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: mbzuai-oryx/VideoGPT-plus\nGoal: Official Repository of paper VideoGPT+: Integrating Image and Video Encoders for Enhanced Video Understanding Primary Vega Lab fit: repo-research via research-intelligence.\nClassification: tool\nCapabilities: research-intelligence, ml-ai\nHouse skills: repo-research, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: mbzuai-oryx/VideoGPT-plus\nGoal: Official Repository of paper VideoGPT+: Integrating Image and Video Encoders for Enhanced Video Understanding Primary Vega Lab fit: repo-research via research-intelligence.\nClassification: tool\nCapabilities: research-intelligence, ml-ai\nHouse skills: repo-research, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "McGill-NLP/webllama",
@@ -38172,7 +38171,7 @@
     "nwo": "openinterpreter/openinterpreter",
     "name": "openinterpreter",
     "author": "openinterpreter",
-    "summary": "A coding agent for open models like Kimi K3 Primary Vega Lab fit: skill-extraction via agent-workflows.",
+    "summary": "A coding agent for open models like Kimi K3 and GLM 5.3 Primary Vega Lab fit: skill-extraction via agent-workflows.",
     "capabilities": [
       "agent-workflows",
       "ml-ai"
@@ -38190,8 +38189,8 @@
       "adoption-decision-flow"
     ],
     "adoptionKind": "tool",
-    "codexBrief": "# Codex Mission: openinterpreter/openinterpreter\nGoal: A coding agent for open models like Kimi K3 Primary Vega Lab fit: skill-extraction via agent-workflows.\nClassification: tool\nCapabilities: agent-workflows, ml-ai\nHouse skills: skill-extraction, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: openinterpreter/openinterpreter\nGoal: A coding agent for open models like Kimi K3 Primary Vega Lab fit: skill-extraction via agent-workflows.\nClassification: tool\nCapabilities: agent-workflows, ml-ai\nHouse skills: skill-extraction, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: openinterpreter/openinterpreter\nGoal: A coding agent for open models like Kimi K3 and GLM 5.3 Primary Vega Lab fit: skill-extraction via agent-workflows.\nClassification: tool\nCapabilities: agent-workflows, ml-ai\nHouse skills: skill-extraction, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: openinterpreter/openinterpreter\nGoal: A coding agent for open models like Kimi K3 and GLM 5.3 Primary Vega Lab fit: skill-extraction via agent-workflows.\nClassification: tool\nCapabilities: agent-workflows, ml-ai\nHouse skills: skill-extraction, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "openMVG/awesome_3DReconstruction_list",
@@ -38279,15 +38278,16 @@
       "repo-adoption"
     ],
     "rules": [
-      "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house."
+      "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.",
+      "Validate maintenance risk and current ecosystem fit before committing to adoption."
     ],
     "flows": [
       "research-queue-flow",
       "adoption-decision-flow"
     ],
     "adoptionKind": "tool",
-    "codexBrief": "# Codex Mission: OpenRouterArchived/openrouter-runner\nGoal: Deprecated inference engine Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: OpenRouterArchived/openrouter-runner\nGoal: Deprecated inference engine Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: OpenRouterArchived/openrouter-runner\nGoal: Deprecated inference engine Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: OpenRouterArchived/openrouter-runner\nGoal: Deprecated inference engine Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "OpenTalker/StyleHEAT",
