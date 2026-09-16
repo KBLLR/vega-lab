@@ -526,6 +526,33 @@
     ]
   },
   {
+    "nwo": "KBLLR/core-x-wiki",
+    "inspectedAt": "2026-09-15T11:46:33.000Z",
+    "files": {
+      "hasReadme": false,
+      "packageManagers": [
+        "npm",
+        "npm-lock"
+      ],
+      "workflows": [],
+      "deploymentConfigs": [],
+      "testScripts": [],
+      "buildScripts": [
+        "build"
+      ]
+    },
+    "findings": [
+      "README missing from the synced repository snapshot.",
+      "No test/check/lint script detected from package metadata.",
+      "No workflow or deployment config detected in synced key files."
+    ],
+    "risks": [
+      "New contributors and agents lack a clear entrypoint.",
+      "Maintenance work has no obvious verification command.",
+      "Deployment readiness is unclear."
+    ]
+  },
+  {
     "nwo": "KBLLR/dam-test",
     "inspectedAt": "2025-02-12T19:06:32.000Z",
     "files": {
@@ -1666,7 +1693,7 @@
   },
   {
     "nwo": "KBLLR/memoryblocks",
-    "inspectedAt": "2026-09-12T15:55:03.000Z",
+    "inspectedAt": "2026-09-16T01:46:18.000Z",
     "files": {
       "hasReadme": true,
       "packageManagers": [
@@ -2606,7 +2633,7 @@
   },
   {
     "nwo": "KBLLR/vega-lab",
-    "inspectedAt": "2026-09-14T03:38:45.000Z",
+    "inspectedAt": "2026-09-15T03:40:20.000Z",
     "files": {
       "hasReadme": true,
       "packageManagers": [

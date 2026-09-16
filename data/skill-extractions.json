@@ -7821,16 +7821,14 @@
     "houseSkills": [
       "repo-adoption"
     ],
-    "rules": [
-      "Validate maintenance risk and current ecosystem fit before committing to adoption."
-    ],
+    "rules": [],
     "flows": [
       "research-queue-flow",
       "adoption-decision-flow"
     ],
     "adoptionKind": "house",
-    "codexBrief": "# Codex Mission: carson-katri/dream-textures\nGoal: Stable Diffusion built-in to Blender Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: house\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: carson-katri/dream-textures\nGoal: Stable Diffusion built-in to Blender Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: house\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: carson-katri/dream-textures\nGoal: Stable Diffusion built-in to Blender Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: house\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: carson-katri/dream-textures\nGoal: Stable Diffusion built-in to Blender Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: house\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "carson-katri/geometry-script",
@@ -24873,6 +24871,33 @@
     "adoptionKind": "tool",
     "codexBrief": "# Codex Mission: KBLLR/core-x\nGoal: Core-X: Clean architecture backbone for the KBLLR AI ecosystem Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption, mine-execution\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
     "claudeBrief": "# Claude Mission: KBLLR/core-x\nGoal: Core-X: Clean architecture backbone for the KBLLR AI ecosystem Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption, mine-execution\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+  },
+  {
+    "nwo": "KBLLR/core-x-wiki",
+    "name": "core-x-wiki",
+    "author": "KBLLR",
+    "summary": "WIP Primary Vega Lab fit: repo-discovery via frontend-ui.",
+    "capabilities": [
+      "frontend-ui"
+    ],
+    "houseSkills": [
+      "repo-discovery",
+      "repo-adoption",
+      "mine-execution"
+    ],
+    "rules": [
+      "Review license status before adoption or redistribution work.",
+      "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
+    ],
+    "flows": [
+      "research-queue-flow",
+      "adoption-decision-flow",
+      "news-digest-refresh",
+      "mine-execution-flow"
+    ],
+    "adoptionKind": "house",
+    "codexBrief": "# Codex Mission: KBLLR/core-x-wiki\nGoal: WIP Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui\nHouse skills: repo-discovery, repo-adoption, mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\n4. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: KBLLR/core-x-wiki\nGoal: WIP Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui\nHouse skills: repo-discovery, repo-adoption, mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\n4. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "KBLLR/dam-test",
@@ -49782,15 +49807,16 @@
       "repo-adoption"
     ],
     "rules": [
-      "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house."
+      "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.",
+      "Validate maintenance risk and current ecosystem fit before committing to adoption."
     ],
     "flows": [
       "research-queue-flow",
       "adoption-decision-flow"
     ],
     "adoptionKind": "tool",
-    "codexBrief": "# Codex Mission: timesler/facenet-pytorch\nGoal: Pretrained Pytorch face detection (MTCNN) and facial recognition (InceptionResnet) models Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: timesler/facenet-pytorch\nGoal: Pretrained Pytorch face detection (MTCNN) and facial recognition (InceptionResnet) models Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: timesler/facenet-pytorch\nGoal: Pretrained Pytorch face detection (MTCNN) and facial recognition (InceptionResnet) models Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: timesler/facenet-pytorch\nGoal: Pretrained Pytorch face detection (MTCNN) and facial recognition (InceptionResnet) models Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "TimoBolkart/voca",

@@ -2494,6 +2494,133 @@
     ]
   },
   {
+    "nwo": "KBLLR/core-x-wiki",
+    "generatedAt": "2026-09-15T11:46:33.000Z",
+    "target": "mlx",
+    "artifacts": [
+      {
+        "kind": "readme",
+        "title": "core-x-wiki README Draft",
+        "suggestedPath": "README.md",
+        "body": "# core-x-wiki\n\nWIP\n\n## Vega Lab Fit\n- Classification: house\n- Capabilities: frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n\n## Local Setup\n- Package managers: npm, npm-lock\n- Document install, dev, build, and verification commands before broad reuse.\n- Keep runtime assumptions explicit; prefer local MLX/OpenResponses for model-assisted work.\n\n## Verification\n- npm run build\n\n## Evidence\n- Repository: KBLLR/core-x-wiki\n- Description: WIP\n- Adoption kind: house\n- Capabilities: frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Finding: README missing from the synced repository snapshot.",
+        "evidence": [
+          "Repository: KBLLR/core-x-wiki",
+          "Description: WIP",
+          "Adoption kind: house",
+          "Capabilities: frontend-ui",
+          "House skills: repo-discovery, repo-adoption, mine-execution",
+          "Finding: README missing from the synced repository snapshot."
+        ]
+      },
+      {
+        "kind": "agents",
+        "title": "core-x-wiki AGENTS Draft",
+        "suggestedPath": "AGENTS.md",
+        "body": "# core-x-wiki Agents\n\n## Product Truth\n- Repository: KBLLR/core-x-wiki\n- Vega Lab classification: house\n- Active mission target: Local MLX\n\n## Operating Rules\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\n\n## Commands\n- npm run build\n\n## Agent Boundaries\n- Do not mutate deployment, secrets, or release configuration without explicit approval.\n- Prefer draft plans and reviewable diffs over broad automation.\n- Preserve existing product direction; use Vega Lab evidence before adding new abstractions.",
+        "evidence": [
+          "Repository: KBLLR/core-x-wiki",
+          "Description: WIP",
+          "Adoption kind: house",
+          "Capabilities: frontend-ui",
+          "House skills: repo-discovery, repo-adoption, mine-execution",
+          "Finding: README missing from the synced repository snapshot."
+        ]
+      },
+      {
+        "kind": "maintenance",
+        "title": "core-x-wiki Maintenance Plan",
+        "suggestedPath": "docs/maintenance-plan.md",
+        "body": "# Maintenance Plan: KBLLR/core-x-wiki\n\n## Current Signals\n- Health flag: missing-readme\n- Health flag: private\n- README missing from the synced repository snapshot.\n- No test/check/lint script detected from package metadata.\n- No workflow or deployment config detected in synced key files.\n\n## Recommended Pass\n- Confirm install path and package manager.\n- Run available verification commands before editing.\n- Patch stale docs, commands, and workflow assumptions first.\n- Open the smallest useful PR only after human approval.\n- Vega Lab action: mlx-mission\n- Vega Lab action: ops-kit\n- Vega Lab action: codex-mission\n- Vega Lab action: claude-mission\n- Vega Lab action: write-readme\n- Vega Lab action: house-integration\n\n## Evidence\n- Repository: KBLLR/core-x-wiki\n- Description: WIP\n- Adoption kind: house\n- Capabilities: frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Finding: README missing from the synced repository snapshot.\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: No workflow or deployment config detected in synced key files.",
+        "evidence": [
+          "Repository: KBLLR/core-x-wiki",
+          "Description: WIP",
+          "Adoption kind: house",
+          "Capabilities: frontend-ui",
+          "House skills: repo-discovery, repo-adoption, mine-execution",
+          "Finding: README missing from the synced repository snapshot.",
+          "Finding: No test/check/lint script detected from package metadata.",
+          "Finding: No workflow or deployment config detected in synced key files."
+        ]
+      },
+      {
+        "kind": "deployment",
+        "title": "core-x-wiki Deployment Plan",
+        "suggestedPath": "docs/deployment-plan.md",
+        "body": "# Deployment Plan: KBLLR/core-x-wiki\n\n## Known Deployment Evidence\n- No workflow or deployment config detected in synced key files.\n\n## Draft Checks\n- Identify expected host and runtime.\n- Document build command, output directory, and required environment variables.\n- Verify preview URL and production URL checks.\n- Keep deploy authority manual; Vega Lab drafts plans and inbox items only.\n\n## Evidence\n- Repository: KBLLR/core-x-wiki\n- Description: WIP\n- Adoption kind: house\n- Capabilities: frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Finding: README missing from the synced repository snapshot.\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: No workflow or deployment config detected in synced key files.",
+        "evidence": [
+          "Repository: KBLLR/core-x-wiki",
+          "Description: WIP",
+          "Adoption kind: house",
+          "Capabilities: frontend-ui",
+          "House skills: repo-discovery, repo-adoption, mine-execution",
+          "Finding: README missing from the synced repository snapshot.",
+          "Finding: No test/check/lint script detected from package metadata.",
+          "Finding: No workflow or deployment config detected in synced key files."
+        ]
+      },
+      {
+        "kind": "testing",
+        "title": "core-x-wiki Test Plan",
+        "suggestedPath": "docs/test-plan.md",
+        "body": "# Test Plan: KBLLR/core-x-wiki\n\n## Available Commands\n- npm run build\n\n## Minimum Verification Contract\n- Document one install command.\n- Document one fast smoke command.\n- Document one release/build command when deployable.\n- If no commands exist, create a tracked issue or action item before implementation work.\n\n## Evidence\n- Repository: KBLLR/core-x-wiki\n- Description: WIP\n- Adoption kind: house\n- Capabilities: frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Finding: README missing from the synced repository snapshot.\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: No workflow or deployment config detected in synced key files.",
+        "evidence": [
+          "Repository: KBLLR/core-x-wiki",
+          "Description: WIP",
+          "Adoption kind: house",
+          "Capabilities: frontend-ui",
+          "House skills: repo-discovery, repo-adoption, mine-execution",
+          "Finding: README missing from the synced repository snapshot.",
+          "Finding: No test/check/lint script detected from package metadata.",
+          "Finding: No workflow or deployment config detected in synced key files."
+        ]
+      },
+      {
+        "kind": "action-item",
+        "title": "core-x-wiki Action Item Draft",
+        "suggestedPath": "ops/action-item.md",
+        "body": "# Action Item Draft: KBLLR/core-x-wiki\n\n## Recommended Actions\n- readme: Make core-x-wiki README-ready\n- testing: Define verification for core-x-wiki\n- deployment: Clarify deployment readiness for core-x-wiki\n\n## Mission Target\n- Local MLX\n\n## Evidence\n- Repository: KBLLR/core-x-wiki\n- Description: WIP\n- Adoption kind: house\n- Capabilities: frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Finding: README missing from the synced repository snapshot.\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: No workflow or deployment config detected in synced key files.\n- Risk: New contributors and agents lack a clear entrypoint.\n- Risk: Maintenance work has no obvious verification command.",
+        "evidence": [
+          "Repository: KBLLR/core-x-wiki",
+          "Description: WIP",
+          "Adoption kind: house",
+          "Capabilities: frontend-ui",
+          "House skills: repo-discovery, repo-adoption, mine-execution",
+          "Finding: README missing from the synced repository snapshot.",
+          "Finding: No test/check/lint script detected from package metadata.",
+          "Finding: No workflow or deployment config detected in synced key files.",
+          "Risk: New contributors and agents lack a clear entrypoint.",
+          "Risk: Maintenance work has no obvious verification command."
+        ]
+      }
+    ],
+    "evidence": [
+      "Repository: KBLLR/core-x-wiki",
+      "Description: WIP",
+      "Adoption kind: house",
+      "Capabilities: frontend-ui",
+      "House skills: repo-discovery, repo-adoption, mine-execution",
+      "Finding: README missing from the synced repository snapshot.",
+      "Finding: No test/check/lint script detected from package metadata.",
+      "Finding: No workflow or deployment config detected in synced key files.",
+      "Risk: New contributors and agents lack a clear entrypoint.",
+      "Risk: Maintenance work has no obvious verification command.",
+      "Risk: Deployment readiness is unclear.",
+      "Health flag: missing-readme"
+    ],
+    "recommendedActions": [
+      "mlx-mission",
+      "ops-kit",
+      "codex-mission",
+      "claude-mission",
+      "write-readme",
+      "house-integration",
+      "readme:vega-lab:readme:kbllr-core-x-wiki",
+      "testing:vega-lab:testing:kbllr-core-x-wiki",
+      "deployment:vega-lab:deployment:kbllr-core-x-wiki",
+      "review-draft-only"
+    ]
+  },
+  {
     "nwo": "KBLLR/dam-test",
     "generatedAt": "2025-02-12T19:06:32.000Z",
     "target": "mlx",
@@ -8187,7 +8314,7 @@
   },
   {
     "nwo": "KBLLR/memoryblocks",
-    "generatedAt": "2026-09-12T15:55:03.000Z",
+    "generatedAt": "2026-09-16T01:46:18.000Z",
     "target": "mlx",
     "artifacts": [
       {
@@ -12990,7 +13117,7 @@
   },
   {
     "nwo": "KBLLR/vega-lab",
-    "generatedAt": "2026-09-14T03:38:45.000Z",
+    "generatedAt": "2026-09-15T03:40:20.000Z",
     "target": "mlx",
     "artifacts": [
       {

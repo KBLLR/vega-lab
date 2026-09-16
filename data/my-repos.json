@@ -1,32 +1,61 @@
 [
   {
-    "name": "core-x",
-    "description": "Core-X: Clean architecture backbone for the KBLLR AI ecosystem",
+    "name": "core-x-wiki",
+    "description": "WIP",
     "author": "KBLLR",
     "stars": 0,
-    "url": "https://github.com/KBLLR/core-x",
-    "date": "2/9/2026",
+    "url": "https://github.com/KBLLR/core-x-wiki",
+    "date": "9/15/2026",
     "languages": [
       {
-        "language": "Python",
+        "language": "TypeScript",
         "percentage": "100%"
       }
     ],
     "topics": [],
-    "primary_language": "Python",
+    "primary_language": "TypeScript",
     "license": "None",
     "forks": 0,
     "open_issues": 0,
     "last_updated": "9/15/2026",
-    "last_updated_at": "2026-09-15T00:00:16Z",
-    "created_at": "2026-02-09T19:25:05Z",
+    "last_updated_at": "2026-09-15T11:46:33Z",
+    "created_at": "2026-09-15T11:46:13Z",
     "private": true,
     "has_readme": false,
     "is_owner": true,
     "is_fork": false,
     "key_files": {
-      "packageJson": null,
-      "packageManagers": [],
+      "packageJson": {
+        "scripts": {
+          "dev": "tsx server.ts",
+          "build": "vite build && esbuild server.ts --bundle --platform=node --format=cjs --packages=external --sourcemap --outfile=dist/server.cjs",
+          "start": "node dist/server.cjs",
+          "preview": "vite preview"
+        },
+        "dependencies": {
+          "@google/genai": "^1.7.0",
+          "@types/three": "^0.186.0",
+          "dotenv": "^17.4.2",
+          "express": "^5.2.1",
+          "lucide-react": "^1.43.0",
+          "react": "^19.1.0",
+          "react-dom": "^19.1.0",
+          "three": "^0.186.0"
+        },
+        "devDependencies": {
+          "@types/express": "^5.0.6",
+          "@types/node": "^22.14.0",
+          "@vitejs/plugin-react": "^5.0.0",
+          "esbuild": "^0.28.1",
+          "tsx": "^4.22.4",
+          "typescript": "~5.8.2",
+          "vite": "^6.2.0"
+        }
+      },
+      "packageManagers": [
+        "npm",
+        "npm-lock"
+      ],
       "workflows": [],
       "deploymentConfigs": []
     }
@@ -54,8 +83,8 @@
     "license": "None",
     "forks": 0,
     "open_issues": 0,
-    "last_updated": "9/14/2026",
-    "last_updated_at": "2026-09-14T03:38:45Z",
+    "last_updated": "9/15/2026",
+    "last_updated_at": "2026-09-15T03:40:20Z",
     "created_at": "2023-12-23T23:09:43Z",
     "private": false,
     "has_readme": true,
@@ -131,6 +160,38 @@
       "deploymentConfigs": [
         "vercel.json"
       ]
+    }
+  },
+  {
+    "name": "core-x",
+    "description": "Core-X: Clean architecture backbone for the KBLLR AI ecosystem",
+    "author": "KBLLR",
+    "stars": 0,
+    "url": "https://github.com/KBLLR/core-x",
+    "date": "2/9/2026",
+    "languages": [
+      {
+        "language": "Python",
+        "percentage": "100%"
+      }
+    ],
+    "topics": [],
+    "primary_language": "Python",
+    "license": "None",
+    "forks": 0,
+    "open_issues": 0,
+    "last_updated": "9/15/2026",
+    "last_updated_at": "2026-09-15T00:00:16Z",
+    "created_at": "2026-02-09T19:25:05Z",
+    "private": true,
+    "has_readme": false,
+    "is_owner": true,
+    "is_fork": false,
+    "key_files": {
+      "packageJson": null,
+      "packageManagers": [],
+      "workflows": [],
+      "deploymentConfigs": []
     }
   },
   {
@@ -1353,8 +1414,8 @@
     "license": "None",
     "forks": 0,
     "open_issues": 1,
-    "last_updated": "9/12/2026",
-    "last_updated_at": "2026-09-12T15:55:03Z",
+    "last_updated": "9/16/2026",
+    "last_updated_at": "2026-09-16T01:46:18Z",
     "created_at": "2025-11-20T18:14:32Z",
     "private": true,
     "has_readme": true,
