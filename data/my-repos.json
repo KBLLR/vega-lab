@@ -1,66 +1,5 @@
 [
   {
-    "name": "core-x-wiki",
-    "description": "WIP",
-    "author": "KBLLR",
-    "stars": 0,
-    "url": "https://github.com/KBLLR/core-x-wiki",
-    "date": "9/15/2026",
-    "languages": [
-      {
-        "language": "TypeScript",
-        "percentage": "100%"
-      }
-    ],
-    "topics": [],
-    "primary_language": "TypeScript",
-    "license": "None",
-    "forks": 0,
-    "open_issues": 0,
-    "last_updated": "9/15/2026",
-    "last_updated_at": "2026-09-15T11:46:33Z",
-    "created_at": "2026-09-15T11:46:13Z",
-    "private": true,
-    "has_readme": false,
-    "is_owner": true,
-    "is_fork": false,
-    "key_files": {
-      "packageJson": {
-        "scripts": {
-          "dev": "tsx server.ts",
-          "build": "vite build && esbuild server.ts --bundle --platform=node --format=cjs --packages=external --sourcemap --outfile=dist/server.cjs",
-          "start": "node dist/server.cjs",
-          "preview": "vite preview"
-        },
-        "dependencies": {
-          "@google/genai": "^1.7.0",
-          "@types/three": "^0.186.0",
-          "dotenv": "^17.4.2",
-          "express": "^5.2.1",
-          "lucide-react": "^1.43.0",
-          "react": "^19.1.0",
-          "react-dom": "^19.1.0",
-          "three": "^0.186.0"
-        },
-        "devDependencies": {
-          "@types/express": "^5.0.6",
-          "@types/node": "^22.14.0",
-          "@vitejs/plugin-react": "^5.0.0",
-          "esbuild": "^0.28.1",
-          "tsx": "^4.22.4",
-          "typescript": "~5.8.2",
-          "vite": "^6.2.0"
-        }
-      },
-      "packageManagers": [
-        "npm",
-        "npm-lock"
-      ],
-      "workflows": [],
-      "deploymentConfigs": []
-    }
-  },
-  {
     "name": "vega-lab",
     "description": "The Brightest Stars",
     "author": "KBLLR",
@@ -83,8 +22,8 @@
     "license": "None",
     "forks": 0,
     "open_issues": 0,
-    "last_updated": "9/15/2026",
-    "last_updated_at": "2026-09-15T03:40:20Z",
+    "last_updated": "9/16/2026",
+    "last_updated_at": "2026-09-16T03:36:43Z",
     "created_at": "2023-12-23T23:09:43Z",
     "private": false,
     "has_readme": true,
@@ -160,6 +99,67 @@
       "deploymentConfigs": [
         "vercel.json"
       ]
+    }
+  },
+  {
+    "name": "core-x-wiki",
+    "description": "WIP",
+    "author": "KBLLR",
+    "stars": 0,
+    "url": "https://github.com/KBLLR/core-x-wiki",
+    "date": "9/15/2026",
+    "languages": [
+      {
+        "language": "TypeScript",
+        "percentage": "100%"
+      }
+    ],
+    "topics": [],
+    "primary_language": "TypeScript",
+    "license": "None",
+    "forks": 0,
+    "open_issues": 0,
+    "last_updated": "9/15/2026",
+    "last_updated_at": "2026-09-15T11:46:33Z",
+    "created_at": "2026-09-15T11:46:13Z",
+    "private": true,
+    "has_readme": false,
+    "is_owner": true,
+    "is_fork": false,
+    "key_files": {
+      "packageJson": {
+        "scripts": {
+          "dev": "tsx server.ts",
+          "build": "vite build && esbuild server.ts --bundle --platform=node --format=cjs --packages=external --sourcemap --outfile=dist/server.cjs",
+          "start": "node dist/server.cjs",
+          "preview": "vite preview"
+        },
+        "dependencies": {
+          "@google/genai": "^1.7.0",
+          "@types/three": "^0.186.0",
+          "dotenv": "^17.4.2",
+          "express": "^5.2.1",
+          "lucide-react": "^1.43.0",
+          "react": "^19.1.0",
+          "react-dom": "^19.1.0",
+          "three": "^0.186.0"
+        },
+        "devDependencies": {
+          "@types/express": "^5.0.6",
+          "@types/node": "^22.14.0",
+          "@vitejs/plugin-react": "^5.0.0",
+          "esbuild": "^0.28.1",
+          "tsx": "^4.22.4",
+          "typescript": "~5.8.2",
+          "vite": "^6.2.0"
+        }
+      },
+      "packageManagers": [
+        "npm",
+        "npm-lock"
+      ],
+      "workflows": [],
+      "deploymentConfigs": []
     }
   },
   {
