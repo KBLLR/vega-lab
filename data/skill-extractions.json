@@ -29398,15 +29398,13 @@
     "summary": "a 2D rigid body physics engine for the web ▲● ■ Primary Vega Lab fit: repo-discovery via general engineering.",
     "capabilities": [],
     "houseSkills": [],
-    "rules": [
-      "Validate maintenance risk and current ecosystem fit before committing to adoption."
-    ],
+    "rules": [],
     "flows": [
       "research-queue-flow"
     ],
     "adoptionKind": "ignore",
-    "codexBrief": "# Codex Mission: liabru/matter-js\nGoal: a 2D rigid body physics engine for the web ▲● ■ Primary Vega Lab fit: repo-discovery via general engineering.\nClassification: ignore\nCapabilities: none\nHouse skills: none\nRules:\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: liabru/matter-js\nGoal: a 2D rigid body physics engine for the web ▲● ■ Primary Vega Lab fit: repo-discovery via general engineering.\nClassification: ignore\nCapabilities: none\nHouse skills: none\nRules:\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: liabru/matter-js\nGoal: a 2D rigid body physics engine for the web ▲● ■ Primary Vega Lab fit: repo-discovery via general engineering.\nClassification: ignore\nCapabilities: none\nHouse skills: none\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: liabru/matter-js\nGoal: a 2D rigid body physics engine for the web ▲● ■ Primary Vega Lab fit: repo-discovery via general engineering.\nClassification: ignore\nCapabilities: none\nHouse skills: none\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "liady/ChatGPT-pdf",
@@ -30607,15 +30605,16 @@
       "repo-adoption"
     ],
     "rules": [
-      "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house."
+      "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.",
+      "Validate maintenance risk and current ecosystem fit before committing to adoption."
     ],
     "flows": [
       "research-queue-flow",
       "adoption-decision-flow"
     ],
     "adoptionKind": "tool",
-    "codexBrief": "# Codex Mission: lukemelas/projection-conditioned-point-cloud-diffusion\nGoal: Official code for \"Projection-Conditioned Point Cloud Diffusion for Single-Image 3D Reconstruction\" (CVPR 2023) Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: lukemelas/projection-conditioned-point-cloud-diffusion\nGoal: Official code for \"Projection-Conditioned Point Cloud Diffusion for Single-Image 3D Reconstruction\" (CVPR 2023) Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: lukemelas/projection-conditioned-point-cloud-diffusion\nGoal: Official code for \"Projection-Conditioned Point Cloud Diffusion for Single-Image 3D Reconstruction\" (CVPR 2023) Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: lukemelas/projection-conditioned-point-cloud-diffusion\nGoal: Official code for \"Projection-Conditioned Point Cloud Diffusion for Single-Image 3D Reconstruction\" (CVPR 2023) Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "lukemelas/realfusion",
@@ -31609,9 +31608,12 @@
     "nwo": "markedjs/marked",
     "name": "marked",
     "author": "markedjs",
-    "summary": "A markdown parser and compiler. Built for speed. Primary Vega Lab fit: repo-adoption via general engineering.",
-    "capabilities": [],
+    "summary": "A markdown parser and compiler. Built for speed. Primary Vega Lab fit: repo-discovery via frontend-ui.",
+    "capabilities": [
+      "frontend-ui"
+    ],
     "houseSkills": [
+      "repo-discovery",
       "repo-adoption"
     ],
     "rules": [
@@ -31619,11 +31621,12 @@
     ],
     "flows": [
       "research-queue-flow",
-      "adoption-decision-flow"
+      "adoption-decision-flow",
+      "news-digest-refresh"
     ],
     "adoptionKind": "house",
-    "codexBrief": "# Codex Mission: markedjs/marked\nGoal: A markdown parser and compiler. Built for speed. Primary Vega Lab fit: repo-adoption via general engineering.\nClassification: house\nCapabilities: none\nHouse skills: repo-adoption\nRules:\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: markedjs/marked\nGoal: A markdown parser and compiler. Built for speed. Primary Vega Lab fit: repo-adoption via general engineering.\nClassification: house\nCapabilities: none\nHouse skills: repo-adoption\nRules:\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: markedjs/marked\nGoal: A markdown parser and compiler. Built for speed. Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui\nHouse skills: repo-discovery, repo-adoption\nRules:\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: markedjs/marked\nGoal: A markdown parser and compiler. Built for speed. Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui\nHouse skills: repo-discovery, repo-adoption\nRules:\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "MarketingPipeline/Termino.js",
@@ -32536,6 +32539,29 @@
     "claudeBrief": "# Claude Mission: meta-llama/llama\nGoal: Inference code for Llama models Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
+    "nwo": "meta-llama/llama-cookbook",
+    "name": "llama-cookbook",
+    "author": "meta-llama",
+    "summary": "Welcome to the Llama Cookbook! This is your go to guide for Building with Llama: Getting started with Inference, Fine-Tuning, RAG. We also show you how to solve end to end problems using Llama model family and using them on various provider services   Primary Vega Lab fit: repo-adoption via backend-service.",
+    "capabilities": [
+      "backend-service",
+      "ml-ai"
+    ],
+    "houseSkills": [
+      "repo-adoption"
+    ],
+    "rules": [
+      "Treat external runtimes and APIs as configurable integrations with explicit environment requirements."
+    ],
+    "flows": [
+      "research-queue-flow",
+      "adoption-decision-flow"
+    ],
+    "adoptionKind": "service",
+    "codexBrief": "# Codex Mission: meta-llama/llama-cookbook\nGoal: Welcome to the Llama Cookbook! This is your go to guide for Building with Llama: Getting started with Inference, Fine-Tuning, RAG. We also show you how to solve end to end problems using Llama model family and using them on various provider services   Primary Vega Lab fit: repo-adoption via backend-service.\nClassification: service\nCapabilities: backend-service, ml-ai\nHouse skills: repo-adoption\nRules:\n- Treat external runtimes and APIs as configurable integrations with explicit environment requirements.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: meta-llama/llama-cookbook\nGoal: Welcome to the Llama Cookbook! This is your go to guide for Building with Llama: Getting started with Inference, Fine-Tuning, RAG. We also show you how to solve end to end problems using Llama model family and using them on various provider services   Primary Vega Lab fit: repo-adoption via backend-service.\nClassification: service\nCapabilities: backend-service, ml-ai\nHouse skills: repo-adoption\nRules:\n- Treat external runtimes and APIs as configurable integrations with explicit environment requirements.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+  },
+  {
     "nwo": "meta-llama/llama-models",
     "name": "llama-models",
     "author": "meta-llama",
@@ -32653,29 +32679,6 @@
     "adoptionKind": "tool",
     "codexBrief": "# Codex Mission: meta-quest/Meta-Spatial-SDK-Samples\nGoal: The Meta Spatial SDK Samples is a collection of code samples and projects that demonstrate the capabilities of the Meta Spatial SDK. Meta Spatial SDK enables mobile developers to build Meta Horizon OS experiences using familiar Android languages, tools, and libraries. Primary Vega Lab fit: repo-discovery via developer-tooling.\nClassification: tool\nCapabilities: developer-tooling\nHouse skills: repo-discovery, skill-extraction, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
     "claudeBrief": "# Claude Mission: meta-quest/Meta-Spatial-SDK-Samples\nGoal: The Meta Spatial SDK Samples is a collection of code samples and projects that demonstrate the capabilities of the Meta Spatial SDK. Meta Spatial SDK enables mobile developers to build Meta Horizon OS experiences using familiar Android languages, tools, and libraries. Primary Vega Lab fit: repo-discovery via developer-tooling.\nClassification: tool\nCapabilities: developer-tooling\nHouse skills: repo-discovery, skill-extraction, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
-  },
-  {
-    "nwo": "metainternal/llama-cookbook",
-    "name": "llama-cookbook",
-    "author": "metainternal",
-    "summary": "Welcome to the Llama Cookbook! This is your go to guide for Building with Llama: Getting started with Inference, Fine-Tuning, RAG. We also show you how to solve end to end problems using Llama model family and using them on various provider services   Primary Vega Lab fit: repo-adoption via backend-service.",
-    "capabilities": [
-      "backend-service",
-      "ml-ai"
-    ],
-    "houseSkills": [
-      "repo-adoption"
-    ],
-    "rules": [
-      "Treat external runtimes and APIs as configurable integrations with explicit environment requirements."
-    ],
-    "flows": [
-      "research-queue-flow",
-      "adoption-decision-flow"
-    ],
-    "adoptionKind": "service",
-    "codexBrief": "# Codex Mission: metainternal/llama-cookbook\nGoal: Welcome to the Llama Cookbook! This is your go to guide for Building with Llama: Getting started with Inference, Fine-Tuning, RAG. We also show you how to solve end to end problems using Llama model family and using them on various provider services   Primary Vega Lab fit: repo-adoption via backend-service.\nClassification: service\nCapabilities: backend-service, ml-ai\nHouse skills: repo-adoption\nRules:\n- Treat external runtimes and APIs as configurable integrations with explicit environment requirements.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: metainternal/llama-cookbook\nGoal: Welcome to the Llama Cookbook! This is your go to guide for Building with Llama: Getting started with Inference, Fine-Tuning, RAG. We also show you how to solve end to end problems using Llama model family and using them on various provider services   Primary Vega Lab fit: repo-adoption via backend-service.\nClassification: service\nCapabilities: backend-service, ml-ai\nHouse skills: repo-adoption\nRules:\n- Treat external runtimes and APIs as configurable integrations with explicit environment requirements.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "mflux-community/mflux",
@@ -44790,9 +44793,7 @@
       "skill-extraction",
       "repo-adoption"
     ],
-    "rules": [
-      "Validate maintenance risk and current ecosystem fit before committing to adoption."
-    ],
+    "rules": [],
     "flows": [
       "research-queue-flow",
       "skill-extraction-flow",
@@ -44800,8 +44801,8 @@
       "news-digest-refresh"
     ],
     "adoptionKind": "house",
-    "codexBrief": "# Codex Mission: semperai/amica\nGoal: Amica is an open source interface for interactive communication with 3D characters with voice synthesis and speech recognition. Primary Vega Lab fit: repo-discovery via agent-workflows.\nClassification: house\nCapabilities: agent-workflows, ml-ai, frontend-ui\nHouse skills: repo-discovery, skill-extraction, repo-adoption\nRules:\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: semperai/amica\nGoal: Amica is an open source interface for interactive communication with 3D characters with voice synthesis and speech recognition. Primary Vega Lab fit: repo-discovery via agent-workflows.\nClassification: house\nCapabilities: agent-workflows, ml-ai, frontend-ui\nHouse skills: repo-discovery, skill-extraction, repo-adoption\nRules:\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: semperai/amica\nGoal: Amica is an open source interface for interactive communication with 3D characters with voice synthesis and speech recognition. Primary Vega Lab fit: repo-discovery via agent-workflows.\nClassification: house\nCapabilities: agent-workflows, ml-ai, frontend-ui\nHouse skills: repo-discovery, skill-extraction, repo-adoption\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: semperai/amica\nGoal: Amica is an open source interface for interactive communication with 3D characters with voice synthesis and speech recognition. Primary Vega Lab fit: repo-discovery via agent-workflows.\nClassification: house\nCapabilities: agent-workflows, ml-ai, frontend-ui\nHouse skills: repo-discovery, skill-extraction, repo-adoption\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "senstella/parakeet-mlx",
