@@ -2633,7 +2633,7 @@
   },
   {
     "nwo": "KBLLR/vega-lab",
-    "inspectedAt": "2026-09-22T03:35:32.000Z",
+    "inspectedAt": "2026-09-23T03:36:00.000Z",
     "files": {
       "hasReadme": true,
       "packageManagers": [
@@ -2685,11 +2685,13 @@
     },
     "findings": [
       "No test/check/lint script detected from package metadata.",
-      "No workflow or deployment config detected in synced key files."
+      "No workflow or deployment config detected in synced key files.",
+      "Repository appears stale based on last activity."
     ],
     "risks": [
       "Maintenance work has no obvious verification command.",
-      "Deployment readiness is unclear."
+      "Deployment readiness is unclear.",
+      "Dependencies, build targets, or deployment assumptions may be outdated."
     ]
   },
   {

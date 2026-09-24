@@ -13117,7 +13117,7 @@
   },
   {
     "nwo": "KBLLR/vega-lab",
-    "generatedAt": "2026-09-22T03:35:32.000Z",
+    "generatedAt": "2026-09-23T03:36:00.000Z",
     "target": "mlx",
     "artifacts": [
       {
@@ -13237,7 +13237,7 @@
         "kind": "agents",
         "title": "webgi-scene AGENTS Draft",
         "suggestedPath": "AGENTS.md",
-        "body": "# webgi-scene Agents\n\n## Product Truth\n- Repository: KBLLR/webgi-scene\n- Vega Lab classification: house\n- Active mission target: Local MLX\n\n## Operating Rules\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\n\n## Commands\n- npm run build\n\n## Agent Boundaries\n- Do not mutate deployment, secrets, or release configuration without explicit approval.\n- Prefer draft plans and reviewable diffs over broad automation.\n- Preserve existing product direction; use Vega Lab evidence before adding new abstractions.",
+        "body": "# webgi-scene Agents\n\n## Product Truth\n- Repository: KBLLR/webgi-scene\n- Vega Lab classification: house\n- Active mission target: Local MLX\n\n## Operating Rules\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\n\n## Commands\n- npm run build\n\n## Agent Boundaries\n- Do not mutate deployment, secrets, or release configuration without explicit approval.\n- Prefer draft plans and reviewable diffs over broad automation.\n- Preserve existing product direction; use Vega Lab evidence before adding new abstractions.",
         "evidence": [
           "Repository: KBLLR/webgi-scene",
           "Description: A modern, high-performance 3D object stager specializing in Gaussian Splatting models, built with WebGi. This application enables advanced visualization of 3D models with sophisticated post-processing effects and real-time parameter adjustment.",
@@ -13251,7 +13251,7 @@
         "kind": "maintenance",
         "title": "webgi-scene Maintenance Plan",
         "suggestedPath": "docs/maintenance-plan.md",
-        "body": "# Maintenance Plan: KBLLR/webgi-scene\n\n## Current Signals\n- No test/check/lint script detected from package metadata.\n- No workflow or deployment config detected in synced key files.\n\n## Recommended Pass\n- Confirm install path and package manager.\n- Run available verification commands before editing.\n- Patch stale docs, commands, and workflow assumptions first.\n- Open the smallest useful PR only after human approval.\n- Vega Lab action: mlx-mission\n- Vega Lab action: ops-kit\n- Vega Lab action: codex-mission\n- Vega Lab action: claude-mission\n- Vega Lab action: house-integration\n\n## Evidence\n- Repository: KBLLR/webgi-scene\n- Description: A modern, high-performance 3D object stager specializing in Gaussian Splatting models, built with WebGi. This application enables advanced visualization of 3D models with sophisticated post-processing effects and real-time parameter adjustment.\n- Adoption kind: house\n- Capabilities: ml-ai, frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: No workflow or deployment config detected in synced key files.\n- Risk: Maintenance work has no obvious verification command.",
+        "body": "# Maintenance Plan: KBLLR/webgi-scene\n\n## Current Signals\n- Health flag: stale\n- No test/check/lint script detected from package metadata.\n- No workflow or deployment config detected in synced key files.\n- Repository appears stale based on last activity.\n\n## Recommended Pass\n- Confirm install path and package manager.\n- Run available verification commands before editing.\n- Patch stale docs, commands, and workflow assumptions first.\n- Open the smallest useful PR only after human approval.\n- Vega Lab action: mlx-mission\n- Vega Lab action: ops-kit\n- Vega Lab action: codex-mission\n- Vega Lab action: claude-mission\n- Vega Lab action: maintenance-plan\n- Vega Lab action: house-integration\n\n## Evidence\n- Repository: KBLLR/webgi-scene\n- Description: A modern, high-performance 3D object stager specializing in Gaussian Splatting models, built with WebGi. This application enables advanced visualization of 3D models with sophisticated post-processing effects and real-time parameter adjustment.\n- Adoption kind: house\n- Capabilities: ml-ai, frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: No workflow or deployment config detected in synced key files.\n- Finding: Repository appears stale based on last activity.",
         "evidence": [
           "Repository: KBLLR/webgi-scene",
           "Description: A modern, high-performance 3D object stager specializing in Gaussian Splatting models, built with WebGi. This application enables advanced visualization of 3D models with sophisticated post-processing effects and real-time parameter adjustment.",
@@ -13260,14 +13260,14 @@
           "House skills: repo-discovery, repo-adoption, mine-execution",
           "Finding: No test/check/lint script detected from package metadata.",
           "Finding: No workflow or deployment config detected in synced key files.",
-          "Risk: Maintenance work has no obvious verification command."
+          "Finding: Repository appears stale based on last activity."
         ]
       },
       {
         "kind": "deployment",
         "title": "webgi-scene Deployment Plan",
         "suggestedPath": "docs/deployment-plan.md",
-        "body": "# Deployment Plan: KBLLR/webgi-scene\n\n## Known Deployment Evidence\n- No workflow or deployment config detected in synced key files.\n\n## Draft Checks\n- Identify expected host and runtime.\n- Document build command, output directory, and required environment variables.\n- Verify preview URL and production URL checks.\n- Keep deploy authority manual; Vega Lab drafts plans and inbox items only.\n\n## Evidence\n- Repository: KBLLR/webgi-scene\n- Description: A modern, high-performance 3D object stager specializing in Gaussian Splatting models, built with WebGi. This application enables advanced visualization of 3D models with sophisticated post-processing effects and real-time parameter adjustment.\n- Adoption kind: house\n- Capabilities: ml-ai, frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: No workflow or deployment config detected in synced key files.\n- Risk: Maintenance work has no obvious verification command.",
+        "body": "# Deployment Plan: KBLLR/webgi-scene\n\n## Known Deployment Evidence\n- No workflow or deployment config detected in synced key files.\n\n## Draft Checks\n- Identify expected host and runtime.\n- Document build command, output directory, and required environment variables.\n- Verify preview URL and production URL checks.\n- Keep deploy authority manual; Vega Lab drafts plans and inbox items only.\n\n## Evidence\n- Repository: KBLLR/webgi-scene\n- Description: A modern, high-performance 3D object stager specializing in Gaussian Splatting models, built with WebGi. This application enables advanced visualization of 3D models with sophisticated post-processing effects and real-time parameter adjustment.\n- Adoption kind: house\n- Capabilities: ml-ai, frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: No workflow or deployment config detected in synced key files.\n- Finding: Repository appears stale based on last activity.",
         "evidence": [
           "Repository: KBLLR/webgi-scene",
           "Description: A modern, high-performance 3D object stager specializing in Gaussian Splatting models, built with WebGi. This application enables advanced visualization of 3D models with sophisticated post-processing effects and real-time parameter adjustment.",
@@ -13276,14 +13276,14 @@
           "House skills: repo-discovery, repo-adoption, mine-execution",
           "Finding: No test/check/lint script detected from package metadata.",
           "Finding: No workflow or deployment config detected in synced key files.",
-          "Risk: Maintenance work has no obvious verification command."
+          "Finding: Repository appears stale based on last activity."
         ]
       },
       {
         "kind": "testing",
         "title": "webgi-scene Test Plan",
         "suggestedPath": "docs/test-plan.md",
-        "body": "# Test Plan: KBLLR/webgi-scene\n\n## Available Commands\n- npm run build\n\n## Minimum Verification Contract\n- Document one install command.\n- Document one fast smoke command.\n- Document one release/build command when deployable.\n- If no commands exist, create a tracked issue or action item before implementation work.\n\n## Evidence\n- Repository: KBLLR/webgi-scene\n- Description: A modern, high-performance 3D object stager specializing in Gaussian Splatting models, built with WebGi. This application enables advanced visualization of 3D models with sophisticated post-processing effects and real-time parameter adjustment.\n- Adoption kind: house\n- Capabilities: ml-ai, frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: No workflow or deployment config detected in synced key files.\n- Risk: Maintenance work has no obvious verification command.",
+        "body": "# Test Plan: KBLLR/webgi-scene\n\n## Available Commands\n- npm run build\n\n## Minimum Verification Contract\n- Document one install command.\n- Document one fast smoke command.\n- Document one release/build command when deployable.\n- If no commands exist, create a tracked issue or action item before implementation work.\n\n## Evidence\n- Repository: KBLLR/webgi-scene\n- Description: A modern, high-performance 3D object stager specializing in Gaussian Splatting models, built with WebGi. This application enables advanced visualization of 3D models with sophisticated post-processing effects and real-time parameter adjustment.\n- Adoption kind: house\n- Capabilities: ml-ai, frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: No workflow or deployment config detected in synced key files.\n- Finding: Repository appears stale based on last activity.",
         "evidence": [
           "Repository: KBLLR/webgi-scene",
           "Description: A modern, high-performance 3D object stager specializing in Gaussian Splatting models, built with WebGi. This application enables advanced visualization of 3D models with sophisticated post-processing effects and real-time parameter adjustment.",
@@ -13292,14 +13292,14 @@
           "House skills: repo-discovery, repo-adoption, mine-execution",
           "Finding: No test/check/lint script detected from package metadata.",
           "Finding: No workflow or deployment config detected in synced key files.",
-          "Risk: Maintenance work has no obvious verification command."
+          "Finding: Repository appears stale based on last activity."
         ]
       },
       {
         "kind": "action-item",
         "title": "webgi-scene Action Item Draft",
         "suggestedPath": "ops/action-item.md",
-        "body": "# Action Item Draft: KBLLR/webgi-scene\n\n## Recommended Actions\n- testing: Define verification for webgi-scene\n- deployment: Clarify deployment readiness for webgi-scene\n\n## Mission Target\n- Local MLX\n\n## Evidence\n- Repository: KBLLR/webgi-scene\n- Description: A modern, high-performance 3D object stager specializing in Gaussian Splatting models, built with WebGi. This application enables advanced visualization of 3D models with sophisticated post-processing effects and real-time parameter adjustment.\n- Adoption kind: house\n- Capabilities: ml-ai, frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: No workflow or deployment config detected in synced key files.\n- Risk: Maintenance work has no obvious verification command.\n- Risk: Deployment readiness is unclear.\n- Action item: Define verification for webgi-scene",
+        "body": "# Action Item Draft: KBLLR/webgi-scene\n\n## Recommended Actions\n- maintenance: Run a maintenance pass on webgi-scene\n- testing: Define verification for webgi-scene\n- deployment: Clarify deployment readiness for webgi-scene\n\n## Mission Target\n- Local MLX\n\n## Evidence\n- Repository: KBLLR/webgi-scene\n- Description: A modern, high-performance 3D object stager specializing in Gaussian Splatting models, built with WebGi. This application enables advanced visualization of 3D models with sophisticated post-processing effects and real-time parameter adjustment.\n- Adoption kind: house\n- Capabilities: ml-ai, frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: No workflow or deployment config detected in synced key files.\n- Finding: Repository appears stale based on last activity.\n- Risk: Maintenance work has no obvious verification command.\n- Risk: Deployment readiness is unclear.",
         "evidence": [
           "Repository: KBLLR/webgi-scene",
           "Description: A modern, high-performance 3D object stager specializing in Gaussian Splatting models, built with WebGi. This application enables advanced visualization of 3D models with sophisticated post-processing effects and real-time parameter adjustment.",
@@ -13308,9 +13308,9 @@
           "House skills: repo-discovery, repo-adoption, mine-execution",
           "Finding: No test/check/lint script detected from package metadata.",
           "Finding: No workflow or deployment config detected in synced key files.",
+          "Finding: Repository appears stale based on last activity.",
           "Risk: Maintenance work has no obvious verification command.",
-          "Risk: Deployment readiness is unclear.",
-          "Action item: Define verification for webgi-scene"
+          "Risk: Deployment readiness is unclear."
         ]
       }
     ],
@@ -13322,17 +13322,20 @@
       "House skills: repo-discovery, repo-adoption, mine-execution",
       "Finding: No test/check/lint script detected from package metadata.",
       "Finding: No workflow or deployment config detected in synced key files.",
+      "Finding: Repository appears stale based on last activity.",
       "Risk: Maintenance work has no obvious verification command.",
       "Risk: Deployment readiness is unclear.",
-      "Action item: Define verification for webgi-scene",
-      "Action item: Clarify deployment readiness for webgi-scene"
+      "Risk: Dependencies, build targets, or deployment assumptions may be outdated.",
+      "Health flag: stale"
     ],
     "recommendedActions": [
       "mlx-mission",
       "ops-kit",
       "codex-mission",
       "claude-mission",
+      "maintenance-plan",
       "house-integration",
+      "maintenance:vega-lab:maintenance:kbllr-webgi-scene",
       "testing:vega-lab:testing:kbllr-webgi-scene",
       "deployment:vega-lab:deployment:kbllr-webgi-scene",
       "review-draft-only"

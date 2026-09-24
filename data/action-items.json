@@ -2627,16 +2627,17 @@
     "updatedAt": "2025-10-01T10:13:37.000Z"
   },
   {
-    "id": "vega-lab:testing:kbllr-webgi-scene",
-    "kind": "testing",
+    "id": "vega-lab:maintenance:kbllr-webgi-scene",
+    "kind": "maintenance",
     "status": "open",
     "priority": "normal",
     "nwo": "KBLLR/webgi-scene",
-    "title": "Define verification for webgi-scene",
-    "summary": "Package metadata does not expose an obvious test, check, or lint command.",
+    "title": "Run a maintenance pass on webgi-scene",
+    "summary": "Stale activity increases dependency, workflow, and deployment risk.",
     "evidence": [
       "No test/check/lint script detected from package metadata.",
       "No workflow or deployment config detected in synced key files.",
+      "Repository appears stale based on last activity.",
       "Maintenance work has no obvious verification command.",
       "Deployment readiness is unclear."
     ],
@@ -2647,6 +2648,43 @@
     ],
     "linkedRules": [
       "Review license status before adoption or redistribution work.",
+      "Validate maintenance risk and current ecosystem fit before committing to adoption.",
+      "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
+    ],
+    "linkedFlows": [
+      "research-queue-flow",
+      "adoption-decision-flow",
+      "news-digest-refresh",
+      "mine-execution-flow"
+    ],
+    "draft": "Draft a maintenance plan for KBLLR/webgi-scene: verify dependencies, run available checks, update stale assumptions, and identify a smallest useful PR. Rules: Review license status before adoption or redistribution work. Validate maintenance risk and current ecosystem fit before committing to adoption. Prioritize README, maintenance, and execution readiness before broader ecosystem integration.",
+    "source": "daily-ops",
+    "createdAt": "2025-09-23T22:21:30.000Z",
+    "updatedAt": "2025-09-23T22:21:30.000Z"
+  },
+  {
+    "id": "vega-lab:testing:kbllr-webgi-scene",
+    "kind": "testing",
+    "status": "open",
+    "priority": "normal",
+    "nwo": "KBLLR/webgi-scene",
+    "title": "Define verification for webgi-scene",
+    "summary": "Package metadata does not expose an obvious test, check, or lint command.",
+    "evidence": [
+      "No test/check/lint script detected from package metadata.",
+      "No workflow or deployment config detected in synced key files.",
+      "Repository appears stale based on last activity.",
+      "Maintenance work has no obvious verification command.",
+      "Deployment readiness is unclear."
+    ],
+    "linkedSkills": [
+      "repo-discovery",
+      "repo-adoption",
+      "mine-execution"
+    ],
+    "linkedRules": [
+      "Review license status before adoption or redistribution work.",
+      "Validate maintenance risk and current ecosystem fit before committing to adoption.",
       "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
     ],
     "linkedFlows": [
@@ -2671,6 +2709,7 @@
     "evidence": [
       "No test/check/lint script detected from package metadata.",
       "No workflow or deployment config detected in synced key files.",
+      "Repository appears stale based on last activity.",
       "Maintenance work has no obvious verification command.",
       "Deployment readiness is unclear."
     ],
@@ -2681,6 +2720,7 @@
     ],
     "linkedRules": [
       "Review license status before adoption or redistribution work.",
+      "Validate maintenance risk and current ecosystem fit before committing to adoption.",
       "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
     ],
     "linkedFlows": [
