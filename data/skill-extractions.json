@@ -9422,7 +9422,7 @@
     "nwo": "Comfy-Org/ComfyUI",
     "name": "ComfyUI",
     "author": "Comfy-Org",
-    "summary": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. Primary Vega Lab fit: repo-adoption via backend-service.",
+    "summary": "The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the world. Primary Vega Lab fit: repo-adoption via backend-service.",
     "capabilities": [
       "backend-service",
       "ml-ai"
@@ -9438,8 +9438,8 @@
       "adoption-decision-flow"
     ],
     "adoptionKind": "service",
-    "codexBrief": "# Codex Mission: Comfy-Org/ComfyUI\nGoal: The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. Primary Vega Lab fit: repo-adoption via backend-service.\nClassification: service\nCapabilities: backend-service, ml-ai\nHouse skills: repo-adoption\nRules:\n- Treat external runtimes and APIs as configurable integrations with explicit environment requirements.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: Comfy-Org/ComfyUI\nGoal: The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. Primary Vega Lab fit: repo-adoption via backend-service.\nClassification: service\nCapabilities: backend-service, ml-ai\nHouse skills: repo-adoption\nRules:\n- Treat external runtimes and APIs as configurable integrations with explicit environment requirements.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: Comfy-Org/ComfyUI\nGoal: The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the world. Primary Vega Lab fit: repo-adoption via backend-service.\nClassification: service\nCapabilities: backend-service, ml-ai\nHouse skills: repo-adoption\nRules:\n- Treat external runtimes and APIs as configurable integrations with explicit environment requirements.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: Comfy-Org/ComfyUI\nGoal: The most powerful and modular diffusion model GUI, api and backend with a graph/nodes interface. The fastest local inference engine in the world. Primary Vega Lab fit: repo-adoption via backend-service.\nClassification: service\nCapabilities: backend-service, ml-ai\nHouse skills: repo-adoption\nRules:\n- Treat external runtimes and APIs as configurable integrations with explicit environment requirements.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "Comfy-Org/ComfyUI-Manager",
@@ -40728,7 +40728,7 @@
     "nwo": "pmndrs/math",
     "name": "math",
     "author": "pmndrs",
-    "summary": "🪶 Math helpers for the rest of us Primary Vega Lab fit: repo-discovery via frontend-ui.",
+    "summary": "🧮 The playful web's math engine Primary Vega Lab fit: repo-discovery via frontend-ui.",
     "capabilities": [
       "frontend-ui"
     ],
@@ -40743,8 +40743,8 @@
       "news-digest-refresh"
     ],
     "adoptionKind": "house",
-    "codexBrief": "# Codex Mission: pmndrs/math\nGoal: 🪶 Math helpers for the rest of us Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui\nHouse skills: repo-discovery, repo-adoption\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: pmndrs/math\nGoal: 🪶 Math helpers for the rest of us Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui\nHouse skills: repo-discovery, repo-adoption\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: pmndrs/math\nGoal: 🧮 The playful web's math engine Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui\nHouse skills: repo-discovery, repo-adoption\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: pmndrs/math\nGoal: 🧮 The playful web's math engine Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui\nHouse skills: repo-discovery, repo-adoption\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "pmndrs/postprocessing",
@@ -45818,15 +45818,16 @@
     ],
     "rules": [
       "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.",
-      "Review license status before adoption or redistribution work."
+      "Review license status before adoption or redistribution work.",
+      "Validate maintenance risk and current ecosystem fit before committing to adoption."
     ],
     "flows": [
       "research-queue-flow",
       "adoption-decision-flow"
     ],
     "adoptionKind": "tool",
-    "codexBrief": "# Codex Mission: snap-research/SnapMoGen\nGoal: SnapMoGen: Human Motion Generation from Expressive Texts [NeurIPS 2025] Primary Vega Lab fit: repo-research via research-intelligence.\nClassification: tool\nCapabilities: research-intelligence, ml-ai\nHouse skills: repo-research, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: snap-research/SnapMoGen\nGoal: SnapMoGen: Human Motion Generation from Expressive Texts [NeurIPS 2025] Primary Vega Lab fit: repo-research via research-intelligence.\nClassification: tool\nCapabilities: research-intelligence, ml-ai\nHouse skills: repo-research, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: snap-research/SnapMoGen\nGoal: SnapMoGen: Human Motion Generation from Expressive Texts [NeurIPS 2025] Primary Vega Lab fit: repo-research via research-intelligence.\nClassification: tool\nCapabilities: research-intelligence, ml-ai\nHouse skills: repo-research, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: snap-research/SnapMoGen\nGoal: SnapMoGen: Human Motion Generation from Expressive Texts [NeurIPS 2025] Primary Vega Lab fit: repo-research via research-intelligence.\nClassification: tool\nCapabilities: research-intelligence, ml-ai\nHouse skills: repo-research, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "sniklaus/revisiting-sepconv",
