@@ -17908,15 +17908,17 @@
       "repo-discovery",
       "repo-adoption"
     ],
-    "rules": [],
+    "rules": [
+      "Validate maintenance risk and current ecosystem fit before committing to adoption."
+    ],
     "flows": [
       "research-queue-flow",
       "adoption-decision-flow",
       "news-digest-refresh"
     ],
     "adoptionKind": "house",
-    "codexBrief": "# Codex Mission: GollyGang/ready\nGoal: A cross-platform implementation of various reaction-diffusion systems and PDEs. Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui\nHouse skills: repo-discovery, repo-adoption\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: GollyGang/ready\nGoal: A cross-platform implementation of various reaction-diffusion systems and PDEs. Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui\nHouse skills: repo-discovery, repo-adoption\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: GollyGang/ready\nGoal: A cross-platform implementation of various reaction-diffusion systems and PDEs. Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui\nHouse skills: repo-discovery, repo-adoption\nRules:\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: GollyGang/ready\nGoal: A cross-platform implementation of various reaction-diffusion systems and PDEs. Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui\nHouse skills: repo-discovery, repo-adoption\nRules:\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "google-ai-edge/mediapipe",
@@ -42030,15 +42032,17 @@
       "repo-discovery",
       "repo-adoption"
     ],
-    "rules": [],
+    "rules": [
+      "Validate maintenance risk and current ecosystem fit before committing to adoption."
+    ],
     "flows": [
       "research-queue-flow",
       "adoption-decision-flow",
       "news-digest-refresh"
     ],
     "adoptionKind": "house",
-    "codexBrief": "# Codex Mission: radames/Real-Time-Latent-Consistency-Model\nGoal: App showcasing multiple real-time diffusion models pipelines with Diffusers Primary Vega Lab fit: repo-discovery via ml-ai.\nClassification: house\nCapabilities: ml-ai, data-pipeline\nHouse skills: repo-discovery, repo-adoption\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: radames/Real-Time-Latent-Consistency-Model\nGoal: App showcasing multiple real-time diffusion models pipelines with Diffusers Primary Vega Lab fit: repo-discovery via ml-ai.\nClassification: house\nCapabilities: ml-ai, data-pipeline\nHouse skills: repo-discovery, repo-adoption\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: radames/Real-Time-Latent-Consistency-Model\nGoal: App showcasing multiple real-time diffusion models pipelines with Diffusers Primary Vega Lab fit: repo-discovery via ml-ai.\nClassification: house\nCapabilities: ml-ai, data-pipeline\nHouse skills: repo-discovery, repo-adoption\nRules:\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: radames/Real-Time-Latent-Consistency-Model\nGoal: App showcasing multiple real-time diffusion models pipelines with Diffusers Primary Vega Lab fit: repo-discovery via ml-ai.\nClassification: house\nCapabilities: ml-ai, data-pipeline\nHouse skills: repo-discovery, repo-adoption\nRules:\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "radix-ui/colors",
@@ -42260,28 +42264,32 @@
     "nwo": "raullenchai/Rapid-MLX",
     "name": "Rapid-MLX",
     "author": "raullenchai",
-    "summary": "The fastest local AI engine for Apple Silicon. 4.2x faster than Ollama, 0.08s cached TTFT, 100% tool calling. 17 tool parsers, prompt cache, reasoning separation, cloud routing. Drop-in OpenAI replacement. Works with Claude Code, Cursor, Aider. Primary Vega Lab fit: skill-extraction via mcp-tooling.",
+    "summary": "Rapid-MLX is an open-source (Apache 2.0) OpenAI- and Anthropic-compatible LLM inference server and Mac app for Apple Silicon, built on MLX, focused on reliable tool calling for coding agents. Release-gated with Claude Code, Codex CLI, Aider, Hermes and DeepSeek Harness. Primary Vega Lab fit: repo-discovery via mcp-tooling.",
     "capabilities": [
       "mcp-tooling",
+      "agent-workflows",
       "backend-service",
+      "developer-tooling",
       "ml-ai"
     ],
     "houseSkills": [
+      "repo-discovery",
       "skill-extraction",
       "repo-adoption"
     ],
     "rules": [
-      "Treat external runtimes and APIs as configurable integrations with explicit environment requirements.",
+      "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.",
       "Review license status before adoption or redistribution work."
     ],
     "flows": [
       "research-queue-flow",
       "skill-extraction-flow",
-      "adoption-decision-flow"
+      "adoption-decision-flow",
+      "news-digest-refresh"
     ],
-    "adoptionKind": "service",
-    "codexBrief": "# Codex Mission: raullenchai/Rapid-MLX\nGoal: The fastest local AI engine for Apple Silicon. 4.2x faster than Ollama, 0.08s cached TTFT, 100% tool calling. 17 tool parsers, prompt cache, reasoning separation, cloud routing. Drop-in OpenAI replacement. Works with Claude Code, Cursor, Aider. Primary Vega Lab fit: skill-extraction via mcp-tooling.\nClassification: service\nCapabilities: mcp-tooling, backend-service, ml-ai\nHouse skills: skill-extraction, repo-adoption\nRules:\n- Treat external runtimes and APIs as configurable integrations with explicit environment requirements.\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: raullenchai/Rapid-MLX\nGoal: The fastest local AI engine for Apple Silicon. 4.2x faster than Ollama, 0.08s cached TTFT, 100% tool calling. 17 tool parsers, prompt cache, reasoning separation, cloud routing. Drop-in OpenAI replacement. Works with Claude Code, Cursor, Aider. Primary Vega Lab fit: skill-extraction via mcp-tooling.\nClassification: service\nCapabilities: mcp-tooling, backend-service, ml-ai\nHouse skills: skill-extraction, repo-adoption\nRules:\n- Treat external runtimes and APIs as configurable integrations with explicit environment requirements.\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "adoptionKind": "tool",
+    "codexBrief": "# Codex Mission: raullenchai/Rapid-MLX\nGoal: Rapid-MLX is an open-source (Apache 2.0) OpenAI- and Anthropic-compatible LLM inference server and Mac app for Apple Silicon, built on MLX, focused on reliable tool calling for coding agents. Release-gated with Claude Code, Codex CLI, Aider, Hermes and DeepSeek Harness. Primary Vega Lab fit: repo-discovery via mcp-tooling.\nClassification: tool\nCapabilities: mcp-tooling, agent-workflows, backend-service, developer-tooling, ml-ai\nHouse skills: repo-discovery, skill-extraction, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: raullenchai/Rapid-MLX\nGoal: Rapid-MLX is an open-source (Apache 2.0) OpenAI- and Anthropic-compatible LLM inference server and Mac app for Apple Silicon, built on MLX, focused on reliable tool calling for coding agents. Release-gated with Claude Code, Codex CLI, Aider, Hermes and DeepSeek Harness. Primary Vega Lab fit: repo-discovery via mcp-tooling.\nClassification: tool\nCapabilities: mcp-tooling, agent-workflows, backend-service, developer-tooling, ml-ai\nHouse skills: repo-discovery, skill-extraction, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "raunofreiberg/inspx",
