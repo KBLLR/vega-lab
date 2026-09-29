@@ -27734,30 +27734,6 @@
     "claudeBrief": "# Claude Mission: KhronosGroup/glTF-Sample-Assets\nGoal: An assortment of assets that demonstrate features and capabilities of the glTF format Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui\nHouse skills: repo-discovery, repo-adoption\nRules:\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
-    "nwo": "KhronosGroup/glTF-Sample-Models",
-    "name": "glTF-Sample-Models",
-    "author": "KhronosGroup",
-    "summary": "glTF Sample Models Primary Vega Lab fit: repo-adoption via ml-ai.",
-    "capabilities": [
-      "ml-ai"
-    ],
-    "houseSkills": [
-      "repo-adoption"
-    ],
-    "rules": [
-      "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.",
-      "Review license status before adoption or redistribution work.",
-      "Validate maintenance risk and current ecosystem fit before committing to adoption."
-    ],
-    "flows": [
-      "research-queue-flow",
-      "adoption-decision-flow"
-    ],
-    "adoptionKind": "tool",
-    "codexBrief": "# Codex Mission: KhronosGroup/glTF-Sample-Models\nGoal: glTF Sample Models Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: KhronosGroup/glTF-Sample-Models\nGoal: glTF Sample Models Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
-  },
-  {
     "nwo": "KhronosGroup/glTF-Sample-Renderer",
     "name": "glTF-Sample-Renderer",
     "author": "KhronosGroup",
@@ -27825,6 +27801,30 @@
     "adoptionKind": "ignore",
     "codexBrief": "# Codex Mission: KhronosGroup/OpenGL-Refpages\nGoal: OpenGL and OpenGL ES reference page sources, and generated HTML used as backing store for khronos.org Primary Vega Lab fit: repo-discovery via general engineering.\nClassification: ignore\nCapabilities: none\nHouse skills: none\nRules:\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
     "claudeBrief": "# Claude Mission: KhronosGroup/OpenGL-Refpages\nGoal: OpenGL and OpenGL ES reference page sources, and generated HTML used as backing store for khronos.org Primary Vega Lab fit: repo-discovery via general engineering.\nClassification: ignore\nCapabilities: none\nHouse skills: none\nRules:\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+  },
+  {
+    "nwo": "KhronosGroupArchives/glTF-Sample-Models",
+    "name": "glTF-Sample-Models",
+    "author": "KhronosGroupArchives",
+    "summary": "glTF Sample Models Primary Vega Lab fit: repo-adoption via ml-ai.",
+    "capabilities": [
+      "ml-ai"
+    ],
+    "houseSkills": [
+      "repo-adoption"
+    ],
+    "rules": [
+      "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.",
+      "Review license status before adoption or redistribution work.",
+      "Validate maintenance risk and current ecosystem fit before committing to adoption."
+    ],
+    "flows": [
+      "research-queue-flow",
+      "adoption-decision-flow"
+    ],
+    "adoptionKind": "tool",
+    "codexBrief": "# Codex Mission: KhronosGroupArchives/glTF-Sample-Models\nGoal: glTF Sample Models Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: KhronosGroupArchives/glTF-Sample-Models\nGoal: glTF Sample Models Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "kijai/ComfyUI-Hunyuan3DWrapper",
@@ -31611,12 +31611,9 @@
     "nwo": "markedjs/marked",
     "name": "marked",
     "author": "markedjs",
-    "summary": "A markdown parser and compiler. Built for speed. Primary Vega Lab fit: repo-discovery via frontend-ui.",
-    "capabilities": [
-      "frontend-ui"
-    ],
+    "summary": "A markdown parser and compiler. Built for speed. Primary Vega Lab fit: repo-adoption via general engineering.",
+    "capabilities": [],
     "houseSkills": [
-      "repo-discovery",
       "repo-adoption"
     ],
     "rules": [
@@ -31624,12 +31621,11 @@
     ],
     "flows": [
       "research-queue-flow",
-      "adoption-decision-flow",
-      "news-digest-refresh"
+      "adoption-decision-flow"
     ],
     "adoptionKind": "house",
-    "codexBrief": "# Codex Mission: markedjs/marked\nGoal: A markdown parser and compiler. Built for speed. Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui\nHouse skills: repo-discovery, repo-adoption\nRules:\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: markedjs/marked\nGoal: A markdown parser and compiler. Built for speed. Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui\nHouse skills: repo-discovery, repo-adoption\nRules:\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: markedjs/marked\nGoal: A markdown parser and compiler. Built for speed. Primary Vega Lab fit: repo-adoption via general engineering.\nClassification: house\nCapabilities: none\nHouse skills: repo-adoption\nRules:\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: markedjs/marked\nGoal: A markdown parser and compiler. Built for speed. Primary Vega Lab fit: repo-adoption via general engineering.\nClassification: house\nCapabilities: none\nHouse skills: repo-adoption\nRules:\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "MarketingPipeline/Termino.js",
