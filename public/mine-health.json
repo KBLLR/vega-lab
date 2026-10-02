@@ -1,26 +1,11 @@
 [
   {
-    "nwo": "KBLLR/vega-lab",
-    "name": "vega-lab",
-    "author": "KBLLR",
-    "visibility": "public",
-    "hasReadme": true,
-    "updatedAt": "2026-09-30T04:15:56.000Z",
-    "healthFlags": [],
-    "recommendedActions": [
-      "mlx-mission",
-      "ops-kit",
-      "codex-mission",
-      "claude-mission"
-    ]
-  },
-  {
     "nwo": "KBLLR/core-x",
     "name": "core-x",
     "author": "KBLLR",
     "visibility": "private",
     "hasReadme": false,
-    "updatedAt": "2026-09-29T12:59:00.000Z",
+    "updatedAt": "2026-10-01T23:03:34.000Z",
     "healthFlags": [
       "missing-readme",
       "private"
@@ -32,6 +17,38 @@
       "claude-mission",
       "write-readme",
       "house-integration"
+    ]
+  },
+  {
+    "nwo": "KBLLR/rigging-palace",
+    "name": "rigging-palace",
+    "author": "KBLLR",
+    "visibility": "private",
+    "hasReadme": true,
+    "updatedAt": "2026-10-01T20:24:26.000Z",
+    "healthFlags": [
+      "private"
+    ],
+    "recommendedActions": [
+      "mlx-mission",
+      "ops-kit",
+      "codex-mission",
+      "claude-mission"
+    ]
+  },
+  {
+    "nwo": "KBLLR/vega-lab",
+    "name": "vega-lab",
+    "author": "KBLLR",
+    "visibility": "public",
+    "hasReadme": true,
+    "updatedAt": "2026-10-01T04:25:09.000Z",
+    "healthFlags": [],
+    "recommendedActions": [
+      "mlx-mission",
+      "ops-kit",
+      "codex-mission",
+      "claude-mission"
     ]
   },
   {
@@ -50,23 +67,6 @@
       "codex-mission",
       "claude-mission",
       "house-integration"
-    ]
-  },
-  {
-    "nwo": "KBLLR/rigging-palace",
-    "name": "rigging-palace",
-    "author": "KBLLR",
-    "visibility": "private",
-    "hasReadme": true,
-    "updatedAt": "2026-09-24T04:21:00.000Z",
-    "healthFlags": [
-      "private"
-    ],
-    "recommendedActions": [
-      "mlx-mission",
-      "ops-kit",
-      "codex-mission",
-      "claude-mission"
     ]
   },
   {
@@ -877,6 +877,7 @@
     "hasReadme": true,
     "updatedAt": "2025-10-01T10:13:37.000Z",
     "healthFlags": [
+      "stale",
       "private"
     ],
     "recommendedActions": [
@@ -884,6 +885,7 @@
       "ops-kit",
       "codex-mission",
       "claude-mission",
+      "maintenance-plan",
       "house-integration"
     ]
   },

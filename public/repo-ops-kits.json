@@ -2369,7 +2369,7 @@
   },
   {
     "nwo": "KBLLR/core-x",
-    "generatedAt": "2026-09-29T12:59:00.000Z",
+    "generatedAt": "2026-10-01T23:03:34.000Z",
     "target": "mlx",
     "artifacts": [
       {
@@ -3750,93 +3750,94 @@
         "kind": "readme",
         "title": "empathic-ai README Draft",
         "suggestedPath": "README.md",
-        "body": "# empathic-ai\n\nempathic-ai needs a concise purpose statement before broader core-x adoption.\n\n## Vega Lab Fit\n- Classification: house\n- Capabilities: ml-ai, frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n\n## Local Setup\n- Package managers: npm, pnpm\n- Document install, dev, build, and verification commands before broad reuse.\n- Keep runtime assumptions explicit; prefer local MLX/OpenResponses for model-assisted work.\n\n## Verification\n- npm run lint\n- npm run build\n\n## Evidence\n- Repository: KBLLR/empathic-ai\n- Adoption kind: house\n- Capabilities: ml-ai, frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Finding: No workflow or deployment config detected in synced key files.\n- Risk: Deployment readiness is unclear.",
+        "body": "# empathic-ai\n\nempathic-ai needs a concise purpose statement before broader core-x adoption.\n\n## Vega Lab Fit\n- Classification: house\n- Capabilities: ml-ai, frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n\n## Local Setup\n- Package managers: npm, pnpm\n- Document install, dev, build, and verification commands before broad reuse.\n- Keep runtime assumptions explicit; prefer local MLX/OpenResponses for model-assisted work.\n\n## Verification\n- npm run lint\n- npm run build\n\n## Evidence\n- Repository: KBLLR/empathic-ai\n- Adoption kind: house\n- Capabilities: ml-ai, frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Finding: No workflow or deployment config detected in synced key files.\n- Finding: Repository appears stale based on last activity.",
         "evidence": [
           "Repository: KBLLR/empathic-ai",
           "Adoption kind: house",
           "Capabilities: ml-ai, frontend-ui",
           "House skills: repo-discovery, repo-adoption, mine-execution",
           "Finding: No workflow or deployment config detected in synced key files.",
-          "Risk: Deployment readiness is unclear."
+          "Finding: Repository appears stale based on last activity."
         ]
       },
       {
         "kind": "agents",
         "title": "empathic-ai AGENTS Draft",
         "suggestedPath": "AGENTS.md",
-        "body": "# empathic-ai Agents\n\n## Product Truth\n- Repository: KBLLR/empathic-ai\n- Vega Lab classification: house\n- Active mission target: Local MLX\n\n## Operating Rules\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\n\n## Commands\n- npm run lint\n- npm run build\n\n## Agent Boundaries\n- Do not mutate deployment, secrets, or release configuration without explicit approval.\n- Prefer draft plans and reviewable diffs over broad automation.\n- Preserve existing product direction; use Vega Lab evidence before adding new abstractions.",
+        "body": "# empathic-ai Agents\n\n## Product Truth\n- Repository: KBLLR/empathic-ai\n- Vega Lab classification: house\n- Active mission target: Local MLX\n\n## Operating Rules\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\n\n## Commands\n- npm run lint\n- npm run build\n\n## Agent Boundaries\n- Do not mutate deployment, secrets, or release configuration without explicit approval.\n- Prefer draft plans and reviewable diffs over broad automation.\n- Preserve existing product direction; use Vega Lab evidence before adding new abstractions.",
         "evidence": [
           "Repository: KBLLR/empathic-ai",
           "Adoption kind: house",
           "Capabilities: ml-ai, frontend-ui",
           "House skills: repo-discovery, repo-adoption, mine-execution",
           "Finding: No workflow or deployment config detected in synced key files.",
-          "Risk: Deployment readiness is unclear."
+          "Finding: Repository appears stale based on last activity."
         ]
       },
       {
         "kind": "maintenance",
         "title": "empathic-ai Maintenance Plan",
         "suggestedPath": "docs/maintenance-plan.md",
-        "body": "# Maintenance Plan: KBLLR/empathic-ai\n\n## Current Signals\n- Health flag: private\n- No workflow or deployment config detected in synced key files.\n\n## Recommended Pass\n- Confirm install path and package manager.\n- Run available verification commands before editing.\n- Patch stale docs, commands, and workflow assumptions first.\n- Open the smallest useful PR only after human approval.\n- Vega Lab action: mlx-mission\n- Vega Lab action: ops-kit\n- Vega Lab action: codex-mission\n- Vega Lab action: claude-mission\n- Vega Lab action: house-integration\n\n## Evidence\n- Repository: KBLLR/empathic-ai\n- Adoption kind: house\n- Capabilities: ml-ai, frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Finding: No workflow or deployment config detected in synced key files.\n- Risk: Deployment readiness is unclear.\n- Health flag: private\n- Action item: Clarify deployment readiness for empathic-ai",
+        "body": "# Maintenance Plan: KBLLR/empathic-ai\n\n## Current Signals\n- Health flag: stale\n- Health flag: private\n- No workflow or deployment config detected in synced key files.\n- Repository appears stale based on last activity.\n\n## Recommended Pass\n- Confirm install path and package manager.\n- Run available verification commands before editing.\n- Patch stale docs, commands, and workflow assumptions first.\n- Open the smallest useful PR only after human approval.\n- Vega Lab action: mlx-mission\n- Vega Lab action: ops-kit\n- Vega Lab action: codex-mission\n- Vega Lab action: claude-mission\n- Vega Lab action: maintenance-plan\n- Vega Lab action: house-integration\n\n## Evidence\n- Repository: KBLLR/empathic-ai\n- Adoption kind: house\n- Capabilities: ml-ai, frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Finding: No workflow or deployment config detected in synced key files.\n- Finding: Repository appears stale based on last activity.\n- Risk: Deployment readiness is unclear.\n- Risk: Dependencies, build targets, or deployment assumptions may be outdated.",
         "evidence": [
           "Repository: KBLLR/empathic-ai",
           "Adoption kind: house",
           "Capabilities: ml-ai, frontend-ui",
           "House skills: repo-discovery, repo-adoption, mine-execution",
           "Finding: No workflow or deployment config detected in synced key files.",
+          "Finding: Repository appears stale based on last activity.",
           "Risk: Deployment readiness is unclear.",
-          "Health flag: private",
-          "Action item: Clarify deployment readiness for empathic-ai"
+          "Risk: Dependencies, build targets, or deployment assumptions may be outdated."
         ]
       },
       {
         "kind": "deployment",
         "title": "empathic-ai Deployment Plan",
         "suggestedPath": "docs/deployment-plan.md",
-        "body": "# Deployment Plan: KBLLR/empathic-ai\n\n## Known Deployment Evidence\n- No workflow or deployment config detected in synced key files.\n\n## Draft Checks\n- Identify expected host and runtime.\n- Document build command, output directory, and required environment variables.\n- Verify preview URL and production URL checks.\n- Keep deploy authority manual; Vega Lab drafts plans and inbox items only.\n\n## Evidence\n- Repository: KBLLR/empathic-ai\n- Adoption kind: house\n- Capabilities: ml-ai, frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Finding: No workflow or deployment config detected in synced key files.\n- Risk: Deployment readiness is unclear.\n- Health flag: private\n- Action item: Clarify deployment readiness for empathic-ai",
+        "body": "# Deployment Plan: KBLLR/empathic-ai\n\n## Known Deployment Evidence\n- No workflow or deployment config detected in synced key files.\n\n## Draft Checks\n- Identify expected host and runtime.\n- Document build command, output directory, and required environment variables.\n- Verify preview URL and production URL checks.\n- Keep deploy authority manual; Vega Lab drafts plans and inbox items only.\n\n## Evidence\n- Repository: KBLLR/empathic-ai\n- Adoption kind: house\n- Capabilities: ml-ai, frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Finding: No workflow or deployment config detected in synced key files.\n- Finding: Repository appears stale based on last activity.\n- Risk: Deployment readiness is unclear.\n- Risk: Dependencies, build targets, or deployment assumptions may be outdated.",
         "evidence": [
           "Repository: KBLLR/empathic-ai",
           "Adoption kind: house",
           "Capabilities: ml-ai, frontend-ui",
           "House skills: repo-discovery, repo-adoption, mine-execution",
           "Finding: No workflow or deployment config detected in synced key files.",
+          "Finding: Repository appears stale based on last activity.",
           "Risk: Deployment readiness is unclear.",
-          "Health flag: private",
-          "Action item: Clarify deployment readiness for empathic-ai"
+          "Risk: Dependencies, build targets, or deployment assumptions may be outdated."
         ]
       },
       {
         "kind": "testing",
         "title": "empathic-ai Test Plan",
         "suggestedPath": "docs/test-plan.md",
-        "body": "# Test Plan: KBLLR/empathic-ai\n\n## Available Commands\n- npm run lint\n- npm run build\n\n## Minimum Verification Contract\n- Document one install command.\n- Document one fast smoke command.\n- Document one release/build command when deployable.\n- If no commands exist, create a tracked issue or action item before implementation work.\n\n## Evidence\n- Repository: KBLLR/empathic-ai\n- Adoption kind: house\n- Capabilities: ml-ai, frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Finding: No workflow or deployment config detected in synced key files.\n- Risk: Deployment readiness is unclear.\n- Health flag: private\n- Action item: Clarify deployment readiness for empathic-ai",
+        "body": "# Test Plan: KBLLR/empathic-ai\n\n## Available Commands\n- npm run lint\n- npm run build\n\n## Minimum Verification Contract\n- Document one install command.\n- Document one fast smoke command.\n- Document one release/build command when deployable.\n- If no commands exist, create a tracked issue or action item before implementation work.\n\n## Evidence\n- Repository: KBLLR/empathic-ai\n- Adoption kind: house\n- Capabilities: ml-ai, frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Finding: No workflow or deployment config detected in synced key files.\n- Finding: Repository appears stale based on last activity.\n- Risk: Deployment readiness is unclear.\n- Risk: Dependencies, build targets, or deployment assumptions may be outdated.",
         "evidence": [
           "Repository: KBLLR/empathic-ai",
           "Adoption kind: house",
           "Capabilities: ml-ai, frontend-ui",
           "House skills: repo-discovery, repo-adoption, mine-execution",
           "Finding: No workflow or deployment config detected in synced key files.",
+          "Finding: Repository appears stale based on last activity.",
           "Risk: Deployment readiness is unclear.",
-          "Health flag: private",
-          "Action item: Clarify deployment readiness for empathic-ai"
+          "Risk: Dependencies, build targets, or deployment assumptions may be outdated."
         ]
       },
       {
         "kind": "action-item",
         "title": "empathic-ai Action Item Draft",
         "suggestedPath": "ops/action-item.md",
-        "body": "# Action Item Draft: KBLLR/empathic-ai\n\n## Recommended Actions\n- deployment: Clarify deployment readiness for empathic-ai\n- testing: Define verification for empathic-ai\n\n## Mission Target\n- Local MLX\n\n## Evidence\n- Repository: KBLLR/empathic-ai\n- Adoption kind: house\n- Capabilities: ml-ai, frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Finding: No workflow or deployment config detected in synced key files.\n- Risk: Deployment readiness is unclear.\n- Health flag: private\n- Action item: Clarify deployment readiness for empathic-ai\n- Action item: Define verification for empathic-ai",
+        "body": "# Action Item Draft: KBLLR/empathic-ai\n\n## Recommended Actions\n- maintenance: Run a maintenance pass on empathic-ai\n- deployment: Clarify deployment readiness for empathic-ai\n- testing: Define verification for empathic-ai\n\n## Mission Target\n- Local MLX\n\n## Evidence\n- Repository: KBLLR/empathic-ai\n- Adoption kind: house\n- Capabilities: ml-ai, frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Finding: No workflow or deployment config detected in synced key files.\n- Finding: Repository appears stale based on last activity.\n- Risk: Deployment readiness is unclear.\n- Risk: Dependencies, build targets, or deployment assumptions may be outdated.\n- Health flag: stale\n- Health flag: private",
         "evidence": [
           "Repository: KBLLR/empathic-ai",
           "Adoption kind: house",
           "Capabilities: ml-ai, frontend-ui",
           "House skills: repo-discovery, repo-adoption, mine-execution",
           "Finding: No workflow or deployment config detected in synced key files.",
+          "Finding: Repository appears stale based on last activity.",
           "Risk: Deployment readiness is unclear.",
-          "Health flag: private",
-          "Action item: Clarify deployment readiness for empathic-ai",
-          "Action item: Define verification for empathic-ai"
+          "Risk: Dependencies, build targets, or deployment assumptions may be outdated.",
+          "Health flag: stale",
+          "Health flag: private"
         ]
       }
     ],
@@ -3846,17 +3847,22 @@
       "Capabilities: ml-ai, frontend-ui",
       "House skills: repo-discovery, repo-adoption, mine-execution",
       "Finding: No workflow or deployment config detected in synced key files.",
+      "Finding: Repository appears stale based on last activity.",
       "Risk: Deployment readiness is unclear.",
+      "Risk: Dependencies, build targets, or deployment assumptions may be outdated.",
+      "Health flag: stale",
       "Health flag: private",
-      "Action item: Clarify deployment readiness for empathic-ai",
-      "Action item: Define verification for empathic-ai"
+      "Action item: Run a maintenance pass on empathic-ai",
+      "Action item: Clarify deployment readiness for empathic-ai"
     ],
     "recommendedActions": [
       "mlx-mission",
       "ops-kit",
       "codex-mission",
       "claude-mission",
+      "maintenance-plan",
       "house-integration",
+      "maintenance:vega-lab:maintenance:kbllr-empathic-ai",
       "deployment:vega-lab:deployment:kbllr-empathic-ai",
       "testing:vega-lab:testing:kbllr-empathic-ai",
       "review-draft-only"
@@ -10021,7 +10027,7 @@
   },
   {
     "nwo": "KBLLR/rigging-palace",
-    "generatedAt": "2026-09-24T04:21:00.000Z",
+    "generatedAt": "2026-10-01T20:24:26.000Z",
     "target": "mlx",
     "artifacts": [
       {
@@ -13117,7 +13123,7 @@
   },
   {
     "nwo": "KBLLR/vega-lab",
-    "generatedAt": "2026-09-30T04:15:56.000Z",
+    "generatedAt": "2026-10-01T04:25:09.000Z",
     "target": "mlx",
     "artifacts": [
       {

@@ -22124,21 +22124,24 @@
     "nwo": "invoke-ai/InvokeAI",
     "name": "InvokeAI",
     "author": "invoke-ai",
-    "summary": "Invoke is a leading creative engine for Stable Diffusion models, empowering professionals, artists, and enthusiasts to generate and create visual media using the latest AI-driven technologies. The solution offers an industry leading WebUI, and serves as the foundation for multiple commercial products. Primary Vega Lab fit: repo-adoption via ml-ai.",
+    "summary": "Invoke is a leading creative engine for Stable Diffusion models, empowering professionals, artists, and enthusiasts to generate and create visual media using the latest AI-driven technologies. The solution offers an industry leading WebUI, and serves as the foundation for multiple commercial products. Primary Vega Lab fit: repo-discovery via ml-ai.",
     "capabilities": [
-      "ml-ai"
+      "ml-ai",
+      "frontend-ui"
     ],
     "houseSkills": [
+      "repo-discovery",
       "repo-adoption"
     ],
     "rules": [],
     "flows": [
       "research-queue-flow",
-      "adoption-decision-flow"
+      "adoption-decision-flow",
+      "news-digest-refresh"
     ],
     "adoptionKind": "house",
-    "codexBrief": "# Codex Mission: invoke-ai/InvokeAI\nGoal: Invoke is a leading creative engine for Stable Diffusion models, empowering professionals, artists, and enthusiasts to generate and create visual media using the latest AI-driven technologies. The solution offers an industry leading WebUI, and serves as the foundation for multiple commercial products. Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: house\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: invoke-ai/InvokeAI\nGoal: Invoke is a leading creative engine for Stable Diffusion models, empowering professionals, artists, and enthusiasts to generate and create visual media using the latest AI-driven technologies. The solution offers an industry leading WebUI, and serves as the foundation for multiple commercial products. Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: house\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: invoke-ai/InvokeAI\nGoal: Invoke is a leading creative engine for Stable Diffusion models, empowering professionals, artists, and enthusiasts to generate and create visual media using the latest AI-driven technologies. The solution offers an industry leading WebUI, and serves as the foundation for multiple commercial products. Primary Vega Lab fit: repo-discovery via ml-ai.\nClassification: house\nCapabilities: ml-ai, frontend-ui\nHouse skills: repo-discovery, repo-adoption\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: invoke-ai/InvokeAI\nGoal: Invoke is a leading creative engine for Stable Diffusion models, empowering professionals, artists, and enthusiasts to generate and create visual media using the latest AI-driven technologies. The solution offers an industry leading WebUI, and serves as the foundation for multiple commercial products. Primary Vega Lab fit: repo-discovery via ml-ai.\nClassification: house\nCapabilities: ml-ai, frontend-ui\nHouse skills: repo-discovery, repo-adoption\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "iperov/DeepFaceLab",
@@ -25268,6 +25271,7 @@
     ],
     "rules": [
       "Review license status before adoption or redistribution work.",
+      "Validate maintenance risk and current ecosystem fit before committing to adoption.",
       "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
     ],
     "flows": [
@@ -25277,8 +25281,8 @@
       "mine-execution-flow"
     ],
     "adoptionKind": "house",
-    "codexBrief": "# Codex Mission: KBLLR/empathic-ai\nGoal: empathic-ai is a candidate for house adoption. Primary Vega Lab fit: repo-discovery via ml-ai.\nClassification: house\nCapabilities: ml-ai, frontend-ui\nHouse skills: repo-discovery, repo-adoption, mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\n4. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: KBLLR/empathic-ai\nGoal: empathic-ai is a candidate for house adoption. Primary Vega Lab fit: repo-discovery via ml-ai.\nClassification: house\nCapabilities: ml-ai, frontend-ui\nHouse skills: repo-discovery, repo-adoption, mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\n4. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: KBLLR/empathic-ai\nGoal: empathic-ai is a candidate for house adoption. Primary Vega Lab fit: repo-discovery via ml-ai.\nClassification: house\nCapabilities: ml-ai, frontend-ui\nHouse skills: repo-discovery, repo-adoption, mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\n4. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: KBLLR/empathic-ai\nGoal: empathic-ai is a candidate for house adoption. Primary Vega Lab fit: repo-discovery via ml-ai.\nClassification: house\nCapabilities: ml-ai, frontend-ui\nHouse skills: repo-discovery, repo-adoption, mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\n4. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "KBLLR/esoteric-lab",
@@ -28924,21 +28928,24 @@
     "nwo": "latent-spaces/brag",
     "name": "brag",
     "author": "latent-spaces",
-    "summary": "You built it. Now brag. Turn the project you just created into a short, shareable launch video with one command. Primary Vega Lab fit: repo-adoption via ml-ai.",
+    "summary": "You built it. Now brag. Turn the project you just created into a short, shareable launch video with one command. Primary Vega Lab fit: skill-extraction via agent-workflows.",
     "capabilities": [
+      "agent-workflows",
       "ml-ai"
     ],
     "houseSkills": [
+      "skill-extraction",
       "repo-adoption"
     ],
     "rules": [],
     "flows": [
       "research-queue-flow",
+      "skill-extraction-flow",
       "adoption-decision-flow"
     ],
     "adoptionKind": "house",
-    "codexBrief": "# Codex Mission: latent-spaces/brag\nGoal: You built it. Now brag. Turn the project you just created into a short, shareable launch video with one command. Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: house\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: latent-spaces/brag\nGoal: You built it. Now brag. Turn the project you just created into a short, shareable launch video with one command. Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: house\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: latent-spaces/brag\nGoal: You built it. Now brag. Turn the project you just created into a short, shareable launch video with one command. Primary Vega Lab fit: skill-extraction via agent-workflows.\nClassification: house\nCapabilities: agent-workflows, ml-ai\nHouse skills: skill-extraction, repo-adoption\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: latent-spaces/brag\nGoal: You built it. Now brag. Turn the project you just created into a short, shareable launch video with one command. Primary Vega Lab fit: skill-extraction via agent-workflows.\nClassification: house\nCapabilities: agent-workflows, ml-ai\nHouse skills: skill-extraction, repo-adoption\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "lattas/AvatarMe",
