@@ -15819,10 +15819,10 @@
     "nwo": "firecrawl/firecrawl",
     "name": "firecrawl",
     "author": "firecrawl",
-    "summary": "🔥 Supercharge your AI agents with data from the web and beyond. A web data API to search, scrape, and access more sources. Primary Vega Lab fit: repo-discovery via agent-workflows.",
+    "summary": "Supercharge your AI agents with data from the web and beyond. Building the library for superintelligence. 🔥 Primary Vega Lab fit: repo-discovery via agent-workflows.",
     "capabilities": [
       "agent-workflows",
-      "backend-service",
+      "developer-tooling",
       "ml-ai",
       "data-pipeline",
       "frontend-ui"
@@ -15833,7 +15833,7 @@
       "repo-adoption"
     ],
     "rules": [
-      "Treat external runtimes and APIs as configurable integrations with explicit environment requirements."
+      "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house."
     ],
     "flows": [
       "research-queue-flow",
@@ -15841,9 +15841,9 @@
       "adoption-decision-flow",
       "news-digest-refresh"
     ],
-    "adoptionKind": "service",
-    "codexBrief": "# Codex Mission: firecrawl/firecrawl\nGoal: 🔥 Supercharge your AI agents with data from the web and beyond. A web data API to search, scrape, and access more sources. Primary Vega Lab fit: repo-discovery via agent-workflows.\nClassification: service\nCapabilities: agent-workflows, backend-service, ml-ai, data-pipeline, frontend-ui\nHouse skills: repo-discovery, skill-extraction, repo-adoption\nRules:\n- Treat external runtimes and APIs as configurable integrations with explicit environment requirements.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: firecrawl/firecrawl\nGoal: 🔥 Supercharge your AI agents with data from the web and beyond. A web data API to search, scrape, and access more sources. Primary Vega Lab fit: repo-discovery via agent-workflows.\nClassification: service\nCapabilities: agent-workflows, backend-service, ml-ai, data-pipeline, frontend-ui\nHouse skills: repo-discovery, skill-extraction, repo-adoption\nRules:\n- Treat external runtimes and APIs as configurable integrations with explicit environment requirements.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "adoptionKind": "tool",
+    "codexBrief": "# Codex Mission: firecrawl/firecrawl\nGoal: Supercharge your AI agents with data from the web and beyond. Building the library for superintelligence. 🔥 Primary Vega Lab fit: repo-discovery via agent-workflows.\nClassification: tool\nCapabilities: agent-workflows, developer-tooling, ml-ai, data-pipeline, frontend-ui\nHouse skills: repo-discovery, skill-extraction, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: firecrawl/firecrawl\nGoal: Supercharge your AI agents with data from the web and beyond. Building the library for superintelligence. 🔥 Primary Vega Lab fit: repo-discovery via agent-workflows.\nClassification: tool\nCapabilities: agent-workflows, developer-tooling, ml-ai, data-pipeline, frontend-ui\nHouse skills: repo-discovery, skill-extraction, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "FireRedTeam/PhotoPoster",
