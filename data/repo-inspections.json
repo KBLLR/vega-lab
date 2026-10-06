@@ -505,7 +505,7 @@
   },
   {
     "nwo": "KBLLR/core-x",
-    "inspectedAt": "2026-10-05T03:38:23.000Z",
+    "inspectedAt": "2026-10-05T13:17:21.000Z",
     "files": {
       "hasReadme": false,
       "packageManagers": [
@@ -1623,9 +1623,12 @@
       "buildScripts": []
     },
     "findings": [
-      "No build script detected from package metadata."
+      "No build script detected from package metadata.",
+      "Repository appears stale based on last activity."
     ],
-    "risks": []
+    "risks": [
+      "Dependencies, build targets, or deployment assumptions may be outdated."
+    ]
   },
   {
     "nwo": "KBLLR/macbook-keyboard",
@@ -1695,7 +1698,7 @@
   },
   {
     "nwo": "KBLLR/memoryblocks",
-    "inspectedAt": "2026-10-05T03:36:34.000Z",
+    "inspectedAt": "2026-10-05T12:32:17.000Z",
     "files": {
       "hasReadme": true,
       "packageManagers": [
@@ -2635,7 +2638,7 @@
   },
   {
     "nwo": "KBLLR/vega-lab",
-    "inspectedAt": "2026-10-04T04:35:16.000Z",
+    "inspectedAt": "2026-10-05T04:19:33.000Z",
     "files": {
       "hasReadme": true,
       "packageManagers": [
