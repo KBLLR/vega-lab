@@ -20160,9 +20160,7 @@
       "repo-adoption",
       "mine-execution"
     ],
-    "rules": [
-      "Review license status before adoption or redistribution work."
-    ],
+    "rules": [],
     "flows": [
       "research-queue-flow",
       "skill-extraction-flow",
@@ -20171,8 +20169,8 @@
       "mine-execution-flow"
     ],
     "adoptionKind": "house",
-    "codexBrief": "# Codex Mission: home-assistant/frontend\nGoal: :lollipop: Frontend for Home Assistant Primary Vega Lab fit: repo-discovery via agent-workflows.\nClassification: house\nCapabilities: agent-workflows, frontend-ui, repo-ops\nHouse skills: repo-discovery, skill-extraction, repo-adoption, mine-execution\nRules:\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\n5. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: home-assistant/frontend\nGoal: :lollipop: Frontend for Home Assistant Primary Vega Lab fit: repo-discovery via agent-workflows.\nClassification: house\nCapabilities: agent-workflows, frontend-ui, repo-ops\nHouse skills: repo-discovery, skill-extraction, repo-adoption, mine-execution\nRules:\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\n5. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: home-assistant/frontend\nGoal: :lollipop: Frontend for Home Assistant Primary Vega Lab fit: repo-discovery via agent-workflows.\nClassification: house\nCapabilities: agent-workflows, frontend-ui, repo-ops\nHouse skills: repo-discovery, skill-extraction, repo-adoption, mine-execution\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\n5. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: home-assistant/frontend\nGoal: :lollipop: Frontend for Home Assistant Primary Vega Lab fit: repo-discovery via agent-workflows.\nClassification: house\nCapabilities: agent-workflows, frontend-ui, repo-ops\nHouse skills: repo-discovery, skill-extraction, repo-adoption, mine-execution\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\n5. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "home-assistant/iOS",
@@ -31628,12 +31626,9 @@
     "nwo": "markedjs/marked",
     "name": "marked",
     "author": "markedjs",
-    "summary": "A markdown parser and compiler. Built for speed. Primary Vega Lab fit: repo-discovery via frontend-ui.",
-    "capabilities": [
-      "frontend-ui"
-    ],
+    "summary": "A markdown parser and compiler. Built for speed. Primary Vega Lab fit: repo-adoption via general engineering.",
+    "capabilities": [],
     "houseSkills": [
-      "repo-discovery",
       "repo-adoption"
     ],
     "rules": [
@@ -31641,12 +31636,11 @@
     ],
     "flows": [
       "research-queue-flow",
-      "adoption-decision-flow",
-      "news-digest-refresh"
+      "adoption-decision-flow"
     ],
     "adoptionKind": "house",
-    "codexBrief": "# Codex Mission: markedjs/marked\nGoal: A markdown parser and compiler. Built for speed. Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui\nHouse skills: repo-discovery, repo-adoption\nRules:\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: markedjs/marked\nGoal: A markdown parser and compiler. Built for speed. Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui\nHouse skills: repo-discovery, repo-adoption\nRules:\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: markedjs/marked\nGoal: A markdown parser and compiler. Built for speed. Primary Vega Lab fit: repo-adoption via general engineering.\nClassification: house\nCapabilities: none\nHouse skills: repo-adoption\nRules:\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: markedjs/marked\nGoal: A markdown parser and compiler. Built for speed. Primary Vega Lab fit: repo-adoption via general engineering.\nClassification: house\nCapabilities: none\nHouse skills: repo-adoption\nRules:\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "MarketingPipeline/Termino.js",
@@ -46422,15 +46416,13 @@
     "summary": "FaceMeshFaceGeometry for FaceMesh Primary Vega Lab fit: repo-discovery via general engineering.",
     "capabilities": [],
     "houseSkills": [],
-    "rules": [
-      "Validate maintenance risk and current ecosystem fit before committing to adoption."
-    ],
+    "rules": [],
     "flows": [
       "research-queue-flow"
     ],
     "adoptionKind": "ignore",
-    "codexBrief": "# Codex Mission: spite/FaceMeshFaceGeometry\nGoal: FaceMeshFaceGeometry for FaceMesh Primary Vega Lab fit: repo-discovery via general engineering.\nClassification: ignore\nCapabilities: none\nHouse skills: none\nRules:\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: spite/FaceMeshFaceGeometry\nGoal: FaceMeshFaceGeometry for FaceMesh Primary Vega Lab fit: repo-discovery via general engineering.\nClassification: ignore\nCapabilities: none\nHouse skills: none\nRules:\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: spite/FaceMeshFaceGeometry\nGoal: FaceMeshFaceGeometry for FaceMesh Primary Vega Lab fit: repo-discovery via general engineering.\nClassification: ignore\nCapabilities: none\nHouse skills: none\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: spite/FaceMeshFaceGeometry\nGoal: FaceMeshFaceGeometry for FaceMesh Primary Vega Lab fit: repo-discovery via general engineering.\nClassification: ignore\nCapabilities: none\nHouse skills: none\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "spite/genuary-2022",
