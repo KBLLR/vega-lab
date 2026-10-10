@@ -2438,6 +2438,64 @@
     "updatedAt": "2025-10-10T13:48:42.000Z"
   },
   {
+    "id": "vega-lab:maintenance:kbllr-3dknight-art",
+    "kind": "maintenance",
+    "status": "open",
+    "priority": "normal",
+    "nwo": "KBLLR/3DKNIGHT.art",
+    "title": "Run a maintenance pass on 3DKNIGHT.art",
+    "summary": "Stale activity increases dependency, workflow, and deployment risk.",
+    "evidence": [
+      "Repository appears stale based on last activity.",
+      "Dependencies, build targets, or deployment assumptions may be outdated."
+    ],
+    "linkedSkills": [
+      "mine-execution"
+    ],
+    "linkedRules": [
+      "Validate maintenance risk and current ecosystem fit before committing to adoption.",
+      "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
+    ],
+    "linkedFlows": [
+      "research-queue-flow",
+      "mine-execution-flow"
+    ],
+    "draft": "Draft a maintenance plan for KBLLR/3DKNIGHT.art: verify dependencies, run available checks, update stale assumptions, and identify a smallest useful PR. Rules: Validate maintenance risk and current ecosystem fit before committing to adoption. Prioritize README, maintenance, and execution readiness before broader ecosystem integration.",
+    "source": "daily-ops",
+    "createdAt": "2025-10-09T17:21:52.000Z",
+    "updatedAt": "2025-10-09T17:21:52.000Z"
+  },
+  {
+    "id": "vega-lab:maintenance:kbllr-final-maricoin",
+    "kind": "maintenance",
+    "status": "open",
+    "priority": "normal",
+    "nwo": "KBLLR/Final-MariCoin",
+    "title": "Run a maintenance pass on Final-MariCoin",
+    "summary": "Stale activity increases dependency, workflow, and deployment risk.",
+    "evidence": [
+      "No test/check/lint script detected from package metadata.",
+      "Repository appears stale based on last activity.",
+      "Maintenance work has no obvious verification command.",
+      "Dependencies, build targets, or deployment assumptions may be outdated."
+    ],
+    "linkedSkills": [
+      "mine-execution"
+    ],
+    "linkedRules": [
+      "Validate maintenance risk and current ecosystem fit before committing to adoption.",
+      "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
+    ],
+    "linkedFlows": [
+      "research-queue-flow",
+      "mine-execution-flow"
+    ],
+    "draft": "Draft a maintenance plan for KBLLR/Final-MariCoin: verify dependencies, run available checks, update stale assumptions, and identify a smallest useful PR. Rules: Validate maintenance risk and current ecosystem fit before committing to adoption. Prioritize README, maintenance, and execution readiness before broader ecosystem integration.",
+    "source": "daily-ops",
+    "createdAt": "2025-10-09T14:25:50.000Z",
+    "updatedAt": "2025-10-09T14:25:50.000Z"
+  },
+  {
     "id": "vega-lab:testing:kbllr-final-maricoin",
     "kind": "testing",
     "status": "open",
@@ -2447,12 +2505,15 @@
     "summary": "Package metadata does not expose an obvious test, check, or lint command.",
     "evidence": [
       "No test/check/lint script detected from package metadata.",
-      "Maintenance work has no obvious verification command."
+      "Repository appears stale based on last activity.",
+      "Maintenance work has no obvious verification command.",
+      "Dependencies, build targets, or deployment assumptions may be outdated."
     ],
     "linkedSkills": [
       "mine-execution"
     ],
     "linkedRules": [
+      "Validate maintenance risk and current ecosystem fit before committing to adoption.",
       "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
     ],
     "linkedFlows": [
@@ -2465,6 +2526,36 @@
     "updatedAt": "2025-10-09T14:25:50.000Z"
   },
   {
+    "id": "vega-lab:maintenance:kbllr-documentation-learnings-mmxx-mmxxii",
+    "kind": "maintenance",
+    "status": "open",
+    "priority": "normal",
+    "nwo": "KBLLR/Documentation_learnings-MMXX-MMXXII",
+    "title": "Run a maintenance pass on Documentation_learnings-MMXX-MMXXII",
+    "summary": "Stale activity increases dependency, workflow, and deployment risk.",
+    "evidence": [
+      "No test/check/lint script detected from package metadata.",
+      "Repository appears stale based on last activity.",
+      "Maintenance work has no obvious verification command.",
+      "Dependencies, build targets, or deployment assumptions may be outdated."
+    ],
+    "linkedSkills": [
+      "mine-execution"
+    ],
+    "linkedRules": [
+      "Validate maintenance risk and current ecosystem fit before committing to adoption.",
+      "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
+    ],
+    "linkedFlows": [
+      "research-queue-flow",
+      "mine-execution-flow"
+    ],
+    "draft": "Draft a maintenance plan for KBLLR/Documentation_learnings-MMXX-MMXXII: verify dependencies, run available checks, update stale assumptions, and identify a smallest useful PR. Rules: Validate maintenance risk and current ecosystem fit before committing to adoption. Prioritize README, maintenance, and execution readiness before broader ecosystem integration.",
+    "source": "daily-ops",
+    "createdAt": "2025-10-09T09:24:50.000Z",
+    "updatedAt": "2025-10-09T09:24:50.000Z"
+  },
+  {
     "id": "vega-lab:testing:kbllr-documentation-learnings-mmxx-mmxxii",
     "kind": "testing",
     "status": "open",
@@ -2474,12 +2565,15 @@
     "summary": "Package metadata does not expose an obvious test, check, or lint command.",
     "evidence": [
       "No test/check/lint script detected from package metadata.",
-      "Maintenance work has no obvious verification command."
+      "Repository appears stale based on last activity.",
+      "Maintenance work has no obvious verification command.",
+      "Dependencies, build targets, or deployment assumptions may be outdated."
     ],
     "linkedSkills": [
       "mine-execution"
     ],
     "linkedRules": [
+      "Validate maintenance risk and current ecosystem fit before committing to adoption.",
       "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
     ],
     "linkedFlows": [

@@ -254,72 +254,92 @@
         "kind": "readme",
         "title": "3DKNIGHT.art README Draft",
         "suggestedPath": "README.md",
-        "body": "# 3DKNIGHT.art\n\n3DKNIGHT.art needs a concise purpose statement before broader core-x adoption.\n\n## Vega Lab Fit\n- Classification: ignore\n- Capabilities: none\n- House skills: mine-execution\n\n## Local Setup\n- Package managers: npm, npm-lock\n- Document install, dev, build, and verification commands before broad reuse.\n- Keep runtime assumptions explicit; prefer local MLX/OpenResponses for model-assisted work.\n\n## Verification\n- npm run test\n- npm run build\n\n## Evidence\n- Repository: KBLLR/3DKNIGHT.art\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution",
+        "body": "# 3DKNIGHT.art\n\n3DKNIGHT.art needs a concise purpose statement before broader core-x adoption.\n\n## Vega Lab Fit\n- Classification: ignore\n- Capabilities: none\n- House skills: mine-execution\n\n## Local Setup\n- Package managers: npm, npm-lock\n- Document install, dev, build, and verification commands before broad reuse.\n- Keep runtime assumptions explicit; prefer local MLX/OpenResponses for model-assisted work.\n\n## Verification\n- npm run test\n- npm run build\n\n## Evidence\n- Repository: KBLLR/3DKNIGHT.art\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Finding: Repository appears stale based on last activity.\n- Risk: Dependencies, build targets, or deployment assumptions may be outdated.",
         "evidence": [
           "Repository: KBLLR/3DKNIGHT.art",
           "Adoption kind: ignore",
           "Capabilities: none",
-          "House skills: mine-execution"
+          "House skills: mine-execution",
+          "Finding: Repository appears stale based on last activity.",
+          "Risk: Dependencies, build targets, or deployment assumptions may be outdated."
         ]
       },
       {
         "kind": "agents",
         "title": "3DKNIGHT.art AGENTS Draft",
         "suggestedPath": "AGENTS.md",
-        "body": "# 3DKNIGHT.art Agents\n\n## Product Truth\n- Repository: KBLLR/3DKNIGHT.art\n- Vega Lab classification: ignore\n- Active mission target: Local MLX\n\n## Operating Rules\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\n\n## Commands\n- npm run test\n- npm run build\n\n## Agent Boundaries\n- Do not mutate deployment, secrets, or release configuration without explicit approval.\n- Prefer draft plans and reviewable diffs over broad automation.\n- Preserve existing product direction; use Vega Lab evidence before adding new abstractions.",
+        "body": "# 3DKNIGHT.art Agents\n\n## Product Truth\n- Repository: KBLLR/3DKNIGHT.art\n- Vega Lab classification: ignore\n- Active mission target: Local MLX\n\n## Operating Rules\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\n\n## Commands\n- npm run test\n- npm run build\n\n## Agent Boundaries\n- Do not mutate deployment, secrets, or release configuration without explicit approval.\n- Prefer draft plans and reviewable diffs over broad automation.\n- Preserve existing product direction; use Vega Lab evidence before adding new abstractions.",
         "evidence": [
           "Repository: KBLLR/3DKNIGHT.art",
           "Adoption kind: ignore",
           "Capabilities: none",
-          "House skills: mine-execution"
+          "House skills: mine-execution",
+          "Finding: Repository appears stale based on last activity.",
+          "Risk: Dependencies, build targets, or deployment assumptions may be outdated."
         ]
       },
       {
         "kind": "maintenance",
         "title": "3DKNIGHT.art Maintenance Plan",
         "suggestedPath": "docs/maintenance-plan.md",
-        "body": "# Maintenance Plan: KBLLR/3DKNIGHT.art\n\n## Current Signals\n- No maintenance flags detected.\n\n## Recommended Pass\n- Confirm install path and package manager.\n- Run available verification commands before editing.\n- Patch stale docs, commands, and workflow assumptions first.\n- Open the smallest useful PR only after human approval.\n- Vega Lab action: mlx-mission\n- Vega Lab action: ops-kit\n- Vega Lab action: codex-mission\n- Vega Lab action: claude-mission\n\n## Evidence\n- Repository: KBLLR/3DKNIGHT.art\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution",
+        "body": "# Maintenance Plan: KBLLR/3DKNIGHT.art\n\n## Current Signals\n- Health flag: stale\n- Repository appears stale based on last activity.\n\n## Recommended Pass\n- Confirm install path and package manager.\n- Run available verification commands before editing.\n- Patch stale docs, commands, and workflow assumptions first.\n- Open the smallest useful PR only after human approval.\n- Vega Lab action: mlx-mission\n- Vega Lab action: ops-kit\n- Vega Lab action: codex-mission\n- Vega Lab action: claude-mission\n- Vega Lab action: maintenance-plan\n\n## Evidence\n- Repository: KBLLR/3DKNIGHT.art\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Finding: Repository appears stale based on last activity.\n- Risk: Dependencies, build targets, or deployment assumptions may be outdated.\n- Health flag: stale\n- Action item: Run a maintenance pass on 3DKNIGHT.art",
         "evidence": [
           "Repository: KBLLR/3DKNIGHT.art",
           "Adoption kind: ignore",
           "Capabilities: none",
-          "House skills: mine-execution"
+          "House skills: mine-execution",
+          "Finding: Repository appears stale based on last activity.",
+          "Risk: Dependencies, build targets, or deployment assumptions may be outdated.",
+          "Health flag: stale",
+          "Action item: Run a maintenance pass on 3DKNIGHT.art"
         ]
       },
       {
         "kind": "deployment",
         "title": "3DKNIGHT.art Deployment Plan",
         "suggestedPath": "docs/deployment-plan.md",
-        "body": "# Deployment Plan: KBLLR/3DKNIGHT.art\n\n## Known Deployment Evidence\n- Workflow: gh-pages.yml\n- Workflow: jekyll-gh-pages.yml\n\n## Draft Checks\n- Identify expected host and runtime.\n- Document build command, output directory, and required environment variables.\n- Verify preview URL and production URL checks.\n- Keep deploy authority manual; Vega Lab drafts plans and inbox items only.\n\n## Evidence\n- Repository: KBLLR/3DKNIGHT.art\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution",
+        "body": "# Deployment Plan: KBLLR/3DKNIGHT.art\n\n## Known Deployment Evidence\n- Workflow: gh-pages.yml\n- Workflow: jekyll-gh-pages.yml\n\n## Draft Checks\n- Identify expected host and runtime.\n- Document build command, output directory, and required environment variables.\n- Verify preview URL and production URL checks.\n- Keep deploy authority manual; Vega Lab drafts plans and inbox items only.\n\n## Evidence\n- Repository: KBLLR/3DKNIGHT.art\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Finding: Repository appears stale based on last activity.\n- Risk: Dependencies, build targets, or deployment assumptions may be outdated.\n- Health flag: stale\n- Action item: Run a maintenance pass on 3DKNIGHT.art",
         "evidence": [
           "Repository: KBLLR/3DKNIGHT.art",
           "Adoption kind: ignore",
           "Capabilities: none",
-          "House skills: mine-execution"
+          "House skills: mine-execution",
+          "Finding: Repository appears stale based on last activity.",
+          "Risk: Dependencies, build targets, or deployment assumptions may be outdated.",
+          "Health flag: stale",
+          "Action item: Run a maintenance pass on 3DKNIGHT.art"
         ]
       },
       {
         "kind": "testing",
         "title": "3DKNIGHT.art Test Plan",
         "suggestedPath": "docs/test-plan.md",
-        "body": "# Test Plan: KBLLR/3DKNIGHT.art\n\n## Available Commands\n- npm run test\n- npm run build\n\n## Minimum Verification Contract\n- Document one install command.\n- Document one fast smoke command.\n- Document one release/build command when deployable.\n- If no commands exist, create a tracked issue or action item before implementation work.\n\n## Evidence\n- Repository: KBLLR/3DKNIGHT.art\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution",
+        "body": "# Test Plan: KBLLR/3DKNIGHT.art\n\n## Available Commands\n- npm run test\n- npm run build\n\n## Minimum Verification Contract\n- Document one install command.\n- Document one fast smoke command.\n- Document one release/build command when deployable.\n- If no commands exist, create a tracked issue or action item before implementation work.\n\n## Evidence\n- Repository: KBLLR/3DKNIGHT.art\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Finding: Repository appears stale based on last activity.\n- Risk: Dependencies, build targets, or deployment assumptions may be outdated.\n- Health flag: stale\n- Action item: Run a maintenance pass on 3DKNIGHT.art",
         "evidence": [
           "Repository: KBLLR/3DKNIGHT.art",
           "Adoption kind: ignore",
           "Capabilities: none",
-          "House skills: mine-execution"
+          "House skills: mine-execution",
+          "Finding: Repository appears stale based on last activity.",
+          "Risk: Dependencies, build targets, or deployment assumptions may be outdated.",
+          "Health flag: stale",
+          "Action item: Run a maintenance pass on 3DKNIGHT.art"
         ]
       },
       {
         "kind": "action-item",
         "title": "3DKNIGHT.art Action Item Draft",
         "suggestedPath": "ops/action-item.md",
-        "body": "# Action Item Draft: KBLLR/3DKNIGHT.art\n\n## Recommended Actions\n- mlx-mission\n- ops-kit\n- codex-mission\n- claude-mission\n\n## Mission Target\n- Local MLX\n\n## Evidence\n- Repository: KBLLR/3DKNIGHT.art\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution",
+        "body": "# Action Item Draft: KBLLR/3DKNIGHT.art\n\n## Recommended Actions\n- maintenance: Run a maintenance pass on 3DKNIGHT.art\n\n## Mission Target\n- Local MLX\n\n## Evidence\n- Repository: KBLLR/3DKNIGHT.art\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Finding: Repository appears stale based on last activity.\n- Risk: Dependencies, build targets, or deployment assumptions may be outdated.\n- Health flag: stale\n- Action item: Run a maintenance pass on 3DKNIGHT.art",
         "evidence": [
           "Repository: KBLLR/3DKNIGHT.art",
           "Adoption kind: ignore",
           "Capabilities: none",
-          "House skills: mine-execution"
+          "House skills: mine-execution",
+          "Finding: Repository appears stale based on last activity.",
+          "Risk: Dependencies, build targets, or deployment assumptions may be outdated.",
+          "Health flag: stale",
+          "Action item: Run a maintenance pass on 3DKNIGHT.art"
         ]
       }
     ],
@@ -327,13 +347,19 @@
       "Repository: KBLLR/3DKNIGHT.art",
       "Adoption kind: ignore",
       "Capabilities: none",
-      "House skills: mine-execution"
+      "House skills: mine-execution",
+      "Finding: Repository appears stale based on last activity.",
+      "Risk: Dependencies, build targets, or deployment assumptions may be outdated.",
+      "Health flag: stale",
+      "Action item: Run a maintenance pass on 3DKNIGHT.art"
     ],
     "recommendedActions": [
       "mlx-mission",
       "ops-kit",
       "codex-mission",
       "claude-mission",
+      "maintenance-plan",
+      "maintenance:vega-lab:maintenance:kbllr-3dknight-art",
       "review-draft-only"
     ]
   },
@@ -3512,92 +3538,94 @@
         "kind": "readme",
         "title": "Documentation_learnings-MMXX-MMXXII README Draft",
         "suggestedPath": "README.md",
-        "body": "# Documentation_learnings-MMXX-MMXXII\n\nDocumentation_learnings-MMXX-MMXXII needs a concise purpose statement before broader core-x adoption.\n\n## Vega Lab Fit\n- Classification: ignore\n- Capabilities: none\n- House skills: mine-execution\n\n## Local Setup\n- Package managers: npm, yarn\n- Document install, dev, build, and verification commands before broad reuse.\n- Keep runtime assumptions explicit; prefer local MLX/OpenResponses for model-assisted work.\n\n## Verification\n- npm run prebuild\n- npm run build\n\n## Evidence\n- Repository: KBLLR/Documentation_learnings-MMXX-MMXXII\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Risk: Maintenance work has no obvious verification command.",
+        "body": "# Documentation_learnings-MMXX-MMXXII\n\nDocumentation_learnings-MMXX-MMXXII needs a concise purpose statement before broader core-x adoption.\n\n## Vega Lab Fit\n- Classification: ignore\n- Capabilities: none\n- House skills: mine-execution\n\n## Local Setup\n- Package managers: npm, yarn\n- Document install, dev, build, and verification commands before broad reuse.\n- Keep runtime assumptions explicit; prefer local MLX/OpenResponses for model-assisted work.\n\n## Verification\n- npm run prebuild\n- npm run build\n\n## Evidence\n- Repository: KBLLR/Documentation_learnings-MMXX-MMXXII\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: Repository appears stale based on last activity.",
         "evidence": [
           "Repository: KBLLR/Documentation_learnings-MMXX-MMXXII",
           "Adoption kind: ignore",
           "Capabilities: none",
           "House skills: mine-execution",
           "Finding: No test/check/lint script detected from package metadata.",
-          "Risk: Maintenance work has no obvious verification command."
+          "Finding: Repository appears stale based on last activity."
         ]
       },
       {
         "kind": "agents",
         "title": "Documentation_learnings-MMXX-MMXXII AGENTS Draft",
         "suggestedPath": "AGENTS.md",
-        "body": "# Documentation_learnings-MMXX-MMXXII Agents\n\n## Product Truth\n- Repository: KBLLR/Documentation_learnings-MMXX-MMXXII\n- Vega Lab classification: ignore\n- Active mission target: Local MLX\n\n## Operating Rules\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\n\n## Commands\n- npm run prebuild\n- npm run build\n\n## Agent Boundaries\n- Do not mutate deployment, secrets, or release configuration without explicit approval.\n- Prefer draft plans and reviewable diffs over broad automation.\n- Preserve existing product direction; use Vega Lab evidence before adding new abstractions.",
+        "body": "# Documentation_learnings-MMXX-MMXXII Agents\n\n## Product Truth\n- Repository: KBLLR/Documentation_learnings-MMXX-MMXXII\n- Vega Lab classification: ignore\n- Active mission target: Local MLX\n\n## Operating Rules\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\n\n## Commands\n- npm run prebuild\n- npm run build\n\n## Agent Boundaries\n- Do not mutate deployment, secrets, or release configuration without explicit approval.\n- Prefer draft plans and reviewable diffs over broad automation.\n- Preserve existing product direction; use Vega Lab evidence before adding new abstractions.",
         "evidence": [
           "Repository: KBLLR/Documentation_learnings-MMXX-MMXXII",
           "Adoption kind: ignore",
           "Capabilities: none",
           "House skills: mine-execution",
           "Finding: No test/check/lint script detected from package metadata.",
-          "Risk: Maintenance work has no obvious verification command."
+          "Finding: Repository appears stale based on last activity."
         ]
       },
       {
         "kind": "maintenance",
         "title": "Documentation_learnings-MMXX-MMXXII Maintenance Plan",
         "suggestedPath": "docs/maintenance-plan.md",
-        "body": "# Maintenance Plan: KBLLR/Documentation_learnings-MMXX-MMXXII\n\n## Current Signals\n- Health flag: private\n- No test/check/lint script detected from package metadata.\n\n## Recommended Pass\n- Confirm install path and package manager.\n- Run available verification commands before editing.\n- Patch stale docs, commands, and workflow assumptions first.\n- Open the smallest useful PR only after human approval.\n- Vega Lab action: mlx-mission\n- Vega Lab action: ops-kit\n- Vega Lab action: codex-mission\n- Vega Lab action: claude-mission\n\n## Evidence\n- Repository: KBLLR/Documentation_learnings-MMXX-MMXXII\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Risk: Maintenance work has no obvious verification command.\n- Health flag: private\n- Action item: Define verification for Documentation_learnings-MMXX-MMXXII",
+        "body": "# Maintenance Plan: KBLLR/Documentation_learnings-MMXX-MMXXII\n\n## Current Signals\n- Health flag: stale\n- Health flag: private\n- No test/check/lint script detected from package metadata.\n- Repository appears stale based on last activity.\n\n## Recommended Pass\n- Confirm install path and package manager.\n- Run available verification commands before editing.\n- Patch stale docs, commands, and workflow assumptions first.\n- Open the smallest useful PR only after human approval.\n- Vega Lab action: mlx-mission\n- Vega Lab action: ops-kit\n- Vega Lab action: codex-mission\n- Vega Lab action: claude-mission\n- Vega Lab action: maintenance-plan\n\n## Evidence\n- Repository: KBLLR/Documentation_learnings-MMXX-MMXXII\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: Repository appears stale based on last activity.\n- Risk: Maintenance work has no obvious verification command.\n- Risk: Dependencies, build targets, or deployment assumptions may be outdated.",
         "evidence": [
           "Repository: KBLLR/Documentation_learnings-MMXX-MMXXII",
           "Adoption kind: ignore",
           "Capabilities: none",
           "House skills: mine-execution",
           "Finding: No test/check/lint script detected from package metadata.",
+          "Finding: Repository appears stale based on last activity.",
           "Risk: Maintenance work has no obvious verification command.",
-          "Health flag: private",
-          "Action item: Define verification for Documentation_learnings-MMXX-MMXXII"
+          "Risk: Dependencies, build targets, or deployment assumptions may be outdated."
         ]
       },
       {
         "kind": "deployment",
         "title": "Documentation_learnings-MMXX-MMXXII Deployment Plan",
         "suggestedPath": "docs/deployment-plan.md",
-        "body": "# Deployment Plan: KBLLR/Documentation_learnings-MMXX-MMXXII\n\n## Known Deployment Evidence\n- Workflow: deploy-github-pages.yml\n\n## Draft Checks\n- Identify expected host and runtime.\n- Document build command, output directory, and required environment variables.\n- Verify preview URL and production URL checks.\n- Keep deploy authority manual; Vega Lab drafts plans and inbox items only.\n\n## Evidence\n- Repository: KBLLR/Documentation_learnings-MMXX-MMXXII\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Risk: Maintenance work has no obvious verification command.\n- Health flag: private\n- Action item: Define verification for Documentation_learnings-MMXX-MMXXII",
+        "body": "# Deployment Plan: KBLLR/Documentation_learnings-MMXX-MMXXII\n\n## Known Deployment Evidence\n- Workflow: deploy-github-pages.yml\n\n## Draft Checks\n- Identify expected host and runtime.\n- Document build command, output directory, and required environment variables.\n- Verify preview URL and production URL checks.\n- Keep deploy authority manual; Vega Lab drafts plans and inbox items only.\n\n## Evidence\n- Repository: KBLLR/Documentation_learnings-MMXX-MMXXII\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: Repository appears stale based on last activity.\n- Risk: Maintenance work has no obvious verification command.\n- Risk: Dependencies, build targets, or deployment assumptions may be outdated.",
         "evidence": [
           "Repository: KBLLR/Documentation_learnings-MMXX-MMXXII",
           "Adoption kind: ignore",
           "Capabilities: none",
           "House skills: mine-execution",
           "Finding: No test/check/lint script detected from package metadata.",
+          "Finding: Repository appears stale based on last activity.",
           "Risk: Maintenance work has no obvious verification command.",
-          "Health flag: private",
-          "Action item: Define verification for Documentation_learnings-MMXX-MMXXII"
+          "Risk: Dependencies, build targets, or deployment assumptions may be outdated."
         ]
       },
       {
         "kind": "testing",
         "title": "Documentation_learnings-MMXX-MMXXII Test Plan",
         "suggestedPath": "docs/test-plan.md",
-        "body": "# Test Plan: KBLLR/Documentation_learnings-MMXX-MMXXII\n\n## Available Commands\n- npm run prebuild\n- npm run build\n\n## Minimum Verification Contract\n- Document one install command.\n- Document one fast smoke command.\n- Document one release/build command when deployable.\n- If no commands exist, create a tracked issue or action item before implementation work.\n\n## Evidence\n- Repository: KBLLR/Documentation_learnings-MMXX-MMXXII\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Risk: Maintenance work has no obvious verification command.\n- Health flag: private\n- Action item: Define verification for Documentation_learnings-MMXX-MMXXII",
+        "body": "# Test Plan: KBLLR/Documentation_learnings-MMXX-MMXXII\n\n## Available Commands\n- npm run prebuild\n- npm run build\n\n## Minimum Verification Contract\n- Document one install command.\n- Document one fast smoke command.\n- Document one release/build command when deployable.\n- If no commands exist, create a tracked issue or action item before implementation work.\n\n## Evidence\n- Repository: KBLLR/Documentation_learnings-MMXX-MMXXII\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: Repository appears stale based on last activity.\n- Risk: Maintenance work has no obvious verification command.\n- Risk: Dependencies, build targets, or deployment assumptions may be outdated.",
         "evidence": [
           "Repository: KBLLR/Documentation_learnings-MMXX-MMXXII",
           "Adoption kind: ignore",
           "Capabilities: none",
           "House skills: mine-execution",
           "Finding: No test/check/lint script detected from package metadata.",
+          "Finding: Repository appears stale based on last activity.",
           "Risk: Maintenance work has no obvious verification command.",
-          "Health flag: private",
-          "Action item: Define verification for Documentation_learnings-MMXX-MMXXII"
+          "Risk: Dependencies, build targets, or deployment assumptions may be outdated."
         ]
       },
       {
         "kind": "action-item",
         "title": "Documentation_learnings-MMXX-MMXXII Action Item Draft",
         "suggestedPath": "ops/action-item.md",
-        "body": "# Action Item Draft: KBLLR/Documentation_learnings-MMXX-MMXXII\n\n## Recommended Actions\n- testing: Define verification for Documentation_learnings-MMXX-MMXXII\n\n## Mission Target\n- Local MLX\n\n## Evidence\n- Repository: KBLLR/Documentation_learnings-MMXX-MMXXII\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Risk: Maintenance work has no obvious verification command.\n- Health flag: private\n- Action item: Define verification for Documentation_learnings-MMXX-MMXXII",
+        "body": "# Action Item Draft: KBLLR/Documentation_learnings-MMXX-MMXXII\n\n## Recommended Actions\n- maintenance: Run a maintenance pass on Documentation_learnings-MMXX-MMXXII\n- testing: Define verification for Documentation_learnings-MMXX-MMXXII\n\n## Mission Target\n- Local MLX\n\n## Evidence\n- Repository: KBLLR/Documentation_learnings-MMXX-MMXXII\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: Repository appears stale based on last activity.\n- Risk: Maintenance work has no obvious verification command.\n- Risk: Dependencies, build targets, or deployment assumptions may be outdated.\n- Health flag: stale\n- Health flag: private",
         "evidence": [
           "Repository: KBLLR/Documentation_learnings-MMXX-MMXXII",
           "Adoption kind: ignore",
           "Capabilities: none",
           "House skills: mine-execution",
           "Finding: No test/check/lint script detected from package metadata.",
+          "Finding: Repository appears stale based on last activity.",
           "Risk: Maintenance work has no obvious verification command.",
-          "Health flag: private",
-          "Action item: Define verification for Documentation_learnings-MMXX-MMXXII"
+          "Risk: Dependencies, build targets, or deployment assumptions may be outdated.",
+          "Health flag: stale",
+          "Health flag: private"
         ]
       }
     ],
@@ -3607,8 +3635,12 @@
       "Capabilities: none",
       "House skills: mine-execution",
       "Finding: No test/check/lint script detected from package metadata.",
+      "Finding: Repository appears stale based on last activity.",
       "Risk: Maintenance work has no obvious verification command.",
+      "Risk: Dependencies, build targets, or deployment assumptions may be outdated.",
+      "Health flag: stale",
       "Health flag: private",
+      "Action item: Run a maintenance pass on Documentation_learnings-MMXX-MMXXII",
       "Action item: Define verification for Documentation_learnings-MMXX-MMXXII"
     ],
     "recommendedActions": [
@@ -3616,6 +3648,8 @@
       "ops-kit",
       "codex-mission",
       "claude-mission",
+      "maintenance-plan",
+      "maintenance:vega-lab:maintenance:kbllr-documentation-learnings-mmxx-mmxxii",
       "testing:vega-lab:testing:kbllr-documentation-learnings-mmxx-mmxxii",
       "review-draft-only"
     ]
@@ -3983,92 +4017,94 @@
         "kind": "readme",
         "title": "Final-MariCoin README Draft",
         "suggestedPath": "README.md",
-        "body": "# Final-MariCoin\n\nFinal-MariCoin needs a concise purpose statement before broader core-x adoption.\n\n## Vega Lab Fit\n- Classification: ignore\n- Capabilities: none\n- House skills: mine-execution\n\n## Local Setup\n- Package managers: npm, npm-lock\n- Document install, dev, build, and verification commands before broad reuse.\n- Keep runtime assumptions explicit; prefer local MLX/OpenResponses for model-assisted work.\n\n## Verification\n- npm run build\n\n## Evidence\n- Repository: KBLLR/Final-MariCoin\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Risk: Maintenance work has no obvious verification command.",
+        "body": "# Final-MariCoin\n\nFinal-MariCoin needs a concise purpose statement before broader core-x adoption.\n\n## Vega Lab Fit\n- Classification: ignore\n- Capabilities: none\n- House skills: mine-execution\n\n## Local Setup\n- Package managers: npm, npm-lock\n- Document install, dev, build, and verification commands before broad reuse.\n- Keep runtime assumptions explicit; prefer local MLX/OpenResponses for model-assisted work.\n\n## Verification\n- npm run build\n\n## Evidence\n- Repository: KBLLR/Final-MariCoin\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: Repository appears stale based on last activity.",
         "evidence": [
           "Repository: KBLLR/Final-MariCoin",
           "Adoption kind: ignore",
           "Capabilities: none",
           "House skills: mine-execution",
           "Finding: No test/check/lint script detected from package metadata.",
-          "Risk: Maintenance work has no obvious verification command."
+          "Finding: Repository appears stale based on last activity."
         ]
       },
       {
         "kind": "agents",
         "title": "Final-MariCoin AGENTS Draft",
         "suggestedPath": "AGENTS.md",
-        "body": "# Final-MariCoin Agents\n\n## Product Truth\n- Repository: KBLLR/Final-MariCoin\n- Vega Lab classification: ignore\n- Active mission target: Local MLX\n\n## Operating Rules\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\n\n## Commands\n- npm run build\n\n## Agent Boundaries\n- Do not mutate deployment, secrets, or release configuration without explicit approval.\n- Prefer draft plans and reviewable diffs over broad automation.\n- Preserve existing product direction; use Vega Lab evidence before adding new abstractions.",
+        "body": "# Final-MariCoin Agents\n\n## Product Truth\n- Repository: KBLLR/Final-MariCoin\n- Vega Lab classification: ignore\n- Active mission target: Local MLX\n\n## Operating Rules\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\n\n## Commands\n- npm run build\n\n## Agent Boundaries\n- Do not mutate deployment, secrets, or release configuration without explicit approval.\n- Prefer draft plans and reviewable diffs over broad automation.\n- Preserve existing product direction; use Vega Lab evidence before adding new abstractions.",
         "evidence": [
           "Repository: KBLLR/Final-MariCoin",
           "Adoption kind: ignore",
           "Capabilities: none",
           "House skills: mine-execution",
           "Finding: No test/check/lint script detected from package metadata.",
-          "Risk: Maintenance work has no obvious verification command."
+          "Finding: Repository appears stale based on last activity."
         ]
       },
       {
         "kind": "maintenance",
         "title": "Final-MariCoin Maintenance Plan",
         "suggestedPath": "docs/maintenance-plan.md",
-        "body": "# Maintenance Plan: KBLLR/Final-MariCoin\n\n## Current Signals\n- Health flag: private\n- No test/check/lint script detected from package metadata.\n\n## Recommended Pass\n- Confirm install path and package manager.\n- Run available verification commands before editing.\n- Patch stale docs, commands, and workflow assumptions first.\n- Open the smallest useful PR only after human approval.\n- Vega Lab action: mlx-mission\n- Vega Lab action: ops-kit\n- Vega Lab action: codex-mission\n- Vega Lab action: claude-mission\n\n## Evidence\n- Repository: KBLLR/Final-MariCoin\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Risk: Maintenance work has no obvious verification command.\n- Health flag: private\n- Action item: Define verification for Final-MariCoin",
+        "body": "# Maintenance Plan: KBLLR/Final-MariCoin\n\n## Current Signals\n- Health flag: stale\n- Health flag: private\n- No test/check/lint script detected from package metadata.\n- Repository appears stale based on last activity.\n\n## Recommended Pass\n- Confirm install path and package manager.\n- Run available verification commands before editing.\n- Patch stale docs, commands, and workflow assumptions first.\n- Open the smallest useful PR only after human approval.\n- Vega Lab action: mlx-mission\n- Vega Lab action: ops-kit\n- Vega Lab action: codex-mission\n- Vega Lab action: claude-mission\n- Vega Lab action: maintenance-plan\n\n## Evidence\n- Repository: KBLLR/Final-MariCoin\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: Repository appears stale based on last activity.\n- Risk: Maintenance work has no obvious verification command.\n- Risk: Dependencies, build targets, or deployment assumptions may be outdated.",
         "evidence": [
           "Repository: KBLLR/Final-MariCoin",
           "Adoption kind: ignore",
           "Capabilities: none",
           "House skills: mine-execution",
           "Finding: No test/check/lint script detected from package metadata.",
+          "Finding: Repository appears stale based on last activity.",
           "Risk: Maintenance work has no obvious verification command.",
-          "Health flag: private",
-          "Action item: Define verification for Final-MariCoin"
+          "Risk: Dependencies, build targets, or deployment assumptions may be outdated."
         ]
       },
       {
         "kind": "deployment",
         "title": "Final-MariCoin Deployment Plan",
         "suggestedPath": "docs/deployment-plan.md",
-        "body": "# Deployment Plan: KBLLR/Final-MariCoin\n\n## Known Deployment Evidence\n- No workflow or deployment config detected in synced key files.\n\n## Draft Checks\n- Identify expected host and runtime.\n- Document build command, output directory, and required environment variables.\n- Verify preview URL and production URL checks.\n- Keep deploy authority manual; Vega Lab drafts plans and inbox items only.\n\n## Evidence\n- Repository: KBLLR/Final-MariCoin\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Risk: Maintenance work has no obvious verification command.\n- Health flag: private\n- Action item: Define verification for Final-MariCoin",
+        "body": "# Deployment Plan: KBLLR/Final-MariCoin\n\n## Known Deployment Evidence\n- No workflow or deployment config detected in synced key files.\n\n## Draft Checks\n- Identify expected host and runtime.\n- Document build command, output directory, and required environment variables.\n- Verify preview URL and production URL checks.\n- Keep deploy authority manual; Vega Lab drafts plans and inbox items only.\n\n## Evidence\n- Repository: KBLLR/Final-MariCoin\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: Repository appears stale based on last activity.\n- Risk: Maintenance work has no obvious verification command.\n- Risk: Dependencies, build targets, or deployment assumptions may be outdated.",
         "evidence": [
           "Repository: KBLLR/Final-MariCoin",
           "Adoption kind: ignore",
           "Capabilities: none",
           "House skills: mine-execution",
           "Finding: No test/check/lint script detected from package metadata.",
+          "Finding: Repository appears stale based on last activity.",
           "Risk: Maintenance work has no obvious verification command.",
-          "Health flag: private",
-          "Action item: Define verification for Final-MariCoin"
+          "Risk: Dependencies, build targets, or deployment assumptions may be outdated."
         ]
       },
       {
         "kind": "testing",
         "title": "Final-MariCoin Test Plan",
         "suggestedPath": "docs/test-plan.md",
-        "body": "# Test Plan: KBLLR/Final-MariCoin\n\n## Available Commands\n- npm run build\n\n## Minimum Verification Contract\n- Document one install command.\n- Document one fast smoke command.\n- Document one release/build command when deployable.\n- If no commands exist, create a tracked issue or action item before implementation work.\n\n## Evidence\n- Repository: KBLLR/Final-MariCoin\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Risk: Maintenance work has no obvious verification command.\n- Health flag: private\n- Action item: Define verification for Final-MariCoin",
+        "body": "# Test Plan: KBLLR/Final-MariCoin\n\n## Available Commands\n- npm run build\n\n## Minimum Verification Contract\n- Document one install command.\n- Document one fast smoke command.\n- Document one release/build command when deployable.\n- If no commands exist, create a tracked issue or action item before implementation work.\n\n## Evidence\n- Repository: KBLLR/Final-MariCoin\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: Repository appears stale based on last activity.\n- Risk: Maintenance work has no obvious verification command.\n- Risk: Dependencies, build targets, or deployment assumptions may be outdated.",
         "evidence": [
           "Repository: KBLLR/Final-MariCoin",
           "Adoption kind: ignore",
           "Capabilities: none",
           "House skills: mine-execution",
           "Finding: No test/check/lint script detected from package metadata.",
+          "Finding: Repository appears stale based on last activity.",
           "Risk: Maintenance work has no obvious verification command.",
-          "Health flag: private",
-          "Action item: Define verification for Final-MariCoin"
+          "Risk: Dependencies, build targets, or deployment assumptions may be outdated."
         ]
       },
       {
         "kind": "action-item",
         "title": "Final-MariCoin Action Item Draft",
         "suggestedPath": "ops/action-item.md",
-        "body": "# Action Item Draft: KBLLR/Final-MariCoin\n\n## Recommended Actions\n- testing: Define verification for Final-MariCoin\n\n## Mission Target\n- Local MLX\n\n## Evidence\n- Repository: KBLLR/Final-MariCoin\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Risk: Maintenance work has no obvious verification command.\n- Health flag: private\n- Action item: Define verification for Final-MariCoin",
+        "body": "# Action Item Draft: KBLLR/Final-MariCoin\n\n## Recommended Actions\n- maintenance: Run a maintenance pass on Final-MariCoin\n- testing: Define verification for Final-MariCoin\n\n## Mission Target\n- Local MLX\n\n## Evidence\n- Repository: KBLLR/Final-MariCoin\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: Repository appears stale based on last activity.\n- Risk: Maintenance work has no obvious verification command.\n- Risk: Dependencies, build targets, or deployment assumptions may be outdated.\n- Health flag: stale\n- Health flag: private",
         "evidence": [
           "Repository: KBLLR/Final-MariCoin",
           "Adoption kind: ignore",
           "Capabilities: none",
           "House skills: mine-execution",
           "Finding: No test/check/lint script detected from package metadata.",
+          "Finding: Repository appears stale based on last activity.",
           "Risk: Maintenance work has no obvious verification command.",
-          "Health flag: private",
-          "Action item: Define verification for Final-MariCoin"
+          "Risk: Dependencies, build targets, or deployment assumptions may be outdated.",
+          "Health flag: stale",
+          "Health flag: private"
         ]
       }
     ],
@@ -4078,8 +4114,12 @@
       "Capabilities: none",
       "House skills: mine-execution",
       "Finding: No test/check/lint script detected from package metadata.",
+      "Finding: Repository appears stale based on last activity.",
       "Risk: Maintenance work has no obvious verification command.",
+      "Risk: Dependencies, build targets, or deployment assumptions may be outdated.",
+      "Health flag: stale",
       "Health flag: private",
+      "Action item: Run a maintenance pass on Final-MariCoin",
       "Action item: Define verification for Final-MariCoin"
     ],
     "recommendedActions": [
@@ -4087,6 +4127,8 @@
       "ops-kit",
       "codex-mission",
       "claude-mission",
+      "maintenance-plan",
+      "maintenance:vega-lab:maintenance:kbllr-final-maricoin",
       "testing:vega-lab:testing:kbllr-final-maricoin",
       "review-draft-only"
     ]
@@ -13131,7 +13173,7 @@
   },
   {
     "nwo": "KBLLR/vega-lab",
-    "generatedAt": "2026-10-08T04:47:07.000Z",
+    "generatedAt": "2026-10-09T04:50:48.000Z",
     "target": "mlx",
     "artifacts": [
       {
