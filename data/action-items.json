@@ -2410,6 +2410,37 @@
     "updatedAt": "2025-10-11T10:16:37.000Z"
   },
   {
+    "id": "vega-lab:maintenance:kbllr-hci-modules-test001",
+    "kind": "maintenance",
+    "status": "open",
+    "priority": "normal",
+    "nwo": "KBLLR/HCI_modules_test001",
+    "title": "Run a maintenance pass on HCI_modules_test001",
+    "summary": "Stale activity increases dependency, workflow, and deployment risk.",
+    "evidence": [
+      "No test/check/lint script detected from package metadata.",
+      "Repository appears stale based on last activity.",
+      "Maintenance work has no obvious verification command.",
+      "Dependencies, build targets, or deployment assumptions may be outdated."
+    ],
+    "linkedSkills": [
+      "mine-execution"
+    ],
+    "linkedRules": [
+      "Review license status before adoption or redistribution work.",
+      "Validate maintenance risk and current ecosystem fit before committing to adoption.",
+      "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
+    ],
+    "linkedFlows": [
+      "research-queue-flow",
+      "mine-execution-flow"
+    ],
+    "draft": "Draft a maintenance plan for KBLLR/HCI_modules_test001: verify dependencies, run available checks, update stale assumptions, and identify a smallest useful PR. Rules: Review license status before adoption or redistribution work. Validate maintenance risk and current ecosystem fit before committing to adoption. Prioritize README, maintenance, and execution readiness before broader ecosystem integration.",
+    "source": "daily-ops",
+    "createdAt": "2025-10-10T13:48:42.000Z",
+    "updatedAt": "2025-10-10T13:48:42.000Z"
+  },
+  {
     "id": "vega-lab:testing:kbllr-hci-modules-test001",
     "kind": "testing",
     "status": "open",
@@ -2419,13 +2450,16 @@
     "summary": "Package metadata does not expose an obvious test, check, or lint command.",
     "evidence": [
       "No test/check/lint script detected from package metadata.",
-      "Maintenance work has no obvious verification command."
+      "Repository appears stale based on last activity.",
+      "Maintenance work has no obvious verification command.",
+      "Dependencies, build targets, or deployment assumptions may be outdated."
     ],
     "linkedSkills": [
       "mine-execution"
     ],
     "linkedRules": [
       "Review license status before adoption or redistribution work.",
+      "Validate maintenance risk and current ecosystem fit before committing to adoption.",
       "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
     ],
     "linkedFlows": [
