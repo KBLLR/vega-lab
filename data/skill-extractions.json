@@ -37918,6 +37918,21 @@
     "claudeBrief": "# Claude Mission: openai/harmony\nGoal: Renderer for the harmony response format to be used with gpt-oss Primary Vega Lab fit: repo-discovery via general engineering.\nClassification: ignore\nCapabilities: none\nHouse skills: none\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
+    "nwo": "openai/math",
+    "name": "math",
+    "author": "openai",
+    "summary": "math is a candidate for ignore adoption. Primary Vega Lab fit: repo-discovery via general engineering.",
+    "capabilities": [],
+    "houseSkills": [],
+    "rules": [],
+    "flows": [
+      "research-queue-flow"
+    ],
+    "adoptionKind": "ignore",
+    "codexBrief": "# Codex Mission: openai/math\nGoal: math is a candidate for ignore adoption. Primary Vega Lab fit: repo-discovery via general engineering.\nClassification: ignore\nCapabilities: none\nHouse skills: none\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: openai/math\nGoal: math is a candidate for ignore adoption. Primary Vega Lab fit: repo-discovery via general engineering.\nClassification: ignore\nCapabilities: none\nHouse skills: none\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+  },
+  {
     "nwo": "openai/openai-agents-js",
     "name": "openai-agents-js",
     "author": "openai",
@@ -42165,7 +42180,7 @@
     "nwo": "rany2/edge-tts",
     "name": "edge-tts",
     "author": "rany2",
-    "summary": "Use Microsoft Edge's online text-to-speech service from Python WITHOUT needing Microsoft Edge or Windows or an API key Primary Vega Lab fit: repo-adoption via backend-service.",
+    "summary": "Use Microsoft Edge's online text-to-speech service from Python WITHOUT needing Microsoft Edge Primary Vega Lab fit: repo-adoption via backend-service.",
     "capabilities": [
       "backend-service",
       "ml-ai"
@@ -42182,8 +42197,8 @@
       "adoption-decision-flow"
     ],
     "adoptionKind": "service",
-    "codexBrief": "# Codex Mission: rany2/edge-tts\nGoal: Use Microsoft Edge's online text-to-speech service from Python WITHOUT needing Microsoft Edge or Windows or an API key Primary Vega Lab fit: repo-adoption via backend-service.\nClassification: service\nCapabilities: backend-service, ml-ai\nHouse skills: repo-adoption\nRules:\n- Treat external runtimes and APIs as configurable integrations with explicit environment requirements.\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: rany2/edge-tts\nGoal: Use Microsoft Edge's online text-to-speech service from Python WITHOUT needing Microsoft Edge or Windows or an API key Primary Vega Lab fit: repo-adoption via backend-service.\nClassification: service\nCapabilities: backend-service, ml-ai\nHouse skills: repo-adoption\nRules:\n- Treat external runtimes and APIs as configurable integrations with explicit environment requirements.\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: rany2/edge-tts\nGoal: Use Microsoft Edge's online text-to-speech service from Python WITHOUT needing Microsoft Edge Primary Vega Lab fit: repo-adoption via backend-service.\nClassification: service\nCapabilities: backend-service, ml-ai\nHouse skills: repo-adoption\nRules:\n- Treat external runtimes and APIs as configurable integrations with explicit environment requirements.\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: rany2/edge-tts\nGoal: Use Microsoft Edge's online text-to-speech service from Python WITHOUT needing Microsoft Edge Primary Vega Lab fit: repo-adoption via backend-service.\nClassification: service\nCapabilities: backend-service, ml-ai\nHouse skills: repo-adoption\nRules:\n- Treat external runtimes and APIs as configurable integrations with explicit environment requirements.\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "RasaHQ/rasa",
@@ -50036,15 +50051,16 @@
       "repo-adoption"
     ],
     "rules": [
-      "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house."
+      "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.",
+      "Validate maintenance risk and current ecosystem fit before committing to adoption."
     ],
     "flows": [
       "research-queue-flow",
       "adoption-decision-flow"
     ],
     "adoptionKind": "tool",
-    "codexBrief": "# Codex Mission: TianheWu/VisualQuality-R1\nGoal: [NeurIPS 2025 Spotlight] VisualQuality-R1 is the first open-sourced NR-IQA model can accurately describe and rate the image quality. Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: TianheWu/VisualQuality-R1\nGoal: [NeurIPS 2025 Spotlight] VisualQuality-R1 is the first open-sourced NR-IQA model can accurately describe and rate the image quality. Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: TianheWu/VisualQuality-R1\nGoal: [NeurIPS 2025 Spotlight] VisualQuality-R1 is the first open-sourced NR-IQA model can accurately describe and rate the image quality. Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: TianheWu/VisualQuality-R1\nGoal: [NeurIPS 2025 Spotlight] VisualQuality-R1 is the first open-sourced NR-IQA model can accurately describe and rate the image quality. Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "TianhongDai/reinforcement-learning-algorithms",
@@ -51189,24 +51205,21 @@
     "nwo": "unitaryai/detoxify",
     "name": "detoxify",
     "author": "unitaryai",
-    "summary": "Trained models & code to predict toxic comments on all 3 Jigsaw Toxic Comment Challenges. Built using ⚡ Pytorch Lightning and 🤗 Transformers. For access to our API, please email us at contact@unitary.ai. Primary Vega Lab fit: repo-adoption via backend-service.",
+    "summary": "Trained models & code to predict toxic comments on all 3 Jigsaw Toxic Comment Challenges. Built using ⚡ Pytorch Lightning and 🤗 Transformers.  Primary Vega Lab fit: repo-adoption via ml-ai.",
     "capabilities": [
-      "backend-service",
       "ml-ai"
     ],
     "houseSkills": [
       "repo-adoption"
     ],
-    "rules": [
-      "Treat external runtimes and APIs as configurable integrations with explicit environment requirements."
-    ],
+    "rules": [],
     "flows": [
       "research-queue-flow",
       "adoption-decision-flow"
     ],
-    "adoptionKind": "service",
-    "codexBrief": "# Codex Mission: unitaryai/detoxify\nGoal: Trained models & code to predict toxic comments on all 3 Jigsaw Toxic Comment Challenges. Built using ⚡ Pytorch Lightning and 🤗 Transformers. For access to our API, please email us at contact@unitary.ai. Primary Vega Lab fit: repo-adoption via backend-service.\nClassification: service\nCapabilities: backend-service, ml-ai\nHouse skills: repo-adoption\nRules:\n- Treat external runtimes and APIs as configurable integrations with explicit environment requirements.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: unitaryai/detoxify\nGoal: Trained models & code to predict toxic comments on all 3 Jigsaw Toxic Comment Challenges. Built using ⚡ Pytorch Lightning and 🤗 Transformers. For access to our API, please email us at contact@unitary.ai. Primary Vega Lab fit: repo-adoption via backend-service.\nClassification: service\nCapabilities: backend-service, ml-ai\nHouse skills: repo-adoption\nRules:\n- Treat external runtimes and APIs as configurable integrations with explicit environment requirements.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "adoptionKind": "house",
+    "codexBrief": "# Codex Mission: unitaryai/detoxify\nGoal: Trained models & code to predict toxic comments on all 3 Jigsaw Toxic Comment Challenges. Built using ⚡ Pytorch Lightning and 🤗 Transformers.  Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: house\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: unitaryai/detoxify\nGoal: Trained models & code to predict toxic comments on all 3 Jigsaw Toxic Comment Challenges. Built using ⚡ Pytorch Lightning and 🤗 Transformers.  Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: house\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "Unity-Technologies/com.unity.demoteam.hair",
