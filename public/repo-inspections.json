@@ -509,7 +509,7 @@
   },
   {
     "nwo": "KBLLR/core-x",
-    "inspectedAt": "2026-10-14T18:29:12.000Z",
+    "inspectedAt": "2026-10-16T00:53:15.000Z",
     "files": {
       "hasReadme": false,
       "packageManagers": [
@@ -1283,10 +1283,12 @@
       "buildScripts": []
     },
     "findings": [
-      "No test/check/lint script detected from package metadata."
+      "No test/check/lint script detected from package metadata.",
+      "Repository appears stale based on last activity."
     ],
     "risks": [
-      "Maintenance work has no obvious verification command."
+      "Maintenance work has no obvious verification command.",
+      "Dependencies, build targets, or deployment assumptions may be outdated."
     ]
   },
   {
@@ -1507,8 +1509,12 @@
         "build"
       ]
     },
-    "findings": [],
-    "risks": []
+    "findings": [
+      "Repository appears stale based on last activity."
+    ],
+    "risks": [
+      "Dependencies, build targets, or deployment assumptions may be outdated."
+    ]
   },
   {
     "nwo": "KBLLR/KBLLR-template-ThreeJS",
@@ -2652,7 +2658,7 @@
   },
   {
     "nwo": "KBLLR/vega-lab",
-    "inspectedAt": "2026-10-14T03:49:06.000Z",
+    "inspectedAt": "2026-10-15T03:28:41.000Z",
     "files": {
       "hasReadme": true,
       "packageManagers": [

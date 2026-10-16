@@ -2395,7 +2395,7 @@
   },
   {
     "nwo": "KBLLR/core-x",
-    "generatedAt": "2026-10-14T18:29:12.000Z",
+    "generatedAt": "2026-10-16T00:53:15.000Z",
     "target": "mlx",
     "artifacts": [
       {
@@ -6211,92 +6211,94 @@
         "kind": "readme",
         "title": "icon-generator README Draft",
         "suggestedPath": "README.md",
-        "body": "# icon-generator\n\nicon-generator needs a concise purpose statement before broader core-x adoption.\n\n## Vega Lab Fit\n- Classification: ignore\n- Capabilities: none\n- House skills: mine-execution\n\n## Local Setup\n- Package managers: npm\n- Document install, dev, build, and verification commands before broad reuse.\n- Keep runtime assumptions explicit; prefer local MLX/OpenResponses for model-assisted work.\n\n## Verification\n- Define a lint/test/build command before code edits.\n\n## Evidence\n- Repository: KBLLR/icon-generator\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Risk: Maintenance work has no obvious verification command.",
+        "body": "# icon-generator\n\nicon-generator needs a concise purpose statement before broader core-x adoption.\n\n## Vega Lab Fit\n- Classification: ignore\n- Capabilities: none\n- House skills: mine-execution\n\n## Local Setup\n- Package managers: npm\n- Document install, dev, build, and verification commands before broad reuse.\n- Keep runtime assumptions explicit; prefer local MLX/OpenResponses for model-assisted work.\n\n## Verification\n- Define a lint/test/build command before code edits.\n\n## Evidence\n- Repository: KBLLR/icon-generator\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: Repository appears stale based on last activity.",
         "evidence": [
           "Repository: KBLLR/icon-generator",
           "Adoption kind: ignore",
           "Capabilities: none",
           "House skills: mine-execution",
           "Finding: No test/check/lint script detected from package metadata.",
-          "Risk: Maintenance work has no obvious verification command."
+          "Finding: Repository appears stale based on last activity."
         ]
       },
       {
         "kind": "agents",
         "title": "icon-generator AGENTS Draft",
         "suggestedPath": "AGENTS.md",
-        "body": "# icon-generator Agents\n\n## Product Truth\n- Repository: KBLLR/icon-generator\n- Vega Lab classification: ignore\n- Active mission target: Local MLX\n\n## Operating Rules\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\n\n## Commands\n- Add the smallest reliable verification command.\n\n## Agent Boundaries\n- Do not mutate deployment, secrets, or release configuration without explicit approval.\n- Prefer draft plans and reviewable diffs over broad automation.\n- Preserve existing product direction; use Vega Lab evidence before adding new abstractions.",
+        "body": "# icon-generator Agents\n\n## Product Truth\n- Repository: KBLLR/icon-generator\n- Vega Lab classification: ignore\n- Active mission target: Local MLX\n\n## Operating Rules\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\n\n## Commands\n- Add the smallest reliable verification command.\n\n## Agent Boundaries\n- Do not mutate deployment, secrets, or release configuration without explicit approval.\n- Prefer draft plans and reviewable diffs over broad automation.\n- Preserve existing product direction; use Vega Lab evidence before adding new abstractions.",
         "evidence": [
           "Repository: KBLLR/icon-generator",
           "Adoption kind: ignore",
           "Capabilities: none",
           "House skills: mine-execution",
           "Finding: No test/check/lint script detected from package metadata.",
-          "Risk: Maintenance work has no obvious verification command."
+          "Finding: Repository appears stale based on last activity."
         ]
       },
       {
         "kind": "maintenance",
         "title": "icon-generator Maintenance Plan",
         "suggestedPath": "docs/maintenance-plan.md",
-        "body": "# Maintenance Plan: KBLLR/icon-generator\n\n## Current Signals\n- Health flag: private\n- No test/check/lint script detected from package metadata.\n\n## Recommended Pass\n- Confirm install path and package manager.\n- Run available verification commands before editing.\n- Patch stale docs, commands, and workflow assumptions first.\n- Open the smallest useful PR only after human approval.\n- Vega Lab action: mlx-mission\n- Vega Lab action: ops-kit\n- Vega Lab action: codex-mission\n- Vega Lab action: claude-mission\n\n## Evidence\n- Repository: KBLLR/icon-generator\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Risk: Maintenance work has no obvious verification command.\n- Health flag: private\n- Action item: Define verification for icon-generator",
+        "body": "# Maintenance Plan: KBLLR/icon-generator\n\n## Current Signals\n- Health flag: stale\n- Health flag: private\n- No test/check/lint script detected from package metadata.\n- Repository appears stale based on last activity.\n\n## Recommended Pass\n- Confirm install path and package manager.\n- Run available verification commands before editing.\n- Patch stale docs, commands, and workflow assumptions first.\n- Open the smallest useful PR only after human approval.\n- Vega Lab action: mlx-mission\n- Vega Lab action: ops-kit\n- Vega Lab action: codex-mission\n- Vega Lab action: claude-mission\n- Vega Lab action: maintenance-plan\n\n## Evidence\n- Repository: KBLLR/icon-generator\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: Repository appears stale based on last activity.\n- Risk: Maintenance work has no obvious verification command.\n- Risk: Dependencies, build targets, or deployment assumptions may be outdated.",
         "evidence": [
           "Repository: KBLLR/icon-generator",
           "Adoption kind: ignore",
           "Capabilities: none",
           "House skills: mine-execution",
           "Finding: No test/check/lint script detected from package metadata.",
+          "Finding: Repository appears stale based on last activity.",
           "Risk: Maintenance work has no obvious verification command.",
-          "Health flag: private",
-          "Action item: Define verification for icon-generator"
+          "Risk: Dependencies, build targets, or deployment assumptions may be outdated."
         ]
       },
       {
         "kind": "deployment",
         "title": "icon-generator Deployment Plan",
         "suggestedPath": "docs/deployment-plan.md",
-        "body": "# Deployment Plan: KBLLR/icon-generator\n\n## Known Deployment Evidence\n- No workflow or deployment config detected in synced key files.\n\n## Draft Checks\n- Identify expected host and runtime.\n- Document build command, output directory, and required environment variables.\n- Verify preview URL and production URL checks.\n- Keep deploy authority manual; Vega Lab drafts plans and inbox items only.\n\n## Evidence\n- Repository: KBLLR/icon-generator\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Risk: Maintenance work has no obvious verification command.\n- Health flag: private\n- Action item: Define verification for icon-generator",
+        "body": "# Deployment Plan: KBLLR/icon-generator\n\n## Known Deployment Evidence\n- No workflow or deployment config detected in synced key files.\n\n## Draft Checks\n- Identify expected host and runtime.\n- Document build command, output directory, and required environment variables.\n- Verify preview URL and production URL checks.\n- Keep deploy authority manual; Vega Lab drafts plans and inbox items only.\n\n## Evidence\n- Repository: KBLLR/icon-generator\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: Repository appears stale based on last activity.\n- Risk: Maintenance work has no obvious verification command.\n- Risk: Dependencies, build targets, or deployment assumptions may be outdated.",
         "evidence": [
           "Repository: KBLLR/icon-generator",
           "Adoption kind: ignore",
           "Capabilities: none",
           "House skills: mine-execution",
           "Finding: No test/check/lint script detected from package metadata.",
+          "Finding: Repository appears stale based on last activity.",
           "Risk: Maintenance work has no obvious verification command.",
-          "Health flag: private",
-          "Action item: Define verification for icon-generator"
+          "Risk: Dependencies, build targets, or deployment assumptions may be outdated."
         ]
       },
       {
         "kind": "testing",
         "title": "icon-generator Test Plan",
         "suggestedPath": "docs/test-plan.md",
-        "body": "# Test Plan: KBLLR/icon-generator\n\n## Available Commands\n- No test/check/build script detected from synced package metadata.\n\n## Minimum Verification Contract\n- Document one install command.\n- Document one fast smoke command.\n- Document one release/build command when deployable.\n- If no commands exist, create a tracked issue or action item before implementation work.\n\n## Evidence\n- Repository: KBLLR/icon-generator\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Risk: Maintenance work has no obvious verification command.\n- Health flag: private\n- Action item: Define verification for icon-generator",
+        "body": "# Test Plan: KBLLR/icon-generator\n\n## Available Commands\n- No test/check/build script detected from synced package metadata.\n\n## Minimum Verification Contract\n- Document one install command.\n- Document one fast smoke command.\n- Document one release/build command when deployable.\n- If no commands exist, create a tracked issue or action item before implementation work.\n\n## Evidence\n- Repository: KBLLR/icon-generator\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: Repository appears stale based on last activity.\n- Risk: Maintenance work has no obvious verification command.\n- Risk: Dependencies, build targets, or deployment assumptions may be outdated.",
         "evidence": [
           "Repository: KBLLR/icon-generator",
           "Adoption kind: ignore",
           "Capabilities: none",
           "House skills: mine-execution",
           "Finding: No test/check/lint script detected from package metadata.",
+          "Finding: Repository appears stale based on last activity.",
           "Risk: Maintenance work has no obvious verification command.",
-          "Health flag: private",
-          "Action item: Define verification for icon-generator"
+          "Risk: Dependencies, build targets, or deployment assumptions may be outdated."
         ]
       },
       {
         "kind": "action-item",
         "title": "icon-generator Action Item Draft",
         "suggestedPath": "ops/action-item.md",
-        "body": "# Action Item Draft: KBLLR/icon-generator\n\n## Recommended Actions\n- testing: Define verification for icon-generator\n\n## Mission Target\n- Local MLX\n\n## Evidence\n- Repository: KBLLR/icon-generator\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Risk: Maintenance work has no obvious verification command.\n- Health flag: private\n- Action item: Define verification for icon-generator",
+        "body": "# Action Item Draft: KBLLR/icon-generator\n\n## Recommended Actions\n- maintenance: Run a maintenance pass on icon-generator\n- testing: Define verification for icon-generator\n\n## Mission Target\n- Local MLX\n\n## Evidence\n- Repository: KBLLR/icon-generator\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: Repository appears stale based on last activity.\n- Risk: Maintenance work has no obvious verification command.\n- Risk: Dependencies, build targets, or deployment assumptions may be outdated.\n- Health flag: stale\n- Health flag: private",
         "evidence": [
           "Repository: KBLLR/icon-generator",
           "Adoption kind: ignore",
           "Capabilities: none",
           "House skills: mine-execution",
           "Finding: No test/check/lint script detected from package metadata.",
+          "Finding: Repository appears stale based on last activity.",
           "Risk: Maintenance work has no obvious verification command.",
-          "Health flag: private",
-          "Action item: Define verification for icon-generator"
+          "Risk: Dependencies, build targets, or deployment assumptions may be outdated.",
+          "Health flag: stale",
+          "Health flag: private"
         ]
       }
     ],
@@ -6306,8 +6308,12 @@
       "Capabilities: none",
       "House skills: mine-execution",
       "Finding: No test/check/lint script detected from package metadata.",
+      "Finding: Repository appears stale based on last activity.",
       "Risk: Maintenance work has no obvious verification command.",
+      "Risk: Dependencies, build targets, or deployment assumptions may be outdated.",
+      "Health flag: stale",
       "Health flag: private",
+      "Action item: Run a maintenance pass on icon-generator",
       "Action item: Define verification for icon-generator"
     ],
     "recommendedActions": [
@@ -6315,6 +6321,8 @@
       "ops-kit",
       "codex-mission",
       "claude-mission",
+      "maintenance-plan",
+      "maintenance:vega-lab:maintenance:kbllr-icon-generator",
       "testing:vega-lab:testing:kbllr-icon-generator",
       "review-draft-only"
     ]
@@ -7275,88 +7283,94 @@
         "kind": "readme",
         "title": "kbllr-graphics-threejs README Draft",
         "suggestedPath": "README.md",
-        "body": "# kbllr-graphics-threejs\n\nAn evolving portfolio of small-scale projects showcasing my journey in learning and experimenting with diverse web technologies. (WIP)\n\n## Vega Lab Fit\n- Classification: house\n- Capabilities: frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n\n## Local Setup\n- Package managers: npm, npm-lock\n- Document install, dev, build, and verification commands before broad reuse.\n- Keep runtime assumptions explicit; prefer local MLX/OpenResponses for model-assisted work.\n\n## Verification\n- npm run test\n- npm run build\n\n## Evidence\n- Repository: KBLLR/kbllr-graphics-threejs\n- Description: An evolving portfolio of small-scale projects showcasing my journey in learning and experimenting with diverse web technologies. (WIP)\n- Adoption kind: house\n- Capabilities: frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Action item: Define verification for kbllr-graphics-threejs",
+        "body": "# kbllr-graphics-threejs\n\nAn evolving portfolio of small-scale projects showcasing my journey in learning and experimenting with diverse web technologies. (WIP)\n\n## Vega Lab Fit\n- Classification: house\n- Capabilities: frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n\n## Local Setup\n- Package managers: npm, npm-lock\n- Document install, dev, build, and verification commands before broad reuse.\n- Keep runtime assumptions explicit; prefer local MLX/OpenResponses for model-assisted work.\n\n## Verification\n- npm run test\n- npm run build\n\n## Evidence\n- Repository: KBLLR/kbllr-graphics-threejs\n- Description: An evolving portfolio of small-scale projects showcasing my journey in learning and experimenting with diverse web technologies. (WIP)\n- Adoption kind: house\n- Capabilities: frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Finding: Repository appears stale based on last activity.",
         "evidence": [
           "Repository: KBLLR/kbllr-graphics-threejs",
           "Description: An evolving portfolio of small-scale projects showcasing my journey in learning and experimenting with diverse web technologies. (WIP)",
           "Adoption kind: house",
           "Capabilities: frontend-ui",
           "House skills: repo-discovery, repo-adoption, mine-execution",
-          "Action item: Define verification for kbllr-graphics-threejs"
+          "Finding: Repository appears stale based on last activity."
         ]
       },
       {
         "kind": "agents",
         "title": "kbllr-graphics-threejs AGENTS Draft",
         "suggestedPath": "AGENTS.md",
-        "body": "# kbllr-graphics-threejs Agents\n\n## Product Truth\n- Repository: KBLLR/kbllr-graphics-threejs\n- Vega Lab classification: house\n- Active mission target: Local MLX\n\n## Operating Rules\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\n\n## Commands\n- npm run test\n- npm run build\n\n## Agent Boundaries\n- Do not mutate deployment, secrets, or release configuration without explicit approval.\n- Prefer draft plans and reviewable diffs over broad automation.\n- Preserve existing product direction; use Vega Lab evidence before adding new abstractions.",
+        "body": "# kbllr-graphics-threejs Agents\n\n## Product Truth\n- Repository: KBLLR/kbllr-graphics-threejs\n- Vega Lab classification: house\n- Active mission target: Local MLX\n\n## Operating Rules\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\n\n## Commands\n- npm run test\n- npm run build\n\n## Agent Boundaries\n- Do not mutate deployment, secrets, or release configuration without explicit approval.\n- Prefer draft plans and reviewable diffs over broad automation.\n- Preserve existing product direction; use Vega Lab evidence before adding new abstractions.",
         "evidence": [
           "Repository: KBLLR/kbllr-graphics-threejs",
           "Description: An evolving portfolio of small-scale projects showcasing my journey in learning and experimenting with diverse web technologies. (WIP)",
           "Adoption kind: house",
           "Capabilities: frontend-ui",
           "House skills: repo-discovery, repo-adoption, mine-execution",
-          "Action item: Define verification for kbllr-graphics-threejs"
+          "Finding: Repository appears stale based on last activity."
         ]
       },
       {
         "kind": "maintenance",
         "title": "kbllr-graphics-threejs Maintenance Plan",
         "suggestedPath": "docs/maintenance-plan.md",
-        "body": "# Maintenance Plan: KBLLR/kbllr-graphics-threejs\n\n## Current Signals\n- No maintenance flags detected.\n\n## Recommended Pass\n- Confirm install path and package manager.\n- Run available verification commands before editing.\n- Patch stale docs, commands, and workflow assumptions first.\n- Open the smallest useful PR only after human approval.\n- Vega Lab action: mlx-mission\n- Vega Lab action: ops-kit\n- Vega Lab action: codex-mission\n- Vega Lab action: claude-mission\n- Vega Lab action: house-integration\n\n## Evidence\n- Repository: KBLLR/kbllr-graphics-threejs\n- Description: An evolving portfolio of small-scale projects showcasing my journey in learning and experimenting with diverse web technologies. (WIP)\n- Adoption kind: house\n- Capabilities: frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Action item: Define verification for kbllr-graphics-threejs\n- Action item: Clarify deployment readiness for kbllr-graphics-threejs",
+        "body": "# Maintenance Plan: KBLLR/kbllr-graphics-threejs\n\n## Current Signals\n- Health flag: stale\n- Repository appears stale based on last activity.\n\n## Recommended Pass\n- Confirm install path and package manager.\n- Run available verification commands before editing.\n- Patch stale docs, commands, and workflow assumptions first.\n- Open the smallest useful PR only after human approval.\n- Vega Lab action: mlx-mission\n- Vega Lab action: ops-kit\n- Vega Lab action: codex-mission\n- Vega Lab action: claude-mission\n- Vega Lab action: maintenance-plan\n- Vega Lab action: house-integration\n\n## Evidence\n- Repository: KBLLR/kbllr-graphics-threejs\n- Description: An evolving portfolio of small-scale projects showcasing my journey in learning and experimenting with diverse web technologies. (WIP)\n- Adoption kind: house\n- Capabilities: frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Finding: Repository appears stale based on last activity.\n- Risk: Dependencies, build targets, or deployment assumptions may be outdated.\n- Health flag: stale",
         "evidence": [
           "Repository: KBLLR/kbllr-graphics-threejs",
           "Description: An evolving portfolio of small-scale projects showcasing my journey in learning and experimenting with diverse web technologies. (WIP)",
           "Adoption kind: house",
           "Capabilities: frontend-ui",
           "House skills: repo-discovery, repo-adoption, mine-execution",
-          "Action item: Define verification for kbllr-graphics-threejs",
-          "Action item: Clarify deployment readiness for kbllr-graphics-threejs"
+          "Finding: Repository appears stale based on last activity.",
+          "Risk: Dependencies, build targets, or deployment assumptions may be outdated.",
+          "Health flag: stale"
         ]
       },
       {
         "kind": "deployment",
         "title": "kbllr-graphics-threejs Deployment Plan",
         "suggestedPath": "docs/deployment-plan.md",
-        "body": "# Deployment Plan: KBLLR/kbllr-graphics-threejs\n\n## Known Deployment Evidence\n- Workflow: deploy.yml\n\n## Draft Checks\n- Identify expected host and runtime.\n- Document build command, output directory, and required environment variables.\n- Verify preview URL and production URL checks.\n- Keep deploy authority manual; Vega Lab drafts plans and inbox items only.\n\n## Evidence\n- Repository: KBLLR/kbllr-graphics-threejs\n- Description: An evolving portfolio of small-scale projects showcasing my journey in learning and experimenting with diverse web technologies. (WIP)\n- Adoption kind: house\n- Capabilities: frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Action item: Define verification for kbllr-graphics-threejs\n- Action item: Clarify deployment readiness for kbllr-graphics-threejs",
+        "body": "# Deployment Plan: KBLLR/kbllr-graphics-threejs\n\n## Known Deployment Evidence\n- Workflow: deploy.yml\n\n## Draft Checks\n- Identify expected host and runtime.\n- Document build command, output directory, and required environment variables.\n- Verify preview URL and production URL checks.\n- Keep deploy authority manual; Vega Lab drafts plans and inbox items only.\n\n## Evidence\n- Repository: KBLLR/kbllr-graphics-threejs\n- Description: An evolving portfolio of small-scale projects showcasing my journey in learning and experimenting with diverse web technologies. (WIP)\n- Adoption kind: house\n- Capabilities: frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Finding: Repository appears stale based on last activity.\n- Risk: Dependencies, build targets, or deployment assumptions may be outdated.\n- Health flag: stale",
         "evidence": [
           "Repository: KBLLR/kbllr-graphics-threejs",
           "Description: An evolving portfolio of small-scale projects showcasing my journey in learning and experimenting with diverse web technologies. (WIP)",
           "Adoption kind: house",
           "Capabilities: frontend-ui",
           "House skills: repo-discovery, repo-adoption, mine-execution",
-          "Action item: Define verification for kbllr-graphics-threejs",
-          "Action item: Clarify deployment readiness for kbllr-graphics-threejs"
+          "Finding: Repository appears stale based on last activity.",
+          "Risk: Dependencies, build targets, or deployment assumptions may be outdated.",
+          "Health flag: stale"
         ]
       },
       {
         "kind": "testing",
         "title": "kbllr-graphics-threejs Test Plan",
         "suggestedPath": "docs/test-plan.md",
-        "body": "# Test Plan: KBLLR/kbllr-graphics-threejs\n\n## Available Commands\n- npm run test\n- npm run build\n\n## Minimum Verification Contract\n- Document one install command.\n- Document one fast smoke command.\n- Document one release/build command when deployable.\n- If no commands exist, create a tracked issue or action item before implementation work.\n\n## Evidence\n- Repository: KBLLR/kbllr-graphics-threejs\n- Description: An evolving portfolio of small-scale projects showcasing my journey in learning and experimenting with diverse web technologies. (WIP)\n- Adoption kind: house\n- Capabilities: frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Action item: Define verification for kbllr-graphics-threejs\n- Action item: Clarify deployment readiness for kbllr-graphics-threejs",
+        "body": "# Test Plan: KBLLR/kbllr-graphics-threejs\n\n## Available Commands\n- npm run test\n- npm run build\n\n## Minimum Verification Contract\n- Document one install command.\n- Document one fast smoke command.\n- Document one release/build command when deployable.\n- If no commands exist, create a tracked issue or action item before implementation work.\n\n## Evidence\n- Repository: KBLLR/kbllr-graphics-threejs\n- Description: An evolving portfolio of small-scale projects showcasing my journey in learning and experimenting with diverse web technologies. (WIP)\n- Adoption kind: house\n- Capabilities: frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Finding: Repository appears stale based on last activity.\n- Risk: Dependencies, build targets, or deployment assumptions may be outdated.\n- Health flag: stale",
         "evidence": [
           "Repository: KBLLR/kbllr-graphics-threejs",
           "Description: An evolving portfolio of small-scale projects showcasing my journey in learning and experimenting with diverse web technologies. (WIP)",
           "Adoption kind: house",
           "Capabilities: frontend-ui",
           "House skills: repo-discovery, repo-adoption, mine-execution",
-          "Action item: Define verification for kbllr-graphics-threejs",
-          "Action item: Clarify deployment readiness for kbllr-graphics-threejs"
+          "Finding: Repository appears stale based on last activity.",
+          "Risk: Dependencies, build targets, or deployment assumptions may be outdated.",
+          "Health flag: stale"
         ]
       },
       {
         "kind": "action-item",
         "title": "kbllr-graphics-threejs Action Item Draft",
         "suggestedPath": "ops/action-item.md",
-        "body": "# Action Item Draft: KBLLR/kbllr-graphics-threejs\n\n## Recommended Actions\n- testing: Define verification for kbllr-graphics-threejs\n- deployment: Clarify deployment readiness for kbllr-graphics-threejs\n\n## Mission Target\n- Local MLX\n\n## Evidence\n- Repository: KBLLR/kbllr-graphics-threejs\n- Description: An evolving portfolio of small-scale projects showcasing my journey in learning and experimenting with diverse web technologies. (WIP)\n- Adoption kind: house\n- Capabilities: frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Action item: Define verification for kbllr-graphics-threejs\n- Action item: Clarify deployment readiness for kbllr-graphics-threejs",
+        "body": "# Action Item Draft: KBLLR/kbllr-graphics-threejs\n\n## Recommended Actions\n- maintenance: Run a maintenance pass on kbllr-graphics-threejs\n- testing: Define verification for kbllr-graphics-threejs\n- deployment: Clarify deployment readiness for kbllr-graphics-threejs\n\n## Mission Target\n- Local MLX\n\n## Evidence\n- Repository: KBLLR/kbllr-graphics-threejs\n- Description: An evolving portfolio of small-scale projects showcasing my journey in learning and experimenting with diverse web technologies. (WIP)\n- Adoption kind: house\n- Capabilities: frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Finding: Repository appears stale based on last activity.\n- Risk: Dependencies, build targets, or deployment assumptions may be outdated.\n- Health flag: stale\n- Action item: Run a maintenance pass on kbllr-graphics-threejs\n- Action item: Define verification for kbllr-graphics-threejs",
         "evidence": [
           "Repository: KBLLR/kbllr-graphics-threejs",
           "Description: An evolving portfolio of small-scale projects showcasing my journey in learning and experimenting with diverse web technologies. (WIP)",
           "Adoption kind: house",
           "Capabilities: frontend-ui",
           "House skills: repo-discovery, repo-adoption, mine-execution",
-          "Action item: Define verification for kbllr-graphics-threejs",
-          "Action item: Clarify deployment readiness for kbllr-graphics-threejs"
+          "Finding: Repository appears stale based on last activity.",
+          "Risk: Dependencies, build targets, or deployment assumptions may be outdated.",
+          "Health flag: stale",
+          "Action item: Run a maintenance pass on kbllr-graphics-threejs",
+          "Action item: Define verification for kbllr-graphics-threejs"
         ]
       }
     ],
@@ -7366,6 +7380,10 @@
       "Adoption kind: house",
       "Capabilities: frontend-ui",
       "House skills: repo-discovery, repo-adoption, mine-execution",
+      "Finding: Repository appears stale based on last activity.",
+      "Risk: Dependencies, build targets, or deployment assumptions may be outdated.",
+      "Health flag: stale",
+      "Action item: Run a maintenance pass on kbllr-graphics-threejs",
       "Action item: Define verification for kbllr-graphics-threejs",
       "Action item: Clarify deployment readiness for kbllr-graphics-threejs"
     ],
@@ -7374,7 +7392,9 @@
       "ops-kit",
       "codex-mission",
       "claude-mission",
+      "maintenance-plan",
       "house-integration",
+      "maintenance:vega-lab:maintenance:kbllr-kbllr-graphics-threejs",
       "testing:vega-lab:testing:kbllr-kbllr-graphics-threejs",
       "deployment:vega-lab:deployment:kbllr-kbllr-graphics-threejs",
       "review-draft-only"
@@ -13187,7 +13207,7 @@
   },
   {
     "nwo": "KBLLR/vega-lab",
-    "generatedAt": "2026-10-14T03:49:06.000Z",
+    "generatedAt": "2026-10-15T03:28:41.000Z",
     "target": "mlx",
     "artifacts": [
       {
