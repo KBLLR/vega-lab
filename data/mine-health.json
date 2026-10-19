@@ -1,11 +1,47 @@
 [
   {
+    "nwo": "KBLLR/oink-oink",
+    "name": "oink-oink",
+    "author": "KBLLR",
+    "visibility": "private",
+    "hasReadme": true,
+    "updatedAt": "2026-10-18T16:47:49.000Z",
+    "healthFlags": [
+      "private"
+    ],
+    "recommendedActions": [
+      "mlx-mission",
+      "ops-kit",
+      "codex-mission",
+      "claude-mission",
+      "house-integration"
+    ]
+  },
+  {
+    "nwo": "KBLLR/characters-lab",
+    "name": "characters-lab",
+    "author": "KBLLR",
+    "visibility": "private",
+    "hasReadme": true,
+    "updatedAt": "2026-10-18T16:33:58.000Z",
+    "healthFlags": [
+      "private"
+    ],
+    "recommendedActions": [
+      "mlx-mission",
+      "ops-kit",
+      "codex-mission",
+      "claude-mission",
+      "house-integration"
+    ]
+  },
+  {
     "nwo": "KBLLR/vega-lab",
     "name": "vega-lab",
     "author": "KBLLR",
     "visibility": "public",
     "hasReadme": true,
-    "updatedAt": "2026-10-17T03:16:48.000Z",
+    "updatedAt": "2026-10-18T03:18:31.000Z",
     "healthFlags": [],
     "recommendedActions": [
       "mlx-mission",
@@ -120,24 +156,6 @@
       "codex-mission",
       "claude-mission",
       "write-readme",
-      "house-integration"
-    ]
-  },
-  {
-    "nwo": "KBLLR/characters-lab",
-    "name": "characters-lab",
-    "author": "KBLLR",
-    "visibility": "private",
-    "hasReadme": true,
-    "updatedAt": "2026-09-03T16:45:28.000Z",
-    "healthFlags": [
-      "private"
-    ],
-    "recommendedActions": [
-      "mlx-mission",
-      "ops-kit",
-      "codex-mission",
-      "claude-mission",
       "house-integration"
     ]
   },
@@ -688,6 +706,7 @@
     "hasReadme": true,
     "updatedAt": "2025-10-18T14:19:46.000Z",
     "healthFlags": [
+      "stale",
       "private",
       "template-candidate"
     ],
@@ -696,6 +715,7 @@
       "ops-kit",
       "codex-mission",
       "claude-mission",
+      "maintenance-plan",
       "template-plan",
       "house-integration"
     ]
@@ -708,6 +728,7 @@
     "hasReadme": true,
     "updatedAt": "2025-10-18T04:17:29.000Z",
     "healthFlags": [
+      "stale",
       "fork"
     ],
     "recommendedActions": [
@@ -715,6 +736,7 @@
       "ops-kit",
       "codex-mission",
       "claude-mission",
+      "maintenance-plan",
       "house-integration"
     ]
   },

@@ -329,6 +329,72 @@
     "updatedAt": "2023-07-07T07:02:56.000Z"
   },
   {
+    "id": "vega-lab:testing:kbllr-oink-oink",
+    "kind": "testing",
+    "status": "open",
+    "priority": "normal",
+    "nwo": "KBLLR/oink-oink",
+    "title": "Define verification for oink-oink",
+    "summary": "Package metadata does not expose an obvious test, check, or lint command.",
+    "evidence": [
+      "No test/check/lint script detected from package metadata.",
+      "No build script detected from package metadata.",
+      "No workflow or deployment config detected in synced key files.",
+      "Maintenance work has no obvious verification command.",
+      "Deployment readiness is unclear."
+    ],
+    "linkedSkills": [
+      "repo-adoption",
+      "mine-execution"
+    ],
+    "linkedRules": [
+      "Review license status before adoption or redistribution work.",
+      "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
+    ],
+    "linkedFlows": [
+      "research-queue-flow",
+      "adoption-decision-flow",
+      "mine-execution-flow"
+    ],
+    "draft": "Draft a verification plan for KBLLR/oink-oink: add or document lint/test/build commands and define the smallest smoke test agents should run before edits.",
+    "source": "daily-ops",
+    "createdAt": "2026-10-18T16:47:49.000Z",
+    "updatedAt": "2026-10-18T16:47:49.000Z"
+  },
+  {
+    "id": "vega-lab:deployment:kbllr-oink-oink",
+    "kind": "deployment",
+    "status": "open",
+    "priority": "normal",
+    "nwo": "KBLLR/oink-oink",
+    "title": "Clarify deployment readiness for oink-oink",
+    "summary": "Vega Lab could not detect workflow or deployment configuration from synced key files.",
+    "evidence": [
+      "No test/check/lint script detected from package metadata.",
+      "No build script detected from package metadata.",
+      "No workflow or deployment config detected in synced key files.",
+      "Maintenance work has no obvious verification command.",
+      "Deployment readiness is unclear."
+    ],
+    "linkedSkills": [
+      "repo-adoption",
+      "mine-execution"
+    ],
+    "linkedRules": [
+      "Review license status before adoption or redistribution work.",
+      "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
+    ],
+    "linkedFlows": [
+      "research-queue-flow",
+      "adoption-decision-flow",
+      "mine-execution-flow"
+    ],
+    "draft": "Draft a deployment readiness brief for KBLLR/oink-oink: identify expected host, build command, env vars, workflow status, and verification URL checks. Evidence: No test/check/lint script detected from package metadata. No build script detected from package metadata. No workflow or deployment config detected in synced key files.",
+    "source": "daily-ops",
+    "createdAt": "2026-10-18T16:47:49.000Z",
+    "updatedAt": "2026-10-18T16:47:49.000Z"
+  },
+  {
     "id": "vega-lab:testing:kbllr-core-x-wiki",
     "kind": "testing",
     "status": "open",
@@ -2054,17 +2120,19 @@
     "updatedAt": "2025-11-10T04:51:23.000Z"
   },
   {
-    "id": "vega-lab:testing:kbllr-kbllr-template-threejs",
-    "kind": "testing",
+    "id": "vega-lab:maintenance:kbllr-kbllr-template-threejs",
+    "kind": "maintenance",
     "status": "open",
     "priority": "normal",
     "nwo": "KBLLR/KBLLR-template-ThreeJS",
-    "title": "Define verification for KBLLR-template-ThreeJS",
-    "summary": "Package metadata does not expose an obvious test, check, or lint command.",
+    "title": "Run a maintenance pass on KBLLR-template-ThreeJS",
+    "summary": "Stale activity increases dependency, workflow, and deployment risk.",
     "evidence": [
       "No test/check/lint script detected from package metadata.",
+      "Repository appears stale based on last activity.",
       "Repository has template/scaffold signals.",
-      "Maintenance work has no obvious verification command."
+      "Maintenance work has no obvious verification command.",
+      "Dependencies, build targets, or deployment assumptions may be outdated."
     ],
     "linkedSkills": [
       "skill-extraction",
@@ -2074,6 +2142,44 @@
     "linkedRules": [
       "Adopt this as a scaffold or reference, not as a long-lived runtime dependency.",
       "Review license status before adoption or redistribution work.",
+      "Validate maintenance risk and current ecosystem fit before committing to adoption.",
+      "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
+    ],
+    "linkedFlows": [
+      "research-queue-flow",
+      "skill-extraction-flow",
+      "adoption-decision-flow",
+      "mine-execution-flow"
+    ],
+    "draft": "Draft a maintenance plan for KBLLR/KBLLR-template-ThreeJS: verify dependencies, run available checks, update stale assumptions, and identify a smallest useful PR. Rules: Adopt this as a scaffold or reference, not as a long-lived runtime dependency. Review license status before adoption or redistribution work. Validate maintenance risk and current ecosystem fit before committing to adoption. Prioritize README, maintenance, and execution readiness before broader ecosystem integration.",
+    "source": "daily-ops",
+    "createdAt": "2025-10-18T14:19:46.000Z",
+    "updatedAt": "2025-10-18T14:19:46.000Z"
+  },
+  {
+    "id": "vega-lab:testing:kbllr-kbllr-template-threejs",
+    "kind": "testing",
+    "status": "open",
+    "priority": "normal",
+    "nwo": "KBLLR/KBLLR-template-ThreeJS",
+    "title": "Define verification for KBLLR-template-ThreeJS",
+    "summary": "Package metadata does not expose an obvious test, check, or lint command.",
+    "evidence": [
+      "No test/check/lint script detected from package metadata.",
+      "Repository appears stale based on last activity.",
+      "Repository has template/scaffold signals.",
+      "Maintenance work has no obvious verification command.",
+      "Dependencies, build targets, or deployment assumptions may be outdated."
+    ],
+    "linkedSkills": [
+      "skill-extraction",
+      "repo-adoption",
+      "mine-execution"
+    ],
+    "linkedRules": [
+      "Adopt this as a scaffold or reference, not as a long-lived runtime dependency.",
+      "Review license status before adoption or redistribution work.",
+      "Validate maintenance risk and current ecosystem fit before committing to adoption.",
       "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
     ],
     "linkedFlows": [
@@ -2097,8 +2203,10 @@
     "summary": "The repo has scaffold signals that may become a reusable core-x pattern.",
     "evidence": [
       "No test/check/lint script detected from package metadata.",
+      "Repository appears stale based on last activity.",
       "Repository has template/scaffold signals.",
-      "Maintenance work has no obvious verification command."
+      "Maintenance work has no obvious verification command.",
+      "Dependencies, build targets, or deployment assumptions may be outdated."
     ],
     "linkedSkills": [
       "skill-extraction",
@@ -2108,6 +2216,7 @@
     "linkedRules": [
       "Adopt this as a scaffold or reference, not as a long-lived runtime dependency.",
       "Review license status before adoption or redistribution work.",
+      "Validate maintenance risk and current ecosystem fit before committing to adoption.",
       "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
     ],
     "linkedFlows": [
@@ -2122,6 +2231,39 @@
     "updatedAt": "2025-10-18T14:19:46.000Z"
   },
   {
+    "id": "vega-lab:maintenance:kbllr-panorama-to-cubemap",
+    "kind": "maintenance",
+    "status": "open",
+    "priority": "normal",
+    "nwo": "KBLLR/panorama-to-cubemap",
+    "title": "Run a maintenance pass on panorama-to-cubemap",
+    "summary": "Stale activity increases dependency, workflow, and deployment risk.",
+    "evidence": [
+      "No test/check/lint script detected from package metadata.",
+      "No workflow or deployment config detected in synced key files.",
+      "Repository appears stale based on last activity.",
+      "Maintenance work has no obvious verification command.",
+      "Deployment readiness is unclear."
+    ],
+    "linkedSkills": [
+      "repo-adoption",
+      "mine-execution"
+    ],
+    "linkedRules": [
+      "Validate maintenance risk and current ecosystem fit before committing to adoption.",
+      "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
+    ],
+    "linkedFlows": [
+      "research-queue-flow",
+      "adoption-decision-flow",
+      "mine-execution-flow"
+    ],
+    "draft": "Draft a maintenance plan for KBLLR/panorama-to-cubemap: verify dependencies, run available checks, update stale assumptions, and identify a smallest useful PR. Rules: Validate maintenance risk and current ecosystem fit before committing to adoption. Prioritize README, maintenance, and execution readiness before broader ecosystem integration.",
+    "source": "daily-ops",
+    "createdAt": "2025-10-18T04:17:29.000Z",
+    "updatedAt": "2025-10-18T04:17:29.000Z"
+  },
+  {
     "id": "vega-lab:testing:kbllr-panorama-to-cubemap",
     "kind": "testing",
     "status": "open",
@@ -2132,6 +2274,7 @@
     "evidence": [
       "No test/check/lint script detected from package metadata.",
       "No workflow or deployment config detected in synced key files.",
+      "Repository appears stale based on last activity.",
       "Maintenance work has no obvious verification command.",
       "Deployment readiness is unclear."
     ],
@@ -2140,6 +2283,7 @@
       "mine-execution"
     ],
     "linkedRules": [
+      "Validate maintenance risk and current ecosystem fit before committing to adoption.",
       "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
     ],
     "linkedFlows": [
@@ -2163,6 +2307,7 @@
     "evidence": [
       "No test/check/lint script detected from package metadata.",
       "No workflow or deployment config detected in synced key files.",
+      "Repository appears stale based on last activity.",
       "Maintenance work has no obvious verification command.",
       "Deployment readiness is unclear."
     ],
@@ -2171,6 +2316,7 @@
       "mine-execution"
     ],
     "linkedRules": [
+      "Validate maintenance risk and current ecosystem fit before committing to adoption.",
       "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
     ],
     "linkedFlows": [

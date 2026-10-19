@@ -26011,6 +26011,7 @@
     "rules": [
       "Adopt this as a scaffold or reference, not as a long-lived runtime dependency.",
       "Review license status before adoption or redistribution work.",
+      "Validate maintenance risk and current ecosystem fit before committing to adoption.",
       "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
     ],
     "flows": [
@@ -26020,8 +26021,8 @@
       "mine-execution-flow"
     ],
     "adoptionKind": "template",
-    "codexBrief": "# Codex Mission: KBLLR/KBLLR-template-ThreeJS\nGoal: KBLLR-template-ThreeJS is a candidate for template adoption. Primary Vega Lab fit: skill-extraction via template-scaffolding.\nClassification: template\nCapabilities: template-scaffolding\nHouse skills: skill-extraction, repo-adoption, mine-execution\nRules:\n- Adopt this as a scaffold or reference, not as a long-lived runtime dependency.\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: KBLLR/KBLLR-template-ThreeJS\nGoal: KBLLR-template-ThreeJS is a candidate for template adoption. Primary Vega Lab fit: skill-extraction via template-scaffolding.\nClassification: template\nCapabilities: template-scaffolding\nHouse skills: skill-extraction, repo-adoption, mine-execution\nRules:\n- Adopt this as a scaffold or reference, not as a long-lived runtime dependency.\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: KBLLR/KBLLR-template-ThreeJS\nGoal: KBLLR-template-ThreeJS is a candidate for template adoption. Primary Vega Lab fit: skill-extraction via template-scaffolding.\nClassification: template\nCapabilities: template-scaffolding\nHouse skills: skill-extraction, repo-adoption, mine-execution\nRules:\n- Adopt this as a scaffold or reference, not as a long-lived runtime dependency.\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: KBLLR/KBLLR-template-ThreeJS\nGoal: KBLLR-template-ThreeJS is a candidate for template adoption. Primary Vega Lab fit: skill-extraction via template-scaffolding.\nClassification: template\nCapabilities: template-scaffolding\nHouse skills: skill-extraction, repo-adoption, mine-execution\nRules:\n- Adopt this as a scaffold or reference, not as a long-lived runtime dependency.\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "KBLLR/LANDING_PAGE-001",
@@ -26456,6 +26457,29 @@
     "claudeBrief": "# Claude Mission: KBLLR/OBLIK-3D-Furniture-Configurator\nGoal: Developing a custom 3D furniture viewer and configurator for emblematic Design shop \"OBLIK\" (Berlin) Primary Vega Lab fit: mine-execution via general engineering.\nClassification: ignore\nCapabilities: none\nHouse skills: mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
+    "nwo": "KBLLR/oink-oink",
+    "name": "oink-oink",
+    "author": "KBLLR",
+    "summary": "MONSTERA OINK household iPad app, OINK for Mac, projection Primary Vega Lab fit: repo-adoption via general engineering.",
+    "capabilities": [],
+    "houseSkills": [
+      "repo-adoption",
+      "mine-execution"
+    ],
+    "rules": [
+      "Review license status before adoption or redistribution work.",
+      "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
+    ],
+    "flows": [
+      "research-queue-flow",
+      "adoption-decision-flow",
+      "mine-execution-flow"
+    ],
+    "adoptionKind": "house",
+    "codexBrief": "# Codex Mission: KBLLR/oink-oink\nGoal: MONSTERA OINK household iPad app, OINK for Mac, projection Primary Vega Lab fit: repo-adoption via general engineering.\nClassification: house\nCapabilities: none\nHouse skills: repo-adoption, mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: KBLLR/oink-oink\nGoal: MONSTERA OINK household iPad app, OINK for Mac, projection Primary Vega Lab fit: repo-adoption via general engineering.\nClassification: house\nCapabilities: none\nHouse skills: repo-adoption, mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+  },
+  {
     "nwo": "KBLLR/panorama-to-cubemap",
     "name": "panorama-to-cubemap",
     "author": "KBLLR",
@@ -26466,6 +26490,7 @@
       "mine-execution"
     ],
     "rules": [
+      "Validate maintenance risk and current ecosystem fit before committing to adoption.",
       "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
     ],
     "flows": [
@@ -26474,8 +26499,8 @@
       "mine-execution-flow"
     ],
     "adoptionKind": "house",
-    "codexBrief": "# Codex Mission: KBLLR/panorama-to-cubemap\nGoal: Convert an equirectangular panorama to six cube faces Primary Vega Lab fit: repo-adoption via general engineering.\nClassification: house\nCapabilities: none\nHouse skills: repo-adoption, mine-execution\nRules:\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: KBLLR/panorama-to-cubemap\nGoal: Convert an equirectangular panorama to six cube faces Primary Vega Lab fit: repo-adoption via general engineering.\nClassification: house\nCapabilities: none\nHouse skills: repo-adoption, mine-execution\nRules:\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: KBLLR/panorama-to-cubemap\nGoal: Convert an equirectangular panorama to six cube faces Primary Vega Lab fit: repo-adoption via general engineering.\nClassification: house\nCapabilities: none\nHouse skills: repo-adoption, mine-execution\nRules:\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: KBLLR/panorama-to-cubemap\nGoal: Convert an equirectangular panorama to six cube faces Primary Vega Lab fit: repo-adoption via general engineering.\nClassification: house\nCapabilities: none\nHouse skills: repo-adoption, mine-execution\nRules:\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "KBLLR/project_anja",
@@ -39225,16 +39250,15 @@
     ],
     "rules": [
       "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.",
-      "Review license status before adoption or redistribution work.",
-      "Validate maintenance risk and current ecosystem fit before committing to adoption."
+      "Review license status before adoption or redistribution work."
     ],
     "flows": [
       "research-queue-flow",
       "adoption-decision-flow"
     ],
     "adoptionKind": "tool",
-    "codexBrief": "# Codex Mission: paperjs/paper.js\nGoal: The Swiss Army Knife of Vector Graphics Scripting – Scriptographer ported to JavaScript and the browser, using HTML5 Canvas. Created by @lehni & @puckey Primary Vega Lab fit: repo-research via research-intelligence.\nClassification: tool\nCapabilities: research-intelligence\nHouse skills: repo-research, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: paperjs/paper.js\nGoal: The Swiss Army Knife of Vector Graphics Scripting – Scriptographer ported to JavaScript and the browser, using HTML5 Canvas. Created by @lehni & @puckey Primary Vega Lab fit: repo-research via research-intelligence.\nClassification: tool\nCapabilities: research-intelligence\nHouse skills: repo-research, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: paperjs/paper.js\nGoal: The Swiss Army Knife of Vector Graphics Scripting – Scriptographer ported to JavaScript and the browser, using HTML5 Canvas. Created by @lehni & @puckey Primary Vega Lab fit: repo-research via research-intelligence.\nClassification: tool\nCapabilities: research-intelligence\nHouse skills: repo-research, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: paperjs/paper.js\nGoal: The Swiss Army Knife of Vector Graphics Scripting – Scriptographer ported to JavaScript and the browser, using HTML5 Canvas. Created by @lehni & @puckey Primary Vega Lab fit: repo-research via research-intelligence.\nClassification: tool\nCapabilities: research-intelligence\nHouse skills: repo-research, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "ParisNeo/lollms_nodes_suite",

@@ -337,7 +337,7 @@
   },
   {
     "nwo": "KBLLR/characters-lab",
-    "inspectedAt": "2026-09-03T16:45:28.000Z",
+    "inspectedAt": "2026-10-18T16:33:58.000Z",
     "files": {
       "hasReadme": true,
       "packageManagers": [
@@ -1534,10 +1534,12 @@
     },
     "findings": [
       "No test/check/lint script detected from package metadata.",
+      "Repository appears stale based on last activity.",
       "Repository has template/scaffold signals."
     ],
     "risks": [
-      "Maintenance work has no obvious verification command."
+      "Maintenance work has no obvious verification command.",
+      "Dependencies, build targets, or deployment assumptions may be outdated."
     ]
   },
   {
@@ -1952,6 +1954,29 @@
     ]
   },
   {
+    "nwo": "KBLLR/oink-oink",
+    "inspectedAt": "2026-10-18T16:47:49.000Z",
+    "files": {
+      "hasReadme": true,
+      "packageManagers": [
+        "swiftpm"
+      ],
+      "workflows": [],
+      "deploymentConfigs": [],
+      "testScripts": [],
+      "buildScripts": []
+    },
+    "findings": [
+      "No test/check/lint script detected from package metadata.",
+      "No build script detected from package metadata.",
+      "No workflow or deployment config detected in synced key files."
+    ],
+    "risks": [
+      "Maintenance work has no obvious verification command.",
+      "Deployment readiness is unclear."
+    ]
+  },
+  {
     "nwo": "KBLLR/panorama-to-cubemap",
     "inspectedAt": "2025-10-18T04:17:29.000Z",
     "files": {
@@ -1969,11 +1994,13 @@
     },
     "findings": [
       "No test/check/lint script detected from package metadata.",
-      "No workflow or deployment config detected in synced key files."
+      "No workflow or deployment config detected in synced key files.",
+      "Repository appears stale based on last activity."
     ],
     "risks": [
       "Maintenance work has no obvious verification command.",
-      "Deployment readiness is unclear."
+      "Deployment readiness is unclear.",
+      "Dependencies, build targets, or deployment assumptions may be outdated."
     ]
   },
   {
@@ -2658,7 +2685,7 @@
   },
   {
     "nwo": "KBLLR/vega-lab",
-    "inspectedAt": "2026-10-17T03:16:48.000Z",
+    "inspectedAt": "2026-10-18T03:18:31.000Z",
     "files": {
       "hasReadme": true,
       "packageManagers": [
