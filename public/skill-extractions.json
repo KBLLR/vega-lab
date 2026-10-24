@@ -35777,7 +35777,8 @@
       "repo-adoption"
     ],
     "rules": [
-      "Review license status before adoption or redistribution work."
+      "Review license status before adoption or redistribution work.",
+      "Validate maintenance risk and current ecosystem fit before committing to adoption."
     ],
     "flows": [
       "research-queue-flow",
@@ -35785,8 +35786,8 @@
       "news-digest-refresh"
     ],
     "adoptionKind": "house",
-    "codexBrief": "# Codex Mission: nathanrs/gpt2-webgl\nGoal: A browser-based, WebGL2 implementation of GPT-2 with transform block and attention matrix visualization Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui\nHouse skills: repo-discovery, repo-adoption\nRules:\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: nathanrs/gpt2-webgl\nGoal: A browser-based, WebGL2 implementation of GPT-2 with transform block and attention matrix visualization Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui\nHouse skills: repo-discovery, repo-adoption\nRules:\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: nathanrs/gpt2-webgl\nGoal: A browser-based, WebGL2 implementation of GPT-2 with transform block and attention matrix visualization Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui\nHouse skills: repo-discovery, repo-adoption\nRules:\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: nathanrs/gpt2-webgl\nGoal: A browser-based, WebGL2 implementation of GPT-2 with transform block and attention matrix visualization Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui\nHouse skills: repo-discovery, repo-adoption\nRules:\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "naver-ai/DenseDiffusion",
@@ -46832,6 +46833,30 @@
     "adoptionKind": "house",
     "codexBrief": "# Codex Mission: Stability-AI/stable-fast-3d\nGoal: SF3D: Stable Fast 3D Mesh Reconstruction with UV-unwrapping and Illumination Disentanglement Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: house\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
     "claudeBrief": "# Claude Mission: Stability-AI/stable-fast-3d\nGoal: SF3D: Stable Fast 3D Mesh Reconstruction with UV-unwrapping and Illumination Disentanglement Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: house\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+  },
+  {
+    "nwo": "Stability-AI/stable-point-aware-3d",
+    "name": "stable-point-aware-3d",
+    "author": "Stability-AI",
+    "summary": "SPAR3D: Stable Point-Aware Reconstruction of 3D Objects from Single Images Primary Vega Lab fit: repo-adoption via ml-ai.",
+    "capabilities": [
+      "ml-ai"
+    ],
+    "houseSkills": [
+      "repo-adoption"
+    ],
+    "rules": [
+      "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.",
+      "Review license status before adoption or redistribution work.",
+      "Validate maintenance risk and current ecosystem fit before committing to adoption."
+    ],
+    "flows": [
+      "research-queue-flow",
+      "adoption-decision-flow"
+    ],
+    "adoptionKind": "tool",
+    "codexBrief": "# Codex Mission: Stability-AI/stable-point-aware-3d\nGoal: SPAR3D: Stable Point-Aware Reconstruction of 3D Objects from Single Images Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: Stability-AI/stable-point-aware-3d\nGoal: SPAR3D: Stable Point-Aware Reconstruction of 3D Objects from Single Images Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "Stability-AI/stable-virtual-camera",
