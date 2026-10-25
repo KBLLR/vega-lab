@@ -32370,16 +32370,23 @@
     "nwo": "melonjs/melonJS",
     "name": "melonJS",
     "author": "melonjs",
-    "summary": "a modern & lightweight HTML5 game engine Primary Vega Lab fit: repo-discovery via general engineering.",
-    "capabilities": [],
-    "houseSkills": [],
+    "summary": "A modern & fully featured HTML5 game engine (2D & 3D) for JavaScript/TypeScript, with WebGL/WebGPU rendering, built-in physics, Tiled map & glTF support and WebAudio. Primary Vega Lab fit: skill-extraction via agent-workflows.",
+    "capabilities": [
+      "agent-workflows"
+    ],
+    "houseSkills": [
+      "skill-extraction",
+      "repo-adoption"
+    ],
     "rules": [],
     "flows": [
-      "research-queue-flow"
+      "research-queue-flow",
+      "skill-extraction-flow",
+      "adoption-decision-flow"
     ],
-    "adoptionKind": "ignore",
-    "codexBrief": "# Codex Mission: melonjs/melonJS\nGoal: a modern & lightweight HTML5 game engine Primary Vega Lab fit: repo-discovery via general engineering.\nClassification: ignore\nCapabilities: none\nHouse skills: none\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: melonjs/melonJS\nGoal: a modern & lightweight HTML5 game engine Primary Vega Lab fit: repo-discovery via general engineering.\nClassification: ignore\nCapabilities: none\nHouse skills: none\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "adoptionKind": "house",
+    "codexBrief": "# Codex Mission: melonjs/melonJS\nGoal: A modern & fully featured HTML5 game engine (2D & 3D) for JavaScript/TypeScript, with WebGL/WebGPU rendering, built-in physics, Tiled map & glTF support and WebAudio. Primary Vega Lab fit: skill-extraction via agent-workflows.\nClassification: house\nCapabilities: agent-workflows\nHouse skills: skill-extraction, repo-adoption\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: melonjs/melonJS\nGoal: A modern & fully featured HTML5 game engine (2D & 3D) for JavaScript/TypeScript, with WebGL/WebGPU rendering, built-in physics, Tiled map & glTF support and WebAudio. Primary Vega Lab fit: skill-extraction via agent-workflows.\nClassification: house\nCapabilities: agent-workflows\nHouse skills: skill-extraction, repo-adoption\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "memes-forever/Stable-diffusion-webui-video",
@@ -33692,15 +33699,14 @@
     "capabilities": [],
     "houseSkills": [],
     "rules": [
-      "Review license status before adoption or redistribution work.",
-      "Validate maintenance risk and current ecosystem fit before committing to adoption."
+      "Review license status before adoption or redistribution work."
     ],
     "flows": [
       "research-queue-flow"
     ],
     "adoptionKind": "ignore",
-    "codexBrief": "# Codex Mission: mjurczyk/openvdb\nGoal: Web implementation of volumetric grids Primary Vega Lab fit: repo-discovery via general engineering.\nClassification: ignore\nCapabilities: none\nHouse skills: none\nRules:\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: mjurczyk/openvdb\nGoal: Web implementation of volumetric grids Primary Vega Lab fit: repo-discovery via general engineering.\nClassification: ignore\nCapabilities: none\nHouse skills: none\nRules:\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: mjurczyk/openvdb\nGoal: Web implementation of volumetric grids Primary Vega Lab fit: repo-discovery via general engineering.\nClassification: ignore\nCapabilities: none\nHouse skills: none\nRules:\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: mjurczyk/openvdb\nGoal: Web implementation of volumetric grids Primary Vega Lab fit: repo-discovery via general engineering.\nClassification: ignore\nCapabilities: none\nHouse skills: none\nRules:\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "mjurczyk/quixel-to-three",
