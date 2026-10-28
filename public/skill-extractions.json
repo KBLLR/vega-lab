@@ -6744,6 +6744,28 @@
     "claudeBrief": "# Claude Mission: BlenderNeko/ComfyUI_SeeCoder\nGoal: ComfyUI_SeeCoder is a candidate for house adoption. Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: house\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
+    "nwo": "blendi-remade/dioramas",
+    "name": "dioramas",
+    "author": "blendi-remade",
+    "summary": "A free, open-source framework for cinematic, interactive 3D websites with AI-generated assets (Nano Banana 2 + Meshy 7.1 on fal). 20 example sites. Primary Vega Lab fit: repo-adoption via ml-ai.",
+    "capabilities": [
+      "ml-ai"
+    ],
+    "houseSkills": [
+      "repo-adoption"
+    ],
+    "rules": [
+      "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house."
+    ],
+    "flows": [
+      "research-queue-flow",
+      "adoption-decision-flow"
+    ],
+    "adoptionKind": "tool",
+    "codexBrief": "# Codex Mission: blendi-remade/dioramas\nGoal: A free, open-source framework for cinematic, interactive 3D websites with AI-generated assets (Nano Banana 2 + Meshy 7.1 on fal). 20 example sites. Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: blendi-remade/dioramas\nGoal: A free, open-source framework for cinematic, interactive 3D websites with AI-generated assets (Nano Banana 2 + Meshy 7.1 on fal). 20 example sites. Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+  },
+  {
     "nwo": "blodow/realtime_urdf_filter",
     "name": "realtime_urdf_filter",
     "author": "blodow",
@@ -21734,6 +21756,29 @@
     "claudeBrief": "# Claude Mission: Imetomi/Teaching-a-Robot-to-Walk-OpenAI-Gym\nGoal: Using the BipedalWalker-v2 Environment Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
+    "nwo": "img2threejs/img2threejs",
+    "name": "img2threejs",
+    "author": "img2threejs",
+    "summary": "Rebuild the object in a reference image as a code-only, procedural, quality-gated, animation-ready Three.js model. Token-efficient image-to-3D. Primary Vega Lab fit: skill-extraction via agent-workflows.",
+    "capabilities": [
+      "agent-workflows",
+      "ml-ai"
+    ],
+    "houseSkills": [
+      "skill-extraction",
+      "repo-adoption"
+    ],
+    "rules": [],
+    "flows": [
+      "research-queue-flow",
+      "skill-extraction-flow",
+      "adoption-decision-flow"
+    ],
+    "adoptionKind": "house",
+    "codexBrief": "# Codex Mission: img2threejs/img2threejs\nGoal: Rebuild the object in a reference image as a code-only, procedural, quality-gated, animation-ready Three.js model. Token-efficient image-to-3D. Primary Vega Lab fit: skill-extraction via agent-workflows.\nClassification: house\nCapabilities: agent-workflows, ml-ai\nHouse skills: skill-extraction, repo-adoption\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: img2threejs/img2threejs\nGoal: Rebuild the object in a reference image as a code-only, procedural, quality-gated, animation-ready Three.js model. Token-efficient image-to-3D. Primary Vega Lab fit: skill-extraction via agent-workflows.\nClassification: house\nCapabilities: agent-workflows, ml-ai\nHouse skills: skill-extraction, repo-adoption\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+  },
+  {
     "nwo": "imlixinyang/FlashWorld",
     "name": "FlashWorld",
     "author": "imlixinyang",
@@ -32187,6 +32232,28 @@
     "claudeBrief": "# Claude Mission: MaximeHeckel/linear-vaporwave-three.js\nGoal: My first Three.js project: an attempt at recreating the WebGL animation of the 2021 Linear release page https://linear.app/releases/2021-06 Primary Vega Lab fit: repo-adoption via general engineering.\nClassification: house\nCapabilities: none\nHouse skills: repo-adoption\nRules:\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
+    "nwo": "MaxLiu22/Motion2MixamoRig",
+    "name": "Motion2MixamoRig",
+    "author": "MaxLiu22",
+    "summary": "Retarget human motion from video to an Adobe Mixamo-rigged 3D character. Primary Vega Lab fit: repo-adoption via ml-ai.",
+    "capabilities": [
+      "ml-ai"
+    ],
+    "houseSkills": [
+      "repo-adoption"
+    ],
+    "rules": [
+      "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house."
+    ],
+    "flows": [
+      "research-queue-flow",
+      "adoption-decision-flow"
+    ],
+    "adoptionKind": "tool",
+    "codexBrief": "# Codex Mission: MaxLiu22/Motion2MixamoRig\nGoal: Retarget human motion from video to an Adobe Mixamo-rigged 3D character. Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: MaxLiu22/Motion2MixamoRig\nGoal: Retarget human motion from video to an Adobe Mixamo-rigged 3D character. Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+  },
+  {
     "nwo": "Mayandev/notion-avatar",
     "name": "notion-avatar",
     "author": "Mayandev",
@@ -34500,6 +34567,28 @@
     "adoptionKind": "tool",
     "codexBrief": "# Codex Mission: mostly-ai/mostlyai-engine\nGoal: Synthetic Data Engine 💎 Primary Vega Lab fit: repo-discovery via ml-ai.\nClassification: tool\nCapabilities: ml-ai, data-pipeline\nHouse skills: repo-discovery, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
     "claudeBrief": "# Claude Mission: mostly-ai/mostlyai-engine\nGoal: Synthetic Data Engine 💎 Primary Vega Lab fit: repo-discovery via ml-ai.\nClassification: tool\nCapabilities: ml-ai, data-pipeline\nHouse skills: repo-discovery, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+  },
+  {
+    "nwo": "Motionsites-AI/claude-skill",
+    "name": "claude-skill",
+    "author": "Motionsites-AI",
+    "summary": "Free Claude skill: make Claude build award-level, cinematic landing pages. By MotionSites. Primary Vega Lab fit: repo-adoption via ml-ai.",
+    "capabilities": [
+      "ml-ai"
+    ],
+    "houseSkills": [
+      "repo-adoption"
+    ],
+    "rules": [
+      "Review license status before adoption or redistribution work."
+    ],
+    "flows": [
+      "research-queue-flow",
+      "adoption-decision-flow"
+    ],
+    "adoptionKind": "house",
+    "codexBrief": "# Codex Mission: Motionsites-AI/claude-skill\nGoal: Free Claude skill: make Claude build award-level, cinematic landing pages. By MotionSites. Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: house\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: Motionsites-AI/claude-skill\nGoal: Free Claude skill: make Claude build award-level, cinematic landing pages. By MotionSites. Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: house\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "Mozer/YuE-extend",
@@ -42191,15 +42280,17 @@
       "repo-discovery",
       "repo-adoption"
     ],
-    "rules": [],
+    "rules": [
+      "Validate maintenance risk and current ecosystem fit before committing to adoption."
+    ],
     "flows": [
       "research-queue-flow",
       "adoption-decision-flow",
       "news-digest-refresh"
     ],
     "adoptionKind": "house",
-    "codexBrief": "# Codex Mission: rahuldkjain/github-profile-readme-generator\nGoal: 🚀 Generate GitHub profile README easily with the latest add-ons like visitors count, GitHub stats, etc using minimal UI. Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui\nHouse skills: repo-discovery, repo-adoption\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: rahuldkjain/github-profile-readme-generator\nGoal: 🚀 Generate GitHub profile README easily with the latest add-ons like visitors count, GitHub stats, etc using minimal UI. Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui\nHouse skills: repo-discovery, repo-adoption\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: rahuldkjain/github-profile-readme-generator\nGoal: 🚀 Generate GitHub profile README easily with the latest add-ons like visitors count, GitHub stats, etc using minimal UI. Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui\nHouse skills: repo-discovery, repo-adoption\nRules:\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: rahuldkjain/github-profile-readme-generator\nGoal: 🚀 Generate GitHub profile README easily with the latest add-ons like visitors count, GitHub stats, etc using minimal UI. Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui\nHouse skills: repo-discovery, repo-adoption\nRules:\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "RamboRogers/mlx-gui",
@@ -44990,7 +45081,7 @@
     "nwo": "ServiceNow/BrowserGym",
     "name": "BrowserGym",
     "author": "ServiceNow",
-    "summary": "🌎💪 BrowserGym, a Gym environment for web task automation Primary Vega Lab fit: skill-extraction via agent-workflows.",
+    "summary": "BrowserGym, a Gym environment for web task automation Primary Vega Lab fit: skill-extraction via agent-workflows.",
     "capabilities": [
       "agent-workflows",
       "backend-service",
@@ -45013,8 +45104,8 @@
       "mine-execution-flow"
     ],
     "adoptionKind": "service",
-    "codexBrief": "# Codex Mission: ServiceNow/BrowserGym\nGoal: 🌎💪 BrowserGym, a Gym environment for web task automation Primary Vega Lab fit: skill-extraction via agent-workflows.\nClassification: service\nCapabilities: agent-workflows, backend-service, ml-ai, repo-ops\nHouse skills: skill-extraction, repo-adoption, mine-execution\nRules:\n- Treat external runtimes and APIs as configurable integrations with explicit environment requirements.\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: ServiceNow/BrowserGym\nGoal: 🌎💪 BrowserGym, a Gym environment for web task automation Primary Vega Lab fit: skill-extraction via agent-workflows.\nClassification: service\nCapabilities: agent-workflows, backend-service, ml-ai, repo-ops\nHouse skills: skill-extraction, repo-adoption, mine-execution\nRules:\n- Treat external runtimes and APIs as configurable integrations with explicit environment requirements.\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: ServiceNow/BrowserGym\nGoal: BrowserGym, a Gym environment for web task automation Primary Vega Lab fit: skill-extraction via agent-workflows.\nClassification: service\nCapabilities: agent-workflows, backend-service, ml-ai, repo-ops\nHouse skills: skill-extraction, repo-adoption, mine-execution\nRules:\n- Treat external runtimes and APIs as configurable integrations with explicit environment requirements.\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: ServiceNow/BrowserGym\nGoal: BrowserGym, a Gym environment for web task automation Primary Vega Lab fit: skill-extraction via agent-workflows.\nClassification: service\nCapabilities: agent-workflows, backend-service, ml-ai, repo-ops\nHouse skills: skill-extraction, repo-adoption, mine-execution\nRules:\n- Treat external runtimes and APIs as configurable integrations with explicit environment requirements.\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "sgossner/VCSL",
@@ -45709,6 +45800,37 @@
     "adoptionKind": "tool",
     "codexBrief": "# Codex Mission: Sirosky/Upscale-Hub\nGoal: A repository collecting image and video upscaling resources as well as my own super resolution models. Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
     "claudeBrief": "# Claude Mission: Sirosky/Upscale-Hub\nGoal: A repository collecting image and video upscaling resources as well as my own super resolution models. Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+  },
+  {
+    "nwo": "sixtysevenlf/dsh-blender-plugin",
+    "name": "dsh-blender-plugin",
+    "author": "sixtysevenlf",
+    "summary": "DSH × Blender 直连实时插件 v2.6.1：15 个模型工具让 AI 驱动 GUI Blender；支持 dsh-TUI（选中 chip / 页脚状态 / @ 提及 / /blender），活动状态置顶并可一键暂停 AI，原生选中/集合/子元素直送 DSH，随包建模 skill，支持 WSL / Windows / macOS。 Primary Vega Lab fit: repo-discovery via agent-workflows.",
+    "capabilities": [
+      "agent-workflows",
+      "developer-tooling",
+      "ml-ai",
+      "repo-ops"
+    ],
+    "houseSkills": [
+      "repo-discovery",
+      "skill-extraction",
+      "repo-adoption",
+      "mine-execution"
+    ],
+    "rules": [
+      "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house."
+    ],
+    "flows": [
+      "research-queue-flow",
+      "skill-extraction-flow",
+      "adoption-decision-flow",
+      "news-digest-refresh",
+      "mine-execution-flow"
+    ],
+    "adoptionKind": "tool",
+    "codexBrief": "# Codex Mission: sixtysevenlf/dsh-blender-plugin\nGoal: DSH × Blender 直连实时插件 v2.6.1：15 个模型工具让 AI 驱动 GUI Blender；支持 dsh-TUI（选中 chip / 页脚状态 / @ 提及 / /blender），活动状态置顶并可一键暂停 AI，原生选中/集合/子元素直送 DSH，随包建模 skill，支持 WSL / Windows / macOS。 Primary Vega Lab fit: repo-discovery via agent-workflows.\nClassification: tool\nCapabilities: agent-workflows, developer-tooling, ml-ai, repo-ops\nHouse skills: repo-discovery, skill-extraction, repo-adoption, mine-execution\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\n5. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: sixtysevenlf/dsh-blender-plugin\nGoal: DSH × Blender 直连实时插件 v2.6.1：15 个模型工具让 AI 驱动 GUI Blender；支持 dsh-TUI（选中 chip / 页脚状态 / @ 提及 / /blender），活动状态置顶并可一键暂停 AI，原生选中/集合/子元素直送 DSH，随包建模 skill，支持 WSL / Windows / macOS。 Primary Vega Lab fit: repo-discovery via agent-workflows.\nClassification: tool\nCapabilities: agent-workflows, developer-tooling, ml-ai, repo-ops\nHouse skills: repo-discovery, skill-extraction, repo-adoption, mine-execution\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\n5. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "sketchfab/blender-plugin",
@@ -48948,15 +49070,16 @@
     ],
     "rules": [
       "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.",
-      "Review license status before adoption or redistribution work."
+      "Review license status before adoption or redistribution work.",
+      "Validate maintenance risk and current ecosystem fit before committing to adoption."
     ],
     "flows": [
       "research-queue-flow",
       "adoption-decision-flow"
     ],
     "adoptionKind": "tool",
-    "codexBrief": "# Codex Mission: Tencent-Hunyuan/Hunyuan3D-2\nGoal: High-Resolution 3D Assets Generation with Large Scale Hunyuan3D Diffusion Models. Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: Tencent-Hunyuan/Hunyuan3D-2\nGoal: High-Resolution 3D Assets Generation with Large Scale Hunyuan3D Diffusion Models. Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: Tencent-Hunyuan/Hunyuan3D-2\nGoal: High-Resolution 3D Assets Generation with Large Scale Hunyuan3D Diffusion Models. Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: Tencent-Hunyuan/Hunyuan3D-2\nGoal: High-Resolution 3D Assets Generation with Large Scale Hunyuan3D Diffusion Models. Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "Tencent-Hunyuan/HunyuanWorld-1.0",
@@ -52251,6 +52374,28 @@
     "claudeBrief": "# Claude Mission: Vincentqyw/cv-arxiv-daily\nGoal: 🎓Automatically Update CV Papers Daily using Github Actions Primary Vega Lab fit: repo-research via research-intelligence.\nClassification: house\nCapabilities: research-intelligence, ml-ai\nHouse skills: repo-research, repo-adoption\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
+    "nwo": "Vincentwei1021/mg-styles-15",
+    "name": "mg-styles-15",
+    "author": "Vincentwei1021",
+    "summary": "15 motion design styles, each made by Claude Opus 5.5 writing code from one prompt: watch the films, copy the prompts, read the full source. Primary Vega Lab fit: repo-adoption via ml-ai.",
+    "capabilities": [
+      "ml-ai"
+    ],
+    "houseSkills": [
+      "repo-adoption"
+    ],
+    "rules": [
+      "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house."
+    ],
+    "flows": [
+      "research-queue-flow",
+      "adoption-decision-flow"
+    ],
+    "adoptionKind": "tool",
+    "codexBrief": "# Codex Mission: Vincentwei1021/mg-styles-15\nGoal: 15 motion design styles, each made by Claude Opus 5.5 writing code from one prompt: watch the films, copy the prompts, read the full source. Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: Vincentwei1021/mg-styles-15\nGoal: 15 motion design styles, each made by Claude Opus 5.5 writing code from one prompt: watch the films, copy the prompts, read the full source. Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+  },
+  {
     "nwo": "vinta/awesome-python",
     "name": "awesome-python",
     "author": "vinta",
@@ -54549,16 +54694,15 @@
     ],
     "rules": [
       "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.",
-      "Review license status before adoption or redistribution work.",
-      "Validate maintenance risk and current ecosystem fit before committing to adoption."
+      "Review license status before adoption or redistribution work."
     ],
     "flows": [
       "research-queue-flow",
       "adoption-decision-flow"
     ],
     "adoptionKind": "tool",
-    "codexBrief": "# Codex Mission: yisol/IDM-VTON\nGoal: [ECCV2024] IDM-VTON : Improving Diffusion Models for Authentic Virtual Try-on in the Wild Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: yisol/IDM-VTON\nGoal: [ECCV2024] IDM-VTON : Improving Diffusion Models for Authentic Virtual Try-on in the Wild Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: yisol/IDM-VTON\nGoal: [ECCV2024] IDM-VTON : Improving Diffusion Models for Authentic Virtual Try-on in the Wild Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: yisol/IDM-VTON\nGoal: [ECCV2024] IDM-VTON : Improving Diffusion Models for Authentic Virtual Try-on in the Wild Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "yiwenl/Alfrid",
@@ -54828,6 +54972,33 @@
     "adoptionKind": "ignore",
     "codexBrief": "# Codex Mission: yoksel/flex-cheatsheet\nGoal: 📖 Flexbox cheatsheet  Primary Vega Lab fit: repo-discovery via general engineering.\nClassification: ignore\nCapabilities: none\nHouse skills: none\nRules:\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
     "claudeBrief": "# Claude Mission: yoksel/flex-cheatsheet\nGoal: 📖 Flexbox cheatsheet  Primary Vega Lab fit: repo-discovery via general engineering.\nClassification: ignore\nCapabilities: none\nHouse skills: none\nRules:\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+  },
+  {
+    "nwo": "yoloytang/Awesome-LLMs-for-Video-Understanding",
+    "name": "Awesome-LLMs-for-Video-Understanding",
+    "author": "yoloytang",
+    "summary": "🔥🔥🔥 [IEEE TCSVT] Latest Papers, Codes and Datasets on Vid-LLMs. Primary Vega Lab fit: repo-discovery via research-intelligence.",
+    "capabilities": [
+      "research-intelligence",
+      "data-pipeline"
+    ],
+    "houseSkills": [
+      "repo-discovery",
+      "repo-research",
+      "repo-adoption"
+    ],
+    "rules": [
+      "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.",
+      "Review license status before adoption or redistribution work."
+    ],
+    "flows": [
+      "research-queue-flow",
+      "adoption-decision-flow",
+      "news-digest-refresh"
+    ],
+    "adoptionKind": "tool",
+    "codexBrief": "# Codex Mission: yoloytang/Awesome-LLMs-for-Video-Understanding\nGoal: 🔥🔥🔥 [IEEE TCSVT] Latest Papers, Codes and Datasets on Vid-LLMs. Primary Vega Lab fit: repo-discovery via research-intelligence.\nClassification: tool\nCapabilities: research-intelligence, data-pipeline\nHouse skills: repo-discovery, repo-research, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: yoloytang/Awesome-LLMs-for-Video-Understanding\nGoal: 🔥🔥🔥 [IEEE TCSVT] Latest Papers, Codes and Datasets on Vid-LLMs. Primary Vega Lab fit: repo-discovery via research-intelligence.\nClassification: tool\nCapabilities: research-intelligence, data-pipeline\nHouse skills: repo-discovery, repo-research, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "yomotsu/camera-controls",
@@ -55156,33 +55327,6 @@
     "adoptionKind": "tool",
     "codexBrief": "# Codex Mission: yunik1004/SAiD\nGoal: SAiD: Blendshape-based Audio-Driven Speech Animation with Diffusion Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
     "claudeBrief": "# Claude Mission: yunik1004/SAiD\nGoal: SAiD: Blendshape-based Audio-Driven Speech Animation with Diffusion Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
-  },
-  {
-    "nwo": "yunlong10/Awesome-LLMs-for-Video-Understanding",
-    "name": "Awesome-LLMs-for-Video-Understanding",
-    "author": "yunlong10",
-    "summary": "🔥🔥🔥 [IEEE TCSVT] Latest Papers, Codes and Datasets on Vid-LLMs. Primary Vega Lab fit: repo-discovery via research-intelligence.",
-    "capabilities": [
-      "research-intelligence",
-      "data-pipeline"
-    ],
-    "houseSkills": [
-      "repo-discovery",
-      "repo-research",
-      "repo-adoption"
-    ],
-    "rules": [
-      "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.",
-      "Review license status before adoption or redistribution work."
-    ],
-    "flows": [
-      "research-queue-flow",
-      "adoption-decision-flow",
-      "news-digest-refresh"
-    ],
-    "adoptionKind": "tool",
-    "codexBrief": "# Codex Mission: yunlong10/Awesome-LLMs-for-Video-Understanding\nGoal: 🔥🔥🔥 [IEEE TCSVT] Latest Papers, Codes and Datasets on Vid-LLMs. Primary Vega Lab fit: repo-discovery via research-intelligence.\nClassification: tool\nCapabilities: research-intelligence, data-pipeline\nHouse skills: repo-discovery, repo-research, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: yunlong10/Awesome-LLMs-for-Video-Understanding\nGoal: 🔥🔥🔥 [IEEE TCSVT] Latest Papers, Codes and Datasets on Vid-LLMs. Primary Vega Lab fit: repo-discovery via research-intelligence.\nClassification: tool\nCapabilities: research-intelligence, data-pipeline\nHouse skills: repo-discovery, repo-research, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "yusufkaraaslan/Skill_Seekers",
