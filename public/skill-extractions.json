@@ -1184,11 +1184,15 @@
     "nwo": "agmmnn/awesome-blender",
     "name": "awesome-blender",
     "author": "agmmnn",
-    "summary": "🪐 A curated list of awesome Blender addons, tools, tutorials; and 3D resources for everyone. Primary Vega Lab fit: repo-adoption via ml-ai.",
+    "summary": "🪐 A curated list of awesome Blender add-ons, extensions, AI/MCP tools, tutorials, and 3D resources. Primary Vega Lab fit: repo-discovery via mcp-tooling.",
     "capabilities": [
+      "mcp-tooling",
+      "developer-tooling",
       "ml-ai"
     ],
     "houseSkills": [
+      "repo-discovery",
+      "skill-extraction",
       "repo-adoption"
     ],
     "rules": [
@@ -1196,11 +1200,13 @@
     ],
     "flows": [
       "research-queue-flow",
-      "adoption-decision-flow"
+      "skill-extraction-flow",
+      "adoption-decision-flow",
+      "news-digest-refresh"
     ],
     "adoptionKind": "tool",
-    "codexBrief": "# Codex Mission: agmmnn/awesome-blender\nGoal: 🪐 A curated list of awesome Blender addons, tools, tutorials; and 3D resources for everyone. Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: agmmnn/awesome-blender\nGoal: 🪐 A curated list of awesome Blender addons, tools, tutorials; and 3D resources for everyone. Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: agmmnn/awesome-blender\nGoal: 🪐 A curated list of awesome Blender add-ons, extensions, AI/MCP tools, tutorials, and 3D resources. Primary Vega Lab fit: repo-discovery via mcp-tooling.\nClassification: tool\nCapabilities: mcp-tooling, developer-tooling, ml-ai\nHouse skills: repo-discovery, skill-extraction, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: agmmnn/awesome-blender\nGoal: 🪐 A curated list of awesome Blender add-ons, extensions, AI/MCP tools, tutorials, and 3D resources. Primary Vega Lab fit: repo-discovery via mcp-tooling.\nClassification: tool\nCapabilities: mcp-tooling, developer-tooling, ml-ai\nHouse skills: repo-discovery, skill-extraction, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "ahmedosman/STAR",
