@@ -1,5 +1,101 @@
 [
   {
+    "name": "oink-oink",
+    "description": "MONSTERA OINK household iPad app, OINK for Mac, projection",
+    "author": "KBLLR",
+    "stars": 0,
+    "url": "https://github.com/KBLLR/oink-oink",
+    "date": "10/18/2026",
+    "languages": [
+      {
+        "language": "Swift",
+        "percentage": "100%"
+      }
+    ],
+    "topics": [],
+    "primary_language": "Swift",
+    "license": "None",
+    "forks": 0,
+    "open_issues": 0,
+    "last_updated": "11/3/2026",
+    "last_updated_at": "2026-11-03T01:14:14Z",
+    "created_at": "2026-10-18T16:47:00Z",
+    "private": true,
+    "has_readme": true,
+    "is_owner": true,
+    "is_fork": false,
+    "key_files": {
+      "packageJson": null,
+      "packageManagers": [],
+      "workflows": [],
+      "deploymentConfigs": []
+    }
+  },
+  {
+    "name": "esoteric-lab",
+    "description": "Core-X Esoteric Lab — ARCANA Tarot, operator context, astrology, ritual voice and music",
+    "author": "KBLLR",
+    "stars": 0,
+    "url": "https://github.com/KBLLR/esoteric-lab",
+    "date": "8/13/2026",
+    "languages": [
+      {
+        "language": "TypeScript",
+        "percentage": "100%"
+      }
+    ],
+    "topics": [],
+    "primary_language": "TypeScript",
+    "license": "None",
+    "forks": 0,
+    "open_issues": 0,
+    "last_updated": "11/2/2026",
+    "last_updated_at": "2026-11-02T17:47:05Z",
+    "created_at": "2026-08-13T18:15:10Z",
+    "private": true,
+    "has_readme": true,
+    "is_owner": true,
+    "is_fork": false,
+    "key_files": {
+      "packageJson": {
+        "scripts": {
+          "tarot:render": "node scripts/render-minor-deck.mjs",
+          "tarot:validate": "node scripts/validate-tarot-deck.mjs",
+          "tarot:export-png": "node scripts/export-minor-png.mjs",
+          "arcana:validate": "node scripts/validate-arcana.mjs",
+          "audio:validate": "node scripts/validate-arcana-audio.mjs",
+          "repo:validate": "node scripts/validate-portable-repo.mjs",
+          "operator:materialize-private": "node scripts/materialize-private-operator-bundle.mjs",
+          "predev": "pnpm tarot:render && pnpm tarot:validate",
+          "dev": "vite --host 127.0.0.1 --port 4177",
+          "prebuild": "pnpm tarot:render && pnpm tarot:validate",
+          "build": "pnpm arcana:validate && pnpm audio:validate && pnpm repo:validate && tsc && vite build",
+          "preview": "vite preview --host 127.0.0.1 --port 4177",
+          "check": "pnpm tarot:validate && pnpm arcana:validate && pnpm audio:validate && pnpm repo:validate && tsc --noEmit"
+        },
+        "dependencies": {
+          "react": "^19.0.0",
+          "react-dom": "^19.0.0"
+        },
+        "devDependencies": {
+          "@types/react": "^19.0.0",
+          "@types/react-dom": "^19.0.0",
+          "@vitejs/plugin-react": "^4.3.0",
+          "typescript": "^5.7.0",
+          "vite": "^6.4.3"
+        }
+      },
+      "packageManagers": [
+        "npm",
+        "pnpm"
+      ],
+      "workflows": [
+        "validate.yml"
+      ],
+      "deploymentConfigs": []
+    }
+  },
+  {
     "name": "vega-lab",
     "description": "The Brightest Stars",
     "author": "KBLLR",
@@ -22,8 +118,8 @@
     "license": "None",
     "forks": 0,
     "open_issues": 0,
-    "last_updated": "11/1/2026",
-    "last_updated_at": "2026-11-01T04:39:12Z",
+    "last_updated": "11/2/2026",
+    "last_updated_at": "2026-11-02T04:41:09Z",
     "created_at": "2023-12-23T23:09:43Z",
     "private": false,
     "has_readme": true,
@@ -99,102 +195,6 @@
       "deploymentConfigs": [
         "vercel.json"
       ]
-    }
-  },
-  {
-    "name": "oink-oink",
-    "description": "MONSTERA OINK household iPad app, OINK for Mac, projection",
-    "author": "KBLLR",
-    "stars": 0,
-    "url": "https://github.com/KBLLR/oink-oink",
-    "date": "10/18/2026",
-    "languages": [
-      {
-        "language": "Swift",
-        "percentage": "100%"
-      }
-    ],
-    "topics": [],
-    "primary_language": "Swift",
-    "license": "None",
-    "forks": 0,
-    "open_issues": 0,
-    "last_updated": "10/30/2026",
-    "last_updated_at": "2026-10-30T11:33:08Z",
-    "created_at": "2026-10-18T16:47:00Z",
-    "private": true,
-    "has_readme": true,
-    "is_owner": true,
-    "is_fork": false,
-    "key_files": {
-      "packageJson": null,
-      "packageManagers": [],
-      "workflows": [],
-      "deploymentConfigs": []
-    }
-  },
-  {
-    "name": "esoteric-lab",
-    "description": "Core-X Esoteric Lab — ARCANA Tarot, operator context, astrology, ritual voice and music",
-    "author": "KBLLR",
-    "stars": 0,
-    "url": "https://github.com/KBLLR/esoteric-lab",
-    "date": "8/13/2026",
-    "languages": [
-      {
-        "language": "TypeScript",
-        "percentage": "100%"
-      }
-    ],
-    "topics": [],
-    "primary_language": "TypeScript",
-    "license": "None",
-    "forks": 0,
-    "open_issues": 0,
-    "last_updated": "10/28/2026",
-    "last_updated_at": "2026-10-28T12:48:33Z",
-    "created_at": "2026-08-13T18:15:10Z",
-    "private": true,
-    "has_readme": true,
-    "is_owner": true,
-    "is_fork": false,
-    "key_files": {
-      "packageJson": {
-        "scripts": {
-          "tarot:render": "node scripts/render-minor-deck.mjs",
-          "tarot:validate": "node scripts/validate-tarot-deck.mjs",
-          "tarot:export-png": "node scripts/export-minor-png.mjs",
-          "arcana:validate": "node scripts/validate-arcana.mjs",
-          "audio:validate": "node scripts/validate-arcana-audio.mjs",
-          "repo:validate": "node scripts/validate-portable-repo.mjs",
-          "operator:materialize-private": "node scripts/materialize-private-operator-bundle.mjs",
-          "predev": "pnpm tarot:render && pnpm tarot:validate",
-          "dev": "vite --host 127.0.0.1 --port 4177",
-          "prebuild": "pnpm tarot:render && pnpm tarot:validate",
-          "build": "pnpm arcana:validate && pnpm audio:validate && pnpm repo:validate && tsc && vite build",
-          "preview": "vite preview --host 127.0.0.1 --port 4177",
-          "check": "pnpm tarot:validate && pnpm arcana:validate && pnpm audio:validate && pnpm repo:validate && tsc --noEmit"
-        },
-        "dependencies": {
-          "react": "^19.0.0",
-          "react-dom": "^19.0.0"
-        },
-        "devDependencies": {
-          "@types/react": "^19.0.0",
-          "@types/react-dom": "^19.0.0",
-          "@vitejs/plugin-react": "^4.3.0",
-          "typescript": "^5.7.0",
-          "vite": "^6.4.3"
-        }
-      },
-      "packageManagers": [
-        "npm",
-        "pnpm"
-      ],
-      "workflows": [
-        "validate.yml"
-      ],
-      "deploymentConfigs": []
     }
   },
   {
@@ -512,8 +512,8 @@
     "license": "None",
     "forks": 0,
     "open_issues": 0,
-    "last_updated": "10/16/2026",
-    "last_updated_at": "2026-10-16T23:45:05Z",
+    "last_updated": "11/2/2026",
+    "last_updated_at": "2026-11-02T17:56:53Z",
     "created_at": "2026-02-09T19:25:05Z",
     "private": true,
     "has_readme": false,
@@ -544,8 +544,8 @@
     "license": "None",
     "forks": 0,
     "open_issues": 2,
-    "last_updated": "10/16/2026",
-    "last_updated_at": "2026-10-16T23:32:47Z",
+    "last_updated": "11/2/2026",
+    "last_updated_at": "2026-11-02T17:56:40Z",
     "created_at": "2026-03-15T18:29:18Z",
     "private": true,
     "has_readme": true,
@@ -969,8 +969,8 @@
     "license": "None",
     "forks": 0,
     "open_issues": 0,
-    "last_updated": "7/17/2026",
-    "last_updated_at": "2026-07-17T15:10:43Z",
+    "last_updated": "11/2/2026",
+    "last_updated_at": "2026-11-02T17:56:45Z",
     "created_at": "2026-06-22T14:51:52Z",
     "private": true,
     "has_readme": false,
@@ -1447,9 +1447,9 @@
     "primary_language": "TypeScript",
     "license": "None",
     "forks": 0,
-    "open_issues": 1,
-    "last_updated": "10/5/2026",
-    "last_updated_at": "2026-10-05T12:32:17Z",
+    "open_issues": 5,
+    "last_updated": "11/3/2026",
+    "last_updated_at": "2026-11-03T01:50:10Z",
     "created_at": "2025-11-20T18:14:32Z",
     "private": true,
     "has_readme": true,

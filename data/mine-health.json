@@ -1,17 +1,20 @@
 [
   {
-    "nwo": "KBLLR/vega-lab",
-    "name": "vega-lab",
+    "nwo": "KBLLR/memoryblocks",
+    "name": "memoryblocks",
     "author": "KBLLR",
-    "visibility": "public",
+    "visibility": "private",
     "hasReadme": true,
-    "updatedAt": "2026-11-01T04:39:12.000Z",
-    "healthFlags": [],
+    "updatedAt": "2026-11-03T01:50:10.000Z",
+    "healthFlags": [
+      "private"
+    ],
     "recommendedActions": [
       "mlx-mission",
       "ops-kit",
       "codex-mission",
-      "claude-mission"
+      "claude-mission",
+      "house-integration"
     ]
   },
   {
@@ -20,7 +23,7 @@
     "author": "KBLLR",
     "visibility": "private",
     "hasReadme": true,
-    "updatedAt": "2026-10-30T11:33:08.000Z",
+    "updatedAt": "2026-11-03T01:14:14.000Z",
     "healthFlags": [
       "private"
     ],
@@ -33,12 +36,69 @@
     ]
   },
   {
+    "nwo": "KBLLR/core-x",
+    "name": "core-x",
+    "author": "KBLLR",
+    "visibility": "private",
+    "hasReadme": false,
+    "updatedAt": "2026-11-02T17:56:53.000Z",
+    "healthFlags": [
+      "missing-readme",
+      "private"
+    ],
+    "recommendedActions": [
+      "mlx-mission",
+      "ops-kit",
+      "codex-mission",
+      "claude-mission",
+      "write-readme",
+      "house-integration"
+    ]
+  },
+  {
+    "nwo": "KBLLR/audio-lab",
+    "name": "audio-lab",
+    "author": "KBLLR",
+    "visibility": "private",
+    "hasReadme": false,
+    "updatedAt": "2026-11-02T17:56:45.000Z",
+    "healthFlags": [
+      "missing-readme",
+      "private"
+    ],
+    "recommendedActions": [
+      "mlx-mission",
+      "ops-kit",
+      "codex-mission",
+      "claude-mission",
+      "write-readme",
+      "house-integration"
+    ]
+  },
+  {
+    "nwo": "KBLLR/rigging-palace",
+    "name": "rigging-palace",
+    "author": "KBLLR",
+    "visibility": "private",
+    "hasReadme": true,
+    "updatedAt": "2026-11-02T17:56:40.000Z",
+    "healthFlags": [
+      "private"
+    ],
+    "recommendedActions": [
+      "mlx-mission",
+      "ops-kit",
+      "codex-mission",
+      "claude-mission"
+    ]
+  },
+  {
     "nwo": "KBLLR/esoteric-lab",
     "name": "esoteric-lab",
     "author": "KBLLR",
     "visibility": "private",
     "hasReadme": true,
-    "updatedAt": "2026-10-28T12:48:33.000Z",
+    "updatedAt": "2026-11-02T17:47:05.000Z",
     "healthFlags": [
       "private"
     ],
@@ -48,6 +108,21 @@
       "codex-mission",
       "claude-mission",
       "house-integration"
+    ]
+  },
+  {
+    "nwo": "KBLLR/vega-lab",
+    "name": "vega-lab",
+    "author": "KBLLR",
+    "visibility": "public",
+    "hasReadme": true,
+    "updatedAt": "2026-11-02T04:41:09.000Z",
+    "healthFlags": [],
+    "recommendedActions": [
+      "mlx-mission",
+      "ops-kit",
+      "codex-mission",
+      "claude-mission"
     ]
   },
   {
@@ -95,61 +170,6 @@
     "visibility": "private",
     "hasReadme": true,
     "updatedAt": "2026-10-18T16:33:58.000Z",
-    "healthFlags": [
-      "private"
-    ],
-    "recommendedActions": [
-      "mlx-mission",
-      "ops-kit",
-      "codex-mission",
-      "claude-mission",
-      "house-integration"
-    ]
-  },
-  {
-    "nwo": "KBLLR/core-x",
-    "name": "core-x",
-    "author": "KBLLR",
-    "visibility": "private",
-    "hasReadme": false,
-    "updatedAt": "2026-10-16T23:45:05.000Z",
-    "healthFlags": [
-      "missing-readme",
-      "private"
-    ],
-    "recommendedActions": [
-      "mlx-mission",
-      "ops-kit",
-      "codex-mission",
-      "claude-mission",
-      "write-readme",
-      "house-integration"
-    ]
-  },
-  {
-    "nwo": "KBLLR/rigging-palace",
-    "name": "rigging-palace",
-    "author": "KBLLR",
-    "visibility": "private",
-    "hasReadme": true,
-    "updatedAt": "2026-10-16T23:32:47.000Z",
-    "healthFlags": [
-      "private"
-    ],
-    "recommendedActions": [
-      "mlx-mission",
-      "ops-kit",
-      "codex-mission",
-      "claude-mission"
-    ]
-  },
-  {
-    "nwo": "KBLLR/memoryblocks",
-    "name": "memoryblocks",
-    "author": "KBLLR",
-    "visibility": "private",
-    "hasReadme": true,
-    "updatedAt": "2026-10-05T12:32:17.000Z",
     "healthFlags": [
       "private"
     ],
@@ -247,26 +267,6 @@
       "ops-kit",
       "codex-mission",
       "claude-mission",
-      "house-integration"
-    ]
-  },
-  {
-    "nwo": "KBLLR/audio-lab",
-    "name": "audio-lab",
-    "author": "KBLLR",
-    "visibility": "private",
-    "hasReadme": false,
-    "updatedAt": "2026-07-17T15:10:43.000Z",
-    "healthFlags": [
-      "missing-readme",
-      "private"
-    ],
-    "recommendedActions": [
-      "mlx-mission",
-      "ops-kit",
-      "codex-mission",
-      "claude-mission",
-      "write-readme",
       "house-integration"
     ]
   },
