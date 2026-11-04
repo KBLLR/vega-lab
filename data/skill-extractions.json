@@ -6526,59 +6526,6 @@
     "claudeBrief": "# Claude Mission: Blaizzy/fastmlx\nGoal: FastMLX is a high performance production ready API to host MLX models. Primary Vega Lab fit: repo-adoption via backend-service.\nClassification: service\nCapabilities: backend-service, ml-ai\nHouse skills: repo-adoption\nRules:\n- Treat external runtimes and APIs as configurable integrations with explicit environment requirements.\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
-    "nwo": "Blaizzy/mlx-audio",
-    "name": "mlx-audio",
-    "author": "Blaizzy",
-    "summary": "A text-to-speech (TTS), speech-to-text (STT) and speech-to-speech (STS) library built on Apple's MLX framework, providing efficient speech analysis on Apple Silicon. Primary Vega Lab fit: repo-discovery via developer-tooling.",
-    "capabilities": [
-      "developer-tooling",
-      "ml-ai"
-    ],
-    "houseSkills": [
-      "repo-discovery",
-      "skill-extraction",
-      "repo-adoption"
-    ],
-    "rules": [
-      "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house."
-    ],
-    "flows": [
-      "research-queue-flow",
-      "skill-extraction-flow",
-      "adoption-decision-flow",
-      "news-digest-refresh"
-    ],
-    "adoptionKind": "tool",
-    "codexBrief": "# Codex Mission: Blaizzy/mlx-audio\nGoal: A text-to-speech (TTS), speech-to-text (STT) and speech-to-speech (STS) library built on Apple's MLX framework, providing efficient speech analysis on Apple Silicon. Primary Vega Lab fit: repo-discovery via developer-tooling.\nClassification: tool\nCapabilities: developer-tooling, ml-ai\nHouse skills: repo-discovery, skill-extraction, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: Blaizzy/mlx-audio\nGoal: A text-to-speech (TTS), speech-to-text (STT) and speech-to-speech (STS) library built on Apple's MLX framework, providing efficient speech analysis on Apple Silicon. Primary Vega Lab fit: repo-discovery via developer-tooling.\nClassification: tool\nCapabilities: developer-tooling, ml-ai\nHouse skills: repo-discovery, skill-extraction, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
-  },
-  {
-    "nwo": "Blaizzy/mlx-audio-swift",
-    "name": "mlx-audio-swift",
-    "author": "Blaizzy",
-    "summary": "A modular Swift SDK for audio processing with MLX on Apple Silicon Primary Vega Lab fit: repo-discovery via developer-tooling.",
-    "capabilities": [
-      "developer-tooling"
-    ],
-    "houseSkills": [
-      "repo-discovery",
-      "skill-extraction",
-      "repo-adoption"
-    ],
-    "rules": [
-      "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house."
-    ],
-    "flows": [
-      "research-queue-flow",
-      "skill-extraction-flow",
-      "adoption-decision-flow",
-      "news-digest-refresh"
-    ],
-    "adoptionKind": "tool",
-    "codexBrief": "# Codex Mission: Blaizzy/mlx-audio-swift\nGoal: A modular Swift SDK for audio processing with MLX on Apple Silicon Primary Vega Lab fit: repo-discovery via developer-tooling.\nClassification: tool\nCapabilities: developer-tooling\nHouse skills: repo-discovery, skill-extraction, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: Blaizzy/mlx-audio-swift\nGoal: A modular Swift SDK for audio processing with MLX on Apple Silicon Primary Vega Lab fit: repo-discovery via developer-tooling.\nClassification: tool\nCapabilities: developer-tooling\nHouse skills: repo-discovery, skill-extraction, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
-  },
-  {
     "nwo": "Blaizzy/mlx-embeddings",
     "name": "mlx-embeddings",
     "author": "Blaizzy",
@@ -6600,26 +6547,6 @@
     "adoptionKind": "tool",
     "codexBrief": "# Codex Mission: Blaizzy/mlx-embeddings\nGoal: MLX-Embeddings is the best package for running Vision and Language Embedding models locally on your Mac using MLX. Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
     "claudeBrief": "# Claude Mission: Blaizzy/mlx-embeddings\nGoal: MLX-Embeddings is the best package for running Vision and Language Embedding models locally on your Mac using MLX. Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
-  },
-  {
-    "nwo": "Blaizzy/mlx-vlm",
-    "name": "mlx-vlm",
-    "author": "Blaizzy",
-    "summary": "MLX-VLM is a package for inference and fine-tuning of Vision Language Models (VLMs) on your Mac using MLX. Primary Vega Lab fit: repo-adoption via ml-ai.",
-    "capabilities": [
-      "ml-ai"
-    ],
-    "houseSkills": [
-      "repo-adoption"
-    ],
-    "rules": [],
-    "flows": [
-      "research-queue-flow",
-      "adoption-decision-flow"
-    ],
-    "adoptionKind": "house",
-    "codexBrief": "# Codex Mission: Blaizzy/mlx-vlm\nGoal: MLX-VLM is a package for inference and fine-tuning of Vision Language Models (VLMs) on your Mac using MLX. Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: house\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: Blaizzy/mlx-vlm\nGoal: MLX-VLM is a package for inference and fine-tuning of Vision Language Models (VLMs) on your Mac using MLX. Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: house\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "Blaizzy/reachy_mini_conversation_app",
@@ -10425,28 +10352,6 @@
     "adoptionKind": "tool",
     "codexBrief": "# Codex Mission: cumulo-autumn/StreamDiffusion\nGoal: StreamDiffusion: A Pipeline-Level Solution for Real-Time Interactive Generation Primary Vega Lab fit: repo-discovery via data-pipeline.\nClassification: tool\nCapabilities: data-pipeline, ml-ai\nHouse skills: repo-discovery, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
     "claudeBrief": "# Claude Mission: cumulo-autumn/StreamDiffusion\nGoal: StreamDiffusion: A Pipeline-Level Solution for Real-Time Interactive Generation Primary Vega Lab fit: repo-discovery via data-pipeline.\nClassification: tool\nCapabilities: data-pipeline, ml-ai\nHouse skills: repo-discovery, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
-  },
-  {
-    "nwo": "cuthbertLab/music21",
-    "name": "music21",
-    "author": "cuthbertLab",
-    "summary": "music21: a Toolkit for Computer-Aided Musical Analysis and Computational Musicology Primary Vega Lab fit: repo-adoption via ml-ai.",
-    "capabilities": [
-      "ml-ai"
-    ],
-    "houseSkills": [
-      "repo-adoption"
-    ],
-    "rules": [
-      "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house."
-    ],
-    "flows": [
-      "research-queue-flow",
-      "adoption-decision-flow"
-    ],
-    "adoptionKind": "tool",
-    "codexBrief": "# Codex Mission: cuthbertLab/music21\nGoal: music21: a Toolkit for Computer-Aided Musical Analysis and Computational Musicology Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: cuthbertLab/music21\nGoal: music21: a Toolkit for Computer-Aided Musical Analysis and Computational Musicology Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "cvsandbox/cam2web",
@@ -18629,7 +18534,7 @@
     "nwo": "GoogleCloudPlatform/generative-ai",
     "name": "generative-ai",
     "author": "GoogleCloudPlatform",
-    "summary": "Sample code and notebooks for Generative AI on Google Cloud, with Gemini Enterprise Agent Platform Primary Vega Lab fit: skill-extraction via agent-workflows.",
+    "summary": "Sample code and notebooks for Generative AI on Google Cloud, with Gemini platform Primary Vega Lab fit: skill-extraction via agent-workflows.",
     "capabilities": [
       "agent-workflows",
       "backend-service",
@@ -18648,8 +18553,8 @@
       "adoption-decision-flow"
     ],
     "adoptionKind": "service",
-    "codexBrief": "# Codex Mission: GoogleCloudPlatform/generative-ai\nGoal: Sample code and notebooks for Generative AI on Google Cloud, with Gemini Enterprise Agent Platform Primary Vega Lab fit: skill-extraction via agent-workflows.\nClassification: service\nCapabilities: agent-workflows, backend-service, ml-ai\nHouse skills: skill-extraction, repo-adoption\nRules:\n- Treat external runtimes and APIs as configurable integrations with explicit environment requirements.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: GoogleCloudPlatform/generative-ai\nGoal: Sample code and notebooks for Generative AI on Google Cloud, with Gemini Enterprise Agent Platform Primary Vega Lab fit: skill-extraction via agent-workflows.\nClassification: service\nCapabilities: agent-workflows, backend-service, ml-ai\nHouse skills: skill-extraction, repo-adoption\nRules:\n- Treat external runtimes and APIs as configurable integrations with explicit environment requirements.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: GoogleCloudPlatform/generative-ai\nGoal: Sample code and notebooks for Generative AI on Google Cloud, with Gemini platform Primary Vega Lab fit: skill-extraction via agent-workflows.\nClassification: service\nCapabilities: agent-workflows, backend-service, ml-ai\nHouse skills: skill-extraction, repo-adoption\nRules:\n- Treat external runtimes and APIs as configurable integrations with explicit environment requirements.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: GoogleCloudPlatform/generative-ai\nGoal: Sample code and notebooks for Generative AI on Google Cloud, with Gemini platform Primary Vega Lab fit: skill-extraction via agent-workflows.\nClassification: service\nCapabilities: agent-workflows, backend-service, ml-ai\nHouse skills: skill-extraction, repo-adoption\nRules:\n- Treat external runtimes and APIs as configurable integrations with explicit environment requirements.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "googlecreativelab/anypixel",
@@ -36436,6 +36341,79 @@
     "adoptionKind": "house",
     "codexBrief": "# Codex Mission: nexus-js/ui\nGoal: NexusUI: Web Audio Interfaces Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui\nHouse skills: repo-discovery, repo-adoption\nRules:\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
     "claudeBrief": "# Claude Mission: nexus-js/ui\nGoal: NexusUI: Web Audio Interfaces Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui\nHouse skills: repo-discovery, repo-adoption\nRules:\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+  },
+  {
+    "nwo": "Neywa-Labs/mlx-audio",
+    "name": "mlx-audio",
+    "author": "Neywa-Labs",
+    "summary": "A text-to-speech (TTS), speech-to-text (STT) and speech-to-speech (STS) library built on Apple's MLX framework, providing efficient speech analysis on Apple Silicon. Primary Vega Lab fit: repo-discovery via developer-tooling.",
+    "capabilities": [
+      "developer-tooling",
+      "ml-ai"
+    ],
+    "houseSkills": [
+      "repo-discovery",
+      "skill-extraction",
+      "repo-adoption"
+    ],
+    "rules": [
+      "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house."
+    ],
+    "flows": [
+      "research-queue-flow",
+      "skill-extraction-flow",
+      "adoption-decision-flow",
+      "news-digest-refresh"
+    ],
+    "adoptionKind": "tool",
+    "codexBrief": "# Codex Mission: Neywa-Labs/mlx-audio\nGoal: A text-to-speech (TTS), speech-to-text (STT) and speech-to-speech (STS) library built on Apple's MLX framework, providing efficient speech analysis on Apple Silicon. Primary Vega Lab fit: repo-discovery via developer-tooling.\nClassification: tool\nCapabilities: developer-tooling, ml-ai\nHouse skills: repo-discovery, skill-extraction, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: Neywa-Labs/mlx-audio\nGoal: A text-to-speech (TTS), speech-to-text (STT) and speech-to-speech (STS) library built on Apple's MLX framework, providing efficient speech analysis on Apple Silicon. Primary Vega Lab fit: repo-discovery via developer-tooling.\nClassification: tool\nCapabilities: developer-tooling, ml-ai\nHouse skills: repo-discovery, skill-extraction, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+  },
+  {
+    "nwo": "Neywa-Labs/mlx-audio-swift",
+    "name": "mlx-audio-swift",
+    "author": "Neywa-Labs",
+    "summary": "A modular Swift SDK for audio processing with MLX on Apple Silicon Primary Vega Lab fit: repo-discovery via developer-tooling.",
+    "capabilities": [
+      "developer-tooling"
+    ],
+    "houseSkills": [
+      "repo-discovery",
+      "skill-extraction",
+      "repo-adoption"
+    ],
+    "rules": [
+      "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house."
+    ],
+    "flows": [
+      "research-queue-flow",
+      "skill-extraction-flow",
+      "adoption-decision-flow",
+      "news-digest-refresh"
+    ],
+    "adoptionKind": "tool",
+    "codexBrief": "# Codex Mission: Neywa-Labs/mlx-audio-swift\nGoal: A modular Swift SDK for audio processing with MLX on Apple Silicon Primary Vega Lab fit: repo-discovery via developer-tooling.\nClassification: tool\nCapabilities: developer-tooling\nHouse skills: repo-discovery, skill-extraction, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: Neywa-Labs/mlx-audio-swift\nGoal: A modular Swift SDK for audio processing with MLX on Apple Silicon Primary Vega Lab fit: repo-discovery via developer-tooling.\nClassification: tool\nCapabilities: developer-tooling\nHouse skills: repo-discovery, skill-extraction, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+  },
+  {
+    "nwo": "Neywa-Labs/mlx-vlm",
+    "name": "mlx-vlm",
+    "author": "Neywa-Labs",
+    "summary": "MLX-VLM is a package for inference and fine-tuning of Vision Language Models (VLMs) on your Mac using MLX. Primary Vega Lab fit: repo-adoption via ml-ai.",
+    "capabilities": [
+      "ml-ai"
+    ],
+    "houseSkills": [
+      "repo-adoption"
+    ],
+    "rules": [],
+    "flows": [
+      "research-queue-flow",
+      "adoption-decision-flow"
+    ],
+    "adoptionKind": "house",
+    "codexBrief": "# Codex Mission: Neywa-Labs/mlx-vlm\nGoal: MLX-VLM is a package for inference and fine-tuning of Vision Language Models (VLMs) on your Mac using MLX. Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: house\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: Neywa-Labs/mlx-vlm\nGoal: MLX-VLM is a package for inference and fine-tuning of Vision Language Models (VLMs) on your Mac using MLX. Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: house\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "nginx/unit",

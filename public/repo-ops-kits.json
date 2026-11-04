@@ -1102,14 +1102,14 @@
   },
   {
     "nwo": "KBLLR/Avatars-Lab",
-    "generatedAt": "2026-07-16T22:49:06.000Z",
+    "generatedAt": "2026-11-03T21:34:07.000Z",
     "target": "mlx",
     "artifacts": [
       {
         "kind": "readme",
         "title": "Avatars-Lab README Draft",
         "suggestedPath": "README.md",
-        "body": "# Avatars-Lab\n\nAvatars-Lab needs a concise purpose statement before broader core-x adoption.\n\n## Vega Lab Fit\n- Classification: house\n- Capabilities: frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n\n## Local Setup\n- Package managers: npm, npm-lock\n- Document install, dev, build, and verification commands before broad reuse.\n- Keep runtime assumptions explicit; prefer local MLX/OpenResponses for model-assisted work.\n\n## Verification\n- npm run test:contract\n- npm run test:bridge\n- npm run test:headaudio\n- npm run test:e2e\n- npm run build\n\n## Evidence\n- Repository: KBLLR/Avatars-Lab\n- Adoption kind: house\n- Capabilities: frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Finding: No workflow or deployment config detected in synced key files.\n- Risk: Deployment readiness is unclear.",
+        "body": "# Avatars-Lab\n\nAvatars-Lab needs a concise purpose statement before broader core-x adoption.\n\n## Vega Lab Fit\n- Classification: house\n- Capabilities: frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n\n## Local Setup\n- Package managers: npm, npm-lock\n- Document install, dev, build, and verification commands before broad reuse.\n- Keep runtime assumptions explicit; prefer local MLX/OpenResponses for model-assisted work.\n\n## Verification\n- npm run typecheck\n- npm run test:modernization\n- npm run test:launcher\n- npm run test:gemma\n- npm run test:openresponses\n- npm run test:cases\n- npm run test:performance\n- npm run test:browser\n- npm run test:contract\n- npm run test:bridge\n- npm run test:headaudio\n- npm run test:e2e\n- npm run prebuild\n- npm run build\n\n## Evidence\n- Repository: KBLLR/Avatars-Lab\n- Adoption kind: house\n- Capabilities: frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Finding: No workflow or deployment config detected in synced key files.\n- Risk: Deployment readiness is unclear.",
         "evidence": [
           "Repository: KBLLR/Avatars-Lab",
           "Adoption kind: house",
@@ -1123,7 +1123,7 @@
         "kind": "agents",
         "title": "Avatars-Lab AGENTS Draft",
         "suggestedPath": "AGENTS.md",
-        "body": "# Avatars-Lab Agents\n\n## Product Truth\n- Repository: KBLLR/Avatars-Lab\n- Vega Lab classification: house\n- Active mission target: Local MLX\n\n## Operating Rules\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\n\n## Commands\n- npm run test:contract\n- npm run test:bridge\n- npm run test:headaudio\n- npm run test:e2e\n- npm run build\n\n## Agent Boundaries\n- Do not mutate deployment, secrets, or release configuration without explicit approval.\n- Prefer draft plans and reviewable diffs over broad automation.\n- Preserve existing product direction; use Vega Lab evidence before adding new abstractions.",
+        "body": "# Avatars-Lab Agents\n\n## Product Truth\n- Repository: KBLLR/Avatars-Lab\n- Vega Lab classification: house\n- Active mission target: Local MLX\n\n## Operating Rules\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\n\n## Commands\n- npm run typecheck\n- npm run test:modernization\n- npm run test:launcher\n- npm run test:gemma\n- npm run test:openresponses\n- npm run test:cases\n- npm run test:performance\n- npm run test:browser\n- npm run test:contract\n- npm run test:bridge\n- npm run test:headaudio\n- npm run test:e2e\n- npm run prebuild\n- npm run build\n\n## Agent Boundaries\n- Do not mutate deployment, secrets, or release configuration without explicit approval.\n- Prefer draft plans and reviewable diffs over broad automation.\n- Preserve existing product direction; use Vega Lab evidence before adding new abstractions.",
         "evidence": [
           "Repository: KBLLR/Avatars-Lab",
           "Adoption kind: house",
@@ -1169,7 +1169,7 @@
         "kind": "testing",
         "title": "Avatars-Lab Test Plan",
         "suggestedPath": "docs/test-plan.md",
-        "body": "# Test Plan: KBLLR/Avatars-Lab\n\n## Available Commands\n- npm run test:contract\n- npm run test:bridge\n- npm run test:headaudio\n- npm run test:e2e\n- npm run build\n\n## Minimum Verification Contract\n- Document one install command.\n- Document one fast smoke command.\n- Document one release/build command when deployable.\n- If no commands exist, create a tracked issue or action item before implementation work.\n\n## Evidence\n- Repository: KBLLR/Avatars-Lab\n- Adoption kind: house\n- Capabilities: frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Finding: No workflow or deployment config detected in synced key files.\n- Risk: Deployment readiness is unclear.\n- Action item: Clarify deployment readiness for Avatars-Lab\n- Action item: Define verification for Avatars-Lab",
+        "body": "# Test Plan: KBLLR/Avatars-Lab\n\n## Available Commands\n- npm run typecheck\n- npm run test:modernization\n- npm run test:launcher\n- npm run test:gemma\n- npm run test:openresponses\n- npm run test:cases\n- npm run test:performance\n- npm run test:browser\n- npm run test:contract\n- npm run test:bridge\n- npm run test:headaudio\n- npm run test:e2e\n- npm run prebuild\n- npm run build\n\n## Minimum Verification Contract\n- Document one install command.\n- Document one fast smoke command.\n- Document one release/build command when deployable.\n- If no commands exist, create a tracked issue or action item before implementation work.\n\n## Evidence\n- Repository: KBLLR/Avatars-Lab\n- Adoption kind: house\n- Capabilities: frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Finding: No workflow or deployment config detected in synced key files.\n- Risk: Deployment readiness is unclear.\n- Action item: Clarify deployment readiness for Avatars-Lab\n- Action item: Define verification for Avatars-Lab",
         "evidence": [
           "Repository: KBLLR/Avatars-Lab",
           "Adoption kind: house",
@@ -2395,7 +2395,7 @@
   },
   {
     "nwo": "KBLLR/core-x",
-    "generatedAt": "2026-11-02T17:56:53.000Z",
+    "generatedAt": "2026-11-04T04:45:33.000Z",
     "target": "mlx",
     "artifacts": [
       {
@@ -8406,7 +8406,7 @@
   },
   {
     "nwo": "KBLLR/memoryblocks",
-    "generatedAt": "2026-11-03T01:50:10.000Z",
+    "generatedAt": "2026-11-04T02:31:30.000Z",
     "target": "mlx",
     "artifacts": [
       {
@@ -9633,7 +9633,7 @@
   },
   {
     "nwo": "KBLLR/oink-oink",
-    "generatedAt": "2026-11-03T01:14:14.000Z",
+    "generatedAt": "2026-11-04T03:11:01.000Z",
     "target": "mlx",
     "artifacts": [
       {
@@ -10240,7 +10240,7 @@
   },
   {
     "nwo": "KBLLR/rigging-palace",
-    "generatedAt": "2026-11-02T17:56:40.000Z",
+    "generatedAt": "2026-11-03T19:31:47.000Z",
     "target": "mlx",
     "artifacts": [
       {
@@ -13338,7 +13338,7 @@
   },
   {
     "nwo": "KBLLR/vega-lab",
-    "generatedAt": "2026-11-02T04:41:09.000Z",
+    "generatedAt": "2026-11-03T05:38:03.000Z",
     "target": "mlx",
     "artifacts": [
       {
