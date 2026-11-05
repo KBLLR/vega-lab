@@ -724,7 +724,7 @@
   },
   {
     "nwo": "KBLLR/audio-lab",
-    "generatedAt": "2026-11-02T17:56:45.000Z",
+    "generatedAt": "2026-11-05T04:06:07.000Z",
     "target": "mlx",
     "artifacts": [
       {
@@ -1102,7 +1102,7 @@
   },
   {
     "nwo": "KBLLR/Avatars-Lab",
-    "generatedAt": "2026-11-03T21:34:07.000Z",
+    "generatedAt": "2026-11-05T04:16:37.000Z",
     "target": "mlx",
     "artifacts": [
       {
@@ -1832,7 +1832,7 @@
   },
   {
     "nwo": "KBLLR/cine-mlx",
-    "generatedAt": "2026-06-07T15:14:26.000Z",
+    "generatedAt": "2026-11-04T16:29:48.000Z",
     "target": "mlx",
     "artifacts": [
       {
@@ -2057,7 +2057,7 @@
   },
   {
     "nwo": "KBLLR/code-platformer-ai",
-    "generatedAt": "2026-10-03T10:42:48.000Z",
+    "generatedAt": "2026-11-04T22:07:11.000Z",
     "target": "mlx",
     "artifacts": [
       {
@@ -2395,7 +2395,7 @@
   },
   {
     "nwo": "KBLLR/core-x",
-    "generatedAt": "2026-11-04T04:45:33.000Z",
+    "generatedAt": "2026-11-05T04:40:47.000Z",
     "target": "mlx",
     "artifacts": [
       {
@@ -4735,7 +4735,7 @@
   },
   {
     "nwo": "KBLLR/gen-idea-lab",
-    "generatedAt": "2026-10-19T14:12:38.000Z",
+    "generatedAt": "2026-11-05T04:06:45.000Z",
     "target": "mlx",
     "artifacts": [
       {
@@ -6098,7 +6098,7 @@
   },
   {
     "nwo": "KBLLR/htdi-project",
-    "generatedAt": "2026-06-23T13:25:38.000Z",
+    "generatedAt": "2026-11-05T04:07:13.000Z",
     "target": "mlx",
     "artifacts": [
       {
@@ -6584,7 +6584,7 @@
   },
   {
     "nwo": "KBLLR/isoboth",
-    "generatedAt": "2026-05-20T14:48:15.000Z",
+    "generatedAt": "2026-11-05T03:22:42.000Z",
     "target": "mlx",
     "artifacts": [
       {
@@ -7783,7 +7783,7 @@
   },
   {
     "nwo": "KBLLR/Leagentdiary",
-    "generatedAt": "2026-07-16T22:56:16.000Z",
+    "generatedAt": "2026-11-05T03:23:14.000Z",
     "target": "mlx",
     "artifacts": [
       {
@@ -8406,7 +8406,7 @@
   },
   {
     "nwo": "KBLLR/memoryblocks",
-    "generatedAt": "2026-11-04T02:31:30.000Z",
+    "generatedAt": "2026-11-05T01:14:19.000Z",
     "target": "mlx",
     "artifacts": [
       {
@@ -9143,7 +9143,7 @@
   },
   {
     "nwo": "KBLLR/moonsyc",
-    "generatedAt": "2025-11-15T21:21:45.000Z",
+    "generatedAt": "2026-11-05T01:24:35.000Z",
     "target": "mlx",
     "artifacts": [
       {
@@ -9633,7 +9633,7 @@
   },
   {
     "nwo": "KBLLR/oink-oink",
-    "generatedAt": "2026-11-04T03:11:01.000Z",
+    "generatedAt": "2026-11-04T22:02:10.000Z",
     "target": "mlx",
     "artifacts": [
       {
@@ -9885,7 +9885,7 @@
   },
   {
     "nwo": "KBLLR/project_anja",
-    "generatedAt": "2025-11-17T04:02:56.000Z",
+    "generatedAt": "2026-11-05T01:24:44.000Z",
     "target": "mlx",
     "artifacts": [
       {
@@ -10240,7 +10240,7 @@
   },
   {
     "nwo": "KBLLR/rigging-palace",
-    "generatedAt": "2026-11-03T19:31:47.000Z",
+    "generatedAt": "2026-11-05T03:21:28.000Z",
     "target": "mlx",
     "artifacts": [
       {
@@ -11199,6 +11199,128 @@
       "maintenance:vega-lab:maintenance:kbllr-simple-flask-api-restx",
       "testing:vega-lab:testing:kbllr-simple-flask-api-restx",
       "deployment:vega-lab:deployment:kbllr-simple-flask-api-restx",
+      "review-draft-only"
+    ]
+  },
+  {
+    "nwo": "KBLLR/smart-campus-cloud-20261105",
+    "generatedAt": "2026-11-05T05:08:28.000Z",
+    "target": "mlx",
+    "artifacts": [
+      {
+        "kind": "readme",
+        "title": "smart-campus-cloud-20261105 README Draft",
+        "suggestedPath": "README.md",
+        "body": "# smart-campus-cloud-20261105\n\nPrivate sanitized Smart Campus cloud handoff snapshot, 2026-11-05\n\n## Vega Lab Fit\n- Classification: ignore\n- Capabilities: none\n- House skills: mine-execution\n\n## Local Setup\n- Package managers: npm, pnpm, npm-lock\n- Document install, dev, build, and verification commands before broad reuse.\n- Keep runtime assumptions explicit; prefer local MLX/OpenResponses for model-assisted work.\n\n## Verification\n- npm run check:secrets\n- npm run lint\n- npm run test\n- npm run test:watch\n- npm run test:coverage\n- npm run test:picking\n- npm run test:performance\n- npm run check\n- npm run test:sun\n- npm run build\n\n## Evidence\n- Repository: KBLLR/smart-campus-cloud-20261105\n- Description: Private sanitized Smart Campus cloud handoff snapshot, 2026-11-05\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Finding: README missing from the synced repository snapshot.",
+        "evidence": [
+          "Repository: KBLLR/smart-campus-cloud-20261105",
+          "Description: Private sanitized Smart Campus cloud handoff snapshot, 2026-11-05",
+          "Adoption kind: ignore",
+          "Capabilities: none",
+          "House skills: mine-execution",
+          "Finding: README missing from the synced repository snapshot."
+        ]
+      },
+      {
+        "kind": "agents",
+        "title": "smart-campus-cloud-20261105 AGENTS Draft",
+        "suggestedPath": "AGENTS.md",
+        "body": "# smart-campus-cloud-20261105 Agents\n\n## Product Truth\n- Repository: KBLLR/smart-campus-cloud-20261105\n- Vega Lab classification: ignore\n- Active mission target: Local MLX\n\n## Operating Rules\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\n\n## Commands\n- npm run check:secrets\n- npm run lint\n- npm run test\n- npm run test:watch\n- npm run test:coverage\n- npm run test:picking\n- npm run test:performance\n- npm run check\n- npm run test:sun\n- npm run build\n\n## Agent Boundaries\n- Do not mutate deployment, secrets, or release configuration without explicit approval.\n- Prefer draft plans and reviewable diffs over broad automation.\n- Preserve existing product direction; use Vega Lab evidence before adding new abstractions.",
+        "evidence": [
+          "Repository: KBLLR/smart-campus-cloud-20261105",
+          "Description: Private sanitized Smart Campus cloud handoff snapshot, 2026-11-05",
+          "Adoption kind: ignore",
+          "Capabilities: none",
+          "House skills: mine-execution",
+          "Finding: README missing from the synced repository snapshot."
+        ]
+      },
+      {
+        "kind": "maintenance",
+        "title": "smart-campus-cloud-20261105 Maintenance Plan",
+        "suggestedPath": "docs/maintenance-plan.md",
+        "body": "# Maintenance Plan: KBLLR/smart-campus-cloud-20261105\n\n## Current Signals\n- Health flag: missing-readme\n- Health flag: private\n- README missing from the synced repository snapshot.\n\n## Recommended Pass\n- Confirm install path and package manager.\n- Run available verification commands before editing.\n- Patch stale docs, commands, and workflow assumptions first.\n- Open the smallest useful PR only after human approval.\n- Vega Lab action: mlx-mission\n- Vega Lab action: ops-kit\n- Vega Lab action: codex-mission\n- Vega Lab action: claude-mission\n- Vega Lab action: write-readme\n\n## Evidence\n- Repository: KBLLR/smart-campus-cloud-20261105\n- Description: Private sanitized Smart Campus cloud handoff snapshot, 2026-11-05\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Finding: README missing from the synced repository snapshot.\n- Risk: New contributors and agents lack a clear entrypoint.\n- Health flag: missing-readme",
+        "evidence": [
+          "Repository: KBLLR/smart-campus-cloud-20261105",
+          "Description: Private sanitized Smart Campus cloud handoff snapshot, 2026-11-05",
+          "Adoption kind: ignore",
+          "Capabilities: none",
+          "House skills: mine-execution",
+          "Finding: README missing from the synced repository snapshot.",
+          "Risk: New contributors and agents lack a clear entrypoint.",
+          "Health flag: missing-readme"
+        ]
+      },
+      {
+        "kind": "deployment",
+        "title": "smart-campus-cloud-20261105 Deployment Plan",
+        "suggestedPath": "docs/deployment-plan.md",
+        "body": "# Deployment Plan: KBLLR/smart-campus-cloud-20261105\n\n## Known Deployment Evidence\n- Deployment config: vercel.json\n\n## Draft Checks\n- Identify expected host and runtime.\n- Document build command, output directory, and required environment variables.\n- Verify preview URL and production URL checks.\n- Keep deploy authority manual; Vega Lab drafts plans and inbox items only.\n\n## Evidence\n- Repository: KBLLR/smart-campus-cloud-20261105\n- Description: Private sanitized Smart Campus cloud handoff snapshot, 2026-11-05\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Finding: README missing from the synced repository snapshot.\n- Risk: New contributors and agents lack a clear entrypoint.\n- Health flag: missing-readme",
+        "evidence": [
+          "Repository: KBLLR/smart-campus-cloud-20261105",
+          "Description: Private sanitized Smart Campus cloud handoff snapshot, 2026-11-05",
+          "Adoption kind: ignore",
+          "Capabilities: none",
+          "House skills: mine-execution",
+          "Finding: README missing from the synced repository snapshot.",
+          "Risk: New contributors and agents lack a clear entrypoint.",
+          "Health flag: missing-readme"
+        ]
+      },
+      {
+        "kind": "testing",
+        "title": "smart-campus-cloud-20261105 Test Plan",
+        "suggestedPath": "docs/test-plan.md",
+        "body": "# Test Plan: KBLLR/smart-campus-cloud-20261105\n\n## Available Commands\n- npm run check:secrets\n- npm run lint\n- npm run test\n- npm run test:watch\n- npm run test:coverage\n- npm run test:picking\n- npm run test:performance\n- npm run check\n- npm run test:sun\n- npm run build\n\n## Minimum Verification Contract\n- Document one install command.\n- Document one fast smoke command.\n- Document one release/build command when deployable.\n- If no commands exist, create a tracked issue or action item before implementation work.\n\n## Evidence\n- Repository: KBLLR/smart-campus-cloud-20261105\n- Description: Private sanitized Smart Campus cloud handoff snapshot, 2026-11-05\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Finding: README missing from the synced repository snapshot.\n- Risk: New contributors and agents lack a clear entrypoint.\n- Health flag: missing-readme",
+        "evidence": [
+          "Repository: KBLLR/smart-campus-cloud-20261105",
+          "Description: Private sanitized Smart Campus cloud handoff snapshot, 2026-11-05",
+          "Adoption kind: ignore",
+          "Capabilities: none",
+          "House skills: mine-execution",
+          "Finding: README missing from the synced repository snapshot.",
+          "Risk: New contributors and agents lack a clear entrypoint.",
+          "Health flag: missing-readme"
+        ]
+      },
+      {
+        "kind": "action-item",
+        "title": "smart-campus-cloud-20261105 Action Item Draft",
+        "suggestedPath": "ops/action-item.md",
+        "body": "# Action Item Draft: KBLLR/smart-campus-cloud-20261105\n\n## Recommended Actions\n- readme: Make smart-campus-cloud-20261105 README-ready\n\n## Mission Target\n- Local MLX\n\n## Evidence\n- Repository: KBLLR/smart-campus-cloud-20261105\n- Description: Private sanitized Smart Campus cloud handoff snapshot, 2026-11-05\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Finding: README missing from the synced repository snapshot.\n- Risk: New contributors and agents lack a clear entrypoint.\n- Health flag: missing-readme\n- Health flag: private\n- Action item: Make smart-campus-cloud-20261105 README-ready",
+        "evidence": [
+          "Repository: KBLLR/smart-campus-cloud-20261105",
+          "Description: Private sanitized Smart Campus cloud handoff snapshot, 2026-11-05",
+          "Adoption kind: ignore",
+          "Capabilities: none",
+          "House skills: mine-execution",
+          "Finding: README missing from the synced repository snapshot.",
+          "Risk: New contributors and agents lack a clear entrypoint.",
+          "Health flag: missing-readme",
+          "Health flag: private",
+          "Action item: Make smart-campus-cloud-20261105 README-ready"
+        ]
+      }
+    ],
+    "evidence": [
+      "Repository: KBLLR/smart-campus-cloud-20261105",
+      "Description: Private sanitized Smart Campus cloud handoff snapshot, 2026-11-05",
+      "Adoption kind: ignore",
+      "Capabilities: none",
+      "House skills: mine-execution",
+      "Finding: README missing from the synced repository snapshot.",
+      "Risk: New contributors and agents lack a clear entrypoint.",
+      "Health flag: missing-readme",
+      "Health flag: private",
+      "Action item: Make smart-campus-cloud-20261105 README-ready"
+    ],
+    "recommendedActions": [
+      "mlx-mission",
+      "ops-kit",
+      "codex-mission",
+      "claude-mission",
+      "write-readme",
+      "readme:vega-lab:readme:kbllr-smart-campus-cloud-20261105",
       "review-draft-only"
     ]
   },
@@ -13338,7 +13460,7 @@
   },
   {
     "nwo": "KBLLR/vega-lab",
-    "generatedAt": "2026-11-03T05:38:03.000Z",
+    "generatedAt": "2026-11-05T01:24:48.000Z",
     "target": "mlx",
     "artifacts": [
       {

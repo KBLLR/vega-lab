@@ -1,5 +1,101 @@
 [
   {
+    "name": "smart-campus-cloud-20261105",
+    "description": "Private sanitized Smart Campus cloud handoff snapshot, 2026-11-05",
+    "author": "KBLLR",
+    "stars": 0,
+    "url": "https://github.com/KBLLR/smart-campus-cloud-20261105",
+    "date": "11/5/2026",
+    "languages": [
+      {
+        "language": "JavaScript",
+        "percentage": "100%"
+      }
+    ],
+    "topics": [],
+    "primary_language": "JavaScript",
+    "license": "MIT",
+    "forks": 0,
+    "open_issues": 0,
+    "last_updated": "11/5/2026",
+    "last_updated_at": "2026-11-05T05:08:28Z",
+    "created_at": "2026-11-05T05:07:36Z",
+    "private": true,
+    "has_readme": false,
+    "is_owner": true,
+    "is_fork": false,
+    "key_files": {
+      "packageJson": {
+        "scripts": {
+          "dev": "npm run dev:vite",
+          "server": "node server/index.js",
+          "dev:vite": "vite",
+          "dev:full": "concurrently \"npm run server\" \"npm run dev:vite\" --names \"server,vite\" --prefix-colors \"blue,green\"",
+          "check:secrets": "python ../../.secretsbank/check_required_secrets.py --house tier1-smart-campus",
+          "build": "tsc && vite build",
+          "preview": "vite preview",
+          "lint": "eslint ./src --ext .js,.jsx,.ts,.tsx",
+          "test": "jest",
+          "test:watch": "jest --watch",
+          "test:coverage": "jest --coverage",
+          "test:picking": "jest picking",
+          "test:performance": "jest picking-performance --verbose",
+          "deploy:link": "vercel link",
+          "deploy:preview": "npm run build && vercel deploy --prebuilt --env-file=.env.local",
+          "deploy:prod": "npm run build && vercel deploy --prebuilt --prod",
+          "new:session": "node scripts/new-session.mjs",
+          "tasks:export": "node scripts/tasks-export.mjs",
+          "check": "npm run lint && npm run test:sun",
+          "generateLabelRegistry": "node src/tools/generateLabelRegistry.js",
+          "generateRoomRegistry": "node src/tools/generateRoomRegistry.js",
+          "test:sun": "node --test tests/sunTelemetry.test.js"
+        },
+        "dependencies": {
+          "@alienkitty/alien.js": "^1.2.0",
+          "@alienkitty/space.js": "^1.2.0",
+          "@takram/three-atmosphere": "^0.15.1",
+          "@tweenjs/tween.js": "^25.0.0",
+          "cors": "^2.8.5",
+          "dotenv": "^16.4.7",
+          "express": "^4.21.2",
+          "gsap": "^3.12.7",
+          "node-fetch": "^3.3.2",
+          "suncalc": "^1.9.0",
+          "three": "^0.181.0",
+          "zod": "^4.1.12"
+        },
+        "devDependencies": {
+          "@eslint/js": "^9.39.0",
+          "@tailwindcss/vite": "^4.0.0",
+          "@types/jest": "^30.0.0",
+          "@types/three": "^0.181.0",
+          "acorn": "^8.14.1",
+          "concurrently": "^9.1.2",
+          "eslint": "^9.39.0",
+          "globals": "^16.5.0",
+          "jest": "^30.2.0",
+          "jest-environment-jsdom": "^30.2.0",
+          "js-yaml": "^4.1.0",
+          "jsdom": "^27.1.0",
+          "tailwindcss": "^4.0.0",
+          "ts-jest": "^29.4.5",
+          "typescript": "^5.9.3",
+          "typescript-eslint": "^8.46.2",
+          "vite": "^7.1.12"
+        }
+      },
+      "packageManagers": [
+        "npm",
+        "pnpm",
+        "npm-lock"
+      ],
+      "workflows": [],
+      "deploymentConfigs": [
+        "vercel.json"
+      ]
+    }
+  },
+  {
     "name": "core-x",
     "description": "Core-X: Clean architecture backbone for the KBLLR AI ecosystem",
     "author": "KBLLR",
@@ -16,44 +112,12 @@
     "primary_language": "Python",
     "license": "None",
     "forks": 0,
-    "open_issues": 4,
-    "last_updated": "11/4/2026",
-    "last_updated_at": "2026-11-04T04:45:33Z",
+    "open_issues": 2,
+    "last_updated": "11/5/2026",
+    "last_updated_at": "2026-11-05T04:40:47Z",
     "created_at": "2026-02-09T19:25:05Z",
     "private": true,
     "has_readme": false,
-    "is_owner": true,
-    "is_fork": false,
-    "key_files": {
-      "packageJson": null,
-      "packageManagers": [],
-      "workflows": [],
-      "deploymentConfigs": []
-    }
-  },
-  {
-    "name": "oink-oink",
-    "description": "MONSTERA OINK household iPad app, OINK for Mac, projection",
-    "author": "KBLLR",
-    "stars": 0,
-    "url": "https://github.com/KBLLR/oink-oink",
-    "date": "10/18/2026",
-    "languages": [
-      {
-        "language": "Swift",
-        "percentage": "100%"
-      }
-    ],
-    "topics": [],
-    "primary_language": "Swift",
-    "license": "None",
-    "forks": 0,
-    "open_issues": 0,
-    "last_updated": "11/4/2026",
-    "last_updated_at": "2026-11-04T03:11:01Z",
-    "created_at": "2026-10-18T16:47:00Z",
-    "private": true,
-    "has_readme": true,
     "is_owner": true,
     "is_fork": false,
     "key_files": {
@@ -81,8 +145,8 @@
     "license": "None",
     "forks": 0,
     "open_issues": 0,
-    "last_updated": "11/3/2026",
-    "last_updated_at": "2026-11-03T21:34:07Z",
+    "last_updated": "11/5/2026",
+    "last_updated_at": "2026-11-05T04:16:37Z",
     "created_at": "2025-12-24T02:03:52Z",
     "private": false,
     "has_readme": true,
@@ -150,6 +214,427 @@
     }
   },
   {
+    "name": "htdi-project",
+    "description": "Hard To Debug Issues",
+    "author": "KBLLR",
+    "stars": 0,
+    "url": "https://github.com/KBLLR/htdi-project",
+    "date": "1/16/2022",
+    "languages": [
+      {
+        "language": "JavaScript",
+        "percentage": "100%"
+      }
+    ],
+    "topics": [],
+    "primary_language": "JavaScript",
+    "license": "None",
+    "forks": 0,
+    "open_issues": 0,
+    "last_updated": "11/5/2026",
+    "last_updated_at": "2026-11-05T04:07:13Z",
+    "created_at": "2022-01-16T13:46:41Z",
+    "private": false,
+    "has_readme": true,
+    "is_owner": true,
+    "is_fork": false,
+    "key_files": {
+      "packageJson": {
+        "scripts": {
+          "dev": "vite",
+          "dev:diary-api": "node server/leagentdiary-api.mjs",
+          "build": "vite build",
+          "preview": "vite preview --port 4173",
+          "start": "npm run dev",
+          "lint": "eslint \"src/**/*.js\"",
+          "test": "echo \"No tests configured\" && exit 0",
+          "sync:warehouse-fonts": "node tools/syncWarehouseFonts.mjs",
+          "generate:assets": "node scripts/updateAssets.mjs",
+          "fbx:glb": "BLENDER_BIN=\"/Applications/Blender.app/Contents/MacOS/Blender\" zsh scripts/convert_fbx_with_blender.zsh ./assets/fbx ./assets/gltf glb --recursive --verbose",
+          "fbx:gltf:separate": "BLENDER_BIN=\"/Applications/Blender.app/Contents/MacOS/Blender\" zsh scripts/convert_fbx_with_blender.zsh ./assets/fbx ./assets/gltf gltf_separate --recursive --verbose"
+        },
+        "dependencies": {
+          "@radix-ui/colors": "^3.0.0",
+          "@tweenjs/tween.js": "^25.0.0",
+          "augmented-ui": "^2.0.0",
+          "chroma-js": "^2.6.0",
+          "gsap": "^3.13.0",
+          "hsl-to-hex": "^1.0.0",
+          "improved-noise": "^0.0.3",
+          "lil-gui": "^0.21.0",
+          "lodash": "^4.17.21",
+          "popmotion": "^11.0.5",
+          "postprocessing": "^6.37.8",
+          "simplex-noise": "^4.0.3",
+          "snd-lib": "^1.2.4",
+          "stats.js": "^0.17.0",
+          "three": "^0.180.0",
+          "tippy.js": "^6.3.7",
+          "zod": "^4.1.12"
+        },
+        "devDependencies": {
+          "@tweakpane/plugin-essentials": "^0.2.1",
+          "eslint": "^9.38.0",
+          "ktx2-encoder": "^0.5.0",
+          "potpack": "^2.1.0",
+          "sharp": "^0.34.4",
+          "tweakpane": "^4.0.5",
+          "vite": "^7.1.12",
+          "vite-plugin-static-copy": "^3.1.4"
+        }
+      },
+      "packageManagers": [
+        "npm",
+        "pnpm",
+        "npm-lock"
+      ],
+      "workflows": [
+        "gemini-dispatch.yml",
+        "gemini-invoke.yml",
+        "gemini-review.yml",
+        "gemini-scheduled-triage.yml",
+        "gemini-triage.yml"
+      ],
+      "deploymentConfigs": []
+    }
+  },
+  {
+    "name": "gen-idea-lab",
+    "description": "Connect with expert AI assistants for each subject and generate creative project ideas. A growing collection of micro-apps designed for agents with Human in the loop.",
+    "author": "KBLLR",
+    "stars": 0,
+    "url": "https://github.com/KBLLR/gen-idea-lab",
+    "date": "9/27/2025",
+    "languages": [
+      {
+        "language": "JavaScript",
+        "percentage": "100%"
+      }
+    ],
+    "topics": [
+      "documentation-generator",
+      "multiagent-systems",
+      "project-generator"
+    ],
+    "primary_language": "JavaScript",
+    "license": "None",
+    "forks": 0,
+    "open_issues": 0,
+    "last_updated": "11/5/2026",
+    "last_updated_at": "2026-11-05T04:06:45Z",
+    "created_at": "2025-09-27T20:04:09Z",
+    "private": true,
+    "has_readme": true,
+    "is_owner": true,
+    "is_fork": false,
+    "key_files": {
+      "packageJson": {
+        "scripts": {
+          "dev": "VITE_API_TARGET=${VITE_API_TARGET:-http://127.0.0.1:4001} concurrently -k -n client,server -c green,blue \"npm:dev:client\" \"npm:dev:server\"",
+          "dev:client": "VITE_API_TARGET=${VITE_API_TARGET:-http://127.0.0.1:4001} vite --port 3000",
+          "dev:server": "PORT=${PORT:-4001} MLX_URL=http://localhost:8001 RAG_URL=http://localhost:8002 LOCAL_MODE=true nodemon server/index.js",
+          "dev:vercel": "./scripts/vercel-dev.sh",
+          "check:secrets": "python ../../.secretsbank/check_required_secrets.py --house emergence-lab",
+          "build": "npm run tokens:build && vite build",
+          "vercel-build": "npm run tokens:build && vite build",
+          "preview": "vite preview",
+          "start": "node server/index.js",
+          "storybook": "storybook dev -p 6006",
+          "build-storybook": "storybook build",
+          "sb:build": "storybook build",
+          "sb:test:ui": "playwright test .storybook/tests",
+          "test:ui": "vitest --environment=jsdom",
+          "test:ui:watch": "vitest --environment=jsdom --watch",
+          "generate-thumbnails": "node scripts/generate-thumbnails.mjs",
+          "tokens:build": "cd tokens && npx style-dictionary build --config config.json",
+          "ds:check": "rg -n '\\d+px' src/design-system | (! read) || (echo 'px found in DS'; exit 1)",
+          "tokens:watch": "cd tokens && npx style-dictionary build --watch",
+          "tokens:clean": "rm -rf src/styles/tokens/tokens-*.css src/styles/tokens/tokens.js tokens/build",
+          "tokens:audit": "node scripts/audit-css.js",
+          "tokens:validate": "node scripts/validate-tokens.js",
+          "validate:room-bindings": "node scripts/validate-room-bindings.mjs",
+          "test": "NODE_ENV=test NODE_OPTIONS=--experimental-vm-modules jest",
+          "test:auth": "NODE_ENV=test NODE_OPTIONS=--experimental-vm-modules jest tests/auth.routes.test.js"
+        },
+        "dependencies": {
+          "@aws-sdk/client-s3": "^3.914.0",
+          "@aws-sdk/client-sts": "^3.914.0",
+          "@aws-sdk/s3-request-presigner": "^3.914.0",
+          "@dnd-kit/core": "^6.3.1",
+          "@dnd-kit/sortable": "^10.0.0",
+          "@dnd-kit/utilities": "^3.2.2",
+          "@gltf-transform/core": "^4.2.1",
+          "@gltf-transform/extensions": "^4.2.1",
+          "@gltf-transform/functions": "^4.2.1",
+          "@google/model-viewer": "^4.1.0",
+          "@huggingface/inference": "^4.13.0",
+          "@humeai/voice-react": "^0.2.5",
+          "@mediapipe/tasks-vision": "^0.10.21",
+          "@notionhq/client": "^5.2.1",
+          "@react-oauth/google": "^0.12.2",
+          "@vladmandic/human": "^3.3.6",
+          "auto-zustand-selectors-hook": "^3.0.1",
+          "bcrypt": "^6.0.0",
+          "clsx": "^2.1.1",
+          "cookie-parser": "^1.4.6",
+          "cors": "^2.8.5",
+          "d3": "^7.9.0",
+          "dompurify": "^3.2.7",
+          "dotenv": "^16.4.5",
+          "eventemitter3": "^5.0.1",
+          "express": "^4.19.2",
+          "google-auth-library": "^9.14.1",
+          "googleapis": "^144.0.0",
+          "immer": "^10.1.3",
+          "jsonwebtoken": "^9.0.2",
+          "lodash": "^4.17.21",
+          "marked": "^16.3.0",
+          "markmap-common": "^0.18.9",
+          "markmap-lib": "^0.18.12",
+          "markmap-view": "^0.18.12",
+          "meshoptimizer": "^0.25.0",
+          "mongodb": "^6.7.0",
+          "multer": "^2.0.2",
+          "nanoid": "^5.1.6",
+          "node-fetch": "^3.3.2",
+          "p-limit": "^7.1.1",
+          "passport-apple-verify-token": "^1.1.0",
+          "prom-client": "^15.1.2",
+          "react": "^19.1.1",
+          "react-dom": "^19.1.1",
+          "react-icons": "^5.3.0",
+          "react-markdown": "^10.1.0",
+          "react-router-dom": "^6.30.1",
+          "reactflow": "^11.10.2",
+          "simple-icons": "^13.0.0",
+          "three": "^0.172.0",
+          "winston": "^3.13.0",
+          "ws": "^8.18.3",
+          "zustand": "^5.0.8"
+        },
+        "devDependencies": {
+          "@storybook/addon-a11y": "^8.6.14",
+          "@storybook/addon-essentials": "^8.6.14",
+          "@storybook/addon-interactions": "^8.6.14",
+          "@storybook/react-vite": "^8.6.14",
+          "@storybook/test": "^8.6.14",
+          "@types/node": "^20.19.21",
+          "@vitejs/plugin-react": "^4.3.0",
+          "concurrently": "^8.2.2",
+          "jest": "^29.7.0",
+          "nodemon": "^3.1.0",
+          "rollup-plugin-visualizer": "^5.12.0",
+          "storybook": "^8.6.14",
+          "style-dictionary": "^5.0.4",
+          "supertest": "^6.3.4",
+          "typescript": "^5.9.3",
+          "vite": "^5.4.0",
+          "vitest": "^2.0.0"
+        }
+      },
+      "packageManagers": [
+        "npm",
+        "npm-lock"
+      ],
+      "workflows": [
+        "design-tokens-check.yml",
+        "gemini-dispatch.yml",
+        "gemini-invoke.yml",
+        "gemini-review.yml",
+        "gemini-scheduled-triage.yml",
+        "gemini-triage.yml"
+      ],
+      "deploymentConfigs": [
+        "vercel.json"
+      ]
+    }
+  },
+  {
+    "name": "audio-lab",
+    "description": "Core-X Audio Lab house: transcription, diarisation, dubbing, and local audio workflows",
+    "author": "KBLLR",
+    "stars": 0,
+    "url": "https://github.com/KBLLR/audio-lab",
+    "date": "6/22/2026",
+    "languages": [
+      {
+        "language": "JavaScript",
+        "percentage": "100%"
+      }
+    ],
+    "topics": [],
+    "primary_language": "JavaScript",
+    "license": "None",
+    "forks": 0,
+    "open_issues": 0,
+    "last_updated": "11/5/2026",
+    "last_updated_at": "2026-11-05T04:06:07Z",
+    "created_at": "2026-06-22T14:51:52Z",
+    "private": true,
+    "has_readme": false,
+    "is_owner": true,
+    "is_fork": false,
+    "key_files": {
+      "packageJson": {
+        "scripts": {
+          "dev": "vite",
+          "build": "vite build",
+          "preview": "vite preview",
+          "publish:warehouse": "node ../../scripts/publish-house-assets.mjs --house audio-lab",
+          "publish:warehouse:dry": "node ../../scripts/publish-house-assets.mjs --house audio-lab --dry-run"
+        },
+        "dependencies": {
+          "jszip": "^3.10.1",
+          "lit": "^3.3.0",
+          "rightorchestrator": "^1.0.2"
+        },
+        "devDependencies": {
+          "vite": "^7.0.0"
+        }
+      },
+      "packageManagers": [
+        "npm",
+        "npm-lock"
+      ],
+      "workflows": [],
+      "deploymentConfigs": []
+    }
+  },
+  {
+    "name": "vega-lab",
+    "description": "The Brightest Stars",
+    "author": "KBLLR",
+    "stars": 0,
+    "url": "https://github.com/KBLLR/vega-lab",
+    "date": "12/23/2023",
+    "languages": [
+      {
+        "language": "JavaScript",
+        "percentage": "100%"
+      }
+    ],
+    "topics": [
+      "github-stars",
+      "programming",
+      "skills-assessment",
+      "system-design"
+    ],
+    "primary_language": "JavaScript",
+    "license": "None",
+    "forks": 0,
+    "open_issues": 0,
+    "last_updated": "11/5/2026",
+    "last_updated_at": "2026-11-05T01:24:48Z",
+    "created_at": "2023-12-23T23:09:43Z",
+    "private": false,
+    "has_readme": true,
+    "is_owner": true,
+    "is_fork": false,
+    "key_files": {
+      "packageJson": {
+        "scripts": {
+          "dev": "vite",
+          "build": "tsc && vite build",
+          "lint": "eslint . --report-unused-disable-directives --max-warnings 0",
+          "preview": "vite preview",
+          "build:data": "node scripts/generator.js",
+          "sync:mine": "node scripts/my-repos.js",
+          "sync:model-zoo": "node scripts/model-zoo-snapshot.js",
+          "resolve:source-snapshots": "node scripts/source-snapshot-resolver.js",
+          "export:corex-contracts": "node scripts/export-corex-contracts.js",
+          "build:skill-candidates": "node scripts/build-skill-candidates.js",
+          "generate:stats": "node src/analytics/statistics.js",
+          "mcp": "node src/mcp-server/index.js",
+          "test:data": "node tests/run-tests.js",
+          "test:mcp": "node tests/test-mcp-server.js && node tests/test-ocr-skill-candidate.js",
+          "test:corex-contract-export": "node tests/test-corex-contract-export.js",
+          "test:corex-contract-snapshots": "node tests/test-corex-contract-snapshots.js",
+          "test:source-snapshots": "node tests/test-source-snapshot-resolver.js",
+          "test:skill-candidate-ingestion": "node tests/test-skill-candidate-ingestion.js && node tests/test-skill-candidate-profiles.js",
+          "test:action-bridge": "node tests/test-action-bridge.js",
+          "test": "npm run lint && npm run test:data && npm run test:mcp && npm run test:action-bridge"
+        },
+        "dependencies": {
+          "@modelcontextprotocol/sdk": "^1.25.3",
+          "@octokit/rest": "^20.1.2",
+          "@types/dompurify": "^3.2.0",
+          "@types/marked": "^6.0.0",
+          "axios": "^1.13.4",
+          "commander": "^12.1.0",
+          "dompurify": "^3.3.1",
+          "dotenv": "^16.6.1",
+          "lodash": "^4.17.23",
+          "lucide-react": "^0.344.0",
+          "marked": "^12.0.2",
+          "node-fetch": "^3.3.2",
+          "p-queue": "^8.1.1",
+          "react": "^18.2.0",
+          "react-dom": "^18.2.0",
+          "recharts": "^2.12.2"
+        },
+        "devDependencies": {
+          "@eslint/js": "^8.57.1",
+          "@types/react": "^18.2.64",
+          "@types/react-dom": "^18.2.21",
+          "@typescript-eslint/eslint-plugin": "^8.0.0",
+          "@typescript-eslint/parser": "^8.0.0",
+          "@vitejs/plugin-react": "^4.2.1",
+          "ajv": "^8.20.0",
+          "eslint": "^8.57.0",
+          "eslint-plugin-react-hooks": "^4.6.0",
+          "eslint-plugin-react-refresh": "^0.4.5",
+          "typescript": "^5.2.2",
+          "typescript-eslint": "^8.56.1",
+          "vite": "^7.3.1"
+        }
+      },
+      "packageManagers": [
+        "npm",
+        "pnpm"
+      ],
+      "workflows": [
+        "ci.yml",
+        "nightly-data-fetch.yml",
+        "vercel-deploy.yml"
+      ],
+      "deploymentConfigs": [
+        "vercel.json"
+      ]
+    }
+  },
+  {
+    "name": "oink-oink",
+    "description": "MONSTERA OINK household iPad app, OINK for Mac, projection",
+    "author": "KBLLR",
+    "stars": 0,
+    "url": "https://github.com/KBLLR/oink-oink",
+    "date": "10/18/2026",
+    "languages": [
+      {
+        "language": "Swift",
+        "percentage": "100%"
+      }
+    ],
+    "topics": [],
+    "primary_language": "Swift",
+    "license": "None",
+    "forks": 0,
+    "open_issues": 1,
+    "last_updated": "11/4/2026",
+    "last_updated_at": "2026-11-04T22:02:10Z",
+    "created_at": "2026-10-18T16:47:00Z",
+    "private": true,
+    "has_readme": true,
+    "is_owner": true,
+    "is_fork": false,
+    "key_files": {
+      "packageJson": null,
+      "packageManagers": [],
+      "workflows": [],
+      "deploymentConfigs": []
+    }
+  },
+  {
     "name": "rigging-palace",
     "description": "Rigging Palace",
     "author": "KBLLR",
@@ -166,9 +651,9 @@
     "primary_language": "JavaScript",
     "license": "None",
     "forks": 0,
-    "open_issues": 2,
-    "last_updated": "11/3/2026",
-    "last_updated_at": "2026-11-03T19:31:47Z",
+    "open_issues": 3,
+    "last_updated": "11/5/2026",
+    "last_updated_at": "2026-11-05T03:21:28Z",
     "created_at": "2026-03-15T18:29:18Z",
     "private": true,
     "has_readme": true,
@@ -311,108 +796,6 @@
     }
   },
   {
-    "name": "vega-lab",
-    "description": "The Brightest Stars",
-    "author": "KBLLR",
-    "stars": 0,
-    "url": "https://github.com/KBLLR/vega-lab",
-    "date": "12/23/2023",
-    "languages": [
-      {
-        "language": "JavaScript",
-        "percentage": "100%"
-      }
-    ],
-    "topics": [
-      "github-stars",
-      "programming",
-      "skills-assessment",
-      "system-design"
-    ],
-    "primary_language": "JavaScript",
-    "license": "None",
-    "forks": 0,
-    "open_issues": 0,
-    "last_updated": "11/3/2026",
-    "last_updated_at": "2026-11-03T05:38:03Z",
-    "created_at": "2023-12-23T23:09:43Z",
-    "private": false,
-    "has_readme": true,
-    "is_owner": true,
-    "is_fork": false,
-    "key_files": {
-      "packageJson": {
-        "scripts": {
-          "dev": "vite",
-          "build": "tsc && vite build",
-          "lint": "eslint . --report-unused-disable-directives --max-warnings 0",
-          "preview": "vite preview",
-          "build:data": "node scripts/generator.js",
-          "sync:mine": "node scripts/my-repos.js",
-          "sync:model-zoo": "node scripts/model-zoo-snapshot.js",
-          "resolve:source-snapshots": "node scripts/source-snapshot-resolver.js",
-          "export:corex-contracts": "node scripts/export-corex-contracts.js",
-          "build:skill-candidates": "node scripts/build-skill-candidates.js",
-          "generate:stats": "node src/analytics/statistics.js",
-          "mcp": "node src/mcp-server/index.js",
-          "test:data": "node tests/run-tests.js",
-          "test:mcp": "node tests/test-mcp-server.js && node tests/test-ocr-skill-candidate.js",
-          "test:corex-contract-export": "node tests/test-corex-contract-export.js",
-          "test:corex-contract-snapshots": "node tests/test-corex-contract-snapshots.js",
-          "test:source-snapshots": "node tests/test-source-snapshot-resolver.js",
-          "test:skill-candidate-ingestion": "node tests/test-skill-candidate-ingestion.js && node tests/test-skill-candidate-profiles.js",
-          "test:action-bridge": "node tests/test-action-bridge.js",
-          "test": "npm run lint && npm run test:data && npm run test:mcp && npm run test:action-bridge"
-        },
-        "dependencies": {
-          "@modelcontextprotocol/sdk": "^1.25.3",
-          "@octokit/rest": "^20.1.2",
-          "@types/dompurify": "^3.2.0",
-          "@types/marked": "^6.0.0",
-          "axios": "^1.13.4",
-          "commander": "^12.1.0",
-          "dompurify": "^3.3.1",
-          "dotenv": "^16.6.1",
-          "lodash": "^4.17.23",
-          "lucide-react": "^0.344.0",
-          "marked": "^12.0.2",
-          "node-fetch": "^3.3.2",
-          "p-queue": "^8.1.1",
-          "react": "^18.2.0",
-          "react-dom": "^18.2.0",
-          "recharts": "^2.12.2"
-        },
-        "devDependencies": {
-          "@eslint/js": "^8.57.1",
-          "@types/react": "^18.2.64",
-          "@types/react-dom": "^18.2.21",
-          "@typescript-eslint/eslint-plugin": "^8.0.0",
-          "@typescript-eslint/parser": "^8.0.0",
-          "@vitejs/plugin-react": "^4.2.1",
-          "ajv": "^8.20.0",
-          "eslint": "^8.57.0",
-          "eslint-plugin-react-hooks": "^4.6.0",
-          "eslint-plugin-react-refresh": "^0.4.5",
-          "typescript": "^5.2.2",
-          "typescript-eslint": "^8.56.1",
-          "vite": "^7.3.1"
-        }
-      },
-      "packageManagers": [
-        "npm",
-        "pnpm"
-      ],
-      "workflows": [
-        "ci.yml",
-        "nightly-data-fetch.yml",
-        "vercel-deploy.yml"
-      ],
-      "deploymentConfigs": [
-        "vercel.json"
-      ]
-    }
-  },
-  {
     "name": "esoteric-lab",
     "description": "Core-X Esoteric Lab — ARCANA Tarot, operator context, astrology, ritual voice and music",
     "author": "KBLLR",
@@ -474,157 +857,6 @@
         "validate.yml"
       ],
       "deploymentConfigs": []
-    }
-  },
-  {
-    "name": "gen-idea-lab",
-    "description": "Connect with expert AI assistants for each subject and generate creative project ideas. A growing collection of micro-apps designed for agents with Human in the loop.",
-    "author": "KBLLR",
-    "stars": 0,
-    "url": "https://github.com/KBLLR/gen-idea-lab",
-    "date": "9/27/2025",
-    "languages": [
-      {
-        "language": "JavaScript",
-        "percentage": "100%"
-      }
-    ],
-    "topics": [
-      "documentation-generator",
-      "multiagent-systems",
-      "project-generator"
-    ],
-    "primary_language": "JavaScript",
-    "license": "None",
-    "forks": 0,
-    "open_issues": 0,
-    "last_updated": "10/19/2026",
-    "last_updated_at": "2026-10-19T14:12:38Z",
-    "created_at": "2025-09-27T20:04:09Z",
-    "private": true,
-    "has_readme": true,
-    "is_owner": true,
-    "is_fork": false,
-    "key_files": {
-      "packageJson": {
-        "scripts": {
-          "dev": "VITE_API_TARGET=${VITE_API_TARGET:-http://127.0.0.1:4001} concurrently -k -n client,server -c green,blue \"npm:dev:client\" \"npm:dev:server\"",
-          "dev:client": "VITE_API_TARGET=${VITE_API_TARGET:-http://127.0.0.1:4001} vite --port 3000",
-          "dev:server": "PORT=${PORT:-4001} MLX_URL=http://localhost:8001 RAG_URL=http://localhost:8002 LOCAL_MODE=true nodemon server/index.js",
-          "dev:vercel": "./scripts/vercel-dev.sh",
-          "check:secrets": "python ../../.secretsbank/check_required_secrets.py --house emergence-lab",
-          "build": "npm run tokens:build && vite build",
-          "vercel-build": "npm run tokens:build && vite build",
-          "preview": "vite preview",
-          "start": "node server/index.js",
-          "storybook": "storybook dev -p 6006",
-          "build-storybook": "storybook build",
-          "sb:build": "storybook build",
-          "sb:test:ui": "playwright test .storybook/tests",
-          "test:ui": "vitest --environment=jsdom",
-          "test:ui:watch": "vitest --environment=jsdom --watch",
-          "generate-thumbnails": "node scripts/generate-thumbnails.mjs",
-          "tokens:build": "cd tokens && npx style-dictionary build --config config.json",
-          "ds:check": "rg -n '\\d+px' src/design-system | (! read) || (echo 'px found in DS'; exit 1)",
-          "tokens:watch": "cd tokens && npx style-dictionary build --watch",
-          "tokens:clean": "rm -rf src/styles/tokens/tokens-*.css src/styles/tokens/tokens.js tokens/build",
-          "tokens:audit": "node scripts/audit-css.js",
-          "tokens:validate": "node scripts/validate-tokens.js",
-          "validate:room-bindings": "node scripts/validate-room-bindings.mjs",
-          "test": "NODE_ENV=test NODE_OPTIONS=--experimental-vm-modules jest",
-          "test:auth": "NODE_ENV=test NODE_OPTIONS=--experimental-vm-modules jest tests/auth.routes.test.js"
-        },
-        "dependencies": {
-          "@aws-sdk/client-s3": "^3.914.0",
-          "@aws-sdk/client-sts": "^3.914.0",
-          "@aws-sdk/s3-request-presigner": "^3.914.0",
-          "@dnd-kit/core": "^6.3.1",
-          "@dnd-kit/sortable": "^10.0.0",
-          "@dnd-kit/utilities": "^3.2.2",
-          "@gltf-transform/core": "^4.2.1",
-          "@gltf-transform/extensions": "^4.2.1",
-          "@gltf-transform/functions": "^4.2.1",
-          "@google/model-viewer": "^4.1.0",
-          "@huggingface/inference": "^4.13.0",
-          "@humeai/voice-react": "^0.2.5",
-          "@mediapipe/tasks-vision": "^0.10.21",
-          "@notionhq/client": "^5.2.1",
-          "@react-oauth/google": "^0.12.2",
-          "@vladmandic/human": "^3.3.6",
-          "auto-zustand-selectors-hook": "^3.0.1",
-          "bcrypt": "^6.0.0",
-          "clsx": "^2.1.1",
-          "cookie-parser": "^1.4.6",
-          "cors": "^2.8.5",
-          "d3": "^7.9.0",
-          "dompurify": "^3.2.7",
-          "dotenv": "^16.4.5",
-          "eventemitter3": "^5.0.1",
-          "express": "^4.19.2",
-          "google-auth-library": "^9.14.1",
-          "googleapis": "^144.0.0",
-          "immer": "^10.1.3",
-          "jsonwebtoken": "^9.0.2",
-          "lodash": "^4.17.21",
-          "marked": "^16.3.0",
-          "markmap-common": "^0.18.9",
-          "markmap-lib": "^0.18.12",
-          "markmap-view": "^0.18.12",
-          "meshoptimizer": "^0.25.0",
-          "mongodb": "^6.7.0",
-          "multer": "^2.0.2",
-          "nanoid": "^5.1.6",
-          "node-fetch": "^3.3.2",
-          "p-limit": "^7.1.1",
-          "passport-apple-verify-token": "^1.1.0",
-          "prom-client": "^15.1.2",
-          "react": "^19.1.1",
-          "react-dom": "^19.1.1",
-          "react-icons": "^5.3.0",
-          "react-markdown": "^10.1.0",
-          "react-router-dom": "^6.30.1",
-          "reactflow": "^11.10.2",
-          "simple-icons": "^13.0.0",
-          "three": "^0.172.0",
-          "winston": "^3.13.0",
-          "ws": "^8.18.3",
-          "zustand": "^5.0.8"
-        },
-        "devDependencies": {
-          "@storybook/addon-a11y": "^8.6.14",
-          "@storybook/addon-essentials": "^8.6.14",
-          "@storybook/addon-interactions": "^8.6.14",
-          "@storybook/react-vite": "^8.6.14",
-          "@storybook/test": "^8.6.14",
-          "@types/node": "^20.19.21",
-          "@vitejs/plugin-react": "^4.3.0",
-          "concurrently": "^8.2.2",
-          "jest": "^29.7.0",
-          "nodemon": "^3.1.0",
-          "rollup-plugin-visualizer": "^5.12.0",
-          "storybook": "^8.6.14",
-          "style-dictionary": "^5.0.4",
-          "supertest": "^6.3.4",
-          "typescript": "^5.9.3",
-          "vite": "^5.4.0",
-          "vitest": "^2.0.0"
-        }
-      },
-      "packageManagers": [
-        "npm",
-        "npm-lock"
-      ],
-      "workflows": [
-        "design-tokens-check.yml",
-        "gemini-dispatch.yml",
-        "gemini-invoke.yml",
-        "gemini-review.yml",
-        "gemini-scheduled-triage.yml",
-        "gemini-triage.yml"
-      ],
-      "deploymentConfigs": [
-        "vercel.json"
-      ]
     }
   },
   {
@@ -790,9 +1022,9 @@
     "primary_language": "JavaScript",
     "license": "None",
     "forks": 0,
-    "open_issues": 0,
-    "last_updated": "10/3/2026",
-    "last_updated_at": "2026-10-03T10:42:48Z",
+    "open_issues": 1,
+    "last_updated": "11/4/2026",
+    "last_updated_at": "2026-11-04T22:07:11Z",
     "created_at": "2025-10-11T21:30:56Z",
     "private": false,
     "has_readme": true,
@@ -1042,142 +1274,6 @@
     }
   },
   {
-    "name": "audio-lab",
-    "description": "Core-X Audio Lab house: transcription, diarisation, dubbing, and local audio workflows",
-    "author": "KBLLR",
-    "stars": 0,
-    "url": "https://github.com/KBLLR/audio-lab",
-    "date": "6/22/2026",
-    "languages": [
-      {
-        "language": "JavaScript",
-        "percentage": "100%"
-      }
-    ],
-    "topics": [],
-    "primary_language": "JavaScript",
-    "license": "None",
-    "forks": 0,
-    "open_issues": 0,
-    "last_updated": "11/2/2026",
-    "last_updated_at": "2026-11-02T17:56:45Z",
-    "created_at": "2026-06-22T14:51:52Z",
-    "private": true,
-    "has_readme": false,
-    "is_owner": true,
-    "is_fork": false,
-    "key_files": {
-      "packageJson": {
-        "scripts": {
-          "dev": "vite",
-          "build": "vite build",
-          "preview": "vite preview",
-          "publish:warehouse": "node ../../scripts/publish-house-assets.mjs --house audio-lab",
-          "publish:warehouse:dry": "node ../../scripts/publish-house-assets.mjs --house audio-lab --dry-run"
-        },
-        "dependencies": {
-          "jszip": "^3.10.1",
-          "lit": "^3.3.0",
-          "rightorchestrator": "^1.0.2"
-        },
-        "devDependencies": {
-          "vite": "^7.0.0"
-        }
-      },
-      "packageManagers": [
-        "npm",
-        "npm-lock"
-      ],
-      "workflows": [],
-      "deploymentConfigs": []
-    }
-  },
-  {
-    "name": "htdi-project",
-    "description": "Hard To Debug Issues",
-    "author": "KBLLR",
-    "stars": 0,
-    "url": "https://github.com/KBLLR/htdi-project",
-    "date": "1/16/2022",
-    "languages": [
-      {
-        "language": "JavaScript",
-        "percentage": "100%"
-      }
-    ],
-    "topics": [],
-    "primary_language": "JavaScript",
-    "license": "None",
-    "forks": 0,
-    "open_issues": 0,
-    "last_updated": "6/23/2026",
-    "last_updated_at": "2026-06-23T13:25:38Z",
-    "created_at": "2022-01-16T13:46:41Z",
-    "private": false,
-    "has_readme": true,
-    "is_owner": true,
-    "is_fork": false,
-    "key_files": {
-      "packageJson": {
-        "scripts": {
-          "dev": "vite",
-          "dev:diary-api": "node server/leagentdiary-api.mjs",
-          "build": "vite build",
-          "preview": "vite preview --port 4173",
-          "start": "npm run dev",
-          "lint": "eslint \"src/**/*.js\"",
-          "test": "echo \"No tests configured\" && exit 0",
-          "sync:warehouse-fonts": "node tools/syncWarehouseFonts.mjs",
-          "generate:assets": "node scripts/updateAssets.mjs",
-          "fbx:glb": "BLENDER_BIN=\"/Applications/Blender.app/Contents/MacOS/Blender\" zsh scripts/convert_fbx_with_blender.zsh ./assets/fbx ./assets/gltf glb --recursive --verbose",
-          "fbx:gltf:separate": "BLENDER_BIN=\"/Applications/Blender.app/Contents/MacOS/Blender\" zsh scripts/convert_fbx_with_blender.zsh ./assets/fbx ./assets/gltf gltf_separate --recursive --verbose"
-        },
-        "dependencies": {
-          "@radix-ui/colors": "^3.0.0",
-          "@tweenjs/tween.js": "^25.0.0",
-          "augmented-ui": "^2.0.0",
-          "chroma-js": "^2.6.0",
-          "gsap": "^3.13.0",
-          "hsl-to-hex": "^1.0.0",
-          "improved-noise": "^0.0.3",
-          "lil-gui": "^0.21.0",
-          "lodash": "^4.17.21",
-          "popmotion": "^11.0.5",
-          "postprocessing": "^6.37.8",
-          "simplex-noise": "^4.0.3",
-          "snd-lib": "^1.2.4",
-          "stats.js": "^0.17.0",
-          "three": "^0.180.0",
-          "tippy.js": "^6.3.7",
-          "zod": "^4.1.12"
-        },
-        "devDependencies": {
-          "@tweakpane/plugin-essentials": "^0.2.1",
-          "eslint": "^9.38.0",
-          "ktx2-encoder": "^0.5.0",
-          "potpack": "^2.1.0",
-          "sharp": "^0.34.4",
-          "tweakpane": "^4.0.5",
-          "vite": "^7.1.12",
-          "vite-plugin-static-copy": "^3.1.4"
-        }
-      },
-      "packageManagers": [
-        "npm",
-        "pnpm",
-        "npm-lock"
-      ],
-      "workflows": [
-        "gemini-dispatch.yml",
-        "gemini-invoke.yml",
-        "gemini-review.yml",
-        "gemini-scheduled-triage.yml",
-        "gemini-triage.yml"
-      ],
-      "deploymentConfigs": []
-    }
-  },
-  {
     "name": "Leagentdiary",
     "description": "LeAgentDiary is a version-control system for AI agents. It connects handoffs, memory, and self-reflection into one timeline—track contributions, re-summon past agents, and evolve their personas. Built with the HTDI Agentic Framework for human-AI co-development.",
     "author": "KBLLR",
@@ -1194,9 +1290,9 @@
     "primary_language": "JavaScript",
     "license": "MIT",
     "forks": 0,
-    "open_issues": 1,
-    "last_updated": "7/16/2026",
-    "last_updated_at": "2026-07-16T22:56:16Z",
+    "open_issues": 2,
+    "last_updated": "11/5/2026",
+    "last_updated_at": "2026-11-05T03:23:14Z",
     "created_at": "2025-11-11T17:31:52Z",
     "private": false,
     "has_readme": true,
@@ -1255,8 +1351,8 @@
     "license": "None",
     "forks": 0,
     "open_issues": 0,
-    "last_updated": "6/7/2026",
-    "last_updated_at": "2026-06-07T15:14:26Z",
+    "last_updated": "11/4/2026",
+    "last_updated_at": "2026-11-04T16:29:48Z",
     "created_at": "2026-06-07T15:14:17Z",
     "private": true,
     "has_readme": true,
@@ -1467,9 +1563,9 @@
     "primary_language": "JavaScript",
     "license": "None",
     "forks": 0,
-    "open_issues": 0,
-    "last_updated": "5/20/2026",
-    "last_updated_at": "2026-05-20T14:48:15Z",
+    "open_issues": 1,
+    "last_updated": "11/5/2026",
+    "last_updated_at": "2026-11-05T03:22:42Z",
     "created_at": "2026-05-19T17:43:28Z",
     "private": true,
     "has_readme": true,
@@ -1538,8 +1634,8 @@
     "license": "None",
     "forks": 0,
     "open_issues": 6,
-    "last_updated": "11/4/2026",
-    "last_updated_at": "2026-11-04T02:31:30Z",
+    "last_updated": "11/5/2026",
+    "last_updated_at": "2026-11-05T01:14:19Z",
     "created_at": "2025-11-20T18:14:32Z",
     "private": true,
     "has_readme": true,
@@ -2081,8 +2177,8 @@
     "license": "None",
     "forks": 0,
     "open_issues": 0,
-    "last_updated": "11/17/2025",
-    "last_updated_at": "2025-11-17T04:02:56Z",
+    "last_updated": "11/5/2026",
+    "last_updated_at": "2026-11-05T01:24:44Z",
     "created_at": "2025-08-20T18:15:48Z",
     "private": true,
     "has_readme": true,
@@ -2312,8 +2408,8 @@
     "license": "None",
     "forks": 0,
     "open_issues": 0,
-    "last_updated": "11/15/2025",
-    "last_updated_at": "2025-11-15T21:21:45Z",
+    "last_updated": "11/5/2026",
+    "last_updated_at": "2026-11-05T01:24:35Z",
     "created_at": "2024-08-07T18:46:02Z",
     "private": true,
     "has_readme": true,
