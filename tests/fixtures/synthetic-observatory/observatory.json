@@ -1,0 +1,1690 @@
+{
+  "meta": {
+    "synthetic": true,
+    "label": "SYNTHETIC FIXTURE — invented repositories for previews and tests. Not real data, metrics, findings, or approvals.",
+    "generated_by": "scripts/build-synthetic-fixtures.js",
+    "pipeline": "src/server/house-model.js#buildDerivedHouseData",
+    "clock_anchor": "2026-11-01T09:00:00.000Z"
+  },
+  "starredRepos": [
+    {
+      "author": "synthetic-upstream",
+      "stars": 4820,
+      "forks": 310,
+      "open_issues": 41,
+      "license": "MIT",
+      "languages": [
+        {
+          "language": "TypeScript",
+          "percentage": "100"
+        }
+      ],
+      "topics": [
+        "agent",
+        "llm",
+        "cli",
+        "mcp",
+        "tooling"
+      ],
+      "private": false,
+      "has_readme": true,
+      "name": "repo-pack-kit",
+      "description": "Synthetic fixture: ignore-aware repository packer with token accounting and a secret precheck for agent context.",
+      "date": "2026-10-20T09:00:00.000Z",
+      "last_updated": "2026-10-29T09:00:00.000Z",
+      "url": "https://github.com/synthetic-upstream/repo-pack-kit"
+    },
+    {
+      "author": "synthetic-upstream",
+      "stars": 2310,
+      "forks": 180,
+      "open_issues": 22,
+      "license": "MIT",
+      "languages": [
+        {
+          "language": "Python",
+          "percentage": "92"
+        },
+        {
+          "language": "Shell",
+          "percentage": "8"
+        }
+      ],
+      "topics": [
+        "skills",
+        "agent",
+        "rag",
+        "workflow"
+      ],
+      "private": false,
+      "has_readme": true,
+      "name": "skill-refinery",
+      "description": "Synthetic fixture: multi-source knowledge refinery that turns docs and repos into structured agent skills with conflict detection.",
+      "date": "2026-10-12T09:00:00.000Z",
+      "last_updated": "2026-10-23T09:00:00.000Z",
+      "url": "https://github.com/synthetic-upstream/skill-refinery"
+    },
+    {
+      "author": "synthetic-upstream",
+      "stars": 960,
+      "forks": 74,
+      "open_issues": 18,
+      "license": "None",
+      "languages": [
+        {
+          "language": "Python",
+          "percentage": "100"
+        }
+      ],
+      "topics": [
+        "ocr",
+        "vision",
+        "pdf",
+        "mlx"
+      ],
+      "private": false,
+      "has_readme": true,
+      "name": "doc-layout-ocr",
+      "description": "Synthetic fixture: OCR and layout analysis for PDFs, tables, and diagrams with a local vision model.",
+      "date": "2026-09-21T09:00:00.000Z",
+      "last_updated": "2026-09-07T09:00:00.000Z",
+      "url": "https://github.com/synthetic-upstream/doc-layout-ocr"
+    },
+    {
+      "author": "synthetic-upstream",
+      "stars": 1540,
+      "forks": 95,
+      "open_issues": 9,
+      "license": "MIT",
+      "languages": [
+        {
+          "language": "TypeScript",
+          "percentage": "100"
+        }
+      ],
+      "topics": [
+        "webgpu",
+        "threejs",
+        "3d",
+        "frontend"
+      ],
+      "private": false,
+      "has_readme": true,
+      "name": "webgpu-particles",
+      "description": "Synthetic fixture: WebGPU particle and instancing playground for interactive 3D UI experiments.",
+      "date": "2026-08-23T09:00:00.000Z",
+      "last_updated": "2026-06-24T09:00:00.000Z",
+      "url": "https://github.com/synthetic-upstream/webgpu-particles"
+    },
+    {
+      "author": "synthetic-upstream",
+      "stars": 210,
+      "forks": 12,
+      "open_issues": 3,
+      "license": "MIT",
+      "languages": [
+        {
+          "language": "JavaScript",
+          "percentage": "100"
+        }
+      ],
+      "topics": [
+        "audio",
+        "ui",
+        "react"
+      ],
+      "private": false,
+      "has_readme": true,
+      "name": "tiny-audio-transport",
+      "description": "Synthetic fixture: minimal audio transport bar and waveform component library.",
+      "date": "2026-05-25T09:00:00.000Z",
+      "last_updated": "2025-09-07T09:00:00.000Z",
+      "url": "https://github.com/synthetic-upstream/tiny-audio-transport"
+    },
+    {
+      "author": "synthetic-upstream",
+      "stars": 88,
+      "forks": 4,
+      "open_issues": 1,
+      "license": "MIT",
+      "languages": [
+        {
+          "language": "JavaScript",
+          "percentage": "100"
+        }
+      ],
+      "topics": [
+        "markdown"
+      ],
+      "private": false,
+      "has_readme": false,
+      "name": "md-slides-lite",
+      "description": "Synthetic fixture: markdown to slides converter.",
+      "date": "2026-01-05T09:00:00.000Z",
+      "last_updated": "2024-12-01T09:00:00.000Z",
+      "url": "https://github.com/synthetic-upstream/md-slides-lite"
+    }
+  ],
+  "myRepos": [
+    {
+      "author": "example-observatory",
+      "stars": 3,
+      "forks": 0,
+      "open_issues": 2,
+      "license": "MIT",
+      "languages": [
+        {
+          "language": "TypeScript",
+          "percentage": "100"
+        }
+      ],
+      "topics": [
+        "agent",
+        "workflow",
+        "research"
+      ],
+      "private": true,
+      "has_readme": true,
+      "name": "observatory-notes",
+      "description": "Synthetic fixture: owned research notebook with agent workflow drafts.",
+      "date": "2025-09-27T09:00:00.000Z",
+      "last_updated": "2026-10-26T09:00:00.000Z",
+      "is_owner": true,
+      "key_files": {
+        "packageManagers": [
+          "pnpm"
+        ],
+        "workflows": [],
+        "deploymentConfigs": []
+      },
+      "url": "https://github.com/example-observatory/observatory-notes"
+    },
+    {
+      "author": "example-observatory",
+      "stars": 1,
+      "forks": 0,
+      "open_issues": 0,
+      "license": "None",
+      "languages": [
+        {
+          "language": "TypeScript",
+          "percentage": "100"
+        }
+      ],
+      "topics": [
+        "dashboard",
+        "ui"
+      ],
+      "private": false,
+      "has_readme": false,
+      "name": "legacy-dashboard",
+      "description": "Synthetic fixture: owned dashboard prototype without a README.",
+      "date": "2024-08-23T09:00:00.000Z",
+      "last_updated": "2025-06-09T09:00:00.000Z",
+      "is_owner": true,
+      "key_files": {
+        "packageManagers": [
+          "npm"
+        ],
+        "workflows": [],
+        "deploymentConfigs": [
+          "vercel.json"
+        ]
+      },
+      "url": "https://github.com/example-observatory/legacy-dashboard"
+    },
+    {
+      "author": "example-observatory",
+      "stars": 7,
+      "forks": 2,
+      "open_issues": 0,
+      "license": "MIT",
+      "languages": [
+        {
+          "language": "TypeScript",
+          "percentage": "100"
+        }
+      ],
+      "topics": [
+        "template",
+        "vite",
+        "react",
+        "frontend"
+      ],
+      "private": false,
+      "has_readme": true,
+      "name": "starter-template",
+      "description": "Synthetic fixture: reusable Vite + React starter template with CI.",
+      "date": "2026-04-15T09:00:00.000Z",
+      "last_updated": "2026-09-22T09:00:00.000Z",
+      "is_owner": true,
+      "key_files": {
+        "packageManagers": [
+          "pnpm"
+        ],
+        "workflows": [
+          "ci.yml"
+        ],
+        "deploymentConfigs": []
+      },
+      "url": "https://github.com/example-observatory/starter-template"
+    }
+  ],
+  "repoSignals": [
+    {
+      "nwo": "synthetic-upstream/repo-pack-kit",
+      "name": "repo-pack-kit",
+      "author": "synthetic-upstream",
+      "description": "Synthetic fixture: ignore-aware repository packer with token accounting and a secret precheck for agent context.",
+      "scope": "research",
+      "lastActivityAt": "2026-10-29T09:00:00.000Z",
+      "staleness": "active",
+      "researchStatus": "researching",
+      "adoptionScore": 100,
+      "adoptionKind": "tool",
+      "reasons": [
+        "Adoption kind: tool",
+        "Primary skills: repo-discovery, skill-extraction, repo-adoption",
+        "Recent activity suggests the repo is still moving."
+      ],
+      "houseSkills": [
+        "repo-discovery",
+        "skill-extraction",
+        "repo-adoption"
+      ],
+      "capabilities": [
+        "mcp-tooling",
+        "agent-workflows",
+        "developer-tooling",
+        "ml-ai"
+      ]
+    },
+    {
+      "nwo": "synthetic-upstream/skill-refinery",
+      "name": "skill-refinery",
+      "author": "synthetic-upstream",
+      "description": "Synthetic fixture: multi-source knowledge refinery that turns docs and repos into structured agent skills with conflict detection.",
+      "scope": "research",
+      "lastActivityAt": "2026-10-23T09:00:00.000Z",
+      "staleness": "active",
+      "researchStatus": "queued",
+      "adoptionScore": 96,
+      "adoptionKind": "tool",
+      "reasons": [
+        "Adoption kind: tool",
+        "Primary skills: repo-research, skill-extraction, repo-adoption",
+        "Recent activity suggests the repo is still moving."
+      ],
+      "houseSkills": [
+        "repo-research",
+        "skill-extraction",
+        "repo-adoption"
+      ],
+      "capabilities": [
+        "agent-workflows",
+        "research-intelligence"
+      ]
+    },
+    {
+      "nwo": "synthetic-upstream/md-slides-lite",
+      "name": "md-slides-lite",
+      "author": "synthetic-upstream",
+      "description": "Synthetic fixture: markdown to slides converter.",
+      "scope": "research",
+      "lastActivityAt": "2024-12-01T09:00:00.000Z",
+      "staleness": "stale",
+      "researchStatus": "dismissed",
+      "adoptionScore": 18,
+      "adoptionKind": "ignore",
+      "reasons": [
+        "Adoption kind: ignore",
+        "Primary skills: repo-discovery",
+        "Stale activity suggests higher maintenance risk."
+      ],
+      "houseSkills": [],
+      "capabilities": []
+    },
+    {
+      "nwo": "example-observatory/starter-template",
+      "name": "starter-template",
+      "author": "example-observatory",
+      "description": "Synthetic fixture: reusable Vite + React starter template with CI.",
+      "scope": "mine",
+      "lastActivityAt": "2026-09-22T09:00:00.000Z",
+      "staleness": "active",
+      "researchStatus": "untracked",
+      "adoptionScore": 88,
+      "adoptionKind": "template",
+      "reasons": [
+        "Adoption kind: template",
+        "Primary skills: repo-discovery, skill-extraction, repo-adoption, mine-execution",
+        "Recent activity suggests the repo is still moving.",
+        "This repo is owned or directly maintained and belongs in the execution workspace."
+      ],
+      "houseSkills": [
+        "repo-discovery",
+        "skill-extraction",
+        "repo-adoption",
+        "mine-execution"
+      ],
+      "capabilities": [
+        "template-scaffolding",
+        "frontend-ui",
+        "repo-ops"
+      ]
+    },
+    {
+      "nwo": "example-observatory/observatory-notes",
+      "name": "observatory-notes",
+      "author": "example-observatory",
+      "description": "Synthetic fixture: owned research notebook with agent workflow drafts.",
+      "scope": "mine",
+      "lastActivityAt": "2026-10-26T09:00:00.000Z",
+      "staleness": "active",
+      "researchStatus": "untracked",
+      "adoptionScore": 77,
+      "adoptionKind": "tool",
+      "reasons": [
+        "Adoption kind: tool",
+        "Primary skills: repo-research, skill-extraction, repo-adoption, mine-execution",
+        "Recent activity suggests the repo is still moving.",
+        "This repo is owned or directly maintained and belongs in the execution workspace."
+      ],
+      "houseSkills": [
+        "repo-research",
+        "skill-extraction",
+        "repo-adoption",
+        "mine-execution"
+      ],
+      "capabilities": [
+        "agent-workflows",
+        "research-intelligence"
+      ]
+    },
+    {
+      "nwo": "example-observatory/legacy-dashboard",
+      "name": "legacy-dashboard",
+      "author": "example-observatory",
+      "description": "Synthetic fixture: owned dashboard prototype without a README.",
+      "scope": "mine",
+      "lastActivityAt": "2025-06-09T09:00:00.000Z",
+      "staleness": "stale",
+      "researchStatus": "untracked",
+      "adoptionScore": 17,
+      "adoptionKind": "house",
+      "reasons": [
+        "Adoption kind: house",
+        "Primary skills: repo-discovery, repo-adoption, mine-execution",
+        "Stale activity suggests higher maintenance risk.",
+        "This repo is owned or directly maintained and belongs in the execution workspace."
+      ],
+      "houseSkills": [
+        "repo-discovery",
+        "repo-adoption",
+        "mine-execution"
+      ],
+      "capabilities": [
+        "frontend-ui"
+      ]
+    },
+    {
+      "nwo": "synthetic-upstream/doc-layout-ocr",
+      "name": "doc-layout-ocr",
+      "author": "synthetic-upstream",
+      "description": "Synthetic fixture: OCR and layout analysis for PDFs, tables, and diagrams with a local vision model.",
+      "scope": "starred",
+      "lastActivityAt": "2026-09-07T09:00:00.000Z",
+      "staleness": "active",
+      "researchStatus": "untracked",
+      "adoptionScore": 76,
+      "adoptionKind": "tool",
+      "reasons": [
+        "Adoption kind: tool",
+        "Primary skills: repo-adoption",
+        "Recent activity suggests the repo is still moving."
+      ],
+      "houseSkills": [
+        "repo-adoption"
+      ],
+      "capabilities": [
+        "ml-ai"
+      ]
+    },
+    {
+      "nwo": "synthetic-upstream/webgpu-particles",
+      "name": "webgpu-particles",
+      "author": "synthetic-upstream",
+      "description": "Synthetic fixture: WebGPU particle and instancing playground for interactive 3D UI experiments.",
+      "scope": "starred",
+      "lastActivityAt": "2026-06-24T09:00:00.000Z",
+      "staleness": "watch",
+      "researchStatus": "untracked",
+      "adoptionScore": 75,
+      "adoptionKind": "house",
+      "reasons": [
+        "Adoption kind: house",
+        "Primary skills: repo-discovery, repo-adoption",
+        "Medium-term activity suggests this repo should stay on the watchlist."
+      ],
+      "houseSkills": [
+        "repo-discovery",
+        "repo-adoption"
+      ],
+      "capabilities": [
+        "frontend-ui"
+      ]
+    },
+    {
+      "nwo": "synthetic-upstream/tiny-audio-transport",
+      "name": "tiny-audio-transport",
+      "author": "synthetic-upstream",
+      "description": "Synthetic fixture: minimal audio transport bar and waveform component library.",
+      "scope": "starred",
+      "lastActivityAt": "2025-09-07T09:00:00.000Z",
+      "staleness": "stale",
+      "researchStatus": "untracked",
+      "adoptionScore": 65,
+      "adoptionKind": "tool",
+      "reasons": [
+        "Adoption kind: tool",
+        "Primary skills: repo-discovery, skill-extraction, repo-adoption",
+        "Stale activity suggests higher maintenance risk."
+      ],
+      "houseSkills": [
+        "repo-discovery",
+        "skill-extraction",
+        "repo-adoption"
+      ],
+      "capabilities": [
+        "frontend-ui",
+        "developer-tooling"
+      ]
+    }
+  ],
+  "researchQueue": [
+    {
+      "nwo": "synthetic-upstream/repo-pack-kit",
+      "status": "researching",
+      "priority": "high",
+      "notes": "Synthetic fixture note: compare with the Core-X source-snapshot contract before drafting a candidate.",
+      "createdAt": "2026-10-22T09:00:00.000Z",
+      "updatedAt": "2026-10-30T09:00:00.000Z"
+    },
+    {
+      "nwo": "synthetic-upstream/skill-refinery",
+      "status": "queued",
+      "priority": "normal",
+      "notes": "Synthetic fixture note: refinery pattern; check license and overlap with existing skills.",
+      "createdAt": "2026-10-24T09:00:00.000Z",
+      "updatedAt": "2026-10-24T09:00:00.000Z"
+    },
+    {
+      "nwo": "synthetic-upstream/md-slides-lite",
+      "status": "dismissed",
+      "priority": "low",
+      "notes": "Synthetic fixture note: dismissed — no README and no reuse path.",
+      "createdAt": "2026-08-03T09:00:00.000Z",
+      "updatedAt": "2026-09-02T09:00:00.000Z"
+    }
+  ],
+  "skillExtractions": [
+    {
+      "nwo": "example-observatory/legacy-dashboard",
+      "name": "legacy-dashboard",
+      "author": "example-observatory",
+      "summary": "Synthetic fixture: owned dashboard prototype without a README. Primary Vega Lab fit: repo-discovery via frontend-ui.",
+      "capabilities": [
+        "frontend-ui"
+      ],
+      "houseSkills": [
+        "repo-discovery",
+        "repo-adoption",
+        "mine-execution"
+      ],
+      "rules": [
+        "Review license status before adoption or redistribution work.",
+        "Validate maintenance risk and current ecosystem fit before committing to adoption.",
+        "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
+      ],
+      "flows": [
+        "research-queue-flow",
+        "adoption-decision-flow",
+        "news-digest-refresh",
+        "mine-execution-flow"
+      ],
+      "adoptionKind": "house",
+      "codexBrief": "# Codex Mission: example-observatory/legacy-dashboard\nGoal: Synthetic fixture: owned dashboard prototype without a README. Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui\nHouse skills: repo-discovery, repo-adoption, mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\n4. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+      "claudeBrief": "# Claude Mission: example-observatory/legacy-dashboard\nGoal: Synthetic fixture: owned dashboard prototype without a README. Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui\nHouse skills: repo-discovery, repo-adoption, mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\n4. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    },
+    {
+      "nwo": "example-observatory/observatory-notes",
+      "name": "observatory-notes",
+      "author": "example-observatory",
+      "summary": "Synthetic fixture: owned research notebook with agent workflow drafts. Primary Vega Lab fit: repo-research via agent-workflows.",
+      "capabilities": [
+        "agent-workflows",
+        "research-intelligence"
+      ],
+      "houseSkills": [
+        "repo-research",
+        "skill-extraction",
+        "repo-adoption",
+        "mine-execution"
+      ],
+      "rules": [
+        "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.",
+        "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
+      ],
+      "flows": [
+        "research-queue-flow",
+        "skill-extraction-flow",
+        "adoption-decision-flow",
+        "mine-execution-flow"
+      ],
+      "adoptionKind": "tool",
+      "codexBrief": "# Codex Mission: example-observatory/observatory-notes\nGoal: Synthetic fixture: owned research notebook with agent workflow drafts. Primary Vega Lab fit: repo-research via agent-workflows.\nClassification: tool\nCapabilities: agent-workflows, research-intelligence\nHouse skills: repo-research, skill-extraction, repo-adoption, mine-execution\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+      "claudeBrief": "# Claude Mission: example-observatory/observatory-notes\nGoal: Synthetic fixture: owned research notebook with agent workflow drafts. Primary Vega Lab fit: repo-research via agent-workflows.\nClassification: tool\nCapabilities: agent-workflows, research-intelligence\nHouse skills: repo-research, skill-extraction, repo-adoption, mine-execution\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    },
+    {
+      "nwo": "example-observatory/starter-template",
+      "name": "starter-template",
+      "author": "example-observatory",
+      "summary": "Synthetic fixture: reusable Vite + React starter template with CI. Primary Vega Lab fit: repo-discovery via template-scaffolding.",
+      "capabilities": [
+        "template-scaffolding",
+        "frontend-ui",
+        "repo-ops"
+      ],
+      "houseSkills": [
+        "repo-discovery",
+        "skill-extraction",
+        "repo-adoption",
+        "mine-execution"
+      ],
+      "rules": [
+        "Adopt this as a scaffold or reference, not as a long-lived runtime dependency.",
+        "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
+      ],
+      "flows": [
+        "research-queue-flow",
+        "skill-extraction-flow",
+        "adoption-decision-flow",
+        "news-digest-refresh",
+        "mine-execution-flow"
+      ],
+      "adoptionKind": "template",
+      "codexBrief": "# Codex Mission: example-observatory/starter-template\nGoal: Synthetic fixture: reusable Vite + React starter template with CI. Primary Vega Lab fit: repo-discovery via template-scaffolding.\nClassification: template\nCapabilities: template-scaffolding, frontend-ui, repo-ops\nHouse skills: repo-discovery, skill-extraction, repo-adoption, mine-execution\nRules:\n- Adopt this as a scaffold or reference, not as a long-lived runtime dependency.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\n5. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+      "claudeBrief": "# Claude Mission: example-observatory/starter-template\nGoal: Synthetic fixture: reusable Vite + React starter template with CI. Primary Vega Lab fit: repo-discovery via template-scaffolding.\nClassification: template\nCapabilities: template-scaffolding, frontend-ui, repo-ops\nHouse skills: repo-discovery, skill-extraction, repo-adoption, mine-execution\nRules:\n- Adopt this as a scaffold or reference, not as a long-lived runtime dependency.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\n5. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    },
+    {
+      "nwo": "synthetic-upstream/doc-layout-ocr",
+      "name": "doc-layout-ocr",
+      "author": "synthetic-upstream",
+      "summary": "Synthetic fixture: OCR and layout analysis for PDFs, tables, and diagrams with a local vision model. Primary Vega Lab fit: repo-adoption via ml-ai.",
+      "capabilities": [
+        "ml-ai"
+      ],
+      "houseSkills": [
+        "repo-adoption"
+      ],
+      "rules": [
+        "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.",
+        "Review license status before adoption or redistribution work."
+      ],
+      "flows": [
+        "research-queue-flow",
+        "adoption-decision-flow"
+      ],
+      "adoptionKind": "tool",
+      "codexBrief": "# Codex Mission: synthetic-upstream/doc-layout-ocr\nGoal: Synthetic fixture: OCR and layout analysis for PDFs, tables, and diagrams with a local vision model. Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+      "claudeBrief": "# Claude Mission: synthetic-upstream/doc-layout-ocr\nGoal: Synthetic fixture: OCR and layout analysis for PDFs, tables, and diagrams with a local vision model. Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    },
+    {
+      "nwo": "synthetic-upstream/md-slides-lite",
+      "name": "md-slides-lite",
+      "author": "synthetic-upstream",
+      "summary": "Synthetic fixture: markdown to slides converter. Primary Vega Lab fit: repo-discovery via general engineering.",
+      "capabilities": [],
+      "houseSkills": [],
+      "rules": [
+        "Validate maintenance risk and current ecosystem fit before committing to adoption."
+      ],
+      "flows": [
+        "research-queue-flow"
+      ],
+      "adoptionKind": "ignore",
+      "codexBrief": "# Codex Mission: synthetic-upstream/md-slides-lite\nGoal: Synthetic fixture: markdown to slides converter. Primary Vega Lab fit: repo-discovery via general engineering.\nClassification: ignore\nCapabilities: none\nHouse skills: none\nRules:\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+      "claudeBrief": "# Claude Mission: synthetic-upstream/md-slides-lite\nGoal: Synthetic fixture: markdown to slides converter. Primary Vega Lab fit: repo-discovery via general engineering.\nClassification: ignore\nCapabilities: none\nHouse skills: none\nRules:\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    },
+    {
+      "nwo": "synthetic-upstream/repo-pack-kit",
+      "name": "repo-pack-kit",
+      "author": "synthetic-upstream",
+      "summary": "Synthetic fixture: ignore-aware repository packer with token accounting and a secret precheck for agent context. Primary Vega Lab fit: repo-discovery via mcp-tooling.",
+      "capabilities": [
+        "mcp-tooling",
+        "agent-workflows",
+        "developer-tooling",
+        "ml-ai"
+      ],
+      "houseSkills": [
+        "repo-discovery",
+        "skill-extraction",
+        "repo-adoption"
+      ],
+      "rules": [
+        "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house."
+      ],
+      "flows": [
+        "research-queue-flow",
+        "skill-extraction-flow",
+        "adoption-decision-flow",
+        "news-digest-refresh"
+      ],
+      "adoptionKind": "tool",
+      "codexBrief": "# Codex Mission: synthetic-upstream/repo-pack-kit\nGoal: Synthetic fixture: ignore-aware repository packer with token accounting and a secret precheck for agent context. Primary Vega Lab fit: repo-discovery via mcp-tooling.\nClassification: tool\nCapabilities: mcp-tooling, agent-workflows, developer-tooling, ml-ai\nHouse skills: repo-discovery, skill-extraction, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+      "claudeBrief": "# Claude Mission: synthetic-upstream/repo-pack-kit\nGoal: Synthetic fixture: ignore-aware repository packer with token accounting and a secret precheck for agent context. Primary Vega Lab fit: repo-discovery via mcp-tooling.\nClassification: tool\nCapabilities: mcp-tooling, agent-workflows, developer-tooling, ml-ai\nHouse skills: repo-discovery, skill-extraction, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    },
+    {
+      "nwo": "synthetic-upstream/skill-refinery",
+      "name": "skill-refinery",
+      "author": "synthetic-upstream",
+      "summary": "Synthetic fixture: multi-source knowledge refinery that turns docs and repos into structured agent skills with conflict detection. Primary Vega Lab fit: repo-research via agent-workflows.",
+      "capabilities": [
+        "agent-workflows",
+        "research-intelligence"
+      ],
+      "houseSkills": [
+        "repo-research",
+        "skill-extraction",
+        "repo-adoption"
+      ],
+      "rules": [
+        "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house."
+      ],
+      "flows": [
+        "research-queue-flow",
+        "skill-extraction-flow",
+        "adoption-decision-flow"
+      ],
+      "adoptionKind": "tool",
+      "codexBrief": "# Codex Mission: synthetic-upstream/skill-refinery\nGoal: Synthetic fixture: multi-source knowledge refinery that turns docs and repos into structured agent skills with conflict detection. Primary Vega Lab fit: repo-research via agent-workflows.\nClassification: tool\nCapabilities: agent-workflows, research-intelligence\nHouse skills: repo-research, skill-extraction, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+      "claudeBrief": "# Claude Mission: synthetic-upstream/skill-refinery\nGoal: Synthetic fixture: multi-source knowledge refinery that turns docs and repos into structured agent skills with conflict detection. Primary Vega Lab fit: repo-research via agent-workflows.\nClassification: tool\nCapabilities: agent-workflows, research-intelligence\nHouse skills: repo-research, skill-extraction, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    },
+    {
+      "nwo": "synthetic-upstream/tiny-audio-transport",
+      "name": "tiny-audio-transport",
+      "author": "synthetic-upstream",
+      "summary": "Synthetic fixture: minimal audio transport bar and waveform component library. Primary Vega Lab fit: repo-discovery via frontend-ui.",
+      "capabilities": [
+        "frontend-ui",
+        "developer-tooling"
+      ],
+      "houseSkills": [
+        "repo-discovery",
+        "skill-extraction",
+        "repo-adoption"
+      ],
+      "rules": [
+        "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.",
+        "Validate maintenance risk and current ecosystem fit before committing to adoption."
+      ],
+      "flows": [
+        "research-queue-flow",
+        "skill-extraction-flow",
+        "adoption-decision-flow",
+        "news-digest-refresh"
+      ],
+      "adoptionKind": "tool",
+      "codexBrief": "# Codex Mission: synthetic-upstream/tiny-audio-transport\nGoal: Synthetic fixture: minimal audio transport bar and waveform component library. Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: tool\nCapabilities: frontend-ui, developer-tooling\nHouse skills: repo-discovery, skill-extraction, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+      "claudeBrief": "# Claude Mission: synthetic-upstream/tiny-audio-transport\nGoal: Synthetic fixture: minimal audio transport bar and waveform component library. Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: tool\nCapabilities: frontend-ui, developer-tooling\nHouse skills: repo-discovery, skill-extraction, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    },
+    {
+      "nwo": "synthetic-upstream/webgpu-particles",
+      "name": "webgpu-particles",
+      "author": "synthetic-upstream",
+      "summary": "Synthetic fixture: WebGPU particle and instancing playground for interactive 3D UI experiments. Primary Vega Lab fit: repo-discovery via frontend-ui.",
+      "capabilities": [
+        "frontend-ui"
+      ],
+      "houseSkills": [
+        "repo-discovery",
+        "repo-adoption"
+      ],
+      "rules": [],
+      "flows": [
+        "research-queue-flow",
+        "adoption-decision-flow",
+        "news-digest-refresh"
+      ],
+      "adoptionKind": "house",
+      "codexBrief": "# Codex Mission: synthetic-upstream/webgpu-particles\nGoal: Synthetic fixture: WebGPU particle and instancing playground for interactive 3D UI experiments. Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui\nHouse skills: repo-discovery, repo-adoption\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+      "claudeBrief": "# Claude Mission: synthetic-upstream/webgpu-particles\nGoal: Synthetic fixture: WebGPU particle and instancing playground for interactive 3D UI experiments. Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui\nHouse skills: repo-discovery, repo-adoption\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    }
+  ],
+  "mineHealth": [
+    {
+      "nwo": "example-observatory/observatory-notes",
+      "name": "observatory-notes",
+      "author": "example-observatory",
+      "visibility": "private",
+      "hasReadme": true,
+      "updatedAt": "2026-10-26T09:00:00.000Z",
+      "healthFlags": [
+        "private"
+      ],
+      "recommendedActions": [
+        "mlx-mission",
+        "ops-kit",
+        "codex-mission",
+        "claude-mission",
+        "house-integration"
+      ]
+    },
+    {
+      "nwo": "example-observatory/starter-template",
+      "name": "starter-template",
+      "author": "example-observatory",
+      "visibility": "public",
+      "hasReadme": true,
+      "updatedAt": "2026-09-22T09:00:00.000Z",
+      "healthFlags": [
+        "template-candidate"
+      ],
+      "recommendedActions": [
+        "mlx-mission",
+        "ops-kit",
+        "codex-mission",
+        "claude-mission",
+        "template-plan",
+        "house-integration"
+      ]
+    },
+    {
+      "nwo": "example-observatory/legacy-dashboard",
+      "name": "legacy-dashboard",
+      "author": "example-observatory",
+      "visibility": "public",
+      "hasReadme": false,
+      "updatedAt": "2025-06-09T09:00:00.000Z",
+      "healthFlags": [
+        "missing-readme",
+        "stale"
+      ],
+      "recommendedActions": [
+        "mlx-mission",
+        "ops-kit",
+        "codex-mission",
+        "claude-mission",
+        "write-readme",
+        "maintenance-plan",
+        "house-integration"
+      ]
+    }
+  ],
+  "repoInspections": [
+    {
+      "nwo": "example-observatory/legacy-dashboard",
+      "inspectedAt": "2025-06-09T09:00:00.000Z",
+      "files": {
+        "hasReadme": false,
+        "packageManagers": [
+          "npm"
+        ],
+        "workflows": [],
+        "deploymentConfigs": [
+          "vercel.json"
+        ],
+        "testScripts": [],
+        "buildScripts": []
+      },
+      "findings": [
+        "README missing from the synced repository snapshot.",
+        "No test/check/lint script detected from package metadata.",
+        "No build script detected from package metadata.",
+        "Repository appears stale based on last activity."
+      ],
+      "risks": [
+        "New contributors and agents lack a clear entrypoint.",
+        "Maintenance work has no obvious verification command.",
+        "Dependencies, build targets, or deployment assumptions may be outdated."
+      ]
+    },
+    {
+      "nwo": "example-observatory/observatory-notes",
+      "inspectedAt": "2026-10-26T09:00:00.000Z",
+      "files": {
+        "hasReadme": true,
+        "packageManagers": [
+          "pnpm"
+        ],
+        "workflows": [],
+        "deploymentConfigs": [],
+        "testScripts": [],
+        "buildScripts": []
+      },
+      "findings": [
+        "No test/check/lint script detected from package metadata."
+      ],
+      "risks": [
+        "Maintenance work has no obvious verification command."
+      ]
+    },
+    {
+      "nwo": "example-observatory/starter-template",
+      "inspectedAt": "2026-09-22T09:00:00.000Z",
+      "files": {
+        "hasReadme": true,
+        "packageManagers": [
+          "pnpm"
+        ],
+        "workflows": [
+          "ci.yml"
+        ],
+        "deploymentConfigs": [],
+        "testScripts": [],
+        "buildScripts": []
+      },
+      "findings": [
+        "No test/check/lint script detected from package metadata.",
+        "No build script detected from package metadata.",
+        "Repository has template/scaffold signals."
+      ],
+      "risks": [
+        "Maintenance work has no obvious verification command."
+      ]
+    }
+  ],
+  "actionItems": [
+    {
+      "id": "vega-lab:readme:example-observatory-legacy-dashboard",
+      "kind": "readme",
+      "status": "dismissed",
+      "priority": "high",
+      "nwo": "example-observatory/legacy-dashboard",
+      "title": "Make legacy-dashboard README-ready",
+      "summary": "The repo needs a clear human and agent entrypoint before broader ecosystem use.",
+      "evidence": [
+        "README missing from the synced repository snapshot.",
+        "No test/check/lint script detected from package metadata.",
+        "No build script detected from package metadata.",
+        "Repository appears stale based on last activity.",
+        "New contributors and agents lack a clear entrypoint."
+      ],
+      "linkedSkills": [
+        "repo-discovery",
+        "repo-adoption",
+        "mine-execution"
+      ],
+      "linkedRules": [
+        "Review license status before adoption or redistribution work.",
+        "Validate maintenance risk and current ecosystem fit before committing to adoption.",
+        "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
+      ],
+      "linkedFlows": [
+        "research-queue-flow",
+        "adoption-decision-flow",
+        "news-digest-refresh",
+        "mine-execution-flow"
+      ],
+      "draft": "Draft a README readiness pass for example-observatory/legacy-dashboard: document purpose, local setup, primary commands, data/runtime assumptions, and a short maintenance section. Evidence: README missing from the synced repository snapshot. No test/check/lint script detected from package metadata. No build script detected from package metadata.",
+      "source": "daily-ops",
+      "createdAt": "2025-06-09T09:00:00.000Z",
+      "updatedAt": "2026-10-31T09:00:00.000Z"
+    },
+    {
+      "id": "vega-lab:adoption:synthetic-upstream-skill-refinery",
+      "kind": "adoption",
+      "status": "reviewing",
+      "priority": "high",
+      "nwo": "synthetic-upstream/skill-refinery",
+      "title": "Decide adoption path for skill-refinery",
+      "summary": "tool candidate with score 96.",
+      "evidence": [
+        "Adoption kind: tool",
+        "Primary skills: repo-research, skill-extraction, repo-adoption",
+        "Recent activity suggests the repo is still moving."
+      ],
+      "linkedSkills": [
+        "repo-research",
+        "skill-extraction",
+        "repo-adoption"
+      ],
+      "linkedRules": [
+        "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house."
+      ],
+      "linkedFlows": [
+        "research-queue-flow",
+        "skill-extraction-flow",
+        "adoption-decision-flow"
+      ],
+      "draft": "Draft an adoption decision for synthetic-upstream/skill-refinery: classify as tool, justify the score, list risks, and define integration boundaries.",
+      "source": "weekly-research",
+      "createdAt": "2026-10-23T09:00:00.000Z",
+      "updatedAt": "2026-10-31T09:00:00.000Z"
+    },
+    {
+      "id": "vega-lab:adoption:synthetic-upstream-repo-pack-kit",
+      "kind": "adoption",
+      "status": "open",
+      "priority": "high",
+      "nwo": "synthetic-upstream/repo-pack-kit",
+      "title": "Decide adoption path for repo-pack-kit",
+      "summary": "tool candidate with score 100.",
+      "evidence": [
+        "Adoption kind: tool",
+        "Primary skills: repo-discovery, skill-extraction, repo-adoption",
+        "Recent activity suggests the repo is still moving."
+      ],
+      "linkedSkills": [
+        "repo-discovery",
+        "skill-extraction",
+        "repo-adoption"
+      ],
+      "linkedRules": [
+        "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house."
+      ],
+      "linkedFlows": [
+        "research-queue-flow",
+        "skill-extraction-flow",
+        "adoption-decision-flow",
+        "news-digest-refresh"
+      ],
+      "draft": "Draft an adoption decision for synthetic-upstream/repo-pack-kit: classify as tool, justify the score, list risks, and define integration boundaries.",
+      "source": "weekly-research",
+      "createdAt": "2026-10-29T09:00:00.000Z",
+      "updatedAt": "2026-10-29T09:00:00.000Z"
+    },
+    {
+      "id": "vega-lab:adoption:example-observatory-starter-template",
+      "kind": "adoption",
+      "status": "open",
+      "priority": "high",
+      "nwo": "example-observatory/starter-template",
+      "title": "Decide adoption path for starter-template",
+      "summary": "template candidate with score 88.",
+      "evidence": [
+        "No test/check/lint script detected from package metadata.",
+        "No build script detected from package metadata.",
+        "Repository has template/scaffold signals.",
+        "Maintenance work has no obvious verification command."
+      ],
+      "linkedSkills": [
+        "repo-discovery",
+        "skill-extraction",
+        "repo-adoption",
+        "mine-execution"
+      ],
+      "linkedRules": [
+        "Adopt this as a scaffold or reference, not as a long-lived runtime dependency.",
+        "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
+      ],
+      "linkedFlows": [
+        "research-queue-flow",
+        "skill-extraction-flow",
+        "adoption-decision-flow",
+        "news-digest-refresh",
+        "mine-execution-flow"
+      ],
+      "draft": "Draft an adoption decision for example-observatory/starter-template: classify as template, justify the score, list risks, and define integration boundaries.",
+      "source": "weekly-research",
+      "createdAt": "2026-09-22T09:00:00.000Z",
+      "updatedAt": "2026-09-22T09:00:00.000Z"
+    },
+    {
+      "id": "vega-lab:skill:synthetic-upstream-repo-pack-kit",
+      "kind": "skill",
+      "status": "open",
+      "priority": "normal",
+      "nwo": "synthetic-upstream/repo-pack-kit",
+      "title": "Extract reusable skill signals from repo-pack-kit",
+      "summary": "The repo maps to tooling, agents, templates, or workflows that can teach core-x.",
+      "evidence": [
+        "Adoption kind: tool",
+        "Primary skills: repo-discovery, skill-extraction, repo-adoption",
+        "Recent activity suggests the repo is still moving."
+      ],
+      "linkedSkills": [
+        "repo-discovery",
+        "skill-extraction",
+        "repo-adoption"
+      ],
+      "linkedRules": [
+        "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house."
+      ],
+      "linkedFlows": [
+        "research-queue-flow",
+        "skill-extraction-flow",
+        "adoption-decision-flow",
+        "news-digest-refresh"
+      ],
+      "draft": "Extract a reusable Vega Lab skill/rule/flow package from synthetic-upstream/repo-pack-kit, grounded in capabilities: mcp-tooling, agent-workflows, developer-tooling, ml-ai.",
+      "source": "weekly-research",
+      "createdAt": "2026-10-29T09:00:00.000Z",
+      "updatedAt": "2026-10-29T09:00:00.000Z"
+    },
+    {
+      "id": "vega-lab:testing:example-observatory-observatory-notes",
+      "kind": "testing",
+      "status": "open",
+      "priority": "normal",
+      "nwo": "example-observatory/observatory-notes",
+      "title": "Define verification for observatory-notes",
+      "summary": "Package metadata does not expose an obvious test, check, or lint command.",
+      "evidence": [
+        "No test/check/lint script detected from package metadata.",
+        "Maintenance work has no obvious verification command."
+      ],
+      "linkedSkills": [
+        "repo-research",
+        "skill-extraction",
+        "repo-adoption",
+        "mine-execution"
+      ],
+      "linkedRules": [
+        "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.",
+        "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
+      ],
+      "linkedFlows": [
+        "research-queue-flow",
+        "skill-extraction-flow",
+        "adoption-decision-flow",
+        "mine-execution-flow"
+      ],
+      "draft": "Draft a verification plan for example-observatory/observatory-notes: add or document lint/test/build commands and define the smallest smoke test agents should run before edits.",
+      "source": "daily-ops",
+      "createdAt": "2026-10-26T09:00:00.000Z",
+      "updatedAt": "2026-10-26T09:00:00.000Z"
+    },
+    {
+      "id": "vega-lab:skill:example-observatory-observatory-notes",
+      "kind": "skill",
+      "status": "open",
+      "priority": "normal",
+      "nwo": "example-observatory/observatory-notes",
+      "title": "Extract reusable skill signals from observatory-notes",
+      "summary": "The repo maps to tooling, agents, templates, or workflows that can teach core-x.",
+      "evidence": [
+        "No test/check/lint script detected from package metadata.",
+        "Maintenance work has no obvious verification command."
+      ],
+      "linkedSkills": [
+        "repo-research",
+        "skill-extraction",
+        "repo-adoption",
+        "mine-execution"
+      ],
+      "linkedRules": [
+        "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.",
+        "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
+      ],
+      "linkedFlows": [
+        "research-queue-flow",
+        "skill-extraction-flow",
+        "adoption-decision-flow",
+        "mine-execution-flow"
+      ],
+      "draft": "Extract a reusable Vega Lab skill/rule/flow package from example-observatory/observatory-notes, grounded in capabilities: agent-workflows, research-intelligence.",
+      "source": "weekly-research",
+      "createdAt": "2026-10-26T09:00:00.000Z",
+      "updatedAt": "2026-10-26T09:00:00.000Z"
+    },
+    {
+      "id": "vega-lab:skill:synthetic-upstream-skill-refinery",
+      "kind": "skill",
+      "status": "open",
+      "priority": "normal",
+      "nwo": "synthetic-upstream/skill-refinery",
+      "title": "Extract reusable skill signals from skill-refinery",
+      "summary": "The repo maps to tooling, agents, templates, or workflows that can teach core-x.",
+      "evidence": [
+        "Adoption kind: tool",
+        "Primary skills: repo-research, skill-extraction, repo-adoption",
+        "Recent activity suggests the repo is still moving."
+      ],
+      "linkedSkills": [
+        "repo-research",
+        "skill-extraction",
+        "repo-adoption"
+      ],
+      "linkedRules": [
+        "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house."
+      ],
+      "linkedFlows": [
+        "research-queue-flow",
+        "skill-extraction-flow",
+        "adoption-decision-flow"
+      ],
+      "draft": "Extract a reusable Vega Lab skill/rule/flow package from synthetic-upstream/skill-refinery, grounded in capabilities: agent-workflows, research-intelligence.",
+      "source": "weekly-research",
+      "createdAt": "2026-10-23T09:00:00.000Z",
+      "updatedAt": "2026-10-23T09:00:00.000Z"
+    },
+    {
+      "id": "vega-lab:testing:example-observatory-starter-template",
+      "kind": "testing",
+      "status": "open",
+      "priority": "normal",
+      "nwo": "example-observatory/starter-template",
+      "title": "Define verification for starter-template",
+      "summary": "Package metadata does not expose an obvious test, check, or lint command.",
+      "evidence": [
+        "No test/check/lint script detected from package metadata.",
+        "No build script detected from package metadata.",
+        "Repository has template/scaffold signals.",
+        "Maintenance work has no obvious verification command."
+      ],
+      "linkedSkills": [
+        "repo-discovery",
+        "skill-extraction",
+        "repo-adoption",
+        "mine-execution"
+      ],
+      "linkedRules": [
+        "Adopt this as a scaffold or reference, not as a long-lived runtime dependency.",
+        "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
+      ],
+      "linkedFlows": [
+        "research-queue-flow",
+        "skill-extraction-flow",
+        "adoption-decision-flow",
+        "news-digest-refresh",
+        "mine-execution-flow"
+      ],
+      "draft": "Draft a verification plan for example-observatory/starter-template: add or document lint/test/build commands and define the smallest smoke test agents should run before edits.",
+      "source": "daily-ops",
+      "createdAt": "2026-09-22T09:00:00.000Z",
+      "updatedAt": "2026-09-22T09:00:00.000Z"
+    },
+    {
+      "id": "vega-lab:template:example-observatory-starter-template",
+      "kind": "template",
+      "status": "open",
+      "priority": "normal",
+      "nwo": "example-observatory/starter-template",
+      "title": "Evaluate starter-template as a reusable template",
+      "summary": "The repo has scaffold signals that may become a reusable core-x pattern.",
+      "evidence": [
+        "No test/check/lint script detected from package metadata.",
+        "No build script detected from package metadata.",
+        "Repository has template/scaffold signals.",
+        "Maintenance work has no obvious verification command."
+      ],
+      "linkedSkills": [
+        "repo-discovery",
+        "skill-extraction",
+        "repo-adoption",
+        "mine-execution"
+      ],
+      "linkedRules": [
+        "Adopt this as a scaffold or reference, not as a long-lived runtime dependency.",
+        "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
+      ],
+      "linkedFlows": [
+        "research-queue-flow",
+        "skill-extraction-flow",
+        "adoption-decision-flow",
+        "news-digest-refresh",
+        "mine-execution-flow"
+      ],
+      "draft": "Draft a template extraction plan for example-observatory/starter-template: isolate reusable scaffold decisions, required configuration, and what must be removed before reuse.",
+      "source": "weekly-research",
+      "createdAt": "2026-09-22T09:00:00.000Z",
+      "updatedAt": "2026-09-22T09:00:00.000Z"
+    },
+    {
+      "id": "vega-lab:skill:example-observatory-starter-template",
+      "kind": "skill",
+      "status": "open",
+      "priority": "normal",
+      "nwo": "example-observatory/starter-template",
+      "title": "Extract reusable skill signals from starter-template",
+      "summary": "The repo maps to tooling, agents, templates, or workflows that can teach core-x.",
+      "evidence": [
+        "No test/check/lint script detected from package metadata.",
+        "No build script detected from package metadata.",
+        "Repository has template/scaffold signals.",
+        "Maintenance work has no obvious verification command."
+      ],
+      "linkedSkills": [
+        "repo-discovery",
+        "skill-extraction",
+        "repo-adoption",
+        "mine-execution"
+      ],
+      "linkedRules": [
+        "Adopt this as a scaffold or reference, not as a long-lived runtime dependency.",
+        "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
+      ],
+      "linkedFlows": [
+        "research-queue-flow",
+        "skill-extraction-flow",
+        "adoption-decision-flow",
+        "news-digest-refresh",
+        "mine-execution-flow"
+      ],
+      "draft": "Extract a reusable Vega Lab skill/rule/flow package from example-observatory/starter-template, grounded in capabilities: template-scaffolding, frontend-ui, repo-ops.",
+      "source": "weekly-research",
+      "createdAt": "2026-09-22T09:00:00.000Z",
+      "updatedAt": "2026-09-22T09:00:00.000Z"
+    },
+    {
+      "id": "vega-lab:skill:synthetic-upstream-tiny-audio-transport",
+      "kind": "skill",
+      "status": "open",
+      "priority": "normal",
+      "nwo": "synthetic-upstream/tiny-audio-transport",
+      "title": "Extract reusable skill signals from tiny-audio-transport",
+      "summary": "The repo maps to tooling, agents, templates, or workflows that can teach core-x.",
+      "evidence": [
+        "Adoption kind: tool",
+        "Primary skills: repo-discovery, skill-extraction, repo-adoption",
+        "Stale activity suggests higher maintenance risk."
+      ],
+      "linkedSkills": [
+        "repo-discovery",
+        "skill-extraction",
+        "repo-adoption"
+      ],
+      "linkedRules": [
+        "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.",
+        "Validate maintenance risk and current ecosystem fit before committing to adoption."
+      ],
+      "linkedFlows": [
+        "research-queue-flow",
+        "skill-extraction-flow",
+        "adoption-decision-flow",
+        "news-digest-refresh"
+      ],
+      "draft": "Extract a reusable Vega Lab skill/rule/flow package from synthetic-upstream/tiny-audio-transport, grounded in capabilities: frontend-ui, developer-tooling.",
+      "source": "weekly-research",
+      "createdAt": "2025-09-07T09:00:00.000Z",
+      "updatedAt": "2025-09-07T09:00:00.000Z"
+    },
+    {
+      "id": "vega-lab:maintenance:example-observatory-legacy-dashboard",
+      "kind": "maintenance",
+      "status": "open",
+      "priority": "normal",
+      "nwo": "example-observatory/legacy-dashboard",
+      "title": "Run a maintenance pass on legacy-dashboard",
+      "summary": "Stale activity increases dependency, workflow, and deployment risk.",
+      "evidence": [
+        "README missing from the synced repository snapshot.",
+        "No test/check/lint script detected from package metadata.",
+        "No build script detected from package metadata.",
+        "Repository appears stale based on last activity.",
+        "New contributors and agents lack a clear entrypoint."
+      ],
+      "linkedSkills": [
+        "repo-discovery",
+        "repo-adoption",
+        "mine-execution"
+      ],
+      "linkedRules": [
+        "Review license status before adoption or redistribution work.",
+        "Validate maintenance risk and current ecosystem fit before committing to adoption.",
+        "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
+      ],
+      "linkedFlows": [
+        "research-queue-flow",
+        "adoption-decision-flow",
+        "news-digest-refresh",
+        "mine-execution-flow"
+      ],
+      "draft": "Draft a maintenance plan for example-observatory/legacy-dashboard: verify dependencies, run available checks, update stale assumptions, and identify a smallest useful PR. Rules: Review license status before adoption or redistribution work. Validate maintenance risk and current ecosystem fit before committing to adoption. Prioritize README, maintenance, and execution readiness before broader ecosystem integration.",
+      "source": "daily-ops",
+      "createdAt": "2025-06-09T09:00:00.000Z",
+      "updatedAt": "2025-06-09T09:00:00.000Z"
+    },
+    {
+      "id": "vega-lab:testing:example-observatory-legacy-dashboard",
+      "kind": "testing",
+      "status": "open",
+      "priority": "normal",
+      "nwo": "example-observatory/legacy-dashboard",
+      "title": "Define verification for legacy-dashboard",
+      "summary": "Package metadata does not expose an obvious test, check, or lint command.",
+      "evidence": [
+        "README missing from the synced repository snapshot.",
+        "No test/check/lint script detected from package metadata.",
+        "No build script detected from package metadata.",
+        "Repository appears stale based on last activity.",
+        "New contributors and agents lack a clear entrypoint."
+      ],
+      "linkedSkills": [
+        "repo-discovery",
+        "repo-adoption",
+        "mine-execution"
+      ],
+      "linkedRules": [
+        "Review license status before adoption or redistribution work.",
+        "Validate maintenance risk and current ecosystem fit before committing to adoption.",
+        "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
+      ],
+      "linkedFlows": [
+        "research-queue-flow",
+        "adoption-decision-flow",
+        "news-digest-refresh",
+        "mine-execution-flow"
+      ],
+      "draft": "Draft a verification plan for example-observatory/legacy-dashboard: add or document lint/test/build commands and define the smallest smoke test agents should run before edits.",
+      "source": "daily-ops",
+      "createdAt": "2025-06-09T09:00:00.000Z",
+      "updatedAt": "2025-06-09T09:00:00.000Z"
+    }
+  ],
+  "opsDigest": {
+    "generatedAt": "2026-11-01T09:00:00.000Z",
+    "summary": "13 open Vega Lab actions across 3 owned repositories.",
+    "counts": {
+      "openActions": 13,
+      "criticalActions": 3,
+      "ownedRepos": 3,
+      "researchQueue": 3
+    },
+    "highlights": [
+      "Decide adoption path for skill-refinery: tool candidate with score 96.",
+      "Decide adoption path for repo-pack-kit: tool candidate with score 100.",
+      "Decide adoption path for starter-template: template candidate with score 88.",
+      "Extract reusable skill signals from repo-pack-kit: The repo maps to tooling, agents, templates, or workflows that can teach core-x.",
+      "Define verification for observatory-notes: Package metadata does not expose an obvious test, check, or lint command.",
+      "Extract reusable skill signals from observatory-notes: The repo maps to tooling, agents, templates, or workflows that can teach core-x."
+    ],
+    "recommendedActions": [
+      {
+        "id": "vega-lab:adoption:synthetic-upstream-skill-refinery",
+        "nwo": "synthetic-upstream/skill-refinery",
+        "title": "Decide adoption path for skill-refinery",
+        "priority": "high",
+        "kind": "adoption"
+      },
+      {
+        "id": "vega-lab:adoption:synthetic-upstream-repo-pack-kit",
+        "nwo": "synthetic-upstream/repo-pack-kit",
+        "title": "Decide adoption path for repo-pack-kit",
+        "priority": "high",
+        "kind": "adoption"
+      },
+      {
+        "id": "vega-lab:adoption:example-observatory-starter-template",
+        "nwo": "example-observatory/starter-template",
+        "title": "Decide adoption path for starter-template",
+        "priority": "high",
+        "kind": "adoption"
+      },
+      {
+        "id": "vega-lab:skill:synthetic-upstream-repo-pack-kit",
+        "nwo": "synthetic-upstream/repo-pack-kit",
+        "title": "Extract reusable skill signals from repo-pack-kit",
+        "priority": "normal",
+        "kind": "skill"
+      },
+      {
+        "id": "vega-lab:testing:example-observatory-observatory-notes",
+        "nwo": "example-observatory/observatory-notes",
+        "title": "Define verification for observatory-notes",
+        "priority": "normal",
+        "kind": "testing"
+      },
+      {
+        "id": "vega-lab:skill:example-observatory-observatory-notes",
+        "nwo": "example-observatory/observatory-notes",
+        "title": "Extract reusable skill signals from observatory-notes",
+        "priority": "normal",
+        "kind": "skill"
+      },
+      {
+        "id": "vega-lab:skill:synthetic-upstream-skill-refinery",
+        "nwo": "synthetic-upstream/skill-refinery",
+        "title": "Extract reusable skill signals from skill-refinery",
+        "priority": "normal",
+        "kind": "skill"
+      },
+      {
+        "id": "vega-lab:testing:example-observatory-starter-template",
+        "nwo": "example-observatory/starter-template",
+        "title": "Define verification for starter-template",
+        "priority": "normal",
+        "kind": "testing"
+      }
+    ],
+    "actionItemIds": [
+      "vega-lab:adoption:synthetic-upstream-skill-refinery",
+      "vega-lab:adoption:synthetic-upstream-repo-pack-kit",
+      "vega-lab:adoption:example-observatory-starter-template",
+      "vega-lab:skill:synthetic-upstream-repo-pack-kit",
+      "vega-lab:testing:example-observatory-observatory-notes",
+      "vega-lab:skill:example-observatory-observatory-notes",
+      "vega-lab:skill:synthetic-upstream-skill-refinery",
+      "vega-lab:testing:example-observatory-starter-template",
+      "vega-lab:template:example-observatory-starter-template",
+      "vega-lab:skill:example-observatory-starter-template",
+      "vega-lab:skill:synthetic-upstream-tiny-audio-transport",
+      "vega-lab:maintenance:example-observatory-legacy-dashboard"
+    ]
+  },
+  "weeklyResearchReview": {
+    "generatedAt": "2026-11-01T09:00:00.000Z",
+    "summary": "Weekly Vega Lab review for bright-star adoption, skill extraction, and research queue movement.",
+    "brightStars": [
+      "synthetic-upstream/repo-pack-kit",
+      "synthetic-upstream/skill-refinery",
+      "example-observatory/starter-template",
+      "example-observatory/observatory-notes",
+      "example-observatory/legacy-dashboard",
+      "synthetic-upstream/doc-layout-ocr",
+      "synthetic-upstream/webgpu-particles",
+      "synthetic-upstream/tiny-audio-transport"
+    ],
+    "adoptionCandidates": [
+      "synthetic-upstream/repo-pack-kit",
+      "synthetic-upstream/skill-refinery",
+      "example-observatory/starter-template",
+      "example-observatory/observatory-notes",
+      "example-observatory/legacy-dashboard",
+      "synthetic-upstream/doc-layout-ocr",
+      "synthetic-upstream/webgpu-particles",
+      "synthetic-upstream/tiny-audio-transport"
+    ],
+    "skillCandidates": [
+      "synthetic-upstream/repo-pack-kit",
+      "synthetic-upstream/skill-refinery",
+      "example-observatory/starter-template",
+      "example-observatory/observatory-notes",
+      "synthetic-upstream/tiny-audio-transport"
+    ],
+    "researchCandidates": [
+      "synthetic-upstream/repo-pack-kit",
+      "synthetic-upstream/skill-refinery",
+      "synthetic-upstream/md-slides-lite",
+      "example-observatory/observatory-notes"
+    ],
+    "actionItemIds": [
+      "vega-lab:adoption:synthetic-upstream-skill-refinery",
+      "vega-lab:adoption:synthetic-upstream-repo-pack-kit",
+      "vega-lab:adoption:example-observatory-starter-template",
+      "vega-lab:skill:synthetic-upstream-repo-pack-kit",
+      "vega-lab:skill:example-observatory-observatory-notes",
+      "vega-lab:skill:synthetic-upstream-skill-refinery",
+      "vega-lab:template:example-observatory-starter-template",
+      "vega-lab:skill:example-observatory-starter-template",
+      "vega-lab:skill:synthetic-upstream-tiny-audio-transport"
+    ]
+  },
+  "actionRuns": [
+    {
+      "schema_version": "vega.action-result.v1",
+      "run_id": "synthetic-run-001",
+      "action_id": "repo.inspect",
+      "action_kind": "repo.inspect",
+      "status": "succeeded",
+      "review_state": "pending",
+      "visibility": "internal",
+      "repo": {
+        "nwo": "synthetic-upstream/repo-pack-kit",
+        "name": "repo-pack-kit",
+        "author": "synthetic-upstream"
+      },
+      "requested_at": "2026-11-01T09:01:00.000Z",
+      "started_at": "2026-11-01T09:01:00.000Z",
+      "completed_at": "2026-11-01T09:01:00.000Z",
+      "confirmation_ref": null,
+      "input_digest": "sha256:synthetic-1",
+      "warnings": [],
+      "steps": [],
+      "artifacts": []
+    },
+    {
+      "schema_version": "vega.action-result.v1",
+      "run_id": "synthetic-run-002",
+      "action_id": "snapshot.resolve",
+      "action_kind": "snapshot.resolve",
+      "status": "succeeded",
+      "review_state": "pending",
+      "visibility": "internal",
+      "repo": {
+        "nwo": "synthetic-upstream/repo-pack-kit",
+        "name": "repo-pack-kit",
+        "author": "synthetic-upstream"
+      },
+      "requested_at": "2026-11-01T09:02:00.000Z",
+      "started_at": "2026-11-01T09:02:00.000Z",
+      "completed_at": "2026-11-01T09:02:00.000Z",
+      "confirmation_ref": null,
+      "input_digest": "sha256:synthetic-2",
+      "warnings": [],
+      "steps": [],
+      "artifacts": [
+        {
+          "kind": "source-snapshot",
+          "path": "data/review/source-snapshots/synthetic-repo-pack-kit.json"
+        }
+      ]
+    },
+    {
+      "schema_version": "vega.action-result.v1",
+      "run_id": "synthetic-run-003",
+      "action_id": "candidate.build",
+      "action_kind": "candidate.build",
+      "status": "succeeded",
+      "review_state": "pending",
+      "visibility": "internal",
+      "repo": {
+        "nwo": "synthetic-upstream/repo-pack-kit",
+        "name": "repo-pack-kit",
+        "author": "synthetic-upstream"
+      },
+      "requested_at": "2026-11-01T09:03:00.000Z",
+      "started_at": "2026-11-01T09:03:00.000Z",
+      "completed_at": "2026-11-01T09:03:00.000Z",
+      "confirmation_ref": null,
+      "input_digest": "sha256:synthetic-3",
+      "warnings": [],
+      "steps": [],
+      "artifacts": [
+        {
+          "kind": "skill-candidate",
+          "path": "data/review/skill-candidates/synthetic-repo-pack-kit.json"
+        }
+      ],
+      "candidate_id": "vega-candidate:synthetic-upstream:repo-pack-kit"
+    },
+    {
+      "schema_version": "vega.action-result.v1",
+      "run_id": "synthetic-run-004",
+      "action_id": "candidate.validate",
+      "action_kind": "candidate.validate",
+      "status": "succeeded",
+      "review_state": "pending",
+      "visibility": "internal",
+      "repo": {
+        "nwo": "synthetic-upstream/repo-pack-kit",
+        "name": "repo-pack-kit",
+        "author": "synthetic-upstream"
+      },
+      "requested_at": "2026-11-01T09:04:00.000Z",
+      "started_at": "2026-11-01T09:04:00.000Z",
+      "completed_at": "2026-11-01T09:04:00.000Z",
+      "confirmation_ref": null,
+      "input_digest": "sha256:synthetic-4",
+      "warnings": [],
+      "steps": [],
+      "artifacts": [],
+      "candidate_id": "vega-candidate:synthetic-upstream:repo-pack-kit"
+    },
+    {
+      "schema_version": "vega.action-result.v1",
+      "run_id": "synthetic-run-005",
+      "action_id": "review.queue",
+      "action_kind": "review.queue",
+      "status": "succeeded",
+      "review_state": "pending",
+      "visibility": "internal",
+      "repo": {
+        "nwo": "synthetic-upstream/repo-pack-kit",
+        "name": "repo-pack-kit",
+        "author": "synthetic-upstream"
+      },
+      "requested_at": "2026-11-01T09:05:00.000Z",
+      "started_at": "2026-11-01T09:05:00.000Z",
+      "completed_at": "2026-11-01T09:05:00.000Z",
+      "confirmation_ref": null,
+      "input_digest": "sha256:synthetic-5",
+      "warnings": [],
+      "steps": [],
+      "artifacts": []
+    },
+    {
+      "schema_version": "vega.action-result.v1",
+      "run_id": "synthetic-run-006",
+      "action_id": "repo.inspect",
+      "action_kind": "repo.inspect",
+      "status": "succeeded",
+      "review_state": "pending",
+      "visibility": "internal",
+      "repo": {
+        "nwo": "synthetic-upstream/doc-layout-ocr",
+        "name": "doc-layout-ocr",
+        "author": "synthetic-upstream"
+      },
+      "requested_at": "2026-11-01T09:06:00.000Z",
+      "started_at": "2026-11-01T09:06:00.000Z",
+      "completed_at": "2026-11-01T09:06:00.000Z",
+      "confirmation_ref": null,
+      "input_digest": "sha256:synthetic-6",
+      "warnings": [],
+      "steps": [],
+      "artifacts": []
+    },
+    {
+      "schema_version": "vega.action-result.v1",
+      "run_id": "synthetic-run-007",
+      "action_id": "snapshot.resolve",
+      "action_kind": "snapshot.resolve",
+      "status": "blocked",
+      "review_state": "pending",
+      "visibility": "internal",
+      "repo": {
+        "nwo": "synthetic-upstream/doc-layout-ocr",
+        "name": "doc-layout-ocr",
+        "author": "synthetic-upstream"
+      },
+      "requested_at": "2026-11-01T09:07:00.000Z",
+      "started_at": "2026-11-01T09:07:00.000Z",
+      "completed_at": "2026-11-01T09:07:00.000Z",
+      "confirmation_ref": null,
+      "input_digest": "sha256:synthetic-7",
+      "warnings": [
+        "Synthetic fixture: license is not declared upstream; snapshot write requires an explicit license decision."
+      ],
+      "steps": [],
+      "artifacts": [],
+      "error": {
+        "code": "license_unknown",
+        "message": "Synthetic fixture: license unknown — snapshot blocked pending review.",
+        "retryable": false
+      }
+    }
+  ]
+}
