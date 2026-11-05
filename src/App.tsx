@@ -1,17 +1,17 @@
-import { startTransition, useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import type { MouseEvent } from "react";
 import {
   Activity,
   BarChart3,
   Compass,
-  Github,
   Inbox,
   LayoutGrid,
+  Radar,
   Search,
-  Star,
   Table as TableIcon,
   User,
 } from "lucide-react";
+import type { LucideIcon } from "lucide-react";
 import { RepoCard } from "./components/RepoCard";
 import { RepoTable } from "./components/RepoTable";
 import { ReadmePanel } from "./components/ReadmePanel";
@@ -22,50 +22,47 @@ import { HighlightsPanel } from "./components/HighlightsPanel";
 import { MyReposPanel } from "./components/MyReposPanel";
 import { RuntimeSettingsPanel } from "./components/RuntimeSettingsPanel";
 import { OpsInboxPanel } from "./components/OpsInboxPanel";
+import { ObservatoryDesk } from "./components/ObservatoryDesk";
+import { useObservatoryData } from "./lib/use-observatory-data";
 import { logger } from "./lib/logger";
 import { getReadmeActionPresets } from "./lib/orchestrator";
-import type {
-  LanguageGroup,
-  ActionItem,
-  MineHealthRecord,
-  OpsDigest,
-  Repo,
-  RepoSignal,
-  ResearchQueueItem,
-  WeeklyResearchReview,
-} from "./types";
+import type { Repo } from "./types";
 
-async function fetchJson<T>(paths: string[]): Promise<T | null> {
-  for (const currentPath of paths) {
-    try {
-      const response = await fetch(currentPath);
-      if (!response.ok) continue;
-      return await response.json() as T;
-    } catch {
-      // keep trying fallback paths
-    }
-  }
-  return null;
-}
+type View = "desk" | "cards" | "table" | "statistics" | "activity" | "news" | "mine" | "ops";
 
-function normalizeRepoPayload(jsonData: unknown): Repo[] {
-  if (!Array.isArray(jsonData)) return [];
-
-  if (
-    jsonData.length === 0
-    || (jsonData[0] && typeof jsonData[0] === "object" && "name" in jsonData[0])
-  ) {
-    return jsonData as Repo[];
-  }
-
-  return (jsonData as LanguageGroup[]).flatMap((group) => group.repos || []);
-}
+const NAV_GROUPS: Array<{ label: string; items: Array<{ view: View; label: string; icon: LucideIcon }> }> = [
+  {
+    label: "Discover",
+    items: [
+      { view: "desk", label: "Desk", icon: Radar },
+      { view: "cards", label: "Catalog", icon: LayoutGrid },
+      { view: "table", label: "Table", icon: TableIcon },
+      { view: "statistics", label: "Stats", icon: BarChart3 },
+    ],
+  },
+  { label: "Research", items: [{ view: "news", label: "Signals", icon: Compass }] },
+  {
+    label: "Operate",
+    items: [
+      { view: "ops", label: "Inbox", icon: Inbox },
+      { view: "mine", label: "Mine", icon: User },
+    ],
+  },
+  { label: "System", items: [{ view: "activity", label: "Activity", icon: Activity }] },
+];
 
 function App() {
-  const [allRepos, setAllRepos] = useState<Repo[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState<string | null>(null);
-  const [view, setView] = useState<"cards" | "table" | "statistics" | "activity" | "news" | "mine" | "ops">("cards");
+  const data = useObservatoryData();
+  // Synthetic previews keep their own browser storage so invented repos never mix with real bookmarks/history.
+  const storagePrefix = data.mode === "fixture" ? "vega-lab:fixture:" : "vega-lab:";
+  const allRepos = data.starred;
+  const repoSignals = data.signals;
+  const researchQueue = data.queue;
+  const mineHealth = data.mineHealth;
+  const actionItems = data.actionItems;
+  const opsDigest = data.opsDigest;
+  const weeklyResearchReview = data.weeklyReview;
+  const [view, setView] = useState<View>("desk");
 
   const [selectedRepo, setSelectedRepo] = useState<Repo | null>(null);
   const [isReadmeOpen, setIsReadmeOpen] = useState(false);
@@ -77,13 +74,8 @@ function App() {
 
   const [bookmarks, setBookmarks] = useState<Repo[]>([]);
   const [history, setHistory] = useState<Repo[]>([]);
-  const [myRepos, setMyRepos] = useState<Repo[]>([]);
-  const [repoSignals, setRepoSignals] = useState<RepoSignal[]>([]);
-  const [researchQueue, setResearchQueue] = useState<ResearchQueueItem[]>([]);
-  const [mineHealth, setMineHealth] = useState<MineHealthRecord[]>([]);
-  const [actionItems, setActionItems] = useState<ActionItem[]>([]);
-  const [opsDigest, setOpsDigest] = useState<OpsDigest | null>(null);
-  const [weeklyResearchReview, setWeeklyResearchReview] = useState<WeeklyResearchReview | null>(null);
+  const [storedMine, setStoredMine] = useState<Repo[]>([]);
+  const myRepos = data.mine.length > 0 || data.mode === "fixture" ? data.mine : storedMine;
   const [contextMenu, setContextMenu] = useState<{ x: number; y: number; repo: Repo } | null>(null);
 
   const [searchTerm, setSearchTerm] = useState("");
@@ -96,25 +88,7 @@ function App() {
 
   const repoKey = (repo: Repo) => `${repo.author}/${repo.name}`;
 
-  const refreshHouseData = async () => {
-    const [signals, queue, health, actions, digest, weekly] = await Promise.all([
-      fetchJson<RepoSignal[]>(["/repo-signals.json", "/data/repo-signals.json"]),
-      fetchJson<ResearchQueueItem[]>(["/research-queue.json", "/data/research-queue.json"]),
-      fetchJson<MineHealthRecord[]>(["/mine-health.json", "/data/mine-health.json"]),
-      fetchJson<ActionItem[]>(["/action-items.json", "/data/action-items.json"]),
-      fetchJson<OpsDigest>(["/ops-digest.json", "/data/ops-digest.json"]),
-      fetchJson<WeeklyResearchReview>(["/weekly-research-review.json", "/data/weekly-research-review.json"]),
-    ]);
-
-    startTransition(() => {
-      setRepoSignals(Array.isArray(signals) ? signals : []);
-      setResearchQueue(Array.isArray(queue) ? queue : []);
-      setMineHealth(Array.isArray(health) ? health : []);
-      setActionItems(Array.isArray(actions) ? actions : []);
-      setOpsDigest(digest && !Array.isArray(digest) ? digest : null);
-      setWeeklyResearchReview(weekly && !Array.isArray(weekly) ? weekly : null);
-    });
-  };
+  const refreshHouseData = () => data.refreshDerived();
 
   const recordHistory = (repo: Repo) => {
     setHistory((previous) => {
@@ -214,78 +188,52 @@ function App() {
     };
   }, [contextMenu]);
 
-  useEffect(() => {
-    fetch("/data.json")
-      .then(async (response) => {
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        return response.json() as Promise<unknown>;
-      })
-      .then((jsonData) => {
-        const flat = normalizeRepoPayload(jsonData);
-        startTransition(() => {
-          setAllRepos(flat);
-          setLoading(false);
-        });
-      })
-      .catch((nextError: Error) => {
-        setError(nextError.message);
-        setLoading(false);
-      });
-  }, []);
+  const [storageReady, setStorageReady] = useState(false);
 
   useEffect(() => {
-    void refreshHouseData();
-  }, []);
-
-  useEffect(() => {
+    // Legacy git-stars:* keys stay readable for one migration cycle (live mode only).
+    const legacy = (key: string) => (data.mode === "fixture" ? null : localStorage.getItem(`git-stars:${key}`));
     try {
-      const storedBookmarks = localStorage.getItem("vega-lab:bookmarks") || localStorage.getItem("git-stars:bookmarks");
+      const storedBookmarks = localStorage.getItem(`${storagePrefix}bookmarks`) || legacy("bookmarks");
       if (storedBookmarks) setBookmarks(JSON.parse(storedBookmarks) as Repo[]);
-      const storedHistory = localStorage.getItem("vega-lab:history") || localStorage.getItem("git-stars:history");
+      const storedHistory = localStorage.getItem(`${storagePrefix}history`) || legacy("history");
       if (storedHistory) setHistory(JSON.parse(storedHistory) as Repo[]);
-      const storedMine = localStorage.getItem("vega-lab:my-repos") || localStorage.getItem("git-stars:my-repos");
-      if (storedMine) setMyRepos(JSON.parse(storedMine) as Repo[]);
+      if (data.mode !== "fixture") {
+        const cachedMine = localStorage.getItem("vega-lab:my-repos") || legacy("my-repos");
+        if (cachedMine) setStoredMine(JSON.parse(cachedMine) as Repo[]);
+      }
     } catch {
       // ignore storage errors
     }
-  }, []);
+    setStorageReady(true);
+  }, [data.mode, storagePrefix]);
 
   useEffect(() => {
+    if (!storageReady) return;
     try {
-      localStorage.setItem("vega-lab:bookmarks", JSON.stringify(bookmarks));
+      localStorage.setItem(`${storagePrefix}bookmarks`, JSON.stringify(bookmarks));
     } catch {
       // ignore
     }
-  }, [bookmarks]);
+  }, [bookmarks, storageReady, storagePrefix]);
 
   useEffect(() => {
+    if (!storageReady) return;
     try {
-      localStorage.setItem("vega-lab:history", JSON.stringify(history));
+      localStorage.setItem(`${storagePrefix}history`, JSON.stringify(history));
     } catch {
       // ignore
     }
-  }, [history]);
+  }, [history, storageReady, storagePrefix]);
 
   useEffect(() => {
+    if (data.mode === "fixture" || data.mine.length === 0) return;
     try {
-      localStorage.setItem("vega-lab:my-repos", JSON.stringify(myRepos));
+      localStorage.setItem("vega-lab:my-repos", JSON.stringify(data.mine));
     } catch {
       // ignore
     }
-  }, [myRepos]);
-
-  useEffect(() => {
-    fetchJson<Repo[]>(["/my-repos.json", "/data/my-repos.json", "/data/owned-repos.json"])
-      .then((data) => {
-        if (!Array.isArray(data) || data.length === 0) return;
-        startTransition(() => {
-          setMyRepos(data);
-        });
-      })
-      .catch(() => undefined);
-  }, []);
+  }, [data.mine, data.mode]);
 
   const languages = useMemo(() => {
     const values = new Set<string>();
@@ -373,73 +321,70 @@ function App() {
     });
   }, [mineDateRange, mineSearchTerm, mineVisibility, ownedRepos]);
 
-  if (loading) {
-    return (
-      <div className="app-container">
-        <div style={{ padding: "20px", textAlign: "center" }}>Loading analytics...</div>
-      </div>
-    );
-  }
-
-  if (error) {
-    return (
-      <div className="app-container">
-        <div className="error-message" style={{ margin: "20px", padding: "20px", background: "#fee", color: "red" }}>
-          Error loading data: {error}
-        </div>
-      </div>
-    );
-  }
+  const headerCount = view === "ops"
+    ? `${actionItems.filter((item) => item.status === "open").length} drafts`
+    : view === "mine"
+      ? `${processedMineRepos.length} owned`
+      : `${processedRepos.length + ownedRepos.length} repos`;
 
   return (
     <>
-      <header className="main-header">
+      <a className="vx-skip" href="#vx-main">Skip to content</a>
+      {data.mode === "fixture" ? (
+        <div className="vx-fixture-banner" role="note">
+          <strong>Synthetic preview.</strong> {data.fixtureLabel || "Invented repositories for previews and tests."}{" "}
+          <a href="?">Leave preview</a>
+        </div>
+      ) : null}
+      <header className="main-header vx-topbar">
         <a
-          href="/"
-          className="header-brand"
+          href="?"
+          className="header-brand vx-brand"
+          aria-label="Vega Lab observatory, reload"
           onClick={(event) => {
             event.preventDefault();
             window.location.reload();
           }}
         >
-          <Github size={28} />
-          <span>Vega Lab</span>
+          <svg className="vx-brand__mark" width="22" height="22" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" strokeWidth="1.5">
+            <path d="M12 2v20M2 12h20M5 5l14 14M19 5L5 19" strokeDasharray="2 2" />
+            <circle cx="12" cy="12" r="3" fill="currentColor" stroke="none" />
+          </svg>
+          <span className="vx-brand__word">Vega</span>
+          <span className="vx-brand__sub">Observatory · Core-X</span>
         </a>
 
-        <div className="nav-capsule">
-          <button onClick={() => setView("cards")} className={`nav-item ${view === "cards" ? "active" : ""}`}>
-            <LayoutGrid size={16} /> Cards
-          </button>
-          <button onClick={() => setView("table")} className={`nav-item ${view === "table" ? "active" : ""}`}>
-            <TableIcon size={16} /> Table
-          </button>
-          <button onClick={() => setView("statistics")} className={`nav-item ${view === "statistics" ? "active" : ""}`}>
-            <BarChart3 size={16} /> Stats
-          </button>
-          <button onClick={() => setView("activity")} className={`nav-item ${view === "activity" ? "active" : ""}`}>
-            <Activity size={16} /> Activity
-          </button>
-          <button onClick={() => setView("news")} className={`nav-item ${view === "news" ? "active" : ""}`}>
-            <Compass size={16} /> News
-          </button>
-          <button onClick={() => setView("ops")} className={`nav-item ${view === "ops" ? "active" : ""}`}>
-            <Inbox size={16} /> Ops
-          </button>
-          <button onClick={() => setView("mine")} className={`nav-item ${view === "mine" ? "active" : ""}`}>
-            <User size={16} /> Mine
-          </button>
-        </div>
+        <nav className="vx-nav" aria-label="Vega sections">
+          {NAV_GROUPS.map((group) => (
+            <div className="vx-nav__group" key={group.label} role="group" aria-label={group.label}>
+              <span className="vx-nav__label" aria-hidden="true">{group.label}</span>
+              <div className="vx-nav__items">
+                {group.items.map((item) => {
+                  const Icon = item.icon;
+                  return (
+                    <button
+                      key={item.view}
+                      type="button"
+                      onClick={() => setView(item.view)}
+                      className={`nav-item vx-nav__item ${view === item.view ? "active" : ""}`}
+                      aria-current={view === item.view ? "page" : undefined}
+                    >
+                      <Icon size={14} aria-hidden="true" /> {item.label}
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+          ))}
+        </nav>
 
-        <div className="header-stats">
-          <div className="stat-badge" title="Total Stars">
-            <Star size={14} fill="currentColor" className="text-muted" />
-            {view === "ops" ? actionItems.filter((item) => item.status === "open").length : view === "mine" ? processedMineRepos.length : processedRepos.length} {view === "ops" ? "Open" : "Repos"}
-          </div>
+        <div className="header-stats vx-topbar__meta">
+          <span className="stat-badge vx-meta" aria-live="polite">{headerCount}</span>
           <RuntimeSettingsPanel />
         </div>
       </header>
 
-      {view !== "statistics" && view !== "activity" && view !== "news" && view !== "ops" && (
+      {view !== "desk" && view !== "statistics" && view !== "activity" && view !== "news" && view !== "ops" && (
         <div className="filters-container">
           {view === "mine" ? (
             <>
@@ -509,8 +454,23 @@ function App() {
         </div>
       )}
 
-      <div className="primary-view">
-        {view === "statistics" ? (
+      <main className="primary-view" id="vx-main" tabIndex={-1}>
+        {view === "desk" ? (
+          <ObservatoryDesk
+            data={data}
+            onPrepareAction={(repo, prompt) => openChatWithPrefill(repo, prompt, false)}
+            onOpenReadme={(repo) => handleRepoClick(repo)}
+          />
+        ) : !data.loading && (view === "cards" || view === "table") && processedRepos.length === 0 ? (
+          <div className="my-repos-empty vx-empty-view">
+            <h2>{allRepos.length === 0 ? "No starred snapshot" : "No matching repositories"}</h2>
+            <p>
+              {allRepos.length === 0
+                ? "public/data.json was not found. See the Desk for dataset status and how to refresh it locally."
+                : "Adjust search, language, or tag filters."}
+            </p>
+          </div>
+        ) : view === "statistics" ? (
           <Statistics starredRepos={allRepos} myRepos={myRepos} />
         ) : view === "news" ? (
           <HighlightsPanel
@@ -583,7 +543,7 @@ function App() {
             )}
           </div>
         )}
-      </div>
+      </main>
 
       <ReadmePanel
         isOpen={isReadmeOpen}

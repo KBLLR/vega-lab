@@ -2,6 +2,7 @@
   "name": "vega-lab",
   "version": "1.0.0",
   "private": true,
+  "engines": { "node": ">=22.18.0" },
   "type": "module",
   "pnpm": {
     "onlyBuiltDependencies": [
@@ -28,7 +29,9 @@
     "test:source-snapshots": "node tests/test-source-snapshot-resolver.js",
     "test:skill-candidate-ingestion": "node tests/test-skill-candidate-ingestion.js && node tests/test-skill-candidate-profiles.js",
     "test:action-bridge": "node tests/test-action-bridge.js",
-    "test": "npm run lint && npm run test:data && npm run test:mcp && npm run test:action-bridge"
+    "test:observatory": "node tests/test-observatory-model.js",
+    "build:synthetic-fixtures": "node scripts/build-synthetic-fixtures.js",
+    "test": "npm run lint && npm run test:data && npm run test:mcp && npm run test:action-bridge && npm run test:observatory"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.25.3",

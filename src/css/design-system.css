@@ -147,7 +147,7 @@ body {
 
 .nav-item.active {
   background: var(--card-ink);
-  color: var(--card-bg);
+  color: var(--card-inverse, var(--card-bg));
   box-shadow: var(--shadow-sm);
 }
 
@@ -223,8 +223,8 @@ body {
 }
 
 .runtime-settings__dot.live {
-  background: #2f8f46;
-  box-shadow: 0 0 0 3px rgba(47, 143, 70, 0.14);
+  background: var(--status-green);
+  box-shadow: none;
 }
 
 .runtime-settings__dot.offline {
@@ -241,10 +241,8 @@ body {
   overflow-y: auto;
   padding: 18px;
   border: 1px solid var(--card-border);
-  border-radius: 22px;
-  background:
-    radial-gradient(circle at top right, rgba(217, 74, 43, 0.08), transparent 34%),
-    var(--card-bg);
+  border-radius: var(--radius-md);
+  background: var(--bg);
   box-shadow: var(--shadow-float);
   z-index: 2400;
   display: grid;
@@ -293,8 +291,8 @@ body {
   gap: 10px;
   padding: 12px;
   border: 1px solid var(--card-border);
-  border-radius: 16px;
-  background: rgba(247, 248, 244, 0.72);
+  border-radius: var(--radius-md);
+  background: var(--bg-surface);
 }
 
 .runtime-settings__health strong,
@@ -308,7 +306,7 @@ body {
 
 .runtime-settings__health span {
   color: var(--card-muted);
-  font-family: "JetBrains Mono", monospace;
+  font-family: var(--font-mono);
   font-size: 0.74rem;
   line-height: 1.45;
   word-break: break-word;
@@ -333,7 +331,7 @@ body {
 .runtime-settings__mode,
 .runtime-settings__provider {
   border: 1px solid var(--card-border);
-  border-radius: 16px;
+  border-radius: var(--radius-md);
   background: var(--card-soft);
   color: var(--card-ink);
   cursor: pointer;
@@ -374,7 +372,7 @@ body {
 .runtime-settings__mode.active,
 .runtime-settings__provider.active {
   background: var(--card-ink);
-  color: var(--card-bg);
+  color: var(--card-inverse, var(--card-bg));
 }
 
 .runtime-settings__mode.active small,
@@ -387,8 +385,8 @@ body {
   gap: 10px;
   padding: 14px;
   border: 1px solid var(--card-border);
-  border-radius: 18px;
-  background: rgba(247, 248, 244, 0.58);
+  border-radius: var(--radius-md);
+  background: var(--bg-surface);
 }
 
 .runtime-settings__section-title {
@@ -416,7 +414,7 @@ body {
   width: 100%;
   box-sizing: border-box;
   border: 1px solid var(--card-border);
-  border-radius: 12px;
+  border-radius: var(--radius-md);
   padding: 10px 11px;
   background: #fff;
   color: var(--card-ink);
@@ -444,7 +442,7 @@ body {
   gap: 12px;
   padding: 8px 10px;
   border: 1px dashed var(--card-border);
-  border-radius: 14px;
+  border-radius: var(--radius-md);
   color: var(--card-muted);
   font-size: 0.76rem;
   line-height: 1.35;
@@ -471,7 +469,7 @@ body {
   gap: 4px;
   padding: 10px 11px;
   border: 1px solid var(--card-border);
-  border-radius: 14px;
+  border-radius: var(--radius-md);
   background: rgba(255, 255, 255, 0.66);
   color: var(--card-muted);
   font-size: 0.76rem;
@@ -513,7 +511,7 @@ body {
   gap: 12px;
   padding: 10px 11px;
   border: 1px dashed var(--card-border);
-  border-radius: 14px;
+  border-radius: var(--radius-md);
   color: var(--card-muted);
   font-size: 0.78rem;
   line-height: 1.4;
@@ -556,7 +554,7 @@ body {
   border: 1px solid var(--card-ink);
   border-radius: var(--radius-pill);
   background: var(--card-ink);
-  color: var(--card-bg);
+  color: var(--card-inverse, var(--card-bg));
   cursor: pointer;
   font: inherit;
   font-size: 0.82rem;
@@ -721,7 +719,7 @@ body.panel-open .filter-select {
   right: 16px;
   border: 1px solid var(--card-border);
   background: var(--card-soft);
-  border-radius: 10px;
+  border-radius: var(--radius-md);
   width: 32px;
   height: 32px;
   display: grid;
@@ -874,7 +872,7 @@ body.panel-open .filter-select {
 
 .chip-lang {
   background: var(--card-ink);
-  color: var(--card-bg);
+  color: var(--card-inverse, var(--card-bg));
 }
 
 .chip-tag {
@@ -955,9 +953,9 @@ body.panel-open .filter-select {
   width: max-content;
   padding: 7px 9px;
   border: 1px solid var(--card-border);
-  border-radius: 999px;
+  border-radius: var(--radius-md);
   background: var(--card-ink);
-  color: var(--card-bg);
+  color: var(--card-inverse, var(--card-bg));
   content: attr(data-tooltip);
   font-size: 0.68rem;
   font-weight: 800;
@@ -992,7 +990,7 @@ body.panel-open .filter-select {
   padding: 0;
   white-space: nowrap;
   border: none;
-  border-radius: 18px;
+  border-radius: var(--radius-md);
   display: flex;
   flex-direction: column;
   overscroll-behavior: contain;
@@ -1035,7 +1033,7 @@ body.panel-open .filter-select {
 
 .readme-header-right select {
   border: 1px solid var(--card-border);
-  border-radius: 10px;
+  border-radius: var(--radius-md);
   padding: 6px 10px;
   background: #fff;
   color: var(--card-ink);
@@ -1056,7 +1054,7 @@ body.panel-open .filter-select {
 
 .readme-panel .close-btn {
   border: 1px solid var(--card-border);
-  border-radius: 10px;
+  border-radius: var(--radius-md);
   width: 34px;
   height: 34px;
   display: grid;
@@ -1122,7 +1120,7 @@ body.panel-open .filter-select {
 .readme-frame {
   position: relative;
   border: 1px solid #0b0d10;
-  border-radius: 18px;
+  border-radius: var(--radius-md);
   background: #0a0c0f;
   padding: 14px;
   margin-bottom: 12px;
@@ -1137,7 +1135,7 @@ body.panel-open .filter-select {
   overflow-y: auto;
   color: var(--card-ink);
   background: var(--color-surface);
-  border-radius: 12px;
+  border-radius: var(--radius-md);
   padding: 16px;
   min-height: 0;
   overscroll-behavior: contain;
@@ -1150,7 +1148,7 @@ body.panel-open .filter-select {
 
 .readme-chat {
   border: 1px solid var(--card-border);
-  border-radius: 18px;
+  border-radius: var(--radius-md);
   padding: 16px;
   margin-bottom: 20px;
   background: var(--card-soft);
@@ -1179,7 +1177,7 @@ body.panel-open .filter-select {
 
 .chat-bubble {
   padding: 10px 12px;
-  border-radius: 12px;
+  border-radius: var(--radius-md);
   font-size: 0.85rem;
   line-height: 1.5;
   background: var(--card-soft);
@@ -1189,7 +1187,7 @@ body.panel-open .filter-select {
 
 .chat-bubble.user {
   background: var(--card-ink);
-  color: var(--card-bg);
+  color: var(--card-inverse, var(--card-bg));
   border-color: var(--card-ink);
   align-self: flex-end;
 }
@@ -1203,7 +1201,7 @@ body.panel-open .filter-select {
 .readme-chat-input input {
   flex: 1;
   border: 1px solid var(--card-border);
-  border-radius: 10px;
+  border-radius: var(--radius-md);
   padding: 10px 12px;
   background: #fff;
   color: var(--card-ink);
@@ -1213,7 +1211,7 @@ body.panel-open .filter-select {
   position: absolute;
   inset: 0;
   background: rgba(10, 12, 14, 0.78);
-  border-radius: 16px;
+  border-radius: var(--radius-md);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1223,7 +1221,7 @@ body.panel-open .filter-select {
 .readme-overlay-card {
   background: var(--card-bg);
   border: 1px solid var(--card-border);
-  border-radius: 16px;
+  border-radius: var(--radius-md);
   padding: 18px;
   max-width: 90%;
   box-shadow: var(--shadow-lg);
@@ -1440,7 +1438,7 @@ table.repo-table {
 .highlights-hero {
   background: var(--card-bg);
   border: 1px solid var(--card-border);
-  border-radius: 18px;
+  border-radius: var(--radius-md);
   padding: 20px 24px;
   margin-bottom: 24px;
 }
@@ -1458,7 +1456,7 @@ table.repo-table {
 .highlight-card {
   background: var(--card-bg);
   border: 1px solid var(--card-border);
-  border-radius: 16px;
+  border-radius: var(--radius-md);
   padding: 16px;
   display: flex;
   flex-direction: column;
@@ -1487,7 +1485,7 @@ table.repo-table {
   border: 1px solid var(--card-border);
   background: var(--card-soft);
   padding: 8px 12px;
-  border-radius: 10px;
+  border-radius: var(--radius-md);
   cursor: pointer;
   color: var(--card-ink);
 }
@@ -1551,7 +1549,7 @@ table.repo-table {
 .ops-item {
   background: var(--card-bg);
   border: 1px solid var(--card-border);
-  border-radius: 16px;
+  border-radius: var(--radius-md);
   padding: 16px;
   display: flex;
   flex-direction: column;
@@ -1583,7 +1581,7 @@ table.repo-table {
 
 .ops-item footer button {
   border: 1px solid var(--card-border);
-  border-radius: 10px;
+  border-radius: var(--radius-md);
   background: var(--card-soft);
   color: var(--card-ink);
   padding: 8px 12px;
@@ -1593,7 +1591,7 @@ table.repo-table {
 
 .ops-item footer button.primary {
   background: var(--card-ink);
-  color: var(--card-bg);
+  color: var(--card-inverse, var(--card-bg));
 }
 
 .topic-chips {
@@ -1611,7 +1609,7 @@ table.repo-table {
 .my-repos-empty {
   background: var(--card-bg);
   border: 1px solid var(--card-border);
-  border-radius: 18px;
+  border-radius: var(--radius-md);
   padding: 24px;
   margin: 24px clamp(16px, 4vw, 48px);
 }
@@ -1660,7 +1658,7 @@ table.repo-table {
 .stats-panel {
   background: var(--color-surface);
   border: 1px solid var(--color-border);
-  border-radius: 28px;
+  border-radius: var(--radius-md);
   padding: var(--space-lg);
   box-shadow: var(--shadow-sm);
   display: flex;
@@ -1816,7 +1814,7 @@ table.repo-table {
 .status-badge {
   font-size: 0.75rem;
   padding: 2px 8px;
-  border-radius: 12px;
+  border-radius: var(--radius-md);
   border: 1px solid transparent;
 }
 .status-badge.live {
@@ -1928,7 +1926,7 @@ table.repo-table {
   height: calc(100vh - 140px);
   background: var(--card-bg);
   border: 1px solid var(--card-border);
-  border-radius: 18px;
+  border-radius: var(--radius-md);
   box-shadow: var(--shadow-float);
   display: flex;
   flex-direction: column;
@@ -1955,9 +1953,9 @@ table.repo-table {
 .orchestrator-icon {
   width: 34px;
   height: 34px;
-  border-radius: 10px;
+  border-radius: var(--radius-md);
   background: var(--card-ink);
-  color: var(--card-bg);
+  color: var(--card-inverse, var(--card-bg));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1978,7 +1976,7 @@ table.repo-table {
 .orchestrator-close {
   background: transparent;
   border: 1px solid var(--card-border);
-  border-radius: 10px;
+  border-radius: var(--radius-md);
   width: 34px;
   height: 34px;
   display: grid;
@@ -2010,7 +2008,7 @@ table.repo-table {
   margin-bottom: 8px;
   padding: 4px 8px;
   border: 1px solid var(--card-border);
-  border-radius: 999px;
+  border-radius: var(--radius-md);
   color: var(--card-muted);
   font-size: 0.68rem;
   font-weight: 800;
@@ -2041,7 +2039,7 @@ table.repo-table {
   min-width: 0;
   padding: 6px 8px;
   border: 1px solid var(--card-border);
-  border-radius: 10px;
+  border-radius: var(--radius-md);
   background: var(--color-surface);
   color: var(--card-muted);
   font-size: 0.68rem;
@@ -2052,7 +2050,7 @@ table.repo-table {
   width: 7px;
   height: 7px;
   border: 1px solid currentColor;
-  border-radius: 999px;
+  border-radius: var(--radius-md);
   flex: 0 0 auto;
 }
 
@@ -2109,7 +2107,7 @@ table.repo-table {
 .message-avatar {
   width: 28px;
   height: 28px;
-  border-radius: 8px;
+  border-radius: var(--radius-md);
   display: grid;
   place-items: center;
   background: var(--card-soft);
@@ -2118,13 +2116,13 @@ table.repo-table {
 
 .message-row.user .message-avatar {
   background: var(--card-ink);
-  color: var(--card-bg);
+  color: var(--card-inverse, var(--card-bg));
 }
 
 .message-bubble {
   background: var(--color-surface);
   border: 1px solid var(--card-border);
-  border-radius: 12px;
+  border-radius: var(--radius-md);
   padding: 10px 12px;
   font-size: 0.85rem;
   color: var(--card-ink);
@@ -2134,7 +2132,7 @@ table.repo-table {
 
 .message-row.user .message-bubble {
   background: var(--card-ink);
-  color: var(--card-bg);
+  color: var(--card-inverse, var(--card-bg));
   border-color: var(--card-ink);
 }
 
@@ -2163,7 +2161,7 @@ table.repo-table {
 .tools-list {
   background: var(--color-surface);
   border: 1px solid var(--card-border);
-  border-radius: 12px;
+  border-radius: var(--radius-md);
   padding: 10px;
   max-height: 140px;
   overflow-y: auto;
@@ -2226,7 +2224,7 @@ table.repo-table {
 .orchestrator-input input {
   flex: 1;
   border: 1px solid var(--card-border);
-  border-radius: 10px;
+  border-radius: var(--radius-md);
   padding: 10px 12px;
   background: #fff;
   color: var(--card-ink);
@@ -2234,7 +2232,7 @@ table.repo-table {
 
 .orchestrator-input button {
   border: none;
-  border-radius: 10px;
+  border-radius: var(--radius-md);
   padding: 0 16px;
   background: var(--card-accent);
   color: #fff;
@@ -2262,7 +2260,7 @@ table.repo-table {
   position: fixed;
   background: var(--card-bg);
   border: 1px solid var(--card-border);
-  border-radius: 12px;
+  border-radius: var(--radius-md);
   box-shadow: var(--shadow-md);
   display: flex;
   flex-direction: column;

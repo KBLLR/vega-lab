@@ -1,0 +1,97 @@
+/* ============================================================
+   Core-X canonical foundation tokens — vendored copy
+   ------------------------------------------------------------
+   Source: KBLLR/core-x
+     core-x/docs/design/core-x-ui-dashboard/project/_ds/
+     kbllr-core-x-design-system-019e2ee5-e27d-7f24-97f5-d9d9805f8a1a/colors_and_type.css
+   Status: canonical per core-x/docs/design/core-x-design-system-canon-v0.1.md §7.1
+   Observed: core-x @ 789a7b8 (2026-11-05)
+
+   Values are copied verbatim. Do not add values here: Vega-specific
+   decisions live in observatory.css and must reference these tokens.
+   Replace this file with the @corex/ds-tokens-core package when it is
+   consumable from house repositories.
+
+   Deliberately NOT included (canon §7.4 / contradiction ledger):
+   - entity identity accents ("Vega blue", CX-CONFLICT-004)
+   - any dark theme (CX-CONFLICT-005)
+   - signal-dot tokens as semantic status (§3.1, uncontracted)
+   ============================================================ */
+
+/* Use installed fonts or local fallbacks; this house does not fetch fonts. */
+
+:root {
+  /* Surface */
+  --bg: #d1d1d0;
+  --bg-surface: rgba(209, 209, 208, 0.85);
+  --bg-elevated: rgba(195, 195, 193, 0.6);
+  --bg-input: rgba(255, 255, 255, 0.35);
+
+  /* Foreground */
+  --fg1: #2d2824;
+  --fg2: #6b6560;
+  --fg3: #9a9a9a;
+  --fg-dim: #b5b5b3;
+
+  /* Borders / interaction */
+  --border: #9a9a9a;
+  --border-light: #b5b5b3;
+  --accent: #2d2824;
+  --accent-hover: #1a1714;
+
+  /* Status (sober, never neon) */
+  --status-green: #3d7a45;
+  --status-yellow: #8a7420;
+  --status-red: #8a3030;
+  --status-amber: #b58106;
+  --status-blue: #3d6e96;
+
+  /* Shape */
+  --radius: 0px;
+  --border-dash: 1px dashed var(--border);
+  --border-dash-light: 1px dashed var(--border-light);
+
+  /* Type families */
+  --font-heading: "Chakra Petch", sans-serif;
+  --font-body: "Inter", sans-serif;
+  --font-mono: "Fira Code", "SF Mono", monospace;
+
+  /* Type scale */
+  --text-xs: 10px;
+  --text-sm: 11px;
+  --text-base: 13px;
+  --text-md: 14px;
+  --text-lg: 16px;
+  --text-xl: 20px;
+  --text-2xl: 24px;
+  --text-3xl: 32px;
+
+  /* Tracking */
+  --track-tight: 0;
+  --track-mono: 0.05em;
+  --track-label: 0.08em;
+  --track-heading: 0.1em;
+  --track-brand: 0.14em;
+
+  /* Spacing */
+  --space-1: 2px;
+  --space-2: 4px;
+  --space-3: 6px;
+  --space-4: 8px;
+  --space-5: 10px;
+  --space-6: 12px;
+  --space-7: 16px;
+  --space-8: 20px;
+  --space-9: 24px;
+  --space-10: 32px;
+
+  /* Elevation (rare; overlays only) */
+  --shadow-sm: 0 4px 8px rgba(16, 18, 16, 0.08);
+  --shadow-md: 0 12px 24px rgba(16, 18, 16, 0.12);
+  --shadow-lg: 0 22px 36px rgba(16, 18, 16, 0.14);
+
+  /* Backdrop blur */
+  --blur-sm: 8px;
+  --blur-md: 12px;
+  --blur-lg: 16px;
+}
