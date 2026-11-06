@@ -1,11 +1,212 @@
 [
   {
-    "name": "smart-campus-cloud-20261105",
-    "description": "Private sanitized Smart Campus cloud handoff snapshot, 2026-11-05",
+    "name": "Avatars-Lab",
+    "description": "No description",
     "author": "KBLLR",
     "stars": 0,
-    "url": "https://github.com/KBLLR/smart-campus-cloud-20261105",
-    "date": "11/5/2026",
+    "url": "https://github.com/KBLLR/Avatars-Lab",
+    "date": "12/24/2025",
+    "languages": [
+      {
+        "language": "TypeScript",
+        "percentage": "100%"
+      }
+    ],
+    "topics": [],
+    "primary_language": "TypeScript",
+    "license": "None",
+    "forks": 0,
+    "open_issues": 1,
+    "last_updated": "11/6/2026",
+    "last_updated_at": "2026-11-06T04:24:53Z",
+    "created_at": "2025-12-24T02:03:52Z",
+    "private": false,
+    "has_readme": true,
+    "is_owner": true,
+    "is_fork": false,
+    "key_files": {
+      "packageJson": {
+        "scripts": {
+          "assets:hydrate": "node scripts/hydrate-avatar-assets.mjs",
+          "assets:facial": "node scripts/hydrate-facial-assets.mjs",
+          "dev": "zsh scripts/dev.zsh",
+          "dev:ui": "vite",
+          "prebuild": "npm run assets:hydrate",
+          "build": "vite build",
+          "typecheck": "tsc --noEmit",
+          "test:modernization": "node packages/tests/modernization-contract.mjs",
+          "test:launcher": "playwright test packages/tests/playwright/launcher.spec.mjs --config playwright.config.mjs",
+          "test:gemma": "playwright test packages/tests/playwright/gemma-avatar.spec.mjs --config playwright.config.mjs",
+          "test:openresponses": "playwright test packages/tests/playwright/openresponses.spec.mjs --config playwright.config.mjs",
+          "test:cases": "playwright test packages/tests/playwright/cases.spec.mjs --config playwright.config.mjs",
+          "test:performance": "playwright test packages/tests/playwright/performance-engine.spec.mjs --config playwright.config.mjs",
+          "test:browser": "npm run test:launcher && npm run test:gemma && npm run test:openresponses && npm run test:cases && npm run test:performance",
+          "benchmark:gemma": "node scripts/benchmark-gemma-avatar.mjs",
+          "verify": "npm run typecheck && npm run test:modernization && npm run build",
+          "preview": "vite preview",
+          "test:contract": "node packages/tests/contract-tests.mjs",
+          "test:bridge": "node packages/tests/bridge-spec-test.mjs",
+          "test:headaudio": "playwright test packages/tests/playwright/headaudio.spec.mjs --config playwright.config.mjs",
+          "test:e2e": "playwright test packages/tests/playwright/talkinghead.e2e.spec.mjs --config playwright.config.mjs",
+          "smoke": "zsh scripts/smoke.zsh",
+          "e2e": "zsh scripts/e2e.zsh",
+          "all": "zsh scripts/all.zsh"
+        },
+        "dependencies": {
+          "@dimforge/rapier3d-compat": "0.19.3",
+          "@mediapipe/tasks-vision": "0.10.35",
+          "@met4citizen/headaudio": "^0.1.0",
+          "@met4citizen/headtts": "1.2.0",
+          "@met4citizen/talkinghead": "^1.7.0",
+          "@react-three/drei": "^10.7.7",
+          "@react-three/fiber": "9.6.1",
+          "lil-gui": "^0.21.0",
+          "lucide": "1.25.0",
+          "react": "19.2.7",
+          "react-dom": "19.2.7",
+          "three-stdlib": "^2.36.1",
+          "typescript": "^5.9.3"
+        },
+        "devDependencies": {
+          "@playwright/test": "1.61.1",
+          "@types/react": "19.2.17",
+          "@types/react-dom": "19.2.3",
+          "@types/three": "0.185.0",
+          "@vitejs/plugin-react": "6.0.3",
+          "three": "0.185.1",
+          "vite": "8.1.5"
+        }
+      },
+      "packageManagers": [
+        "npm",
+        "npm-lock"
+      ],
+      "workflows": [],
+      "deploymentConfigs": []
+    }
+  },
+  {
+    "name": "core-x",
+    "description": "Core-X: Clean architecture backbone for the KBLLR AI ecosystem",
+    "author": "KBLLR",
+    "stars": 0,
+    "url": "https://github.com/KBLLR/core-x",
+    "date": "2/9/2026",
+    "languages": [
+      {
+        "language": "Python",
+        "percentage": "100%"
+      }
+    ],
+    "topics": [],
+    "primary_language": "Python",
+    "license": "None",
+    "forks": 0,
+    "open_issues": 6,
+    "last_updated": "11/6/2026",
+    "last_updated_at": "2026-11-06T04:38:18Z",
+    "created_at": "2026-02-09T19:25:05Z",
+    "private": true,
+    "has_readme": false,
+    "is_owner": true,
+    "is_fork": false,
+    "key_files": {
+      "packageJson": null,
+      "packageManagers": [],
+      "workflows": [],
+      "deploymentConfigs": []
+    }
+  },
+  {
+    "name": "character-lab",
+    "description": "No description",
+    "author": "KBLLR",
+    "stars": 0,
+    "url": "https://github.com/KBLLR/character-lab",
+    "date": "7/18/2026",
+    "languages": [
+      {
+        "language": "TypeScript",
+        "percentage": "100%"
+      }
+    ],
+    "topics": [],
+    "primary_language": "TypeScript",
+    "license": "None",
+    "forks": 0,
+    "open_issues": 0,
+    "last_updated": "11/5/2026",
+    "last_updated_at": "2026-11-05T18:19:46Z",
+    "created_at": "2026-07-18T21:27:05Z",
+    "private": true,
+    "has_readme": true,
+    "is_owner": true,
+    "is_fork": false,
+    "key_files": {
+      "packageJson": {
+        "scripts": {
+          "dev": "tsx server.ts",
+          "build": "vite build && esbuild server.ts --bundle --platform=node --format=cjs --packages=external --sourcemap --outfile=dist/server.cjs",
+          "start": "node dist/server.cjs",
+          "clean": "rm -rf dist server.js",
+          "lint": "tsc --noEmit"
+        },
+        "dependencies": {
+          "@base-ui/react": "^1.6.0",
+          "@fontsource-variable/geist": "^5.2.9",
+          "@google/genai": "^2.9.0",
+          "@tailwindcss/vite": "^4.1.14",
+          "@vitejs/plugin-react": "^5.0.4",
+          "@xyflow/react": "^12.11.1",
+          "class-variance-authority": "^0.7.1",
+          "clsx": "^2.1.1",
+          "cookie-parser": "^1.4.7",
+          "date-fns": "^4.4.0",
+          "dotenv": "^17.2.3",
+          "express": "^4.21.2",
+          "googleapis": "^173.0.0",
+          "jszip": "^3.10.1",
+          "lucide-react": "^0.546.0",
+          "motion": "^12.23.24",
+          "next-themes": "^0.4.6",
+          "react": "^19.0.1",
+          "react-dom": "^19.0.1",
+          "recharts": "^3.9.0",
+          "shadcn": "^4.11.0",
+          "sonner": "^2.0.7",
+          "tailwind-merge": "^3.6.0",
+          "tw-animate-css": "^1.4.0",
+          "uuid": "^14.0.1",
+          "vite": "^6.2.3"
+        },
+        "devDependencies": {
+          "@types/cookie-parser": "^1.4.10",
+          "@types/express": "^4.17.21",
+          "@types/node": "^22.14.0",
+          "@types/uuid": "^10.0.0",
+          "autoprefixer": "^10.4.21",
+          "esbuild": "^0.25.0",
+          "tailwindcss": "^4.1.14",
+          "tsx": "^4.21.0",
+          "typescript": "~5.8.2",
+          "vite": "^6.2.3"
+        }
+      },
+      "packageManagers": [
+        "npm",
+        "npm-lock"
+      ],
+      "workflows": [],
+      "deploymentConfigs": []
+    }
+  },
+  {
+    "name": "code-smart-campus",
+    "description": " Real-time 3D visualization of smart spaces, integrating live IoT data from Home Assistant for interactive monitoring of building floorplans and connected devices. ",
+    "author": "KBLLR",
+    "stars": 0,
+    "url": "https://github.com/KBLLR/code-smart-campus",
+    "date": "11/1/2025",
     "languages": [
       {
         "language": "JavaScript",
@@ -18,10 +219,10 @@
     "forks": 0,
     "open_issues": 0,
     "last_updated": "11/5/2026",
-    "last_updated_at": "2026-11-05T05:08:28Z",
-    "created_at": "2026-11-05T05:07:36Z",
-    "private": true,
-    "has_readme": false,
+    "last_updated_at": "2026-11-05T17:49:11Z",
+    "created_at": "2025-11-01T14:37:32Z",
+    "private": false,
+    "has_readme": true,
     "is_owner": true,
     "is_fork": false,
     "key_files": {
@@ -96,44 +297,273 @@
     }
   },
   {
-    "name": "core-x",
-    "description": "Core-X: Clean architecture backbone for the KBLLR AI ecosystem",
+    "name": "core-x-wiki",
+    "description": "WIP",
     "author": "KBLLR",
     "stars": 0,
-    "url": "https://github.com/KBLLR/core-x",
-    "date": "2/9/2026",
+    "url": "https://github.com/KBLLR/core-x-wiki",
+    "date": "9/15/2026",
     "languages": [
       {
-        "language": "Python",
+        "language": "TypeScript",
         "percentage": "100%"
       }
     ],
     "topics": [],
-    "primary_language": "Python",
+    "primary_language": "TypeScript",
     "license": "None",
     "forks": 0,
-    "open_issues": 2,
-    "last_updated": "11/5/2026",
-    "last_updated_at": "2026-11-05T04:40:47Z",
-    "created_at": "2026-02-09T19:25:05Z",
+    "open_issues": 1,
+    "last_updated": "11/6/2026",
+    "last_updated_at": "2026-11-06T04:24:14Z",
+    "created_at": "2026-09-15T11:46:13Z",
     "private": true,
-    "has_readme": false,
+    "has_readme": true,
     "is_owner": true,
     "is_fork": false,
     "key_files": {
-      "packageJson": null,
-      "packageManagers": [],
+      "packageJson": {
+        "scripts": {
+          "dev": "tsx server.ts",
+          "build": "vite build && esbuild server.ts --bundle --platform=node --format=cjs --packages=external --sourcemap --outfile=dist/server.cjs",
+          "start": "NODE_ENV=production node dist/server.cjs",
+          "preview": "vite preview --host 127.0.0.1 --port 3010",
+          "typecheck": "tsc --noEmit -p .",
+          "seed:bible": "tsx scripts/seed-bible.ts",
+          "seed:bible:dry": "tsx scripts/seed-bible.ts --dry-run"
+        },
+        "dependencies": {
+          "@types/three": "^0.186.0",
+          "dotenv": "^17.4.2",
+          "express": "^5.2.1",
+          "lucide-react": "^1.43.0",
+          "react": "^19.1.0",
+          "react-dom": "^19.1.0",
+          "three": "^0.186.0"
+        },
+        "devDependencies": {
+          "@types/express": "^5.0.6",
+          "@types/node": "^22.14.0",
+          "@vitejs/plugin-react": "^5.0.0",
+          "esbuild": "^0.28.1",
+          "tsx": "^4.22.4",
+          "typescript": "~5.8.2",
+          "vite": "^6.2.0"
+        }
+      },
+      "packageManagers": [
+        "npm"
+      ],
       "workflows": [],
       "deploymentConfigs": []
     }
   },
   {
-    "name": "Avatars-Lab",
-    "description": "No description",
+    "name": "vega-lab",
+    "description": "The Brightest Stars",
     "author": "KBLLR",
     "stars": 0,
-    "url": "https://github.com/KBLLR/Avatars-Lab",
-    "date": "12/24/2025",
+    "url": "https://github.com/KBLLR/vega-lab",
+    "date": "12/23/2023",
+    "languages": [
+      {
+        "language": "JavaScript",
+        "percentage": "100%"
+      }
+    ],
+    "topics": [
+      "github-stars",
+      "programming",
+      "skills-assessment",
+      "system-design"
+    ],
+    "primary_language": "JavaScript",
+    "license": "None",
+    "forks": 0,
+    "open_issues": 0,
+    "last_updated": "11/5/2026",
+    "last_updated_at": "2026-11-05T07:59:15Z",
+    "created_at": "2023-12-23T23:09:43Z",
+    "private": false,
+    "has_readme": true,
+    "is_owner": true,
+    "is_fork": false,
+    "key_files": {
+      "packageJson": {
+        "scripts": {
+          "dev": "vite",
+          "build": "tsc && vite build",
+          "lint": "eslint . --report-unused-disable-directives --max-warnings 0",
+          "preview": "vite preview",
+          "build:data": "node scripts/generator.js",
+          "sync:mine": "node scripts/my-repos.js",
+          "sync:model-zoo": "node scripts/model-zoo-snapshot.js",
+          "resolve:source-snapshots": "node scripts/source-snapshot-resolver.js",
+          "export:corex-contracts": "node scripts/export-corex-contracts.js",
+          "build:skill-candidates": "node scripts/build-skill-candidates.js",
+          "generate:stats": "node src/analytics/statistics.js",
+          "mcp": "node src/mcp-server/index.js",
+          "test:data": "node tests/run-tests.js",
+          "test:mcp": "node tests/test-mcp-server.js && node tests/test-ocr-skill-candidate.js",
+          "test:corex-contract-export": "node tests/test-corex-contract-export.js",
+          "test:corex-contract-snapshots": "node tests/test-corex-contract-snapshots.js",
+          "test:source-snapshots": "node tests/test-source-snapshot-resolver.js",
+          "test:skill-candidate-ingestion": "node tests/test-skill-candidate-ingestion.js && node tests/test-skill-candidate-profiles.js",
+          "test:action-bridge": "node tests/test-action-bridge.js",
+          "test:observatory": "node tests/test-observatory-model.js",
+          "build:synthetic-fixtures": "node scripts/build-synthetic-fixtures.js",
+          "test": "npm run lint && npm run test:data && npm run test:mcp && npm run test:action-bridge && npm run test:observatory"
+        },
+        "dependencies": {
+          "@modelcontextprotocol/sdk": "^1.25.3",
+          "@octokit/rest": "^20.1.2",
+          "@types/dompurify": "^3.2.0",
+          "@types/marked": "^6.0.0",
+          "axios": "^1.13.4",
+          "commander": "^12.1.0",
+          "dompurify": "^3.3.1",
+          "dotenv": "^16.6.1",
+          "lodash": "^4.17.23",
+          "lucide-react": "^0.344.0",
+          "marked": "^12.0.2",
+          "node-fetch": "^3.3.2",
+          "p-queue": "^8.1.1",
+          "react": "^18.2.0",
+          "react-dom": "^18.2.0",
+          "recharts": "^2.12.2"
+        },
+        "devDependencies": {
+          "@eslint/js": "^8.57.1",
+          "@types/react": "^18.2.64",
+          "@types/react-dom": "^18.2.21",
+          "@typescript-eslint/eslint-plugin": "^8.0.0",
+          "@typescript-eslint/parser": "^8.0.0",
+          "@vitejs/plugin-react": "^4.2.1",
+          "ajv": "^8.20.0",
+          "eslint": "^8.57.0",
+          "eslint-plugin-react-hooks": "^4.6.0",
+          "eslint-plugin-react-refresh": "^0.4.5",
+          "typescript": "^5.2.2",
+          "typescript-eslint": "^8.56.1",
+          "vite": "^7.3.1"
+        }
+      },
+      "packageManagers": [
+        "npm",
+        "pnpm"
+      ],
+      "workflows": [
+        "ci.yml",
+        "nightly-data-fetch.yml",
+        "vercel-deploy.yml"
+      ],
+      "deploymentConfigs": [
+        "vercel.json"
+      ]
+    }
+  },
+  {
+    "name": "vega-lab-cloud-20261105",
+    "description": "Private sanitized Vega Lab cloud handoff, 2026-11-05",
+    "author": "KBLLR",
+    "stars": 0,
+    "url": "https://github.com/KBLLR/vega-lab-cloud-20261105",
+    "date": "11/5/2026",
+    "languages": [
+      {
+        "language": "JavaScript",
+        "percentage": "100%"
+      }
+    ],
+    "topics": [],
+    "primary_language": "JavaScript",
+    "license": "None",
+    "forks": 0,
+    "open_issues": 0,
+    "last_updated": "11/5/2026",
+    "last_updated_at": "2026-11-05T07:19:21Z",
+    "created_at": "2026-11-05T06:25:45Z",
+    "private": true,
+    "has_readme": true,
+    "is_owner": true,
+    "is_fork": false,
+    "key_files": {
+      "packageJson": {
+        "scripts": {
+          "dev": "vite",
+          "build": "tsc && vite build",
+          "lint": "eslint . --report-unused-disable-directives --max-warnings 0",
+          "preview": "vite preview",
+          "build:data": "node scripts/generator.js",
+          "sync:mine": "node scripts/my-repos.js",
+          "sync:model-zoo": "node scripts/model-zoo-snapshot.js",
+          "resolve:source-snapshots": "node scripts/source-snapshot-resolver.js",
+          "export:corex-contracts": "node scripts/export-corex-contracts.js",
+          "build:skill-candidates": "node scripts/build-skill-candidates.js",
+          "generate:stats": "node src/analytics/statistics.js",
+          "mcp": "node src/mcp-server/index.js",
+          "test:data": "node tests/run-tests.js",
+          "test:mcp": "node tests/test-mcp-server.js && node tests/test-ocr-skill-candidate.js",
+          "test:corex-contract-export": "node tests/test-corex-contract-export.js",
+          "test:corex-contract-snapshots": "node tests/test-corex-contract-snapshots.js",
+          "test:source-snapshots": "node tests/test-source-snapshot-resolver.js",
+          "test:skill-candidate-ingestion": "node tests/test-skill-candidate-ingestion.js && node tests/test-skill-candidate-profiles.js",
+          "test:action-bridge": "node tests/test-action-bridge.js",
+          "test:observatory": "node tests/test-observatory-model.js",
+          "build:synthetic-fixtures": "node scripts/build-synthetic-fixtures.js",
+          "test": "npm run lint && npm run test:data && npm run test:mcp && npm run test:action-bridge && npm run test:observatory"
+        },
+        "dependencies": {
+          "@modelcontextprotocol/sdk": "^1.25.3",
+          "@octokit/rest": "^20.1.2",
+          "@types/dompurify": "^3.2.0",
+          "@types/marked": "^6.0.0",
+          "axios": "^1.13.4",
+          "commander": "^12.1.0",
+          "dompurify": "^3.3.1",
+          "dotenv": "^16.6.1",
+          "lodash": "^4.17.23",
+          "lucide-react": "^0.344.0",
+          "marked": "^12.0.2",
+          "node-fetch": "^3.3.2",
+          "p-queue": "^8.1.1",
+          "react": "^18.2.0",
+          "react-dom": "^18.2.0",
+          "recharts": "^2.12.2"
+        },
+        "devDependencies": {
+          "@eslint/js": "^8.57.1",
+          "@types/react": "^18.2.64",
+          "@types/react-dom": "^18.2.21",
+          "@typescript-eslint/eslint-plugin": "^8.0.0",
+          "@typescript-eslint/parser": "^8.0.0",
+          "@vitejs/plugin-react": "^4.2.1",
+          "ajv": "^8.20.0",
+          "eslint": "^8.57.0",
+          "eslint-plugin-react-hooks": "^4.6.0",
+          "eslint-plugin-react-refresh": "^0.4.5",
+          "typescript": "^5.2.2",
+          "typescript-eslint": "^8.56.1",
+          "vite": "^7.3.1"
+        }
+      },
+      "packageManagers": [
+        "npm",
+        "pnpm"
+      ],
+      "workflows": [],
+      "deploymentConfigs": [
+        "vercel.json"
+      ]
+    }
+  },
+  {
+    "name": "avatar-labs-cloud-20261105",
+    "description": "Private sanitized Avatar Labs cloud handoff snapshot, 2026-11-05",
+    "author": "KBLLR",
+    "stars": 0,
+    "url": "https://github.com/KBLLR/avatar-labs-cloud-20261105",
+    "date": "11/5/2026",
     "languages": [
       {
         "language": "TypeScript",
@@ -146,9 +576,9 @@
     "forks": 0,
     "open_issues": 0,
     "last_updated": "11/5/2026",
-    "last_updated_at": "2026-11-05T04:16:37Z",
-    "created_at": "2025-12-24T02:03:52Z",
-    "private": false,
+    "last_updated_at": "2026-11-05T07:13:07Z",
+    "created_at": "2026-11-05T07:12:50Z",
+    "private": true,
     "has_readme": true,
     "is_owner": true,
     "is_fork": false,
@@ -203,6 +633,394 @@
           "@vitejs/plugin-react": "6.0.3",
           "three": "0.185.1",
           "vite": "8.1.5"
+        }
+      },
+      "packageManagers": [
+        "npm",
+        "npm-lock"
+      ],
+      "workflows": [],
+      "deploymentConfigs": []
+    }
+  },
+  {
+    "name": "smart-campus-cloud-20261105",
+    "description": "Private sanitized Smart Campus cloud handoff snapshot, 2026-11-05",
+    "author": "KBLLR",
+    "stars": 0,
+    "url": "https://github.com/KBLLR/smart-campus-cloud-20261105",
+    "date": "11/5/2026",
+    "languages": [
+      {
+        "language": "JavaScript",
+        "percentage": "100%"
+      }
+    ],
+    "topics": [],
+    "primary_language": "JavaScript",
+    "license": "MIT",
+    "forks": 0,
+    "open_issues": 0,
+    "last_updated": "11/5/2026",
+    "last_updated_at": "2026-11-05T06:22:52Z",
+    "created_at": "2026-11-05T05:07:36Z",
+    "private": true,
+    "has_readme": false,
+    "is_owner": true,
+    "is_fork": false,
+    "key_files": {
+      "packageJson": {
+        "scripts": {
+          "dev": "npm run dev:vite",
+          "server": "node server/index.js",
+          "dev:vite": "vite",
+          "dev:full": "concurrently \"npm run server\" \"npm run dev:vite\" --names \"server,vite\" --prefix-colors \"blue,green\"",
+          "check:secrets": "python ../../.secretsbank/check_required_secrets.py --house tier1-smart-campus",
+          "build": "tsc && vite build",
+          "preview": "vite preview",
+          "lint": "eslint ./src --ext .js,.jsx,.ts,.tsx",
+          "test": "jest",
+          "test:watch": "jest --watch",
+          "test:coverage": "jest --coverage",
+          "test:picking": "jest picking",
+          "test:performance": "jest picking-performance --verbose",
+          "deploy:link": "vercel link",
+          "deploy:preview": "npm run build && vercel deploy --prebuilt --env-file=.env.local",
+          "deploy:prod": "npm run build && vercel deploy --prebuilt --prod",
+          "new:session": "node scripts/new-session.mjs",
+          "tasks:export": "node scripts/tasks-export.mjs",
+          "check": "npm run lint && npm run test:sun && npm run test:campus",
+          "generateLabelRegistry": "node src/tools/generateLabelRegistry.js",
+          "generateRoomRegistry": "node src/tools/generateRoomRegistry.js",
+          "test:sun": "node --test tests/sunTelemetry.test.js",
+          "test:campus": "node --test tests/campus/*.test.js"
+        },
+        "dependencies": {
+          "@alienkitty/alien.js": "^1.2.0",
+          "@alienkitty/space.js": "^1.2.0",
+          "@takram/three-atmosphere": "^0.15.1",
+          "@tweenjs/tween.js": "^25.0.0",
+          "cors": "^2.8.5",
+          "dotenv": "^16.4.7",
+          "express": "^4.21.2",
+          "gsap": "^3.12.7",
+          "node-fetch": "^3.3.2",
+          "suncalc": "^1.9.0",
+          "three": "^0.181.0",
+          "zod": "^4.1.12"
+        },
+        "devDependencies": {
+          "@eslint/js": "^9.39.0",
+          "@tailwindcss/vite": "^4.0.0",
+          "@types/jest": "^30.0.0",
+          "@types/three": "^0.181.0",
+          "acorn": "^8.14.1",
+          "concurrently": "^9.1.2",
+          "eslint": "^9.39.0",
+          "globals": "^16.5.0",
+          "jest": "^30.2.0",
+          "jest-environment-jsdom": "^30.2.0",
+          "js-yaml": "^4.1.0",
+          "jsdom": "^27.1.0",
+          "tailwindcss": "^4.0.0",
+          "ts-jest": "^29.4.5",
+          "typescript": "^5.9.3",
+          "typescript-eslint": "^8.46.2",
+          "vite": "^7.1.12"
+        }
+      },
+      "packageManagers": [
+        "npm",
+        "pnpm",
+        "npm-lock"
+      ],
+      "workflows": [],
+      "deploymentConfigs": [
+        "vercel.json"
+      ]
+    }
+  },
+  {
+    "name": "Leagentdiary",
+    "description": "LeAgentDiary is a version-control system for AI agents. It connects handoffs, memory, and self-reflection into one timeline—track contributions, re-summon past agents, and evolve their personas. Built with the HTDI Agentic Framework for human-AI co-development.",
+    "author": "KBLLR",
+    "stars": 0,
+    "url": "https://github.com/KBLLR/Leagentdiary",
+    "date": "11/11/2025",
+    "languages": [
+      {
+        "language": "JavaScript",
+        "percentage": "100%"
+      }
+    ],
+    "topics": [],
+    "primary_language": "JavaScript",
+    "license": "MIT",
+    "forks": 0,
+    "open_issues": 1,
+    "last_updated": "11/5/2026",
+    "last_updated_at": "2026-11-05T05:42:02Z",
+    "created_at": "2025-11-11T17:31:52Z",
+    "private": false,
+    "has_readme": true,
+    "is_owner": true,
+    "is_fork": false,
+    "key_files": {
+      "packageJson": {
+        "scripts": {
+          "dev": "node ./node_modules/vite/bin/vite.js",
+          "build": "node ./node_modules/typescript/bin/tsc && node ./node_modules/vite/bin/vite.js build",
+          "preview": "node ./node_modules/vite/bin/vite.js preview",
+          "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+          "export:traces": "node scripts/export-traces.mjs",
+          "verify:active": "node scripts/verify-active.mjs"
+        },
+        "dependencies": {
+          "react": "^18.3.1",
+          "react-dom": "^18.3.1"
+        },
+        "devDependencies": {
+          "@types/react": "^18.3.5",
+          "@types/react-dom": "^18.3.0",
+          "@typescript-eslint/eslint-plugin": "^7.18.0",
+          "@typescript-eslint/parser": "^7.18.0",
+          "@vitejs/plugin-react": "^4.3.1",
+          "eslint": "^8.57.0",
+          "eslint-plugin-react-hooks": "^4.6.2",
+          "eslint-plugin-react-refresh": "^0.4.9",
+          "typescript": "^5.5.3",
+          "vite": "^5.4.2"
+        }
+      },
+      "packageManagers": [
+        "npm",
+        "npm-lock"
+      ],
+      "workflows": [],
+      "deploymentConfigs": []
+    }
+  },
+  {
+    "name": "isoboth",
+    "description": "You can imagine, then you can generate it",
+    "author": "KBLLR",
+    "stars": 0,
+    "url": "https://github.com/KBLLR/isoboth",
+    "date": "5/19/2026",
+    "languages": [
+      {
+        "language": "JavaScript",
+        "percentage": "100%"
+      }
+    ],
+    "topics": [],
+    "primary_language": "JavaScript",
+    "license": "None",
+    "forks": 0,
+    "open_issues": 0,
+    "last_updated": "11/5/2026",
+    "last_updated_at": "2026-11-05T05:41:38Z",
+    "created_at": "2026-05-19T17:43:28Z",
+    "private": true,
+    "has_readme": true,
+    "is_owner": true,
+    "is_fork": false,
+    "key_files": {
+      "packageJson": {
+        "scripts": {
+          "dev": "vite",
+          "dev:host": "vite --host 127.0.0.1 --port 5173",
+          "build": "vite build",
+          "preview": "vite preview",
+          "lint": "eslint src",
+          "warehouse:refresh": "node ./scripts/refresh-warehouse-source.mjs",
+          "warehouse:refresh:dry": "node ./scripts/refresh-warehouse-source.mjs --dry-run --limit 20"
+        },
+        "dependencies": {
+          "auto-zustand-selectors-hook": "latest",
+          "clsx": "latest",
+          "gifenc": "latest",
+          "immer": "latest",
+          "jszip": "^3.10.1",
+          "lodash.shuffle": "latest",
+          "matter-js": "^0.20.0",
+          "motion": "^12.38.0",
+          "p-limit": "latest",
+          "react": "latest",
+          "react-dom": "latest",
+          "zustand": "latest"
+        },
+        "devDependencies": {
+          "@eslint/js": "^9.39.4",
+          "@types/node": "^22.14.0",
+          "@vitejs/plugin-react": "^5.0.0",
+          "eslint": "^9.39.4",
+          "eslint-plugin-react-hooks": "^7.0.1",
+          "eslint-plugin-react-refresh": "^0.5.2",
+          "globals": "^17.4.0",
+          "typescript": "~5.8.2",
+          "vite": "^6.2.0"
+        }
+      },
+      "packageManagers": [
+        "npm",
+        "npm-lock"
+      ],
+      "workflows": [],
+      "deploymentConfigs": []
+    }
+  },
+  {
+    "name": "rigging-palace",
+    "description": "Rigging Palace",
+    "author": "KBLLR",
+    "stars": 0,
+    "url": "https://github.com/KBLLR/rigging-palace",
+    "date": "3/15/2026",
+    "languages": [
+      {
+        "language": "JavaScript",
+        "percentage": "100%"
+      }
+    ],
+    "topics": [],
+    "primary_language": "JavaScript",
+    "license": "None",
+    "forks": 0,
+    "open_issues": 2,
+    "last_updated": "11/5/2026",
+    "last_updated_at": "2026-11-05T05:41:03Z",
+    "created_at": "2026-03-15T18:29:18Z",
+    "private": true,
+    "has_readme": true,
+    "is_owner": true,
+    "is_fork": false,
+    "key_files": {
+      "packageJson": {
+        "scripts": {
+          "dev": "vite --host 0.0.0.0 --port 5188",
+          "build": "tsc -b && vite build",
+          "lint": "eslint .",
+          "preview": "vite preview",
+          "test": "vitest run",
+          "motions:curate": "node scripts/curate-animation-library.mjs",
+          "stage:build": "/Applications/Blender.app/Contents/MacOS/Blender --factory-startup --background --python studio/blender/build_rigging_portal_stage.py",
+          "intake:import": "node scripts/intake-import.mjs",
+          "drive:list": "node scripts/intake-import.mjs --list-folder",
+          "drive:batch": "node scripts/batch-drive-intake.mjs",
+          "drive:batch:list": "node scripts/batch-drive-intake.mjs --list-only --include-subfolders",
+          "drive:refresh": "node scripts/batch-drive-intake.mjs --refresh-only --include-subfolders",
+          "catalog:validate": "node scripts/batch-drive-intake.mjs --refresh-only --include-subfolders",
+          "images:batch": "node scripts/images-batch.mjs",
+          "rig:status": "node scripts/check-rigged-status.mjs",
+          "vision:enrich": "node scripts/vision-enrich.mjs",
+          "vision:batch": "node scripts/vision-batch.mjs",
+          "animations:batch": "node scripts/animations-batch.mjs",
+          "test:batch": "node scripts/test-batch.mjs",
+          "pipeline:batch": "node scripts/pipeline-batch.mjs",
+          "pipeline:production": "node scripts/pipeline-production.mjs",
+          "pipeline:production:dry": "node scripts/pipeline-production.mjs --dry-run",
+          "pipeline:production:nightly": "node scripts/pipeline-production.mjs --batch-size 25",
+          "pipeline:production:nightly:dry": "node scripts/pipeline-production.mjs --batch-size 25 --dry-run",
+          "pipeline:status": "node scripts/pipeline-status.mjs",
+          "mlx:vision:ensure": "node scripts/ensure-mlx-vision.mjs",
+          "capture:views": "node scripts/capture-views.mjs",
+          "review:pack": "node scripts/build-review-pack.mjs",
+          "showcase:build": "node scripts/build-showcase-assets.mjs",
+          "readiness:compute": "node scripts/compute-readiness.mjs",
+          "showcase:sync": "node scripts/build-showcase-assets.mjs && node scripts/compute-readiness.mjs",
+          "portrait:render": "node scripts/render-portraits.mjs",
+          "gallery:refresh": "node scripts/gallery-refresh.mjs",
+          "thumbnails:backfill": "node scripts/backfill-thumbnails.mjs",
+          "thumbnails:backfill:dry": "node scripts/backfill-thumbnails.mjs --dry-run",
+          "publish:assets": "node scripts/publish-assets.mjs",
+          "publish:repair": "node scripts/repair-release-manifests.mjs",
+          "publish:repair:dry": "node scripts/repair-release-manifests.mjs --dry-run",
+          "ship:web-assets": "node scripts/publish-assets.mjs --provider s3",
+          "artifacts:hydrate": "node scripts/hydrate-artifacts.mjs",
+          "rollout:classify": "node scripts/classify-rollout-failures.mjs",
+          "auth:google": "node scripts/google-oauth-flow.mjs",
+          "rig:check": "node scripts/rig-character.mjs check",
+          "rig:character": "node scripts/rig-character.mjs process",
+          "rig:batch": "node scripts/rig-character.mjs batch",
+          "rig:batch-process": "node scripts/process-batch.mjs",
+          "rig:inventory": "node scripts/rig-inventory.mjs",
+          "rig:inspect": "node scripts/rig-inventory.mjs",
+          "rig:plan": "node scripts/rig-inventory.mjs --batch1",
+          "rig:prepare": "node scripts/rig-prepare.mjs",
+          "rig:resume": "node scripts/rig-resume.mjs",
+          "rig:lane-a": "node scripts/rig-lane-a.mjs",
+          "rig:mia": "node scripts/rig-mia.mjs",
+          "rig:progress": "node scripts/character-progress.mjs",
+          "rig:progress:emit": "node scripts/character-progress.mjs --emit",
+          "rig:review": "node scripts/rig-review.mjs",
+          "rig:catalog:audit": "node scripts/rig-catalog.mjs audit",
+          "rig:catalog:plan": "node scripts/rig-catalog.mjs plan",
+          "rig:catalog:apply": "node scripts/rig-catalog.mjs apply",
+          "rig:batch-report": "node scripts/rig-batch-report.mjs",
+          "rig:contact-sheet": "node scripts/render-character-contact-sheet.mjs",
+          "rig:scan-hdri": "node scripts/scan-hdri.mjs",
+          "r2:offload": "node scripts/r2-offload.mjs",
+          "r2:download": "node scripts/r2-offload.mjs --download",
+          "portraits:render": "node scripts/portrait-pipeline.mjs",
+          "portraits:render:drive": "node scripts/portrait-pipeline.mjs --discover-drive",
+          "portraits:mirror": "node scripts/mirror-previews-local.mjs",
+          "portraits:publish": "node scripts/publish-previews-r2.mjs",
+          "drive:sync": "node scripts/drive-sync.mjs",
+          "enrich:wave": "node scripts/enrich-wave.mjs",
+          "notion:payload": "node scripts/build-notion-sync-payload.mjs",
+          "notion:sync": "node scripts/sync-notion-gallery.mjs",
+          "notion:sync:batched": "node scripts/sync-notion-gallery-batched.mjs",
+          "notion:covers": "node scripts/build-notion-cover-assets.mjs",
+          "notion:verify": "node scripts/verify-notion-reflection.mjs",
+          "notion:reflect": "node scripts/notion-reflect-public.mjs",
+          "portal:prepare": "npm run motions:curate && npm run stage:build && npm run showcase:build",
+          "palace:prepare": "npm run portal:prepare",
+          "motion:proof": "node scripts/motion-proof.mjs",
+          "character:proof": "node scripts/character-proof.mjs",
+          "motion:enrich": "node scripts/enrich-motion-metadata.mjs",
+          "motion:retrieve": "node providers/library-retrieval/cli.mjs",
+          "test:library-retrieval": "vitest run --config vitest.library-retrieval.config.ts",
+          "test:rigging": "vitest run --config vitest.rigging.config.ts",
+          "predev": "node scripts/emit-pipeline-steps.mjs",
+          "prebuild": "node scripts/emit-pipeline-steps.mjs",
+          "motions:actionforge": "node scripts/import-actionforge-library.mjs",
+          "motions:actionforge:review": "node scripts/register-actionforge-review.mjs",
+          "pipeline:local": "node scripts/pipeline-local.mjs --fps-start cuda-seed-0",
+          "rig:mia:local": "node scripts/rig-mia-local.mjs"
+        },
+        "dependencies": {
+          "@aws-sdk/lib-storage": "^3.1007.0",
+          "@aws-sdk/s3-request-presigner": "^3.1007.0",
+          "@corex/warehouse-client": "file:./lib/warehouse-client",
+          "@react-three/drei": "^10.7.6",
+          "@react-three/fiber": "^9.4.0",
+          "react": "^19.2.0",
+          "react-dom": "^19.2.0",
+          "react-force-graph-2d": "^1.29.1",
+          "react-force-graph-3d": "^1.29.1",
+          "three": "^0.185.1",
+          "zod": "^3.24.2"
+        },
+        "devDependencies": {
+          "@aws-sdk/client-s3": "^3.1004.0",
+          "@eslint/js": "^9.39.1",
+          "@gltf-transform/cli": "^4.3.0",
+          "@types/node": "^24.10.1",
+          "@types/react": "^19.2.7",
+          "@types/react-dom": "^19.2.3",
+          "@types/three": "^0.185.0",
+          "@vitejs/plugin-react": "^5.1.1",
+          "eslint": "^9.39.1",
+          "eslint-plugin-react-hooks": "^7.0.1",
+          "eslint-plugin-react-refresh": "^0.4.24",
+          "globals": "^16.5.0",
+          "googleapis": "^171.4.0",
+          "sharp": "^0.34.5",
+          "typescript": "~5.9.3",
+          "typescript-eslint": "^8.48.0",
+          "vite": "^7.3.1",
+          "vitest": "^4.1.1"
         }
       },
       "packageManagers": [
@@ -501,108 +1319,6 @@
     }
   },
   {
-    "name": "vega-lab",
-    "description": "The Brightest Stars",
-    "author": "KBLLR",
-    "stars": 0,
-    "url": "https://github.com/KBLLR/vega-lab",
-    "date": "12/23/2023",
-    "languages": [
-      {
-        "language": "JavaScript",
-        "percentage": "100%"
-      }
-    ],
-    "topics": [
-      "github-stars",
-      "programming",
-      "skills-assessment",
-      "system-design"
-    ],
-    "primary_language": "JavaScript",
-    "license": "None",
-    "forks": 0,
-    "open_issues": 0,
-    "last_updated": "11/5/2026",
-    "last_updated_at": "2026-11-05T01:24:48Z",
-    "created_at": "2023-12-23T23:09:43Z",
-    "private": false,
-    "has_readme": true,
-    "is_owner": true,
-    "is_fork": false,
-    "key_files": {
-      "packageJson": {
-        "scripts": {
-          "dev": "vite",
-          "build": "tsc && vite build",
-          "lint": "eslint . --report-unused-disable-directives --max-warnings 0",
-          "preview": "vite preview",
-          "build:data": "node scripts/generator.js",
-          "sync:mine": "node scripts/my-repos.js",
-          "sync:model-zoo": "node scripts/model-zoo-snapshot.js",
-          "resolve:source-snapshots": "node scripts/source-snapshot-resolver.js",
-          "export:corex-contracts": "node scripts/export-corex-contracts.js",
-          "build:skill-candidates": "node scripts/build-skill-candidates.js",
-          "generate:stats": "node src/analytics/statistics.js",
-          "mcp": "node src/mcp-server/index.js",
-          "test:data": "node tests/run-tests.js",
-          "test:mcp": "node tests/test-mcp-server.js && node tests/test-ocr-skill-candidate.js",
-          "test:corex-contract-export": "node tests/test-corex-contract-export.js",
-          "test:corex-contract-snapshots": "node tests/test-corex-contract-snapshots.js",
-          "test:source-snapshots": "node tests/test-source-snapshot-resolver.js",
-          "test:skill-candidate-ingestion": "node tests/test-skill-candidate-ingestion.js && node tests/test-skill-candidate-profiles.js",
-          "test:action-bridge": "node tests/test-action-bridge.js",
-          "test": "npm run lint && npm run test:data && npm run test:mcp && npm run test:action-bridge"
-        },
-        "dependencies": {
-          "@modelcontextprotocol/sdk": "^1.25.3",
-          "@octokit/rest": "^20.1.2",
-          "@types/dompurify": "^3.2.0",
-          "@types/marked": "^6.0.0",
-          "axios": "^1.13.4",
-          "commander": "^12.1.0",
-          "dompurify": "^3.3.1",
-          "dotenv": "^16.6.1",
-          "lodash": "^4.17.23",
-          "lucide-react": "^0.344.0",
-          "marked": "^12.0.2",
-          "node-fetch": "^3.3.2",
-          "p-queue": "^8.1.1",
-          "react": "^18.2.0",
-          "react-dom": "^18.2.0",
-          "recharts": "^2.12.2"
-        },
-        "devDependencies": {
-          "@eslint/js": "^8.57.1",
-          "@types/react": "^18.2.64",
-          "@types/react-dom": "^18.2.21",
-          "@typescript-eslint/eslint-plugin": "^8.0.0",
-          "@typescript-eslint/parser": "^8.0.0",
-          "@vitejs/plugin-react": "^4.2.1",
-          "ajv": "^8.20.0",
-          "eslint": "^8.57.0",
-          "eslint-plugin-react-hooks": "^4.6.0",
-          "eslint-plugin-react-refresh": "^0.4.5",
-          "typescript": "^5.2.2",
-          "typescript-eslint": "^8.56.1",
-          "vite": "^7.3.1"
-        }
-      },
-      "packageManagers": [
-        "npm",
-        "pnpm"
-      ],
-      "workflows": [
-        "ci.yml",
-        "nightly-data-fetch.yml",
-        "vercel-deploy.yml"
-      ],
-      "deploymentConfigs": [
-        "vercel.json"
-      ]
-    }
-  },
-  {
     "name": "oink-oink",
     "description": "MONSTERA OINK household iPad app, OINK for Mac, projection",
     "author": "KBLLR",
@@ -630,167 +1346,6 @@
     "key_files": {
       "packageJson": null,
       "packageManagers": [],
-      "workflows": [],
-      "deploymentConfigs": []
-    }
-  },
-  {
-    "name": "rigging-palace",
-    "description": "Rigging Palace",
-    "author": "KBLLR",
-    "stars": 0,
-    "url": "https://github.com/KBLLR/rigging-palace",
-    "date": "3/15/2026",
-    "languages": [
-      {
-        "language": "JavaScript",
-        "percentage": "100%"
-      }
-    ],
-    "topics": [],
-    "primary_language": "JavaScript",
-    "license": "None",
-    "forks": 0,
-    "open_issues": 3,
-    "last_updated": "11/5/2026",
-    "last_updated_at": "2026-11-05T03:21:28Z",
-    "created_at": "2026-03-15T18:29:18Z",
-    "private": true,
-    "has_readme": true,
-    "is_owner": true,
-    "is_fork": false,
-    "key_files": {
-      "packageJson": {
-        "scripts": {
-          "dev": "vite --host 0.0.0.0 --port 5188",
-          "build": "tsc -b && vite build",
-          "lint": "eslint .",
-          "preview": "vite preview",
-          "test": "vitest run",
-          "motions:curate": "node scripts/curate-animation-library.mjs",
-          "stage:build": "/Applications/Blender.app/Contents/MacOS/Blender --factory-startup --background --python studio/blender/build_rigging_portal_stage.py",
-          "intake:import": "node scripts/intake-import.mjs",
-          "drive:list": "node scripts/intake-import.mjs --list-folder",
-          "drive:batch": "node scripts/batch-drive-intake.mjs",
-          "drive:batch:list": "node scripts/batch-drive-intake.mjs --list-only --include-subfolders",
-          "drive:refresh": "node scripts/batch-drive-intake.mjs --refresh-only --include-subfolders",
-          "catalog:validate": "node scripts/batch-drive-intake.mjs --refresh-only --include-subfolders",
-          "images:batch": "node scripts/images-batch.mjs",
-          "rig:status": "node scripts/check-rigged-status.mjs",
-          "vision:enrich": "node scripts/vision-enrich.mjs",
-          "vision:batch": "node scripts/vision-batch.mjs",
-          "animations:batch": "node scripts/animations-batch.mjs",
-          "test:batch": "node scripts/test-batch.mjs",
-          "pipeline:batch": "node scripts/pipeline-batch.mjs",
-          "pipeline:production": "node scripts/pipeline-production.mjs",
-          "pipeline:production:dry": "node scripts/pipeline-production.mjs --dry-run",
-          "pipeline:production:nightly": "node scripts/pipeline-production.mjs --batch-size 25",
-          "pipeline:production:nightly:dry": "node scripts/pipeline-production.mjs --batch-size 25 --dry-run",
-          "pipeline:status": "node scripts/pipeline-status.mjs",
-          "mlx:vision:ensure": "node scripts/ensure-mlx-vision.mjs",
-          "capture:views": "node scripts/capture-views.mjs",
-          "review:pack": "node scripts/build-review-pack.mjs",
-          "showcase:build": "node scripts/build-showcase-assets.mjs",
-          "readiness:compute": "node scripts/compute-readiness.mjs",
-          "showcase:sync": "node scripts/build-showcase-assets.mjs && node scripts/compute-readiness.mjs",
-          "portrait:render": "node scripts/render-portraits.mjs",
-          "gallery:refresh": "node scripts/gallery-refresh.mjs",
-          "thumbnails:backfill": "node scripts/backfill-thumbnails.mjs",
-          "thumbnails:backfill:dry": "node scripts/backfill-thumbnails.mjs --dry-run",
-          "publish:assets": "node scripts/publish-assets.mjs",
-          "publish:repair": "node scripts/repair-release-manifests.mjs",
-          "publish:repair:dry": "node scripts/repair-release-manifests.mjs --dry-run",
-          "ship:web-assets": "node scripts/publish-assets.mjs --provider s3",
-          "artifacts:hydrate": "node scripts/hydrate-artifacts.mjs",
-          "rollout:classify": "node scripts/classify-rollout-failures.mjs",
-          "auth:google": "node scripts/google-oauth-flow.mjs",
-          "rig:check": "node scripts/rig-character.mjs check",
-          "rig:character": "node scripts/rig-character.mjs process",
-          "rig:batch": "node scripts/rig-character.mjs batch",
-          "rig:batch-process": "node scripts/process-batch.mjs",
-          "rig:inventory": "node scripts/rig-inventory.mjs",
-          "rig:inspect": "node scripts/rig-inventory.mjs",
-          "rig:plan": "node scripts/rig-inventory.mjs --batch1",
-          "rig:prepare": "node scripts/rig-prepare.mjs",
-          "rig:resume": "node scripts/rig-resume.mjs",
-          "rig:lane-a": "node scripts/rig-lane-a.mjs",
-          "rig:mia": "node scripts/rig-mia.mjs",
-          "rig:progress": "node scripts/character-progress.mjs",
-          "rig:progress:emit": "node scripts/character-progress.mjs --emit",
-          "rig:review": "node scripts/rig-review.mjs",
-          "rig:catalog:audit": "node scripts/rig-catalog.mjs audit",
-          "rig:catalog:plan": "node scripts/rig-catalog.mjs plan",
-          "rig:catalog:apply": "node scripts/rig-catalog.mjs apply",
-          "rig:batch-report": "node scripts/rig-batch-report.mjs",
-          "rig:contact-sheet": "node scripts/render-character-contact-sheet.mjs",
-          "rig:scan-hdri": "node scripts/scan-hdri.mjs",
-          "r2:offload": "node scripts/r2-offload.mjs",
-          "r2:download": "node scripts/r2-offload.mjs --download",
-          "portraits:render": "node scripts/portrait-pipeline.mjs",
-          "portraits:render:drive": "node scripts/portrait-pipeline.mjs --discover-drive",
-          "portraits:mirror": "node scripts/mirror-previews-local.mjs",
-          "portraits:publish": "node scripts/publish-previews-r2.mjs",
-          "drive:sync": "node scripts/drive-sync.mjs",
-          "enrich:wave": "node scripts/enrich-wave.mjs",
-          "notion:payload": "node scripts/build-notion-sync-payload.mjs",
-          "notion:sync": "node scripts/sync-notion-gallery.mjs",
-          "notion:sync:batched": "node scripts/sync-notion-gallery-batched.mjs",
-          "notion:covers": "node scripts/build-notion-cover-assets.mjs",
-          "notion:verify": "node scripts/verify-notion-reflection.mjs",
-          "notion:reflect": "node scripts/notion-reflect-public.mjs",
-          "portal:prepare": "npm run motions:curate && npm run stage:build && npm run showcase:build",
-          "palace:prepare": "npm run portal:prepare",
-          "motion:proof": "node scripts/motion-proof.mjs",
-          "character:proof": "node scripts/character-proof.mjs",
-          "motion:enrich": "node scripts/enrich-motion-metadata.mjs",
-          "motion:retrieve": "node providers/library-retrieval/cli.mjs",
-          "test:library-retrieval": "vitest run --config vitest.library-retrieval.config.ts",
-          "test:rigging": "vitest run --config vitest.rigging.config.ts",
-          "predev": "node scripts/emit-pipeline-steps.mjs",
-          "prebuild": "node scripts/emit-pipeline-steps.mjs",
-          "motions:actionforge": "node scripts/import-actionforge-library.mjs",
-          "motions:actionforge:review": "node scripts/register-actionforge-review.mjs",
-          "pipeline:local": "node scripts/pipeline-local.mjs --fps-start cuda-seed-0",
-          "rig:mia:local": "node scripts/rig-mia-local.mjs"
-        },
-        "dependencies": {
-          "@aws-sdk/lib-storage": "^3.1007.0",
-          "@aws-sdk/s3-request-presigner": "^3.1007.0",
-          "@corex/warehouse-client": "file:./lib/warehouse-client",
-          "@react-three/drei": "^10.7.6",
-          "@react-three/fiber": "^9.4.0",
-          "react": "^19.2.0",
-          "react-dom": "^19.2.0",
-          "react-force-graph-2d": "^1.29.1",
-          "react-force-graph-3d": "^1.29.1",
-          "three": "^0.185.1",
-          "zod": "^3.24.2"
-        },
-        "devDependencies": {
-          "@aws-sdk/client-s3": "^3.1004.0",
-          "@eslint/js": "^9.39.1",
-          "@gltf-transform/cli": "^4.3.0",
-          "@types/node": "^24.10.1",
-          "@types/react": "^19.2.7",
-          "@types/react-dom": "^19.2.3",
-          "@types/three": "^0.185.0",
-          "@vitejs/plugin-react": "^5.1.1",
-          "eslint": "^9.39.1",
-          "eslint-plugin-react-hooks": "^7.0.1",
-          "eslint-plugin-react-refresh": "^0.4.24",
-          "globals": "^16.5.0",
-          "googleapis": "^171.4.0",
-          "sharp": "^0.34.5",
-          "typescript": "~5.9.3",
-          "typescript-eslint": "^8.48.0",
-          "vite": "^7.3.1",
-          "vitest": "^4.1.1"
-        }
-      },
-      "packageManagers": [
-        "npm",
-        "npm-lock"
-      ],
       "workflows": [],
       "deploymentConfigs": []
     }
@@ -856,67 +1411,6 @@
       "workflows": [
         "validate.yml"
       ],
-      "deploymentConfigs": []
-    }
-  },
-  {
-    "name": "core-x-wiki",
-    "description": "WIP",
-    "author": "KBLLR",
-    "stars": 0,
-    "url": "https://github.com/KBLLR/core-x-wiki",
-    "date": "9/15/2026",
-    "languages": [
-      {
-        "language": "TypeScript",
-        "percentage": "100%"
-      }
-    ],
-    "topics": [],
-    "primary_language": "TypeScript",
-    "license": "None",
-    "forks": 0,
-    "open_issues": 0,
-    "last_updated": "10/19/2026",
-    "last_updated_at": "2026-10-19T11:51:48Z",
-    "created_at": "2026-09-15T11:46:13Z",
-    "private": true,
-    "has_readme": false,
-    "is_owner": true,
-    "is_fork": false,
-    "key_files": {
-      "packageJson": {
-        "scripts": {
-          "dev": "tsx server.ts",
-          "build": "vite build && esbuild server.ts --bundle --platform=node --format=cjs --packages=external --sourcemap --outfile=dist/server.cjs",
-          "start": "node dist/server.cjs",
-          "preview": "vite preview"
-        },
-        "dependencies": {
-          "@google/genai": "^1.7.0",
-          "@types/three": "^0.186.0",
-          "dotenv": "^17.4.2",
-          "express": "^5.2.1",
-          "lucide-react": "^1.43.0",
-          "react": "^19.1.0",
-          "react-dom": "^19.1.0",
-          "three": "^0.186.0"
-        },
-        "devDependencies": {
-          "@types/express": "^5.0.6",
-          "@types/node": "^22.14.0",
-          "@vitejs/plugin-react": "^5.0.0",
-          "esbuild": "^0.28.1",
-          "tsx": "^4.22.4",
-          "typescript": "~5.8.2",
-          "vite": "^6.2.0"
-        }
-      },
-      "packageManagers": [
-        "npm",
-        "npm-lock"
-      ],
-      "workflows": [],
       "deploymentConfigs": []
     }
   },
@@ -1191,149 +1685,6 @@
     }
   },
   {
-    "name": "character-lab",
-    "description": "No description",
-    "author": "KBLLR",
-    "stars": 0,
-    "url": "https://github.com/KBLLR/character-lab",
-    "date": "7/18/2026",
-    "languages": [
-      {
-        "language": "TypeScript",
-        "percentage": "100%"
-      }
-    ],
-    "topics": [],
-    "primary_language": "TypeScript",
-    "license": "None",
-    "forks": 0,
-    "open_issues": 0,
-    "last_updated": "7/18/2026",
-    "last_updated_at": "2026-07-18T21:27:08Z",
-    "created_at": "2026-07-18T21:27:05Z",
-    "private": true,
-    "has_readme": true,
-    "is_owner": true,
-    "is_fork": false,
-    "key_files": {
-      "packageJson": {
-        "scripts": {
-          "dev": "tsx server.ts",
-          "build": "vite build && esbuild server.ts --bundle --platform=node --format=cjs --packages=external --sourcemap --outfile=dist/server.cjs",
-          "start": "node dist/server.cjs",
-          "clean": "rm -rf dist server.js",
-          "lint": "tsc --noEmit"
-        },
-        "dependencies": {
-          "@base-ui/react": "^1.6.0",
-          "@fontsource-variable/geist": "^5.2.9",
-          "@google/genai": "^2.9.0",
-          "@tailwindcss/vite": "^4.1.14",
-          "@vitejs/plugin-react": "^5.0.4",
-          "@xyflow/react": "^12.11.1",
-          "class-variance-authority": "^0.7.1",
-          "clsx": "^2.1.1",
-          "cookie-parser": "^1.4.7",
-          "date-fns": "^4.4.0",
-          "dotenv": "^17.2.3",
-          "express": "^4.21.2",
-          "googleapis": "^173.0.0",
-          "jszip": "^3.10.1",
-          "lucide-react": "^0.546.0",
-          "motion": "^12.23.24",
-          "next-themes": "^0.4.6",
-          "react": "^19.0.1",
-          "react-dom": "^19.0.1",
-          "recharts": "^3.9.0",
-          "shadcn": "^4.11.0",
-          "sonner": "^2.0.7",
-          "tailwind-merge": "^3.6.0",
-          "tw-animate-css": "^1.4.0",
-          "uuid": "^14.0.1",
-          "vite": "^6.2.3"
-        },
-        "devDependencies": {
-          "@types/cookie-parser": "^1.4.10",
-          "@types/express": "^4.17.21",
-          "@types/node": "^22.14.0",
-          "@types/uuid": "^10.0.0",
-          "autoprefixer": "^10.4.21",
-          "esbuild": "^0.25.0",
-          "tailwindcss": "^4.1.14",
-          "tsx": "^4.21.0",
-          "typescript": "~5.8.2",
-          "vite": "^6.2.3"
-        }
-      },
-      "packageManagers": [
-        "npm",
-        "npm-lock"
-      ],
-      "workflows": [],
-      "deploymentConfigs": []
-    }
-  },
-  {
-    "name": "Leagentdiary",
-    "description": "LeAgentDiary is a version-control system for AI agents. It connects handoffs, memory, and self-reflection into one timeline—track contributions, re-summon past agents, and evolve their personas. Built with the HTDI Agentic Framework for human-AI co-development.",
-    "author": "KBLLR",
-    "stars": 0,
-    "url": "https://github.com/KBLLR/Leagentdiary",
-    "date": "11/11/2025",
-    "languages": [
-      {
-        "language": "JavaScript",
-        "percentage": "100%"
-      }
-    ],
-    "topics": [],
-    "primary_language": "JavaScript",
-    "license": "MIT",
-    "forks": 0,
-    "open_issues": 2,
-    "last_updated": "11/5/2026",
-    "last_updated_at": "2026-11-05T03:23:14Z",
-    "created_at": "2025-11-11T17:31:52Z",
-    "private": false,
-    "has_readme": true,
-    "is_owner": true,
-    "is_fork": false,
-    "key_files": {
-      "packageJson": {
-        "scripts": {
-          "dev": "node ./node_modules/vite/bin/vite.js",
-          "build": "node ./node_modules/typescript/bin/tsc && node ./node_modules/vite/bin/vite.js build",
-          "preview": "node ./node_modules/vite/bin/vite.js preview",
-          "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-          "export:traces": "node scripts/export-traces.mjs",
-          "verify:active": "node scripts/verify-active.mjs"
-        },
-        "dependencies": {
-          "react": "^18.3.1",
-          "react-dom": "^18.3.1"
-        },
-        "devDependencies": {
-          "@types/react": "^18.3.5",
-          "@types/react-dom": "^18.3.0",
-          "@typescript-eslint/eslint-plugin": "^7.18.0",
-          "@typescript-eslint/parser": "^7.18.0",
-          "@vitejs/plugin-react": "^4.3.1",
-          "eslint": "^8.57.0",
-          "eslint-plugin-react-hooks": "^4.6.2",
-          "eslint-plugin-react-refresh": "^0.4.9",
-          "typescript": "^5.5.3",
-          "vite": "^5.4.2"
-        }
-      },
-      "packageManagers": [
-        "npm",
-        "npm-lock"
-      ],
-      "workflows": [],
-      "deploymentConfigs": []
-    }
-  },
-  {
     "name": "cine-mlx",
     "description": "Local-first MLX film and video production studio for Core-X.",
     "author": "KBLLR",
@@ -1541,76 +1892,6 @@
       },
       "packageManagers": [
         "npm"
-      ],
-      "workflows": [],
-      "deploymentConfigs": []
-    }
-  },
-  {
-    "name": "isoboth",
-    "description": "You can imagine, then you can generate it",
-    "author": "KBLLR",
-    "stars": 0,
-    "url": "https://github.com/KBLLR/isoboth",
-    "date": "5/19/2026",
-    "languages": [
-      {
-        "language": "JavaScript",
-        "percentage": "100%"
-      }
-    ],
-    "topics": [],
-    "primary_language": "JavaScript",
-    "license": "None",
-    "forks": 0,
-    "open_issues": 1,
-    "last_updated": "11/5/2026",
-    "last_updated_at": "2026-11-05T03:22:42Z",
-    "created_at": "2026-05-19T17:43:28Z",
-    "private": true,
-    "has_readme": true,
-    "is_owner": true,
-    "is_fork": false,
-    "key_files": {
-      "packageJson": {
-        "scripts": {
-          "dev": "vite",
-          "dev:host": "vite --host 127.0.0.1 --port 5173",
-          "build": "vite build",
-          "preview": "vite preview",
-          "lint": "eslint src",
-          "warehouse:refresh": "node ./scripts/refresh-warehouse-source.mjs",
-          "warehouse:refresh:dry": "node ./scripts/refresh-warehouse-source.mjs --dry-run --limit 20"
-        },
-        "dependencies": {
-          "auto-zustand-selectors-hook": "latest",
-          "clsx": "latest",
-          "gifenc": "latest",
-          "immer": "latest",
-          "jszip": "^3.10.1",
-          "lodash.shuffle": "latest",
-          "matter-js": "^0.20.0",
-          "motion": "^12.38.0",
-          "p-limit": "latest",
-          "react": "latest",
-          "react-dom": "latest",
-          "zustand": "latest"
-        },
-        "devDependencies": {
-          "@eslint/js": "^9.39.4",
-          "@types/node": "^22.14.0",
-          "@vitejs/plugin-react": "^5.0.0",
-          "eslint": "^9.39.4",
-          "eslint-plugin-react-hooks": "^7.0.1",
-          "eslint-plugin-react-refresh": "^0.5.2",
-          "globals": "^17.4.0",
-          "typescript": "~5.8.2",
-          "vite": "^6.2.0"
-        }
-      },
-      "packageManagers": [
-        "npm",
-        "npm-lock"
       ],
       "workflows": [],
       "deploymentConfigs": []
@@ -1899,102 +2180,6 @@
       ],
       "workflows": [],
       "deploymentConfigs": []
-    }
-  },
-  {
-    "name": "code-smart-campus",
-    "description": " Real-time 3D visualization of smart spaces, integrating live IoT data from Home Assistant for interactive monitoring of building floorplans and connected devices. ",
-    "author": "KBLLR",
-    "stars": 0,
-    "url": "https://github.com/KBLLR/code-smart-campus",
-    "date": "11/1/2025",
-    "languages": [
-      {
-        "language": "JavaScript",
-        "percentage": "100%"
-      }
-    ],
-    "topics": [],
-    "primary_language": "JavaScript",
-    "license": "MIT",
-    "forks": 0,
-    "open_issues": 0,
-    "last_updated": "12/15/2025",
-    "last_updated_at": "2025-12-15T00:08:19Z",
-    "created_at": "2025-11-01T14:37:32Z",
-    "private": false,
-    "has_readme": true,
-    "is_owner": true,
-    "is_fork": false,
-    "key_files": {
-      "packageJson": {
-        "scripts": {
-          "dev": "npm run dev:vite",
-          "server": "node server/index.js",
-          "dev:vite": "vite",
-          "dev:full": "concurrently \"npm run server\" \"npm run dev:vite\" --names \"server,vite\" --prefix-colors \"blue,green\"",
-          "check:secrets": "python ../../.secretsbank/check_required_secrets.py --house tier1-smart-campus",
-          "build": "tsc && vite build",
-          "preview": "vite preview",
-          "lint": "eslint ./src --ext .js,.jsx,.ts,.tsx",
-          "test": "jest",
-          "test:watch": "jest --watch",
-          "test:coverage": "jest --coverage",
-          "test:picking": "jest picking",
-          "test:performance": "jest picking-performance --verbose",
-          "deploy:link": "vercel link",
-          "deploy:preview": "npm run build && vercel deploy --prebuilt --env-file=.env.local",
-          "deploy:prod": "npm run build && vercel deploy --prebuilt --prod",
-          "new:session": "node scripts/new-session.mjs",
-          "tasks:export": "node scripts/tasks-export.mjs",
-          "check": "npm run lint && npm run test:sun",
-          "generateLabelRegistry": "node src/tools/generateLabelRegistry.js",
-          "generateRoomRegistry": "node src/tools/generateRoomRegistry.js",
-          "test:sun": "node --test tests/sunTelemetry.test.js"
-        },
-        "dependencies": {
-          "@alienkitty/alien.js": "^1.2.0",
-          "@alienkitty/space.js": "^1.2.0",
-          "@takram/three-atmosphere": "^0.15.1",
-          "@tweenjs/tween.js": "^25.0.0",
-          "cors": "^2.8.5",
-          "dotenv": "^16.4.7",
-          "express": "^4.21.2",
-          "gsap": "^3.12.7",
-          "node-fetch": "^3.3.2",
-          "suncalc": "^1.9.0",
-          "three": "^0.181.0",
-          "zod": "^4.1.12"
-        },
-        "devDependencies": {
-          "@eslint/js": "^9.39.0",
-          "@tailwindcss/vite": "^4.0.0",
-          "@types/jest": "^30.0.0",
-          "@types/three": "^0.181.0",
-          "acorn": "^8.14.1",
-          "concurrently": "^9.1.2",
-          "eslint": "^9.39.0",
-          "globals": "^16.5.0",
-          "jest": "^30.2.0",
-          "jest-environment-jsdom": "^30.2.0",
-          "js-yaml": "^4.1.0",
-          "jsdom": "^27.1.0",
-          "tailwindcss": "^4.0.0",
-          "ts-jest": "^29.4.5",
-          "typescript": "^5.9.3",
-          "typescript-eslint": "^8.46.2",
-          "vite": "^7.1.12"
-        }
-      },
-      "packageManagers": [
-        "npm",
-        "pnpm",
-        "npm-lock"
-      ],
-      "workflows": [],
-      "deploymentConfigs": [
-        "vercel.json"
-      ]
     }
   },
   {

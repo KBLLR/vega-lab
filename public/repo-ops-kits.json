@@ -975,6 +975,126 @@
     ]
   },
   {
+    "nwo": "KBLLR/avatar-labs-cloud-20261105",
+    "generatedAt": "2026-11-05T07:13:07.000Z",
+    "target": "mlx",
+    "artifacts": [
+      {
+        "kind": "readme",
+        "title": "avatar-labs-cloud-20261105 README Draft",
+        "suggestedPath": "README.md",
+        "body": "# avatar-labs-cloud-20261105\n\nPrivate sanitized Avatar Labs cloud handoff snapshot, 2026-11-05\n\n## Vega Lab Fit\n- Classification: house\n- Capabilities: frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n\n## Local Setup\n- Package managers: npm, npm-lock\n- Document install, dev, build, and verification commands before broad reuse.\n- Keep runtime assumptions explicit; prefer local MLX/OpenResponses for model-assisted work.\n\n## Verification\n- npm run typecheck\n- npm run test:modernization\n- npm run test:launcher\n- npm run test:gemma\n- npm run test:openresponses\n- npm run test:cases\n- npm run test:performance\n- npm run test:browser\n- npm run test:contract\n- npm run test:bridge\n- npm run test:headaudio\n- npm run test:e2e\n- npm run prebuild\n- npm run build\n\n## Evidence\n- Repository: KBLLR/avatar-labs-cloud-20261105\n- Description: Private sanitized Avatar Labs cloud handoff snapshot, 2026-11-05\n- Adoption kind: house\n- Capabilities: frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Finding: No workflow or deployment config detected in synced key files.",
+        "evidence": [
+          "Repository: KBLLR/avatar-labs-cloud-20261105",
+          "Description: Private sanitized Avatar Labs cloud handoff snapshot, 2026-11-05",
+          "Adoption kind: house",
+          "Capabilities: frontend-ui",
+          "House skills: repo-discovery, repo-adoption, mine-execution",
+          "Finding: No workflow or deployment config detected in synced key files."
+        ]
+      },
+      {
+        "kind": "agents",
+        "title": "avatar-labs-cloud-20261105 AGENTS Draft",
+        "suggestedPath": "AGENTS.md",
+        "body": "# avatar-labs-cloud-20261105 Agents\n\n## Product Truth\n- Repository: KBLLR/avatar-labs-cloud-20261105\n- Vega Lab classification: house\n- Active mission target: Local MLX\n\n## Operating Rules\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\n\n## Commands\n- npm run typecheck\n- npm run test:modernization\n- npm run test:launcher\n- npm run test:gemma\n- npm run test:openresponses\n- npm run test:cases\n- npm run test:performance\n- npm run test:browser\n- npm run test:contract\n- npm run test:bridge\n- npm run test:headaudio\n- npm run test:e2e\n- npm run prebuild\n- npm run build\n\n## Agent Boundaries\n- Do not mutate deployment, secrets, or release configuration without explicit approval.\n- Prefer draft plans and reviewable diffs over broad automation.\n- Preserve existing product direction; use Vega Lab evidence before adding new abstractions.",
+        "evidence": [
+          "Repository: KBLLR/avatar-labs-cloud-20261105",
+          "Description: Private sanitized Avatar Labs cloud handoff snapshot, 2026-11-05",
+          "Adoption kind: house",
+          "Capabilities: frontend-ui",
+          "House skills: repo-discovery, repo-adoption, mine-execution",
+          "Finding: No workflow or deployment config detected in synced key files."
+        ]
+      },
+      {
+        "kind": "maintenance",
+        "title": "avatar-labs-cloud-20261105 Maintenance Plan",
+        "suggestedPath": "docs/maintenance-plan.md",
+        "body": "# Maintenance Plan: KBLLR/avatar-labs-cloud-20261105\n\n## Current Signals\n- Health flag: private\n- No workflow or deployment config detected in synced key files.\n\n## Recommended Pass\n- Confirm install path and package manager.\n- Run available verification commands before editing.\n- Patch stale docs, commands, and workflow assumptions first.\n- Open the smallest useful PR only after human approval.\n- Vega Lab action: mlx-mission\n- Vega Lab action: ops-kit\n- Vega Lab action: codex-mission\n- Vega Lab action: claude-mission\n- Vega Lab action: house-integration\n\n## Evidence\n- Repository: KBLLR/avatar-labs-cloud-20261105\n- Description: Private sanitized Avatar Labs cloud handoff snapshot, 2026-11-05\n- Adoption kind: house\n- Capabilities: frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Finding: No workflow or deployment config detected in synced key files.\n- Risk: Deployment readiness is unclear.\n- Health flag: private",
+        "evidence": [
+          "Repository: KBLLR/avatar-labs-cloud-20261105",
+          "Description: Private sanitized Avatar Labs cloud handoff snapshot, 2026-11-05",
+          "Adoption kind: house",
+          "Capabilities: frontend-ui",
+          "House skills: repo-discovery, repo-adoption, mine-execution",
+          "Finding: No workflow or deployment config detected in synced key files.",
+          "Risk: Deployment readiness is unclear.",
+          "Health flag: private"
+        ]
+      },
+      {
+        "kind": "deployment",
+        "title": "avatar-labs-cloud-20261105 Deployment Plan",
+        "suggestedPath": "docs/deployment-plan.md",
+        "body": "# Deployment Plan: KBLLR/avatar-labs-cloud-20261105\n\n## Known Deployment Evidence\n- No workflow or deployment config detected in synced key files.\n\n## Draft Checks\n- Identify expected host and runtime.\n- Document build command, output directory, and required environment variables.\n- Verify preview URL and production URL checks.\n- Keep deploy authority manual; Vega Lab drafts plans and inbox items only.\n\n## Evidence\n- Repository: KBLLR/avatar-labs-cloud-20261105\n- Description: Private sanitized Avatar Labs cloud handoff snapshot, 2026-11-05\n- Adoption kind: house\n- Capabilities: frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Finding: No workflow or deployment config detected in synced key files.\n- Risk: Deployment readiness is unclear.\n- Health flag: private",
+        "evidence": [
+          "Repository: KBLLR/avatar-labs-cloud-20261105",
+          "Description: Private sanitized Avatar Labs cloud handoff snapshot, 2026-11-05",
+          "Adoption kind: house",
+          "Capabilities: frontend-ui",
+          "House skills: repo-discovery, repo-adoption, mine-execution",
+          "Finding: No workflow or deployment config detected in synced key files.",
+          "Risk: Deployment readiness is unclear.",
+          "Health flag: private"
+        ]
+      },
+      {
+        "kind": "testing",
+        "title": "avatar-labs-cloud-20261105 Test Plan",
+        "suggestedPath": "docs/test-plan.md",
+        "body": "# Test Plan: KBLLR/avatar-labs-cloud-20261105\n\n## Available Commands\n- npm run typecheck\n- npm run test:modernization\n- npm run test:launcher\n- npm run test:gemma\n- npm run test:openresponses\n- npm run test:cases\n- npm run test:performance\n- npm run test:browser\n- npm run test:contract\n- npm run test:bridge\n- npm run test:headaudio\n- npm run test:e2e\n- npm run prebuild\n- npm run build\n\n## Minimum Verification Contract\n- Document one install command.\n- Document one fast smoke command.\n- Document one release/build command when deployable.\n- If no commands exist, create a tracked issue or action item before implementation work.\n\n## Evidence\n- Repository: KBLLR/avatar-labs-cloud-20261105\n- Description: Private sanitized Avatar Labs cloud handoff snapshot, 2026-11-05\n- Adoption kind: house\n- Capabilities: frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Finding: No workflow or deployment config detected in synced key files.\n- Risk: Deployment readiness is unclear.\n- Health flag: private",
+        "evidence": [
+          "Repository: KBLLR/avatar-labs-cloud-20261105",
+          "Description: Private sanitized Avatar Labs cloud handoff snapshot, 2026-11-05",
+          "Adoption kind: house",
+          "Capabilities: frontend-ui",
+          "House skills: repo-discovery, repo-adoption, mine-execution",
+          "Finding: No workflow or deployment config detected in synced key files.",
+          "Risk: Deployment readiness is unclear.",
+          "Health flag: private"
+        ]
+      },
+      {
+        "kind": "action-item",
+        "title": "avatar-labs-cloud-20261105 Action Item Draft",
+        "suggestedPath": "ops/action-item.md",
+        "body": "# Action Item Draft: KBLLR/avatar-labs-cloud-20261105\n\n## Recommended Actions\n- deployment: Clarify deployment readiness for avatar-labs-cloud-20261105\n\n## Mission Target\n- Local MLX\n\n## Evidence\n- Repository: KBLLR/avatar-labs-cloud-20261105\n- Description: Private sanitized Avatar Labs cloud handoff snapshot, 2026-11-05\n- Adoption kind: house\n- Capabilities: frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Finding: No workflow or deployment config detected in synced key files.\n- Risk: Deployment readiness is unclear.\n- Health flag: private\n- Action item: Clarify deployment readiness for avatar-labs-cloud-20261105",
+        "evidence": [
+          "Repository: KBLLR/avatar-labs-cloud-20261105",
+          "Description: Private sanitized Avatar Labs cloud handoff snapshot, 2026-11-05",
+          "Adoption kind: house",
+          "Capabilities: frontend-ui",
+          "House skills: repo-discovery, repo-adoption, mine-execution",
+          "Finding: No workflow or deployment config detected in synced key files.",
+          "Risk: Deployment readiness is unclear.",
+          "Health flag: private",
+          "Action item: Clarify deployment readiness for avatar-labs-cloud-20261105"
+        ]
+      }
+    ],
+    "evidence": [
+      "Repository: KBLLR/avatar-labs-cloud-20261105",
+      "Description: Private sanitized Avatar Labs cloud handoff snapshot, 2026-11-05",
+      "Adoption kind: house",
+      "Capabilities: frontend-ui",
+      "House skills: repo-discovery, repo-adoption, mine-execution",
+      "Finding: No workflow or deployment config detected in synced key files.",
+      "Risk: Deployment readiness is unclear.",
+      "Health flag: private",
+      "Action item: Clarify deployment readiness for avatar-labs-cloud-20261105"
+    ],
+    "recommendedActions": [
+      "mlx-mission",
+      "ops-kit",
+      "codex-mission",
+      "claude-mission",
+      "house-integration",
+      "deployment:vega-lab:deployment:kbllr-avatar-labs-cloud-20261105",
+      "review-draft-only"
+    ]
+  },
+  {
     "nwo": "KBLLR/avatar-os",
     "generatedAt": "2025-06-17T21:10:26.000Z",
     "target": "mlx",
@@ -1102,7 +1222,7 @@
   },
   {
     "nwo": "KBLLR/Avatars-Lab",
-    "generatedAt": "2026-11-05T04:16:37.000Z",
+    "generatedAt": "2026-11-06T04:24:53.000Z",
     "target": "mlx",
     "artifacts": [
       {
@@ -1467,7 +1587,7 @@
   },
   {
     "nwo": "KBLLR/character-lab",
-    "generatedAt": "2026-07-18T21:27:08.000Z",
+    "generatedAt": "2026-11-05T18:19:46.000Z",
     "target": "mlx",
     "artifacts": [
       {
@@ -2158,7 +2278,7 @@
   },
   {
     "nwo": "KBLLR/code-smart-campus",
-    "generatedAt": "2025-12-15T00:08:19.000Z",
+    "generatedAt": "2026-11-05T17:49:11.000Z",
     "target": "mlx",
     "artifacts": [
       {
@@ -2395,7 +2515,7 @@
   },
   {
     "nwo": "KBLLR/core-x",
-    "generatedAt": "2026-11-05T04:40:47.000Z",
+    "generatedAt": "2026-11-06T04:38:18.000Z",
     "target": "mlx",
     "artifacts": [
       {
@@ -2521,101 +2641,101 @@
   },
   {
     "nwo": "KBLLR/core-x-wiki",
-    "generatedAt": "2026-10-19T11:51:48.000Z",
+    "generatedAt": "2026-11-06T04:24:14.000Z",
     "target": "mlx",
     "artifacts": [
       {
         "kind": "readme",
         "title": "core-x-wiki README Draft",
         "suggestedPath": "README.md",
-        "body": "# core-x-wiki\n\nWIP\n\n## Vega Lab Fit\n- Classification: house\n- Capabilities: frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n\n## Local Setup\n- Package managers: npm, npm-lock\n- Document install, dev, build, and verification commands before broad reuse.\n- Keep runtime assumptions explicit; prefer local MLX/OpenResponses for model-assisted work.\n\n## Verification\n- npm run build\n\n## Evidence\n- Repository: KBLLR/core-x-wiki\n- Description: WIP\n- Adoption kind: house\n- Capabilities: frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Finding: README missing from the synced repository snapshot.",
+        "body": "# core-x-wiki\n\nWIP\n\n## Vega Lab Fit\n- Classification: house\n- Capabilities: frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n\n## Local Setup\n- Package managers: npm\n- Document install, dev, build, and verification commands before broad reuse.\n- Keep runtime assumptions explicit; prefer local MLX/OpenResponses for model-assisted work.\n\n## Verification\n- npm run typecheck\n- npm run build\n\n## Evidence\n- Repository: KBLLR/core-x-wiki\n- Description: WIP\n- Adoption kind: house\n- Capabilities: frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Finding: No workflow or deployment config detected in synced key files.",
         "evidence": [
           "Repository: KBLLR/core-x-wiki",
           "Description: WIP",
           "Adoption kind: house",
           "Capabilities: frontend-ui",
           "House skills: repo-discovery, repo-adoption, mine-execution",
-          "Finding: README missing from the synced repository snapshot."
+          "Finding: No workflow or deployment config detected in synced key files."
         ]
       },
       {
         "kind": "agents",
         "title": "core-x-wiki AGENTS Draft",
         "suggestedPath": "AGENTS.md",
-        "body": "# core-x-wiki Agents\n\n## Product Truth\n- Repository: KBLLR/core-x-wiki\n- Vega Lab classification: house\n- Active mission target: Local MLX\n\n## Operating Rules\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\n\n## Commands\n- npm run build\n\n## Agent Boundaries\n- Do not mutate deployment, secrets, or release configuration without explicit approval.\n- Prefer draft plans and reviewable diffs over broad automation.\n- Preserve existing product direction; use Vega Lab evidence before adding new abstractions.",
+        "body": "# core-x-wiki Agents\n\n## Product Truth\n- Repository: KBLLR/core-x-wiki\n- Vega Lab classification: house\n- Active mission target: Local MLX\n\n## Operating Rules\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\n\n## Commands\n- npm run typecheck\n- npm run build\n\n## Agent Boundaries\n- Do not mutate deployment, secrets, or release configuration without explicit approval.\n- Prefer draft plans and reviewable diffs over broad automation.\n- Preserve existing product direction; use Vega Lab evidence before adding new abstractions.",
         "evidence": [
           "Repository: KBLLR/core-x-wiki",
           "Description: WIP",
           "Adoption kind: house",
           "Capabilities: frontend-ui",
           "House skills: repo-discovery, repo-adoption, mine-execution",
-          "Finding: README missing from the synced repository snapshot."
+          "Finding: No workflow or deployment config detected in synced key files."
         ]
       },
       {
         "kind": "maintenance",
         "title": "core-x-wiki Maintenance Plan",
         "suggestedPath": "docs/maintenance-plan.md",
-        "body": "# Maintenance Plan: KBLLR/core-x-wiki\n\n## Current Signals\n- Health flag: missing-readme\n- Health flag: private\n- README missing from the synced repository snapshot.\n- No test/check/lint script detected from package metadata.\n- No workflow or deployment config detected in synced key files.\n\n## Recommended Pass\n- Confirm install path and package manager.\n- Run available verification commands before editing.\n- Patch stale docs, commands, and workflow assumptions first.\n- Open the smallest useful PR only after human approval.\n- Vega Lab action: mlx-mission\n- Vega Lab action: ops-kit\n- Vega Lab action: codex-mission\n- Vega Lab action: claude-mission\n- Vega Lab action: write-readme\n- Vega Lab action: house-integration\n\n## Evidence\n- Repository: KBLLR/core-x-wiki\n- Description: WIP\n- Adoption kind: house\n- Capabilities: frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Finding: README missing from the synced repository snapshot.\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: No workflow or deployment config detected in synced key files.",
+        "body": "# Maintenance Plan: KBLLR/core-x-wiki\n\n## Current Signals\n- Health flag: private\n- No workflow or deployment config detected in synced key files.\n\n## Recommended Pass\n- Confirm install path and package manager.\n- Run available verification commands before editing.\n- Patch stale docs, commands, and workflow assumptions first.\n- Open the smallest useful PR only after human approval.\n- Vega Lab action: mlx-mission\n- Vega Lab action: ops-kit\n- Vega Lab action: codex-mission\n- Vega Lab action: claude-mission\n- Vega Lab action: house-integration\n\n## Evidence\n- Repository: KBLLR/core-x-wiki\n- Description: WIP\n- Adoption kind: house\n- Capabilities: frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Finding: No workflow or deployment config detected in synced key files.\n- Risk: Deployment readiness is unclear.\n- Health flag: private",
         "evidence": [
           "Repository: KBLLR/core-x-wiki",
           "Description: WIP",
           "Adoption kind: house",
           "Capabilities: frontend-ui",
           "House skills: repo-discovery, repo-adoption, mine-execution",
-          "Finding: README missing from the synced repository snapshot.",
-          "Finding: No test/check/lint script detected from package metadata.",
-          "Finding: No workflow or deployment config detected in synced key files."
+          "Finding: No workflow or deployment config detected in synced key files.",
+          "Risk: Deployment readiness is unclear.",
+          "Health flag: private"
         ]
       },
       {
         "kind": "deployment",
         "title": "core-x-wiki Deployment Plan",
         "suggestedPath": "docs/deployment-plan.md",
-        "body": "# Deployment Plan: KBLLR/core-x-wiki\n\n## Known Deployment Evidence\n- No workflow or deployment config detected in synced key files.\n\n## Draft Checks\n- Identify expected host and runtime.\n- Document build command, output directory, and required environment variables.\n- Verify preview URL and production URL checks.\n- Keep deploy authority manual; Vega Lab drafts plans and inbox items only.\n\n## Evidence\n- Repository: KBLLR/core-x-wiki\n- Description: WIP\n- Adoption kind: house\n- Capabilities: frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Finding: README missing from the synced repository snapshot.\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: No workflow or deployment config detected in synced key files.",
+        "body": "# Deployment Plan: KBLLR/core-x-wiki\n\n## Known Deployment Evidence\n- No workflow or deployment config detected in synced key files.\n\n## Draft Checks\n- Identify expected host and runtime.\n- Document build command, output directory, and required environment variables.\n- Verify preview URL and production URL checks.\n- Keep deploy authority manual; Vega Lab drafts plans and inbox items only.\n\n## Evidence\n- Repository: KBLLR/core-x-wiki\n- Description: WIP\n- Adoption kind: house\n- Capabilities: frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Finding: No workflow or deployment config detected in synced key files.\n- Risk: Deployment readiness is unclear.\n- Health flag: private",
         "evidence": [
           "Repository: KBLLR/core-x-wiki",
           "Description: WIP",
           "Adoption kind: house",
           "Capabilities: frontend-ui",
           "House skills: repo-discovery, repo-adoption, mine-execution",
-          "Finding: README missing from the synced repository snapshot.",
-          "Finding: No test/check/lint script detected from package metadata.",
-          "Finding: No workflow or deployment config detected in synced key files."
+          "Finding: No workflow or deployment config detected in synced key files.",
+          "Risk: Deployment readiness is unclear.",
+          "Health flag: private"
         ]
       },
       {
         "kind": "testing",
         "title": "core-x-wiki Test Plan",
         "suggestedPath": "docs/test-plan.md",
-        "body": "# Test Plan: KBLLR/core-x-wiki\n\n## Available Commands\n- npm run build\n\n## Minimum Verification Contract\n- Document one install command.\n- Document one fast smoke command.\n- Document one release/build command when deployable.\n- If no commands exist, create a tracked issue or action item before implementation work.\n\n## Evidence\n- Repository: KBLLR/core-x-wiki\n- Description: WIP\n- Adoption kind: house\n- Capabilities: frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Finding: README missing from the synced repository snapshot.\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: No workflow or deployment config detected in synced key files.",
+        "body": "# Test Plan: KBLLR/core-x-wiki\n\n## Available Commands\n- npm run typecheck\n- npm run build\n\n## Minimum Verification Contract\n- Document one install command.\n- Document one fast smoke command.\n- Document one release/build command when deployable.\n- If no commands exist, create a tracked issue or action item before implementation work.\n\n## Evidence\n- Repository: KBLLR/core-x-wiki\n- Description: WIP\n- Adoption kind: house\n- Capabilities: frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Finding: No workflow or deployment config detected in synced key files.\n- Risk: Deployment readiness is unclear.\n- Health flag: private",
         "evidence": [
           "Repository: KBLLR/core-x-wiki",
           "Description: WIP",
           "Adoption kind: house",
           "Capabilities: frontend-ui",
           "House skills: repo-discovery, repo-adoption, mine-execution",
-          "Finding: README missing from the synced repository snapshot.",
-          "Finding: No test/check/lint script detected from package metadata.",
-          "Finding: No workflow or deployment config detected in synced key files."
+          "Finding: No workflow or deployment config detected in synced key files.",
+          "Risk: Deployment readiness is unclear.",
+          "Health flag: private"
         ]
       },
       {
         "kind": "action-item",
         "title": "core-x-wiki Action Item Draft",
         "suggestedPath": "ops/action-item.md",
-        "body": "# Action Item Draft: KBLLR/core-x-wiki\n\n## Recommended Actions\n- readme: Make core-x-wiki README-ready\n- testing: Define verification for core-x-wiki\n- deployment: Clarify deployment readiness for core-x-wiki\n\n## Mission Target\n- Local MLX\n\n## Evidence\n- Repository: KBLLR/core-x-wiki\n- Description: WIP\n- Adoption kind: house\n- Capabilities: frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Finding: README missing from the synced repository snapshot.\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: No workflow or deployment config detected in synced key files.\n- Risk: New contributors and agents lack a clear entrypoint.\n- Risk: Maintenance work has no obvious verification command.",
+        "body": "# Action Item Draft: KBLLR/core-x-wiki\n\n## Recommended Actions\n- readme: Make core-x-wiki README-ready\n- deployment: Clarify deployment readiness for core-x-wiki\n- testing: Define verification for core-x-wiki\n\n## Mission Target\n- Local MLX\n\n## Evidence\n- Repository: KBLLR/core-x-wiki\n- Description: WIP\n- Adoption kind: house\n- Capabilities: frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Finding: No workflow or deployment config detected in synced key files.\n- Risk: Deployment readiness is unclear.\n- Health flag: private\n- Action item: Make core-x-wiki README-ready\n- Action item: Clarify deployment readiness for core-x-wiki",
         "evidence": [
           "Repository: KBLLR/core-x-wiki",
           "Description: WIP",
           "Adoption kind: house",
           "Capabilities: frontend-ui",
           "House skills: repo-discovery, repo-adoption, mine-execution",
-          "Finding: README missing from the synced repository snapshot.",
-          "Finding: No test/check/lint script detected from package metadata.",
           "Finding: No workflow or deployment config detected in synced key files.",
-          "Risk: New contributors and agents lack a clear entrypoint.",
-          "Risk: Maintenance work has no obvious verification command."
+          "Risk: Deployment readiness is unclear.",
+          "Health flag: private",
+          "Action item: Make core-x-wiki README-ready",
+          "Action item: Clarify deployment readiness for core-x-wiki"
         ]
       }
     ],
@@ -2625,24 +2745,22 @@
       "Adoption kind: house",
       "Capabilities: frontend-ui",
       "House skills: repo-discovery, repo-adoption, mine-execution",
-      "Finding: README missing from the synced repository snapshot.",
-      "Finding: No test/check/lint script detected from package metadata.",
       "Finding: No workflow or deployment config detected in synced key files.",
-      "Risk: New contributors and agents lack a clear entrypoint.",
-      "Risk: Maintenance work has no obvious verification command.",
       "Risk: Deployment readiness is unclear.",
-      "Health flag: missing-readme"
+      "Health flag: private",
+      "Action item: Make core-x-wiki README-ready",
+      "Action item: Clarify deployment readiness for core-x-wiki",
+      "Action item: Define verification for core-x-wiki"
     ],
     "recommendedActions": [
       "mlx-mission",
       "ops-kit",
       "codex-mission",
       "claude-mission",
-      "write-readme",
       "house-integration",
       "readme:vega-lab:readme:kbllr-core-x-wiki",
-      "testing:vega-lab:testing:kbllr-core-x-wiki",
       "deployment:vega-lab:deployment:kbllr-core-x-wiki",
+      "testing:vega-lab:testing:kbllr-core-x-wiki",
       "review-draft-only"
     ]
   },
@@ -6584,7 +6702,7 @@
   },
   {
     "nwo": "KBLLR/isoboth",
-    "generatedAt": "2026-11-05T03:22:42.000Z",
+    "generatedAt": "2026-11-05T05:41:38.000Z",
     "target": "mlx",
     "artifacts": [
       {
@@ -7783,7 +7901,7 @@
   },
   {
     "nwo": "KBLLR/Leagentdiary",
-    "generatedAt": "2026-11-05T03:23:14.000Z",
+    "generatedAt": "2026-11-05T05:42:02.000Z",
     "target": "mlx",
     "artifacts": [
       {
@@ -10240,7 +10358,7 @@
   },
   {
     "nwo": "KBLLR/rigging-palace",
-    "generatedAt": "2026-11-05T03:21:28.000Z",
+    "generatedAt": "2026-11-05T05:41:03.000Z",
     "target": "mlx",
     "artifacts": [
       {
@@ -11204,14 +11322,14 @@
   },
   {
     "nwo": "KBLLR/smart-campus-cloud-20261105",
-    "generatedAt": "2026-11-05T05:08:28.000Z",
+    "generatedAt": "2026-11-05T06:22:52.000Z",
     "target": "mlx",
     "artifacts": [
       {
         "kind": "readme",
         "title": "smart-campus-cloud-20261105 README Draft",
         "suggestedPath": "README.md",
-        "body": "# smart-campus-cloud-20261105\n\nPrivate sanitized Smart Campus cloud handoff snapshot, 2026-11-05\n\n## Vega Lab Fit\n- Classification: ignore\n- Capabilities: none\n- House skills: mine-execution\n\n## Local Setup\n- Package managers: npm, pnpm, npm-lock\n- Document install, dev, build, and verification commands before broad reuse.\n- Keep runtime assumptions explicit; prefer local MLX/OpenResponses for model-assisted work.\n\n## Verification\n- npm run check:secrets\n- npm run lint\n- npm run test\n- npm run test:watch\n- npm run test:coverage\n- npm run test:picking\n- npm run test:performance\n- npm run check\n- npm run test:sun\n- npm run build\n\n## Evidence\n- Repository: KBLLR/smart-campus-cloud-20261105\n- Description: Private sanitized Smart Campus cloud handoff snapshot, 2026-11-05\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Finding: README missing from the synced repository snapshot.",
+        "body": "# smart-campus-cloud-20261105\n\nPrivate sanitized Smart Campus cloud handoff snapshot, 2026-11-05\n\n## Vega Lab Fit\n- Classification: ignore\n- Capabilities: none\n- House skills: mine-execution\n\n## Local Setup\n- Package managers: npm, pnpm, npm-lock\n- Document install, dev, build, and verification commands before broad reuse.\n- Keep runtime assumptions explicit; prefer local MLX/OpenResponses for model-assisted work.\n\n## Verification\n- npm run check:secrets\n- npm run lint\n- npm run test\n- npm run test:watch\n- npm run test:coverage\n- npm run test:picking\n- npm run test:performance\n- npm run check\n- npm run test:sun\n- npm run test:campus\n- npm run build\n\n## Evidence\n- Repository: KBLLR/smart-campus-cloud-20261105\n- Description: Private sanitized Smart Campus cloud handoff snapshot, 2026-11-05\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Finding: README missing from the synced repository snapshot.",
         "evidence": [
           "Repository: KBLLR/smart-campus-cloud-20261105",
           "Description: Private sanitized Smart Campus cloud handoff snapshot, 2026-11-05",
@@ -11225,7 +11343,7 @@
         "kind": "agents",
         "title": "smart-campus-cloud-20261105 AGENTS Draft",
         "suggestedPath": "AGENTS.md",
-        "body": "# smart-campus-cloud-20261105 Agents\n\n## Product Truth\n- Repository: KBLLR/smart-campus-cloud-20261105\n- Vega Lab classification: ignore\n- Active mission target: Local MLX\n\n## Operating Rules\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\n\n## Commands\n- npm run check:secrets\n- npm run lint\n- npm run test\n- npm run test:watch\n- npm run test:coverage\n- npm run test:picking\n- npm run test:performance\n- npm run check\n- npm run test:sun\n- npm run build\n\n## Agent Boundaries\n- Do not mutate deployment, secrets, or release configuration without explicit approval.\n- Prefer draft plans and reviewable diffs over broad automation.\n- Preserve existing product direction; use Vega Lab evidence before adding new abstractions.",
+        "body": "# smart-campus-cloud-20261105 Agents\n\n## Product Truth\n- Repository: KBLLR/smart-campus-cloud-20261105\n- Vega Lab classification: ignore\n- Active mission target: Local MLX\n\n## Operating Rules\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\n\n## Commands\n- npm run check:secrets\n- npm run lint\n- npm run test\n- npm run test:watch\n- npm run test:coverage\n- npm run test:picking\n- npm run test:performance\n- npm run check\n- npm run test:sun\n- npm run test:campus\n- npm run build\n\n## Agent Boundaries\n- Do not mutate deployment, secrets, or release configuration without explicit approval.\n- Prefer draft plans and reviewable diffs over broad automation.\n- Preserve existing product direction; use Vega Lab evidence before adding new abstractions.",
         "evidence": [
           "Repository: KBLLR/smart-campus-cloud-20261105",
           "Description: Private sanitized Smart Campus cloud handoff snapshot, 2026-11-05",
@@ -11271,7 +11389,7 @@
         "kind": "testing",
         "title": "smart-campus-cloud-20261105 Test Plan",
         "suggestedPath": "docs/test-plan.md",
-        "body": "# Test Plan: KBLLR/smart-campus-cloud-20261105\n\n## Available Commands\n- npm run check:secrets\n- npm run lint\n- npm run test\n- npm run test:watch\n- npm run test:coverage\n- npm run test:picking\n- npm run test:performance\n- npm run check\n- npm run test:sun\n- npm run build\n\n## Minimum Verification Contract\n- Document one install command.\n- Document one fast smoke command.\n- Document one release/build command when deployable.\n- If no commands exist, create a tracked issue or action item before implementation work.\n\n## Evidence\n- Repository: KBLLR/smart-campus-cloud-20261105\n- Description: Private sanitized Smart Campus cloud handoff snapshot, 2026-11-05\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Finding: README missing from the synced repository snapshot.\n- Risk: New contributors and agents lack a clear entrypoint.\n- Health flag: missing-readme",
+        "body": "# Test Plan: KBLLR/smart-campus-cloud-20261105\n\n## Available Commands\n- npm run check:secrets\n- npm run lint\n- npm run test\n- npm run test:watch\n- npm run test:coverage\n- npm run test:picking\n- npm run test:performance\n- npm run check\n- npm run test:sun\n- npm run test:campus\n- npm run build\n\n## Minimum Verification Contract\n- Document one install command.\n- Document one fast smoke command.\n- Document one release/build command when deployable.\n- If no commands exist, create a tracked issue or action item before implementation work.\n\n## Evidence\n- Repository: KBLLR/smart-campus-cloud-20261105\n- Description: Private sanitized Smart Campus cloud handoff snapshot, 2026-11-05\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Finding: README missing from the synced repository snapshot.\n- Risk: New contributors and agents lack a clear entrypoint.\n- Health flag: missing-readme",
         "evidence": [
           "Repository: KBLLR/smart-campus-cloud-20261105",
           "Description: Private sanitized Smart Campus cloud handoff snapshot, 2026-11-05",
@@ -13460,14 +13578,14 @@
   },
   {
     "nwo": "KBLLR/vega-lab",
-    "generatedAt": "2026-11-05T01:24:48.000Z",
+    "generatedAt": "2026-11-05T07:59:15.000Z",
     "target": "mlx",
     "artifacts": [
       {
         "kind": "readme",
         "title": "vega-lab README Draft",
         "suggestedPath": "README.md",
-        "body": "# vega-lab\n\nThe Brightest Stars\n\n## Vega Lab Fit\n- Classification: ignore\n- Capabilities: none\n- House skills: mine-execution\n\n## Local Setup\n- Package managers: npm, pnpm\n- Document install, dev, build, and verification commands before broad reuse.\n- Keep runtime assumptions explicit; prefer local MLX/OpenResponses for model-assisted work.\n\n## Verification\n- npm run lint\n- npm run test:data\n- npm run test:mcp\n- npm run test:corex-contract-export\n- npm run test:corex-contract-snapshots\n- npm run test:source-snapshots\n- npm run test:skill-candidate-ingestion\n- npm run test:action-bridge\n- npm run test\n- npm run build\n- npm run build:data\n- npm run build:skill-candidates\n\n## Evidence\n- Repository: KBLLR/vega-lab\n- Description: The Brightest Stars\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution",
+        "body": "# vega-lab\n\nThe Brightest Stars\n\n## Vega Lab Fit\n- Classification: ignore\n- Capabilities: none\n- House skills: mine-execution\n\n## Local Setup\n- Package managers: npm, pnpm\n- Document install, dev, build, and verification commands before broad reuse.\n- Keep runtime assumptions explicit; prefer local MLX/OpenResponses for model-assisted work.\n\n## Verification\n- npm run lint\n- npm run test:data\n- npm run test:mcp\n- npm run test:corex-contract-export\n- npm run test:corex-contract-snapshots\n- npm run test:source-snapshots\n- npm run test:skill-candidate-ingestion\n- npm run test:action-bridge\n- npm run test:observatory\n- npm run test\n- npm run build\n- npm run build:data\n- npm run build:skill-candidates\n- npm run build:synthetic-fixtures\n\n## Evidence\n- Repository: KBLLR/vega-lab\n- Description: The Brightest Stars\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution",
         "evidence": [
           "Repository: KBLLR/vega-lab",
           "Description: The Brightest Stars",
@@ -13480,7 +13598,7 @@
         "kind": "agents",
         "title": "vega-lab AGENTS Draft",
         "suggestedPath": "AGENTS.md",
-        "body": "# vega-lab Agents\n\n## Product Truth\n- Repository: KBLLR/vega-lab\n- Vega Lab classification: ignore\n- Active mission target: Local MLX\n\n## Operating Rules\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\n\n## Commands\n- npm run lint\n- npm run test:data\n- npm run test:mcp\n- npm run test:corex-contract-export\n- npm run test:corex-contract-snapshots\n- npm run test:source-snapshots\n- npm run test:skill-candidate-ingestion\n- npm run test:action-bridge\n- npm run test\n- npm run build\n- npm run build:data\n- npm run build:skill-candidates\n\n## Agent Boundaries\n- Do not mutate deployment, secrets, or release configuration without explicit approval.\n- Prefer draft plans and reviewable diffs over broad automation.\n- Preserve existing product direction; use Vega Lab evidence before adding new abstractions.",
+        "body": "# vega-lab Agents\n\n## Product Truth\n- Repository: KBLLR/vega-lab\n- Vega Lab classification: ignore\n- Active mission target: Local MLX\n\n## Operating Rules\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\n\n## Commands\n- npm run lint\n- npm run test:data\n- npm run test:mcp\n- npm run test:corex-contract-export\n- npm run test:corex-contract-snapshots\n- npm run test:source-snapshots\n- npm run test:skill-candidate-ingestion\n- npm run test:action-bridge\n- npm run test:observatory\n- npm run test\n- npm run build\n- npm run build:data\n- npm run build:skill-candidates\n- npm run build:synthetic-fixtures\n\n## Agent Boundaries\n- Do not mutate deployment, secrets, or release configuration without explicit approval.\n- Prefer draft plans and reviewable diffs over broad automation.\n- Preserve existing product direction; use Vega Lab evidence before adding new abstractions.",
         "evidence": [
           "Repository: KBLLR/vega-lab",
           "Description: The Brightest Stars",
@@ -13519,7 +13637,7 @@
         "kind": "testing",
         "title": "vega-lab Test Plan",
         "suggestedPath": "docs/test-plan.md",
-        "body": "# Test Plan: KBLLR/vega-lab\n\n## Available Commands\n- npm run lint\n- npm run test:data\n- npm run test:mcp\n- npm run test:corex-contract-export\n- npm run test:corex-contract-snapshots\n- npm run test:source-snapshots\n- npm run test:skill-candidate-ingestion\n- npm run test:action-bridge\n- npm run test\n- npm run build\n- npm run build:data\n- npm run build:skill-candidates\n\n## Minimum Verification Contract\n- Document one install command.\n- Document one fast smoke command.\n- Document one release/build command when deployable.\n- If no commands exist, create a tracked issue or action item before implementation work.\n\n## Evidence\n- Repository: KBLLR/vega-lab\n- Description: The Brightest Stars\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution",
+        "body": "# Test Plan: KBLLR/vega-lab\n\n## Available Commands\n- npm run lint\n- npm run test:data\n- npm run test:mcp\n- npm run test:corex-contract-export\n- npm run test:corex-contract-snapshots\n- npm run test:source-snapshots\n- npm run test:skill-candidate-ingestion\n- npm run test:action-bridge\n- npm run test:observatory\n- npm run test\n- npm run build\n- npm run build:data\n- npm run build:skill-candidates\n- npm run build:synthetic-fixtures\n\n## Minimum Verification Contract\n- Document one install command.\n- Document one fast smoke command.\n- Document one release/build command when deployable.\n- If no commands exist, create a tracked issue or action item before implementation work.\n\n## Evidence\n- Repository: KBLLR/vega-lab\n- Description: The Brightest Stars\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution",
         "evidence": [
           "Repository: KBLLR/vega-lab",
           "Description: The Brightest Stars",
@@ -13548,6 +13666,112 @@
       "Adoption kind: ignore",
       "Capabilities: none",
       "House skills: mine-execution"
+    ],
+    "recommendedActions": [
+      "mlx-mission",
+      "ops-kit",
+      "codex-mission",
+      "claude-mission",
+      "review-draft-only"
+    ]
+  },
+  {
+    "nwo": "KBLLR/vega-lab-cloud-20261105",
+    "generatedAt": "2026-11-05T07:19:21.000Z",
+    "target": "mlx",
+    "artifacts": [
+      {
+        "kind": "readme",
+        "title": "vega-lab-cloud-20261105 README Draft",
+        "suggestedPath": "README.md",
+        "body": "# vega-lab-cloud-20261105\n\nPrivate sanitized Vega Lab cloud handoff, 2026-11-05\n\n## Vega Lab Fit\n- Classification: ignore\n- Capabilities: none\n- House skills: mine-execution\n\n## Local Setup\n- Package managers: npm, pnpm\n- Document install, dev, build, and verification commands before broad reuse.\n- Keep runtime assumptions explicit; prefer local MLX/OpenResponses for model-assisted work.\n\n## Verification\n- npm run lint\n- npm run test:data\n- npm run test:mcp\n- npm run test:corex-contract-export\n- npm run test:corex-contract-snapshots\n- npm run test:source-snapshots\n- npm run test:skill-candidate-ingestion\n- npm run test:action-bridge\n- npm run test:observatory\n- npm run test\n- npm run build\n- npm run build:data\n- npm run build:skill-candidates\n- npm run build:synthetic-fixtures\n\n## Evidence\n- Repository: KBLLR/vega-lab-cloud-20261105\n- Description: Private sanitized Vega Lab cloud handoff, 2026-11-05\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Health flag: private",
+        "evidence": [
+          "Repository: KBLLR/vega-lab-cloud-20261105",
+          "Description: Private sanitized Vega Lab cloud handoff, 2026-11-05",
+          "Adoption kind: ignore",
+          "Capabilities: none",
+          "House skills: mine-execution",
+          "Health flag: private"
+        ]
+      },
+      {
+        "kind": "agents",
+        "title": "vega-lab-cloud-20261105 AGENTS Draft",
+        "suggestedPath": "AGENTS.md",
+        "body": "# vega-lab-cloud-20261105 Agents\n\n## Product Truth\n- Repository: KBLLR/vega-lab-cloud-20261105\n- Vega Lab classification: ignore\n- Active mission target: Local MLX\n\n## Operating Rules\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\n\n## Commands\n- npm run lint\n- npm run test:data\n- npm run test:mcp\n- npm run test:corex-contract-export\n- npm run test:corex-contract-snapshots\n- npm run test:source-snapshots\n- npm run test:skill-candidate-ingestion\n- npm run test:action-bridge\n- npm run test:observatory\n- npm run test\n- npm run build\n- npm run build:data\n- npm run build:skill-candidates\n- npm run build:synthetic-fixtures\n\n## Agent Boundaries\n- Do not mutate deployment, secrets, or release configuration without explicit approval.\n- Prefer draft plans and reviewable diffs over broad automation.\n- Preserve existing product direction; use Vega Lab evidence before adding new abstractions.",
+        "evidence": [
+          "Repository: KBLLR/vega-lab-cloud-20261105",
+          "Description: Private sanitized Vega Lab cloud handoff, 2026-11-05",
+          "Adoption kind: ignore",
+          "Capabilities: none",
+          "House skills: mine-execution",
+          "Health flag: private"
+        ]
+      },
+      {
+        "kind": "maintenance",
+        "title": "vega-lab-cloud-20261105 Maintenance Plan",
+        "suggestedPath": "docs/maintenance-plan.md",
+        "body": "# Maintenance Plan: KBLLR/vega-lab-cloud-20261105\n\n## Current Signals\n- Health flag: private\n\n## Recommended Pass\n- Confirm install path and package manager.\n- Run available verification commands before editing.\n- Patch stale docs, commands, and workflow assumptions first.\n- Open the smallest useful PR only after human approval.\n- Vega Lab action: mlx-mission\n- Vega Lab action: ops-kit\n- Vega Lab action: codex-mission\n- Vega Lab action: claude-mission\n\n## Evidence\n- Repository: KBLLR/vega-lab-cloud-20261105\n- Description: Private sanitized Vega Lab cloud handoff, 2026-11-05\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Health flag: private",
+        "evidence": [
+          "Repository: KBLLR/vega-lab-cloud-20261105",
+          "Description: Private sanitized Vega Lab cloud handoff, 2026-11-05",
+          "Adoption kind: ignore",
+          "Capabilities: none",
+          "House skills: mine-execution",
+          "Health flag: private"
+        ]
+      },
+      {
+        "kind": "deployment",
+        "title": "vega-lab-cloud-20261105 Deployment Plan",
+        "suggestedPath": "docs/deployment-plan.md",
+        "body": "# Deployment Plan: KBLLR/vega-lab-cloud-20261105\n\n## Known Deployment Evidence\n- Deployment config: vercel.json\n\n## Draft Checks\n- Identify expected host and runtime.\n- Document build command, output directory, and required environment variables.\n- Verify preview URL and production URL checks.\n- Keep deploy authority manual; Vega Lab drafts plans and inbox items only.\n\n## Evidence\n- Repository: KBLLR/vega-lab-cloud-20261105\n- Description: Private sanitized Vega Lab cloud handoff, 2026-11-05\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Health flag: private",
+        "evidence": [
+          "Repository: KBLLR/vega-lab-cloud-20261105",
+          "Description: Private sanitized Vega Lab cloud handoff, 2026-11-05",
+          "Adoption kind: ignore",
+          "Capabilities: none",
+          "House skills: mine-execution",
+          "Health flag: private"
+        ]
+      },
+      {
+        "kind": "testing",
+        "title": "vega-lab-cloud-20261105 Test Plan",
+        "suggestedPath": "docs/test-plan.md",
+        "body": "# Test Plan: KBLLR/vega-lab-cloud-20261105\n\n## Available Commands\n- npm run lint\n- npm run test:data\n- npm run test:mcp\n- npm run test:corex-contract-export\n- npm run test:corex-contract-snapshots\n- npm run test:source-snapshots\n- npm run test:skill-candidate-ingestion\n- npm run test:action-bridge\n- npm run test:observatory\n- npm run test\n- npm run build\n- npm run build:data\n- npm run build:skill-candidates\n- npm run build:synthetic-fixtures\n\n## Minimum Verification Contract\n- Document one install command.\n- Document one fast smoke command.\n- Document one release/build command when deployable.\n- If no commands exist, create a tracked issue or action item before implementation work.\n\n## Evidence\n- Repository: KBLLR/vega-lab-cloud-20261105\n- Description: Private sanitized Vega Lab cloud handoff, 2026-11-05\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Health flag: private",
+        "evidence": [
+          "Repository: KBLLR/vega-lab-cloud-20261105",
+          "Description: Private sanitized Vega Lab cloud handoff, 2026-11-05",
+          "Adoption kind: ignore",
+          "Capabilities: none",
+          "House skills: mine-execution",
+          "Health flag: private"
+        ]
+      },
+      {
+        "kind": "action-item",
+        "title": "vega-lab-cloud-20261105 Action Item Draft",
+        "suggestedPath": "ops/action-item.md",
+        "body": "# Action Item Draft: KBLLR/vega-lab-cloud-20261105\n\n## Recommended Actions\n- mlx-mission\n- ops-kit\n- codex-mission\n- claude-mission\n\n## Mission Target\n- Local MLX\n\n## Evidence\n- Repository: KBLLR/vega-lab-cloud-20261105\n- Description: Private sanitized Vega Lab cloud handoff, 2026-11-05\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Health flag: private",
+        "evidence": [
+          "Repository: KBLLR/vega-lab-cloud-20261105",
+          "Description: Private sanitized Vega Lab cloud handoff, 2026-11-05",
+          "Adoption kind: ignore",
+          "Capabilities: none",
+          "House skills: mine-execution",
+          "Health flag: private"
+        ]
+      }
+    ],
+    "evidence": [
+      "Repository: KBLLR/vega-lab-cloud-20261105",
+      "Description: Private sanitized Vega Lab cloud handoff, 2026-11-05",
+      "Adoption kind: ignore",
+      "Capabilities: none",
+      "House skills: mine-execution",
+      "Health flag: private"
     ],
     "recommendedActions": [
       "mlx-mission",

@@ -356,6 +356,38 @@
     "updatedAt": "2023-07-07T07:02:56.000Z"
   },
   {
+    "id": "vega-lab:deployment:kbllr-avatar-labs-cloud-20261105",
+    "kind": "deployment",
+    "status": "open",
+    "priority": "normal",
+    "nwo": "KBLLR/avatar-labs-cloud-20261105",
+    "title": "Clarify deployment readiness for avatar-labs-cloud-20261105",
+    "summary": "Vega Lab could not detect workflow or deployment configuration from synced key files.",
+    "evidence": [
+      "No workflow or deployment config detected in synced key files.",
+      "Deployment readiness is unclear."
+    ],
+    "linkedSkills": [
+      "repo-discovery",
+      "repo-adoption",
+      "mine-execution"
+    ],
+    "linkedRules": [
+      "Review license status before adoption or redistribution work.",
+      "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
+    ],
+    "linkedFlows": [
+      "research-queue-flow",
+      "adoption-decision-flow",
+      "news-digest-refresh",
+      "mine-execution-flow"
+    ],
+    "draft": "Draft a deployment readiness brief for KBLLR/avatar-labs-cloud-20261105: identify expected host, build command, env vars, workflow status, and verification URL checks. Evidence: No workflow or deployment config detected in synced key files.",
+    "source": "daily-ops",
+    "createdAt": "2026-11-05T07:13:07.000Z",
+    "updatedAt": "2026-11-05T07:13:07.000Z"
+  },
+  {
     "id": "vega-lab:testing:kbllr-oink-oink",
     "kind": "testing",
     "status": "open",
@@ -422,6 +454,38 @@
     "updatedAt": "2026-10-18T16:47:49.000Z"
   },
   {
+    "id": "vega-lab:deployment:kbllr-core-x-wiki",
+    "kind": "deployment",
+    "status": "open",
+    "priority": "normal",
+    "nwo": "KBLLR/core-x-wiki",
+    "title": "Clarify deployment readiness for core-x-wiki",
+    "summary": "Vega Lab could not detect workflow or deployment configuration from synced key files.",
+    "evidence": [
+      "No workflow or deployment config detected in synced key files.",
+      "Deployment readiness is unclear."
+    ],
+    "linkedSkills": [
+      "repo-discovery",
+      "repo-adoption",
+      "mine-execution"
+    ],
+    "linkedRules": [
+      "Review license status before adoption or redistribution work.",
+      "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
+    ],
+    "linkedFlows": [
+      "research-queue-flow",
+      "adoption-decision-flow",
+      "news-digest-refresh",
+      "mine-execution-flow"
+    ],
+    "draft": "Draft a deployment readiness brief for KBLLR/core-x-wiki: identify expected host, build command, env vars, workflow status, and verification URL checks. Evidence: README missing from the synced repository snapshot. No test/check/lint script detected from package metadata. No workflow or deployment config detected in synced key files.",
+    "source": "daily-ops",
+    "createdAt": "2026-09-15T11:46:33.000Z",
+    "updatedAt": "2026-09-15T11:46:33.000Z"
+  },
+  {
     "id": "vega-lab:testing:kbllr-core-x-wiki",
     "kind": "testing",
     "status": "open",
@@ -452,41 +516,6 @@
       "mine-execution-flow"
     ],
     "draft": "Draft a verification plan for KBLLR/core-x-wiki: add or document lint/test/build commands and define the smallest smoke test agents should run before edits.",
-    "source": "daily-ops",
-    "createdAt": "2026-09-15T11:46:33.000Z",
-    "updatedAt": "2026-09-15T11:46:33.000Z"
-  },
-  {
-    "id": "vega-lab:deployment:kbllr-core-x-wiki",
-    "kind": "deployment",
-    "status": "open",
-    "priority": "normal",
-    "nwo": "KBLLR/core-x-wiki",
-    "title": "Clarify deployment readiness for core-x-wiki",
-    "summary": "Vega Lab could not detect workflow or deployment configuration from synced key files.",
-    "evidence": [
-      "README missing from the synced repository snapshot.",
-      "No test/check/lint script detected from package metadata.",
-      "No workflow or deployment config detected in synced key files.",
-      "New contributors and agents lack a clear entrypoint.",
-      "Maintenance work has no obvious verification command."
-    ],
-    "linkedSkills": [
-      "repo-discovery",
-      "repo-adoption",
-      "mine-execution"
-    ],
-    "linkedRules": [
-      "Review license status before adoption or redistribution work.",
-      "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
-    ],
-    "linkedFlows": [
-      "research-queue-flow",
-      "adoption-decision-flow",
-      "news-digest-refresh",
-      "mine-execution-flow"
-    ],
-    "draft": "Draft a deployment readiness brief for KBLLR/core-x-wiki: identify expected host, build command, env vars, workflow status, and verification URL checks. Evidence: README missing from the synced repository snapshot. No test/check/lint script detected from package metadata. No workflow or deployment config detected in synced key files.",
     "source": "daily-ops",
     "createdAt": "2026-09-15T11:46:33.000Z",
     "updatedAt": "2026-09-15T11:46:33.000Z"
