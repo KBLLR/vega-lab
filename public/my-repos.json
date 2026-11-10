@@ -16,9 +16,9 @@
     "primary_language": "Python",
     "license": "None",
     "forks": 0,
-    "open_issues": 3,
+    "open_issues": 2,
     "last_updated": "11/9/2026",
-    "last_updated_at": "2026-11-09T02:33:34Z",
+    "last_updated_at": "2026-11-09T22:16:44Z",
     "created_at": "2026-02-09T19:25:05Z",
     "private": true,
     "has_readme": false,
@@ -29,6 +29,103 @@
       "packageManagers": [],
       "workflows": [],
       "deploymentConfigs": []
+    }
+  },
+  {
+    "name": "code-smart-campus",
+    "description": " Real-time 3D visualization of smart spaces, integrating live IoT data from Home Assistant for interactive monitoring of building floorplans and connected devices. ",
+    "author": "KBLLR",
+    "stars": 0,
+    "url": "https://github.com/KBLLR/code-smart-campus",
+    "date": "11/1/2025",
+    "languages": [
+      {
+        "language": "JavaScript",
+        "percentage": "100%"
+      }
+    ],
+    "topics": [],
+    "primary_language": "JavaScript",
+    "license": "MIT",
+    "forks": 0,
+    "open_issues": 0,
+    "last_updated": "11/9/2026",
+    "last_updated_at": "2026-11-09T10:58:39Z",
+    "created_at": "2025-11-01T14:37:32Z",
+    "private": false,
+    "has_readme": true,
+    "is_owner": true,
+    "is_fork": false,
+    "key_files": {
+      "packageJson": {
+        "scripts": {
+          "dev": "npm run dev:vite",
+          "server": "node server/index.js",
+          "dev:vite": "vite",
+          "dev:full": "concurrently \"npm run server\" \"npm run dev:vite\" --names \"server,vite\" --prefix-colors \"blue,green\"",
+          "check:secrets": "python ../../.secretsbank/check_required_secrets.py --house tier1-smart-campus",
+          "build": "tsc && vite build",
+          "preview": "vite preview",
+          "lint": "eslint ./src --ext .js,.jsx,.ts,.tsx",
+          "test": "jest",
+          "test:watch": "jest --watch",
+          "test:coverage": "jest --coverage",
+          "test:picking": "jest picking",
+          "test:performance": "jest picking-performance --verbose",
+          "deploy:link": "vercel link",
+          "deploy:preview": "npm run build && vercel deploy --prebuilt --env-file=.env.local",
+          "deploy:prod": "npm run build && vercel deploy --prebuilt --prod",
+          "new:session": "node scripts/new-session.mjs",
+          "tasks:export": "node scripts/tasks-export.mjs",
+          "check": "npm run lint && npm run test:sun && npm run test:campus",
+          "generateLabelRegistry": "node src/tools/generateLabelRegistry.js",
+          "generateRoomRegistry": "node src/tools/generateRoomRegistry.js",
+          "test:sun": "node --test tests/sunTelemetry.test.js",
+          "test:campus": "node --test tests/campus/*.test.js"
+        },
+        "dependencies": {
+          "@alienkitty/alien.js": "^1.2.0",
+          "@alienkitty/space.js": "^1.2.0",
+          "@takram/three-atmosphere": "^0.15.1",
+          "@tweenjs/tween.js": "^25.0.0",
+          "cors": "^2.8.5",
+          "dotenv": "^16.4.7",
+          "express": "^4.21.2",
+          "gsap": "^3.12.7",
+          "node-fetch": "^3.3.2",
+          "suncalc": "^1.9.0",
+          "three": "^0.181.0",
+          "zod": "^4.1.12"
+        },
+        "devDependencies": {
+          "@eslint/js": "^9.39.0",
+          "@tailwindcss/vite": "^4.0.0",
+          "@types/jest": "^30.0.0",
+          "@types/three": "^0.181.0",
+          "acorn": "^8.14.1",
+          "concurrently": "^9.1.2",
+          "eslint": "^9.39.0",
+          "globals": "^16.5.0",
+          "jest": "^30.2.0",
+          "jest-environment-jsdom": "^30.2.0",
+          "js-yaml": "^4.1.0",
+          "jsdom": "^27.1.0",
+          "tailwindcss": "^4.0.0",
+          "ts-jest": "^29.4.5",
+          "typescript": "^5.9.3",
+          "typescript-eslint": "^8.46.2",
+          "vite": "^7.1.12"
+        }
+      },
+      "packageManagers": [
+        "npm",
+        "pnpm",
+        "npm-lock"
+      ],
+      "workflows": [],
+      "deploymentConfigs": [
+        "vercel.json"
+      ]
     }
   },
   {
@@ -54,8 +151,8 @@
     "license": "None",
     "forks": 0,
     "open_issues": 0,
-    "last_updated": "11/8/2026",
-    "last_updated_at": "2026-11-08T04:43:30Z",
+    "last_updated": "11/9/2026",
+    "last_updated_at": "2026-11-09T04:56:56Z",
     "created_at": "2023-12-23T23:09:43Z",
     "private": false,
     "has_readme": true,
@@ -302,102 +399,6 @@
       ],
       "workflows": [],
       "deploymentConfigs": []
-    }
-  },
-  {
-    "name": "code-smart-campus",
-    "description": " Real-time 3D visualization of smart spaces, integrating live IoT data from Home Assistant for interactive monitoring of building floorplans and connected devices. ",
-    "author": "KBLLR",
-    "stars": 0,
-    "url": "https://github.com/KBLLR/code-smart-campus",
-    "date": "11/1/2025",
-    "languages": [
-      {
-        "language": "JavaScript",
-        "percentage": "100%"
-      }
-    ],
-    "topics": [],
-    "primary_language": "JavaScript",
-    "license": "MIT",
-    "forks": 0,
-    "open_issues": 0,
-    "last_updated": "11/5/2026",
-    "last_updated_at": "2026-11-05T17:49:11Z",
-    "created_at": "2025-11-01T14:37:32Z",
-    "private": false,
-    "has_readme": true,
-    "is_owner": true,
-    "is_fork": false,
-    "key_files": {
-      "packageJson": {
-        "scripts": {
-          "dev": "npm run dev:vite",
-          "server": "node server/index.js",
-          "dev:vite": "vite",
-          "dev:full": "concurrently \"npm run server\" \"npm run dev:vite\" --names \"server,vite\" --prefix-colors \"blue,green\"",
-          "check:secrets": "python ../../.secretsbank/check_required_secrets.py --house tier1-smart-campus",
-          "build": "tsc && vite build",
-          "preview": "vite preview",
-          "lint": "eslint ./src --ext .js,.jsx,.ts,.tsx",
-          "test": "jest",
-          "test:watch": "jest --watch",
-          "test:coverage": "jest --coverage",
-          "test:picking": "jest picking",
-          "test:performance": "jest picking-performance --verbose",
-          "deploy:link": "vercel link",
-          "deploy:preview": "npm run build && vercel deploy --prebuilt --env-file=.env.local",
-          "deploy:prod": "npm run build && vercel deploy --prebuilt --prod",
-          "new:session": "node scripts/new-session.mjs",
-          "tasks:export": "node scripts/tasks-export.mjs",
-          "check": "npm run lint && npm run test:sun",
-          "generateLabelRegistry": "node src/tools/generateLabelRegistry.js",
-          "generateRoomRegistry": "node src/tools/generateRoomRegistry.js",
-          "test:sun": "node --test tests/sunTelemetry.test.js"
-        },
-        "dependencies": {
-          "@alienkitty/alien.js": "^1.2.0",
-          "@alienkitty/space.js": "^1.2.0",
-          "@takram/three-atmosphere": "^0.15.1",
-          "@tweenjs/tween.js": "^25.0.0",
-          "cors": "^2.8.5",
-          "dotenv": "^16.4.7",
-          "express": "^4.21.2",
-          "gsap": "^3.12.7",
-          "node-fetch": "^3.3.2",
-          "suncalc": "^1.9.0",
-          "three": "^0.181.0",
-          "zod": "^4.1.12"
-        },
-        "devDependencies": {
-          "@eslint/js": "^9.39.0",
-          "@tailwindcss/vite": "^4.0.0",
-          "@types/jest": "^30.0.0",
-          "@types/three": "^0.181.0",
-          "acorn": "^8.14.1",
-          "concurrently": "^9.1.2",
-          "eslint": "^9.39.0",
-          "globals": "^16.5.0",
-          "jest": "^30.2.0",
-          "jest-environment-jsdom": "^30.2.0",
-          "js-yaml": "^4.1.0",
-          "jsdom": "^27.1.0",
-          "tailwindcss": "^4.0.0",
-          "ts-jest": "^29.4.5",
-          "typescript": "^5.9.3",
-          "typescript-eslint": "^8.46.2",
-          "vite": "^7.1.12"
-        }
-      },
-      "packageManagers": [
-        "npm",
-        "pnpm",
-        "npm-lock"
-      ],
-      "workflows": [],
-      "deploymentConfigs": [
-        "vercel.json"
-      ]
     }
   },
   {

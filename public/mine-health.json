@@ -5,7 +5,7 @@
     "author": "KBLLR",
     "visibility": "private",
     "hasReadme": false,
-    "updatedAt": "2026-11-09T02:33:34.000Z",
+    "updatedAt": "2026-11-09T22:16:44.000Z",
     "healthFlags": [
       "missing-readme",
       "private"
@@ -17,6 +17,37 @@
       "claude-mission",
       "write-readme",
       "house-integration"
+    ]
+  },
+  {
+    "nwo": "KBLLR/code-smart-campus",
+    "name": "code-smart-campus",
+    "author": "KBLLR",
+    "visibility": "public",
+    "hasReadme": true,
+    "updatedAt": "2026-11-09T10:58:39.000Z",
+    "healthFlags": [],
+    "recommendedActions": [
+      "mlx-mission",
+      "ops-kit",
+      "codex-mission",
+      "claude-mission",
+      "house-integration"
+    ]
+  },
+  {
+    "nwo": "KBLLR/vega-lab",
+    "name": "vega-lab",
+    "author": "KBLLR",
+    "visibility": "public",
+    "hasReadme": true,
+    "updatedAt": "2026-11-09T04:56:56.000Z",
+    "healthFlags": [],
+    "recommendedActions": [
+      "mlx-mission",
+      "ops-kit",
+      "codex-mission",
+      "claude-mission"
     ]
   },
   {
@@ -35,21 +66,6 @@
       "codex-mission",
       "claude-mission",
       "house-integration"
-    ]
-  },
-  {
-    "nwo": "KBLLR/vega-lab",
-    "name": "vega-lab",
-    "author": "KBLLR",
-    "visibility": "public",
-    "hasReadme": true,
-    "updatedAt": "2026-11-08T04:43:30.000Z",
-    "healthFlags": [],
-    "recommendedActions": [
-      "mlx-mission",
-      "ops-kit",
-      "codex-mission",
-      "claude-mission"
     ]
   },
   {
@@ -78,22 +94,6 @@
     "healthFlags": [
       "private"
     ],
-    "recommendedActions": [
-      "mlx-mission",
-      "ops-kit",
-      "codex-mission",
-      "claude-mission",
-      "house-integration"
-    ]
-  },
-  {
-    "nwo": "KBLLR/code-smart-campus",
-    "name": "code-smart-campus",
-    "author": "KBLLR",
-    "visibility": "public",
-    "hasReadme": true,
-    "updatedAt": "2026-11-05T17:49:11.000Z",
-    "healthFlags": [],
     "recommendedActions": [
       "mlx-mission",
       "ops-kit",
@@ -743,12 +743,15 @@
     "visibility": "public",
     "hasReadme": true,
     "updatedAt": "2025-11-10T04:51:23.000Z",
-    "healthFlags": [],
+    "healthFlags": [
+      "stale"
+    ],
     "recommendedActions": [
       "mlx-mission",
       "ops-kit",
       "codex-mission",
-      "claude-mission"
+      "claude-mission",
+      "maintenance-plan"
     ]
   },
   {

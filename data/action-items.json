@@ -2148,6 +2148,35 @@
     "updatedAt": "2025-11-15T21:21:45.000Z"
   },
   {
+    "id": "vega-lab:maintenance:kbllr-city-blocks",
+    "kind": "maintenance",
+    "status": "open",
+    "priority": "normal",
+    "nwo": "KBLLR/city-blocks",
+    "title": "Run a maintenance pass on city-blocks",
+    "summary": "Stale activity increases dependency, workflow, and deployment risk.",
+    "evidence": [
+      "Repository appears stale based on last activity.",
+      "Dependencies, build targets, or deployment assumptions may be outdated."
+    ],
+    "linkedSkills": [
+      "mine-execution"
+    ],
+    "linkedRules": [
+      "Review license status before adoption or redistribution work.",
+      "Validate maintenance risk and current ecosystem fit before committing to adoption.",
+      "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
+    ],
+    "linkedFlows": [
+      "research-queue-flow",
+      "mine-execution-flow"
+    ],
+    "draft": "Draft a maintenance plan for KBLLR/city-blocks: verify dependencies, run available checks, update stale assumptions, and identify a smallest useful PR. Rules: Review license status before adoption or redistribution work. Validate maintenance risk and current ecosystem fit before committing to adoption. Prioritize README, maintenance, and execution readiness before broader ecosystem integration.",
+    "source": "daily-ops",
+    "createdAt": "2025-11-10T04:51:23.000Z",
+    "updatedAt": "2025-11-10T04:51:23.000Z"
+  },
+  {
     "id": "vega-lab:testing:kbllr-city-blocks",
     "kind": "testing",
     "status": "open",

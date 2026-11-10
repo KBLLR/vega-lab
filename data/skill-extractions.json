@@ -25094,6 +25094,7 @@
     ],
     "rules": [
       "Review license status before adoption or redistribution work.",
+      "Validate maintenance risk and current ecosystem fit before committing to adoption.",
       "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
     ],
     "flows": [
@@ -25101,8 +25102,8 @@
       "mine-execution-flow"
     ],
     "adoptionKind": "ignore",
-    "codexBrief": "# Codex Mission: KBLLR/city-blocks\nGoal: city-blocks is a candidate for ignore adoption. Primary Vega Lab fit: mine-execution via general engineering.\nClassification: ignore\nCapabilities: none\nHouse skills: mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: KBLLR/city-blocks\nGoal: city-blocks is a candidate for ignore adoption. Primary Vega Lab fit: mine-execution via general engineering.\nClassification: ignore\nCapabilities: none\nHouse skills: mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: KBLLR/city-blocks\nGoal: city-blocks is a candidate for ignore adoption. Primary Vega Lab fit: mine-execution via general engineering.\nClassification: ignore\nCapabilities: none\nHouse skills: mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: KBLLR/city-blocks\nGoal: city-blocks is a candidate for ignore adoption. Primary Vega Lab fit: mine-execution via general engineering.\nClassification: ignore\nCapabilities: none\nHouse skills: mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "KBLLR/code-platformer-ai",
@@ -31853,9 +31854,12 @@
     "nwo": "markedjs/marked",
     "name": "marked",
     "author": "markedjs",
-    "summary": "A markdown parser and compiler. Built for speed. Primary Vega Lab fit: repo-adoption via general engineering.",
-    "capabilities": [],
+    "summary": "A markdown parser and compiler. Built for speed. Primary Vega Lab fit: repo-discovery via frontend-ui.",
+    "capabilities": [
+      "frontend-ui"
+    ],
     "houseSkills": [
+      "repo-discovery",
       "repo-adoption"
     ],
     "rules": [
@@ -31863,11 +31867,12 @@
     ],
     "flows": [
       "research-queue-flow",
-      "adoption-decision-flow"
+      "adoption-decision-flow",
+      "news-digest-refresh"
     ],
     "adoptionKind": "house",
-    "codexBrief": "# Codex Mission: markedjs/marked\nGoal: A markdown parser and compiler. Built for speed. Primary Vega Lab fit: repo-adoption via general engineering.\nClassification: house\nCapabilities: none\nHouse skills: repo-adoption\nRules:\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: markedjs/marked\nGoal: A markdown parser and compiler. Built for speed. Primary Vega Lab fit: repo-adoption via general engineering.\nClassification: house\nCapabilities: none\nHouse skills: repo-adoption\nRules:\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: markedjs/marked\nGoal: A markdown parser and compiler. Built for speed. Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui\nHouse skills: repo-discovery, repo-adoption\nRules:\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: markedjs/marked\nGoal: A markdown parser and compiler. Built for speed. Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui\nHouse skills: repo-discovery, repo-adoption\nRules:\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "MarketingPipeline/Termino.js",

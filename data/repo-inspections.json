@@ -478,8 +478,12 @@
         "build"
       ]
     },
-    "findings": [],
-    "risks": []
+    "findings": [
+      "Repository appears stale based on last activity."
+    ],
+    "risks": [
+      "Dependencies, build targets, or deployment assumptions may be outdated."
+    ]
   },
   {
     "nwo": "KBLLR/code-platformer-ai",
@@ -505,7 +509,7 @@
   },
   {
     "nwo": "KBLLR/code-smart-campus",
-    "inspectedAt": "2026-11-05T17:49:11.000Z",
+    "inspectedAt": "2026-11-09T10:58:39.000Z",
     "files": {
       "hasReadme": true,
       "packageManagers": [
@@ -526,7 +530,8 @@
         "test:picking",
         "test:performance",
         "check",
-        "test:sun"
+        "test:sun",
+        "test:campus"
       ],
       "buildScripts": [
         "build"
@@ -555,7 +560,7 @@
   },
   {
     "nwo": "KBLLR/core-x",
-    "inspectedAt": "2026-11-09T02:33:34.000Z",
+    "inspectedAt": "2026-11-09T22:16:44.000Z",
     "files": {
       "hasReadme": false,
       "packageManagers": [
@@ -2765,7 +2770,7 @@
   },
   {
     "nwo": "KBLLR/vega-lab",
-    "inspectedAt": "2026-11-08T04:43:30.000Z",
+    "inspectedAt": "2026-11-09T04:56:56.000Z",
     "files": {
       "hasReadme": true,
       "packageManagers": [
