@@ -34,7 +34,7 @@
     "local_ocr_health": "/bus/v1/ocr/health",
     "ocr_target": "http://127.0.0.1:8097",
     "model_profile": "balanced-32gb",
-    "default_model": "text/Meta-Llama-3.1-8B-Instruct-4bit",
+    "default_model": "text/qwen3-4b-instruct-2507-4bit",
     "web_mode": "deployment-testing-only"
   },
   "personality": {
@@ -150,9 +150,9 @@
       "mlx-embed"
     ],
     "models": [
-      "text/Meta-Llama-3.1-8B-Instruct-4bit",
-      "text/qwen2.5-14b-4bit",
-      "text/qwen2.5-coder-14b-instruct-4bit"
+      "text/qwen3-4b-instruct-2507-4bit",
+      "text/qwen3.5-9b-optiq-4bit",
+      "text/qwen2.5-coder-7b-instruct-4bit"
     ],
     "houses": [],
     "mcp_servers": [

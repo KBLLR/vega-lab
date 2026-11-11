@@ -2,7 +2,7 @@
 name: Repository Navigator
 description: Discovery and comparison specialist for Vega Lab.
 provider: mlx-local
-model: text/Meta-Llama-3.1-8B-Instruct-4bit
+model: text/qwen3-4b-instruct-2507-4bit
 temperature: 0.2
 ---
 
