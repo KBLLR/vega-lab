@@ -1,5 +1,35 @@
 [
   {
+    "id": "vega-lab:readme:kbllr-corex-chat-mac",
+    "kind": "readme",
+    "status": "open",
+    "priority": "high",
+    "nwo": "KBLLR/corex-chat-mac",
+    "title": "Make corex-chat-mac README-ready",
+    "summary": "The repo needs a clear human and agent entrypoint before broader ecosystem use.",
+    "evidence": [
+      "README missing from the synced repository snapshot.",
+      "No test/check/lint script detected from package metadata.",
+      "New contributors and agents lack a clear entrypoint.",
+      "Maintenance work has no obvious verification command."
+    ],
+    "linkedSkills": [
+      "mine-execution"
+    ],
+    "linkedRules": [
+      "Review license status before adoption or redistribution work.",
+      "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
+    ],
+    "linkedFlows": [
+      "research-queue-flow",
+      "mine-execution-flow"
+    ],
+    "draft": "Draft a README readiness pass for KBLLR/corex-chat-mac: document purpose, local setup, primary commands, data/runtime assumptions, and a short maintenance section. Evidence: README missing from the synced repository snapshot. No test/check/lint script detected from package metadata.",
+    "source": "daily-ops",
+    "createdAt": "2026-11-13T01:08:56.000Z",
+    "updatedAt": "2026-11-13T01:08:56.000Z"
+  },
+  {
     "id": "vega-lab:readme:kbllr-smart-campus-cloud-20261105",
     "kind": "readme",
     "status": "open",
@@ -354,6 +384,36 @@
     "source": "daily-ops",
     "createdAt": "2023-07-07T07:02:56.000Z",
     "updatedAt": "2023-07-07T07:02:56.000Z"
+  },
+  {
+    "id": "vega-lab:testing:kbllr-corex-chat-mac",
+    "kind": "testing",
+    "status": "open",
+    "priority": "normal",
+    "nwo": "KBLLR/corex-chat-mac",
+    "title": "Define verification for corex-chat-mac",
+    "summary": "Package metadata does not expose an obvious test, check, or lint command.",
+    "evidence": [
+      "README missing from the synced repository snapshot.",
+      "No test/check/lint script detected from package metadata.",
+      "New contributors and agents lack a clear entrypoint.",
+      "Maintenance work has no obvious verification command."
+    ],
+    "linkedSkills": [
+      "mine-execution"
+    ],
+    "linkedRules": [
+      "Review license status before adoption or redistribution work.",
+      "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
+    ],
+    "linkedFlows": [
+      "research-queue-flow",
+      "mine-execution-flow"
+    ],
+    "draft": "Draft a verification plan for KBLLR/corex-chat-mac: add or document lint/test/build commands and define the smallest smoke test agents should run before edits.",
+    "source": "daily-ops",
+    "createdAt": "2026-11-13T01:08:56.000Z",
+    "updatedAt": "2026-11-13T01:08:56.000Z"
   },
   {
     "id": "vega-lab:deployment:kbllr-avatar-labs-cloud-20261105",

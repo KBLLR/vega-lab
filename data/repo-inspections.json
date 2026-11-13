@@ -281,7 +281,7 @@
   },
   {
     "nwo": "KBLLR/Avatars-Lab",
-    "inspectedAt": "2026-11-06T12:05:04.000Z",
+    "inspectedAt": "2026-11-12T21:51:05.000Z",
     "files": {
       "hasReadme": true,
       "packageManagers": [
@@ -560,7 +560,7 @@
   },
   {
     "nwo": "KBLLR/core-x",
-    "inspectedAt": "2026-11-11T13:42:48.000Z",
+    "inspectedAt": "2026-11-13T01:08:14.000Z",
     "files": {
       "hasReadme": false,
       "packageManagers": [
@@ -582,7 +582,7 @@
   },
   {
     "nwo": "KBLLR/core-x-wiki",
-    "inspectedAt": "2026-11-08T19:56:47.000Z",
+    "inspectedAt": "2026-11-13T00:37:04.000Z",
     "files": {
       "hasReadme": true,
       "packageManagers": [
@@ -602,6 +602,28 @@
     ],
     "risks": [
       "Deployment readiness is unclear."
+    ]
+  },
+  {
+    "nwo": "KBLLR/corex-chat-mac",
+    "inspectedAt": "2026-11-13T01:08:56.000Z",
+    "files": {
+      "hasReadme": false,
+      "packageManagers": [
+        "swiftpm"
+      ],
+      "workflows": [],
+      "deploymentConfigs": [],
+      "testScripts": [],
+      "buildScripts": []
+    },
+    "findings": [
+      "README missing from the synced repository snapshot.",
+      "No test/check/lint script detected from package metadata."
+    ],
+    "risks": [
+      "New contributors and agents lack a clear entrypoint.",
+      "Maintenance work has no obvious verification command."
     ]
   },
   {
@@ -2770,7 +2792,7 @@
   },
   {
     "nwo": "KBLLR/vega-lab",
-    "inspectedAt": "2026-11-11T04:59:54.000Z",
+    "inspectedAt": "2026-11-12T06:02:33.000Z",
     "files": {
       "hasReadme": true,
       "packageManagers": [

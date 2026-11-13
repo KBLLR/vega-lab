@@ -1222,7 +1222,7 @@
   },
   {
     "nwo": "KBLLR/Avatars-Lab",
-    "generatedAt": "2026-11-06T12:05:04.000Z",
+    "generatedAt": "2026-11-12T21:51:05.000Z",
     "target": "mlx",
     "artifacts": [
       {
@@ -2536,7 +2536,7 @@
   },
   {
     "nwo": "KBLLR/core-x",
-    "generatedAt": "2026-11-11T13:42:48.000Z",
+    "generatedAt": "2026-11-13T01:08:14.000Z",
     "target": "mlx",
     "artifacts": [
       {
@@ -2662,7 +2662,7 @@
   },
   {
     "nwo": "KBLLR/core-x-wiki",
-    "generatedAt": "2026-11-08T19:56:47.000Z",
+    "generatedAt": "2026-11-13T00:37:04.000Z",
     "target": "mlx",
     "artifacts": [
       {
@@ -2782,6 +2782,131 @@
       "readme:vega-lab:readme:kbllr-core-x-wiki",
       "deployment:vega-lab:deployment:kbllr-core-x-wiki",
       "testing:vega-lab:testing:kbllr-core-x-wiki",
+      "review-draft-only"
+    ]
+  },
+  {
+    "nwo": "KBLLR/corex-chat-mac",
+    "generatedAt": "2026-11-13T01:08:56.000Z",
+    "target": "mlx",
+    "artifacts": [
+      {
+        "kind": "readme",
+        "title": "corex-chat-mac README Draft",
+        "suggestedPath": "README.md",
+        "body": "# corex-chat-mac\n\nCore-X native macOS chat and mission observation client\n\n## Vega Lab Fit\n- Classification: ignore\n- Capabilities: none\n- House skills: mine-execution\n\n## Local Setup\n- Package managers: swiftpm\n- Document install, dev, build, and verification commands before broad reuse.\n- Keep runtime assumptions explicit; prefer local MLX/OpenResponses for model-assisted work.\n\n## Verification\n- Define a lint/test/build command before code edits.\n\n## Evidence\n- Repository: KBLLR/corex-chat-mac\n- Description: Core-X native macOS chat and mission observation client\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Finding: README missing from the synced repository snapshot.",
+        "evidence": [
+          "Repository: KBLLR/corex-chat-mac",
+          "Description: Core-X native macOS chat and mission observation client",
+          "Adoption kind: ignore",
+          "Capabilities: none",
+          "House skills: mine-execution",
+          "Finding: README missing from the synced repository snapshot."
+        ]
+      },
+      {
+        "kind": "agents",
+        "title": "corex-chat-mac AGENTS Draft",
+        "suggestedPath": "AGENTS.md",
+        "body": "# corex-chat-mac Agents\n\n## Product Truth\n- Repository: KBLLR/corex-chat-mac\n- Vega Lab classification: ignore\n- Active mission target: Local MLX\n\n## Operating Rules\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\n\n## Commands\n- Add the smallest reliable verification command.\n\n## Agent Boundaries\n- Do not mutate deployment, secrets, or release configuration without explicit approval.\n- Prefer draft plans and reviewable diffs over broad automation.\n- Preserve existing product direction; use Vega Lab evidence before adding new abstractions.",
+        "evidence": [
+          "Repository: KBLLR/corex-chat-mac",
+          "Description: Core-X native macOS chat and mission observation client",
+          "Adoption kind: ignore",
+          "Capabilities: none",
+          "House skills: mine-execution",
+          "Finding: README missing from the synced repository snapshot."
+        ]
+      },
+      {
+        "kind": "maintenance",
+        "title": "corex-chat-mac Maintenance Plan",
+        "suggestedPath": "docs/maintenance-plan.md",
+        "body": "# Maintenance Plan: KBLLR/corex-chat-mac\n\n## Current Signals\n- Health flag: missing-readme\n- Health flag: private\n- README missing from the synced repository snapshot.\n- No test/check/lint script detected from package metadata.\n\n## Recommended Pass\n- Confirm install path and package manager.\n- Run available verification commands before editing.\n- Patch stale docs, commands, and workflow assumptions first.\n- Open the smallest useful PR only after human approval.\n- Vega Lab action: mlx-mission\n- Vega Lab action: ops-kit\n- Vega Lab action: codex-mission\n- Vega Lab action: claude-mission\n- Vega Lab action: write-readme\n\n## Evidence\n- Repository: KBLLR/corex-chat-mac\n- Description: Core-X native macOS chat and mission observation client\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Finding: README missing from the synced repository snapshot.\n- Finding: No test/check/lint script detected from package metadata.\n- Risk: New contributors and agents lack a clear entrypoint.",
+        "evidence": [
+          "Repository: KBLLR/corex-chat-mac",
+          "Description: Core-X native macOS chat and mission observation client",
+          "Adoption kind: ignore",
+          "Capabilities: none",
+          "House skills: mine-execution",
+          "Finding: README missing from the synced repository snapshot.",
+          "Finding: No test/check/lint script detected from package metadata.",
+          "Risk: New contributors and agents lack a clear entrypoint."
+        ]
+      },
+      {
+        "kind": "deployment",
+        "title": "corex-chat-mac Deployment Plan",
+        "suggestedPath": "docs/deployment-plan.md",
+        "body": "# Deployment Plan: KBLLR/corex-chat-mac\n\n## Known Deployment Evidence\n- No workflow or deployment config detected in synced key files.\n\n## Draft Checks\n- Identify expected host and runtime.\n- Document build command, output directory, and required environment variables.\n- Verify preview URL and production URL checks.\n- Keep deploy authority manual; Vega Lab drafts plans and inbox items only.\n\n## Evidence\n- Repository: KBLLR/corex-chat-mac\n- Description: Core-X native macOS chat and mission observation client\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Finding: README missing from the synced repository snapshot.\n- Finding: No test/check/lint script detected from package metadata.\n- Risk: New contributors and agents lack a clear entrypoint.",
+        "evidence": [
+          "Repository: KBLLR/corex-chat-mac",
+          "Description: Core-X native macOS chat and mission observation client",
+          "Adoption kind: ignore",
+          "Capabilities: none",
+          "House skills: mine-execution",
+          "Finding: README missing from the synced repository snapshot.",
+          "Finding: No test/check/lint script detected from package metadata.",
+          "Risk: New contributors and agents lack a clear entrypoint."
+        ]
+      },
+      {
+        "kind": "testing",
+        "title": "corex-chat-mac Test Plan",
+        "suggestedPath": "docs/test-plan.md",
+        "body": "# Test Plan: KBLLR/corex-chat-mac\n\n## Available Commands\n- No test/check/build script detected from synced package metadata.\n\n## Minimum Verification Contract\n- Document one install command.\n- Document one fast smoke command.\n- Document one release/build command when deployable.\n- If no commands exist, create a tracked issue or action item before implementation work.\n\n## Evidence\n- Repository: KBLLR/corex-chat-mac\n- Description: Core-X native macOS chat and mission observation client\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Finding: README missing from the synced repository snapshot.\n- Finding: No test/check/lint script detected from package metadata.\n- Risk: New contributors and agents lack a clear entrypoint.",
+        "evidence": [
+          "Repository: KBLLR/corex-chat-mac",
+          "Description: Core-X native macOS chat and mission observation client",
+          "Adoption kind: ignore",
+          "Capabilities: none",
+          "House skills: mine-execution",
+          "Finding: README missing from the synced repository snapshot.",
+          "Finding: No test/check/lint script detected from package metadata.",
+          "Risk: New contributors and agents lack a clear entrypoint."
+        ]
+      },
+      {
+        "kind": "action-item",
+        "title": "corex-chat-mac Action Item Draft",
+        "suggestedPath": "ops/action-item.md",
+        "body": "# Action Item Draft: KBLLR/corex-chat-mac\n\n## Recommended Actions\n- readme: Make corex-chat-mac README-ready\n- testing: Define verification for corex-chat-mac\n\n## Mission Target\n- Local MLX\n\n## Evidence\n- Repository: KBLLR/corex-chat-mac\n- Description: Core-X native macOS chat and mission observation client\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Finding: README missing from the synced repository snapshot.\n- Finding: No test/check/lint script detected from package metadata.\n- Risk: New contributors and agents lack a clear entrypoint.\n- Risk: Maintenance work has no obvious verification command.\n- Health flag: missing-readme",
+        "evidence": [
+          "Repository: KBLLR/corex-chat-mac",
+          "Description: Core-X native macOS chat and mission observation client",
+          "Adoption kind: ignore",
+          "Capabilities: none",
+          "House skills: mine-execution",
+          "Finding: README missing from the synced repository snapshot.",
+          "Finding: No test/check/lint script detected from package metadata.",
+          "Risk: New contributors and agents lack a clear entrypoint.",
+          "Risk: Maintenance work has no obvious verification command.",
+          "Health flag: missing-readme"
+        ]
+      }
+    ],
+    "evidence": [
+      "Repository: KBLLR/corex-chat-mac",
+      "Description: Core-X native macOS chat and mission observation client",
+      "Adoption kind: ignore",
+      "Capabilities: none",
+      "House skills: mine-execution",
+      "Finding: README missing from the synced repository snapshot.",
+      "Finding: No test/check/lint script detected from package metadata.",
+      "Risk: New contributors and agents lack a clear entrypoint.",
+      "Risk: Maintenance work has no obvious verification command.",
+      "Health flag: missing-readme",
+      "Health flag: private",
+      "Action item: Make corex-chat-mac README-ready"
+    ],
+    "recommendedActions": [
+      "mlx-mission",
+      "ops-kit",
+      "codex-mission",
+      "claude-mission",
+      "write-readme",
+      "readme:vega-lab:readme:kbllr-corex-chat-mac",
+      "testing:vega-lab:testing:kbllr-corex-chat-mac",
       "review-draft-only"
     ]
   },
@@ -13599,7 +13724,7 @@
   },
   {
     "nwo": "KBLLR/vega-lab",
-    "generatedAt": "2026-11-11T04:59:54.000Z",
+    "generatedAt": "2026-11-12T06:02:33.000Z",
     "target": "mlx",
     "artifacts": [
       {
