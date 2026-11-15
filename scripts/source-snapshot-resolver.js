@@ -693,7 +693,7 @@ async function readReposFromInput(filePath) {
   return [];
 }
 
-function parseArgs(argv = process.argv.slice(2)) {
+export function parseArgs(argv = process.argv.slice(2)) {
   const options = {
     repos: [],
     input: null,
@@ -704,6 +704,7 @@ function parseArgs(argv = process.argv.slice(2)) {
     projectRoot,
     cacheDir: null,
     json: false,
+    allowPrivate: false,
   };
   for (let index = 0; index < argv.length; index += 1) {
     const arg = argv[index];
@@ -746,6 +747,9 @@ function parseArgs(argv = process.argv.slice(2)) {
       options.check = true;
     } else if (arg === "--json") {
       options.json = true;
+    } else if (arg === "--allow-private") {
+      // Explicit opt-in for a private repository the operator owns. Off by default.
+      options.allowPrivate = true;
     } else {
       throw new Error(`Unknown argument: ${arg}`);
     }
@@ -772,6 +776,7 @@ export async function runResolveSourceSnapshots(argv = process.argv.slice(2)) {
         projectRoot: options.projectRoot,
         cacheDir: options.cacheDir,
         ref: options.ref,
+        allowPrivate: options.allowPrivate,
       });
       results.push({
         ok: true,
