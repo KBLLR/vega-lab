@@ -581,6 +581,29 @@
     ]
   },
   {
+    "nwo": "KBLLR/core-x-design-system",
+    "inspectedAt": "2026-11-14T11:00:29.000Z",
+    "files": {
+      "hasReadme": true,
+      "packageManagers": [
+        "npm"
+      ],
+      "workflows": [],
+      "deploymentConfigs": [],
+      "testScripts": [],
+      "buildScripts": []
+    },
+    "findings": [
+      "No test/check/lint script detected from package metadata.",
+      "No build script detected from package metadata.",
+      "No workflow or deployment config detected in synced key files."
+    ],
+    "risks": [
+      "Maintenance work has no obvious verification command.",
+      "Deployment readiness is unclear."
+    ]
+  },
+  {
     "nwo": "KBLLR/core-x-wiki",
     "inspectedAt": "2026-11-13T00:37:04.000Z",
     "files": {
@@ -2792,7 +2815,7 @@
   },
   {
     "nwo": "KBLLR/vega-lab",
-    "inspectedAt": "2026-11-13T05:19:48.000Z",
+    "inspectedAt": "2026-11-14T05:12:55.000Z",
     "files": {
       "hasReadme": true,
       "packageManagers": [

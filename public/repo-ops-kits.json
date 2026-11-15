@@ -2661,6 +2661,131 @@
     ]
   },
   {
+    "nwo": "KBLLR/core-x-design-system",
+    "generatedAt": "2026-11-14T11:00:29.000Z",
+    "target": "mlx",
+    "artifacts": [
+      {
+        "kind": "readme",
+        "title": "core-x-design-system README Draft",
+        "suggestedPath": "README.md",
+        "body": "# core-x-design-system\n\ncore-x-design-system needs a concise purpose statement before broader core-x adoption.\n\n## Vega Lab Fit\n- Classification: house\n- Capabilities: frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n\n## Local Setup\n- Package managers: npm\n- Document install, dev, build, and verification commands before broad reuse.\n- Keep runtime assumptions explicit; prefer local MLX/OpenResponses for model-assisted work.\n\n## Verification\n- Define a lint/test/build command before code edits.\n\n## Evidence\n- Repository: KBLLR/core-x-design-system\n- Adoption kind: house\n- Capabilities: frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: No build script detected from package metadata.",
+        "evidence": [
+          "Repository: KBLLR/core-x-design-system",
+          "Adoption kind: house",
+          "Capabilities: frontend-ui",
+          "House skills: repo-discovery, repo-adoption, mine-execution",
+          "Finding: No test/check/lint script detected from package metadata.",
+          "Finding: No build script detected from package metadata."
+        ]
+      },
+      {
+        "kind": "agents",
+        "title": "core-x-design-system AGENTS Draft",
+        "suggestedPath": "AGENTS.md",
+        "body": "# core-x-design-system Agents\n\n## Product Truth\n- Repository: KBLLR/core-x-design-system\n- Vega Lab classification: house\n- Active mission target: Local MLX\n\n## Operating Rules\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\n\n## Commands\n- Add the smallest reliable verification command.\n\n## Agent Boundaries\n- Do not mutate deployment, secrets, or release configuration without explicit approval.\n- Prefer draft plans and reviewable diffs over broad automation.\n- Preserve existing product direction; use Vega Lab evidence before adding new abstractions.",
+        "evidence": [
+          "Repository: KBLLR/core-x-design-system",
+          "Adoption kind: house",
+          "Capabilities: frontend-ui",
+          "House skills: repo-discovery, repo-adoption, mine-execution",
+          "Finding: No test/check/lint script detected from package metadata.",
+          "Finding: No build script detected from package metadata."
+        ]
+      },
+      {
+        "kind": "maintenance",
+        "title": "core-x-design-system Maintenance Plan",
+        "suggestedPath": "docs/maintenance-plan.md",
+        "body": "# Maintenance Plan: KBLLR/core-x-design-system\n\n## Current Signals\n- Health flag: private\n- No test/check/lint script detected from package metadata.\n- No build script detected from package metadata.\n- No workflow or deployment config detected in synced key files.\n\n## Recommended Pass\n- Confirm install path and package manager.\n- Run available verification commands before editing.\n- Patch stale docs, commands, and workflow assumptions first.\n- Open the smallest useful PR only after human approval.\n- Vega Lab action: mlx-mission\n- Vega Lab action: ops-kit\n- Vega Lab action: codex-mission\n- Vega Lab action: claude-mission\n- Vega Lab action: house-integration\n\n## Evidence\n- Repository: KBLLR/core-x-design-system\n- Adoption kind: house\n- Capabilities: frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: No build script detected from package metadata.\n- Finding: No workflow or deployment config detected in synced key files.\n- Risk: Maintenance work has no obvious verification command.",
+        "evidence": [
+          "Repository: KBLLR/core-x-design-system",
+          "Adoption kind: house",
+          "Capabilities: frontend-ui",
+          "House skills: repo-discovery, repo-adoption, mine-execution",
+          "Finding: No test/check/lint script detected from package metadata.",
+          "Finding: No build script detected from package metadata.",
+          "Finding: No workflow or deployment config detected in synced key files.",
+          "Risk: Maintenance work has no obvious verification command."
+        ]
+      },
+      {
+        "kind": "deployment",
+        "title": "core-x-design-system Deployment Plan",
+        "suggestedPath": "docs/deployment-plan.md",
+        "body": "# Deployment Plan: KBLLR/core-x-design-system\n\n## Known Deployment Evidence\n- No workflow or deployment config detected in synced key files.\n\n## Draft Checks\n- Identify expected host and runtime.\n- Document build command, output directory, and required environment variables.\n- Verify preview URL and production URL checks.\n- Keep deploy authority manual; Vega Lab drafts plans and inbox items only.\n\n## Evidence\n- Repository: KBLLR/core-x-design-system\n- Adoption kind: house\n- Capabilities: frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: No build script detected from package metadata.\n- Finding: No workflow or deployment config detected in synced key files.\n- Risk: Maintenance work has no obvious verification command.",
+        "evidence": [
+          "Repository: KBLLR/core-x-design-system",
+          "Adoption kind: house",
+          "Capabilities: frontend-ui",
+          "House skills: repo-discovery, repo-adoption, mine-execution",
+          "Finding: No test/check/lint script detected from package metadata.",
+          "Finding: No build script detected from package metadata.",
+          "Finding: No workflow or deployment config detected in synced key files.",
+          "Risk: Maintenance work has no obvious verification command."
+        ]
+      },
+      {
+        "kind": "testing",
+        "title": "core-x-design-system Test Plan",
+        "suggestedPath": "docs/test-plan.md",
+        "body": "# Test Plan: KBLLR/core-x-design-system\n\n## Available Commands\n- No test/check/build script detected from synced package metadata.\n\n## Minimum Verification Contract\n- Document one install command.\n- Document one fast smoke command.\n- Document one release/build command when deployable.\n- If no commands exist, create a tracked issue or action item before implementation work.\n\n## Evidence\n- Repository: KBLLR/core-x-design-system\n- Adoption kind: house\n- Capabilities: frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: No build script detected from package metadata.\n- Finding: No workflow or deployment config detected in synced key files.\n- Risk: Maintenance work has no obvious verification command.",
+        "evidence": [
+          "Repository: KBLLR/core-x-design-system",
+          "Adoption kind: house",
+          "Capabilities: frontend-ui",
+          "House skills: repo-discovery, repo-adoption, mine-execution",
+          "Finding: No test/check/lint script detected from package metadata.",
+          "Finding: No build script detected from package metadata.",
+          "Finding: No workflow or deployment config detected in synced key files.",
+          "Risk: Maintenance work has no obvious verification command."
+        ]
+      },
+      {
+        "kind": "action-item",
+        "title": "core-x-design-system Action Item Draft",
+        "suggestedPath": "ops/action-item.md",
+        "body": "# Action Item Draft: KBLLR/core-x-design-system\n\n## Recommended Actions\n- testing: Define verification for core-x-design-system\n- deployment: Clarify deployment readiness for core-x-design-system\n\n## Mission Target\n- Local MLX\n\n## Evidence\n- Repository: KBLLR/core-x-design-system\n- Adoption kind: house\n- Capabilities: frontend-ui\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: No build script detected from package metadata.\n- Finding: No workflow or deployment config detected in synced key files.\n- Risk: Maintenance work has no obvious verification command.\n- Risk: Deployment readiness is unclear.\n- Health flag: private",
+        "evidence": [
+          "Repository: KBLLR/core-x-design-system",
+          "Adoption kind: house",
+          "Capabilities: frontend-ui",
+          "House skills: repo-discovery, repo-adoption, mine-execution",
+          "Finding: No test/check/lint script detected from package metadata.",
+          "Finding: No build script detected from package metadata.",
+          "Finding: No workflow or deployment config detected in synced key files.",
+          "Risk: Maintenance work has no obvious verification command.",
+          "Risk: Deployment readiness is unclear.",
+          "Health flag: private"
+        ]
+      }
+    ],
+    "evidence": [
+      "Repository: KBLLR/core-x-design-system",
+      "Adoption kind: house",
+      "Capabilities: frontend-ui",
+      "House skills: repo-discovery, repo-adoption, mine-execution",
+      "Finding: No test/check/lint script detected from package metadata.",
+      "Finding: No build script detected from package metadata.",
+      "Finding: No workflow or deployment config detected in synced key files.",
+      "Risk: Maintenance work has no obvious verification command.",
+      "Risk: Deployment readiness is unclear.",
+      "Health flag: private",
+      "Action item: Define verification for core-x-design-system",
+      "Action item: Clarify deployment readiness for core-x-design-system"
+    ],
+    "recommendedActions": [
+      "mlx-mission",
+      "ops-kit",
+      "codex-mission",
+      "claude-mission",
+      "house-integration",
+      "testing:vega-lab:testing:kbllr-core-x-design-system",
+      "deployment:vega-lab:deployment:kbllr-core-x-design-system",
+      "review-draft-only"
+    ]
+  },
+  {
     "nwo": "KBLLR/core-x-wiki",
     "generatedAt": "2026-11-13T00:37:04.000Z",
     "target": "mlx",
@@ -13724,7 +13849,7 @@
   },
   {
     "nwo": "KBLLR/vega-lab",
-    "generatedAt": "2026-11-13T05:19:48.000Z",
+    "generatedAt": "2026-11-14T05:12:55.000Z",
     "target": "mlx",
     "artifacts": [
       {
