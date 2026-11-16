@@ -68,3 +68,9 @@
 - **Parked Work Boundary:** Codex release hygiene and external repo mutations are parked. Do not modify or push changes to other houses or the main repository root.
 - **Evidence Curation:** Utilize OCR at `/v1/ocr/*` solely for visual evidence extraction from screenshots and diagrams. Do not use OCR as a general dialogue runtime.
 - **Reference Docs:** Refer to [agent-briefing-current-plan.md](docs/agent-briefing-current-plan.md) and [repo-star-observatory-audit-2026-06-12.md](docs/repo-star-observatory-audit-2026-06-12.md) for identity, contracts, and architecture definitions.
+
+## Core-X Design System
+
+- Source of truth: https://github.com/KBLLR/core-x-design-system (`tokens.json`, components, the Swift glass reference).
+- Skill for native macOS and SwiftUI work: `skills/core-x-native/SKILL.md` in that repo.
+- Shape rule: glass is the one rounded layer (16px surfaces, capsule controls); all other content is square.
