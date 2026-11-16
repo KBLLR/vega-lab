@@ -8,6 +8,7 @@ import path from "node:path";
 import { buildSkillCandidateIngestion } from "../scripts/build-skill-candidates.js";
 import {
   checkSourceSnapshot,
+  parseArgs,
   resolveSourceSnapshot,
   runResolveSourceSnapshots,
   stablePrettyStringify,
@@ -206,6 +207,10 @@ async function main() {
     const privateClient = new FixtureGitHubClient();
     privateClient.private = true;
     await assertRejectsCode(resolveSourceSnapshot(repo, { projectRoot, client: privateClient, write: false }), "repository_unavailable");
+    const allowedPrivate = await resolveSourceSnapshot(repo, { projectRoot, client: privateClient, write: false, allowPrivate: true });
+    assert.equal(allowedPrivate.snapshot.metadata.private, true);
+    assert.equal(parseArgs(["--repo=owner/name"]).allowPrivate, false);
+    assert.equal(parseArgs(["--repo=owner/name", "--allow-private"]).allowPrivate, true);
 
     const truncatedClient = new FixtureGitHubClient();
     truncatedClient.truncatedTree = true;
