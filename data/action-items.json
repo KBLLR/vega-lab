@@ -406,7 +406,6 @@
       "mine-execution"
     ],
     "linkedRules": [
-      "Review license status before adoption or redistribution work.",
       "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
     ],
     "linkedFlows": [
@@ -441,7 +440,6 @@
       "mine-execution"
     ],
     "linkedRules": [
-      "Review license status before adoption or redistribution work.",
       "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
     ],
     "linkedFlows": [
@@ -484,6 +482,36 @@
     "source": "daily-ops",
     "createdAt": "2026-11-13T01:08:56.000Z",
     "updatedAt": "2026-11-13T01:08:56.000Z"
+  },
+  {
+    "id": "vega-lab:skill:kbllr-code-smart-campus",
+    "kind": "skill",
+    "status": "open",
+    "priority": "normal",
+    "nwo": "KBLLR/code-smart-campus",
+    "title": "Extract reusable skill signals from code-smart-campus",
+    "summary": "The repo maps to tooling, agents, templates, or workflows that can teach core-x.",
+    "evidence": [],
+    "linkedSkills": [
+      "repo-discovery",
+      "skill-extraction",
+      "repo-adoption",
+      "mine-execution"
+    ],
+    "linkedRules": [
+      "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
+    ],
+    "linkedFlows": [
+      "research-queue-flow",
+      "skill-extraction-flow",
+      "adoption-decision-flow",
+      "news-digest-refresh",
+      "mine-execution-flow"
+    ],
+    "draft": "Extract a reusable Vega Lab skill/rule/flow package from KBLLR/code-smart-campus, grounded in capabilities: agent-workflows, data-pipeline.",
+    "source": "weekly-research",
+    "createdAt": "2026-11-09T10:58:39.000Z",
+    "updatedAt": "2026-11-09T10:58:39.000Z"
   },
   {
     "id": "vega-lab:deployment:kbllr-avatar-labs-cloud-20261105",
@@ -1209,7 +1237,6 @@
       "Deployment readiness is unclear."
     ],
     "linkedSkills": [
-      "repo-discovery",
       "skill-extraction",
       "repo-adoption",
       "mine-execution"
@@ -1221,7 +1248,6 @@
       "research-queue-flow",
       "skill-extraction-flow",
       "adoption-decision-flow",
-      "news-digest-refresh",
       "mine-execution-flow"
     ],
     "draft": "Extract a reusable Vega Lab skill/rule/flow package from KBLLR/Leagentdiary, grounded in capabilities: agent-workflows, ml-ai, frontend-ui.",
@@ -2116,6 +2142,38 @@
     "updatedAt": "2025-11-17T01:52:43.000Z"
   },
   {
+    "id": "vega-lab:maintenance:kbllr-3dmodel-splats-stager",
+    "kind": "maintenance",
+    "status": "open",
+    "priority": "normal",
+    "nwo": "KBLLR/3dmodel-splats-stager",
+    "title": "Run a maintenance pass on 3dmodel-splats-stager",
+    "summary": "Stale activity increases dependency, workflow, and deployment risk.",
+    "evidence": [
+      "Repository appears stale based on last activity.",
+      "Dependencies, build targets, or deployment assumptions may be outdated."
+    ],
+    "linkedSkills": [
+      "repo-discovery",
+      "repo-adoption",
+      "mine-execution"
+    ],
+    "linkedRules": [
+      "Validate maintenance risk and current ecosystem fit before committing to adoption.",
+      "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
+    ],
+    "linkedFlows": [
+      "research-queue-flow",
+      "adoption-decision-flow",
+      "news-digest-refresh",
+      "mine-execution-flow"
+    ],
+    "draft": "Draft a maintenance plan for KBLLR/3dmodel-splats-stager: verify dependencies, run available checks, update stale assumptions, and identify a smallest useful PR. Rules: Validate maintenance risk and current ecosystem fit before committing to adoption. Prioritize README, maintenance, and execution readiness before broader ecosystem integration.",
+    "source": "daily-ops",
+    "createdAt": "2025-11-17T01:49:33.000Z",
+    "updatedAt": "2025-11-17T01:49:33.000Z"
+  },
+  {
     "id": "vega-lab:testing:kbllr-3dmodel-splats-stager",
     "kind": "testing",
     "status": "open",
@@ -2184,16 +2242,18 @@
     "updatedAt": "2025-11-17T01:49:33.000Z"
   },
   {
-    "id": "vega-lab:testing:kbllr-ada-agents",
-    "kind": "testing",
+    "id": "vega-lab:maintenance:kbllr-ada-agents",
+    "kind": "maintenance",
     "status": "open",
     "priority": "normal",
     "nwo": "KBLLR/ada-agents",
-    "title": "Define verification for ada-agents",
-    "summary": "Package metadata does not expose an obvious test, check, or lint command.",
+    "title": "Run a maintenance pass on ada-agents",
+    "summary": "Stale activity increases dependency, workflow, and deployment risk.",
     "evidence": [
       "No test/check/lint script detected from package metadata.",
-      "Maintenance work has no obvious verification command."
+      "Repository appears stale based on last activity.",
+      "Maintenance work has no obvious verification command.",
+      "Dependencies, build targets, or deployment assumptions may be outdated."
     ],
     "linkedSkills": [
       "skill-extraction",
@@ -2203,6 +2263,43 @@
     "linkedRules": [
       "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.",
       "Review license status before adoption or redistribution work.",
+      "Validate maintenance risk and current ecosystem fit before committing to adoption.",
+      "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
+    ],
+    "linkedFlows": [
+      "research-queue-flow",
+      "skill-extraction-flow",
+      "adoption-decision-flow",
+      "mine-execution-flow"
+    ],
+    "draft": "Draft a maintenance plan for KBLLR/ada-agents: verify dependencies, run available checks, update stale assumptions, and identify a smallest useful PR. Rules: Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house. Review license status before adoption or redistribution work. Validate maintenance risk and current ecosystem fit before committing to adoption. Prioritize README, maintenance, and execution readiness before broader ecosystem integration.",
+    "source": "daily-ops",
+    "createdAt": "2025-11-17T01:14:37.000Z",
+    "updatedAt": "2025-11-17T01:14:37.000Z"
+  },
+  {
+    "id": "vega-lab:testing:kbllr-ada-agents",
+    "kind": "testing",
+    "status": "open",
+    "priority": "normal",
+    "nwo": "KBLLR/ada-agents",
+    "title": "Define verification for ada-agents",
+    "summary": "Package metadata does not expose an obvious test, check, or lint command.",
+    "evidence": [
+      "No test/check/lint script detected from package metadata.",
+      "Repository appears stale based on last activity.",
+      "Maintenance work has no obvious verification command.",
+      "Dependencies, build targets, or deployment assumptions may be outdated."
+    ],
+    "linkedSkills": [
+      "skill-extraction",
+      "repo-adoption",
+      "mine-execution"
+    ],
+    "linkedRules": [
+      "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.",
+      "Review license status before adoption or redistribution work.",
+      "Validate maintenance risk and current ecosystem fit before committing to adoption.",
       "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
     ],
     "linkedFlows": [
@@ -2215,6 +2312,35 @@
     "source": "daily-ops",
     "createdAt": "2025-11-17T01:14:37.000Z",
     "updatedAt": "2025-11-17T01:14:37.000Z"
+  },
+  {
+    "id": "vega-lab:maintenance:kbllr-gen-avatar-debate",
+    "kind": "maintenance",
+    "status": "open",
+    "priority": "normal",
+    "nwo": "KBLLR/gen_avatar_debate",
+    "title": "Run a maintenance pass on gen_avatar_debate",
+    "summary": "Stale activity increases dependency, workflow, and deployment risk.",
+    "evidence": [
+      "Repository appears stale based on last activity.",
+      "Dependencies, build targets, or deployment assumptions may be outdated."
+    ],
+    "linkedSkills": [
+      "mine-execution"
+    ],
+    "linkedRules": [
+      "Review license status before adoption or redistribution work.",
+      "Validate maintenance risk and current ecosystem fit before committing to adoption.",
+      "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
+    ],
+    "linkedFlows": [
+      "research-queue-flow",
+      "mine-execution-flow"
+    ],
+    "draft": "Draft a maintenance plan for KBLLR/gen_avatar_debate: verify dependencies, run available checks, update stale assumptions, and identify a smallest useful PR. Rules: Review license status before adoption or redistribution work. Validate maintenance risk and current ecosystem fit before committing to adoption. Prioritize README, maintenance, and execution readiness before broader ecosystem integration.",
+    "source": "daily-ops",
+    "createdAt": "2025-11-16T20:58:46.000Z",
+    "updatedAt": "2025-11-16T20:58:46.000Z"
   },
   {
     "id": "vega-lab:testing:kbllr-gen-avatar-debate",

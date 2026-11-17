@@ -100,8 +100,12 @@
         "build"
       ]
     },
-    "findings": [],
-    "risks": []
+    "findings": [
+      "Repository appears stale based on last activity."
+    ],
+    "risks": [
+      "Dependencies, build targets, or deployment assumptions may be outdated."
+    ]
   },
   {
     "nwo": "KBLLR/ada-agents",
@@ -119,10 +123,12 @@
       "buildScripts": []
     },
     "findings": [
-      "No test/check/lint script detected from package metadata."
+      "No test/check/lint script detected from package metadata.",
+      "Repository appears stale based on last activity."
     ],
     "risks": [
-      "Maintenance work has no obvious verification command."
+      "Maintenance work has no obvious verification command.",
+      "Dependencies, build targets, or deployment assumptions may be outdated."
     ]
   },
   {
@@ -281,7 +287,7 @@
   },
   {
     "nwo": "KBLLR/Avatars-Lab",
-    "inspectedAt": "2026-11-12T21:51:05.000Z",
+    "inspectedAt": "2026-11-16T21:04:33.000Z",
     "files": {
       "hasReadme": true,
       "packageManagers": [
@@ -560,7 +566,7 @@
   },
   {
     "nwo": "KBLLR/core-x",
-    "inspectedAt": "2026-11-15T19:13:49.000Z",
+    "inspectedAt": "2026-11-16T22:03:38.000Z",
     "files": {
       "hasReadme": false,
       "packageManagers": [
@@ -582,7 +588,7 @@
   },
   {
     "nwo": "KBLLR/core-x-design-system",
-    "inspectedAt": "2026-11-15T18:58:26.000Z",
+    "inspectedAt": "2026-11-17T01:44:29.000Z",
     "files": {
       "hasReadme": true,
       "packageManagers": [
@@ -629,7 +635,7 @@
   },
   {
     "nwo": "KBLLR/corex-chat-mac",
-    "inspectedAt": "2026-11-15T19:13:54.000Z",
+    "inspectedAt": "2026-11-17T00:13:38.000Z",
     "files": {
       "hasReadme": false,
       "packageManagers": [
@@ -1059,8 +1065,12 @@
         "build"
       ]
     },
-    "findings": [],
-    "risks": []
+    "findings": [
+      "Repository appears stale based on last activity."
+    ],
+    "risks": [
+      "Dependencies, build targets, or deployment assumptions may be outdated."
+    ]
   },
   {
     "nwo": "KBLLR/gen-idea-lab",
@@ -2162,7 +2172,7 @@
   },
   {
     "nwo": "KBLLR/rigging-palace",
-    "inspectedAt": "2026-11-05T05:41:03.000Z",
+    "inspectedAt": "2026-11-16T21:35:32.000Z",
     "files": {
       "hasReadme": true,
       "packageManagers": [
@@ -2815,7 +2825,7 @@
   },
   {
     "nwo": "KBLLR/vega-lab",
-    "inspectedAt": "2026-11-15T05:05:18.000Z",
+    "inspectedAt": "2026-11-17T00:01:34.000Z",
     "files": {
       "hasReadme": true,
       "packageManagers": [
