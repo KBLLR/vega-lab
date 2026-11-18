@@ -265,6 +265,7 @@
     "evidence": [
       "README missing from the synced repository snapshot.",
       "No test/check/lint script detected from package metadata.",
+      "Repository appears stale based on last activity.",
       "New contributors and agents lack a clear entrypoint.",
       "Maintenance work has no obvious verification command."
     ],
@@ -276,6 +277,7 @@
     "linkedRules": [
       "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.",
       "Review license status before adoption or redistribution work.",
+      "Validate maintenance risk and current ecosystem fit before committing to adoption.",
       "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
     ],
     "linkedFlows": [
@@ -1985,6 +1987,40 @@
     "updatedAt": "2025-11-18T21:54:17.000Z"
   },
   {
+    "id": "vega-lab:maintenance:kbllr-modal-apps-lab",
+    "kind": "maintenance",
+    "status": "open",
+    "priority": "normal",
+    "nwo": "KBLLR/modal-apps-lab",
+    "title": "Run a maintenance pass on modal-apps-lab",
+    "summary": "Stale activity increases dependency, workflow, and deployment risk.",
+    "evidence": [
+      "No test/check/lint script detected from package metadata.",
+      "No build script detected from package metadata.",
+      "No workflow or deployment config detected in synced key files.",
+      "Repository appears stale based on last activity.",
+      "Maintenance work has no obvious verification command."
+    ],
+    "linkedSkills": [
+      "repo-adoption",
+      "mine-execution"
+    ],
+    "linkedRules": [
+      "Review license status before adoption or redistribution work.",
+      "Validate maintenance risk and current ecosystem fit before committing to adoption.",
+      "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
+    ],
+    "linkedFlows": [
+      "research-queue-flow",
+      "adoption-decision-flow",
+      "mine-execution-flow"
+    ],
+    "draft": "Draft a maintenance plan for KBLLR/modal-apps-lab: verify dependencies, run available checks, update stale assumptions, and identify a smallest useful PR. Rules: Review license status before adoption or redistribution work. Validate maintenance risk and current ecosystem fit before committing to adoption. Prioritize README, maintenance, and execution readiness before broader ecosystem integration.",
+    "source": "daily-ops",
+    "createdAt": "2025-11-17T13:01:13.000Z",
+    "updatedAt": "2025-11-17T13:01:13.000Z"
+  },
+  {
     "id": "vega-lab:testing:kbllr-modal-apps-lab",
     "kind": "testing",
     "status": "open",
@@ -1996,8 +2032,8 @@
       "No test/check/lint script detected from package metadata.",
       "No build script detected from package metadata.",
       "No workflow or deployment config detected in synced key files.",
-      "Maintenance work has no obvious verification command.",
-      "Deployment readiness is unclear."
+      "Repository appears stale based on last activity.",
+      "Maintenance work has no obvious verification command."
     ],
     "linkedSkills": [
       "repo-adoption",
@@ -2005,6 +2041,7 @@
     ],
     "linkedRules": [
       "Review license status before adoption or redistribution work.",
+      "Validate maintenance risk and current ecosystem fit before committing to adoption.",
       "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
     ],
     "linkedFlows": [
@@ -2029,8 +2066,8 @@
       "No test/check/lint script detected from package metadata.",
       "No build script detected from package metadata.",
       "No workflow or deployment config detected in synced key files.",
-      "Maintenance work has no obvious verification command.",
-      "Deployment readiness is unclear."
+      "Repository appears stale based on last activity.",
+      "Maintenance work has no obvious verification command."
     ],
     "linkedSkills": [
       "repo-adoption",
@@ -2038,6 +2075,7 @@
     ],
     "linkedRules": [
       "Review license status before adoption or redistribution work.",
+      "Validate maintenance risk and current ecosystem fit before committing to adoption.",
       "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
     ],
     "linkedFlows": [
@@ -2051,16 +2089,17 @@
     "updatedAt": "2025-11-17T13:01:13.000Z"
   },
   {
-    "id": "vega-lab:testing:kbllr-htdi-agentic-framework",
-    "kind": "testing",
+    "id": "vega-lab:maintenance:kbllr-htdi-agentic-framework",
+    "kind": "maintenance",
     "status": "open",
     "priority": "normal",
     "nwo": "KBLLR/htdi-agentic-framework",
-    "title": "Define verification for htdi-agentic-framework",
-    "summary": "Package metadata does not expose an obvious test, check, or lint command.",
+    "title": "Run a maintenance pass on htdi-agentic-framework",
+    "summary": "Stale activity increases dependency, workflow, and deployment risk.",
     "evidence": [
       "README missing from the synced repository snapshot.",
       "No test/check/lint script detected from package metadata.",
+      "Repository appears stale based on last activity.",
       "New contributors and agents lack a clear entrypoint.",
       "Maintenance work has no obvious verification command."
     ],
@@ -2072,6 +2111,44 @@
     "linkedRules": [
       "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.",
       "Review license status before adoption or redistribution work.",
+      "Validate maintenance risk and current ecosystem fit before committing to adoption.",
+      "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
+    ],
+    "linkedFlows": [
+      "research-queue-flow",
+      "skill-extraction-flow",
+      "adoption-decision-flow",
+      "mine-execution-flow"
+    ],
+    "draft": "Draft a maintenance plan for KBLLR/htdi-agentic-framework: verify dependencies, run available checks, update stale assumptions, and identify a smallest useful PR. Rules: Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house. Review license status before adoption or redistribution work. Validate maintenance risk and current ecosystem fit before committing to adoption. Prioritize README, maintenance, and execution readiness before broader ecosystem integration.",
+    "source": "daily-ops",
+    "createdAt": "2025-11-17T08:38:26.000Z",
+    "updatedAt": "2025-11-17T08:38:26.000Z"
+  },
+  {
+    "id": "vega-lab:testing:kbllr-htdi-agentic-framework",
+    "kind": "testing",
+    "status": "open",
+    "priority": "normal",
+    "nwo": "KBLLR/htdi-agentic-framework",
+    "title": "Define verification for htdi-agentic-framework",
+    "summary": "Package metadata does not expose an obvious test, check, or lint command.",
+    "evidence": [
+      "README missing from the synced repository snapshot.",
+      "No test/check/lint script detected from package metadata.",
+      "Repository appears stale based on last activity.",
+      "New contributors and agents lack a clear entrypoint.",
+      "Maintenance work has no obvious verification command."
+    ],
+    "linkedSkills": [
+      "skill-extraction",
+      "repo-adoption",
+      "mine-execution"
+    ],
+    "linkedRules": [
+      "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.",
+      "Review license status before adoption or redistribution work.",
+      "Validate maintenance risk and current ecosystem fit before committing to adoption.",
       "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
     ],
     "linkedFlows": [
@@ -4322,6 +4399,37 @@
     "updatedAt": "2025-02-12T19:06:32.000Z"
   },
   {
+    "id": "vega-lab:testing:kbllr-simple-flask-api-restx",
+    "kind": "testing",
+    "status": "open",
+    "priority": "normal",
+    "nwo": "KBLLR/simple-flask-api-restx",
+    "title": "Define verification for simple-flask-api-restx",
+    "summary": "Package metadata does not expose an obvious test, check, or lint command.",
+    "evidence": [
+      "No test/check/lint script detected from package metadata.",
+      "No build script detected from package metadata.",
+      "Maintenance work has no obvious verification command."
+    ],
+    "linkedSkills": [
+      "repo-adoption",
+      "mine-execution"
+    ],
+    "linkedRules": [
+      "Treat external runtimes and APIs as configurable integrations with explicit environment requirements.",
+      "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
+    ],
+    "linkedFlows": [
+      "research-queue-flow",
+      "adoption-decision-flow",
+      "mine-execution-flow"
+    ],
+    "draft": "Draft a verification plan for KBLLR/simple-flask-api-restx: add or document lint/test/build commands and define the smallest smoke test agents should run before edits.",
+    "source": "daily-ops",
+    "createdAt": "2025-02-04T12:41:49.000Z",
+    "updatedAt": "2025-02-04T12:41:49.000Z"
+  },
+  {
     "id": "vega-lab:maintenance:kbllr-simple-flask-api-restx",
     "kind": "maintenance",
     "status": "open",
@@ -4351,40 +4459,6 @@
       "mine-execution-flow"
     ],
     "draft": "Draft a maintenance plan for KBLLR/simple-flask-api-restx: verify dependencies, run available checks, update stale assumptions, and identify a smallest useful PR. Rules: Treat external runtimes and APIs as configurable integrations with explicit environment requirements. Validate maintenance risk and current ecosystem fit before committing to adoption. Prioritize README, maintenance, and execution readiness before broader ecosystem integration.",
-    "source": "daily-ops",
-    "createdAt": "2025-02-04T12:41:49.000Z",
-    "updatedAt": "2025-02-04T12:41:49.000Z"
-  },
-  {
-    "id": "vega-lab:testing:kbllr-simple-flask-api-restx",
-    "kind": "testing",
-    "status": "open",
-    "priority": "normal",
-    "nwo": "KBLLR/simple-flask-api-restx",
-    "title": "Define verification for simple-flask-api-restx",
-    "summary": "Package metadata does not expose an obvious test, check, or lint command.",
-    "evidence": [
-      "No test/check/lint script detected from package metadata.",
-      "No build script detected from package metadata.",
-      "Repository appears stale based on last activity.",
-      "Maintenance work has no obvious verification command.",
-      "Dependencies, build targets, or deployment assumptions may be outdated."
-    ],
-    "linkedSkills": [
-      "repo-adoption",
-      "mine-execution"
-    ],
-    "linkedRules": [
-      "Treat external runtimes and APIs as configurable integrations with explicit environment requirements.",
-      "Validate maintenance risk and current ecosystem fit before committing to adoption.",
-      "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
-    ],
-    "linkedFlows": [
-      "research-queue-flow",
-      "adoption-decision-flow",
-      "mine-execution-flow"
-    ],
-    "draft": "Draft a verification plan for KBLLR/simple-flask-api-restx: add or document lint/test/build commands and define the smallest smoke test agents should run before edits.",
     "source": "daily-ops",
     "createdAt": "2025-02-04T12:41:49.000Z",
     "updatedAt": "2025-02-04T12:41:49.000Z"

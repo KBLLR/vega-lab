@@ -365,101 +365,99 @@
   },
   {
     "nwo": "KBLLR/3dmodel-splats-stager",
-    "generatedAt": "2025-11-17T01:49:33.000Z",
+    "generatedAt": "2026-11-18T03:01:35.000Z",
     "target": "mlx",
     "artifacts": [
       {
         "kind": "readme",
         "title": "3dmodel-splats-stager README Draft",
         "suggestedPath": "README.md",
-        "body": "# 3dmodel-splats-stager\n\nA modern, high-performance 3D object stager specializing in Gaussian Splatting models, built with Three.js and Vite. This application enables advanced visualization of 3D models with sophisticated post-processing effects and real-time parameter adjustment.\n\n## Vega Lab Fit\n- Classification: house\n- Capabilities: frontend-ui, ml-ai\n- House skills: repo-discovery, repo-adoption, mine-execution\n\n## Local Setup\n- Package managers: npm, pnpm, npm-lock\n- Document install, dev, build, and verification commands before broad reuse.\n- Keep runtime assumptions explicit; prefer local MLX/OpenResponses for model-assisted work.\n\n## Verification\n- npm run lint\n- npm run test:scene\n- npm run test\n- npm run test:playwright\n- npm run build\n\n## Evidence\n- Repository: KBLLR/3dmodel-splats-stager\n- Description: A modern, high-performance 3D object stager specializing in Gaussian Splatting models, built with Three.js and Vite. This application enables advanced visualization of 3D models with sophisticated post-processing effects and real-time parameter adjustment.\n- Adoption kind: house\n- Capabilities: frontend-ui, ml-ai\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Finding: Repository appears stale based on last activity.",
+        "body": "# 3dmodel-splats-stager\n\nA modern, high-performance 3D object stager specializing in Gaussian Splatting models, built with Three.js and Vite. This application enables advanced visualization of 3D models with sophisticated post-processing effects and real-time parameter adjustment.\n\n## Vega Lab Fit\n- Classification: house\n- Capabilities: frontend-ui, ml-ai\n- House skills: repo-discovery, repo-adoption, mine-execution\n\n## Local Setup\n- Package managers: npm, npm-lock\n- Document install, dev, build, and verification commands before broad reuse.\n- Keep runtime assumptions explicit; prefer local MLX/OpenResponses for model-assisted work.\n\n## Verification\n- npm run lint\n- npm run test:scene\n- npm run test\n- npm run test:playwright\n- npm run build\n\n## Evidence\n- Repository: KBLLR/3dmodel-splats-stager\n- Description: A modern, high-performance 3D object stager specializing in Gaussian Splatting models, built with Three.js and Vite. This application enables advanced visualization of 3D models with sophisticated post-processing effects and real-time parameter adjustment.\n- Adoption kind: house\n- Capabilities: frontend-ui, ml-ai\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Action item: Run a maintenance pass on 3dmodel-splats-stager",
         "evidence": [
           "Repository: KBLLR/3dmodel-splats-stager",
           "Description: A modern, high-performance 3D object stager specializing in Gaussian Splatting models, built with Three.js and Vite. This application enables advanced visualization of 3D models with sophisticated post-processing effects and real-time parameter adjustment.",
           "Adoption kind: house",
           "Capabilities: frontend-ui, ml-ai",
           "House skills: repo-discovery, repo-adoption, mine-execution",
-          "Finding: Repository appears stale based on last activity."
+          "Action item: Run a maintenance pass on 3dmodel-splats-stager"
         ]
       },
       {
         "kind": "agents",
         "title": "3dmodel-splats-stager AGENTS Draft",
         "suggestedPath": "AGENTS.md",
-        "body": "# 3dmodel-splats-stager Agents\n\n## Product Truth\n- Repository: KBLLR/3dmodel-splats-stager\n- Vega Lab classification: house\n- Active mission target: Local MLX\n\n## Operating Rules\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\n\n## Commands\n- npm run lint\n- npm run test:scene\n- npm run test\n- npm run test:playwright\n- npm run build\n\n## Agent Boundaries\n- Do not mutate deployment, secrets, or release configuration without explicit approval.\n- Prefer draft plans and reviewable diffs over broad automation.\n- Preserve existing product direction; use Vega Lab evidence before adding new abstractions.",
+        "body": "# 3dmodel-splats-stager Agents\n\n## Product Truth\n- Repository: KBLLR/3dmodel-splats-stager\n- Vega Lab classification: house\n- Active mission target: Local MLX\n\n## Operating Rules\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\n\n## Commands\n- npm run lint\n- npm run test:scene\n- npm run test\n- npm run test:playwright\n- npm run build\n\n## Agent Boundaries\n- Do not mutate deployment, secrets, or release configuration without explicit approval.\n- Prefer draft plans and reviewable diffs over broad automation.\n- Preserve existing product direction; use Vega Lab evidence before adding new abstractions.",
         "evidence": [
           "Repository: KBLLR/3dmodel-splats-stager",
           "Description: A modern, high-performance 3D object stager specializing in Gaussian Splatting models, built with Three.js and Vite. This application enables advanced visualization of 3D models with sophisticated post-processing effects and real-time parameter adjustment.",
           "Adoption kind: house",
           "Capabilities: frontend-ui, ml-ai",
           "House skills: repo-discovery, repo-adoption, mine-execution",
-          "Finding: Repository appears stale based on last activity."
+          "Action item: Run a maintenance pass on 3dmodel-splats-stager"
         ]
       },
       {
         "kind": "maintenance",
         "title": "3dmodel-splats-stager Maintenance Plan",
         "suggestedPath": "docs/maintenance-plan.md",
-        "body": "# Maintenance Plan: KBLLR/3dmodel-splats-stager\n\n## Current Signals\n- Health flag: stale\n- Repository appears stale based on last activity.\n\n## Recommended Pass\n- Confirm install path and package manager.\n- Run available verification commands before editing.\n- Patch stale docs, commands, and workflow assumptions first.\n- Open the smallest useful PR only after human approval.\n- Vega Lab action: mlx-mission\n- Vega Lab action: ops-kit\n- Vega Lab action: codex-mission\n- Vega Lab action: claude-mission\n- Vega Lab action: maintenance-plan\n- Vega Lab action: house-integration\n\n## Evidence\n- Repository: KBLLR/3dmodel-splats-stager\n- Description: A modern, high-performance 3D object stager specializing in Gaussian Splatting models, built with Three.js and Vite. This application enables advanced visualization of 3D models with sophisticated post-processing effects and real-time parameter adjustment.\n- Adoption kind: house\n- Capabilities: frontend-ui, ml-ai\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Finding: Repository appears stale based on last activity.\n- Risk: Dependencies, build targets, or deployment assumptions may be outdated.\n- Health flag: stale",
+        "body": "# Maintenance Plan: KBLLR/3dmodel-splats-stager\n\n## Current Signals\n- No maintenance flags detected.\n\n## Recommended Pass\n- Confirm install path and package manager.\n- Run available verification commands before editing.\n- Patch stale docs, commands, and workflow assumptions first.\n- Open the smallest useful PR only after human approval.\n- Vega Lab action: mlx-mission\n- Vega Lab action: ops-kit\n- Vega Lab action: codex-mission\n- Vega Lab action: claude-mission\n- Vega Lab action: house-integration\n\n## Evidence\n- Repository: KBLLR/3dmodel-splats-stager\n- Description: A modern, high-performance 3D object stager specializing in Gaussian Splatting models, built with Three.js and Vite. This application enables advanced visualization of 3D models with sophisticated post-processing effects and real-time parameter adjustment.\n- Adoption kind: house\n- Capabilities: frontend-ui, ml-ai\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Action item: Run a maintenance pass on 3dmodel-splats-stager\n- Action item: Define verification for 3dmodel-splats-stager\n- Action item: Clarify deployment readiness for 3dmodel-splats-stager",
         "evidence": [
           "Repository: KBLLR/3dmodel-splats-stager",
           "Description: A modern, high-performance 3D object stager specializing in Gaussian Splatting models, built with Three.js and Vite. This application enables advanced visualization of 3D models with sophisticated post-processing effects and real-time parameter adjustment.",
           "Adoption kind: house",
           "Capabilities: frontend-ui, ml-ai",
           "House skills: repo-discovery, repo-adoption, mine-execution",
-          "Finding: Repository appears stale based on last activity.",
-          "Risk: Dependencies, build targets, or deployment assumptions may be outdated.",
-          "Health flag: stale"
+          "Action item: Run a maintenance pass on 3dmodel-splats-stager",
+          "Action item: Define verification for 3dmodel-splats-stager",
+          "Action item: Clarify deployment readiness for 3dmodel-splats-stager"
         ]
       },
       {
         "kind": "deployment",
         "title": "3dmodel-splats-stager Deployment Plan",
         "suggestedPath": "docs/deployment-plan.md",
-        "body": "# Deployment Plan: KBLLR/3dmodel-splats-stager\n\n## Known Deployment Evidence\n- Workflow: deploy.yml\n\n## Draft Checks\n- Identify expected host and runtime.\n- Document build command, output directory, and required environment variables.\n- Verify preview URL and production URL checks.\n- Keep deploy authority manual; Vega Lab drafts plans and inbox items only.\n\n## Evidence\n- Repository: KBLLR/3dmodel-splats-stager\n- Description: A modern, high-performance 3D object stager specializing in Gaussian Splatting models, built with Three.js and Vite. This application enables advanced visualization of 3D models with sophisticated post-processing effects and real-time parameter adjustment.\n- Adoption kind: house\n- Capabilities: frontend-ui, ml-ai\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Finding: Repository appears stale based on last activity.\n- Risk: Dependencies, build targets, or deployment assumptions may be outdated.\n- Health flag: stale",
+        "body": "# Deployment Plan: KBLLR/3dmodel-splats-stager\n\n## Known Deployment Evidence\n- Workflow: deploy.yml\n- Workflow: gitleaks.yml\n\n## Draft Checks\n- Identify expected host and runtime.\n- Document build command, output directory, and required environment variables.\n- Verify preview URL and production URL checks.\n- Keep deploy authority manual; Vega Lab drafts plans and inbox items only.\n\n## Evidence\n- Repository: KBLLR/3dmodel-splats-stager\n- Description: A modern, high-performance 3D object stager specializing in Gaussian Splatting models, built with Three.js and Vite. This application enables advanced visualization of 3D models with sophisticated post-processing effects and real-time parameter adjustment.\n- Adoption kind: house\n- Capabilities: frontend-ui, ml-ai\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Action item: Run a maintenance pass on 3dmodel-splats-stager\n- Action item: Define verification for 3dmodel-splats-stager\n- Action item: Clarify deployment readiness for 3dmodel-splats-stager",
         "evidence": [
           "Repository: KBLLR/3dmodel-splats-stager",
           "Description: A modern, high-performance 3D object stager specializing in Gaussian Splatting models, built with Three.js and Vite. This application enables advanced visualization of 3D models with sophisticated post-processing effects and real-time parameter adjustment.",
           "Adoption kind: house",
           "Capabilities: frontend-ui, ml-ai",
           "House skills: repo-discovery, repo-adoption, mine-execution",
-          "Finding: Repository appears stale based on last activity.",
-          "Risk: Dependencies, build targets, or deployment assumptions may be outdated.",
-          "Health flag: stale"
+          "Action item: Run a maintenance pass on 3dmodel-splats-stager",
+          "Action item: Define verification for 3dmodel-splats-stager",
+          "Action item: Clarify deployment readiness for 3dmodel-splats-stager"
         ]
       },
       {
         "kind": "testing",
         "title": "3dmodel-splats-stager Test Plan",
         "suggestedPath": "docs/test-plan.md",
-        "body": "# Test Plan: KBLLR/3dmodel-splats-stager\n\n## Available Commands\n- npm run lint\n- npm run test:scene\n- npm run test\n- npm run test:playwright\n- npm run build\n\n## Minimum Verification Contract\n- Document one install command.\n- Document one fast smoke command.\n- Document one release/build command when deployable.\n- If no commands exist, create a tracked issue or action item before implementation work.\n\n## Evidence\n- Repository: KBLLR/3dmodel-splats-stager\n- Description: A modern, high-performance 3D object stager specializing in Gaussian Splatting models, built with Three.js and Vite. This application enables advanced visualization of 3D models with sophisticated post-processing effects and real-time parameter adjustment.\n- Adoption kind: house\n- Capabilities: frontend-ui, ml-ai\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Finding: Repository appears stale based on last activity.\n- Risk: Dependencies, build targets, or deployment assumptions may be outdated.\n- Health flag: stale",
+        "body": "# Test Plan: KBLLR/3dmodel-splats-stager\n\n## Available Commands\n- npm run lint\n- npm run test:scene\n- npm run test\n- npm run test:playwright\n- npm run build\n\n## Minimum Verification Contract\n- Document one install command.\n- Document one fast smoke command.\n- Document one release/build command when deployable.\n- If no commands exist, create a tracked issue or action item before implementation work.\n\n## Evidence\n- Repository: KBLLR/3dmodel-splats-stager\n- Description: A modern, high-performance 3D object stager specializing in Gaussian Splatting models, built with Three.js and Vite. This application enables advanced visualization of 3D models with sophisticated post-processing effects and real-time parameter adjustment.\n- Adoption kind: house\n- Capabilities: frontend-ui, ml-ai\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Action item: Run a maintenance pass on 3dmodel-splats-stager\n- Action item: Define verification for 3dmodel-splats-stager\n- Action item: Clarify deployment readiness for 3dmodel-splats-stager",
         "evidence": [
           "Repository: KBLLR/3dmodel-splats-stager",
           "Description: A modern, high-performance 3D object stager specializing in Gaussian Splatting models, built with Three.js and Vite. This application enables advanced visualization of 3D models with sophisticated post-processing effects and real-time parameter adjustment.",
           "Adoption kind: house",
           "Capabilities: frontend-ui, ml-ai",
           "House skills: repo-discovery, repo-adoption, mine-execution",
-          "Finding: Repository appears stale based on last activity.",
-          "Risk: Dependencies, build targets, or deployment assumptions may be outdated.",
-          "Health flag: stale"
+          "Action item: Run a maintenance pass on 3dmodel-splats-stager",
+          "Action item: Define verification for 3dmodel-splats-stager",
+          "Action item: Clarify deployment readiness for 3dmodel-splats-stager"
         ]
       },
       {
         "kind": "action-item",
         "title": "3dmodel-splats-stager Action Item Draft",
         "suggestedPath": "ops/action-item.md",
-        "body": "# Action Item Draft: KBLLR/3dmodel-splats-stager\n\n## Recommended Actions\n- maintenance: Run a maintenance pass on 3dmodel-splats-stager\n- testing: Define verification for 3dmodel-splats-stager\n- deployment: Clarify deployment readiness for 3dmodel-splats-stager\n\n## Mission Target\n- Local MLX\n\n## Evidence\n- Repository: KBLLR/3dmodel-splats-stager\n- Description: A modern, high-performance 3D object stager specializing in Gaussian Splatting models, built with Three.js and Vite. This application enables advanced visualization of 3D models with sophisticated post-processing effects and real-time parameter adjustment.\n- Adoption kind: house\n- Capabilities: frontend-ui, ml-ai\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Finding: Repository appears stale based on last activity.\n- Risk: Dependencies, build targets, or deployment assumptions may be outdated.\n- Health flag: stale\n- Action item: Run a maintenance pass on 3dmodel-splats-stager\n- Action item: Define verification for 3dmodel-splats-stager",
+        "body": "# Action Item Draft: KBLLR/3dmodel-splats-stager\n\n## Recommended Actions\n- maintenance: Run a maintenance pass on 3dmodel-splats-stager\n- testing: Define verification for 3dmodel-splats-stager\n- deployment: Clarify deployment readiness for 3dmodel-splats-stager\n\n## Mission Target\n- Local MLX\n\n## Evidence\n- Repository: KBLLR/3dmodel-splats-stager\n- Description: A modern, high-performance 3D object stager specializing in Gaussian Splatting models, built with Three.js and Vite. This application enables advanced visualization of 3D models with sophisticated post-processing effects and real-time parameter adjustment.\n- Adoption kind: house\n- Capabilities: frontend-ui, ml-ai\n- House skills: repo-discovery, repo-adoption, mine-execution\n- Action item: Run a maintenance pass on 3dmodel-splats-stager\n- Action item: Define verification for 3dmodel-splats-stager\n- Action item: Clarify deployment readiness for 3dmodel-splats-stager",
         "evidence": [
           "Repository: KBLLR/3dmodel-splats-stager",
           "Description: A modern, high-performance 3D object stager specializing in Gaussian Splatting models, built with Three.js and Vite. This application enables advanced visualization of 3D models with sophisticated post-processing effects and real-time parameter adjustment.",
           "Adoption kind: house",
           "Capabilities: frontend-ui, ml-ai",
           "House skills: repo-discovery, repo-adoption, mine-execution",
-          "Finding: Repository appears stale based on last activity.",
-          "Risk: Dependencies, build targets, or deployment assumptions may be outdated.",
-          "Health flag: stale",
           "Action item: Run a maintenance pass on 3dmodel-splats-stager",
-          "Action item: Define verification for 3dmodel-splats-stager"
+          "Action item: Define verification for 3dmodel-splats-stager",
+          "Action item: Clarify deployment readiness for 3dmodel-splats-stager"
         ]
       }
     ],
@@ -469,9 +467,6 @@
       "Adoption kind: house",
       "Capabilities: frontend-ui, ml-ai",
       "House skills: repo-discovery, repo-adoption, mine-execution",
-      "Finding: Repository appears stale based on last activity.",
-      "Risk: Dependencies, build targets, or deployment assumptions may be outdated.",
-      "Health flag: stale",
       "Action item: Run a maintenance pass on 3dmodel-splats-stager",
       "Action item: Define verification for 3dmodel-splats-stager",
       "Action item: Clarify deployment readiness for 3dmodel-splats-stager"
@@ -481,7 +476,6 @@
       "ops-kit",
       "codex-mission",
       "claude-mission",
-      "maintenance-plan",
       "house-integration",
       "maintenance:vega-lab:maintenance:kbllr-3dmodel-splats-stager",
       "testing:vega-lab:testing:kbllr-3dmodel-splats-stager",
@@ -2319,7 +2313,7 @@
   },
   {
     "nwo": "KBLLR/code-smart-campus",
-    "generatedAt": "2026-11-09T10:58:39.000Z",
+    "generatedAt": "2026-11-17T21:04:33.000Z",
     "target": "mlx",
     "artifacts": [
       {
@@ -2370,7 +2364,7 @@
         "kind": "deployment",
         "title": "code-smart-campus Deployment Plan",
         "suggestedPath": "docs/deployment-plan.md",
-        "body": "# Deployment Plan: KBLLR/code-smart-campus\n\n## Known Deployment Evidence\n- Deployment config: vercel.json\n\n## Draft Checks\n- Identify expected host and runtime.\n- Document build command, output directory, and required environment variables.\n- Verify preview URL and production URL checks.\n- Keep deploy authority manual; Vega Lab drafts plans and inbox items only.\n\n## Evidence\n- Repository: KBLLR/code-smart-campus\n- Description:  Real-time 3D visualization of smart spaces, integrating live IoT data from Home Assistant for interactive monitoring of building floorplans and connected devices. \n- Adoption kind: house\n- Capabilities: agent-workflows, data-pipeline\n- House skills: repo-discovery, skill-extraction, repo-adoption, mine-execution\n- Action item: Extract reusable skill signals from code-smart-campus\n- Action item: Define verification for code-smart-campus\n- Action item: Clarify deployment readiness for code-smart-campus",
+        "body": "# Deployment Plan: KBLLR/code-smart-campus\n\n## Known Deployment Evidence\n- Workflow: gitleaks.yml\n- Deployment config: vercel.json\n\n## Draft Checks\n- Identify expected host and runtime.\n- Document build command, output directory, and required environment variables.\n- Verify preview URL and production URL checks.\n- Keep deploy authority manual; Vega Lab drafts plans and inbox items only.\n\n## Evidence\n- Repository: KBLLR/code-smart-campus\n- Description:  Real-time 3D visualization of smart spaces, integrating live IoT data from Home Assistant for interactive monitoring of building floorplans and connected devices. \n- Adoption kind: house\n- Capabilities: agent-workflows, data-pipeline\n- House skills: repo-discovery, skill-extraction, repo-adoption, mine-execution\n- Action item: Extract reusable skill signals from code-smart-campus\n- Action item: Define verification for code-smart-campus\n- Action item: Clarify deployment readiness for code-smart-campus",
         "evidence": [
           "Repository: KBLLR/code-smart-campus",
           "Description:  Real-time 3D visualization of smart spaces, integrating live IoT data from Home Assistant for interactive monitoring of building floorplans and connected devices. ",
@@ -2688,7 +2682,7 @@
   },
   {
     "nwo": "KBLLR/core-x-design-system",
-    "generatedAt": "2026-11-17T01:44:29.000Z",
+    "generatedAt": "2026-11-17T09:49:54.000Z",
     "target": "mlx",
     "artifacts": [
       {
@@ -6299,7 +6293,7 @@
         "kind": "agents",
         "title": "htdi-agentic-framework AGENTS Draft",
         "suggestedPath": "AGENTS.md",
-        "body": "# htdi-agentic-framework Agents\n\n## Product Truth\n- Repository: KBLLR/htdi-agentic-framework\n- Vega Lab classification: tool\n- Active mission target: Local MLX\n\n## Operating Rules\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\n\n## Commands\n- Add the smallest reliable verification command.\n\n## Agent Boundaries\n- Do not mutate deployment, secrets, or release configuration without explicit approval.\n- Prefer draft plans and reviewable diffs over broad automation.\n- Preserve existing product direction; use Vega Lab evidence before adding new abstractions.",
+        "body": "# htdi-agentic-framework Agents\n\n## Product Truth\n- Repository: KBLLR/htdi-agentic-framework\n- Vega Lab classification: tool\n- Active mission target: Local MLX\n\n## Operating Rules\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\n\n## Commands\n- Add the smallest reliable verification command.\n\n## Agent Boundaries\n- Do not mutate deployment, secrets, or release configuration without explicit approval.\n- Prefer draft plans and reviewable diffs over broad automation.\n- Preserve existing product direction; use Vega Lab evidence before adding new abstractions.",
         "evidence": [
           "Repository: KBLLR/htdi-agentic-framework",
           "Adoption kind: tool",
@@ -6313,7 +6307,7 @@
         "kind": "maintenance",
         "title": "htdi-agentic-framework Maintenance Plan",
         "suggestedPath": "docs/maintenance-plan.md",
-        "body": "# Maintenance Plan: KBLLR/htdi-agentic-framework\n\n## Current Signals\n- Health flag: missing-readme\n- Health flag: private\n- README missing from the synced repository snapshot.\n- No test/check/lint script detected from package metadata.\n\n## Recommended Pass\n- Confirm install path and package manager.\n- Run available verification commands before editing.\n- Patch stale docs, commands, and workflow assumptions first.\n- Open the smallest useful PR only after human approval.\n- Vega Lab action: mlx-mission\n- Vega Lab action: ops-kit\n- Vega Lab action: codex-mission\n- Vega Lab action: claude-mission\n- Vega Lab action: write-readme\n- Vega Lab action: house-integration\n\n## Evidence\n- Repository: KBLLR/htdi-agentic-framework\n- Adoption kind: tool\n- Capabilities: agent-workflows\n- House skills: skill-extraction, repo-adoption, mine-execution\n- Finding: README missing from the synced repository snapshot.\n- Finding: No test/check/lint script detected from package metadata.\n- Risk: New contributors and agents lack a clear entrypoint.\n- Risk: Maintenance work has no obvious verification command.",
+        "body": "# Maintenance Plan: KBLLR/htdi-agentic-framework\n\n## Current Signals\n- Health flag: missing-readme\n- Health flag: stale\n- Health flag: private\n- README missing from the synced repository snapshot.\n- No test/check/lint script detected from package metadata.\n- Repository appears stale based on last activity.\n\n## Recommended Pass\n- Confirm install path and package manager.\n- Run available verification commands before editing.\n- Patch stale docs, commands, and workflow assumptions first.\n- Open the smallest useful PR only after human approval.\n- Vega Lab action: mlx-mission\n- Vega Lab action: ops-kit\n- Vega Lab action: codex-mission\n- Vega Lab action: claude-mission\n- Vega Lab action: write-readme\n- Vega Lab action: maintenance-plan\n- Vega Lab action: house-integration\n\n## Evidence\n- Repository: KBLLR/htdi-agentic-framework\n- Adoption kind: tool\n- Capabilities: agent-workflows\n- House skills: skill-extraction, repo-adoption, mine-execution\n- Finding: README missing from the synced repository snapshot.\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: Repository appears stale based on last activity.\n- Risk: New contributors and agents lack a clear entrypoint.",
         "evidence": [
           "Repository: KBLLR/htdi-agentic-framework",
           "Adoption kind: tool",
@@ -6321,15 +6315,15 @@
           "House skills: skill-extraction, repo-adoption, mine-execution",
           "Finding: README missing from the synced repository snapshot.",
           "Finding: No test/check/lint script detected from package metadata.",
-          "Risk: New contributors and agents lack a clear entrypoint.",
-          "Risk: Maintenance work has no obvious verification command."
+          "Finding: Repository appears stale based on last activity.",
+          "Risk: New contributors and agents lack a clear entrypoint."
         ]
       },
       {
         "kind": "deployment",
         "title": "htdi-agentic-framework Deployment Plan",
         "suggestedPath": "docs/deployment-plan.md",
-        "body": "# Deployment Plan: KBLLR/htdi-agentic-framework\n\n## Known Deployment Evidence\n- No workflow or deployment config detected in synced key files.\n\n## Draft Checks\n- Identify expected host and runtime.\n- Document build command, output directory, and required environment variables.\n- Verify preview URL and production URL checks.\n- Keep deploy authority manual; Vega Lab drafts plans and inbox items only.\n\n## Evidence\n- Repository: KBLLR/htdi-agentic-framework\n- Adoption kind: tool\n- Capabilities: agent-workflows\n- House skills: skill-extraction, repo-adoption, mine-execution\n- Finding: README missing from the synced repository snapshot.\n- Finding: No test/check/lint script detected from package metadata.\n- Risk: New contributors and agents lack a clear entrypoint.\n- Risk: Maintenance work has no obvious verification command.",
+        "body": "# Deployment Plan: KBLLR/htdi-agentic-framework\n\n## Known Deployment Evidence\n- No workflow or deployment config detected in synced key files.\n\n## Draft Checks\n- Identify expected host and runtime.\n- Document build command, output directory, and required environment variables.\n- Verify preview URL and production URL checks.\n- Keep deploy authority manual; Vega Lab drafts plans and inbox items only.\n\n## Evidence\n- Repository: KBLLR/htdi-agentic-framework\n- Adoption kind: tool\n- Capabilities: agent-workflows\n- House skills: skill-extraction, repo-adoption, mine-execution\n- Finding: README missing from the synced repository snapshot.\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: Repository appears stale based on last activity.\n- Risk: New contributors and agents lack a clear entrypoint.",
         "evidence": [
           "Repository: KBLLR/htdi-agentic-framework",
           "Adoption kind: tool",
@@ -6337,15 +6331,15 @@
           "House skills: skill-extraction, repo-adoption, mine-execution",
           "Finding: README missing from the synced repository snapshot.",
           "Finding: No test/check/lint script detected from package metadata.",
-          "Risk: New contributors and agents lack a clear entrypoint.",
-          "Risk: Maintenance work has no obvious verification command."
+          "Finding: Repository appears stale based on last activity.",
+          "Risk: New contributors and agents lack a clear entrypoint."
         ]
       },
       {
         "kind": "testing",
         "title": "htdi-agentic-framework Test Plan",
         "suggestedPath": "docs/test-plan.md",
-        "body": "# Test Plan: KBLLR/htdi-agentic-framework\n\n## Available Commands\n- No test/check/build script detected from synced package metadata.\n\n## Minimum Verification Contract\n- Document one install command.\n- Document one fast smoke command.\n- Document one release/build command when deployable.\n- If no commands exist, create a tracked issue or action item before implementation work.\n\n## Evidence\n- Repository: KBLLR/htdi-agentic-framework\n- Adoption kind: tool\n- Capabilities: agent-workflows\n- House skills: skill-extraction, repo-adoption, mine-execution\n- Finding: README missing from the synced repository snapshot.\n- Finding: No test/check/lint script detected from package metadata.\n- Risk: New contributors and agents lack a clear entrypoint.\n- Risk: Maintenance work has no obvious verification command.",
+        "body": "# Test Plan: KBLLR/htdi-agentic-framework\n\n## Available Commands\n- No test/check/build script detected from synced package metadata.\n\n## Minimum Verification Contract\n- Document one install command.\n- Document one fast smoke command.\n- Document one release/build command when deployable.\n- If no commands exist, create a tracked issue or action item before implementation work.\n\n## Evidence\n- Repository: KBLLR/htdi-agentic-framework\n- Adoption kind: tool\n- Capabilities: agent-workflows\n- House skills: skill-extraction, repo-adoption, mine-execution\n- Finding: README missing from the synced repository snapshot.\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: Repository appears stale based on last activity.\n- Risk: New contributors and agents lack a clear entrypoint.",
         "evidence": [
           "Repository: KBLLR/htdi-agentic-framework",
           "Adoption kind: tool",
@@ -6353,15 +6347,15 @@
           "House skills: skill-extraction, repo-adoption, mine-execution",
           "Finding: README missing from the synced repository snapshot.",
           "Finding: No test/check/lint script detected from package metadata.",
-          "Risk: New contributors and agents lack a clear entrypoint.",
-          "Risk: Maintenance work has no obvious verification command."
+          "Finding: Repository appears stale based on last activity.",
+          "Risk: New contributors and agents lack a clear entrypoint."
         ]
       },
       {
         "kind": "action-item",
         "title": "htdi-agentic-framework Action Item Draft",
         "suggestedPath": "ops/action-item.md",
-        "body": "# Action Item Draft: KBLLR/htdi-agentic-framework\n\n## Recommended Actions\n- readme: Make htdi-agentic-framework README-ready\n- testing: Define verification for htdi-agentic-framework\n\n## Mission Target\n- Local MLX\n\n## Evidence\n- Repository: KBLLR/htdi-agentic-framework\n- Adoption kind: tool\n- Capabilities: agent-workflows\n- House skills: skill-extraction, repo-adoption, mine-execution\n- Finding: README missing from the synced repository snapshot.\n- Finding: No test/check/lint script detected from package metadata.\n- Risk: New contributors and agents lack a clear entrypoint.\n- Risk: Maintenance work has no obvious verification command.\n- Health flag: missing-readme\n- Health flag: private",
+        "body": "# Action Item Draft: KBLLR/htdi-agentic-framework\n\n## Recommended Actions\n- readme: Make htdi-agentic-framework README-ready\n- maintenance: Run a maintenance pass on htdi-agentic-framework\n- testing: Define verification for htdi-agentic-framework\n\n## Mission Target\n- Local MLX\n\n## Evidence\n- Repository: KBLLR/htdi-agentic-framework\n- Adoption kind: tool\n- Capabilities: agent-workflows\n- House skills: skill-extraction, repo-adoption, mine-execution\n- Finding: README missing from the synced repository snapshot.\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: Repository appears stale based on last activity.\n- Risk: New contributors and agents lack a clear entrypoint.\n- Risk: Maintenance work has no obvious verification command.\n- Risk: Dependencies, build targets, or deployment assumptions may be outdated.",
         "evidence": [
           "Repository: KBLLR/htdi-agentic-framework",
           "Adoption kind: tool",
@@ -6369,10 +6363,10 @@
           "House skills: skill-extraction, repo-adoption, mine-execution",
           "Finding: README missing from the synced repository snapshot.",
           "Finding: No test/check/lint script detected from package metadata.",
+          "Finding: Repository appears stale based on last activity.",
           "Risk: New contributors and agents lack a clear entrypoint.",
           "Risk: Maintenance work has no obvious verification command.",
-          "Health flag: missing-readme",
-          "Health flag: private"
+          "Risk: Dependencies, build targets, or deployment assumptions may be outdated."
         ]
       }
     ],
@@ -6383,12 +6377,12 @@
       "House skills: skill-extraction, repo-adoption, mine-execution",
       "Finding: README missing from the synced repository snapshot.",
       "Finding: No test/check/lint script detected from package metadata.",
+      "Finding: Repository appears stale based on last activity.",
       "Risk: New contributors and agents lack a clear entrypoint.",
       "Risk: Maintenance work has no obvious verification command.",
+      "Risk: Dependencies, build targets, or deployment assumptions may be outdated.",
       "Health flag: missing-readme",
-      "Health flag: private",
-      "Action item: Make htdi-agentic-framework README-ready",
-      "Action item: Define verification for htdi-agentic-framework"
+      "Health flag: stale"
     ],
     "recommendedActions": [
       "mlx-mission",
@@ -6396,8 +6390,10 @@
       "codex-mission",
       "claude-mission",
       "write-readme",
+      "maintenance-plan",
       "house-integration",
       "readme:vega-lab:readme:kbllr-htdi-agentic-framework",
+      "maintenance:vega-lab:maintenance:kbllr-htdi-agentic-framework",
       "testing:vega-lab:testing:kbllr-htdi-agentic-framework",
       "review-draft-only"
     ]
@@ -9211,7 +9207,7 @@
   },
   {
     "nwo": "KBLLR/mlx-openai-server-lab",
-    "generatedAt": "2025-11-20T15:37:28.000Z",
+    "generatedAt": "2026-11-18T03:01:32.000Z",
     "target": "mlx",
     "artifacts": [
       {
@@ -9335,7 +9331,7 @@
   },
   {
     "nwo": "KBLLR/mlx-rag-lab",
-    "generatedAt": "2025-12-03T23:28:00.000Z",
+    "generatedAt": "2026-11-18T03:01:31.000Z",
     "target": "mlx",
     "artifacts": [
       {
@@ -9385,7 +9381,7 @@
         "kind": "deployment",
         "title": "mlx-rag-lab Deployment Plan",
         "suggestedPath": "docs/deployment-plan.md",
-        "body": "# Deployment Plan: KBLLR/mlx-rag-lab\n\n## Known Deployment Evidence\n- No workflow or deployment config detected in synced key files.\n\n## Draft Checks\n- Identify expected host and runtime.\n- Document build command, output directory, and required environment variables.\n- Verify preview URL and production URL checks.\n- Keep deploy authority manual; Vega Lab drafts plans and inbox items only.\n\n## Evidence\n- Repository: KBLLR/mlx-rag-lab\n- Adoption kind: tool\n- Capabilities: ml-ai\n- House skills: repo-adoption, mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Risk: Maintenance work has no obvious verification command.\n- Action item: Define verification for mlx-rag-lab",
+        "body": "# Deployment Plan: KBLLR/mlx-rag-lab\n\n## Known Deployment Evidence\n- Workflow: gitleaks.yml\n\n## Draft Checks\n- Identify expected host and runtime.\n- Document build command, output directory, and required environment variables.\n- Verify preview URL and production URL checks.\n- Keep deploy authority manual; Vega Lab drafts plans and inbox items only.\n\n## Evidence\n- Repository: KBLLR/mlx-rag-lab\n- Adoption kind: tool\n- Capabilities: ml-ai\n- House skills: repo-adoption, mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Risk: Maintenance work has no obvious verification command.\n- Action item: Define verification for mlx-rag-lab",
         "evidence": [
           "Repository: KBLLR/mlx-rag-lab",
           "Adoption kind: tool",
@@ -9469,7 +9465,7 @@
         "kind": "agents",
         "title": "modal-apps-lab AGENTS Draft",
         "suggestedPath": "AGENTS.md",
-        "body": "# modal-apps-lab Agents\n\n## Product Truth\n- Repository: KBLLR/modal-apps-lab\n- Vega Lab classification: house\n- Active mission target: Local MLX\n\n## Operating Rules\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\n\n## Commands\n- Add the smallest reliable verification command.\n\n## Agent Boundaries\n- Do not mutate deployment, secrets, or release configuration without explicit approval.\n- Prefer draft plans and reviewable diffs over broad automation.\n- Preserve existing product direction; use Vega Lab evidence before adding new abstractions.",
+        "body": "# modal-apps-lab Agents\n\n## Product Truth\n- Repository: KBLLR/modal-apps-lab\n- Vega Lab classification: house\n- Active mission target: Local MLX\n\n## Operating Rules\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\n\n## Commands\n- Add the smallest reliable verification command.\n\n## Agent Boundaries\n- Do not mutate deployment, secrets, or release configuration without explicit approval.\n- Prefer draft plans and reviewable diffs over broad automation.\n- Preserve existing product direction; use Vega Lab evidence before adding new abstractions.",
         "evidence": [
           "Repository: KBLLR/modal-apps-lab",
           "Adoption kind: house",
@@ -9483,7 +9479,7 @@
         "kind": "maintenance",
         "title": "modal-apps-lab Maintenance Plan",
         "suggestedPath": "docs/maintenance-plan.md",
-        "body": "# Maintenance Plan: KBLLR/modal-apps-lab\n\n## Current Signals\n- Health flag: private\n- No test/check/lint script detected from package metadata.\n- No build script detected from package metadata.\n- No workflow or deployment config detected in synced key files.\n\n## Recommended Pass\n- Confirm install path and package manager.\n- Run available verification commands before editing.\n- Patch stale docs, commands, and workflow assumptions first.\n- Open the smallest useful PR only after human approval.\n- Vega Lab action: mlx-mission\n- Vega Lab action: ops-kit\n- Vega Lab action: codex-mission\n- Vega Lab action: claude-mission\n- Vega Lab action: house-integration\n\n## Evidence\n- Repository: KBLLR/modal-apps-lab\n- Adoption kind: house\n- Capabilities: ml-ai\n- House skills: repo-adoption, mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: No build script detected from package metadata.\n- Finding: No workflow or deployment config detected in synced key files.\n- Risk: Maintenance work has no obvious verification command.",
+        "body": "# Maintenance Plan: KBLLR/modal-apps-lab\n\n## Current Signals\n- Health flag: stale\n- Health flag: private\n- No test/check/lint script detected from package metadata.\n- No build script detected from package metadata.\n- No workflow or deployment config detected in synced key files.\n- Repository appears stale based on last activity.\n\n## Recommended Pass\n- Confirm install path and package manager.\n- Run available verification commands before editing.\n- Patch stale docs, commands, and workflow assumptions first.\n- Open the smallest useful PR only after human approval.\n- Vega Lab action: mlx-mission\n- Vega Lab action: ops-kit\n- Vega Lab action: codex-mission\n- Vega Lab action: claude-mission\n- Vega Lab action: maintenance-plan\n- Vega Lab action: house-integration\n\n## Evidence\n- Repository: KBLLR/modal-apps-lab\n- Adoption kind: house\n- Capabilities: ml-ai\n- House skills: repo-adoption, mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: No build script detected from package metadata.\n- Finding: No workflow or deployment config detected in synced key files.\n- Finding: Repository appears stale based on last activity.",
         "evidence": [
           "Repository: KBLLR/modal-apps-lab",
           "Adoption kind: house",
@@ -9492,14 +9488,14 @@
           "Finding: No test/check/lint script detected from package metadata.",
           "Finding: No build script detected from package metadata.",
           "Finding: No workflow or deployment config detected in synced key files.",
-          "Risk: Maintenance work has no obvious verification command."
+          "Finding: Repository appears stale based on last activity."
         ]
       },
       {
         "kind": "deployment",
         "title": "modal-apps-lab Deployment Plan",
         "suggestedPath": "docs/deployment-plan.md",
-        "body": "# Deployment Plan: KBLLR/modal-apps-lab\n\n## Known Deployment Evidence\n- No workflow or deployment config detected in synced key files.\n\n## Draft Checks\n- Identify expected host and runtime.\n- Document build command, output directory, and required environment variables.\n- Verify preview URL and production URL checks.\n- Keep deploy authority manual; Vega Lab drafts plans and inbox items only.\n\n## Evidence\n- Repository: KBLLR/modal-apps-lab\n- Adoption kind: house\n- Capabilities: ml-ai\n- House skills: repo-adoption, mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: No build script detected from package metadata.\n- Finding: No workflow or deployment config detected in synced key files.\n- Risk: Maintenance work has no obvious verification command.",
+        "body": "# Deployment Plan: KBLLR/modal-apps-lab\n\n## Known Deployment Evidence\n- No workflow or deployment config detected in synced key files.\n\n## Draft Checks\n- Identify expected host and runtime.\n- Document build command, output directory, and required environment variables.\n- Verify preview URL and production URL checks.\n- Keep deploy authority manual; Vega Lab drafts plans and inbox items only.\n\n## Evidence\n- Repository: KBLLR/modal-apps-lab\n- Adoption kind: house\n- Capabilities: ml-ai\n- House skills: repo-adoption, mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: No build script detected from package metadata.\n- Finding: No workflow or deployment config detected in synced key files.\n- Finding: Repository appears stale based on last activity.",
         "evidence": [
           "Repository: KBLLR/modal-apps-lab",
           "Adoption kind: house",
@@ -9508,14 +9504,14 @@
           "Finding: No test/check/lint script detected from package metadata.",
           "Finding: No build script detected from package metadata.",
           "Finding: No workflow or deployment config detected in synced key files.",
-          "Risk: Maintenance work has no obvious verification command."
+          "Finding: Repository appears stale based on last activity."
         ]
       },
       {
         "kind": "testing",
         "title": "modal-apps-lab Test Plan",
         "suggestedPath": "docs/test-plan.md",
-        "body": "# Test Plan: KBLLR/modal-apps-lab\n\n## Available Commands\n- No test/check/build script detected from synced package metadata.\n\n## Minimum Verification Contract\n- Document one install command.\n- Document one fast smoke command.\n- Document one release/build command when deployable.\n- If no commands exist, create a tracked issue or action item before implementation work.\n\n## Evidence\n- Repository: KBLLR/modal-apps-lab\n- Adoption kind: house\n- Capabilities: ml-ai\n- House skills: repo-adoption, mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: No build script detected from package metadata.\n- Finding: No workflow or deployment config detected in synced key files.\n- Risk: Maintenance work has no obvious verification command.",
+        "body": "# Test Plan: KBLLR/modal-apps-lab\n\n## Available Commands\n- No test/check/build script detected from synced package metadata.\n\n## Minimum Verification Contract\n- Document one install command.\n- Document one fast smoke command.\n- Document one release/build command when deployable.\n- If no commands exist, create a tracked issue or action item before implementation work.\n\n## Evidence\n- Repository: KBLLR/modal-apps-lab\n- Adoption kind: house\n- Capabilities: ml-ai\n- House skills: repo-adoption, mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: No build script detected from package metadata.\n- Finding: No workflow or deployment config detected in synced key files.\n- Finding: Repository appears stale based on last activity.",
         "evidence": [
           "Repository: KBLLR/modal-apps-lab",
           "Adoption kind: house",
@@ -9524,14 +9520,14 @@
           "Finding: No test/check/lint script detected from package metadata.",
           "Finding: No build script detected from package metadata.",
           "Finding: No workflow or deployment config detected in synced key files.",
-          "Risk: Maintenance work has no obvious verification command."
+          "Finding: Repository appears stale based on last activity."
         ]
       },
       {
         "kind": "action-item",
         "title": "modal-apps-lab Action Item Draft",
         "suggestedPath": "ops/action-item.md",
-        "body": "# Action Item Draft: KBLLR/modal-apps-lab\n\n## Recommended Actions\n- testing: Define verification for modal-apps-lab\n- deployment: Clarify deployment readiness for modal-apps-lab\n\n## Mission Target\n- Local MLX\n\n## Evidence\n- Repository: KBLLR/modal-apps-lab\n- Adoption kind: house\n- Capabilities: ml-ai\n- House skills: repo-adoption, mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: No build script detected from package metadata.\n- Finding: No workflow or deployment config detected in synced key files.\n- Risk: Maintenance work has no obvious verification command.\n- Risk: Deployment readiness is unclear.\n- Health flag: private",
+        "body": "# Action Item Draft: KBLLR/modal-apps-lab\n\n## Recommended Actions\n- maintenance: Run a maintenance pass on modal-apps-lab\n- testing: Define verification for modal-apps-lab\n- deployment: Clarify deployment readiness for modal-apps-lab\n\n## Mission Target\n- Local MLX\n\n## Evidence\n- Repository: KBLLR/modal-apps-lab\n- Adoption kind: house\n- Capabilities: ml-ai\n- House skills: repo-adoption, mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: No build script detected from package metadata.\n- Finding: No workflow or deployment config detected in synced key files.\n- Finding: Repository appears stale based on last activity.\n- Risk: Maintenance work has no obvious verification command.\n- Risk: Deployment readiness is unclear.",
         "evidence": [
           "Repository: KBLLR/modal-apps-lab",
           "Adoption kind: house",
@@ -9540,9 +9536,9 @@
           "Finding: No test/check/lint script detected from package metadata.",
           "Finding: No build script detected from package metadata.",
           "Finding: No workflow or deployment config detected in synced key files.",
+          "Finding: Repository appears stale based on last activity.",
           "Risk: Maintenance work has no obvious verification command.",
-          "Risk: Deployment readiness is unclear.",
-          "Health flag: private"
+          "Risk: Deployment readiness is unclear."
         ]
       }
     ],
@@ -9554,18 +9550,20 @@
       "Finding: No test/check/lint script detected from package metadata.",
       "Finding: No build script detected from package metadata.",
       "Finding: No workflow or deployment config detected in synced key files.",
+      "Finding: Repository appears stale based on last activity.",
       "Risk: Maintenance work has no obvious verification command.",
       "Risk: Deployment readiness is unclear.",
-      "Health flag: private",
-      "Action item: Define verification for modal-apps-lab",
-      "Action item: Clarify deployment readiness for modal-apps-lab"
+      "Risk: Dependencies, build targets, or deployment assumptions may be outdated.",
+      "Health flag: stale"
     ],
     "recommendedActions": [
       "mlx-mission",
       "ops-kit",
       "codex-mission",
       "claude-mission",
+      "maintenance-plan",
       "house-integration",
+      "maintenance:vega-lab:maintenance:kbllr-modal-apps-lab",
       "testing:vega-lab:testing:kbllr-modal-apps-lab",
       "deployment:vega-lab:deployment:kbllr-modal-apps-lab",
       "review-draft-only"
@@ -10776,7 +10774,7 @@
   },
   {
     "nwo": "KBLLR/rightorchestrator",
-    "generatedAt": "2026-06-04T17:43:03.000Z",
+    "generatedAt": "2026-11-17T21:04:39.000Z",
     "target": "mlx",
     "artifacts": [
       {
@@ -11507,7 +11505,7 @@
   },
   {
     "nwo": "KBLLR/simple-flask-api-restx",
-    "generatedAt": "2025-02-04T12:41:49.000Z",
+    "generatedAt": "2026-11-18T03:01:34.000Z",
     "target": "mlx",
     "artifacts": [
       {
@@ -11528,7 +11526,7 @@
         "kind": "agents",
         "title": "simple-flask-api-restx AGENTS Draft",
         "suggestedPath": "AGENTS.md",
-        "body": "# simple-flask-api-restx Agents\n\n## Product Truth\n- Repository: KBLLR/simple-flask-api-restx\n- Vega Lab classification: service\n- Active mission target: Local MLX\n\n## Operating Rules\n- Treat external runtimes and APIs as configurable integrations with explicit environment requirements.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\n\n## Commands\n- Add the smallest reliable verification command.\n\n## Agent Boundaries\n- Do not mutate deployment, secrets, or release configuration without explicit approval.\n- Prefer draft plans and reviewable diffs over broad automation.\n- Preserve existing product direction; use Vega Lab evidence before adding new abstractions.",
+        "body": "# simple-flask-api-restx Agents\n\n## Product Truth\n- Repository: KBLLR/simple-flask-api-restx\n- Vega Lab classification: service\n- Active mission target: Local MLX\n\n## Operating Rules\n- Treat external runtimes and APIs as configurable integrations with explicit environment requirements.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\n\n## Commands\n- Add the smallest reliable verification command.\n\n## Agent Boundaries\n- Do not mutate deployment, secrets, or release configuration without explicit approval.\n- Prefer draft plans and reviewable diffs over broad automation.\n- Preserve existing product direction; use Vega Lab evidence before adding new abstractions.",
         "evidence": [
           "Repository: KBLLR/simple-flask-api-restx",
           "Adoption kind: service",
@@ -11542,7 +11540,7 @@
         "kind": "maintenance",
         "title": "simple-flask-api-restx Maintenance Plan",
         "suggestedPath": "docs/maintenance-plan.md",
-        "body": "# Maintenance Plan: KBLLR/simple-flask-api-restx\n\n## Current Signals\n- Health flag: stale\n- No test/check/lint script detected from package metadata.\n- No build script detected from package metadata.\n- Repository appears stale based on last activity.\n\n## Recommended Pass\n- Confirm install path and package manager.\n- Run available verification commands before editing.\n- Patch stale docs, commands, and workflow assumptions first.\n- Open the smallest useful PR only after human approval.\n- Vega Lab action: mlx-mission\n- Vega Lab action: ops-kit\n- Vega Lab action: codex-mission\n- Vega Lab action: claude-mission\n- Vega Lab action: maintenance-plan\n- Vega Lab action: house-integration\n\n## Evidence\n- Repository: KBLLR/simple-flask-api-restx\n- Adoption kind: service\n- Capabilities: backend-service, ml-ai\n- House skills: repo-adoption, mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: No build script detected from package metadata.\n- Finding: Repository appears stale based on last activity.\n- Risk: Maintenance work has no obvious verification command.",
+        "body": "# Maintenance Plan: KBLLR/simple-flask-api-restx\n\n## Current Signals\n- No test/check/lint script detected from package metadata.\n- No build script detected from package metadata.\n\n## Recommended Pass\n- Confirm install path and package manager.\n- Run available verification commands before editing.\n- Patch stale docs, commands, and workflow assumptions first.\n- Open the smallest useful PR only after human approval.\n- Vega Lab action: mlx-mission\n- Vega Lab action: ops-kit\n- Vega Lab action: codex-mission\n- Vega Lab action: claude-mission\n- Vega Lab action: house-integration\n\n## Evidence\n- Repository: KBLLR/simple-flask-api-restx\n- Adoption kind: service\n- Capabilities: backend-service, ml-ai\n- House skills: repo-adoption, mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: No build script detected from package metadata.\n- Risk: Maintenance work has no obvious verification command.\n- Action item: Define verification for simple-flask-api-restx",
         "evidence": [
           "Repository: KBLLR/simple-flask-api-restx",
           "Adoption kind: service",
@@ -11550,15 +11548,15 @@
           "House skills: repo-adoption, mine-execution",
           "Finding: No test/check/lint script detected from package metadata.",
           "Finding: No build script detected from package metadata.",
-          "Finding: Repository appears stale based on last activity.",
-          "Risk: Maintenance work has no obvious verification command."
+          "Risk: Maintenance work has no obvious verification command.",
+          "Action item: Define verification for simple-flask-api-restx"
         ]
       },
       {
         "kind": "deployment",
         "title": "simple-flask-api-restx Deployment Plan",
         "suggestedPath": "docs/deployment-plan.md",
-        "body": "# Deployment Plan: KBLLR/simple-flask-api-restx\n\n## Known Deployment Evidence\n- Deployment config: Dockerfile\n\n## Draft Checks\n- Identify expected host and runtime.\n- Document build command, output directory, and required environment variables.\n- Verify preview URL and production URL checks.\n- Keep deploy authority manual; Vega Lab drafts plans and inbox items only.\n\n## Evidence\n- Repository: KBLLR/simple-flask-api-restx\n- Adoption kind: service\n- Capabilities: backend-service, ml-ai\n- House skills: repo-adoption, mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: No build script detected from package metadata.\n- Finding: Repository appears stale based on last activity.\n- Risk: Maintenance work has no obvious verification command.",
+        "body": "# Deployment Plan: KBLLR/simple-flask-api-restx\n\n## Known Deployment Evidence\n- Workflow: gitleaks.yml\n- Deployment config: Dockerfile\n\n## Draft Checks\n- Identify expected host and runtime.\n- Document build command, output directory, and required environment variables.\n- Verify preview URL and production URL checks.\n- Keep deploy authority manual; Vega Lab drafts plans and inbox items only.\n\n## Evidence\n- Repository: KBLLR/simple-flask-api-restx\n- Adoption kind: service\n- Capabilities: backend-service, ml-ai\n- House skills: repo-adoption, mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: No build script detected from package metadata.\n- Risk: Maintenance work has no obvious verification command.\n- Action item: Define verification for simple-flask-api-restx",
         "evidence": [
           "Repository: KBLLR/simple-flask-api-restx",
           "Adoption kind: service",
@@ -11566,15 +11564,15 @@
           "House skills: repo-adoption, mine-execution",
           "Finding: No test/check/lint script detected from package metadata.",
           "Finding: No build script detected from package metadata.",
-          "Finding: Repository appears stale based on last activity.",
-          "Risk: Maintenance work has no obvious verification command."
+          "Risk: Maintenance work has no obvious verification command.",
+          "Action item: Define verification for simple-flask-api-restx"
         ]
       },
       {
         "kind": "testing",
         "title": "simple-flask-api-restx Test Plan",
         "suggestedPath": "docs/test-plan.md",
-        "body": "# Test Plan: KBLLR/simple-flask-api-restx\n\n## Available Commands\n- No test/check/build script detected from synced package metadata.\n\n## Minimum Verification Contract\n- Document one install command.\n- Document one fast smoke command.\n- Document one release/build command when deployable.\n- If no commands exist, create a tracked issue or action item before implementation work.\n\n## Evidence\n- Repository: KBLLR/simple-flask-api-restx\n- Adoption kind: service\n- Capabilities: backend-service, ml-ai\n- House skills: repo-adoption, mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: No build script detected from package metadata.\n- Finding: Repository appears stale based on last activity.\n- Risk: Maintenance work has no obvious verification command.",
+        "body": "# Test Plan: KBLLR/simple-flask-api-restx\n\n## Available Commands\n- No test/check/build script detected from synced package metadata.\n\n## Minimum Verification Contract\n- Document one install command.\n- Document one fast smoke command.\n- Document one release/build command when deployable.\n- If no commands exist, create a tracked issue or action item before implementation work.\n\n## Evidence\n- Repository: KBLLR/simple-flask-api-restx\n- Adoption kind: service\n- Capabilities: backend-service, ml-ai\n- House skills: repo-adoption, mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: No build script detected from package metadata.\n- Risk: Maintenance work has no obvious verification command.\n- Action item: Define verification for simple-flask-api-restx",
         "evidence": [
           "Repository: KBLLR/simple-flask-api-restx",
           "Adoption kind: service",
@@ -11582,15 +11580,15 @@
           "House skills: repo-adoption, mine-execution",
           "Finding: No test/check/lint script detected from package metadata.",
           "Finding: No build script detected from package metadata.",
-          "Finding: Repository appears stale based on last activity.",
-          "Risk: Maintenance work has no obvious verification command."
+          "Risk: Maintenance work has no obvious verification command.",
+          "Action item: Define verification for simple-flask-api-restx"
         ]
       },
       {
         "kind": "action-item",
         "title": "simple-flask-api-restx Action Item Draft",
         "suggestedPath": "ops/action-item.md",
-        "body": "# Action Item Draft: KBLLR/simple-flask-api-restx\n\n## Recommended Actions\n- maintenance: Run a maintenance pass on simple-flask-api-restx\n- testing: Define verification for simple-flask-api-restx\n- deployment: Clarify deployment readiness for simple-flask-api-restx\n\n## Mission Target\n- Local MLX\n\n## Evidence\n- Repository: KBLLR/simple-flask-api-restx\n- Adoption kind: service\n- Capabilities: backend-service, ml-ai\n- House skills: repo-adoption, mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: No build script detected from package metadata.\n- Finding: Repository appears stale based on last activity.\n- Risk: Maintenance work has no obvious verification command.\n- Risk: Dependencies, build targets, or deployment assumptions may be outdated.\n- Health flag: stale",
+        "body": "# Action Item Draft: KBLLR/simple-flask-api-restx\n\n## Recommended Actions\n- testing: Define verification for simple-flask-api-restx\n- maintenance: Run a maintenance pass on simple-flask-api-restx\n- deployment: Clarify deployment readiness for simple-flask-api-restx\n\n## Mission Target\n- Local MLX\n\n## Evidence\n- Repository: KBLLR/simple-flask-api-restx\n- Adoption kind: service\n- Capabilities: backend-service, ml-ai\n- House skills: repo-adoption, mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Finding: No build script detected from package metadata.\n- Risk: Maintenance work has no obvious verification command.\n- Action item: Define verification for simple-flask-api-restx\n- Action item: Run a maintenance pass on simple-flask-api-restx\n- Action item: Clarify deployment readiness for simple-flask-api-restx",
         "evidence": [
           "Repository: KBLLR/simple-flask-api-restx",
           "Adoption kind: service",
@@ -11598,10 +11596,10 @@
           "House skills: repo-adoption, mine-execution",
           "Finding: No test/check/lint script detected from package metadata.",
           "Finding: No build script detected from package metadata.",
-          "Finding: Repository appears stale based on last activity.",
           "Risk: Maintenance work has no obvious verification command.",
-          "Risk: Dependencies, build targets, or deployment assumptions may be outdated.",
-          "Health flag: stale"
+          "Action item: Define verification for simple-flask-api-restx",
+          "Action item: Run a maintenance pass on simple-flask-api-restx",
+          "Action item: Clarify deployment readiness for simple-flask-api-restx"
         ]
       }
     ],
@@ -11612,22 +11610,19 @@
       "House skills: repo-adoption, mine-execution",
       "Finding: No test/check/lint script detected from package metadata.",
       "Finding: No build script detected from package metadata.",
-      "Finding: Repository appears stale based on last activity.",
       "Risk: Maintenance work has no obvious verification command.",
-      "Risk: Dependencies, build targets, or deployment assumptions may be outdated.",
-      "Health flag: stale",
+      "Action item: Define verification for simple-flask-api-restx",
       "Action item: Run a maintenance pass on simple-flask-api-restx",
-      "Action item: Define verification for simple-flask-api-restx"
+      "Action item: Clarify deployment readiness for simple-flask-api-restx"
     ],
     "recommendedActions": [
       "mlx-mission",
       "ops-kit",
       "codex-mission",
       "claude-mission",
-      "maintenance-plan",
       "house-integration",
-      "maintenance:vega-lab:maintenance:kbllr-simple-flask-api-restx",
       "testing:vega-lab:testing:kbllr-simple-flask-api-restx",
+      "maintenance:vega-lab:maintenance:kbllr-simple-flask-api-restx",
       "deployment:vega-lab:deployment:kbllr-simple-flask-api-restx",
       "review-draft-only"
     ]
@@ -13890,7 +13885,7 @@
   },
   {
     "nwo": "KBLLR/vega-lab",
-    "generatedAt": "2026-11-17T00:01:34.000Z",
+    "generatedAt": "2026-11-17T06:48:58.000Z",
     "target": "mlx",
     "artifacts": [
       {

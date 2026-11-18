@@ -78,16 +78,16 @@
   },
   {
     "nwo": "KBLLR/3dmodel-splats-stager",
-    "inspectedAt": "2025-11-17T01:49:33.000Z",
+    "inspectedAt": "2026-11-18T03:01:35.000Z",
     "files": {
       "hasReadme": true,
       "packageManagers": [
         "npm",
-        "pnpm",
         "npm-lock"
       ],
       "workflows": [
-        "deploy.yml"
+        "deploy.yml",
+        "gitleaks.yml"
       ],
       "deploymentConfigs": [],
       "testScripts": [
@@ -100,12 +100,8 @@
         "build"
       ]
     },
-    "findings": [
-      "Repository appears stale based on last activity."
-    ],
-    "risks": [
-      "Dependencies, build targets, or deployment assumptions may be outdated."
-    ]
+    "findings": [],
+    "risks": []
   },
   {
     "nwo": "KBLLR/ada-agents",
@@ -515,7 +511,7 @@
   },
   {
     "nwo": "KBLLR/code-smart-campus",
-    "inspectedAt": "2026-11-09T10:58:39.000Z",
+    "inspectedAt": "2026-11-17T21:04:33.000Z",
     "files": {
       "hasReadme": true,
       "packageManagers": [
@@ -523,7 +519,9 @@
         "pnpm",
         "npm-lock"
       ],
-      "workflows": [],
+      "workflows": [
+        "gitleaks.yml"
+      ],
       "deploymentConfigs": [
         "vercel.json"
       ],
@@ -588,7 +586,7 @@
   },
   {
     "nwo": "KBLLR/core-x-design-system",
-    "inspectedAt": "2026-11-17T01:44:29.000Z",
+    "inspectedAt": "2026-11-17T09:49:54.000Z",
     "files": {
       "hasReadme": true,
       "packageManagers": [
@@ -1311,11 +1309,13 @@
     },
     "findings": [
       "README missing from the synced repository snapshot.",
-      "No test/check/lint script detected from package metadata."
+      "No test/check/lint script detected from package metadata.",
+      "Repository appears stale based on last activity."
     ],
     "risks": [
       "New contributors and agents lack a clear entrypoint.",
-      "Maintenance work has no obvious verification command."
+      "Maintenance work has no obvious verification command.",
+      "Dependencies, build targets, or deployment assumptions may be outdated."
     ]
   },
   {
@@ -1893,7 +1893,7 @@
   },
   {
     "nwo": "KBLLR/mlx-openai-server-lab",
-    "inspectedAt": "2025-11-20T15:37:28.000Z",
+    "inspectedAt": "2026-11-18T03:01:32.000Z",
     "files": {
       "hasReadme": true,
       "packageManagers": [
@@ -1916,13 +1916,15 @@
   },
   {
     "nwo": "KBLLR/mlx-rag-lab",
-    "inspectedAt": "2025-12-03T23:28:00.000Z",
+    "inspectedAt": "2026-11-18T03:01:31.000Z",
     "files": {
       "hasReadme": true,
       "packageManagers": [
         "pip"
       ],
-      "workflows": [],
+      "workflows": [
+        "gitleaks.yml"
+      ],
       "deploymentConfigs": [],
       "testScripts": [],
       "buildScripts": []
@@ -1950,11 +1952,13 @@
     "findings": [
       "No test/check/lint script detected from package metadata.",
       "No build script detected from package metadata.",
-      "No workflow or deployment config detected in synced key files."
+      "No workflow or deployment config detected in synced key files.",
+      "Repository appears stale based on last activity."
     ],
     "risks": [
       "Maintenance work has no obvious verification command.",
-      "Deployment readiness is unclear."
+      "Deployment readiness is unclear.",
+      "Dependencies, build targets, or deployment assumptions may be outdated."
     ]
   },
   {
@@ -2201,7 +2205,7 @@
   },
   {
     "nwo": "KBLLR/rightorchestrator",
-    "inspectedAt": "2026-06-04T17:43:03.000Z",
+    "inspectedAt": "2026-11-17T21:04:39.000Z",
     "files": {
       "hasReadme": true,
       "packageManagers": [
@@ -2329,13 +2333,15 @@
   },
   {
     "nwo": "KBLLR/simple-flask-api-restx",
-    "inspectedAt": "2025-02-04T12:41:49.000Z",
+    "inspectedAt": "2026-11-18T03:01:34.000Z",
     "files": {
       "hasReadme": true,
       "packageManagers": [
         "npm"
       ],
-      "workflows": [],
+      "workflows": [
+        "gitleaks.yml"
+      ],
       "deploymentConfigs": [
         "Dockerfile"
       ],
@@ -2344,12 +2350,10 @@
     },
     "findings": [
       "No test/check/lint script detected from package metadata.",
-      "No build script detected from package metadata.",
-      "Repository appears stale based on last activity."
+      "No build script detected from package metadata."
     ],
     "risks": [
-      "Maintenance work has no obvious verification command.",
-      "Dependencies, build targets, or deployment assumptions may be outdated."
+      "Maintenance work has no obvious verification command."
     ]
   },
   {
@@ -2825,7 +2829,7 @@
   },
   {
     "nwo": "KBLLR/vega-lab",
-    "inspectedAt": "2026-11-17T00:01:34.000Z",
+    "inspectedAt": "2026-11-17T06:48:58.000Z",
     "files": {
       "hasReadme": true,
       "packageManagers": [
