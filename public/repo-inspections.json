@@ -78,7 +78,7 @@
   },
   {
     "nwo": "KBLLR/3dmodel-splats-stager",
-    "inspectedAt": "2026-11-18T12:48:29.000Z",
+    "inspectedAt": "2026-11-19T14:33:43.000Z",
     "files": {
       "hasReadme": true,
       "packageManagers": [
@@ -172,11 +172,13 @@
     },
     "findings": [
       "README missing from the synced repository snapshot.",
-      "No test/check/lint script detected from package metadata."
+      "No test/check/lint script detected from package metadata.",
+      "No workflow or deployment config detected in synced key files."
     ],
     "risks": [
       "New contributors and agents lack a clear entrypoint.",
-      "Maintenance work has no obvious verification command."
+      "Maintenance work has no obvious verification command.",
+      "Deployment readiness is unclear."
     ]
   },
   {
@@ -506,8 +508,12 @@
         "build:release"
       ]
     },
-    "findings": [],
-    "risks": []
+    "findings": [
+      "No workflow or deployment config detected in synced key files."
+    ],
+    "risks": [
+      "Deployment readiness is unclear."
+    ]
   },
   {
     "nwo": "KBLLR/code-smart-campus",
@@ -577,11 +583,14 @@
     },
     "findings": [
       "README missing from the synced repository snapshot.",
-      "No test/check/lint script detected from package metadata."
+      "No test/check/lint script detected from package metadata.",
+      "No build script detected from package metadata.",
+      "No workflow or deployment config detected in synced key files."
     ],
     "risks": [
       "New contributors and agents lack a clear entrypoint.",
-      "Maintenance work has no obvious verification command."
+      "Maintenance work has no obvious verification command.",
+      "Deployment readiness is unclear."
     ]
   },
   {
@@ -1064,9 +1073,11 @@
       ]
     },
     "findings": [
+      "No workflow or deployment config detected in synced key files.",
       "Repository appears stale based on last activity."
     ],
     "risks": [
+      "Deployment readiness is unclear.",
       "Dependencies, build targets, or deployment assumptions may be outdated."
     ]
   },
@@ -1473,8 +1484,12 @@
         "build"
       ]
     },
-    "findings": [],
-    "risks": []
+    "findings": [
+      "No workflow or deployment config detected in synced key files."
+    ],
+    "risks": [
+      "Deployment readiness is unclear."
+    ]
   },
   {
     "nwo": "KBLLR/javascript-algorithms",
@@ -1637,11 +1652,13 @@
     },
     "findings": [
       "No test/check/lint script detected from package metadata.",
+      "No workflow or deployment config detected in synced key files.",
       "Repository appears stale based on last activity.",
       "Repository has template/scaffold signals."
     ],
     "risks": [
       "Maintenance work has no obvious verification command.",
+      "Deployment readiness is unclear.",
       "Dependencies, build targets, or deployment assumptions may be outdated."
     ]
   },
@@ -1930,7 +1947,8 @@
       "buildScripts": []
     },
     "findings": [
-      "No test/check/lint script detected from package metadata."
+      "No test/check/lint script detected from package metadata.",
+      "No build script detected from package metadata."
     ],
     "risks": [
       "Maintenance work has no obvious verification command."
@@ -2053,10 +2071,12 @@
     },
     "findings": [
       "No test/check/lint script detected from package metadata.",
+      "No workflow or deployment config detected in synced key files.",
       "Repository appears stale based on last activity."
     ],
     "risks": [
       "Maintenance work has no obvious verification command.",
+      "Deployment readiness is unclear.",
       "Dependencies, build targets, or deployment assumptions may be outdated."
     ]
   },
@@ -2109,6 +2129,20 @@
       "Deployment readiness is unclear.",
       "Dependencies, build targets, or deployment assumptions may be outdated."
     ]
+  },
+  {
+    "nwo": "KBLLR/papiro",
+    "inspectedAt": "2026-11-19T16:46:43.000Z",
+    "files": {
+      "hasReadme": true,
+      "packageManagers": [],
+      "workflows": [],
+      "deploymentConfigs": [],
+      "testScripts": [],
+      "buildScripts": []
+    },
+    "findings": [],
+    "risks": []
   },
   {
     "nwo": "KBLLR/project_anja",
@@ -2200,8 +2234,12 @@
         "prebuild"
       ]
     },
-    "findings": [],
-    "risks": []
+    "findings": [
+      "No workflow or deployment config detected in synced key files."
+    ],
+    "risks": [
+      "Deployment readiness is unclear."
+    ]
   },
   {
     "nwo": "KBLLR/rightorchestrator",
@@ -2433,6 +2471,33 @@
     ]
   },
   {
+    "nwo": "KBLLR/studio-labs-splats",
+    "inspectedAt": "2026-11-19T16:49:04.000Z",
+    "files": {
+      "hasReadme": true,
+      "packageManagers": [
+        "npm",
+        "npm-lock"
+      ],
+      "workflows": [
+        "ci.yml",
+        "gitleaks.yml",
+        "pages.yml"
+      ],
+      "deploymentConfigs": [],
+      "testScripts": [
+        "lint",
+        "format:check",
+        "test"
+      ],
+      "buildScripts": [
+        "build"
+      ]
+    },
+    "findings": [],
+    "risks": []
+  },
+  {
     "nwo": "KBLLR/talking-heads-papers",
     "inspectedAt": "2025-07-13T18:31:50.000Z",
     "files": {
@@ -2612,7 +2677,7 @@
   },
   {
     "nwo": "KBLLR/Threejs-nerf-visualizer",
-    "inspectedAt": "2025-10-13T17:02:04.000Z",
+    "inspectedAt": "2026-11-19T14:33:27.000Z",
     "files": {
       "hasReadme": true,
       "packageManagers": [
@@ -2628,13 +2693,11 @@
     },
     "findings": [
       "No test/check/lint script detected from package metadata.",
-      "No workflow or deployment config detected in synced key files.",
-      "Repository appears stale based on last activity."
+      "No workflow or deployment config detected in synced key files."
     ],
     "risks": [
       "Maintenance work has no obvious verification command.",
-      "Deployment readiness is unclear.",
-      "Dependencies, build targets, or deployment assumptions may be outdated."
+      "Deployment readiness is unclear."
     ]
   },
   {
@@ -2829,7 +2892,7 @@
   },
   {
     "nwo": "KBLLR/vega-lab",
-    "inspectedAt": "2026-11-18T06:12:18.000Z",
+    "inspectedAt": "2026-11-19T06:11:57.000Z",
     "files": {
       "hasReadme": true,
       "packageManagers": [

@@ -24693,17 +24693,18 @@
     "nwo": "KBLLR/audio-lab",
     "name": "audio-lab",
     "author": "KBLLR",
-    "summary": "Core-X Audio Lab house: transcription, diarisation, dubbing, and local audio workflows Primary Vega Lab fit: skill-extraction via agent-workflows.",
+    "summary": "Core-X Audio Lab house: transcription, diarisation, dubbing, and local audio workflows Primary Vega Lab fit: repo-discovery via agent-workflows.",
     "capabilities": [
-      "agent-workflows"
+      "agent-workflows",
+      "frontend-ui"
     ],
     "houseSkills": [
+      "repo-discovery",
       "skill-extraction",
       "repo-adoption",
       "mine-execution"
     ],
     "rules": [
-      "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.",
       "Review license status before adoption or redistribution work.",
       "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
     ],
@@ -24711,11 +24712,12 @@
       "research-queue-flow",
       "skill-extraction-flow",
       "adoption-decision-flow",
+      "news-digest-refresh",
       "mine-execution-flow"
     ],
-    "adoptionKind": "tool",
-    "codexBrief": "# Codex Mission: KBLLR/audio-lab\nGoal: Core-X Audio Lab house: transcription, diarisation, dubbing, and local audio workflows Primary Vega Lab fit: skill-extraction via agent-workflows.\nClassification: tool\nCapabilities: agent-workflows\nHouse skills: skill-extraction, repo-adoption, mine-execution\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: KBLLR/audio-lab\nGoal: Core-X Audio Lab house: transcription, diarisation, dubbing, and local audio workflows Primary Vega Lab fit: skill-extraction via agent-workflows.\nClassification: tool\nCapabilities: agent-workflows\nHouse skills: skill-extraction, repo-adoption, mine-execution\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "adoptionKind": "house",
+    "codexBrief": "# Codex Mission: KBLLR/audio-lab\nGoal: Core-X Audio Lab house: transcription, diarisation, dubbing, and local audio workflows Primary Vega Lab fit: repo-discovery via agent-workflows.\nClassification: house\nCapabilities: agent-workflows, frontend-ui\nHouse skills: repo-discovery, skill-extraction, repo-adoption, mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\n5. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: KBLLR/audio-lab\nGoal: Core-X Audio Lab house: transcription, diarisation, dubbing, and local audio workflows Primary Vega Lab fit: repo-discovery via agent-workflows.\nClassification: house\nCapabilities: agent-workflows, frontend-ui\nHouse skills: repo-discovery, skill-extraction, repo-adoption, mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\n5. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "KBLLR/Auto-GPT",
@@ -24884,7 +24886,8 @@
     "author": "KBLLR",
     "summary": "character-lab is a candidate for house adoption. Primary Vega Lab fit: repo-discovery via frontend-ui.",
     "capabilities": [
-      "frontend-ui"
+      "frontend-ui",
+      "ml-ai"
     ],
     "houseSkills": [
       "repo-discovery",
@@ -24902,8 +24905,8 @@
       "mine-execution-flow"
     ],
     "adoptionKind": "house",
-    "codexBrief": "# Codex Mission: KBLLR/character-lab\nGoal: character-lab is a candidate for house adoption. Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui\nHouse skills: repo-discovery, repo-adoption, mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\n4. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: KBLLR/character-lab\nGoal: character-lab is a candidate for house adoption. Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui\nHouse skills: repo-discovery, repo-adoption, mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\n4. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: KBLLR/character-lab\nGoal: character-lab is a candidate for house adoption. Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui, ml-ai\nHouse skills: repo-discovery, repo-adoption, mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\n4. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: KBLLR/character-lab\nGoal: character-lab is a candidate for house adoption. Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui, ml-ai\nHouse skills: repo-discovery, repo-adoption, mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\n4. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "KBLLR/characters-lab",
@@ -24911,7 +24914,8 @@
     "author": "KBLLR",
     "summary": "wip Primary Vega Lab fit: repo-discovery via frontend-ui.",
     "capabilities": [
-      "frontend-ui"
+      "frontend-ui",
+      "ml-ai"
     ],
     "houseSkills": [
       "repo-discovery",
@@ -24929,8 +24933,8 @@
       "mine-execution-flow"
     ],
     "adoptionKind": "house",
-    "codexBrief": "# Codex Mission: KBLLR/characters-lab\nGoal: wip Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui\nHouse skills: repo-discovery, repo-adoption, mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\n4. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: KBLLR/characters-lab\nGoal: wip Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui\nHouse skills: repo-discovery, repo-adoption, mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\n4. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: KBLLR/characters-lab\nGoal: wip Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui, ml-ai\nHouse skills: repo-discovery, repo-adoption, mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\n4. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: KBLLR/characters-lab\nGoal: wip Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui, ml-ai\nHouse skills: repo-discovery, repo-adoption, mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\n4. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "KBLLR/ChatDev",
@@ -24965,9 +24969,13 @@
     "nwo": "KBLLR/cine-mlx",
     "name": "cine-mlx",
     "author": "KBLLR",
-    "summary": "Local-first MLX film and video production studio for Core-X. Primary Vega Lab fit: repo-adoption via general engineering.",
-    "capabilities": [],
+    "summary": "Local-first MLX film and video production studio for Core-X. Primary Vega Lab fit: repo-discovery via frontend-ui.",
+    "capabilities": [
+      "frontend-ui",
+      "ml-ai"
+    ],
     "houseSkills": [
+      "repo-discovery",
       "repo-adoption",
       "mine-execution"
     ],
@@ -24978,19 +24986,25 @@
     "flows": [
       "research-queue-flow",
       "adoption-decision-flow",
+      "news-digest-refresh",
       "mine-execution-flow"
     ],
     "adoptionKind": "house",
-    "codexBrief": "# Codex Mission: KBLLR/cine-mlx\nGoal: Local-first MLX film and video production studio for Core-X. Primary Vega Lab fit: repo-adoption via general engineering.\nClassification: house\nCapabilities: none\nHouse skills: repo-adoption, mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: KBLLR/cine-mlx\nGoal: Local-first MLX film and video production studio for Core-X. Primary Vega Lab fit: repo-adoption via general engineering.\nClassification: house\nCapabilities: none\nHouse skills: repo-adoption, mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: KBLLR/cine-mlx\nGoal: Local-first MLX film and video production studio for Core-X. Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui, ml-ai\nHouse skills: repo-discovery, repo-adoption, mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\n4. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: KBLLR/cine-mlx\nGoal: Local-first MLX film and video production studio for Core-X. Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui, ml-ai\nHouse skills: repo-discovery, repo-adoption, mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\n4. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "KBLLR/city-blocks",
     "name": "city-blocks",
     "author": "KBLLR",
-    "summary": "city-blocks is a candidate for ignore adoption. Primary Vega Lab fit: mine-execution via general engineering.",
-    "capabilities": [],
+    "summary": "city-blocks is a candidate for house adoption. Primary Vega Lab fit: repo-discovery via frontend-ui.",
+    "capabilities": [
+      "frontend-ui",
+      "data-pipeline"
+    ],
     "houseSkills": [
+      "repo-discovery",
+      "repo-adoption",
       "mine-execution"
     ],
     "rules": [
@@ -25000,37 +25014,41 @@
     ],
     "flows": [
       "research-queue-flow",
+      "adoption-decision-flow",
+      "news-digest-refresh",
       "mine-execution-flow"
     ],
-    "adoptionKind": "ignore",
-    "codexBrief": "# Codex Mission: KBLLR/city-blocks\nGoal: city-blocks is a candidate for ignore adoption. Primary Vega Lab fit: mine-execution via general engineering.\nClassification: ignore\nCapabilities: none\nHouse skills: mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: KBLLR/city-blocks\nGoal: city-blocks is a candidate for ignore adoption. Primary Vega Lab fit: mine-execution via general engineering.\nClassification: ignore\nCapabilities: none\nHouse skills: mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "adoptionKind": "house",
+    "codexBrief": "# Codex Mission: KBLLR/city-blocks\nGoal: city-blocks is a candidate for house adoption. Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui, data-pipeline\nHouse skills: repo-discovery, repo-adoption, mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\n4. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: KBLLR/city-blocks\nGoal: city-blocks is a candidate for house adoption. Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui, data-pipeline\nHouse skills: repo-discovery, repo-adoption, mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\n4. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "KBLLR/code-platformer-ai",
     "name": "code-platformer-ai",
     "author": "KBLLR",
-    "summary": "code-platformer-ai is a candidate for tool adoption. Primary Vega Lab fit: repo-adoption via ml-ai.",
+    "summary": "code-platformer-ai is a candidate for house adoption. Primary Vega Lab fit: repo-discovery via frontend-ui.",
     "capabilities": [
+      "frontend-ui",
       "ml-ai"
     ],
     "houseSkills": [
+      "repo-discovery",
       "repo-adoption",
       "mine-execution"
     ],
     "rules": [
-      "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.",
       "Review license status before adoption or redistribution work.",
       "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
     ],
     "flows": [
       "research-queue-flow",
       "adoption-decision-flow",
+      "news-digest-refresh",
       "mine-execution-flow"
     ],
-    "adoptionKind": "tool",
-    "codexBrief": "# Codex Mission: KBLLR/code-platformer-ai\nGoal: code-platformer-ai is a candidate for tool adoption. Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption, mine-execution\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: KBLLR/code-platformer-ai\nGoal: code-platformer-ai is a candidate for tool adoption. Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption, mine-execution\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "adoptionKind": "house",
+    "codexBrief": "# Codex Mission: KBLLR/code-platformer-ai\nGoal: code-platformer-ai is a candidate for house adoption. Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui, ml-ai\nHouse skills: repo-discovery, repo-adoption, mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\n4. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: KBLLR/code-platformer-ai\nGoal: code-platformer-ai is a candidate for house adoption. Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui, ml-ai\nHouse skills: repo-discovery, repo-adoption, mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\n4. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "KBLLR/code-smart-campus",
@@ -25039,6 +25057,7 @@
     "summary": " Real-time 3D visualization of smart spaces, integrating live IoT data from Home Assistant for interactive monitoring of building floorplans and connected devices.  Primary Vega Lab fit: repo-discovery via agent-workflows.",
     "capabilities": [
       "agent-workflows",
+      "frontend-ui",
       "data-pipeline"
     ],
     "houseSkills": [
@@ -25058,8 +25077,8 @@
       "mine-execution-flow"
     ],
     "adoptionKind": "house",
-    "codexBrief": "# Codex Mission: KBLLR/code-smart-campus\nGoal:  Real-time 3D visualization of smart spaces, integrating live IoT data from Home Assistant for interactive monitoring of building floorplans and connected devices.  Primary Vega Lab fit: repo-discovery via agent-workflows.\nClassification: house\nCapabilities: agent-workflows, data-pipeline\nHouse skills: repo-discovery, skill-extraction, repo-adoption, mine-execution\nRules:\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\n5. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: KBLLR/code-smart-campus\nGoal:  Real-time 3D visualization of smart spaces, integrating live IoT data from Home Assistant for interactive monitoring of building floorplans and connected devices.  Primary Vega Lab fit: repo-discovery via agent-workflows.\nClassification: house\nCapabilities: agent-workflows, data-pipeline\nHouse skills: repo-discovery, skill-extraction, repo-adoption, mine-execution\nRules:\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\n5. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: KBLLR/code-smart-campus\nGoal:  Real-time 3D visualization of smart spaces, integrating live IoT data from Home Assistant for interactive monitoring of building floorplans and connected devices.  Primary Vega Lab fit: repo-discovery via agent-workflows.\nClassification: house\nCapabilities: agent-workflows, frontend-ui, data-pipeline\nHouse skills: repo-discovery, skill-extraction, repo-adoption, mine-execution\nRules:\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\n5. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: KBLLR/code-smart-campus\nGoal:  Real-time 3D visualization of smart spaces, integrating live IoT data from Home Assistant for interactive monitoring of building floorplans and connected devices.  Primary Vega Lab fit: repo-discovery via agent-workflows.\nClassification: house\nCapabilities: agent-workflows, frontend-ui, data-pipeline\nHouse skills: repo-discovery, skill-extraction, repo-adoption, mine-execution\nRules:\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\n5. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "KBLLR/cog-sdxl",
@@ -25092,27 +25111,29 @@
     "nwo": "KBLLR/core-x",
     "name": "core-x",
     "author": "KBLLR",
-    "summary": "Core-X: Clean architecture backbone for the KBLLR AI ecosystem Primary Vega Lab fit: repo-adoption via ml-ai.",
+    "summary": "Core-X: Clean architecture backbone for the KBLLR AI ecosystem Primary Vega Lab fit: skill-extraction via agent-workflows.",
     "capabilities": [
+      "agent-workflows",
       "ml-ai"
     ],
     "houseSkills": [
+      "skill-extraction",
       "repo-adoption",
       "mine-execution"
     ],
     "rules": [
-      "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.",
       "Review license status before adoption or redistribution work.",
       "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
     ],
     "flows": [
       "research-queue-flow",
+      "skill-extraction-flow",
       "adoption-decision-flow",
       "mine-execution-flow"
     ],
-    "adoptionKind": "tool",
-    "codexBrief": "# Codex Mission: KBLLR/core-x\nGoal: Core-X: Clean architecture backbone for the KBLLR AI ecosystem Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption, mine-execution\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: KBLLR/core-x\nGoal: Core-X: Clean architecture backbone for the KBLLR AI ecosystem Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption, mine-execution\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "adoptionKind": "house",
+    "codexBrief": "# Codex Mission: KBLLR/core-x\nGoal: Core-X: Clean architecture backbone for the KBLLR AI ecosystem Primary Vega Lab fit: skill-extraction via agent-workflows.\nClassification: house\nCapabilities: agent-workflows, ml-ai\nHouse skills: skill-extraction, repo-adoption, mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: KBLLR/core-x\nGoal: Core-X: Clean architecture backbone for the KBLLR AI ecosystem Primary Vega Lab fit: skill-extraction via agent-workflows.\nClassification: house\nCapabilities: agent-workflows, ml-ai\nHouse skills: skill-extraction, repo-adoption, mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "KBLLR/core-x-design-system",
@@ -25171,22 +25192,30 @@
     "nwo": "KBLLR/corex-chat-mac",
     "name": "corex-chat-mac",
     "author": "KBLLR",
-    "summary": "Core-X native macOS chat and mission observation client Primary Vega Lab fit: mine-execution via general engineering.",
-    "capabilities": [],
+    "summary": "Core-X native macOS chat and mission observation client Primary Vega Lab fit: skill-extraction via agent-workflows.",
+    "capabilities": [
+      "agent-workflows",
+      "ml-ai"
+    ],
     "houseSkills": [
+      "skill-extraction",
+      "repo-adoption",
       "mine-execution"
     ],
     "rules": [
+      "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.",
       "Review license status before adoption or redistribution work.",
       "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
     ],
     "flows": [
       "research-queue-flow",
+      "skill-extraction-flow",
+      "adoption-decision-flow",
       "mine-execution-flow"
     ],
-    "adoptionKind": "ignore",
-    "codexBrief": "# Codex Mission: KBLLR/corex-chat-mac\nGoal: Core-X native macOS chat and mission observation client Primary Vega Lab fit: mine-execution via general engineering.\nClassification: ignore\nCapabilities: none\nHouse skills: mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: KBLLR/corex-chat-mac\nGoal: Core-X native macOS chat and mission observation client Primary Vega Lab fit: mine-execution via general engineering.\nClassification: ignore\nCapabilities: none\nHouse skills: mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "adoptionKind": "tool",
+    "codexBrief": "# Codex Mission: KBLLR/corex-chat-mac\nGoal: Core-X native macOS chat and mission observation client Primary Vega Lab fit: skill-extraction via agent-workflows.\nClassification: tool\nCapabilities: agent-workflows, ml-ai\nHouse skills: skill-extraction, repo-adoption, mine-execution\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: KBLLR/corex-chat-mac\nGoal: Core-X native macOS chat and mission observation client Primary Vega Lab fit: skill-extraction via agent-workflows.\nClassification: tool\nCapabilities: agent-workflows, ml-ai\nHouse skills: skill-extraction, repo-adoption, mine-execution\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "KBLLR/dam-test",
@@ -25409,13 +25438,15 @@
     "nwo": "KBLLR/empathic-ai",
     "name": "empathic-ai",
     "author": "KBLLR",
-    "summary": "empathic-ai is a candidate for house adoption. Primary Vega Lab fit: repo-discovery via ml-ai.",
+    "summary": "empathic-ai is a candidate for house adoption. Primary Vega Lab fit: repo-discovery via agent-workflows.",
     "capabilities": [
-      "ml-ai",
-      "frontend-ui"
+      "agent-workflows",
+      "frontend-ui",
+      "ml-ai"
     ],
     "houseSkills": [
       "repo-discovery",
+      "skill-extraction",
       "repo-adoption",
       "mine-execution"
     ],
@@ -25426,13 +25457,14 @@
     ],
     "flows": [
       "research-queue-flow",
+      "skill-extraction-flow",
       "adoption-decision-flow",
       "news-digest-refresh",
       "mine-execution-flow"
     ],
     "adoptionKind": "house",
-    "codexBrief": "# Codex Mission: KBLLR/empathic-ai\nGoal: empathic-ai is a candidate for house adoption. Primary Vega Lab fit: repo-discovery via ml-ai.\nClassification: house\nCapabilities: ml-ai, frontend-ui\nHouse skills: repo-discovery, repo-adoption, mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\n4. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: KBLLR/empathic-ai\nGoal: empathic-ai is a candidate for house adoption. Primary Vega Lab fit: repo-discovery via ml-ai.\nClassification: house\nCapabilities: ml-ai, frontend-ui\nHouse skills: repo-discovery, repo-adoption, mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\n4. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: KBLLR/empathic-ai\nGoal: empathic-ai is a candidate for house adoption. Primary Vega Lab fit: repo-discovery via agent-workflows.\nClassification: house\nCapabilities: agent-workflows, frontend-ui, ml-ai\nHouse skills: repo-discovery, skill-extraction, repo-adoption, mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\n5. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: KBLLR/empathic-ai\nGoal: empathic-ai is a candidate for house adoption. Primary Vega Lab fit: repo-discovery via agent-workflows.\nClassification: house\nCapabilities: agent-workflows, frontend-ui, ml-ai\nHouse skills: repo-discovery, skill-extraction, repo-adoption, mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\n5. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "KBLLR/esoteric-lab",
@@ -25440,7 +25472,8 @@
     "author": "KBLLR",
     "summary": "Core-X Esoteric Lab — ARCANA Tarot, operator context, astrology, ritual voice and music Primary Vega Lab fit: repo-discovery via frontend-ui.",
     "capabilities": [
-      "frontend-ui"
+      "frontend-ui",
+      "ml-ai"
     ],
     "houseSkills": [
       "repo-discovery",
@@ -25458,8 +25491,8 @@
       "mine-execution-flow"
     ],
     "adoptionKind": "house",
-    "codexBrief": "# Codex Mission: KBLLR/esoteric-lab\nGoal: Core-X Esoteric Lab — ARCANA Tarot, operator context, astrology, ritual voice and music Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui\nHouse skills: repo-discovery, repo-adoption, mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\n4. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: KBLLR/esoteric-lab\nGoal: Core-X Esoteric Lab — ARCANA Tarot, operator context, astrology, ritual voice and music Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui\nHouse skills: repo-discovery, repo-adoption, mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\n4. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: KBLLR/esoteric-lab\nGoal: Core-X Esoteric Lab — ARCANA Tarot, operator context, astrology, ritual voice and music Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui, ml-ai\nHouse skills: repo-discovery, repo-adoption, mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\n4. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: KBLLR/esoteric-lab\nGoal: Core-X Esoteric Lab — ARCANA Tarot, operator context, astrology, ritual voice and music Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui, ml-ai\nHouse skills: repo-discovery, repo-adoption, mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\n4. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "KBLLR/Final-MariCoin",
@@ -25584,9 +25617,16 @@
     "nwo": "KBLLR/gen_avatar_debate",
     "name": "gen_avatar_debate",
     "author": "KBLLR",
-    "summary": "gen_avatar_debate is a candidate for ignore adoption. Primary Vega Lab fit: mine-execution via general engineering.",
-    "capabilities": [],
+    "summary": "gen_avatar_debate is a candidate for house adoption. Primary Vega Lab fit: repo-discovery via agent-workflows.",
+    "capabilities": [
+      "agent-workflows",
+      "frontend-ui",
+      "ml-ai"
+    ],
     "houseSkills": [
+      "repo-discovery",
+      "skill-extraction",
+      "repo-adoption",
       "mine-execution"
     ],
     "rules": [
@@ -25596,22 +25636,27 @@
     ],
     "flows": [
       "research-queue-flow",
+      "skill-extraction-flow",
+      "adoption-decision-flow",
+      "news-digest-refresh",
       "mine-execution-flow"
     ],
-    "adoptionKind": "ignore",
-    "codexBrief": "# Codex Mission: KBLLR/gen_avatar_debate\nGoal: gen_avatar_debate is a candidate for ignore adoption. Primary Vega Lab fit: mine-execution via general engineering.\nClassification: ignore\nCapabilities: none\nHouse skills: mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: KBLLR/gen_avatar_debate\nGoal: gen_avatar_debate is a candidate for ignore adoption. Primary Vega Lab fit: mine-execution via general engineering.\nClassification: ignore\nCapabilities: none\nHouse skills: mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "adoptionKind": "house",
+    "codexBrief": "# Codex Mission: KBLLR/gen_avatar_debate\nGoal: gen_avatar_debate is a candidate for house adoption. Primary Vega Lab fit: repo-discovery via agent-workflows.\nClassification: house\nCapabilities: agent-workflows, frontend-ui, ml-ai\nHouse skills: repo-discovery, skill-extraction, repo-adoption, mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\n5. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: KBLLR/gen_avatar_debate\nGoal: gen_avatar_debate is a candidate for house adoption. Primary Vega Lab fit: repo-discovery via agent-workflows.\nClassification: house\nCapabilities: agent-workflows, frontend-ui, ml-ai\nHouse skills: repo-discovery, skill-extraction, repo-adoption, mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\n5. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "KBLLR/gen-idea-lab",
     "name": "gen-idea-lab",
     "author": "KBLLR",
-    "summary": "Connect with expert AI assistants for each subject and generate creative project ideas. A growing collection of micro-apps designed for agents with Human in the loop. Primary Vega Lab fit: skill-extraction via agent-workflows.",
+    "summary": "Connect with expert AI assistants for each subject and generate creative project ideas. A growing collection of micro-apps designed for agents with Human in the loop. Primary Vega Lab fit: repo-discovery via agent-workflows.",
     "capabilities": [
       "agent-workflows",
+      "frontend-ui",
       "ml-ai"
     ],
     "houseSkills": [
+      "repo-discovery",
       "skill-extraction",
       "repo-adoption",
       "mine-execution"
@@ -25624,11 +25669,12 @@
       "research-queue-flow",
       "skill-extraction-flow",
       "adoption-decision-flow",
+      "news-digest-refresh",
       "mine-execution-flow"
     ],
     "adoptionKind": "house",
-    "codexBrief": "# Codex Mission: KBLLR/gen-idea-lab\nGoal: Connect with expert AI assistants for each subject and generate creative project ideas. A growing collection of micro-apps designed for agents with Human in the loop. Primary Vega Lab fit: skill-extraction via agent-workflows.\nClassification: house\nCapabilities: agent-workflows, ml-ai\nHouse skills: skill-extraction, repo-adoption, mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: KBLLR/gen-idea-lab\nGoal: Connect with expert AI assistants for each subject and generate creative project ideas. A growing collection of micro-apps designed for agents with Human in the loop. Primary Vega Lab fit: skill-extraction via agent-workflows.\nClassification: house\nCapabilities: agent-workflows, ml-ai\nHouse skills: skill-extraction, repo-adoption, mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: KBLLR/gen-idea-lab\nGoal: Connect with expert AI assistants for each subject and generate creative project ideas. A growing collection of micro-apps designed for agents with Human in the loop. Primary Vega Lab fit: repo-discovery via agent-workflows.\nClassification: house\nCapabilities: agent-workflows, frontend-ui, ml-ai\nHouse skills: repo-discovery, skill-extraction, repo-adoption, mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\n5. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: KBLLR/gen-idea-lab\nGoal: Connect with expert AI assistants for each subject and generate creative project ideas. A growing collection of micro-apps designed for agents with Human in the loop. Primary Vega Lab fit: repo-discovery via agent-workflows.\nClassification: house\nCapabilities: agent-workflows, frontend-ui, ml-ai\nHouse skills: repo-discovery, skill-extraction, repo-adoption, mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\n5. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "KBLLR/glTF_3Dmodel-Configurator",
@@ -25983,9 +26029,14 @@
     "nwo": "KBLLR/isoboth",
     "name": "isoboth",
     "author": "KBLLR",
-    "summary": "You can imagine, then you can generate it Primary Vega Lab fit: mine-execution via general engineering.",
-    "capabilities": [],
+    "summary": "You can imagine, then you can generate it Primary Vega Lab fit: repo-discovery via frontend-ui.",
+    "capabilities": [
+      "frontend-ui",
+      "ml-ai"
+    ],
     "houseSkills": [
+      "repo-discovery",
+      "repo-adoption",
       "mine-execution"
     ],
     "rules": [
@@ -25994,11 +26045,13 @@
     ],
     "flows": [
       "research-queue-flow",
+      "adoption-decision-flow",
+      "news-digest-refresh",
       "mine-execution-flow"
     ],
-    "adoptionKind": "ignore",
-    "codexBrief": "# Codex Mission: KBLLR/isoboth\nGoal: You can imagine, then you can generate it Primary Vega Lab fit: mine-execution via general engineering.\nClassification: ignore\nCapabilities: none\nHouse skills: mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: KBLLR/isoboth\nGoal: You can imagine, then you can generate it Primary Vega Lab fit: mine-execution via general engineering.\nClassification: ignore\nCapabilities: none\nHouse skills: mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "adoptionKind": "house",
+    "codexBrief": "# Codex Mission: KBLLR/isoboth\nGoal: You can imagine, then you can generate it Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui, ml-ai\nHouse skills: repo-discovery, repo-adoption, mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\n4. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: KBLLR/isoboth\nGoal: You can imagine, then you can generate it Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui, ml-ai\nHouse skills: repo-discovery, repo-adoption, mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\n4. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "KBLLR/javascript-algorithms",
@@ -26146,11 +26199,13 @@
     "nwo": "KBLLR/KBLLR-template-ThreeJS",
     "name": "KBLLR-template-ThreeJS",
     "author": "KBLLR",
-    "summary": "KBLLR-template-ThreeJS is a candidate for template adoption. Primary Vega Lab fit: skill-extraction via template-scaffolding.",
+    "summary": "KBLLR-template-ThreeJS is a candidate for template adoption. Primary Vega Lab fit: repo-discovery via template-scaffolding.",
     "capabilities": [
-      "template-scaffolding"
+      "template-scaffolding",
+      "frontend-ui"
     ],
     "houseSkills": [
+      "repo-discovery",
       "skill-extraction",
       "repo-adoption",
       "mine-execution"
@@ -26165,11 +26220,12 @@
       "research-queue-flow",
       "skill-extraction-flow",
       "adoption-decision-flow",
+      "news-digest-refresh",
       "mine-execution-flow"
     ],
     "adoptionKind": "template",
-    "codexBrief": "# Codex Mission: KBLLR/KBLLR-template-ThreeJS\nGoal: KBLLR-template-ThreeJS is a candidate for template adoption. Primary Vega Lab fit: skill-extraction via template-scaffolding.\nClassification: template\nCapabilities: template-scaffolding\nHouse skills: skill-extraction, repo-adoption, mine-execution\nRules:\n- Adopt this as a scaffold or reference, not as a long-lived runtime dependency.\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: KBLLR/KBLLR-template-ThreeJS\nGoal: KBLLR-template-ThreeJS is a candidate for template adoption. Primary Vega Lab fit: skill-extraction via template-scaffolding.\nClassification: template\nCapabilities: template-scaffolding\nHouse skills: skill-extraction, repo-adoption, mine-execution\nRules:\n- Adopt this as a scaffold or reference, not as a long-lived runtime dependency.\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: KBLLR/KBLLR-template-ThreeJS\nGoal: KBLLR-template-ThreeJS is a candidate for template adoption. Primary Vega Lab fit: repo-discovery via template-scaffolding.\nClassification: template\nCapabilities: template-scaffolding, frontend-ui\nHouse skills: repo-discovery, skill-extraction, repo-adoption, mine-execution\nRules:\n- Adopt this as a scaffold or reference, not as a long-lived runtime dependency.\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\n5. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: KBLLR/KBLLR-template-ThreeJS\nGoal: KBLLR-template-ThreeJS is a candidate for template adoption. Primary Vega Lab fit: repo-discovery via template-scaffolding.\nClassification: template\nCapabilities: template-scaffolding, frontend-ui\nHouse skills: repo-discovery, skill-extraction, repo-adoption, mine-execution\nRules:\n- Adopt this as a scaffold or reference, not as a long-lived runtime dependency.\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\n5. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "KBLLR/LANDING_PAGE-001",
@@ -26202,12 +26258,15 @@
     "nwo": "KBLLR/le-belle-epoch",
     "name": "le-belle-epoch",
     "author": "KBLLR",
-    "summary": "le-belle-epoch is a candidate for house adoption. Primary Vega Lab fit: repo-discovery via frontend-ui.",
+    "summary": "le-belle-epoch is a candidate for house adoption. Primary Vega Lab fit: repo-discovery via agent-workflows.",
     "capabilities": [
-      "frontend-ui"
+      "agent-workflows",
+      "frontend-ui",
+      "ml-ai"
     ],
     "houseSkills": [
       "repo-discovery",
+      "skill-extraction",
       "repo-adoption",
       "mine-execution"
     ],
@@ -26217,24 +26276,27 @@
     ],
     "flows": [
       "research-queue-flow",
+      "skill-extraction-flow",
       "adoption-decision-flow",
       "news-digest-refresh",
       "mine-execution-flow"
     ],
     "adoptionKind": "house",
-    "codexBrief": "# Codex Mission: KBLLR/le-belle-epoch\nGoal: le-belle-epoch is a candidate for house adoption. Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui\nHouse skills: repo-discovery, repo-adoption, mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\n4. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: KBLLR/le-belle-epoch\nGoal: le-belle-epoch is a candidate for house adoption. Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui\nHouse skills: repo-discovery, repo-adoption, mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\n4. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: KBLLR/le-belle-epoch\nGoal: le-belle-epoch is a candidate for house adoption. Primary Vega Lab fit: repo-discovery via agent-workflows.\nClassification: house\nCapabilities: agent-workflows, frontend-ui, ml-ai\nHouse skills: repo-discovery, skill-extraction, repo-adoption, mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\n5. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: KBLLR/le-belle-epoch\nGoal: le-belle-epoch is a candidate for house adoption. Primary Vega Lab fit: repo-discovery via agent-workflows.\nClassification: house\nCapabilities: agent-workflows, frontend-ui, ml-ai\nHouse skills: repo-discovery, skill-extraction, repo-adoption, mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\n5. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "KBLLR/Leagentdiary",
     "name": "Leagentdiary",
     "author": "KBLLR",
-    "summary": "LeAgentDiary is a version-control system for AI agents. It connects handoffs, memory, and self-reflection into one timeline—track contributions, re-summon past agents, and evolve their personas. Built with the HTDI Agentic Framework for human-AI co-development. Primary Vega Lab fit: skill-extraction via agent-workflows.",
+    "summary": "LeAgentDiary is a version-control system for AI agents. It connects handoffs, memory, and self-reflection into one timeline—track contributions, re-summon past agents, and evolve their personas. Built with the HTDI Agentic Framework for human-AI co-development. Primary Vega Lab fit: repo-discovery via agent-workflows.",
     "capabilities": [
       "agent-workflows",
+      "frontend-ui",
       "ml-ai"
     ],
     "houseSkills": [
+      "repo-discovery",
       "skill-extraction",
       "repo-adoption",
       "mine-execution"
@@ -26246,11 +26308,12 @@
       "research-queue-flow",
       "skill-extraction-flow",
       "adoption-decision-flow",
+      "news-digest-refresh",
       "mine-execution-flow"
     ],
     "adoptionKind": "house",
-    "codexBrief": "# Codex Mission: KBLLR/Leagentdiary\nGoal: LeAgentDiary is a version-control system for AI agents. It connects handoffs, memory, and self-reflection into one timeline—track contributions, re-summon past agents, and evolve their personas. Built with the HTDI Agentic Framework for human-AI co-development. Primary Vega Lab fit: skill-extraction via agent-workflows.\nClassification: house\nCapabilities: agent-workflows, ml-ai\nHouse skills: skill-extraction, repo-adoption, mine-execution\nRules:\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: KBLLR/Leagentdiary\nGoal: LeAgentDiary is a version-control system for AI agents. It connects handoffs, memory, and self-reflection into one timeline—track contributions, re-summon past agents, and evolve their personas. Built with the HTDI Agentic Framework for human-AI co-development. Primary Vega Lab fit: skill-extraction via agent-workflows.\nClassification: house\nCapabilities: agent-workflows, ml-ai\nHouse skills: skill-extraction, repo-adoption, mine-execution\nRules:\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: KBLLR/Leagentdiary\nGoal: LeAgentDiary is a version-control system for AI agents. It connects handoffs, memory, and self-reflection into one timeline—track contributions, re-summon past agents, and evolve their personas. Built with the HTDI Agentic Framework for human-AI co-development. Primary Vega Lab fit: repo-discovery via agent-workflows.\nClassification: house\nCapabilities: agent-workflows, frontend-ui, ml-ai\nHouse skills: repo-discovery, skill-extraction, repo-adoption, mine-execution\nRules:\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\n5. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: KBLLR/Leagentdiary\nGoal: LeAgentDiary is a version-control system for AI agents. It connects handoffs, memory, and self-reflection into one timeline—track contributions, re-summon past agents, and evolve their personas. Built with the HTDI Agentic Framework for human-AI co-development. Primary Vega Lab fit: repo-discovery via agent-workflows.\nClassification: house\nCapabilities: agent-workflows, frontend-ui, ml-ai\nHouse skills: repo-discovery, skill-extraction, repo-adoption, mine-execution\nRules:\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\n5. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "KBLLR/livekit-project-idea-lab",
@@ -26258,7 +26321,8 @@
     "author": "KBLLR",
     "summary": "livekit-project-idea-lab is a candidate for house adoption. Primary Vega Lab fit: repo-discovery via frontend-ui.",
     "capabilities": [
-      "frontend-ui"
+      "frontend-ui",
+      "ml-ai"
     ],
     "houseSkills": [
       "repo-discovery",
@@ -26276,8 +26340,8 @@
       "mine-execution-flow"
     ],
     "adoptionKind": "house",
-    "codexBrief": "# Codex Mission: KBLLR/livekit-project-idea-lab\nGoal: livekit-project-idea-lab is a candidate for house adoption. Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui\nHouse skills: repo-discovery, repo-adoption, mine-execution\nRules:\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\n4. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: KBLLR/livekit-project-idea-lab\nGoal: livekit-project-idea-lab is a candidate for house adoption. Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui\nHouse skills: repo-discovery, repo-adoption, mine-execution\nRules:\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\n4. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: KBLLR/livekit-project-idea-lab\nGoal: livekit-project-idea-lab is a candidate for house adoption. Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui, ml-ai\nHouse skills: repo-discovery, repo-adoption, mine-execution\nRules:\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\n4. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: KBLLR/livekit-project-idea-lab\nGoal: livekit-project-idea-lab is a candidate for house adoption. Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui, ml-ai\nHouse skills: repo-discovery, repo-adoption, mine-execution\nRules:\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\n4. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "KBLLR/macbook-keyboard",
@@ -26456,7 +26520,7 @@
     "nwo": "KBLLR/mlx-rag-lab",
     "name": "mlx-rag-lab",
     "author": "KBLLR",
-    "summary": "mlx-rag-lab is a candidate for tool adoption. Primary Vega Lab fit: repo-adoption via ml-ai.",
+    "summary": "mlx-rag-lab is a candidate for house adoption. Primary Vega Lab fit: repo-adoption via ml-ai.",
     "capabilities": [
       "ml-ai"
     ],
@@ -26465,7 +26529,6 @@
       "mine-execution"
     ],
     "rules": [
-      "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.",
       "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
     ],
     "flows": [
@@ -26473,9 +26536,9 @@
       "adoption-decision-flow",
       "mine-execution-flow"
     ],
-    "adoptionKind": "tool",
-    "codexBrief": "# Codex Mission: KBLLR/mlx-rag-lab\nGoal: mlx-rag-lab is a candidate for tool adoption. Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption, mine-execution\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: KBLLR/mlx-rag-lab\nGoal: mlx-rag-lab is a candidate for tool adoption. Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption, mine-execution\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "adoptionKind": "house",
+    "codexBrief": "# Codex Mission: KBLLR/mlx-rag-lab\nGoal: mlx-rag-lab is a candidate for house adoption. Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: house\nCapabilities: ml-ai\nHouse skills: repo-adoption, mine-execution\nRules:\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: KBLLR/mlx-rag-lab\nGoal: mlx-rag-lab is a candidate for house adoption. Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: house\nCapabilities: ml-ai\nHouse skills: repo-adoption, mine-execution\nRules:\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "KBLLR/modal-apps-lab",
@@ -26507,18 +26570,19 @@
     "nwo": "KBLLR/moonsyc",
     "name": "moonsyc",
     "author": "KBLLR",
-    "summary": "Moonsyc is a social network for AI-native creators, where humans and their AI agents share, distribute, and collaborate on creative work. Primary Vega Lab fit: skill-extraction via agent-workflows.",
+    "summary": "Moonsyc is a social network for AI-native creators, where humans and their AI agents share, distribute, and collaborate on creative work. Primary Vega Lab fit: repo-discovery via agent-workflows.",
     "capabilities": [
       "agent-workflows",
+      "frontend-ui",
       "ml-ai"
     ],
     "houseSkills": [
+      "repo-discovery",
       "skill-extraction",
       "repo-adoption",
       "mine-execution"
     ],
     "rules": [
-      "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.",
       "Review license status before adoption or redistribution work.",
       "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
     ],
@@ -26526,11 +26590,12 @@
       "research-queue-flow",
       "skill-extraction-flow",
       "adoption-decision-flow",
+      "news-digest-refresh",
       "mine-execution-flow"
     ],
-    "adoptionKind": "tool",
-    "codexBrief": "# Codex Mission: KBLLR/moonsyc\nGoal: Moonsyc is a social network for AI-native creators, where humans and their AI agents share, distribute, and collaborate on creative work. Primary Vega Lab fit: skill-extraction via agent-workflows.\nClassification: tool\nCapabilities: agent-workflows, ml-ai\nHouse skills: skill-extraction, repo-adoption, mine-execution\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: KBLLR/moonsyc\nGoal: Moonsyc is a social network for AI-native creators, where humans and their AI agents share, distribute, and collaborate on creative work. Primary Vega Lab fit: skill-extraction via agent-workflows.\nClassification: tool\nCapabilities: agent-workflows, ml-ai\nHouse skills: skill-extraction, repo-adoption, mine-execution\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "adoptionKind": "house",
+    "codexBrief": "# Codex Mission: KBLLR/moonsyc\nGoal: Moonsyc is a social network for AI-native creators, where humans and their AI agents share, distribute, and collaborate on creative work. Primary Vega Lab fit: repo-discovery via agent-workflows.\nClassification: house\nCapabilities: agent-workflows, frontend-ui, ml-ai\nHouse skills: repo-discovery, skill-extraction, repo-adoption, mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\n5. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: KBLLR/moonsyc\nGoal: Moonsyc is a social network for AI-native creators, where humans and their AI agents share, distribute, and collaborate on creative work. Primary Vega Lab fit: repo-discovery via agent-workflows.\nClassification: house\nCapabilities: agent-workflows, frontend-ui, ml-ai\nHouse skills: repo-discovery, skill-extraction, repo-adoption, mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\n5. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "KBLLR/my-room-in-3d",
@@ -26586,9 +26651,13 @@
     "nwo": "KBLLR/OBLIK-3D-Furniture-Configurator",
     "name": "OBLIK-3D-Furniture-Configurator",
     "author": "KBLLR",
-    "summary": "Developing a custom 3D furniture viewer and configurator for emblematic Design shop \"OBLIK\" (Berlin) Primary Vega Lab fit: mine-execution via general engineering.",
-    "capabilities": [],
+    "summary": "Developing a custom 3D furniture viewer and configurator for emblematic Design shop \"OBLIK\" (Berlin) Primary Vega Lab fit: repo-discovery via frontend-ui.",
+    "capabilities": [
+      "frontend-ui"
+    ],
     "houseSkills": [
+      "repo-discovery",
+      "repo-adoption",
       "mine-execution"
     ],
     "rules": [
@@ -26598,11 +26667,13 @@
     ],
     "flows": [
       "research-queue-flow",
+      "adoption-decision-flow",
+      "news-digest-refresh",
       "mine-execution-flow"
     ],
-    "adoptionKind": "ignore",
-    "codexBrief": "# Codex Mission: KBLLR/OBLIK-3D-Furniture-Configurator\nGoal: Developing a custom 3D furniture viewer and configurator for emblematic Design shop \"OBLIK\" (Berlin) Primary Vega Lab fit: mine-execution via general engineering.\nClassification: ignore\nCapabilities: none\nHouse skills: mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: KBLLR/OBLIK-3D-Furniture-Configurator\nGoal: Developing a custom 3D furniture viewer and configurator for emblematic Design shop \"OBLIK\" (Berlin) Primary Vega Lab fit: mine-execution via general engineering.\nClassification: ignore\nCapabilities: none\nHouse skills: mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "adoptionKind": "house",
+    "codexBrief": "# Codex Mission: KBLLR/OBLIK-3D-Furniture-Configurator\nGoal: Developing a custom 3D furniture viewer and configurator for emblematic Design shop \"OBLIK\" (Berlin) Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui\nHouse skills: repo-discovery, repo-adoption, mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\n4. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: KBLLR/OBLIK-3D-Furniture-Configurator\nGoal: Developing a custom 3D furniture viewer and configurator for emblematic Design shop \"OBLIK\" (Berlin) Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui\nHouse skills: repo-discovery, repo-adoption, mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\n4. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "KBLLR/oink-oink",
@@ -26649,6 +26720,39 @@
     "adoptionKind": "house",
     "codexBrief": "# Codex Mission: KBLLR/panorama-to-cubemap\nGoal: Convert an equirectangular panorama to six cube faces Primary Vega Lab fit: repo-adoption via general engineering.\nClassification: house\nCapabilities: none\nHouse skills: repo-adoption, mine-execution\nRules:\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
     "claudeBrief": "# Claude Mission: KBLLR/panorama-to-cubemap\nGoal: Convert an equirectangular panorama to six cube faces Primary Vega Lab fit: repo-adoption via general engineering.\nClassification: house\nCapabilities: none\nHouse skills: repo-adoption, mine-execution\nRules:\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+  },
+  {
+    "nwo": "KBLLR/papiro",
+    "name": "papiro",
+    "author": "KBLLR",
+    "summary": "Papiro: Core-X academic house, papers & research library (native macOS app + house orchestrator) Primary Vega Lab fit: repo-discovery via agent-workflows.",
+    "capabilities": [
+      "agent-workflows",
+      "research-intelligence",
+      "developer-tooling"
+    ],
+    "houseSkills": [
+      "repo-discovery",
+      "repo-research",
+      "skill-extraction",
+      "repo-adoption",
+      "mine-execution"
+    ],
+    "rules": [
+      "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.",
+      "Review license status before adoption or redistribution work.",
+      "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
+    ],
+    "flows": [
+      "research-queue-flow",
+      "skill-extraction-flow",
+      "adoption-decision-flow",
+      "news-digest-refresh",
+      "mine-execution-flow"
+    ],
+    "adoptionKind": "tool",
+    "codexBrief": "# Codex Mission: KBLLR/papiro\nGoal: Papiro: Core-X academic house, papers & research library (native macOS app + house orchestrator) Primary Vega Lab fit: repo-discovery via agent-workflows.\nClassification: tool\nCapabilities: agent-workflows, research-intelligence, developer-tooling\nHouse skills: repo-discovery, repo-research, skill-extraction, repo-adoption, mine-execution\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\n5. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: KBLLR/papiro\nGoal: Papiro: Core-X academic house, papers & research library (native macOS app + house orchestrator) Primary Vega Lab fit: repo-discovery via agent-workflows.\nClassification: tool\nCapabilities: agent-workflows, research-intelligence, developer-tooling\nHouse skills: repo-discovery, repo-research, skill-extraction, repo-adoption, mine-execution\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\n5. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "KBLLR/project_anja",
@@ -26733,9 +26837,13 @@
     "nwo": "KBLLR/rigging-palace",
     "name": "rigging-palace",
     "author": "KBLLR",
-    "summary": "Rigging Palace Primary Vega Lab fit: mine-execution via general engineering.",
-    "capabilities": [],
+    "summary": "Rigging Palace Primary Vega Lab fit: repo-discovery via frontend-ui.",
+    "capabilities": [
+      "frontend-ui"
+    ],
     "houseSkills": [
+      "repo-discovery",
+      "repo-adoption",
       "mine-execution"
     ],
     "rules": [
@@ -26744,11 +26852,13 @@
     ],
     "flows": [
       "research-queue-flow",
+      "adoption-decision-flow",
+      "news-digest-refresh",
       "mine-execution-flow"
     ],
-    "adoptionKind": "ignore",
-    "codexBrief": "# Codex Mission: KBLLR/rigging-palace\nGoal: Rigging Palace Primary Vega Lab fit: mine-execution via general engineering.\nClassification: ignore\nCapabilities: none\nHouse skills: mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: KBLLR/rigging-palace\nGoal: Rigging Palace Primary Vega Lab fit: mine-execution via general engineering.\nClassification: ignore\nCapabilities: none\nHouse skills: mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "adoptionKind": "house",
+    "codexBrief": "# Codex Mission: KBLLR/rigging-palace\nGoal: Rigging Palace Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui\nHouse skills: repo-discovery, repo-adoption, mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\n4. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: KBLLR/rigging-palace\nGoal: Rigging Palace Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui\nHouse skills: repo-discovery, repo-adoption, mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\n4. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "KBLLR/rightorchestrator",
@@ -26757,7 +26867,8 @@
     "summary": "An unintrusive, private, and context-aware floating HUD and client console for agentic web applications, featuring Shadow DOM target tracking, speech visualizers, and client-side tool loops. Primary Vega Lab fit: repo-discovery via agent-workflows.",
     "capabilities": [
       "agent-workflows",
-      "frontend-ui"
+      "frontend-ui",
+      "ml-ai"
     ],
     "houseSkills": [
       "repo-discovery",
@@ -26777,8 +26888,8 @@
       "mine-execution-flow"
     ],
     "adoptionKind": "house",
-    "codexBrief": "# Codex Mission: KBLLR/rightorchestrator\nGoal: An unintrusive, private, and context-aware floating HUD and client console for agentic web applications, featuring Shadow DOM target tracking, speech visualizers, and client-side tool loops. Primary Vega Lab fit: repo-discovery via agent-workflows.\nClassification: house\nCapabilities: agent-workflows, frontend-ui\nHouse skills: repo-discovery, skill-extraction, repo-adoption, mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\n5. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: KBLLR/rightorchestrator\nGoal: An unintrusive, private, and context-aware floating HUD and client console for agentic web applications, featuring Shadow DOM target tracking, speech visualizers, and client-side tool loops. Primary Vega Lab fit: repo-discovery via agent-workflows.\nClassification: house\nCapabilities: agent-workflows, frontend-ui\nHouse skills: repo-discovery, skill-extraction, repo-adoption, mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\n5. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: KBLLR/rightorchestrator\nGoal: An unintrusive, private, and context-aware floating HUD and client console for agentic web applications, featuring Shadow DOM target tracking, speech visualizers, and client-side tool loops. Primary Vega Lab fit: repo-discovery via agent-workflows.\nClassification: house\nCapabilities: agent-workflows, frontend-ui, ml-ai\nHouse skills: repo-discovery, skill-extraction, repo-adoption, mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\n5. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: KBLLR/rightorchestrator\nGoal: An unintrusive, private, and context-aware floating HUD and client console for agentic web applications, featuring Shadow DOM target tracking, speech visualizers, and client-side tool loops. Primary Vega Lab fit: repo-discovery via agent-workflows.\nClassification: house\nCapabilities: agent-workflows, frontend-ui, ml-ai\nHouse skills: repo-discovery, skill-extraction, repo-adoption, mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\n5. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "KBLLR/roop",
@@ -26986,6 +27097,32 @@
     "claudeBrief": "# Claude Mission: KBLLR/StableCascade\nGoal: Official Code for Stable Cascade Primary Vega Lab fit: mine-execution via general engineering.\nClassification: ignore\nCapabilities: none\nHouse skills: mine-execution\nRules:\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
+    "nwo": "KBLLR/studio-labs-splats",
+    "name": "studio-labs-splats",
+    "author": "KBLLR",
+    "summary": "Studio Labs Gaussian splat viewer, Three.js + Spark. https://kbllr.github.io/studio-labs-splats/ Primary Vega Lab fit: repo-discovery via frontend-ui.",
+    "capabilities": [
+      "frontend-ui"
+    ],
+    "houseSkills": [
+      "repo-discovery",
+      "repo-adoption",
+      "mine-execution"
+    ],
+    "rules": [
+      "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
+    ],
+    "flows": [
+      "research-queue-flow",
+      "adoption-decision-flow",
+      "news-digest-refresh",
+      "mine-execution-flow"
+    ],
+    "adoptionKind": "house",
+    "codexBrief": "# Codex Mission: KBLLR/studio-labs-splats\nGoal: Studio Labs Gaussian splat viewer, Three.js + Spark. https://kbllr.github.io/studio-labs-splats/ Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui\nHouse skills: repo-discovery, repo-adoption, mine-execution\nRules:\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\n4. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: KBLLR/studio-labs-splats\nGoal: Studio Labs Gaussian splat viewer, Three.js + Spark. https://kbllr.github.io/studio-labs-splats/ Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui\nHouse skills: repo-discovery, repo-adoption, mine-execution\nRules:\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\n4. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+  },
+  {
     "nwo": "KBLLR/talking-heads-papers",
     "name": "talking-heads-papers",
     "author": "KBLLR",
@@ -27171,16 +27308,13 @@
     "nwo": "KBLLR/Threejs-nerf-visualizer",
     "name": "Threejs-nerf-visualizer",
     "author": "KBLLR",
-    "summary": "A web-based 3D viewer for Gaussian Splatting models using Three.js and Luma.gl. Features environment mapping, post-processing effects, and interactive controls. Primary Vega Lab fit: repo-adoption via ml-ai.",
-    "capabilities": [
-      "ml-ai"
-    ],
+    "summary": "ARCHIVED. Original Studio Labs Gaussian splat viewer (Nov 2024). Continued in https://github.com/KBLLR/studio-labs-splats Primary Vega Lab fit: repo-adoption via general engineering.",
+    "capabilities": [],
     "houseSkills": [
       "repo-adoption",
       "mine-execution"
     ],
     "rules": [
-      "Validate maintenance risk and current ecosystem fit before committing to adoption.",
       "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
     ],
     "flows": [
@@ -27189,8 +27323,8 @@
       "mine-execution-flow"
     ],
     "adoptionKind": "house",
-    "codexBrief": "# Codex Mission: KBLLR/Threejs-nerf-visualizer\nGoal: A web-based 3D viewer for Gaussian Splatting models using Three.js and Luma.gl. Features environment mapping, post-processing effects, and interactive controls. Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: house\nCapabilities: ml-ai\nHouse skills: repo-adoption, mine-execution\nRules:\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: KBLLR/Threejs-nerf-visualizer\nGoal: A web-based 3D viewer for Gaussian Splatting models using Three.js and Luma.gl. Features environment mapping, post-processing effects, and interactive controls. Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: house\nCapabilities: ml-ai\nHouse skills: repo-adoption, mine-execution\nRules:\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: KBLLR/Threejs-nerf-visualizer\nGoal: ARCHIVED. Original Studio Labs Gaussian splat viewer (Nov 2024). Continued in https://github.com/KBLLR/studio-labs-splats Primary Vega Lab fit: repo-adoption via general engineering.\nClassification: house\nCapabilities: none\nHouse skills: repo-adoption, mine-execution\nRules:\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: KBLLR/Threejs-nerf-visualizer\nGoal: ARCHIVED. Original Studio Labs Gaussian splat viewer (Nov 2024). Continued in https://github.com/KBLLR/studio-labs-splats Primary Vega Lab fit: repo-adoption via general engineering.\nClassification: house\nCapabilities: none\nHouse skills: repo-adoption, mine-execution\nRules:\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "KBLLR/threejs-template-simple",
@@ -27373,8 +27507,8 @@
     "summary": "A centralized design workspace and prompt matrix engine that transforms CSV catalogs, templates, and text prompts into production-ready scalable vector graphics (SVGs), physical label layouts, cohesive icon packs, and batch-exported visual assets. Primary Vega Lab fit: repo-discovery via template-scaffolding.",
     "capabilities": [
       "template-scaffolding",
-      "ml-ai",
-      "frontend-ui"
+      "frontend-ui",
+      "ml-ai"
     ],
     "houseSkills": [
       "repo-discovery",
@@ -27395,16 +27529,20 @@
       "mine-execution-flow"
     ],
     "adoptionKind": "template",
-    "codexBrief": "# Codex Mission: KBLLR/Vectra\nGoal: A centralized design workspace and prompt matrix engine that transforms CSV catalogs, templates, and text prompts into production-ready scalable vector graphics (SVGs), physical label layouts, cohesive icon packs, and batch-exported visual assets. Primary Vega Lab fit: repo-discovery via template-scaffolding.\nClassification: template\nCapabilities: template-scaffolding, ml-ai, frontend-ui\nHouse skills: repo-discovery, skill-extraction, repo-adoption, mine-execution\nRules:\n- Adopt this as a scaffold or reference, not as a long-lived runtime dependency.\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\n5. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: KBLLR/Vectra\nGoal: A centralized design workspace and prompt matrix engine that transforms CSV catalogs, templates, and text prompts into production-ready scalable vector graphics (SVGs), physical label layouts, cohesive icon packs, and batch-exported visual assets. Primary Vega Lab fit: repo-discovery via template-scaffolding.\nClassification: template\nCapabilities: template-scaffolding, ml-ai, frontend-ui\nHouse skills: repo-discovery, skill-extraction, repo-adoption, mine-execution\nRules:\n- Adopt this as a scaffold or reference, not as a long-lived runtime dependency.\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\n5. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: KBLLR/Vectra\nGoal: A centralized design workspace and prompt matrix engine that transforms CSV catalogs, templates, and text prompts into production-ready scalable vector graphics (SVGs), physical label layouts, cohesive icon packs, and batch-exported visual assets. Primary Vega Lab fit: repo-discovery via template-scaffolding.\nClassification: template\nCapabilities: template-scaffolding, frontend-ui, ml-ai\nHouse skills: repo-discovery, skill-extraction, repo-adoption, mine-execution\nRules:\n- Adopt this as a scaffold or reference, not as a long-lived runtime dependency.\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\n5. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: KBLLR/Vectra\nGoal: A centralized design workspace and prompt matrix engine that transforms CSV catalogs, templates, and text prompts into production-ready scalable vector graphics (SVGs), physical label layouts, cohesive icon packs, and batch-exported visual assets. Primary Vega Lab fit: repo-discovery via template-scaffolding.\nClassification: template\nCapabilities: template-scaffolding, frontend-ui, ml-ai\nHouse skills: repo-discovery, skill-extraction, repo-adoption, mine-execution\nRules:\n- Adopt this as a scaffold or reference, not as a long-lived runtime dependency.\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\n5. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "KBLLR/vega-lab",
     "name": "vega-lab",
     "author": "KBLLR",
-    "summary": "The Brightest Stars Primary Vega Lab fit: mine-execution via general engineering.",
-    "capabilities": [],
+    "summary": "The Brightest Stars Primary Vega Lab fit: repo-discovery via frontend-ui.",
+    "capabilities": [
+      "frontend-ui"
+    ],
     "houseSkills": [
+      "repo-discovery",
+      "repo-adoption",
       "mine-execution"
     ],
     "rules": [
@@ -27413,11 +27551,13 @@
     ],
     "flows": [
       "research-queue-flow",
+      "adoption-decision-flow",
+      "news-digest-refresh",
       "mine-execution-flow"
     ],
-    "adoptionKind": "ignore",
-    "codexBrief": "# Codex Mission: KBLLR/vega-lab\nGoal: The Brightest Stars Primary Vega Lab fit: mine-execution via general engineering.\nClassification: ignore\nCapabilities: none\nHouse skills: mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: KBLLR/vega-lab\nGoal: The Brightest Stars Primary Vega Lab fit: mine-execution via general engineering.\nClassification: ignore\nCapabilities: none\nHouse skills: mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "adoptionKind": "house",
+    "codexBrief": "# Codex Mission: KBLLR/vega-lab\nGoal: The Brightest Stars Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui\nHouse skills: repo-discovery, repo-adoption, mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\n4. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: KBLLR/vega-lab\nGoal: The Brightest Stars Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui\nHouse skills: repo-discovery, repo-adoption, mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\n4. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "KBLLR/vega-lab-cloud-20261105",
@@ -27444,10 +27584,10 @@
     "nwo": "KBLLR/webgi-scene",
     "name": "webgi-scene",
     "author": "KBLLR",
-    "summary": "A modern, high-performance 3D object stager specializing in Gaussian Splatting models, built with WebGi. This application enables advanced visualization of 3D models with sophisticated post-processing effects and real-time parameter adjustment. Primary Vega Lab fit: repo-discovery via ml-ai.",
+    "summary": "A modern, high-performance 3D object stager specializing in Gaussian Splatting models, built with WebGi. This application enables advanced visualization of 3D models with sophisticated post-processing effects and real-time parameter adjustment. Primary Vega Lab fit: repo-discovery via frontend-ui.",
     "capabilities": [
-      "ml-ai",
-      "frontend-ui"
+      "frontend-ui",
+      "ml-ai"
     ],
     "houseSkills": [
       "repo-discovery",
@@ -27466,8 +27606,8 @@
       "mine-execution-flow"
     ],
     "adoptionKind": "house",
-    "codexBrief": "# Codex Mission: KBLLR/webgi-scene\nGoal: A modern, high-performance 3D object stager specializing in Gaussian Splatting models, built with WebGi. This application enables advanced visualization of 3D models with sophisticated post-processing effects and real-time parameter adjustment. Primary Vega Lab fit: repo-discovery via ml-ai.\nClassification: house\nCapabilities: ml-ai, frontend-ui\nHouse skills: repo-discovery, repo-adoption, mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\n4. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: KBLLR/webgi-scene\nGoal: A modern, high-performance 3D object stager specializing in Gaussian Splatting models, built with WebGi. This application enables advanced visualization of 3D models with sophisticated post-processing effects and real-time parameter adjustment. Primary Vega Lab fit: repo-discovery via ml-ai.\nClassification: house\nCapabilities: ml-ai, frontend-ui\nHouse skills: repo-discovery, repo-adoption, mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\n4. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: KBLLR/webgi-scene\nGoal: A modern, high-performance 3D object stager specializing in Gaussian Splatting models, built with WebGi. This application enables advanced visualization of 3D models with sophisticated post-processing effects and real-time parameter adjustment. Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui, ml-ai\nHouse skills: repo-discovery, repo-adoption, mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\n4. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: KBLLR/webgi-scene\nGoal: A modern, high-performance 3D object stager specializing in Gaussian Splatting models, built with WebGi. This application enables advanced visualization of 3D models with sophisticated post-processing effects and real-time parameter adjustment. Primary Vega Lab fit: repo-discovery via frontend-ui.\nClassification: house\nCapabilities: frontend-ui, ml-ai\nHouse skills: repo-discovery, repo-adoption, mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\n4. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "KBLLR/webgl-shader-examples",
@@ -43997,17 +44137,15 @@
       "repo-discovery",
       "repo-adoption"
     ],
-    "rules": [
-      "Validate maintenance risk and current ecosystem fit before committing to adoption."
-    ],
+    "rules": [],
     "flows": [
       "research-queue-flow",
       "adoption-decision-flow",
       "news-digest-refresh"
     ],
     "adoptionKind": "house",
-    "codexBrief": "# Codex Mission: rvion/CushyStudio\nGoal: 🛋 The AI and Generative Art platform for everyone Primary Vega Lab fit: repo-discovery via ml-ai.\nClassification: house\nCapabilities: ml-ai, frontend-ui\nHouse skills: repo-discovery, repo-adoption\nRules:\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: rvion/CushyStudio\nGoal: 🛋 The AI and Generative Art platform for everyone Primary Vega Lab fit: repo-discovery via ml-ai.\nClassification: house\nCapabilities: ml-ai, frontend-ui\nHouse skills: repo-discovery, repo-adoption\nRules:\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: rvion/CushyStudio\nGoal: 🛋 The AI and Generative Art platform for everyone Primary Vega Lab fit: repo-discovery via ml-ai.\nClassification: house\nCapabilities: ml-ai, frontend-ui\nHouse skills: repo-discovery, repo-adoption\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: rvion/CushyStudio\nGoal: 🛋 The AI and Generative Art platform for everyone Primary Vega Lab fit: repo-discovery via ml-ai.\nClassification: house\nCapabilities: ml-ai, frontend-ui\nHouse skills: repo-discovery, repo-adoption\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\n3. news-digest-refresh\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "rwu823/afloat",
