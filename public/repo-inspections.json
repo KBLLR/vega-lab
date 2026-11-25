@@ -285,7 +285,7 @@
   },
   {
     "nwo": "KBLLR/Avatars-Lab",
-    "inspectedAt": "2026-11-24T01:20:10.000Z",
+    "inspectedAt": "2026-11-24T10:53:31.000Z",
     "files": {
       "hasReadme": true,
       "packageManagers": [
@@ -570,7 +570,7 @@
   },
   {
     "nwo": "KBLLR/core-x",
-    "inspectedAt": "2026-11-24T01:43:34.000Z",
+    "inspectedAt": "2026-11-24T18:48:46.000Z",
     "files": {
       "hasReadme": false,
       "packageManagers": [
@@ -1838,7 +1838,7 @@
   },
   {
     "nwo": "KBLLR/memoryblocks",
-    "inspectedAt": "2026-11-05T01:14:19.000Z",
+    "inspectedAt": "2026-11-24T22:14:03.000Z",
     "files": {
       "hasReadme": true,
       "packageManagers": [
@@ -2082,7 +2082,7 @@
   },
   {
     "nwo": "KBLLR/oink-oink",
-    "inspectedAt": "2026-11-23T19:10:55.000Z",
+    "inspectedAt": "2026-11-25T01:14:26.000Z",
     "files": {
       "hasReadme": true,
       "packageManagers": [
@@ -2429,6 +2429,26 @@
     ],
     "risks": [
       "New contributors and agents lack a clear entrypoint."
+    ]
+  },
+  {
+    "nwo": "KBLLR/spatial-lab",
+    "inspectedAt": "2026-11-25T01:28:48.000Z",
+    "files": {
+      "hasReadme": true,
+      "packageManagers": [
+        "swiftpm"
+      ],
+      "workflows": [],
+      "deploymentConfigs": [],
+      "testScripts": [],
+      "buildScripts": []
+    },
+    "findings": [
+      "No test/check/lint script detected from package metadata."
+    ],
+    "risks": [
+      "Maintenance work has no obvious verification command."
     ]
   },
   {
@@ -2892,7 +2912,7 @@
   },
   {
     "nwo": "KBLLR/vega-lab",
-    "inspectedAt": "2026-11-23T06:02:41.000Z",
+    "inspectedAt": "2026-11-24T08:40:20.000Z",
     "files": {
       "hasReadme": true,
       "packageManagers": [

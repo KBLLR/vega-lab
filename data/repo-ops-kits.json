@@ -1237,7 +1237,7 @@
   },
   {
     "nwo": "KBLLR/Avatars-Lab",
-    "generatedAt": "2026-11-24T01:20:10.000Z",
+    "generatedAt": "2026-11-24T10:53:31.000Z",
     "target": "mlx",
     "artifacts": [
       {
@@ -2576,7 +2576,7 @@
   },
   {
     "nwo": "KBLLR/core-x",
-    "generatedAt": "2026-11-24T01:43:34.000Z",
+    "generatedAt": "2026-11-24T18:48:46.000Z",
     "target": "mlx",
     "artifacts": [
       {
@@ -8873,7 +8873,7 @@
   },
   {
     "nwo": "KBLLR/memoryblocks",
-    "generatedAt": "2026-11-05T01:14:19.000Z",
+    "generatedAt": "2026-11-24T22:14:03.000Z",
     "target": "mlx",
     "artifacts": [
       {
@@ -10109,7 +10109,7 @@
   },
   {
     "nwo": "KBLLR/oink-oink",
-    "generatedAt": "2026-11-23T19:10:55.000Z",
+    "generatedAt": "2026-11-25T01:14:26.000Z",
     "target": "mlx",
     "artifacts": [
       {
@@ -11921,6 +11921,125 @@
       "claude-mission",
       "write-readme",
       "readme:vega-lab:readme:kbllr-smart-campus-cloud-20261105",
+      "review-draft-only"
+    ]
+  },
+  {
+    "nwo": "KBLLR/spatial-lab",
+    "generatedAt": "2026-11-25T01:28:48.000Z",
+    "target": "mlx",
+    "artifacts": [
+      {
+        "kind": "readme",
+        "title": "spatial-lab README Draft",
+        "suggestedPath": "README.md",
+        "body": "# spatial-lab\n\nSpatial Lab native Core-X house fixture pilot\n\n## Vega Lab Fit\n- Classification: ignore\n- Capabilities: none\n- House skills: mine-execution\n\n## Local Setup\n- Package managers: swiftpm\n- Document install, dev, build, and verification commands before broad reuse.\n- Keep runtime assumptions explicit; prefer local MLX/OpenResponses for model-assisted work.\n\n## Verification\n- Define a lint/test/build command before code edits.\n\n## Evidence\n- Repository: KBLLR/spatial-lab\n- Description: Spatial Lab native Core-X house fixture pilot\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Finding: No test/check/lint script detected from package metadata.",
+        "evidence": [
+          "Repository: KBLLR/spatial-lab",
+          "Description: Spatial Lab native Core-X house fixture pilot",
+          "Adoption kind: ignore",
+          "Capabilities: none",
+          "House skills: mine-execution",
+          "Finding: No test/check/lint script detected from package metadata."
+        ]
+      },
+      {
+        "kind": "agents",
+        "title": "spatial-lab AGENTS Draft",
+        "suggestedPath": "AGENTS.md",
+        "body": "# spatial-lab Agents\n\n## Product Truth\n- Repository: KBLLR/spatial-lab\n- Vega Lab classification: ignore\n- Active mission target: Local MLX\n\n## Operating Rules\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\n\n## Commands\n- Add the smallest reliable verification command.\n\n## Agent Boundaries\n- Do not mutate deployment, secrets, or release configuration without explicit approval.\n- Prefer draft plans and reviewable diffs over broad automation.\n- Preserve existing product direction; use Vega Lab evidence before adding new abstractions.",
+        "evidence": [
+          "Repository: KBLLR/spatial-lab",
+          "Description: Spatial Lab native Core-X house fixture pilot",
+          "Adoption kind: ignore",
+          "Capabilities: none",
+          "House skills: mine-execution",
+          "Finding: No test/check/lint script detected from package metadata."
+        ]
+      },
+      {
+        "kind": "maintenance",
+        "title": "spatial-lab Maintenance Plan",
+        "suggestedPath": "docs/maintenance-plan.md",
+        "body": "# Maintenance Plan: KBLLR/spatial-lab\n\n## Current Signals\n- Health flag: private\n- No test/check/lint script detected from package metadata.\n\n## Recommended Pass\n- Confirm install path and package manager.\n- Run available verification commands before editing.\n- Patch stale docs, commands, and workflow assumptions first.\n- Open the smallest useful PR only after human approval.\n- Vega Lab action: mlx-mission\n- Vega Lab action: ops-kit\n- Vega Lab action: codex-mission\n- Vega Lab action: claude-mission\n\n## Evidence\n- Repository: KBLLR/spatial-lab\n- Description: Spatial Lab native Core-X house fixture pilot\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Risk: Maintenance work has no obvious verification command.\n- Health flag: private",
+        "evidence": [
+          "Repository: KBLLR/spatial-lab",
+          "Description: Spatial Lab native Core-X house fixture pilot",
+          "Adoption kind: ignore",
+          "Capabilities: none",
+          "House skills: mine-execution",
+          "Finding: No test/check/lint script detected from package metadata.",
+          "Risk: Maintenance work has no obvious verification command.",
+          "Health flag: private"
+        ]
+      },
+      {
+        "kind": "deployment",
+        "title": "spatial-lab Deployment Plan",
+        "suggestedPath": "docs/deployment-plan.md",
+        "body": "# Deployment Plan: KBLLR/spatial-lab\n\n## Known Deployment Evidence\n- No workflow or deployment config detected in synced key files.\n\n## Draft Checks\n- Identify expected host and runtime.\n- Document build command, output directory, and required environment variables.\n- Verify preview URL and production URL checks.\n- Keep deploy authority manual; Vega Lab drafts plans and inbox items only.\n\n## Evidence\n- Repository: KBLLR/spatial-lab\n- Description: Spatial Lab native Core-X house fixture pilot\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Risk: Maintenance work has no obvious verification command.\n- Health flag: private",
+        "evidence": [
+          "Repository: KBLLR/spatial-lab",
+          "Description: Spatial Lab native Core-X house fixture pilot",
+          "Adoption kind: ignore",
+          "Capabilities: none",
+          "House skills: mine-execution",
+          "Finding: No test/check/lint script detected from package metadata.",
+          "Risk: Maintenance work has no obvious verification command.",
+          "Health flag: private"
+        ]
+      },
+      {
+        "kind": "testing",
+        "title": "spatial-lab Test Plan",
+        "suggestedPath": "docs/test-plan.md",
+        "body": "# Test Plan: KBLLR/spatial-lab\n\n## Available Commands\n- No test/check/build script detected from synced package metadata.\n\n## Minimum Verification Contract\n- Document one install command.\n- Document one fast smoke command.\n- Document one release/build command when deployable.\n- If no commands exist, create a tracked issue or action item before implementation work.\n\n## Evidence\n- Repository: KBLLR/spatial-lab\n- Description: Spatial Lab native Core-X house fixture pilot\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Risk: Maintenance work has no obvious verification command.\n- Health flag: private",
+        "evidence": [
+          "Repository: KBLLR/spatial-lab",
+          "Description: Spatial Lab native Core-X house fixture pilot",
+          "Adoption kind: ignore",
+          "Capabilities: none",
+          "House skills: mine-execution",
+          "Finding: No test/check/lint script detected from package metadata.",
+          "Risk: Maintenance work has no obvious verification command.",
+          "Health flag: private"
+        ]
+      },
+      {
+        "kind": "action-item",
+        "title": "spatial-lab Action Item Draft",
+        "suggestedPath": "ops/action-item.md",
+        "body": "# Action Item Draft: KBLLR/spatial-lab\n\n## Recommended Actions\n- testing: Define verification for spatial-lab\n\n## Mission Target\n- Local MLX\n\n## Evidence\n- Repository: KBLLR/spatial-lab\n- Description: Spatial Lab native Core-X house fixture pilot\n- Adoption kind: ignore\n- Capabilities: none\n- House skills: mine-execution\n- Finding: No test/check/lint script detected from package metadata.\n- Risk: Maintenance work has no obvious verification command.\n- Health flag: private\n- Action item: Define verification for spatial-lab",
+        "evidence": [
+          "Repository: KBLLR/spatial-lab",
+          "Description: Spatial Lab native Core-X house fixture pilot",
+          "Adoption kind: ignore",
+          "Capabilities: none",
+          "House skills: mine-execution",
+          "Finding: No test/check/lint script detected from package metadata.",
+          "Risk: Maintenance work has no obvious verification command.",
+          "Health flag: private",
+          "Action item: Define verification for spatial-lab"
+        ]
+      }
+    ],
+    "evidence": [
+      "Repository: KBLLR/spatial-lab",
+      "Description: Spatial Lab native Core-X house fixture pilot",
+      "Adoption kind: ignore",
+      "Capabilities: none",
+      "House skills: mine-execution",
+      "Finding: No test/check/lint script detected from package metadata.",
+      "Risk: Maintenance work has no obvious verification command.",
+      "Health flag: private",
+      "Action item: Define verification for spatial-lab"
+    ],
+    "recommendedActions": [
+      "mlx-mission",
+      "ops-kit",
+      "codex-mission",
+      "claude-mission",
+      "testing:vega-lab:testing:kbllr-spatial-lab",
       "review-draft-only"
     ]
   },
@@ -14166,7 +14285,7 @@
   },
   {
     "nwo": "KBLLR/vega-lab",
-    "generatedAt": "2026-11-23T06:02:41.000Z",
+    "generatedAt": "2026-11-24T08:40:20.000Z",
     "target": "mlx",
     "artifacts": [
       {

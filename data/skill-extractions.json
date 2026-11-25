@@ -13752,10 +13752,9 @@
     "nwo": "eosphoros-ai/DB-GPT",
     "name": "DB-GPT",
     "author": "eosphoros-ai",
-    "summary": "open-source agentic AI data assistant for the next generation of AI + Data products. Primary Vega Lab fit: repo-discovery via agent-workflows.",
+    "summary": "Open-Source Product for Controlled Data Agents Primary Vega Lab fit: repo-discovery via agent-workflows.",
     "capabilities": [
       "agent-workflows",
-      "frontend-ui",
       "ml-ai",
       "data-pipeline"
     ],
@@ -13764,16 +13763,18 @@
       "skill-extraction",
       "repo-adoption"
     ],
-    "rules": [],
+    "rules": [
+      "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house."
+    ],
     "flows": [
       "research-queue-flow",
       "skill-extraction-flow",
       "adoption-decision-flow",
       "news-digest-refresh"
     ],
-    "adoptionKind": "house",
-    "codexBrief": "# Codex Mission: eosphoros-ai/DB-GPT\nGoal: open-source agentic AI data assistant for the next generation of AI + Data products. Primary Vega Lab fit: repo-discovery via agent-workflows.\nClassification: house\nCapabilities: agent-workflows, frontend-ui, ml-ai, data-pipeline\nHouse skills: repo-discovery, skill-extraction, repo-adoption\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: eosphoros-ai/DB-GPT\nGoal: open-source agentic AI data assistant for the next generation of AI + Data products. Primary Vega Lab fit: repo-discovery via agent-workflows.\nClassification: house\nCapabilities: agent-workflows, frontend-ui, ml-ai, data-pipeline\nHouse skills: repo-discovery, skill-extraction, repo-adoption\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "adoptionKind": "tool",
+    "codexBrief": "# Codex Mission: eosphoros-ai/DB-GPT\nGoal: Open-Source Product for Controlled Data Agents Primary Vega Lab fit: repo-discovery via agent-workflows.\nClassification: tool\nCapabilities: agent-workflows, ml-ai, data-pipeline\nHouse skills: repo-discovery, skill-extraction, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: eosphoros-ai/DB-GPT\nGoal: Open-Source Product for Controlled Data Agents Primary Vega Lab fit: repo-discovery via agent-workflows.\nClassification: tool\nCapabilities: agent-workflows, ml-ai, data-pipeline\nHouse skills: repo-discovery, skill-extraction, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. skill-extraction-flow\n3. adoption-decision-flow\n4. news-digest-refresh\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "eps696/SDfu",
@@ -27117,6 +27118,27 @@
     "claudeBrief": "# Claude Mission: KBLLR/smart-campus-cloud-20261105\nGoal: Private sanitized Smart Campus cloud handoff snapshot, 2026-11-05 Primary Vega Lab fit: mine-execution via general engineering.\nClassification: ignore\nCapabilities: none\nHouse skills: mine-execution\nRules:\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
+    "nwo": "KBLLR/spatial-lab",
+    "name": "spatial-lab",
+    "author": "KBLLR",
+    "summary": "Spatial Lab native Core-X house fixture pilot Primary Vega Lab fit: mine-execution via general engineering.",
+    "capabilities": [],
+    "houseSkills": [
+      "mine-execution"
+    ],
+    "rules": [
+      "Review license status before adoption or redistribution work.",
+      "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
+    ],
+    "flows": [
+      "research-queue-flow",
+      "mine-execution-flow"
+    ],
+    "adoptionKind": "ignore",
+    "codexBrief": "# Codex Mission: KBLLR/spatial-lab\nGoal: Spatial Lab native Core-X house fixture pilot Primary Vega Lab fit: mine-execution via general engineering.\nClassification: ignore\nCapabilities: none\nHouse skills: mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. mine-execution-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: KBLLR/spatial-lab\nGoal: Spatial Lab native Core-X house fixture pilot Primary Vega Lab fit: mine-execution via general engineering.\nClassification: ignore\nCapabilities: none\nHouse skills: mine-execution\nRules:\n- Review license status before adoption or redistribution work.\n- Prioritize README, maintenance, and execution readiness before broader ecosystem integration.\nFlow:\n1. research-queue-flow\n2. mine-execution-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+  },
+  {
     "nwo": "KBLLR/Speech-Services-Azure",
     "name": "Speech-Services-Azure",
     "author": "KBLLR",
@@ -29730,14 +29752,16 @@
     "houseSkills": [
       "repo-adoption"
     ],
-    "rules": [],
+    "rules": [
+      "Validate maintenance risk and current ecosystem fit before committing to adoption."
+    ],
     "flows": [
       "research-queue-flow",
       "adoption-decision-flow"
     ],
     "adoptionKind": "house",
-    "codexBrief": "# Codex Mission: lfroms/fluid-menu-bar-extra\nGoal: 🖥️ A lightweight tool for building great menu bar extras with SwiftUI. Primary Vega Lab fit: repo-adoption via general engineering.\nClassification: house\nCapabilities: none\nHouse skills: repo-adoption\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: lfroms/fluid-menu-bar-extra\nGoal: 🖥️ A lightweight tool for building great menu bar extras with SwiftUI. Primary Vega Lab fit: repo-adoption via general engineering.\nClassification: house\nCapabilities: none\nHouse skills: repo-adoption\nRules:\n- Keep scope narrow and evidence-based.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: lfroms/fluid-menu-bar-extra\nGoal: 🖥️ A lightweight tool for building great menu bar extras with SwiftUI. Primary Vega Lab fit: repo-adoption via general engineering.\nClassification: house\nCapabilities: none\nHouse skills: repo-adoption\nRules:\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: lfroms/fluid-menu-bar-extra\nGoal: 🖥️ A lightweight tool for building great menu bar extras with SwiftUI. Primary Vega Lab fit: repo-adoption via general engineering.\nClassification: house\nCapabilities: none\nHouse skills: repo-adoption\nRules:\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "lgrammel/app-launcher",

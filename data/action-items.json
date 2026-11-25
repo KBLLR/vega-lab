@@ -397,6 +397,34 @@
     "updatedAt": "2023-07-07T07:02:56.000Z"
   },
   {
+    "id": "vega-lab:testing:kbllr-spatial-lab",
+    "kind": "testing",
+    "status": "open",
+    "priority": "normal",
+    "nwo": "KBLLR/spatial-lab",
+    "title": "Define verification for spatial-lab",
+    "summary": "Package metadata does not expose an obvious test, check, or lint command.",
+    "evidence": [
+      "No test/check/lint script detected from package metadata.",
+      "Maintenance work has no obvious verification command."
+    ],
+    "linkedSkills": [
+      "mine-execution"
+    ],
+    "linkedRules": [
+      "Review license status before adoption or redistribution work.",
+      "Prioritize README, maintenance, and execution readiness before broader ecosystem integration."
+    ],
+    "linkedFlows": [
+      "research-queue-flow",
+      "mine-execution-flow"
+    ],
+    "draft": "Draft a verification plan for KBLLR/spatial-lab: add or document lint/test/build commands and define the smallest smoke test agents should run before edits.",
+    "source": "daily-ops",
+    "createdAt": "2026-11-25T01:28:48.000Z",
+    "updatedAt": "2026-11-25T01:28:48.000Z"
+  },
+  {
     "id": "vega-lab:skill:kbllr-papiro",
     "kind": "skill",
     "status": "open",
