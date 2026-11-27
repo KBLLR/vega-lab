@@ -14967,7 +14967,7 @@
     "nwo": "facebookresearch/MHR",
     "name": "MHR",
     "author": "facebookresearch",
-    "summary": "Momentum Human Rig is an anatomically-inspired parametric full-body digital human model developed at Meta. It includes: A parametric body skeletal model; A realistic 3D mesh skinned to the skeleton with levels of detail;A body blendshape and pose corrective model; A facial blendshape model.Its design is friendly for both CG and CV communities. Primary Vega Lab fit: repo-research via research-intelligence.",
+    "summary": "Momentum Human Rig is an anatomically-inspired parametric full-body digital human model developed at Meta. It includes: A parametric body skeletal model; A realistic 3D mesh skinned to the skeleton with levels of detail;A body blendshape and pose corrective model; A facial blendshape model. Its design is friendly for both CG and CV communities. Primary Vega Lab fit: repo-research via research-intelligence.",
     "capabilities": [
       "research-intelligence",
       "ml-ai"
@@ -14984,8 +14984,8 @@
       "adoption-decision-flow"
     ],
     "adoptionKind": "tool",
-    "codexBrief": "# Codex Mission: facebookresearch/MHR\nGoal: Momentum Human Rig is an anatomically-inspired parametric full-body digital human model developed at Meta. It includes: A parametric body skeletal model; A realistic 3D mesh skinned to the skeleton with levels of detail;A body blendshape and pose corrective model; A facial blendshape model.Its design is friendly for both CG and CV communities. Primary Vega Lab fit: repo-research via research-intelligence.\nClassification: tool\nCapabilities: research-intelligence, ml-ai\nHouse skills: repo-research, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: facebookresearch/MHR\nGoal: Momentum Human Rig is an anatomically-inspired parametric full-body digital human model developed at Meta. It includes: A parametric body skeletal model; A realistic 3D mesh skinned to the skeleton with levels of detail;A body blendshape and pose corrective model; A facial blendshape model.Its design is friendly for both CG and CV communities. Primary Vega Lab fit: repo-research via research-intelligence.\nClassification: tool\nCapabilities: research-intelligence, ml-ai\nHouse skills: repo-research, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: facebookresearch/MHR\nGoal: Momentum Human Rig is an anatomically-inspired parametric full-body digital human model developed at Meta. It includes: A parametric body skeletal model; A realistic 3D mesh skinned to the skeleton with levels of detail;A body blendshape and pose corrective model; A facial blendshape model. Its design is friendly for both CG and CV communities. Primary Vega Lab fit: repo-research via research-intelligence.\nClassification: tool\nCapabilities: research-intelligence, ml-ai\nHouse skills: repo-research, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: facebookresearch/MHR\nGoal: Momentum Human Rig is an anatomically-inspired parametric full-body digital human model developed at Meta. It includes: A parametric body skeletal model; A realistic 3D mesh skinned to the skeleton with levels of detail;A body blendshape and pose corrective model; A facial blendshape model. Its design is friendly for both CG and CV communities. Primary Vega Lab fit: repo-research via research-intelligence.\nClassification: tool\nCapabilities: research-intelligence, ml-ai\nHouse skills: repo-research, repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "facebookresearch/omnivore",
@@ -23616,15 +23616,16 @@
     ],
     "rules": [
       "Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.",
-      "Review license status before adoption or redistribution work."
+      "Review license status before adoption or redistribution work.",
+      "Validate maintenance risk and current ecosystem fit before committing to adoption."
     ],
     "flows": [
       "research-queue-flow",
       "adoption-decision-flow"
     ],
     "adoptionKind": "tool",
-    "codexBrief": "# Codex Mission: jlampel/extra_lights\nGoal: Adds physically based lights to Blender's Add menu Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
-    "claudeBrief": "# Claude Mission: jlampel/extra_lights\nGoal: Adds physically based lights to Blender's Add menu Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
+    "codexBrief": "# Codex Mission: jlampel/extra_lights\nGoal: Adds physically based lights to Blender's Add menu Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable codex-ready plan grounded in the repo's capabilities and adoption fit.",
+    "claudeBrief": "# Claude Mission: jlampel/extra_lights\nGoal: Adds physically based lights to Blender's Add menu Primary Vega Lab fit: repo-adoption via ml-ai.\nClassification: tool\nCapabilities: ml-ai\nHouse skills: repo-adoption\nRules:\n- Prefer wrapping the repo behind a narrow interface instead of spreading its assumptions across the house.\n- Review license status before adoption or redistribution work.\n- Validate maintenance risk and current ecosystem fit before committing to adoption.\nFlow:\n1. research-queue-flow\n2. adoption-decision-flow\nDeliverable: produce an actionable claude-ready plan grounded in the repo's capabilities and adoption fit."
   },
   {
     "nwo": "joaopereirawd/fakeLoader.js",
